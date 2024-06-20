@@ -54,27 +54,7 @@ leader_traits = {
 	EoF_orbital = {
 		random = no
 		
-		stability_factor = 0.01
-		war_support_factor = 0.01
+		surrender_limit = 1
 		
-		global_building_slots_factor = 0.01
-		consumer_goods_factor = -0.01
-		production_factory_max_efficiency_factor = 0.001
-		production_factory_efficiency_gain_factor = 0.001
-		production_speed_dockyard_factor = 0.01
-		production_speed_arms_factory_factor = 0.01
-		production_speed_industrial_complex_factor = 0.01
-		production_speed_infrastructure_factor = 0.01
-		production_speed_rail_way_factor = 0.01
-		land_reinforce_rate = 0.001
-		production_lack_of_resource_penalty_factor = -0.01
-		political_power_gain = 0.01
-		max_dig_in_factor = 0.01
-		country_resource_aluminium = 1
-		country_resource_rubber = 1
-		industrial_capacity_factory = 0.01
-		land_night_attack = 0.01
-		army_attack_factor = 0.001
-		army_defence_factor = 0.001
 	}
 }

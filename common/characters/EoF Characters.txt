@@ -75,7 +75,7 @@ characters={
 			idea_token = orbital
 			cost = 75
 			allowed = {
-				original_tag = GRF
+				original_tag = STG
 			}
 			desc = EoF_orb_of_chital_desc
 			traits = { EoF_orbital }

@@ -291,6 +291,7 @@ add_equipment_to_stockpile = {
 	producer = STG
 }
 
+recruit_character = EoF_orb_of_chital
 recruit_character = STG_vinous_kostylev
 recruit_character = STG_tsar_peter_iv
 recruit_character = STG_ratibor_svetoslavich

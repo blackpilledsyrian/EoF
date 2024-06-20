@@ -1,9 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			GRF = {
-				country_event = { id = EoF.volcano.1 days = 15 }
-			}
 			HLR = {
 				country_event = { id = EoF.1 days = 1095 }
 				country_event = { id = EoF.8 days = 12 }
