@@ -53,8 +53,6 @@ leader_traits = {
 	}
 	EoF_orbital = {
 		random = no
-		
-		surrender_limit = 1
-		
+		surrender_limit = 0.25
 	}
 }

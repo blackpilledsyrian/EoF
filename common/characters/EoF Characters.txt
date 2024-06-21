@@ -77,6 +77,11 @@ characters={
 			allowed = {
 				original_tag = STG
 			}
+			available = {
+				CRY = {
+				has_capitulated = no
+				}
+			}
 			desc = EoF_orb_of_chital_desc
 			traits = { EoF_orbital }
 		}
