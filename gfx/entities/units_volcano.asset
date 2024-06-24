@@ -1,6 +1,5 @@
 entity = {
 	name = "volcanoparticle_entity"
-	pdxmesh = "volcanoparticle_mesh"
 	
 	default_state = "idle"
 	state = { name = "idle" animation = idle looping = no

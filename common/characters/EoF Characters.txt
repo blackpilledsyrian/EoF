@@ -15,7 +15,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 2
 			logistics_skill = 5
-			legacy_id = 34
 			desc = EQS_sunset_shimmer_desc
 			visible = {
 				has_country_flag = EoF_sunset_counteroffensive

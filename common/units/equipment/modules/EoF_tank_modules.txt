@@ -212,7 +212,6 @@ equipment_modules = {
 			anti_tank
 			flame
 			amphibious
-			rocket
 		}
 		multiply_stats = {
 			soft_attack = 0.15
@@ -233,7 +232,6 @@ equipment_modules = {
 			anti_tank
 			flame
 			amphibious
-			rocket
 		}
 		multiply_stats = {
 			soft_attack = 0.25
@@ -460,78 +458,6 @@ equipment_modules = {
 			hard_attack = 3
 			build_cost_ic = 5
 			reliability = -0.2
-		}
-		xp_cost = 0
-	}
-	tank_command_radio_1 = {
-		abbreviation = "crad1"
-		category = tank_radio_module
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = rocket
-		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = {
-			anti_air
-			artillery
-			anti_tank
-			flame
-			amphibious
-		}
-
-		add_stats = {
-			max_organisation = 0.1
-			build_cost_ic = 0.5
-			fuel_consumption = -2
-		}
-		multiply_stats = {
-			max_strength = -1
-		}
-		xp_cost = 0
-	}
-	tank_command_radio_2 = {
-		abbreviation = "crad2"
-		category = tank_radio_module
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = rocket
-		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = {
-			anti_air
-			artillery
-			anti_tank
-			flame
-			amphibious
-		}
-
-		add_stats = {
-			max_organisation = 0.2
-			build_cost_ic = 1.5
-			fuel_consumption = -2
-		}
-		multiply_stats = {
-			max_strength = -1
-		}
-		xp_cost = 0
-	}
-	tank_command_radio_3 = {
-		abbreviation = "crad3"
-		category = tank_radio_module
-		sfx = sfx_ui_sd_module_turret
-		allow_equipment_type = rocket
-		forbid_equipment_type_exact_match = armor
-		forbid_equipment_type = {
-			anti_air
-			artillery
-			anti_tank
-			flame
-			amphibious
-		}
-
-		add_stats = {
-			max_organisation = 0.3
-			build_cost_ic = 2.5
-			fuel_consumption = -2
-		}
-		multiply_stats = {
-			max_strength = -1
 		}
 		xp_cost = 0
 	}

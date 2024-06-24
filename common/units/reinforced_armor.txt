@@ -25,8 +25,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_chassis = 36
-			light_tank_rocket_chassis = 12
+			light_tank_chassis = 48
 			armored_car_equipment = 5
 		}
 		manpower = 500
@@ -36,16 +35,6 @@ sub_units = {
 		max_strength = 2
 		weight = 1
 		supply_consumption = 0.22
-
-		maximum_speed = -0.5
-		soft_attack = -0.5
-		hard_attack = -0.5
-		ap_attack = -0.5
-		hardness = -0.5
-		armor_value = -0.5
-		breakthrough = -0.5
-		defense = -0.5
-		air_attack = -0.5
 
 		suppression = 2.5
 
@@ -101,8 +90,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			medium_tank_chassis = 30
-			medium_tank_rocket_chassis = 10
+			medium_tank_chassis = 40
 			armored_car_equipment = 5
 		}
 		manpower = 500
@@ -112,16 +100,6 @@ sub_units = {
 		training_time = 180
 		weight = 1.25
 		supply_consumption = 0.25
-
-		maximum_speed = -0.5
-		soft_attack = -0.5
-		hard_attack = -0.5
-		ap_attack = -0.5
-		hardness = -0.5
-		armor_value = -0.5
-		breakthrough = -0.5
-		defense = -0.5
-		air_attack = -0.5
 
 		suppression = 2.5
 
@@ -215,8 +193,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_chassis = 24
-			heavy_tank_rocket_chassis = 8
+			heavy_tank_chassis = 32
 			armored_car_equipment = 5
 		}
 
@@ -227,16 +204,6 @@ sub_units = {
 		weight = 1.5
 
 		supply_consumption = 0.32
-
-		maximum_speed = -0.5
-		soft_attack = -0.5
-		hard_attack = -0.5
-		ap_attack = -0.5
-		hardness = -0.5
-		armor_value = -0.5
-		breakthrough = -0.5
-		defense = -0.5
-		air_attack = -0.5
 
 		suppression = 2.5
 	}
@@ -267,8 +234,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			modern_tank_chassis = 30
-			modern_tank_rocket_chassis = 10
+			modern_tank_chassis = 40
 			armored_car_equipment = 5
 		}
 		manpower = 500
@@ -279,9 +245,6 @@ sub_units = {
 		weight = 1.5
 
 		supply_consumption = 0.25
-
-		#Tanks are awesome
-		# soft_attack = 0.5
 
 		suppression = 2.5
 

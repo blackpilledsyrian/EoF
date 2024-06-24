@@ -196,64 +196,67 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
 	}
-	# focus = {
-	# 	id = compromiss
-	# 	icon = GFX_goal_compromise
-	# 	cost = 7
-	# 	prerequisite = {
-	# 		focus = vasya_2
-	# 		focus = polya_2
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	x = 4
-	# 	y = 3
-	# 	mutually_exclusive = {
-	# 		focus = keep_polya
-	# 		focus = purge
-	# 	}
-	# 	available = {
-	# 		OR = {
-	# 			has_country_flag = polya_chosen
-	# 			has_country_flag = vasya_chosen
-	# 		}
-	# 		has_government = communism
-	# 		NOT = { is_subject = yes }
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus compromiss"
-	# 		country_event = {
-	# 			id = stalliongrad.22 days = 1
-	# 		}
-	# 	}
-	# }
-	# focus = {
-	# 	id = conditions
-	# 	icon = GFX_goal_conditions
-	# 	cost = 10
-	# 	prerequisite = {
-	# 		focus = compromiss
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	available = {
-	# 		has_government = communism
-	# 		NOT = { is_subject = yes }
-	# 	}
-	# 	x = 4
-	# 	y = 4
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus conditions"
-	# 		country_event = {
-	# 			id = stalliongrad.35 days = 1
-	# 		}
-	# 		hidden_effect = {
-	# 			country_event = { id = stalliongrad.32 days = 50 } #days to hours applied
-	# 		}
-	# 	}
-	# }
+	focus = {
+		id = compromiss
+		icon = GFX_goal_compromise
+		cost = 7
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = vasya_2
+			focus = polya_2
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		x = 4
+		y = 3
+		mutually_exclusive = {
+			focus = keep_polya
+			focus = purge
+		}
+		available = {
+			OR = {
+				has_country_flag = polya_chosen
+				has_country_flag = vasya_chosen
+			}
+			has_government = communism
+			NOT = { is_subject = yes }
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus compromiss"
+			country_event = {
+				id = stalliongrad.22 days = 1
+			}
+		}
+	}
+	focus = {
+		id = conditions
+		icon = GFX_goal_conditions
+		cost = 10
+		prerequisite = {
+			focus = compromiss
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_government = communism
+			NOT = { is_subject = yes }
+		}
+		x = 4
+		y = 4
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus conditions"
+			country_event = {
+				id = stalliongrad.35 days = 1
+			}
+			hidden_effect = {
+				country_event = { id = stalliongrad.32 days = 50 } #days to hours applied
+			}
+		}
+	}
 	focus = {
 		id = purge
 		icon = GFX_goal_purge
@@ -306,66 +309,69 @@ focus_tree = {
 		}
 	}
 
-	# focus = {
-	# 	id = keep_polya
-	# 	icon = GFX_goal_vote_alty
-	# 	cost = 5
-	# 	prerequisite = {
-	# 		focus = polya_2
-	# 		focus = vasya_2
-	# 	}
-	# 	mutually_exclusive = {
-	# 		focus = compromiss
-	# 		focus = purge
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 	}
-	# 	available = {
-	# 		has_country_flag = polya_chosen
-	# 		NOT = { has_country_flag = polya_dies }
-	# 		has_government = communism
-	# 		NOT = { is_subject = yes }
-	# 	}
-	# 	x = 6
-	# 	y = 3
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus keep_polya"
-	# 		add_political_power = 100
-	# 		hidden_effect = {
-	# 			country_event = { id = stalliongrad.19 days = 1 }
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_POLITICAL }
-	# }
-	# focus = {
-	# 	id = new_leaders
-	# 	icon = GFX_goal_new_leaders
-	# 	cost = 10
-	# 	prerequisite = {
-	# 		focus = keep_polya
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	available = {
-	# 		has_government = communism
-	# 		NOT = { is_subject = yes }
-	# 	}
-	# 	x = 7
-	# 	y = 4
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus new_leaders"
-	# 		country_event = { id = stalliongrad.20 days = 1 }
-	# 		hidden_effect = {
-	# 			country_event = { id = stalliongrad.32 days = 50 } #days to hours applied
-	# 			if = {
-	# 				limit = { has_country_flag = polya_dies2 }
-	# 				country_event = { id = stalliongrad.37 days = 11 } #days to hours applied
-	# 			}
-	# 		}
-	# 	}
-	# }
+	focus = {
+		id = keep_polya
+		icon = GFX_goal_vote_alty
+		cost = 5
+		allow_branch = {
+			always = no
+		}		
+		prerequisite = {
+			focus = polya_2
+			focus = vasya_2
+		}
+		mutually_exclusive = {
+			focus = compromiss
+			focus = purge
+		}
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			has_country_flag = polya_chosen
+			NOT = { has_country_flag = polya_dies }
+			has_government = communism
+			NOT = { is_subject = yes }
+		}
+		x = 6
+		y = 3
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus keep_polya"
+			add_political_power = 100
+			hidden_effect = {
+				country_event = { id = stalliongrad.19 days = 1 }
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = new_leaders
+		icon = GFX_goal_new_leaders
+		cost = 10
+		prerequisite = {
+			focus = keep_polya
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			has_government = communism
+			NOT = { is_subject = yes }
+		}
+		x = 7
+		y = 4
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus new_leaders"
+			country_event = { id = stalliongrad.20 days = 1 }
+			hidden_effect = {
+				country_event = { id = stalliongrad.32 days = 50 } #days to hours applied
+				if = {
+					limit = { has_country_flag = polya_dies2 }
+					country_event = { id = stalliongrad.37 days = 11 } #days to hours applied
+				}
+			}
+		}
+	}
 	############################
 	#### AFTER ELECTIONS #########
 	############################
@@ -417,41 +423,44 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-	# focus = {
-	# 	id = darkwing_leader
-	# 	icon = GFX_goal_darkwing
-	# 	cost = 10
-	# 	x = 21
-	# 	y = 0
-	# 	mutually_exclusive = {
-	# 		focus = sinister_leader
-	# 		focus = vasya_leader
-	# 	}
-	# 	ai_will_do = {
-	# 		factor = 5
-	# 	}
-	# 	available = {
-	# 		OR = {
-	# 			has_country_flag = polya_dies2
-	# 			has_country_flag = darkwing_elected
-	# 		}
-	# 		NOT = {
-	# 			has_country_flag = vasya_elected
-	# 		}
-	# 		NOT = {
-	# 			has_country_flag = sinister_elected
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus darkwing_leader"
-	# 		add_political_power = 150
-	# 		country_event = { id = stalliongrad.95 days = 1 }
-	# 		hidden_effect = {
-	# 			country_event = { id = stalliongrad.106 days = 126 } #days to hours applied
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_POLITICAL }
-	# }
+	focus = {
+		id = darkwing_leader
+		icon = GFX_goal_darkwing
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		x = 21
+		y = 0
+		mutually_exclusive = {
+			focus = sinister_leader
+			focus = vasya_leader
+		}
+		ai_will_do = {
+			factor = 5
+		}
+		available = {
+			OR = {
+				has_country_flag = polya_dies2
+				has_country_flag = darkwing_elected
+			}
+			NOT = {
+				has_country_flag = vasya_elected
+			}
+			NOT = {
+				has_country_flag = sinister_elected
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus darkwing_leader"
+			add_political_power = 150
+			country_event = { id = stalliongrad.95 days = 1 }
+			hidden_effect = {
+				country_event = { id = stalliongrad.106 days = 126 } #days to hours applied
+			}
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = manifesto_of_materialism
 		icon = GFX_goal_socialist_science

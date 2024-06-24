@@ -270,14 +270,14 @@ set_politics = {
 	elections_allowed = no
 }
 
-declare_war_on = {
-	target = GYZ
-	type = civil_war
-}
-declare_war_on = {
-	target = THU
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = GYZ
+# 	type = civil_war
+# }
+# declare_war_on = {
+# 	target = THU
+# 	type = civil_war
+# }
 
 set_stability = 0.64
 set_war_support = 0.69

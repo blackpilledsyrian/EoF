@@ -7,10 +7,6 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
-	spriteType = {
-		name = "GFX_superevent_text_underlay"
-		textureFile = "gfx//interface//superevent_text_underlay.dds"
-	}
 	corneredTileSpriteType = {
 		name = "GFX_tiled_window_thin_border"
 		size= { x=192 y=192 }

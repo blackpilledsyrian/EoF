@@ -324,7 +324,6 @@ equipment_modules = {
 		forbid_equipment_type = {
 			anti_air
 			amphibious
-			rocket
 		}
 
 		allowed_module_categories = {
@@ -448,7 +447,6 @@ equipment_modules = {
 		forbid_equipment_type = {
 			anti_air
 			amphibious
-			rocket
 		}
 
 		allowed_module_categories = {
@@ -550,7 +548,6 @@ equipment_modules = {
 		forbid_equipment_type = {
 			anti_air
 			amphibious
-			rocket
 		}
 
 		allowed_module_categories = {
@@ -685,7 +682,6 @@ equipment_modules = {
 		forbid_equipment_type = {
 			anti_air
 			amphibious
-			rocket
 		}
 
 		allowed_module_categories = {
@@ -1877,7 +1873,6 @@ equipment_modules = {
 			artillery
 			anti_tank
 			flame
-			rocket
 		}
 
 		add_stats = {

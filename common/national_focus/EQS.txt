@@ -17,7 +17,7 @@ focus_tree = {
 
 	shared_focus = examine_the_situation
 	shared_focus = Ministry_of_defense
-	# shared_focus = Crystal_Fair
+	shared_focus = Crystal_Fair
 	shared_focus = Friendship_Games
 	# shared_focus = EQS_Civil_War_End
 	shared_focus = EQS_buffalo_relations
@@ -59,230 +59,218 @@ shared_focus = {
 	
 }
 
-# shared_focus = {
-# 	id = Crystal_Fair
-# 	icon = GFX_goal_crystal_fair
-# 	cost = 10.00
-# 	dynamic = yes
-# 	cancel_if_invalid = yes
-# 	continue_if_invalid = no
-# 	ai_will_do = { factor = 40 }
-# 	prerequisite = {
-# 		focus = SOL_increase_presense_inCRY
-# 		focus = increase_presense_inCRY
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		is_subject = no
-# 		CRY = {
-# 			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
-# 			has_civil_war = no
-# 		}
-# 	}
-# 	bypass = {
-# 		CRY = {
-# 			has_focus_tree = crystal_empire_solar_focus
-# 			has_focus_tree = crystal_empire_lunar_focus
-# 		}
-# 	}
-# 	allow_branch = {
-# 		always = yes
-# 	}
-# 	x = 12
-# 	y = 3
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus Crystal_Fair"
-# 		add_political_power = 150
-# 		hidden_effect = {
-# 			if = {
-# 				limit = { is_original_EQS = yes }
-# 				news_event = news.4
-# 			}
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL }
+shared_focus = {
+	id = Crystal_Fair
+	icon = GFX_goal_crystal_fair
+	cost = 10.00
+	allow_branch = {
+		always = no
+	}
+	dynamic = yes
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	ai_will_do = { factor = 40 }
+	prerequisite = {
+		focus = SOL_increase_presense_inCRY
+		focus = increase_presense_inCRY
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		is_subject = no
+		CRY = {
+			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
+			has_civil_war = no
+		}
+	}
+	bypass = {
+		CRY = {
+			has_focus_tree = crystal_empire_solar_focus
+			has_focus_tree = crystal_empire_lunar_focus
+		}
+	}
+	x = 12
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus Crystal_Fair"
+		add_political_power = 150
+		hidden_effect = {
+			if = {
+				limit = { is_original_EQS = yes }
+				news_event = news.4
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
 
-# }
-# shared_focus = {
-# 	id = rainbow_falls_resort
-# 	icon = GFX_goal_rainbow_falls
-# 	cost = 10.00
-# 	dynamic = yes
-# 	ai_will_do = { factor = 30 }
-# 	prerequisite = {
-# 		focus = Crystal_Fair
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		is_subject = no
-# 		98 = {
-# 			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 		}
-# 	}
-# 	cancel_if_invalid = yes
-# 	continue_if_invalid = no
-# 	allow_branch = {
-# 		always = yes
-# 	}
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus rainbow_falls_resort"
-# 		98 = {
-# 			owner = { add_political_power = 150 }
-# 			add_extra_state_shared_building_slots = 3
-# 			add_building_construction = {
-# 				type = industrial_complex
-# 				level = 3
-# 				instant_build = yes
-# 			}
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-# 	x = 11
-# 	y = 4
-# }
-# shared_focus = {
-# 	id = industry_crystal_emp
-# 	icon = GFX_goal_cry_factory_cel
-# 	cost = 10.00
-# 	ai_will_do = { factor = 30 }
-# 	prerequisite = {
-# 		focus = Crystal_Fair
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		is_subject = no
-# 		53 = {
-# 			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 		}
-# 		144 = {
-# 			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
-# 		}
-# 	}
-# 	cancel_if_invalid = yes
-# 	continue_if_invalid = no
-# 	allow_branch = {
-# 		always = yes
-# 	}
-# 	x = 13
-# 	y = 4
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus industry_crystal_emp"
-# 		53 = { add_extra_state_shared_building_slots = 3
-# 			add_building_construction = { type = industrial_complex
-# 				level = 3
-# 				instant_build = yes }
-# 		}
-# 		144 = { add_extra_state_shared_building_slots = 3
-# 			add_building_construction = { type = arms_factory
-# 				level = 3
-# 				instant_build = yes } } }
-# }
-# shared_focus = {
-# 	id = crystalcity_university
-# 	icon = GFX_goal_cryacademy
-# 	cost = 10.00
-# 	ai_will_do = { factor = 30 }
-# 	x = 12
-# 	y = 5
-# 	dynamic = yes
-# 	prerequisite = {
-# 		focus = industry_crystal_emp
-# 	}
-# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-# 	prerequisite = {
-# 		focus = rainbow_falls_resort
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		is_subject = no
-# 		CRY = {
-# 			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
-# 			capital_scope = { is_controlled_by = PREV }
-# 		}
-# 	}
-# 	cancel_if_invalid = yes
-# 	continue_if_invalid = no
-# 	allow_branch = {
-# 		always = yes
-# 	}
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus crystalcity_university"
-# 		add_political_power = 100
-# 		CRY = {
-# 			if = {
-# 				limit = { amount_research_slots < 5 }
-# 				add_research_slot = 1
-# 			}
-# 			else_if = {
-# 				limit = { has_dlc = "Together for Victory" }
-# 				add_ideas = CRY_EQS_techshare
-# 			}
-# 			else = {
-# 				add_ideas = CRY_EQS_techshare_no_tfv
-# 			}
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-# }
-# shared_focus = {
-# 	id = eqs_removesombra
-# 	icon = GFX_goal_sombra_return
-# 	cost = 10.00
-# 	ai_will_do = { factor = 30 }
-# 	x = 12
-# 	y = 6
-# 	cancel_if_invalid = yes
-# 	continue_if_invalid = no
-# 	prerequisite = {
-# 		focus = crystalcity_university
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		has_government = democratic
-# 		is_subject = no
-# 		CRY = {
-# 			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
-# 			OR = { has_idea = sombra_threat has_idea = sombra_threat2 has_idea = sombra_threat_reported }
-# 			NOT = { has_country_flag = CRY_get_rid_of_sombra_in_progress }
-# 		}
-# 	}
-# 	bypass = {
-# 		CRY = {
-# 			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
-# 			NOT = { has_idea = sombra_threat }
-# 			NOT = { has_idea = sombra_threat2 }
-# 			NOT = { has_idea = sombra_threat_reported }
-# 		}
-# 	}
-# 	allow_branch = {
-# 		has_government = democratic
-# 	}
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus eqs_removesombra"
-# 		CRY = {
-# 			effect_tooltip = { 
-# 				remove_ideas = sombra_threat
-# 				add_stability = -0.05
-# 				add_autonomy_ratio = { value = -0.1 }
-# 			}
-# 			hidden_effect = {
-# 				if = {
-# 					limit = { 
-# 						NOT = { has_country_flag = joined_the_club }
-# 					}
-# 					country_event = { id = crystalemp.26 days = 5 }
-# 				}
-# 				else = {
-# 					country_event = { id = crystalemp.27 days = 5 }
-# 				}
-# 			}
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_STABILITY }
-# }
+}
+shared_focus = {
+	id = rainbow_falls_resort
+	icon = GFX_goal_rainbow_falls
+	cost = 10.00
+	dynamic = yes
+	ai_will_do = { factor = 30 }
+	prerequisite = {
+		focus = Crystal_Fair
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		is_subject = no
+		98 = {
+			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+		}
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus rainbow_falls_resort"
+		98 = {
+			owner = { add_political_power = 150 }
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = industrial_complex
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	x = 11
+	y = 4
+}
+shared_focus = {
+	id = industry_crystal_emp
+	icon = GFX_goal_cry_factory_cel
+	cost = 10.00
+	ai_will_do = { factor = 30 }
+	prerequisite = {
+		focus = Crystal_Fair
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		is_subject = no
+		53 = {
+			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+		}
+		144 = {
+			owner = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+			controller = { OR = { tag = ROOT is_subject_of = ROOT is_in_faction_with = ROOT } }
+		}
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	x = 13
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus industry_crystal_emp"
+		53 = { add_extra_state_shared_building_slots = 3
+			add_building_construction = { type = industrial_complex
+				level = 3
+				instant_build = yes }
+		}
+		144 = { add_extra_state_shared_building_slots = 3
+			add_building_construction = { type = arms_factory
+				level = 3
+				instant_build = yes } } }
+}
+shared_focus = {
+	id = crystalcity_university
+	icon = GFX_goal_cryacademy
+	cost = 10.00
+	ai_will_do = { factor = 30 }
+	x = 12
+	y = 5
+	dynamic = yes
+	prerequisite = {
+		focus = industry_crystal_emp
+	}
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+	prerequisite = {
+		focus = rainbow_falls_resort
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		is_subject = no
+		CRY = {
+			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
+			capital_scope = { is_controlled_by = PREV }
+		}
+	}
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus crystalcity_university"
+		add_political_power = 100
+		CRY = {
+			if = {
+				limit = { amount_research_slots < 5 }
+				add_research_slot = 1
+			}
+			else_if = {
+				limit = { has_dlc = "Together for Victory" }
+				add_ideas = CRY_EQS_techshare
+			}
+			else = {
+				add_ideas = CRY_EQS_techshare_no_tfv
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+}
+shared_focus = {
+	id = eqs_removesombra
+	icon = GFX_goal_sombra_return
+	cost = 10.00
+	ai_will_do = { factor = 30 }
+	x = 12
+	y = 6
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	prerequisite = {
+		focus = crystalcity_university
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		has_government = democratic
+		is_subject = no
+		CRY = {
+			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
+			OR = { has_idea = sombra_threat has_idea = sombra_threat2 has_idea = sombra_threat_reported }
+			NOT = { has_country_flag = CRY_get_rid_of_sombra_in_progress }
+		}
+	}
+	bypass = {
+		CRY = {
+			OR = { is_subject_of = ROOT is_in_faction_with = ROOT }
+			NOT = { has_idea = sombra_threat }
+			NOT = { has_idea = sombra_threat2 }
+			NOT = { has_idea = sombra_threat_reported }
+		}
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus eqs_removesombra"
+		CRY = {
+			effect_tooltip = { 
+				remove_ideas = sombra_threat
+				add_stability = -0.05
+				add_autonomy_ratio = { value = -0.1 }
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						NOT = { has_country_flag = joined_the_club }
+					}
+					country_event = { id = crystalemp.26 days = 5 }
+				}
+				else = {
+					country_event = { id = crystalemp.27 days = 5 }
+				}
+			}
+		}
+	}
+	search_filters = { FOCUS_FILTER_TFV_AUTONOMY FOCUS_FILTER_STABILITY }
+}
 
 shared_focus = {
 	id = arms_potential
@@ -1437,7 +1425,7 @@ shared_focus = {
 				province = 6995
 			}
 		}
-		152 = {
+		130 = {
 			add_building_construction = {
 				type = bunker
 				level = 2
@@ -3222,7 +3210,7 @@ shared_focus = {
 shared_focus = {
 	id = EoF_nationalize_apple
 	icon = GFX_goal_generic_construct_civ_factory
-	cost = 8
+	cost = 5
 	prerequisite = {
 		focus = EoF_flim_flam_plan
 	}
@@ -3237,7 +3225,7 @@ shared_focus = {
 shared_focus = {
 	id = EoF_ponyville_production
 	icon = GFX_goal_generic_construct_mil_factory
-	cost = 8
+	cost = 5
 	prerequisite = {
 		focus = EoF_nationalize_apple
 	}
@@ -3297,7 +3285,7 @@ shared_focus = {
 shared_focus = {
 	id = EoF_manehatten_fillydelphia_zone
 	icon = GFX_goal_Focus_Military_Mobilisation
-	cost = 8
+	cost = 10
 	prerequisite = {
 		focus = EoF_spear_plan
 	}
@@ -3353,8 +3341,8 @@ shared_focus = {
 
 shared_focus = {
 	id = EoF_baltimare_production
-	icon = GFX_goal_generic_construct_mil_factory
-	cost = 8
+	icon = GFX_goal_generic_construct_naval_dockyard
+	cost = 5
 	prerequisite = {
 		focus = EoF_manehatten_fillydelphia_zone
 	}
@@ -3365,7 +3353,7 @@ shared_focus = {
 		13 = {
 			add_extra_state_shared_building_slots = 5
 			add_building_construction = {
-				type = arms_factory
+				type = dockyard
 				level = 5
 				instant_build = yes
 			}
@@ -3375,503 +3363,507 @@ shared_focus = {
 
 #EoF Changes
 
-# shared_focus = {
-# 	id = eqs_support_status_quo
-# 	icon = GFX_goal_tfv_strengthen_commonwealth_ties_pony
-# 	cost = 7
-# 	prerequisite = {
-# 		focus = Friendship_Games
-# 	}
-# 	allow_branch = {
-# 		is_EQS_SOL = no
-# 	}
-# 	available = {
-# 		has_government = democratic
-# 	}
-# 	ai_will_do = { factor = 20 }
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus eqs_support_status_quo"
-# 		add_political_power = 150
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL }
-# 	x = 6
-# 	y = 1
+shared_focus = {
+	id = eqs_support_status_quo
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties_pony
+	cost = 7
+	prerequisite = {
+		focus = Friendship_Games
+	}
+	allow_branch = {
+		always = no
+		is_EQS_SOL = no
+	}
+	available = {
+		has_government = democratic
+	}
+	ai_will_do = { factor = 20 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus eqs_support_status_quo"
+		add_political_power = 150
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	x = 6
+	y = 1
 
-# }
-# shared_focus = {
-# 	id = eqs_support_harmony
-# 	icon = GFX_goal_tree_of_harmony
-# 	cost = 7
-# 	prerequisite = {
-# 		focus = eqs_support_status_quo
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		is_subject = no
-# 	}
-# 	ai_will_do = { factor = 20 }
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus eqs_support_harmony"
-# 		every_other_country = {
-# 			limit = { has_government = democratic }
-# 			add_opinion_modifier = { target = ROOT modifier = promote_equality }
-# 		}
-# 	}
-# 	x = 6
-# 	y = 2
+}
+shared_focus = {
+	id = eqs_support_harmony
+	icon = GFX_goal_tree_of_harmony
+	cost = 7
+	prerequisite = {
+		focus = eqs_support_status_quo
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		is_subject = no
+	}
+	ai_will_do = { factor = 20 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus eqs_support_harmony"
+		every_other_country = {
+			limit = { has_government = democratic }
+			add_opinion_modifier = { target = ROOT modifier = promote_equality }
+		}
+	}
+	x = 6
+	y = 2
 
-# }
-# shared_focus = {
-# 	id = send_envoy_yak
-# 	icon = GFX_goal_pinkie_envoy
-# 	cost = 2
-# 	prerequisite = {
-# 		focus = eqs_support_harmony
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		YAK = { exists = yes }
-# 		is_subject = no
-# 	}
-# 	ai_will_do = { factor = 20 }
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus send_envoy_yak"
-# 		YAK = {
-# 			add_opinion_modifier = { target = ROOT modifier = pinkie_envoy }
-# 			add_stability = 0.02
-# 		}
-# 		add_political_power = 55
-# 		add_stability = 0.015
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
-# 	x = 5
-# 	y = 3
+}
+shared_focus = {
+	id = send_envoy_yak
+	icon = GFX_goal_pinkie_envoy
+	cost = 2
+	prerequisite = {
+		focus = eqs_support_harmony
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		YAK = { exists = yes }
+		is_subject = no
+	}
+	ai_will_do = { factor = 20 }
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus send_envoy_yak"
+		YAK = {
+			add_opinion_modifier = { target = ROOT modifier = pinkie_envoy }
+			add_stability = 0.02
+		}
+		add_political_power = 55
+		add_stability = 0.015
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY }
+	x = 5
+	y = 3
 
-# }
-# shared_focus = {
-# 	id = shelter_velvet
-# 	icon = GFX_goal_ole_velvet_portrait
-# 	cost = 10.00
-# 	ai_will_do = { factor = 10 }
-# 	prerequisite = {
-# 		focus = eqs_support_harmony
-# 	}
-# 	bypass = {
-# 		OR = {
-# 			OLE = { has_government = democratic }
-# 			CCN = { has_country_flag = ccn_ole_union_accepted }
-# 		}
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		any_country_with_original_tag = {
-# 			original_tag_to_check = OLE
-# 			NOT = { has_government = democratic  }
-# 		}
-# 		is_subject = no
-# 	}
-# 	x = 7
-# 	y = 3
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus shelter_velvet"
-# 		country_event = equestria.11
-# 	}
+}
+shared_focus = {
+	id = shelter_velvet
+	icon = GFX_goal_ole_velvet_portrait
+	cost = 10.00
+	ai_will_do = { factor = 10 }
+	prerequisite = {
+		focus = eqs_support_harmony
+	}
+	bypass = {
+		OR = {
+			OLE = { has_government = democratic }
+			CCN = { has_country_flag = ccn_ole_union_accepted }
+		}
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		any_country_with_original_tag = {
+			original_tag_to_check = OLE
+			NOT = { has_government = democratic  }
+		}
+		is_subject = no
+	}
+	x = 7
+	y = 3
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus shelter_velvet"
+		country_event = equestria.11
+	}
 
-# }
-# shared_focus = {
-# 	id = support_harmony_in_OLE
-# 	icon = GFX_goal_crown_and_swords
-# 	cost = 7
-# 	ai_will_do = { factor = 10 }
-# 	x = 7
-# 	y = 4
-# 	prerequisite = {
-# 		focus = shelter_velvet
-# 	}
-# 	bypass = {
-# 		OR = {
-# 			any_country_with_original_tag = {
-# 				original_tag_to_check = OLE
-# 				has_government = democratic
-# 			}
-# 			CCN = { has_country_flag = ccn_ole_union_accepted }
-# 		}
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		any_country_with_original_tag = {
-# 			original_tag_to_check = OLE
-# 			NOT = { has_government = democratic }
-# 		}
-# 		is_subject = no
-# 	}
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus support_harmony_in_OLE"
-# 		OLE = {
-# 			add_ideas = equestrian_influence
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = support_harmony_in_OLE
+	icon = GFX_goal_crown_and_swords
+	cost = 7
+	ai_will_do = { factor = 10 }
+	x = 7
+	y = 4
+	prerequisite = {
+		focus = shelter_velvet
+	}
+	bypass = {
+		OR = {
+			any_country_with_original_tag = {
+				original_tag_to_check = OLE
+				has_government = democratic
+			}
+			CCN = { has_country_flag = ccn_ole_union_accepted }
+		}
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		any_country_with_original_tag = {
+			original_tag_to_check = OLE
+			NOT = { has_government = democratic }
+		}
+		is_subject = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus support_harmony_in_OLE"
+		OLE = {
+			add_ideas = equestrian_influence
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
 
-# }
-# shared_focus = {
-# 	id = stage_coup
-# 	icon = GFX_goal_kill_johan
-# 	cost = 10.00
-# 	ai_will_do = { factor = 10 }
-# 	mutually_exclusive = { focus = do_not_influence }
-# 	prerequisite = {
-# 		focus = support_harmony_in_OLE
-# 	}
-# 	bypass = {
-# 		OR = {
-# 			any_country_with_original_tag = {
-# 				original_tag_to_check = OLE
-# 				has_government = democratic
-# 			}
-# 			CCN = { has_country_flag = ccn_ole_union_accepted }
-# 		}
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		OLE = {
-# 			exists = yes
-# 			is_subject = no
-# 			NOT = { has_government = democratic }
-# 			has_war = no
-# 			democratic > 0.15
-# 		}
-# 		is_subject = no
-# 	}
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus stage_coup"
-# 		OLE = {
-# 			country_event = { id = olenia.510 days = 2 }
-# 		}
-# 		hidden_effect = { modify_country_flag = { flag = celestia_evil_meter value = 2 } }
-# 	}
-# 	x = 6
-# 	y = 5
+}
+shared_focus = {
+	id = stage_coup
+	icon = GFX_goal_kill_johan
+	cost = 10.00
+	ai_will_do = { factor = 10 }
+	mutually_exclusive = { focus = do_not_influence }
+	prerequisite = {
+		focus = support_harmony_in_OLE
+	}
+	bypass = {
+		OR = {
+			any_country_with_original_tag = {
+				original_tag_to_check = OLE
+				has_government = democratic
+			}
+			CCN = { has_country_flag = ccn_ole_union_accepted }
+		}
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		OLE = {
+			exists = yes
+			is_subject = no
+			NOT = { has_government = democratic }
+			has_war = no
+			democratic > 0.15
+		}
+		is_subject = no
+	}
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus stage_coup"
+		OLE = {
+			country_event = { id = olenia.510 days = 2 }
+		}
+		hidden_effect = { modify_country_flag = { flag = celestia_evil_meter value = 2 } }
+	}
+	x = 6
+	y = 5
 
-# }
-# shared_focus = {
-# 	id = do_not_influence
-# 	icon = GFX_goal_continuous_def_against_influence
-# 	cost = 10.00
-# 	ai_will_do = { 
-# 		factor = 5
-# 		modifier = {
-# 			factor = 0
-# 			OLE = {
-# 				exists = yes
-# 				NOT = { has_government = democratic }
-# 				has_war = no
-# 				NOT = { democratic > 0.15 }
-# 			}
-# 		}
-# 	}
-# 	mutually_exclusive = { focus = stage_coup }
-# 	prerequisite = {
-# 		focus = support_harmony_in_OLE
-# 	}
-# 	bypass = {
-# 		OLE  = { has_government = democratic }
-# 	}
-# 	available = {
-# 		has_war = no
-# 		has_government = democratic
-# 		is_subject = no
-# 	}
-# 	x = 8
-# 	y = 5
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus do_not_influence"
-# 		add_political_power = 100
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL }
-# }
-# shared_focus = {
-# 	id = intervene_in_civil_war
-# 	icon = GFX_focus_secret_rearmament
-# 	cost = 5.00
-# 	ai_will_do = {
-# 		factor = 5
-# 		modifier = {
-# 			factor = 0
-# 			OLE = {
-# 				has_government = democratic
-# 				has_war_with = CHN
-# 			}
-# 		}
-# 	}
-# 	prerequisite = {
-# 		focus = stage_coup
-# 		focus = do_not_influence
-# 	}
-# 	bypass = {
-# 		#has_country_flag = EQS_helped_ole
-# 	}
-# 	available = {
-# 		has_government = democratic
-# 		is_subject = no
-# 		any_country_with_original_tag = {
-# 			original_tag_to_check = OLE
-# 			has_government = democratic
-# 			has_civil_war = yes
-# 		}
-# 	}
-# 	mutually_exclusive = { focus = material_support }
-# 	x = 5
-# 	y = 6
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus intervene_in_civil_war"
-# 		country_event = { id = olenia.511 days = 1}
-# 	}
-# }
-# shared_focus = {
-# 	id = material_support
-# 	icon = GFX_goal_national_arsenal
-# 	cost = 5.00
-# 	ai_will_do = { factor = 10 }
-# 	mutually_exclusive = { focus = intervene_in_civil_war }
-# 	bypass = {
-# 		has_country_flag = EQS_helped_ole
-# 	}
-# 	available = {
-# 		has_equipment = { infantry_equipment > 500 }
-# 		has_government = democratic
-# 		is_subject = no
-# 		any_country_with_original_tag = {
-# 			original_tag_to_check = OLE
-# 			has_government = democratic
-# 			has_civil_war = yes
-# 		}
-# 	}
-# 	prerequisite = {
-# 		focus = do_not_influence
-# 		focus = stage_coup
-# 	}
-# 	x = 7
-# 	y = 6
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus material_support"
-# 		send_equipment = {
-# 			equipment = infantry_equipment
-# 			amount = 500
-# 			target = OLE
-# 		}
-# 		hidden_effect = {
-# 			OLE = {
-# 				country_event = { id = olenia.504 days = 4 }
-# 			}
-# 		}
-# 		every_country = {
-# 			limit = {
-# 				original_tag = OLE
-# 				NOT = { has_government = democratic }
-# 			}
-# 			add_opinion_modifier = { target = ROOT modifier = OLE_civil_war_support_enemies }
-# 		}
-# 	}
+}
+shared_focus = {
+	id = do_not_influence
+	icon = GFX_goal_continuous_def_against_influence
+	cost = 10.00
+	ai_will_do = { 
+		factor = 5
+		modifier = {
+			factor = 0
+			OLE = {
+				exists = yes
+				NOT = { has_government = democratic }
+				has_war = no
+				NOT = { democratic > 0.15 }
+			}
+		}
+	}
+	mutually_exclusive = { focus = stage_coup }
+	prerequisite = {
+		focus = support_harmony_in_OLE
+	}
+	bypass = {
+		OLE  = { has_government = democratic }
+	}
+	available = {
+		has_war = no
+		has_government = democratic
+		is_subject = no
+	}
+	x = 8
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus do_not_influence"
+		add_political_power = 100
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = intervene_in_civil_war
+	icon = GFX_focus_secret_rearmament
+	cost = 5.00
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 0
+			OLE = {
+				has_government = democratic
+				has_war_with = CHN
+			}
+		}
+	}
+	prerequisite = {
+		focus = stage_coup
+		focus = do_not_influence
+	}
+	bypass = {
+		#has_country_flag = EQS_helped_ole
+	}
+	available = {
+		has_government = democratic
+		is_subject = no
+		any_country_with_original_tag = {
+			original_tag_to_check = OLE
+			has_government = democratic
+			has_civil_war = yes
+		}
+	}
+	mutually_exclusive = { focus = material_support }
+	x = 5
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus intervene_in_civil_war"
+		country_event = { id = olenia.511 days = 1}
+	}
+}
+shared_focus = {
+	id = material_support
+	icon = GFX_goal_national_arsenal
+	cost = 5.00
+	ai_will_do = { factor = 10 }
+	mutually_exclusive = { focus = intervene_in_civil_war }
+	bypass = {
+		has_country_flag = EQS_helped_ole
+	}
+	available = {
+		has_equipment = { infantry_equipment > 500 }
+		has_government = democratic
+		is_subject = no
+		any_country_with_original_tag = {
+			original_tag_to_check = OLE
+			has_government = democratic
+			has_civil_war = yes
+		}
+	}
+	prerequisite = {
+		focus = do_not_influence
+		focus = stage_coup
+	}
+	x = 7
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus material_support"
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 500
+			target = OLE
+		}
+		hidden_effect = {
+			OLE = {
+				country_event = { id = olenia.504 days = 4 }
+			}
+		}
+		every_country = {
+			limit = {
+				original_tag = OLE
+				NOT = { has_government = democratic }
+			}
+			add_opinion_modifier = { target = ROOT modifier = OLE_civil_war_support_enemies }
+		}
+	}
 
-# }
-# shared_focus = {
-# 	id = harmony_lean
-# 	icon = GFX_focus_generic_support_the_left_right
-# 	cost = 4
-# 	ai_will_do = { factor = 10 }
-# 	prerequisite = {
-# 		focus = send_envoy_yak
-# 	}
-# 	available = {
-# 		country_exists = YAK
-# 		YAK = { 
-# 			OR = {
-# 				is_subject = no
-# 				is_subject_of = ROOT
-# 			}
-# 		}
-# 		has_government = democratic
-# 		is_subject = no
-# 	}
-# 	x = 5
-# 	y = 4
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus harmony_lean"
-# 		YAK = { add_ideas = equestrian_influence }
-# 	}
-# }
-# shared_focus = {
-# 	id = pinkie_pie
-# 	icon = GFX_goal_embassy_yakistan
-# 	cost = 4
-# 	ai_will_do = { factor = 10 }
-# 	prerequisite = {
-# 		focus = harmony_lean
-# 	}
-# 	available = {
-# 		country_exists = YAK
-# 		YAK = {
-# 			has_government = democratic
-# 			OR = {
-# 				is_subject = no
-# 				is_subject_of = ROOT
-# 			}
-# 		}
-# 		JAK = {
-# 			exists = no
-# 		}
-# 		has_government = democratic
-# 		is_subject = no
-# 	}
-# 	x = 4
-# 	y = 5
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus pinkie_pie"
-# 		add_political_power = 50
-# 		add_stability = 0.05
-# 		YAK = { add_opinion_modifier = { target = ROOT modifier = equestrian_embassy } }
-# 		custom_effect_tooltip = invite_YAK_to_war
-# 	}
-# 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = harmony_lean
+	icon = GFX_focus_generic_support_the_left_right
+	cost = 4
+	ai_will_do = { factor = 10 }
+	prerequisite = {
+		focus = send_envoy_yak
+	}
+	available = {
+		country_exists = YAK
+		YAK = { 
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+		}
+		has_government = democratic
+		is_subject = no
+	}
+	x = 5
+	y = 4
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus harmony_lean"
+		YAK = { add_ideas = equestrian_influence }
+	}
+}
+shared_focus = {
+	id = pinkie_pie
+	icon = GFX_goal_embassy_yakistan
+	cost = 4
+	ai_will_do = { factor = 10 }
+	prerequisite = {
+		focus = harmony_lean
+	}
+	available = {
+		country_exists = YAK
+		YAK = {
+			has_government = democratic
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+		}
+		JAK = {
+			exists = no
+		}
+		has_government = democratic
+		is_subject = no
+	}
+	x = 4
+	y = 5
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus pinkie_pie"
+		add_political_power = 50
+		add_stability = 0.05
+		YAK = { add_opinion_modifier = { target = ROOT modifier = equestrian_embassy } }
+		custom_effect_tooltip = invite_YAK_to_war
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 
-# }
-# shared_focus = {
-# 	id = guarantee_independenceYAK
-# 	icon = GFX_focus_generic_little_entente
-# 	cost = 1
-# 	ai_will_do = { factor = 10 }
-# 	prerequisite = {
-# 		focus = pinkie_pie
-# 	}
-# 	available = {
-# 		NOT = {
-# 			country_exists = JAK
-# 		}
-# 		country_exists = YAK
-# 		YAK = {
-# 			has_government = democratic
-# 			OR = {
-# 				is_subject = no
-# 				is_subject_of = ROOT
-# 			}
-# 		}
-# 		JAK = {
-# 			exists = no
-# 		}
-# 		has_government = democratic
-# 		is_subject = no
-# 	}
-# 	x = 3
-# 	y = 6
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus guarantee_independenceYAK"
-# 		if = {
-# 			limit = {
-# 				YAK = { is_subject = no }
-# 			}
-# 			give_guarantee = YAK
-# 		}
-# 		add_political_power = 50
-# 		YAK = {
-# 			add_stability = 0.1
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-# }
-# shared_focus = {
-# 	id = puppet_stateOLE
-# 	icon = GFX_goal_ole_velvet
-# 	cost = 3
-# 	ai_will_do = { factor = 15 }
-# 	prerequisite = {
-# 		focus = stage_coup
-# 		focus = intervene_in_civil_war
-# 		focus = material_support
-# 	}
-# 	bypass = { OLE  = { has_civil_war = no OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
-# 	available = {
-# 		has_government = democratic
-# 		OLE  = {
-# 			exists = yes
-# 			has_government = democratic
-# 			has_war = no
-# 		}
-# 		is_subject = no
-# 	}
-# 	x = 6
-# 	y = 7
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus puppet_stateOLE"
-# 		if = {
-# 			limit = {
-# 				OLE = { has_country_flag = OLE_EQS_coup }
-# 			}
-# 			OLE  = { country_event = { id = olenia.512 days = 1 } }
-# 		}
-# 		else = {
-# 			give_guarantee = OLE
-# 		}
-# 	}
-# }
+}
+shared_focus = {
+	id = guarantee_independenceYAK
+	icon = GFX_focus_generic_little_entente
+	cost = 1
+	ai_will_do = { factor = 10 }
+	prerequisite = {
+		focus = pinkie_pie
+	}
+	available = {
+		NOT = {
+			country_exists = JAK
+		}
+		country_exists = YAK
+		YAK = {
+			has_government = democratic
+			OR = {
+				is_subject = no
+				is_subject_of = ROOT
+			}
+		}
+		JAK = {
+			exists = no
+		}
+		has_government = democratic
+		is_subject = no
+	}
+	x = 3
+	y = 6
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus guarantee_independenceYAK"
+		if = {
+			limit = {
+				YAK = { is_subject = no }
+			}
+			give_guarantee = YAK
+		}
+		add_political_power = 50
+		YAK = {
+			add_stability = 0.1
+		}
+	}
+	search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+}
+shared_focus = {
+	id = puppet_stateOLE
+	icon = GFX_goal_ole_velvet
+	cost = 3
+	ai_will_do = { factor = 15 }
+	prerequisite = {
+		focus = stage_coup
+		focus = intervene_in_civil_war
+		focus = material_support
+	}
+	bypass = { OLE  = { has_civil_war = no OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
+	available = {
+		has_government = democratic
+		OLE  = {
+			exists = yes
+			has_government = democratic
+			has_war = no
+		}
+		is_subject = no
+	}
+	x = 6
+	y = 7
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus puppet_stateOLE"
+		if = {
+			limit = {
+				OLE = { has_country_flag = OLE_EQS_coup }
+			}
+			OLE  = { country_event = { id = olenia.512 days = 1 } }
+		}
+		else = {
+			give_guarantee = OLE
+		}
+	}
+}
 ##############################################################
 ################### INTERNAL AFFAIRS #############################
 ##################################################################
 
-# shared_focus = {
-# 	id = increase_presense_inCRY
-# 	icon = GFX_goal_crystal_empire
-# 	cost = 10.00
-# 	ai_will_do = { factor = 40 }
-# 	bypass = {
-# 		OR = {
-# 			NOT = { country_exists = CRY }
-# 			has_war_with = CRY
-# 		}
-# 	}
-# 	available = {
-# 		eqs_not_has_civil_war = yes
-# 		CRY = { 
-# 			OR = {
-# 				is_subject_of = ROOT
-# 				is_in_faction_with = ROOT
-# 			}
-# 		}
-# 	}
-# 	prerequisite = {
-# 		focus = examine_the_situation
-# 	}
-# 	allow_branch = {
-# 		NOT = { is_EQS_SOL = yes }
-# 	}
-# 	x = 12
-# 	y = 2
-# 	completion_reward = {
-# 		log = "[GetDateText]: [Root.GetName]: Focus increase_presense_inCRY"
-# 		if = {
-# 			limit = {
-# 				has_dlc = "Together for Victory"
-# 				CRY = { is_subject_of = ROOT }
-# 			}
-# 			add_political_power = 100
-# 			CRY = { add_autonomy_ratio = { value = -0.03 } }
-# 		}
-# 		else = {
-# 			add_political_power = 100
-# 			CRY = { add_stability = 0.09 }
-# 		}
-# 		if = {
-# 			limit = { is_historical_focus_on = no CRY = { is_ai = yes } }
-# 			custom_effect_tooltip = increase_presense_inCRY_tt
-# 		}
-# 	}
-# 	search_filters = { FOCUS_FILTER_POLITICAL }
-# }
+shared_focus = {
+	id = increase_presense_inCRY
+	icon = GFX_goal_crystal_empire
+	cost = 10.00
+	allow_branch = {
+		always = no
+	}
+	ai_will_do = { factor = 40 }
+	bypass = {
+		OR = {
+			NOT = { country_exists = CRY }
+			has_war_with = CRY
+		}
+	}
+	available = {
+		eqs_not_has_civil_war = yes
+		CRY = { 
+			OR = {
+				is_subject_of = ROOT
+				is_in_faction_with = ROOT
+			}
+		}
+	}
+	prerequisite = {
+		focus = examine_the_situation
+	}
+	allow_branch = {
+		NOT = { is_EQS_SOL = yes }
+	}
+	x = 12
+	y = 2
+	completion_reward = {
+		log = "[GetDateText]: [Root.GetName]: Focus increase_presense_inCRY"
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+				CRY = { is_subject_of = ROOT }
+			}
+			add_political_power = 100
+			CRY = { add_autonomy_ratio = { value = -0.03 } }
+		}
+		else = {
+			add_political_power = 100
+			CRY = { add_stability = 0.09 }
+		}
+		if = {
+			limit = { is_historical_focus_on = no CRY = { is_ai = yes } }
+			custom_effect_tooltip = increase_presense_inCRY_tt
+		}
+	}
+	search_filters = { FOCUS_FILTER_POLITICAL }
+}
 
 shared_focus = {
 	id = EQS_Civil_War_End
@@ -4442,7 +4434,7 @@ shared_focus = {
 				province = 6995
 			}
 		}
-		152 = {
+		130 = {
 			add_province_modifier = {
 				static_modifiers = { EoF_prepared_defences }
 				province = {

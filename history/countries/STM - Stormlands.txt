@@ -275,20 +275,20 @@ set_war_support = 0.79
 
 add_manpower = 47500
 
-declare_war_on = {
-	target = SLC
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = SLC
+# 	type = civil_war
+# }
 
-declare_war_on = {
-	target = THU
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = THU
+# 	type = civil_war
+# }
 
-declare_war_on = {
-	target = GYZ
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = GYZ
+# 	type = civil_war
+# }
 HIP = { # must be here instead of HIP history file because of load order problem
 	add_equipment_to_stockpile = {
 		type = infantry_equipment_0

@@ -69,7 +69,7 @@ NDefines.NMilitary.PEN_VS_AVERAGE = 0.2
 
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.35		--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5.00		-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0		-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0	-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.

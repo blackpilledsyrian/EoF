@@ -60,14 +60,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			Orientation = center
 		}
 
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
-		}
-
 		instantTextBoxType = {
 			name = "text"
 			position = {  x= 120 y = -195 }
@@ -138,14 +130,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_18mbs"
 			Orientation = center
-		}
-
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -220,14 +204,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			Orientation = center
 		}
 
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
-		}
-
 		instantTextBoxType = {
 			name = "text"
 			position = {  x= 120 y = -195 }
@@ -298,14 +274,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			quadTextureSprite ="GFX_button_221x34"
 			buttonFont = "hoi_18mbs"
 			Orientation = center
-		}
-
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
 		}
 
 		instantTextBoxType = {
@@ -380,14 +348,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 			Orientation = center
 		}
 
-		iconType = {
-			name ="underlay"
-			spriteType = "GFX_superevent_text_underlay"
-			position = { x= 30 y = -200 }
-			Orientation = lower_left
-			alwaystransparent = yes
-		}
-
 		instantTextBoxType = {
 			name = "text"
 			position = {  x= 120 y = -195 }
@@ -458,14 +418,6 @@ guiTypes = { ######## THE DESCRIPTION AND THE TITLE ARE IN THE LOCALISATION FILE
 				quadTextureSprite ="GFX_button_221x34"
 				buttonFont = "hoi_18mbs"
 				Orientation = center
-			}
-	
-			iconType = {
-				name ="underlay"
-				spriteType = "GFX_superevent_text_underlay"
-				position = { x= 30 y = -200 }
-				Orientation = lower_left
-				alwaystransparent = yes
 			}
 	
 			instantTextBoxType = {

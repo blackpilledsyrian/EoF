@@ -278,14 +278,14 @@ actually_fix_weapon_techs = yes
 
 set_country_flag = proper_science_base_unlocked
 
-declare_war_on = {
-	target = SDS
-	type = civil_war
-}
-declare_war_on = {
-	target = SDL
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = SDS
+# 	type = civil_war
+# }
+# declare_war_on = {
+# 	target = SDL
+# 	type = civil_war
+# }
 
 add_ideas = {
 	proper_science_base

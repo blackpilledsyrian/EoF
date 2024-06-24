@@ -58,10 +58,10 @@ set_stability = 0.65
 set_war_support = 0.5
 set_country_flag = monarchist_repressions
 
-declare_war_on = {
-	target = BRF
-	type = civil_war
-}
+# declare_war_on = {
+# 	target = BRF
+# 	type = civil_war
+# }
 
 recruit_character = GRW_Theresa
 recruit_character = GRW_dorian_of_brodfeld

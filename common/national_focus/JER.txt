@@ -123,112 +123,7 @@ focus_tree = {
 	shared_focus = JER_army_reforms
 	shared_focus = JER_the_griffonian_dream
 }
-#EoF Changes
-shared_focus = {
-	id = EoF_begin_first_plan
-	icon = GFX_goal_JER_rapid_reconstruction
-	relative_position_id = JER_fight_for_freedom
-	x = 6
-	y = 0
-	cost = 3
-	completion_reward = {
-		add_timed_idea = {
-			idea = EoF_JER_first_plan
-			days = 1095
-		}
-	}
-}
-shared_focus = {
-	id = EoF_begin_second_plan
-	icon = GFX_goal_JER_armoury_of_the_revolution
-	prerequisite = { focus = EoF_begin_first_plan }
-	relative_position_id = EoF_begin_first_plan
-	x = -1
-	y = 1
-	cost = 3
-	available = {
-		NOT = {
-			has_idea = EoF_JER_first_plan
-		}
-	}
-	completion_reward = {
-		add_timed_idea = {
-			idea = EoF_JER_second_plan
-			days = 1095
-		}
-	}
-}
-shared_focus = {
-	id = EoF_invade_equestria
-	icon = GFX_goal_JER_liberation_ships
-	prerequisite = { focus = EoF_begin_first_plan }
-	relative_position_id = EoF_begin_first_plan
-	x = 1
-	y = 1
-	cost = 4.3
-	available = {
-		date > 1009.05.01
-	}
-	completion_reward = {
-		activate_mission_tooltip = EoF_JER_invade_equestria_mission
-		add_timed_idea = {
-			idea = EoF_invasion_preparation
-			days = 365
-		}
-		hidden_effect = {
-			news_event = EoF.news.3
-			add_threat = 20
-		}
-	}
-}
-shared_focus = {
-	id = EoF_eastern_domination
-	icon = GFX_goal_JER_securing_greater_aquileia
-	prerequisite = { focus = EoF_invade_equestria }
-	relative_position_id = EoF_invade_equestria
-	x = -1
-	y = 1
-	cost = 5
-	available = {
-		controls_state = 208
-		controls_state = 390
-		controls_state = 362
-	}
-	completion_reward = {
-		swap_ideas = {
-			remove_idea = EoF_griffonian_contender
-			add_idea = EoF_griffonian_dominator
-		}
-		unlock_decision_tooltip = EoF_JER_form_domination
-	}
-}
-shared_focus = {
-	id = EoF_invade_wingbardy
-	icon = GFX_goal_JER_strike_at_karthin
-	prerequisite = { focus = EoF_invade_equestria }
-	relative_position_id = EoF_invade_equestria
-	x = 1
-	y = 1
-	cost = 5
-	available = {
-		has_war_with = EQS
-	}
-	completion_reward = {
-		activate_mission_tooltip = EoF_JER_invade_wingbardy_mission
-		WNG = {
-			remove_ideas = EoF_WNG_treaty
-			add_timed_idea = {
-				idea = EoF_WNG_militarization
-				days = 365
-			}
-		}
-		hidden_effect = {
-			news_event = EoF.news.4
-			set_global_flag = EoF_tarrin_war_threat
-		}
-	}
-}
-#EoF Changes
+
 ### Monarchism ###
 	shared_focus = {
 		id = JER_state_of_aquileia
@@ -16946,3 +16841,110 @@ shared_focus = {
 			}
 		}
 	}
+
+#EoF Changes
+shared_focus = {
+	id = EoF_begin_first_plan
+	icon = GFX_goal_JER_rapid_reconstruction
+	relative_position_id = JER_fight_for_freedom
+	x = 6
+	y = 0
+	cost = 3
+	completion_reward = {
+		add_timed_idea = {
+			idea = EoF_JER_first_plan
+			days = 1095
+		}
+	}
+}
+shared_focus = {
+	id = EoF_begin_second_plan
+	icon = GFX_goal_JER_armoury_of_the_revolution
+	prerequisite = { focus = EoF_begin_first_plan }
+	relative_position_id = EoF_begin_first_plan
+	x = -1
+	y = 1
+	cost = 3
+	available = {
+		NOT = {
+			has_idea = EoF_JER_first_plan
+		}
+	}
+	completion_reward = {
+		add_timed_idea = {
+			idea = EoF_JER_second_plan
+			days = 1095
+		}
+	}
+}
+shared_focus = {
+	id = EoF_invade_equestria
+	icon = GFX_goal_JER_liberation_ships
+	prerequisite = { focus = EoF_begin_first_plan }
+	relative_position_id = EoF_begin_first_plan
+	x = 1
+	y = 1
+	cost = 4.3
+	available = {
+		date > 1009.05.01
+	}
+	completion_reward = {
+		activate_mission_tooltip = EoF_JER_invade_equestria_mission
+		add_timed_idea = {
+			idea = EoF_invasion_preparation
+			days = 365
+		}
+		hidden_effect = {
+			news_event = EoF.news.3
+			add_threat = 20
+		}
+	}
+}
+shared_focus = {
+	id = EoF_eastern_domination
+	icon = GFX_goal_JER_securing_greater_aquileia
+	prerequisite = { focus = EoF_invade_equestria }
+	relative_position_id = EoF_invade_equestria
+	x = -1
+	y = 1
+	cost = 5
+	available = {
+		controls_state = 208
+		controls_state = 390
+		controls_state = 362
+	}
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = EoF_griffonian_contender
+			add_idea = EoF_griffonian_dominator
+		}
+		unlock_decision_tooltip = EoF_JER_form_domination
+	}
+}
+shared_focus = {
+	id = EoF_invade_wingbardy
+	icon = GFX_goal_JER_strike_at_karthin
+	prerequisite = { focus = EoF_invade_equestria }
+	relative_position_id = EoF_invade_equestria
+	x = 1
+	y = 1
+	cost = 5
+	available = {
+		has_war_with = EQS
+	}
+	completion_reward = {
+		activate_mission_tooltip = EoF_JER_invade_wingbardy_mission
+		WNG = {
+			remove_ideas = EoF_WNG_treaty
+			add_timed_idea = {
+				idea = EoF_WNG_militarization
+				days = 365
+			}
+		}
+		hidden_effect = {
+			news_event = EoF.news.4
+			set_global_flag = EoF_tarrin_war_threat
+		}
+	}
+}
+#EoF Changes

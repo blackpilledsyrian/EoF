@@ -342,21 +342,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/rocket.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_EMI_tank_command_radio_1"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_radio_1.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_command_radio_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_radio_2.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_EMI_tank_command_radio_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_radio_3.dds"
-		legacy_lazy_load = no
-	}
 	###Technologies###
 	spriteType = {
 		name = "GFX_technology_artillery_folder_small_branch_item_bg"
@@ -496,11 +481,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/EoF_academy.dds"
 	}
 	###Units###
-	spriteType = { 
-		name = "GFX_group_extra_icon"
-		textureFile = "gfx/interface/counters/divisions_large/"
-		noOfFrames = 2 
-	}
 	spriteType = {
 		name = "GFX_unit_heavy_artillery_brigade_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_art_icon.dds"
@@ -658,70 +638,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_reinforced_modern_armor_icon_small"
 		texturefile = "gfx/texticons/unit_reinforced_modern_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_light_armor_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds" 
-		noOfFrames = 2
-	}
-	spriteType = { 
-		name = "GFX_unit_command_light_armor_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_light_armor_icon_small"
-		texturefile = "gfx/texticons/unit_light_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_medium_armor_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds" 
-		noOfFrames = 2
-	}
-	spriteType = { 
-		name = "GFX_unit_command_medium_armor_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_medium_tank_icon.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_medium_armor_icon_small"
-		texturefile = "gfx/texticons/unit_medium_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_heavy_armor_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_armor_icon.dds" 
-		noOfFrames = 2
-	}
-	spriteType = { 
-		name = "GFX_unit_command_heavy_armor_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_armor_icon.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_heavy_armor_icon_small"
-		texturefile = "gfx/texticons/unit_heavy_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_modern_armor_icon_medium"
-		textureFile = "gfx/interface/counters/divisions_large/unit_modern_armor_icon.dds" 
-		noOfFrames = 2
-	}
-	spriteType = { 
-		name = "GFX_unit_command_modern_armor_icon_medium_white"
-		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_modern_armor_icon.dds"
-		noOfFrames = 2
-	}
-	spriteType = {
-		name = "GFX_unit_command_modern_armor_icon_small"
-		texturefile = "gfx/texticons/unit_modern_armor_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}

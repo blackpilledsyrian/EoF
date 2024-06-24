@@ -97,33 +97,33 @@ set_variable = {
 	value = 0.15
 }
 
-487 = {
-	#force_enable_resistance = FRN
-	start_resistance = JES 
-	add_compliance = 5
-	add_resistance = 20
-	add_dynamic_modifier = {
-		modifier = FRN_tarrin_resistance_modifier
-	}
-}
-652 = {
-	#force_enable_resistance = FRN
-	start_resistance = JES 
-	add_compliance = 5
-	add_resistance = 20
-	add_dynamic_modifier = {
-		modifier = FRN_tarrin_resistance_modifier
-	}
-}
-521 = {
-	#force_enable_resistance = FRN
-	start_resistance = JES 
-	add_compliance = 5
-	add_resistance = 20
-	add_dynamic_modifier = {
-		modifier = FRN_tarrin_resistance_modifier
-	}
-}
+# 487 = {
+# 	#force_enable_resistance = FRN
+# 	start_resistance = JES 
+# 	add_compliance = 5
+# 	add_resistance = 20
+# 	add_dynamic_modifier = {
+# 		modifier = FRN_tarrin_resistance_modifier
+# 	}
+# }
+# 652 = {
+# 	#force_enable_resistance = FRN
+# 	start_resistance = JES 
+# 	add_compliance = 5
+# 	add_resistance = 20
+# 	add_dynamic_modifier = {
+# 		modifier = FRN_tarrin_resistance_modifier
+# 	}
+# }
+# 521 = {
+# 	#force_enable_resistance = FRN
+# 	start_resistance = JES 
+# 	add_compliance = 5
+# 	add_resistance = 20
+# 	add_dynamic_modifier = {
+# 		modifier = FRN_tarrin_resistance_modifier
+# 	}
+# }
 
 recruit_character = FRN_francis_ix_martlewing
 recruit_character = FRN_gherita_zarfatti

@@ -23,7 +23,7 @@ particle={
 			file="gfx/particles/EoF/lava_02.dds"
 			x=1
 			y=1
-			shader="ParticleAdditive" #"ParticleAlphaBlend"
+			shader="ParticleAdditive"
 		}
 		color={
 			x=255
@@ -53,9 +53,8 @@ particle={
 		rotation={ 0 180 }
 		rotation_speed={ 25 8 }
 		
-		force = gravity,explosion_stop
-		#force = explosion_side
-		force = explosion_point,explosion
+		force = gravity
+		force = explosion_point
 		force = explosion_up
 	}
 	
@@ -112,9 +111,8 @@ particle={
 		rotation={ 0	180 }
 		rotation_speed={ 25	8 }
 		
-		force = gravity,explosion_stop
-		#force = explosion_side
-		force = explosion_point_particle,explosion
+		force = gravity
+		force = explosion_point_particle
 		force = explosion_up_particle
 	}
 	

@@ -70,7 +70,6 @@ technologies = {
 		}
 
 		enable_equipment_modules = { 
-			tank_command_radio_1
 			tank_radio_1
 			radio_navigation_1
 		}
@@ -149,7 +148,6 @@ technologies = {
 		start_year = 1009
 		enable_equipment_modules = { 
 			ship_radar_1
-			tank_command_radio_2
 			tank_radio_2
 			radio_navigation_2
 		}
@@ -218,7 +216,6 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_radar_3
 			air_air_radar_1
-			tank_command_radio_3
 			tank_radio_3
 		}
 
@@ -879,10 +876,6 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1013
-		# folder = {
-		# 	name = electronics_folder
-		# 	position = { x = 0 y = 16 }
-		# }
 		
 		ai_will_do = {
 			factor = 0.75
@@ -913,10 +906,6 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1015
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 20 }
-		}
 		
 		ai_will_do = {
 			factor = 0.75
@@ -947,10 +936,6 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1018
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = 24 }
-		}
 		
 		ai_will_do = {
 			factor = 0.75

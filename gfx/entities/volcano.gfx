@@ -1,15 +1,4 @@
 objectTypes = {
-
-
-	###if I name entity below corectly it bugs the animation... it is supposed to be volcanoparticle pdxmesh define 
-
-	pdxmesh = {
-		name = "stupid_broken_shit_mesh"
-		file = "gfx/models/units/EoF/stupid_shit.mesh"
-		scale = 1
-		
-		animation = { id = "idle"  			type = "retarded_shit_idle_anim" }
-	}
 	
 	pdxmesh = {
 		name = "volcano_lava_mesh"

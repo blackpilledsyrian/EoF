@@ -219,9 +219,9 @@ EQS_celestia_evil_meter_category = {
 				has_completed_focus = War_Plan
 			}
 			NOT = {
-				has_idea = EoF_EQS_war_plan_1
-				has_idea = EoF_EQS_war_plan_2
-				has_idea = EoF_EQS_war_plan_3
+				has_idea = EoF_EQS_warplan_1
+				has_idea = EoF_EQS_warplan_2
+				has_idea = EoF_EQS_warplan_3
 			}
 		}
 		available = {

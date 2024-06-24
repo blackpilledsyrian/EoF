@@ -17,8 +17,6 @@ scripted_gui = {
 
 			observer_click = { owner = {
 					set_temp_variable = { ROOT.marks = this }
-					PHI = { change_tag_from = var:marks }
-
 				}
 
 			}
@@ -130,11 +128,6 @@ scripted_gui = {
 						if={limit={check_variable= { Root.selected_cheat=20} } air_experience = 50 }
 						if={limit={check_variable= { Root.selected_cheat=21} } navy_experience = 50 }
 						} }
-				GER = {
-
-					set_variable= { this.target_country = Root.target_country }
-					set_variable= { this.selected_cheat = Root.selected_cheat }
-					news_event= { id = horsttool.1} }
 				clear_variable = ROOT.taker
 
 			}
