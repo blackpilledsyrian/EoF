@@ -63,7 +63,7 @@ on_actions = {
 			}
 		}
 	}
-	on_daily = {
+	on_daily_HLR = {
 		effect = {
 			for_each_scope_loop = {
 				array = global.EoF_countries
@@ -74,8 +74,8 @@ on_actions = {
 								division_has_battalion_in_template = light_armor #Headquarters
 								OWNER = {
 									OR = {
-										tag = ROOT
-										is_in_faction_with = ROOT
+										tag = PREV.PREV.PREV
+										is_in_faction_with = PREV.PREV.PREV
 									}
 								}
 							}
@@ -85,12 +85,12 @@ on_actions = {
 						limit = { 
 							OWNER = {
 								OR = {
-									tag = ROOT
-									is_in_faction_with = ROOT
+									tag = PREV.PREV
+									is_in_faction_with = PREV.PREV
 								}
 							}
 						}
-						set_unit_organization = 0.95
+						set_unit_organization = 0.9
 					}
 				}
 			}
