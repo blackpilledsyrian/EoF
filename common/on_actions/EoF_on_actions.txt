@@ -1,6 +1,103 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			add_to_array = {
+				array = global.EoF_countries
+				value = EQS
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = CRY
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = STG
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = EQC
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = HIP
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = WNG
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = MCW
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = CHN
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = OLE
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = PLB
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = GRF
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = FAT
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = GRI
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = JER
+			}
+			add_to_array = {
+				array = global.EoF_countries
+				value = ABY
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			for_each_scope_loop = {
+				array = global.EoF_countries
+				every_controlled_state = {
+					limit = {
+						NOT = {
+							any_state_division = {
+								division_has_battalion_in_template = light_armor #Headquarters
+								OWNER = {
+									OR = {
+										tag = ROOT
+										is_in_faction_with = ROOT
+									}
+								}
+							}
+						}
+					}
+					every_state_division = {
+						limit = { 
+							OWNER = {
+								OR = {
+									tag = ROOT
+									is_in_faction_with = ROOT
+								}
+							}
+						}
+						set_unit_organization = 0.95
+					}
+				}
+			}
+		}
+	}
+	on_startup = {
+		effect = {
 			HLR = {
 				country_event = { id = EoF.1 days = 1095 }
 				# country_event = { id = EoF.8 days = 12 }
