@@ -270,19 +270,6 @@ ideas = {
 					build_cost_ic = -0.05
 					instant = yes
 				}
-				small_plane_cas_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				medium_plane_fighter_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-				medium_plane_airframe = {
-					build_cost_ic = -0.05
-					instant = yes
-				}
-
 			}
 		}
 		EoF_EQS_warplan_2 = {
@@ -291,14 +278,14 @@ ideas = {
 			modifier = {
 				conscription = 0.03
 				production_speed_arms_factory_factor = 0.1
-				production_speed_air_base_factor = 0.25
-				production_speed_naval_base_factor = 0.25
-				production_speed_bunker_factor = 0.25
-				production_speed_coastal_bunker_factor = 0.25
-				production_speed_anti_air_building_factor = 0.25
-				production_speed_radar_station_factor = 0.25
+				production_speed_air_base_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				production_speed_coastal_bunker_factor = 0.1
+				production_speed_anti_air_building_factor = 0.1
+				production_speed_radar_station_factor = 0.1
 				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = -0.5
+				industrial_capacity_dockyard = -0.3
 			}
 		}
 		EoF_EQS_warplan_3 = {
@@ -306,13 +293,13 @@ ideas = {
 			picture = EQS_war_plan_equestria
 			modifier = {
 				conscription = 0.05
-				consumer_goods_factor = -0.3
+				consumer_goods_factor = -0.1
 				resistance_target_on_our_occupied_states = 0.2
 				supply_consumption_factor = -0.1
 			}
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.15 
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}

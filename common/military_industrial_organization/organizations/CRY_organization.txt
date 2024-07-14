@@ -102,8 +102,8 @@ CRY_red_star_manufacturing_organization = {
 		}
 	}
 	available = {
-		STG = {
-			has_completed_focus = EoF_STG_red_star
+		CRY = {
+			has_government = communism
 		}
 	}
 	initial_trait = {

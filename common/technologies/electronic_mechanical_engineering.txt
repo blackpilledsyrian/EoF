@@ -1318,10 +1318,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1017
-		folder = {
-			name = support_folder
-			position = { x = 13 y = 9 }
-		}
 
 		categories = {
 			helicopter_tech

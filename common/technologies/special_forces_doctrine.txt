@@ -92,9 +92,7 @@ technologies = {
 		rangers_support = {
 			acclimatization_cold_climate_gain_factor = 0.25
 			snow = {
-				attack = 0.15
-				defence = 0.20
-				movement = 0.15
+				attack = 0.05
 			}
 		}
 		
@@ -137,9 +135,7 @@ technologies = {
 		
 		rangers_support = {
 			mountain = {
-				attack = 0.20
-				defence = 0.10
-				movement = 0.10
+				attack = 0.05
 			}
 		}
 		
@@ -278,7 +274,7 @@ technologies = {
 		rangers_support = {
 			battalion_mult = {
 				category = category_line_artillery
-				soft_attack = 0.20
+				soft_attack = 0.1
 			}
 		}
 		
@@ -511,9 +507,7 @@ technologies = {
 		
 		pioneer_support = {
 			jungle = {
-				attack = 0.15
-				defence = 0.10
-				movement = 0.10
+				attack = 0.05
 			}
 		}
 		
@@ -562,9 +556,7 @@ technologies = {
 		
 		pioneer_support = {
 			amphibious = {
-				attack = 0.25
-				defence = 0.15
-				movement = 0.20
+				attack = 0.05
 			}
 		}
 		

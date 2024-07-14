@@ -2745,6 +2745,66 @@ shared_focus = {
 				instant_build = yes
 			}
 		}
+		build_railway = {
+			level = 1
+			start_state = 449
+			target_state = 576
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 431
+			target_state = 432
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 429
+			target_state = 576
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 429
+			target_state = 403
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 403
+			target_state = 404
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 404
+			target_state = 482
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 482
+			target_state = 483
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 483
+			target_state = 430
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 430
+			target_state = 542
+			build_only_on_allied = yes
+		}
+		build_railway = {
+			level = 1
+			start_state = 542
+			target_state = 522
+			build_only_on_allied = yes
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 }

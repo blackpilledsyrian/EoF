@@ -161,23 +161,16 @@ sub_units = {
 		can_be_parachuted = yes
 
 		marsh = {
-			attack = 0.10
-			defence = 0.20
-			movement = 0.2
+			attack = 0.05
 		}
 
 		fort = {
-			attack = 0.15
-			defence = 0.20
+			attack = 0.05
 		}
 
 		river = {
-			attack = 0.10
-			defence = 0.20
-			movement = 0.25
+			attack = 0.05
 		}
-		same_support_type = engineer
-		
 	}
 	
 	jungle_pioneers_support = { #ToA support for jungle/rainforest terrain

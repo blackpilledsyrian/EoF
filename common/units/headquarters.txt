@@ -25,14 +25,15 @@ sub_units = {
 
 		#Size Definitions
 		max_strength = 1
-		max_organisation = 60
+		max_organisation = 50
 		default_morale = 0.3
 		manpower = 500
 		training_time = 120
 
 		battalion_mult = {
 			category = category_army
-			max_organisation = 0.10
+			max_organisation = 3
+			add = yes
 		}
 
 		#Misc Abilities

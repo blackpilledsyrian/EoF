@@ -3942,7 +3942,7 @@ focus_tree = {
 		x = 16
 		y = 0
 		available = {
-			threat > 0.25
+			threat > 0.2
 		}
 		completion_reward = {
 			EQS = {
@@ -3961,23 +3961,6 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			add_ideas = STG_economic_policy
-		}
-	}
-	focus = {
-		id = EoF_STG_red_star
-		icon = GFX_goal_stg_socialist_industry
-		cost = 5
-		prerequisite = {
-			focus = EoF_STG_war_eco
-		}
-		x = 16
-		y = 2
-		completion_reward = {
-			custom_effect_tooltip = available_mio_tt
-			show_mio_tooltip = CRY_red_star_manufacturing_organization
-			mio:CRY_red_star_manufacturing_organization = {
-				add_mio_funds = 500
-			}
 		}
 	}
 }
