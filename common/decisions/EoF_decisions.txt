@@ -28,50 +28,6 @@ political_actions = {
 			}
 		}
 	}
-	EoF_GRI_border_war_decision = {
-		allowed = {
-			original_tag = GRI	
-		}
-		state_target = yes
-		target_root_trigger = {
-			has_completed_focus = EoF_show_our_strength
-		}
-		targets = { state = 379 }
-		target_trigger = {
-			FROM = {
-				NOT = { is_owned_by = GRI }
-			}
-			ROOT = {
-				has_war = no
-			}
-		}
-		on_map_mode = map_and_decisions_view
-		icon = GFX_decision_border_war
-		cost = 30
-		days_re_enable = 120
-		complete_effect = {
-			start_border_war = {
-				change_state_after_war = no
-				attacker = {
-					state = 433
-					num_provinces = 3
-					on_win = GRI_border_war.1
-					on_cancel = GRI_border_war.2
-					on_lose = GRI_border_war.2
-				}
-				defender = {
-					state = 379
-					num_provinces = 2
-					on_win = GRI_border_war.2
-					on_cancel = GRI_border_war.2
-					on_lose = GRI_border_war.2
-				}
-				dig_in_factor = 0
-				terrain_factor = 0
-			}
-		}
-	}
-
 	EoF_JER_invade_equestria_mission = {
 		icon = GFX_decision_generic_naval
 		allowed = {
@@ -93,11 +49,6 @@ political_actions = {
 			}
 			CHN = {
 				add_to_faction = JER
-				add_to_faction = GRI
-			}
-			EQS = {
-				add_to_faction = WNG
-				add_to_faction = MCW
 			}
 			if = {
 				limit = {
@@ -175,7 +126,6 @@ EoF_category = {
 				365 = { is_controlled_by = EQC }
 				675 = { is_controlled_by = EQC }
 				676 = { is_controlled_by = EQC }
-				379 = { is_controlled_by = EQC }
 			}
 		}
 		complete_effect = {
@@ -197,7 +147,6 @@ EoF_category = {
 							state = 675 
 							state = 676
 							state = 363
-							state = 379
 						}
 					}
 					if = {
@@ -243,7 +192,6 @@ EoF_category = {
 				365 = { is_controlled_by = EQS }
 				675 = { is_controlled_by = EQS }
 				676 = { is_controlled_by = EQS }
-				379 = { is_controlled_by = EQS }
 			}
 		}
 		complete_effect = {
@@ -268,7 +216,6 @@ EoF_category = {
 						state = 675
 						state = 676
 						state = 363
-						state = 379
 					}
 				}
 				if = {

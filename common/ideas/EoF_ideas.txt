@@ -36,14 +36,6 @@ ideas = {
 				trade_cost_for_target_factor = 1
 			}
 			targeted_modifier = {
-				tag = EQC
-				trade_cost_for_target_factor = 1
-			}
-			targeted_modifier = {
-				tag = MCW
-				trade_cost_for_target_factor = 1
-			}
-			targeted_modifier = {
 				tag = CHN
 				trade_cost_for_target_factor = 1
 			}
@@ -61,14 +53,6 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = JER
-				trade_cost_for_target_factor = 1
-			}
-			targeted_modifier = {
-				tag = OLE
-				trade_cost_for_target_factor = 1
-			}
-			targeted_modifier = {
-				tag = GRI
 				trade_cost_for_target_factor = 1
 			}
 		}
@@ -188,17 +172,8 @@ ideas = {
 			picture = generic_navy_carrier_bonus
 			modifier = {
 				port_strike = 1
-				sortie_efficiency = 0.3
-				naval_hit_chance = 0.1
-				naval_damage_factor = 0.2
-				naval_defense_factor = 0.2
-			}			
-		}
-		EoF_payment = {
-			removal_cost = -1
-			picture = generic_economic_increase
-			modifier = {
-				industrial_factory_donations = 5
+				carrier_capacity_penalty_reduction = -0.5
+				sortie_efficiency = 0.5
 			}			
 		}
 	}

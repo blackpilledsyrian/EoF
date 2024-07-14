@@ -1,0 +1,17 @@
+EoF_MCW_Minotaur_Expertise = {
+	icon = GFX_idea_generic_supply_depot
+
+	state_resources_factor = 0.45
+}
+
+
+
+
+
+
+
+
+
+
+
+
