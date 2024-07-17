@@ -1,0 +1,21 @@
+entity = {
+	name = "hwomd_entity"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = idle looping = no
+	
+		event = { light = hwomd_staging_light }
+		event = { time = 1.6 particle = hwomd_particle }
+		event = { time = 3.95 light = hwomd_merge_light }
+		event = { time = 4.825 light = hwomd_explosion_light }
+		event = { time = 4.85 particle = hwomd_explosion_particle sound = { soundeffect = "nuke" } }
+	}
+}
+entity = {
+	name = "elements_entity"
+	pdxmesh = "elements_mesh"
+	
+	default_state = "idle"
+	state = { name = "idle" animation = idle looping = no }
+	state = { name = "attack" animation = "attack" looping = no }
+}

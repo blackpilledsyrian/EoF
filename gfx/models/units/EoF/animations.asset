@@ -22,3 +22,7 @@ animation = {
 	name = "volcano_lava_idle_anim"
 	file = "volcano_lava_idle.anim"
 }
+animation = {
+	name = "elements_idle_anim"
+	file = "elements_idle.anim"
+}
