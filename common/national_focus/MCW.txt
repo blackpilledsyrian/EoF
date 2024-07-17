@@ -30,79 +30,14 @@ focus_tree = {
 
 		completion_reward = {
 			add_stability = 0.25
+			add_political_power = 300
 			add_ideas = EoF_MCW_incoherent_military_command_structure
 			add_ideas = EoF_MCW_nonexistent_conscription_system
+			add_ideas = EoF_MCW_governmental_nightmare
 		}
 		
 	}
 
-
-	focus = {
-		id = EoF_a_stagnant_nation
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_decentralized_status_quo
-		prerequisite = { focus = EoF_decentralized_status_quo }
-		
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#reserach debuff
-			#negative construction speed
-			#negative pp gain 
-		}
-		
-	}
-
-	focus = {
-		id = EoF_yet_still_a_nation
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_a_stagnant_nation
-		prerequisite = { focus = EoF_a_stagnant_nation }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#decrease surrender limit
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_time_to_carve_a_path
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_yet_still_a_nation
-		prerequisite = { focus = EoF_yet_still_a_nation }
-
-		available_if_capitulated = yes
-		
-		available = {
-			hidden_trigger = {
-				NOT = {
-					original_tag = ZAI
-				}
-			}
-		}
-
-		completion_reward = {
-			add_political_power = 300
-		}
-		
-	}
 
 
 	focus = {
@@ -112,8 +47,8 @@ focus_tree = {
 		x = 0
 		y = 1
 		cost = 1
-		relative_position_id = EoF_time_to_carve_a_path
-		prerequisite = { focus = EoF_time_to_carve_a_path }
+		relative_position_id = EoF_decentralized_status_quo
+		prerequisite = { focus = EoF_decentralized_status_quo }
 
 		available_if_capitulated = yes
 		
@@ -126,9 +61,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			# -20% prod eff growth until this spirit is removed
-			# -15% factory output 
-			# -0.05% recruitable pop factor
+			add_ideas = EoF_MCW_your_leaders_are_spirit_bonding
 		}
 		
 	}
@@ -257,8 +190,10 @@ focus_tree = {
 
 		completion_reward = {
 			effect_tooltip = {
-			swap_ideas = { remove_idea = EoF_MCW_Zebrican_Privatization_1 add_idea = EoF_MCW_Zebrican_Privatization_2 }
-		}
+				swap_ideas = { remove_idea = EoF_MCW_Zebrican_Privatization_1 add_idea = EoF_MCW_Zebrican_Privatization_2 }
+			}
+			
+			decrease_poverty = yes
 			#base resources in colthage,focused on air resources, so aluminum and rubber 
 		}
 		
@@ -598,6 +533,7 @@ focus_tree = {
 		completion_reward = {
 			swap_ideas = { remove_idea = EoF_MCW_Spiritual_Mobilization_idea_1 add_idea = EoF_MCW_Spiritual_Mobilization_idea_2 }
 			
+			decrease_poverty = yes
 		}
 		
 	}	
@@ -628,13 +564,12 @@ focus_tree = {
 				uses = 12
 				category = armor
 			}
-			completion_reward = {
 				add_ideas = EoF_MCW_tonk_idea
 				add_timed_idea = {
 					idea = EoF_MCW_tonk_development_timed_idea
 					days = 730
 				}
-			}
+			
 			
 		}
 		
@@ -811,10 +746,10 @@ focus_tree = {
 
 	#OLENIAN NAVAL TREE 
 	focus = {
-		id = MCW_navy_1
+		id = EoF_MCW_navy_1
 		icon = GFX_focus_indy_generic_political
 		
-		x = 7
+		x = 11
 		y = 2
 		cost = 1
 		relative_position_id = EoF_communion_of_souls
@@ -827,6 +762,307 @@ focus_tree = {
 		}
 		
 	}
+	
+	
+	focus = {
+		id = EoF_MCW_fuck_the_navy_i_hate_navy
+		icon = GFX_focus_indy_generic_political
+		
+		x = -4
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = EoF_MCW_breathe_life_into_brodershamn_national_spirit_component
+		}
+		
+	}
+	
+	
+
+
+
+	focus = {
+		id = EoF_MCW_become_the_pirate
+		icon = GFX_focus_indy_generic_political
+		
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}	
+
+	focus = {
+		id = EoF_MCW_unrestricted_submarine_warfare
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_become_the_pirate
+		prerequisite = { focus = EoF_MCW_become_the_pirate }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}	
+
+
+	focus = {
+		id = EoF_MCW_pirate_menace
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_overhwelming_numbers
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_pirate_menace
+		prerequisite = { focus = EoF_MCW_pirate_menace }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = EoF_MCW_surface_raiders_1
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_overhwelming_force
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_overhwelming_numbers
+		prerequisite = { focus = EoF_MCW_overhwelming_numbers }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			swap_ideas = { remove_idea = EoF_MCW_surface_raiders_1 add_idea = EoF_MCW_surface_raiders_2 }
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_triumph_over_the_terrorists
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_overhwelming_force
+		prerequisite = { focus = EoF_MCW_overhwelming_force }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+	}
+
+
+	focus = {
+		id = EoF_MCW_new_naval_doctrine
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_triumph_over_the_terrorists
+		prerequisite = { focus = EoF_MCW_triumph_over_the_terrorists }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			navy_experience = 300
+			swap_ideas = { remove_idea = EoF_MCW_surface_raiders_2 add_idea = EoF_MCW_surface_raiders_3 }
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = EoF_MCW_the_menace_of_the_seas
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_unrestricted_submarine_warfare
+		prerequisite = { focus = EoF_MCW_unrestricted_submarine_warfare }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}	
+
+
+
+	focus = {
+		id = EoF_MCW_the_macawian_jewel
+		icon = GFX_focus_indy_generic_political
+		
+		x = 3
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}	
+	
+	focus = {
+		id = EoF_MCW_blue_water_navy
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_the_macawian_jewel
+		prerequisite = { focus = EoF_MCW_the_macawian_jewel }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}		
+
+
+	focus = {
+		id = EoF_MCW_expand_dockyards_to_fullfill_demand
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_blue_water_navy
+		prerequisite = { focus = EoF_MCW_blue_water_navy }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}		
+
+	focus = {
+		id = EoF_MCW_the_biggest_guns
+		icon = GFX_focus_indy_generic_political
+		
+		x = -1
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_expand_dockyards_to_fullfill_demand
+		prerequisite = { focus = EoF_MCW_expand_dockyards_to_fullfill_demand }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_the_best_floating_islands
+		icon = GFX_focus_indy_generic_political
+		
+		x = 1
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_expand_dockyards_to_fullfill_demand
+		prerequisite = { focus = EoF_MCW_expand_dockyards_to_fullfill_demand }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+
+
+
+
+	
+	
+	
 
 
 
@@ -836,7 +1072,7 @@ focus_tree = {
 		id = MCW_air_1
 		icon = GFX_focus_indy_generic_political
 		
-		x = 13
+		x = 17
 		y = 2
 		cost = 1
 		relative_position_id = EoF_communion_of_souls
@@ -873,6 +1109,8 @@ focus_tree = {
 				add_war_support = 0.05
 			}
 			add_ideas = EoF_MCW_license_planes_idea
+			
+			decrease_poverty = yes
 		}
 		
 	}
@@ -909,20 +1147,20 @@ focus_tree = {
 
 
 	focus = {
-		id = EoF_MCW_holy_fyuk
+		id = EoF_MCW_holy_fyak
 		icon = GFX_focus_indy_generic_political
 		
 		x = 0
-		y = 1
+		y = 4
 		cost = 30
 		relative_position_id = EoF_MCW_develop_domestic_fighters
 		prerequisite = { focus = EoF_MCW_develop_domestic_fighters }
-
+		prerequisite = { focus = EoF_MCW_the_best_floating_islands }
 		available_if_capitulated = yes
 
 
 		completion_reward = {
-			add_ideas = EoF_MCW_holy_fyuk_idea
+			add_ideas = EoF_MCW_holy_fyak_idea
 			
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -954,7 +1192,7 @@ focus_tree = {
 		id = fuck_you_diversity_is_our_strength
 		icon = GFX_focus_indy_generic_political
 		
-		x = 26
+		x = 30
 		y = 2
 		cost = 1
 		relative_position_id = EoF_communion_of_souls
@@ -1220,6 +1458,277 @@ focus_tree = {
 		}
 		
 	}
+
+
+
+
+
+
+	focus = {
+		id = EoF_MCW_a_nation_reforged
+		icon = GFX_focus_indy_generic_political
+		x = 50
+		y = 16
+		cost = 1
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#remove_ideas = EoF_MCW_your_leaders_are_spirit_bonding
+		}
+		
+	}
+
+#	ECONOMIC DEVELOPEMNT YOYOYOYOYOYO
+	focus = {
+		id = EoF_MCW_economic_development_commission
+		icon = GFX_focus_indy_generic_political
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_a_nation_reforged
+		prerequisite = { focus = EoF_MCW_a_nation_reforged }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_into_the_colthaginian_jungles
+		icon = GFX_focus_indy_generic_political
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_economic_development_commission
+		prerequisite = { focus = EoF_MCW_economic_development_commission }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_into_the_sao_penario_slums
+		icon = GFX_focus_indy_generic_political
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_economic_development_commission
+		prerequisite = { focus = EoF_MCW_economic_development_commission }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_into_rios_murder_gangs
+		icon = GFX_focus_indy_generic_political
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_into_the_sao_penario_slums
+		prerequisite = { focus = EoF_MCW_into_the_sao_penario_slums }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_root_out_pombali_pirate_influence
+		icon = GFX_focus_indy_generic_political
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_into_rios_murder_gangs
+		prerequisite = { focus = EoF_MCW_into_rios_murder_gangs }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_minotaur_development
+		icon = GFX_focus_indy_generic_political
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_economic_development_commission
+		prerequisite = { focus = EoF_MCW_economic_development_commission }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_strike_a_deal_in_cyanolisia
+		icon = GFX_focus_indy_generic_political
+		x = -4
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_economic_development_commission
+		prerequisite = { focus = EoF_MCW_economic_development_commission }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_breathe_life_into_brodershamn
+		icon = GFX_focus_indy_generic_political
+		x = -6
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_economic_development_commission
+		prerequisite = { focus = EoF_MCW_economic_development_commission }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			726 = {
+				add_dynamic_modifier = {
+					modifier = EoF_MCW_build_ports_fast
+				}
+
+
+			}
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = EoF_MCW_political_centralization_effort
+		icon = GFX_focus_indy_generic_political
+		x = 5
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_a_nation_reforged
+		prerequisite = { focus = EoF_MCW_a_nation_reforged }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_
+		icon = GFX_focus_indy_generic_political
+		x = 12
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_a_nation_reforged
+		prerequisite = { focus = EoF_MCW_a_nation_reforged }
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			#
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

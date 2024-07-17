@@ -145,7 +145,7 @@ ideas = {
 	
 		}		
 
-		EoF_MCW_holy_fyuk_idea = {
+		EoF_MCW_holy_fyak_idea = {
 			icon = GFX_idea_generic_supply_depot
 			modifier = {
 				research_speed_factor = -0.12	
@@ -179,6 +179,95 @@ ideas = {
 			}
 	
 		}	
+		
+		EoF_MCW_governmental_nightmare = {
+			icon = GFX_idea_generic_supply_depot
+			modifier = {
+				production_speed_buildings_factor = -0.15
+				political_power_gain = -0.8
+			}
+	
+		}	
+
+		EoF_MCW_your_leaders_are_spirit_bonding = {
+			icon = GFX_idea_generic_supply_depot
+			modifier = {
+				research_speed_factor = -0.20	
+				production_factory_efficiency_gain_factor = -0.33
+			}
+	
+		}
+		
+		EoF_MCW_surface_raiders_1 = {
+			picture = generic_coastal_navy
+			removal_cost = -1
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					reliability = -0.3
+					max_strength = -0.10
+					armor_value = -0.20
+					instant = yes
+				}
+			}
+		}
+
+		EoF_MCW_surface_raiders_2 = {
+			picture = generic_coastal_navy
+			removal_cost = -1
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.10
+					reliability = -0.2
+					max_strength = -0.10
+					armor_value = -0.20
+					lg_attack = 0.20
+					instant = yes
+				}
+			}
+		}
+
+		EoF_MCW_surface_raiders_3 = {
+			picture = generic_coastal_navy
+			removal_cost = -1
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.18
+					reliability = -0.075
+					max_strength = -0.10
+					armor_value = -0.20
+					lg_attack = 0.075
+					surface_visibility = -0.12
+					production_resource_need_factor = -0.20
+					
+					instant = yes
+				}
+			}
+		}	
+
+
+
+		
+
+		EoF_MCW_breathe_life_into_brodershamn_national_spirit_component = {
+			icon = GFX_idea_generic_supply_depot
+			modifier = {
+				industrial_capacity_dockyard= -0.90
+				repair_speed_factor = 0.60
+				production_speed_dockyard_factor = 50
+
+			}
+			
+		}
+
+
+
+
+
+
+
+
+
 
 
 		

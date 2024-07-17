@@ -4,8 +4,11 @@ EoF_MCW_Minotaur_Expertise = {
 	state_resources_factor = 0.45
 }
 
+EoF_MCW_build_ports_fast = {
+	icon = GFX_idea_generic_supply_depot
 
-
+	production_speed_naval_base_factor = 0.75
+}
 
 
 
