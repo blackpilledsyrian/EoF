@@ -133,10 +133,10 @@ particle={
 		}
 		position={
 			x=0
-			y=9
-			z=5
+			y=3
+			z=4.65
 		}
-		start=0.050
+		start=0.175
 		duration=0.100
 		emitter_yaw={ 0 0 }
 		emitter_pitch={ 0 0 }
