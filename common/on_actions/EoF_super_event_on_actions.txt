@@ -1,4 +1,11 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			HLR = {
+				country_event = { id = EoF.15 days = 1884 }
+			}
+		}
+	}
 	on_declare_war = { #Celestial Sea War
 		effect = {
 			if = {

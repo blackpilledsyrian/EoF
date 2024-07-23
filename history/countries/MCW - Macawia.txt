@@ -198,6 +198,7 @@ add_ideas = {
 	poverty3
 	outdated_industry
 	proper_science_base
+	EoF_CTH_service_exemption
 }
 set_country_flag = proper_science_base_unlocked
 

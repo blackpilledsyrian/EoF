@@ -1,7 +1,7 @@
 add_namespace = EoF
 add_namespace = EoF.news
 add_namespace = Eof.ole
-
+add_namespace = EoF.cityfall
 country_event = {
 	id = EoF.1
 	is_triggered_only = yes
@@ -432,6 +432,34 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = EoF.14
+	title = EoF.14.t
+	desc = EoF.14.desc
+	picture = GFX_event_celestia_poster
+	is_triggered_only = yes
+	option = {
+		name = EoF.14.a
+		add_timed_idea = {
+			idea = EoF_payment
+			days = 180
+		}
+		379 = {
+			transfer_state_to = GRI
+		}
+	}
+}
+
+country_event = {
+	id = EoF.15
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		every_country = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+	}
+}
 
 news_event = {
 	id = EoF.news.1
@@ -479,5 +507,111 @@ news_event = {
 
 	option = {
 		name = EoF.news.4.a
+	}
+}
+news_event = {
+	id = EoF.news.5
+	title = EoF.news.5.t
+	desc = EoF.news.5.d
+	picture = GFX_GRI_shore_expansionism
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EoF.news.5.a
+	}
+}
+#city fall
+# The Fall of Coltoba
+news_event = {
+	id = EoF.cityfall.701
+	title = EoF.cityfall.701.t
+	desc = EoF.cityfall.701.d
+	picture = GFX_news_fall_of_river_city
+
+	major = yes
+	is_triggered_only = yes
+
+	option = { #UPA response
+		name = EoF.cityfall.701.a
+		trigger = {
+			OR = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+			}
+		}
+	}
+
+	option = { #Chn repsonse
+		name = EoF.cityfall.701.b
+		trigger = {
+			OR = {
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+
+	option = { #else
+		name = EoF.cityfall.701.c
+		trigger = {
+			NOT = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+}
+
+# The Fall of Coltoba
+news_event = {
+	id = EoF.cityfall.702
+	title = EoF.cityfall.702.t
+	desc = EoF.cityfall.702.d
+	picture = GFX_ABY_encampment
+
+	major = yes
+	is_triggered_only = yes
+
+	option = { #UPA response
+		name = EoF.cityfall.702.a
+		trigger = {
+			OR = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+			}
+		}
+	}
+
+	option = { #Chn repsonse
+		name = EoF.cityfall.702.b
+		trigger = {
+			OR = {
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+
+	option = { #else
+		name = EoF.cityfall.702.c
+		trigger = {
+			NOT = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
 	}
 }

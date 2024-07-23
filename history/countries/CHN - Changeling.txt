@@ -58,12 +58,6 @@ if = {
 	limit = { has_dlc = "By Blood Alone" }
 	add_tech_bonus = {
 		name = bomber_bonus
-		bonus = 2.25
-		uses = 1
-		category = rocketry
-	}
-	add_tech_bonus = {
-		name = bomber_bonus
 		bonus = 1.5
 		uses = 1
 		category = cat_anti_tank
@@ -76,8 +70,10 @@ if = {
 		engines_2 = 1
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
+		iw_large_airframe = 1
 		basic_small_airframe = 1
 		basic_medium_airframe = 1
+		basic_large_airframe = 1
 	}
 	if = {
 		limit = { has_dlc = "La Resistance" }

@@ -434,7 +434,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2800 height = 1950
+					width = 1400 height = 1950
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -510,42 +510,6 @@ guiTypes = {
 
 				###------> Support Date Top  <><> <><> <><> <><> <><>
 
-				instantTextBoxType = {
-					name = "support_year13"
-					position = { x = 1783 y = 50 }
-					font = "hoi_36header"
-					borderSize = { x = 0 y = 0}
-					text = "1019"
-					maxWidth = 170
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "support_year14"
-					position = { x = 2203 y = 50 }
-					font = "hoi_36header"
-					borderSize = { x = 0 y = 0}
-					text = "1022"
-					maxWidth = 170
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
-				instantTextBoxType = {
-					name = "support_year15"
-					position = { x = 2623 y = 50 }
-					font = "hoi_36header"
-					borderSize = { x = 0 y = 0}
-					text = "1025"
-					maxWidth = 170
-					maxHeight = 32
-					format = left
-					Orientation = "UPPER_LEFT"
-				}
-
 				###------> X  <><> <><> <><> <><> <><>
 
 				instantTextBoxType = {
@@ -566,7 +530,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=150 y=640 }
-				size = { width = 2600 height = 430 }
+				size = { width = 1400 height = 430 }
 				clipping = no
 
 				background = {
@@ -578,18 +542,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=160 y=920 }
-				size = { width = 2580 height = 140 }
-				clipping = no
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_research_bg"
-				}
-			}
-			containerWindowType = {
-				name = "tiled_research_bg_3"
-				position = { x=150 y=1060 }
-				size = { width = 2600 height = 430 }
+				size = { width = 1380 height = 300 }
 				clipping = no
 
 				background = {
@@ -1578,7 +1531,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "artillery_subtitle_rocket"
-						position = { x = 405 y = 460 }
+						position = { x = 535 y = 460 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
@@ -1591,7 +1544,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "artillery_subtitle_anti_tank"
-						position = { x = 655 y = 160 }
+						position = { x = 695 y = 160 }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
@@ -1604,7 +1557,7 @@ guiTypes = {
 
 					instantTextBoxType = {
 						name = "artillery_subtitle_anti_air"
-						position = { x = -200 y = 160  }
+						position = { x = -100 y = 160  }
 						textureFile = ""
 						font = "hoi_33"
 						borderSize = {x = 0 y = 4}
@@ -1975,7 +1928,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "pre_gw_artillery_tree"
-				position = { x = 10% y = 172 }
+				position = { x = 280 y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -3178,9 +3131,16 @@ guiTypes = {
 				format = "UP"
 			}
 
-			
 			gridboxtype = {
 				name = "experimental_rockets_tree"
+				position = { x = 640 y = 0 }
+				size = { width = 400 height = 400 }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
+			gridboxtype = {
+				name = "jet_engines_tree"
 				position = { x = 640 y = 0 }
 				size = { width = 400 height = 400 }
 				slotsize = { width = 70 height = 70 }
@@ -3518,6 +3478,14 @@ guiTypes = {
 
 		gridboxtype = {
 			name = "experimental_rockets_tree"
+			position = { x = 540 y = 0 }
+			size = { width = 400 height = 400 }
+			slotsize = { width = 70 height = 70 }
+			format = "UP"
+		}
+
+		gridboxtype = {
+			name = "jet_engines_tree"
 			position = { x = 540 y = 0 }
 			size = { width = 400 height = 400 }
 			slotsize = { width = 70 height = 70 }
@@ -4343,9 +4311,6 @@ guiTypes = {
 				size = { width = 480 height = 650 }
 				slotsize = { width=60 height= 60 }
 				format = "UP"
-
-
-
 			}
 
 			gridboxtype = {
@@ -4355,6 +4320,14 @@ guiTypes = {
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 
+			}
+
+			gridboxtype = {
+				name = "jet_engines_tree"
+				position = { x=950 y=412 }
+				size = { width = 480 height = 650 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"
 			}
 
 		}

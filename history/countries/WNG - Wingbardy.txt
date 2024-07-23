@@ -13,7 +13,7 @@ if = {
 	}
 	set_oob = "WNG_1007_nsb"
 }
-set_research_slots = 3
+set_research_slots = 4
 starting_train_buffer = 1.5
 
 set_technology = {
@@ -278,10 +278,8 @@ recruit_character = WNG_dismissed_parlement
 recruit_character = WNG_national_liberation_committee
 recruit_character = WNG_king_trubach
 
-# create_faction = Southern_Kingdoms
-# add_to_faction = ARA
-# add_to_faction = TAL
-# add_to_faction = FRN
+create_faction = Southern_Kingdoms
+add_to_faction = MCW
 
 add_opinion_modifier = { target = BRF modifier = made_friends }
 

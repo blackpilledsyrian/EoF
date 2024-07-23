@@ -24,7 +24,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			heavy_anti_tank_equipment = 24
+			heavy_anti_tank_equipment = 30
 		}
 		manpower = 500
 		max_organisation = 0
@@ -100,7 +100,7 @@ sub_units = {
 			mechanized_equipment
 		}
 		need = {
-			heavy_anti_tank_equipment = 36
+			heavy_anti_tank_equipment = 30
 			mechanized_equipment = 50
 		}
 		manpower = 500

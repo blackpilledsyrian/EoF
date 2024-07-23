@@ -1,5 +1,5 @@
 ﻿capital = 382
-set_research_slots = 3
+set_research_slots = 4
 
 set_technology = {
 	griffon_race = 1
@@ -357,13 +357,6 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
-
-add_opinion_modifier = { target = JER modifier = sworn_enemies }
-add_opinion_modifier = { target = WNG modifier = sworn_enemies }
-add_opinion_modifier = { target = FAT modifier = sworn_enemies }
-reverse_add_opinion_modifier = { target = JER modifier = sworn_enemies }
-reverse_add_opinion_modifier = { target = WNG modifier = sworn_enemies }
-reverse_add_opinion_modifier = { target = FAT modifier = sworn_enemies }
 
 add_ideas = {
 	outdated_industry

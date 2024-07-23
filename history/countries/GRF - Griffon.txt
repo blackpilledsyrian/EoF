@@ -3,6 +3,7 @@
 oob = "GRF_1007"
 
 set_research_slots = 3
+starting_train_buffer = 1
 
 set_technology = {
 	griffon_race = 1
@@ -21,6 +22,8 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 	tech_trucks = 1
+	motorised_infantry = 1
+	basic_machine_tools = 1
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -133,7 +136,7 @@ set_autonomy = {
 }
 
 add_ideas = {
-	outdated_industry
+	modern_society
 	GRF_colonial_economy
 	GRF_falcons_of_griffinstone
 	GRF_militias

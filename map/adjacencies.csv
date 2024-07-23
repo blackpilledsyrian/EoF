@@ -820,6 +820,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3465;12558;impassable;-1;-1;-1;-1;-1;;Griffbraltar
 3465;4314;impassable;-1;-1;-1;-1;-1;;Griffbraltar
 
+531;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
+12615;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
+12643;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
+7397;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
+
 1544;7151;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
 1733;7151;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
 1733;12679;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front

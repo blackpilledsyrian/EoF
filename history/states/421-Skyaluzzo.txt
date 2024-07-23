@@ -22,23 +22,6 @@ state={
 
 			4111 = {
 				naval_base = 1
-			}
-			1521 = {
-				bunker = 10
-			}
-			1957 = {
-				bunker = 10
-			}
-			10490 = {
-				bunker = 10
-			}
-			7270 = {
-				bunker = 10
-			}
-			10796 = {
-				bunker = 10
-			}
-			11919 = {
 				bunker = 10
 			}
 		}

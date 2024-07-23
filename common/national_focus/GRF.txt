@@ -18,15 +18,16 @@ focus_tree = {
 		ai_will_do = { factor = 80 }
 		x = -2
 		y = 1
+		bypass = {
+			NOT = {
+				has_idea = GRF_colonial_economy
+			}
+		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_new_economy"
 			swap_ideas = {
 				remove_idea = GRF_colonial_economy
 				add_idea = GRF_stagnated_economy
-			}
-			swap_ideas = {
-				remove_idea = outdated_industry
-				add_idea = outdated_industry2
 			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_RESEARCH }
@@ -506,7 +507,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_good_economy"
 			remove_ideas = GRF_stagnated_economy
-			increase_society_development = yes
 		}
 	}
 

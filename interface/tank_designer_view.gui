@@ -132,7 +132,7 @@ guiTypes = {
 
 			positionType = {
 				name = "pos_custom_module_slot_window_7"
-				position = { x=512 y=@fixed_btn_mod_row_1 }
+				position = { x=1024 y=@fixed_btn_mod_row_1 }
 			}
 
 			######################################################################

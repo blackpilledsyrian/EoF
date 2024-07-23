@@ -7,42 +7,219 @@ country_event = {
 	hidden = yes
 	immediate = {
 		set_country_flag = EoF_sunset_counteroffensive
-		EQS = {
-			division_template = {
-				name = "Sunset Armour Division"
-				regiments = {
-					magical_mechanized = { x = 0 y = 0 }
-					magical_mechanized = { x = 0 y = 1 }
-					magical_mechanized = { x = 0 y = 2 }
-					magical_mechanized = { x = 0 y = 3 }
-	
-					magical_mechanized = { x = 1 y = 0 }
-					magical_mechanized = { x = 1 y = 1 }
-					magical_mechanized = { x = 1 y = 2 }
-					magical_mechanized = { x = 1 y = 3 }
-
-					reinforced_medium_armor = { x = 2 y = 0 }
-					reinforced_medium_armor = { x = 2 y = 1 }
-					reinforced_medium_armor = { x = 2 y = 2 }
-					reinforced_medium_armor = { x = 2 y = 3 }
-
-					reinforced_medium_armor = { x = 3 y = 0 }
-					reinforced_medium_armor = { x = 3 y = 1 }
-					reinforced_medium_armor = { x = 3 y = 2 }
-					reinforced_medium_armor = { x = 3 y = 3 }
-
-					reinforced_medium_armor = { x = 4 y = 0 }
-					reinforced_medium_armor = { x = 4 y = 1 }
-					reinforced_medium_armor = { x = 4 y = 2 }
-					reinforced_medium_armor = { x = 4 y = 3 }
+		EQS = { #Tank Spawn-Ins
+			if = {
+				limit = {
+					has_tech = improved_heavy_tank_chassis
 				}
-				support = {
-					engineer = { x = 0 y = 0 }
-					medium_flame_tank = { x = 0 y = 1 }
-					light_tank_recon = { x = 0 y = 2 }
-					anti_air = { x = 0 y = 3 }
+				division_template = {
+					name = "Sunset Armour Division"
+					regiments = {
+						magical_mechanized = { x = 0 y = 0 }
+						magical_mechanized = { x = 0 y = 1 }
+						magical_mechanized = { x = 0 y = 2 }
+						magical_mechanized = { x = 0 y = 3 }
+		
+						magical_mechanized = { x = 1 y = 0 }
+						magical_mechanized = { x = 1 y = 1 }
+						magical_mechanized = { x = 1 y = 2 }
+						magical_mechanized = { x = 1 y = 3 }
+	
+						reinforced_heavy_armor = { x = 2 y = 0 }
+						reinforced_heavy_armor = { x = 2 y = 1 }
+						reinforced_heavy_armor = { x = 2 y = 2 }
+						reinforced_heavy_armor = { x = 2 y = 3 }
+	
+						reinforced_heavy_armor = { x = 3 y = 0 }
+						reinforced_heavy_armor = { x = 3 y = 1 }
+						reinforced_heavy_armor = { x = 3 y = 2 }
+						reinforced_heavy_armor = { x = 3 y = 3 }
+	
+						reinforced_heavy_armor = { x = 4 y = 0 }
+						reinforced_heavy_armor = { x = 4 y = 1 }
+						reinforced_heavy_armor = { x = 4 y = 2 }
+						reinforced_heavy_armor = { x = 4 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						medium_flame_tank = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 1 }
+					create_unit = {
+						division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"2nd 'Crystal Prep High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
 				}
 			}
+			else_if = {
+				limit = {
+					has_tech = advanced_light_tank_chassis
+				}
+				division_template = {
+					name = "Sunset Armour Division"
+					regiments = {
+						magical_mechanized = { x = 0 y = 0 }
+						magical_mechanized = { x = 0 y = 1 }
+						magical_mechanized = { x = 0 y = 2 }
+						magical_mechanized = { x = 0 y = 3 }
+		
+						magical_mechanized = { x = 1 y = 0 }
+						magical_mechanized = { x = 1 y = 1 }
+						magical_mechanized = { x = 1 y = 2 }
+						magical_mechanized = { x = 1 y = 3 }
+	
+						reinforced_light_armor = { x = 2 y = 0 }
+						reinforced_light_armor = { x = 2 y = 1 }
+						reinforced_light_armor = { x = 2 y = 2 }
+						reinforced_light_armor = { x = 2 y = 3 }
+	
+						reinforced_light_armor = { x = 3 y = 0 }
+						reinforced_light_armor = { x = 3 y = 1 }
+						reinforced_light_armor = { x = 3 y = 2 }
+						reinforced_light_armor = { x = 3 y = 3 }
+	
+						reinforced_light_armor = { x = 4 y = 0 }
+						reinforced_light_armor = { x = 4 y = 1 }
+						reinforced_light_armor = { x = 4 y = 2 }
+						reinforced_light_armor = { x = 4 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						medium_flame_tank = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 1 }
+					create_unit = {
+						division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"2nd 'Crystal Prep High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"7th 'Pravda High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"8th 'Saunders University High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"9th 'Anzio High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+						owner = EQS
+					}
+				}		
+			}
+			else = {
+				division_template = {
+					name = "Sunset Armour Division"
+					regiments = {
+						magical_mechanized = { x = 0 y = 0 }
+						magical_mechanized = { x = 0 y = 1 }
+						magical_mechanized = { x = 0 y = 2 }
+						magical_mechanized = { x = 0 y = 3 }
+		
+						magical_mechanized = { x = 1 y = 0 }
+						magical_mechanized = { x = 1 y = 1 }
+						magical_mechanized = { x = 1 y = 2 }
+						magical_mechanized = { x = 1 y = 3 }
+	
+						reinforced_medium_armor = { x = 2 y = 0 }
+						reinforced_medium_armor = { x = 2 y = 1 }
+						reinforced_medium_armor = { x = 2 y = 2 }
+						reinforced_medium_armor = { x = 2 y = 3 }
+	
+						reinforced_medium_armor = { x = 3 y = 0 }
+						reinforced_medium_armor = { x = 3 y = 1 }
+						reinforced_medium_armor = { x = 3 y = 2 }
+						reinforced_medium_armor = { x = 3 y = 3 }
+	
+						reinforced_medium_armor = { x = 4 y = 0 }
+						reinforced_medium_armor = { x = 4 y = 1 }
+						reinforced_medium_armor = { x = 4 y = 2 }
+						reinforced_medium_armor = { x = 4 y = 3 }
+					}
+					support = {
+						engineer = { x = 0 y = 0 }
+						medium_flame_tank = { x = 0 y = 1 }
+						light_tank_recon = { x = 0 y = 2 }
+						anti_air = { x = 0 y = 3 }
+					}
+				}
+				random_owned_controlled_state = {
+					prioritize = { 1 }
+					create_unit = {
+						division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"2nd 'Crystal Prep High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+						owner = EQS
+					}
+					create_unit = {
+						division = "name = \"7th 'Pravda High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+						owner = EQS
+					}
+				}		
+			}
+		}
+		EQS = { #Infantry Spawn-ins
 			division_template = {
 				name = "Sunset Infantry Division"
 				regiments = {
@@ -72,39 +249,6 @@ country_event = {
 					logistics_company = { x = 0 y = 5 }
 					field_hospital = { x = 0 y = 6 }
 
-				}
-			}
-		}
-		EQS = {
-			random_owned_controlled_state = {
-				prioritize = { 1 }
-				create_unit = {
-					division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"2nd 'Crystal Prep High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"3rd 'Ooarai Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"4th 'Kuromorimine Girls Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"7th 'Pravda High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
-					owner = EQS
 				}
 			}
 			every_controlled_state = {
@@ -353,5 +497,56 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EoF_great_war.8.a
+	}
+}
+country_event = {
+	id = EoF_great_war.9
+	title = EoF_great_war.9.t
+	desc = EoF_great_war.9.desc
+	picture = GFX_event_unicorn_worker
+	is_triggered_only = yes
+	option = {
+		name = EoF_great_war.9.a
+	}
+}
+country_event = {
+	id = EoF_great_war.10
+	title = EoF_great_war.10.t
+	desc = EoF_great_war.10.desc
+	picture = GFX_event_forest_depression
+	is_triggered_only = yes
+	option = {
+		name = EoF_great_war.10.a
+		CHN = {
+			every_controlled_state = {
+				limit = {
+					any_neighbor_state = {
+						OR = {
+							is_controlled_by = EQS
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = EoF_ant_thrax_CHN
+					days = 180
+				}
+			}
+		}
+		EQS = {
+			every_controlled_state = {
+				limit = {
+					any_neighbor_state = {
+						OR = {
+							is_controlled_by = CHN
+							is_controlled_by = OLE
+						}
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = EoF_ant_thrax_EQS
+					days = 180
+				}
+			}
+		}
 	}
 }

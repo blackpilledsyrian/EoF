@@ -468,6 +468,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes					
+				}
 				polar_bear_equipment = {
 					build_cost_ic = -0.1
 					instant = yes

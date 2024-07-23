@@ -227,16 +227,6 @@ EQS_celestia_evil_meter_category = {
 		available = {
 			NOT = { has_country_flag = war_plan_timeout }
 			has_war = yes
-			OR = {
-				has_war_support > 0.5
-				surrender_progress > 0.15
-				AND = {
-					has_defensive_war = yes
-					any_enemy_country = {
-						is_major = yes
-					}
-				}
-			}
 		}
 		cost = 100
 		ai_will_do = {
@@ -264,18 +254,6 @@ EQS_celestia_evil_meter_category = {
 			else_if = {
 				limit = { has_country_flag = EoF_EQS_warplan_3_flag }
 				add_ideas = EoF_EQS_warplan_3
-			}
-			else = {
-				country_event = EoF_great_war.4
-				if = {
-					limit = {
-						NOT = {
-							has_idea = war_economy
-							has_idea = tot_economic_mobilisation
-						}
-					}
-					add_ideas = war_economy
-				}
 			}
 			hidden_effect = {
 				set_country_flag = { flag = war_plan_timeout days = 60 value = 1 }

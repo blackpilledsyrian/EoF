@@ -1626,7 +1626,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus prepare_for_war"
 			add_war_support = 0.2
-			add_ideas = EoF_CHN_final_army_expansion
+			add_timed_idea = {
+				idea = EoF_CHN_final_army_expansion
+				days = 365
+			}
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_war_with = EQS } }
@@ -2598,6 +2601,25 @@ focus_tree = {
 		relative_position_id = EoF_road_to_victory
 		x = 2
 		y = 1
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = EoF_pax_chrysalia
+		icon = GFX_goal_chn_equus
+		cost = 10
+		prerequisite = {
+			focus = EoF_fall_dunkelgrun
+			focus = EoF_fall_hellgrun
+			focus = EoF_fall_rosa
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = EoF_fall_hellgrun
+		x = 0
+		y = 2`
 		completion_reward = {
 		}
 	}

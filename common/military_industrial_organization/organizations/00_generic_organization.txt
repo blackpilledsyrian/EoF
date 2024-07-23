@@ -6706,7 +6706,7 @@ generic_artillery_organization = {
 	equipment_type = {
 		EoF_cat_eq_all_artillery
 		EoF_cat_eq_all_anti_tank
-		anti_air_equipment
+		EoF_cat_eq_all_anti_air
 		rocket_artillery_equipment
 	}
 
@@ -6823,7 +6823,7 @@ generic_artillery_organization = {
 		}
 		
 		limit_to_equipment_type = { 
-			anti_air_equipment
+			EoF_cat_eq_all_anti_air
 		}
 
 		equipment_bonus = {
@@ -6888,7 +6888,7 @@ generic_artillery_organization = {
 
 		limit_to_equipment_type = { 
 			EoF_cat_eq_all_anti_tank
-			anti_air_equipment
+			EoF_cat_eq_all_anti_air
 		}
 
 		equipment_bonus = {

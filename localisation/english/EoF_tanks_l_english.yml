@@ -191,6 +191,13 @@ heavyantitank2_desc:0 ""
 heavyantitank3:0 "Heavy Anti-Tank Upgrade 2"
 heavyantitank3_desc:0 ""
 
+heavyantiair2:0 "Heavy Anti-Air Upgrade 1"
+heavyantitair2_desc:0 ""
+heavyantiair3:0 "Heavy Anti-Air Upgrade 2"
+heavyantitair3_desc:0 ""
+heavyantiair4:0 "Heavy Anti-Air Upgrade 3"
+heavyantitair4_desc:0 ""
+
 reinforced_light_armor:0 "Reinforced Light Tank"
 reinforced_medium_armor:0 "Reinforced Medium Tank"
 reinforced_heavy_armor:0 "Reinforced Heavy Tank"

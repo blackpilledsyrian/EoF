@@ -711,6 +711,19 @@ on_actions = {
 					}
 				}
 			}
+			else_if = {
+				limit = {
+					EQS = {
+						surrender_progress > 0.5
+					}
+				}
+				EQS = {
+					country_event = {
+						id = EoF_great_war.1
+						days = 1
+					}
+				}
+			}
 		}
 	}
 	#Losing Hjortland removes CHN core buffs
@@ -937,6 +950,21 @@ on_actions = {
 
 				}
 
+			}
+##New city fall
+			else_if = {#coltoba
+				limit = {
+					FROM.FROM = { state = 741 }
+						FROM = { original_tag = ABY }
+				}
+				news_event = { id = EoF.cityfall.701 }
+			}
+			else_if = {#aspurra
+				limit = {
+					FROM.FROM = { state = 771 }
+						FROM = { original_tag = ABY }
+				}
+				news_event = { id = EoF.cityfall.702 }
 			}
 		}
 	}

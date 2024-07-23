@@ -1700,7 +1700,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			shore_bombardment_bonus = 0.25
+			shore_bombardment_bonus = 0.1
 		}
 		
 		ai_will_do = {
@@ -2210,7 +2210,7 @@ leader_traits = {
 	ground_pounder = { 
 		type = navy
 		modifier = {
-			shore_bombardment_bonus = 0.25 
+			shore_bombardment_bonus = 0.1
 		}
 				
 		ai_will_do = {

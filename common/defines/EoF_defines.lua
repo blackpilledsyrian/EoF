@@ -16,20 +16,25 @@ NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
 NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 		--Base cost to unlock a support slot
 
+NDefines.NMilitary.SUPPLY_GRACE = 120				-- troops always carry 5 days of food and supply
+
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060	-- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
-NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.045	-- global damage modifier
+NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modifier
 
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.025	-- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.025	-- global damage modifier
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1		-- over combat width penalty per %.
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.15	-- over combat width max (when you cant join no more).
-NDefines.NMilitary.COMBAT_STACKING_START = 5			-- at what nr of divisions stacking penalty starts
-NDefines.NMilitary.COMBAT_STACKING_EXTRA = 2                    -- extra stacking from directions
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1		-- how much stacking penalty per division
+NDefines.NMilitary.COMBAT_STACKING_START = 2			-- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                    -- extra stacking from directions
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.05		-- how much stacking penalty per division
 
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  	-- amount of extra attrition from being in training
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 6.0
+
+NDefines.NMilitary.RECON_SKILL_IMPACT = 10				-- how many skillpoints is a recon advantage worth when picking a tactic.
+NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1	-- advantage per leader level for picking a counter
 
 NDefines.NMilitary.SLOWEST_SPEED = 1
 
@@ -38,9 +43,9 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.6		-- more AA attack will a
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 75 -- how quickly defense approaches the max impact diminishing returns curve
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3	-- effect on speed due to enemy air superiority
 
-NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.1		-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
+NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02		-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003		-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.18	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.9	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.90	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.3				-- Higher value = more shot down planes
@@ -77,7 +82,7 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {		-- 0 armor will always 
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3			-- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.3
 
-NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.35		--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
+NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.6		--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
@@ -137,6 +142,32 @@ NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1				-- this cap
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0			-- Chances one ship get damage each hour while on training
 
 NDefines.NNavy.HIT_PROFILE_MULT = 50.0				-- multiplies hit profile of every ship
+
+NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5			-- Vanilla is 0.25
+NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.01	-- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
+NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.005	-- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+
+-- defines that control submarine visibility
+NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 1.0			-- balance value for sub detection in combat by ships
+NDefines.NNavy.SUBMARINE_HIDE_TIMEOUT = 20				-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
+NDefines.NNavy.SUBMARINE_REVEALED_TIMEOUT = 16				-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
+NDefines.NNavy.SUBMARINE_REVEAL_BASE_CHANCE = 100			-- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
+NDefines.NNavy.SUBMARINE_REVEAL_POW = 2.0				-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
+NDefines.NNavy.SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE = 0.035		-- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
+
+-- those two work together in the formula f(x) = Y(x/(x+X)) where Y is MAX and X is SLOPE
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_MAX = 10.0
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_SLOPE = 10.0		-- lower means sharper curve (ramps up very fast, then flatten out very fast). Must be >0
+
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_EXTERNAL_FACTOR = 1.0				-- Factor applied to the stats of external air planes
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_INTERNAL_EFFICIENCY_FACTOR = 1.0			-- Factor of Carrier's sortie efficiency on the stats bellow
+NDefines.NNavy.NAVAL_COMBAT_AIR_AGILITY_TO_SUB_DETECTION = 0.0					-- Factor to apply to the agility of air planes active in a naval combat to deduce their contibution to sub detection
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRIKE_ATTACK_TO_SUB_DETECTION = 0.0				-- Same, but for strike attack (aka naval attack)
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRIKE_TARGETING_TO_SUB_DETECTION = 0.0				-- Same, but for strike targeting (aka naval targeting)
+NDefines.NNavy.NAVAL_COMBAT_AIR_MAX_SPEED_TO_SUB_DETECTION = 0.0				-- Same, but for Max Speed
+NDefines.NNavy.NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 1.0				-- Factor applied to the number of active plane in a naval combat to deduce their contribution to sub detection
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 1.0					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.0					-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
 
 -- defines that are used for supply reach for built nodes
 NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.0

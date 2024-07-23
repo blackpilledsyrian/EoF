@@ -178,20 +178,14 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = EQC_equestrian_investors_factories
-				}
+			354 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_equestrian_investors_factories
-				}
+			357 = {
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -204,42 +198,21 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_equestrian_investors"
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = EQC_rich_set_industries
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			354 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = EQC_equestrian_investors_factories
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { has_state_flag = EQC_equestrian_investors_factories }
-					is_core_of = ROOT
-					free_building_slots = {
-						building = industrial_complex
-						size > 1
-						include_locked = yes
-					}
-				}
+			357 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
-				set_state_flag = EQC_equestrian_investors_factories
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -436,22 +409,13 @@ focus_tree = {
 
 		complete_tooltip = {
 			add_stability = -0.05
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state
-				}
+			362 = {
 				add_extra_state_shared_building_slots = 4
 			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state1
-				}
+			356 = {
 				add_extra_state_shared_building_slots = 4
 			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state2
-				}
+			355 = {
 				add_extra_state_shared_building_slots = 4
 			}
 		}
@@ -459,31 +423,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_land_grants"
 			add_stability = -0.05
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-				}
+			362 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { has_state_flag = EQC_land_grants_state }
-					is_core_of = ROOT
-				}
+			356 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { OR = { has_state_flag = EQC_land_grants_state has_state_flag = EQC_land_grants_state1 } }
-					is_core_of = ROOT
-				}
+			355 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }

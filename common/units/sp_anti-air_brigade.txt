@@ -19,6 +19,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_all_aa
+			category_light_aa
 			category_mechanical
 		}
 
@@ -86,6 +87,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_all_aa
+			category_light_aa
 			category_mechanical
 		}
 
@@ -157,6 +159,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_all_aa
+			category_light_aa
 			category_mechanical
 		}
 
@@ -218,6 +221,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_all_aa
+			category_light_aa
 			category_mechanical
 		}
 		
@@ -230,7 +234,7 @@ sub_units = {
 		}
 		battalion_mult = {
 			category = category_all_aa
-			air_attack = 0.1
+			air_attack = 0.2
 		}
 
 		combat_width = 0
@@ -277,6 +281,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_all_aa
+			category_light_aa
 			category_mechanical
 		}
 

@@ -10,7 +10,7 @@ EoF_EQS_fallback_terrain = {
 
 	army_core_attack_factor = -0.5
 	army_core_defence_factor = -0.5
-	enemy_army_speed_factor = -0.15
+	enemy_army_speed_factor = -0.25
 }
 EoF_southern_equus_invasion_terrain = {
 	icon = GFX_idea_raj_risk_of_famine
@@ -173,4 +173,18 @@ EoF_supply_stockpile = {
 	icon = GFX_idea_generic_supply_depot
 
 	local_supplies_for_controller = 1
+}
+EoF_ant_thrax_CHN = {
+	icon = GFX_idea_HIE_gas
+	
+	army_speed_factor = -0.5
+	army_org_regain = -0.3
+	attrition = 0.1
+}
+EoF_ant_thrax_EQS = {
+	icon = GFX_idea_HIE_gas
+	
+	army_speed_factor = -0.25
+	army_org_regain = -0.15
+	attrition = 0.05
 }

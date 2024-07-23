@@ -1056,11 +1056,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		path = {
-			leads_to_tech = jet_engines
-			research_cost_coeff = 1
-		}
-
 		research_cost = 2
 		start_year = 1015
 
@@ -1241,14 +1236,14 @@ technologies = {
 
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 2 }
+			position = { x = 2 y = 0 }
 		}
 		path = {
 			leads_to_tech = experimental_helicopter
 			research_cost_coeff = 1
 		}
 
-		start_year = 1015
+		start_year = 1014
 		research_cost = 2
 		enable_equipment_modules = {
 			tank_gas_turbine_engine
@@ -1318,10 +1313,6 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1017
-		folder = {
-			name = support_folder
-			position = { x = 13 y = 9 }
-		}
 
 		categories = {
 			helicopter_tech

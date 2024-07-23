@@ -55,6 +55,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_tank.dds"
 	}
 	spriteType = {
+		name = "GFX_EoF_cat_eq_all_anti_air"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_air.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_pawns"
 		texturefile = "gfx/interface/goals/goal_pawns.dds"
 	}
@@ -442,6 +446,26 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/heavy_AT_2.dds"
 	}
 	SpriteType = {
+		name = "GFX_heavyantiair1_medium"
+		textureFile = "gfx/interface/technologies/heavy_AA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair2_medium"
+		textureFile = "gfx/interface/technologies/antiair2.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair3_medium"
+		textureFile = "gfx/interface/technologies/antiair3.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair4_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair5_medium"
+		textureFile = "gfx/interface/technologies/heavy_AA_2.dds"
+	}
+	SpriteType = {
 		name = "GFX_gun_tech_1_medium"
 		textureFile = "gfx/interface/technologies/nsb_gun_tech_1.dds"
 	}
@@ -481,6 +505,22 @@ spriteTypes = {
 		name = "GFX_improved_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_2.dds"
 	}
+	SpriteType = {
+		name = "GFX_tech_headquarters_medium"
+		texturefile = "gfx/interface/technologies/tech_headquarters.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_headquarters2_medium"
+		texturefile = "gfx/interface/technologies/tech_headquarters2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_headquarters3_medium"
+		texturefile = "gfx/interface/technologies/tech_headquarters3.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_headquarters4_medium"
+		texturefile = "gfx/interface/technologies/tech_headquarters4.dds"
+	}
 	###Pictures###
 	spriteType = {
 		name = "GFX_GRF_border_war"
@@ -501,6 +541,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_JER_wingbardy_threat"
 		texturefile = "gfx/event_pictures/JER_wingbardy_threat.dds"
+	}
+	spriteType = {
+		name = "GFX_GRI_shore_expansionism"
+		texturefile = "gfx/event_pictures/GRI_shore_expansionism.dds"
 	}
 	spriteType = {
 		name = "GFX_EoF_fire"
@@ -608,6 +652,54 @@ spriteTypes = {
 		noOfFrames = 2
 	}
 	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_small"
+		texturefile = "gfx/texticons/support_heavy_anti_air_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_mech_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mech_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_mech_heavy_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
 		name = "GFX_unit_reinforced_light_armor_icon_medium"
 		textureFile = "gfx/interface/counters/divisions_large/unit_reinforced_light_tank_icon.dds" 
 		noOfFrames = 2
@@ -684,6 +776,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_amphibious_heavy_armor_icon_medium_white"
 		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_amphibious_tank_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_medium_tank_recon_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_medium_armored_recon_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_medium_tank_recon_icon_small"
+		texturefile = "gfx/texticons/support_medium_armored_recon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_headquarters_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_headquarters_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_headquarters_icon_small"
+		texturefile = "gfx/texticons/support_headquarters_small.dds"
+		legacy_lazy_load = no
 		noOfFrames = 2
 	}
 	###Ideas###

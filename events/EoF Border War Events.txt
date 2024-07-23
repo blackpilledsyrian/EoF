@@ -1,0 +1,104 @@
+add_namespace = GRF_border_war
+add_namespace = GRI_border_war
+
+country_event = {
+	id = GRF_border_war.1
+	title = GRF_border_war.1.t
+	desc = GRF_border_war.1.desc
+	picture = GFX_GRF_border_war
+	is_triggered_only = yes
+	option = {
+		name = GRF_border_war.1.a
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 338
+				num_provinces = 2
+				on_win = GRF_border_war.2
+				on_cancel = GRF_border_war.3
+				on_lose = GRF_border_war.3
+				dig_in_factor = 0
+				terrain_factor = 0
+				modifier = 0.5
+			}
+			defender = {
+				state = 241
+				num_provinces = 2
+				on_win = GRF_border_war.4
+				on_cancel = GRF_border_war.4
+				on_lose = GRF_border_war.5
+				dig_in_factor = 0
+				terrain_factor = 0
+			}
+		}
+		hidden_effect = {
+			GRF = {
+				add_threat = 15
+			}
+		}
+	}
+}
+country_event = {
+	id = GRF_border_war.2
+	title = GRF_border_war.2.t
+	desc = GRF_border_war.2.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = GRF_border_war.2.a
+		add_stability = 0.05
+		army_experience = 30
+		241 = {
+			transfer_state_to = GRF
+		}
+	}
+}
+country_event = {
+	id = GRF_border_war.3
+	title = GRF_border_war.3.t
+	desc = GRF_border_war.3.desc
+	picture = GFX_event_stalliongrad_soldier
+	is_triggered_only = yes
+	option = {
+		name = GRF_border_war.3.a
+	}
+}
+country_event = {
+	id = GRF_border_war.4
+	title = GRF_border_war.4.t
+	desc = GRF_border_war.4.desc
+	picture = GFX_event_stalliongrad_soldier
+	is_triggered_only = yes
+	option = {
+		name = GRF_border_war.4.a
+		add_stability = 0.05
+		army_experience = 30
+	}
+}
+country_event = {
+	id = GRF_border_war.5
+	title = GRF_border_war.5.t
+	desc = GRF_border_war.5.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = GRF_border_war.5.a
+	}
+}
+country_event = {
+	id = GRI_border_war.1
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		379 = {
+			transfer_state_to = GRI
+		}
+	}
+}
+country_event = {
+	id = GRI_border_war.2
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {	
+	}
+}

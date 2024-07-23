@@ -15,10 +15,8 @@
 leader_traits = {
 	EoF_dandan = {
 		random = no
-		production_cost_industrial_complex_factor = -0.15
-		production_cost_arms_factory_factor = -0.15
-		global_building_slots_factor = 0.5
-		consumer_goods_factor = -0.5
+		production_cost_industrial_complex_factor = -0.1
+		production_cost_arms_factory_factor = -0.1
 		industrial_capacity_factory = 0.2
 		land_night_attack = -0.05	
 	}

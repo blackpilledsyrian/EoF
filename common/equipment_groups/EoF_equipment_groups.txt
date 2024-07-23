@@ -28,3 +28,9 @@ EoF_cat_eq_all_anti_tank = {
 		heavy_anti_tank_equipment
 	}
 }
+EoF_cat_eq_all_anti_air = {
+	equipment_type = {
+		anti_air_equipment
+		heavy_anti_air_equipment
+	}
+}
