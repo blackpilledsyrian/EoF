@@ -1,0 +1,10 @@
+sound = {
+	name = "friendship_nuke_initial_sound"
+	file = "placeholders/amb_vanerhall_thunderclap_outside05.wav"
+	always_load = no
+}
+sound = {
+	name = "friendship_nuke_charge_sound"
+	file = "customsound/friendship_nuke_charge.wav"
+	always_load = no
+}

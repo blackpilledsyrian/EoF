@@ -5,7 +5,9 @@ entity = {
 	state = { name = "idle" animation = idle looping = no
 	
 		event = { light = hwomd_staging_light }
+		event = { time = 0.05 sound = { soundeffect = "friendship_nuke_initial" } }
 		event = { time = 1.6 particle = hwomd_particle }
+		event = { time = 1.625 sound = { soundeffect = "friendship_nuke_charge" } }
 		event = { time = 3.95 light = hwomd_merge_light }
 		event = { time = 4.825 light = hwomd_explosion_light }
 		event = { time = 4.85 particle = hwomd_explosion_particle sound = { soundeffect = "nuke" } }

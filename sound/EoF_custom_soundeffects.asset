@@ -1,0 +1,32 @@
+soundeffect =
+{
+	name = "friendship_nuke_initial"
+	loop = no
+	falloff = falloff_nuke
+	random_sound_when_looping = no
+	sounds = {
+		sound = friendship_nuke_initial_sound
+	}
+	volume = 12
+	max_audible = 16
+	is3d = yes
+	max_audible_behaviour = fail
+	#fade_in = 0.45
+	#fade_out = 0.45
+}
+soundeffect =
+{
+	name = "friendship_nuke_charge"
+	loop = no
+	falloff = falloff_nuke
+	random_sound_when_looping = no
+	sounds = {
+		sound = friendship_nuke_charge_sound
+	}
+	volume = 1.75
+	max_audible = 8
+	is3d = yes
+	max_audible_behaviour = fail
+	#fade_in = 0.45
+	#fade_out = 0.45
+}
