@@ -8,18 +8,19 @@ state={
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDS
+		add_core_of = SDC
+		add_core_of = SDL
+		add_core_of = SDF
+		add_core_of = SDS
 
 	}
 
 	provinces={
 		14920 14937 14943 14950 14954 14956 14968 14969 14976 14982 15005 
 	}
-	manpower=89709
+	manpower=39709
 	buildings_max_level_factor=1.000
 	state_category=wasteland
+	impassable=yes
 }
