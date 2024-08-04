@@ -1,3 +1,7 @@
+#orbital watermark
+
+
+
 ideas = {
 	country = {
 		EoF_MCW_Zebrican_Privatization_1 = {
@@ -249,17 +253,21 @@ ideas = {
 
 		
 
-		EoF_MCW_breathe_life_into_brodershamn_national_spirit_component = {
+		EoF_MCW_fuck_the_navy_idea = {
 			icon = GFX_idea_generic_supply_depot
 			modifier = {
 				industrial_capacity_dockyard= -0.90
 				repair_speed_factor = 0.60
-				production_speed_dockyard_factor = 50
-
+				production_speed_dockyard_factor = 0.4
 			}
 			
+			equipment_bonus = {
+				convoy = {
+					build_cost_ic = -0.50
+					instant = yes
+				}
+			}
 		}
-
 
 
 

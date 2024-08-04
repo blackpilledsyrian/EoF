@@ -1,3 +1,6 @@
+
+#orbital watermark
+
 EoF_MCW_Minotaur_Expertise = {
 	icon = GFX_idea_generic_supply_depot
 

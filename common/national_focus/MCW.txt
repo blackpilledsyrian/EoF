@@ -1,3 +1,7 @@
+#orbital watermark
+
+
+
 focus_tree = {
 	id = EoF_MCW_focus
 
@@ -744,12 +748,136 @@ focus_tree = {
 
 
 
+	focus = {
+		id = EoF_MCW_special_forces_academy
+		icon = GFX_focus_indy_generic_political
+		
+		x = 1
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_better_artillery
+		prerequisite = { focus = EoF_MCW_better_inf_weapons focus = EoF_MCW_better_artillery }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+
+	focus = { 
+		id = EoF_MCW_pour_our_hearts_into_the_project
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_special_forces_academy
+		prerequisite = { focus = EoF_MCW_special_forces_academy }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+	focus = { 
+		id = EoF_MCW_our_efforts_bear_fruit
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_pour_our_hearts_into_the_project
+		prerequisite = { focus = EoF_MCW_pour_our_hearts_into_the_project }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+	focus = { 
+		id = EoF_MCW_cracked_marines
+		icon = GFX_focus_indy_generic_political
+		
+		x = -2
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_our_efforts_bear_fruit
+		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+	focus = { 
+		id = EoF_MCW_cracked_mountaineers
+		icon = GFX_focus_indy_generic_political
+		
+		x = 0
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_our_efforts_bear_fruit
+		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+	focus = { 
+		id = EoF_MCW_cracked_paratroopers
+		icon = GFX_focus_indy_generic_political
+		
+		x = 2
+		y = 1
+		cost = 1
+		relative_position_id = EoF_MCW_our_efforts_bear_fruit
+		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
 	#OLENIAN NAVAL TREE 
 	focus = {
 		id = EoF_MCW_navy_1
 		icon = GFX_focus_indy_generic_political
 		
-		x = 11
+		x = 15
 		y = 2
 		cost = 1
 		relative_position_id = EoF_communion_of_souls
@@ -779,7 +907,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			add_ideas = EoF_MCW_breathe_life_into_brodershamn_national_spirit_component
+			add_ideas = EoF_MCW_fuck_the_navy_idea
 		}
 		
 	}
@@ -1072,7 +1200,7 @@ focus_tree = {
 		id = MCW_air_1
 		icon = GFX_focus_indy_generic_political
 		
-		x = 17
+		x = 21
 		y = 2
 		cost = 1
 		relative_position_id = EoF_communion_of_souls
