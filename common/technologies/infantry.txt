@@ -104,6 +104,18 @@ technologies = {
 			additional_machine_guns
 		}
 
+		enable_equipment_modules = {
+			bolt_action
+			bolt_action_2
+			semi_auto
+			semi_auto_2
+			semi_auto_3
+			submachine_gun
+			war_submachine_gun
+			submachine_gun_2
+			submachine_gun_3
+		}
+
 		dependencies = {
 			melee_weapons1 = 1
 			pre_gw_artillery = 1

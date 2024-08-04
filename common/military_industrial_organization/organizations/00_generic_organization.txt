@@ -246,7 +246,12 @@ generic_infantry_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { armor }
+	equipment_type = {
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+		mio_cat_eq_all_super_heavy_tank
+	}
 	research_categories = { mio_cat_tech_all_armor_and_modules }
 
 	tree_header_text = {
@@ -516,7 +521,12 @@ generic_mobile_tank_organization = {
 		always = no # Archetype only - countries using it have their own verisons
 	}
 
-	equipment_type = { armor }
+	equipment_type = {
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+		mio_cat_eq_all_super_heavy_tank
+	}
 	research_categories = { mio_cat_tech_all_armor_and_modules }
 
 	tree_header_text = {
@@ -1737,7 +1747,10 @@ generic_tank_refurbishment_plant_organization = {
 	}
 
 	equipment_type = {
-		armor
+		mio_cat_eq_all_light_tank
+		mio_cat_eq_all_medium_tank
+		mio_cat_eq_all_heavy_tank
+		mio_cat_eq_all_super_heavy_tank
 		support_equipment
 		train_equipment
 		railway_gun_equipment

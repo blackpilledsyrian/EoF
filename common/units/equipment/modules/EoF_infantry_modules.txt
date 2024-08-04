@@ -1,0 +1,52 @@
+equipment_modules = {
+	limit = {
+		has_dlc = "No Step Back" 
+	}
+### Engine Types
+
+	bolt_action = {
+		abbreviation = "bolt"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	bolt_action_2 = {
+		abbreviation = "bolt2"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	semi_auto = {
+		abbreviation = "semi"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	semi_auto_2 = {
+		abbreviation = "semi2"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	semi_auto_3 = {
+		abbreviation = "semi3"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	submachine_gun = {
+		abbreviation = "sub"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	submachine_gun_2 = {
+		abbreviation = "sub2"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	war_submachine_gun = {
+		abbreviation = "wsub"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+	submachine_gun_3 = {
+		abbreviation = "sub3"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine
+	}
+}

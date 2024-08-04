@@ -247,7 +247,6 @@ equipments = {
 		lend_lease_cost = 10
 
 		manpower = 2
-
 	}
 
 	light_tank_chassis_0 = { #also great war tank

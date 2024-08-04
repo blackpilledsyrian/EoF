@@ -1,0 +1,21 @@
+﻿l_english:
+bolt_action:0 "Basic Bolt-Action Rifle"
+bolt_action_desc:0 ""
+bolt_action_2:0 "Improved Bolt-Action Rifle"
+bolt_action_2_desc:0 ""
+
+semi_auto:0 "Basic Semi-Auto Rifle"
+semi_auto_desc:0 ""
+semi_auto_2:0 "Improved Semi-Auto Rifle"
+semi_auto_2_desc:0 ""
+semi_auto_3:0 "Battle Rifle"
+semi_auto_3_desc:0 ""
+
+submachine_gun:0 "Basic Submachine Gun"
+submachine_gun_desc:0 ""
+submachine_gun_2:0 "Improved Submachine Gun"
+submachine_gun_2_desc:0 ""
+submachine_gun_3:0 "Advanced Submachine Gun"
+submachine_gun_3_desc:0 ""
+war_submachine_gun:0 "Wartime Submachine Gun"
+war_submachine_gun_desc:0 "Wartime Submachine Gun"

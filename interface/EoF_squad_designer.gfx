@@ -1,0 +1,57 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_TC_squad"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/squad_blueprint.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_bolt_action"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/bolt_action.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_bolt_action_2"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/bolt_action_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_semi_auto"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/semi_auto.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_semi_auto_2"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/semi_auto_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_semi_auto_3"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/semi_auto_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_submachine_gun"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/submachine_gun.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_submachine_gun_2"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/submachine_gun_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_submachine_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/submachine_gun_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_war_submachine_gun"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/war_submachine_gun.dds"
+		legacy_lazy_load = no
+	}
+	spiteType = {
+		name = "GFX_EMI_infantry_light_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/"
+		legacy_lazy_load = no
+	}
+}
