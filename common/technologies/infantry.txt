@@ -105,15 +105,23 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			bolt_action
+			bolt_action_1
 			bolt_action_2
-			semi_auto
+			semi_auto_1
 			semi_auto_2
 			semi_auto_3
-			submachine_gun
-			war_submachine_gun
+			battle_rifle
+			assault_rifle
+			carbine
+			submachine_gun_1
 			submachine_gun_2
 			submachine_gun_3
+			war_submachine_gun
+			light_machine_gun_1
+			light_machine_gun_2
+			light_machine_gun_3
+			automatic_rifle_1
+			automatic_rifle_2
 		}
 
 		dependencies = {

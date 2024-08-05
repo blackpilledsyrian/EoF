@@ -69,6 +69,8 @@ equipments = {
 			squad_leader_type_slot = {
 				required = no
 				allowed_module_categories = {
+					infantry_light_weapon
+					infantry_heavy_weapon
 				}
 			}
 

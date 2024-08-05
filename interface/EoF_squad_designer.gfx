@@ -5,8 +5,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_bolt_action"
-		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/bolt_action.dds"
+		name = "GFX_EMI_bolt_action_1"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/bolt_action_1.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -15,8 +15,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_semi_auto"
-		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/semi_auto.dds"
+		name = "GFX_EMI_semi_auto_1"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/semi_auto_1.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -30,8 +30,23 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_submachine_gun"
-		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/submachine_gun.dds"
+		name = "GFX_EMI_battle_rifle"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/battle_rifle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_assault_rifle"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/assault_rifle.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_carbine"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/carbine.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_submachine_gun_1"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/submachine_gun_1.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -49,8 +64,38 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/war_submachine_gun.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_EMI_light_machine_gun_1"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/light_machine_gun_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_light_machine_gun_2"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/light_machine_gun_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_light_machine_gun_3"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/light_machine_gun_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_automatic_rifle_1"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/automatic_rifle_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_automatic_rifle_2"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/automatic_rifle_2.dds"
+		legacy_lazy_load = no
+	}
 	spiteType = {
 		name = "GFX_EMI_infantry_light_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/"
+		legacy_lazy_load = no
+	}
+	spiteType = {
+		name = "GFX_EMI_infantry_heavy_weapon"
 		textureFile = "gfx/interface/equipmentdesigner/infantry/modules/"
 		legacy_lazy_load = no
 	}

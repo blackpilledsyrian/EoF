@@ -4,33 +4,98 @@ equipment_modules = {
 	}
 ### Engine Types
 
-	bolt_action = {
-		abbreviation = "bolt"
+	bolt_action_1 = {
+		abbreviation = "bolt1"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			soft_attack = 0.2
+			defense = 2
+			build_cost_ic = 0.05
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
 	}
 	bolt_action_2 = {
 		abbreviation = "bolt2"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			soft_attack = 0.3
+			defense = 3
+			build_cost_ic = 0.06
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
 	}
-	semi_auto = {
-		abbreviation = "semi"
+	semi_auto_1 = {
+		abbreviation = "semi1"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			soft_attack = 0.35
+			defense = 3.5
+			build_cost_ic = 0.1
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
 	}
 	semi_auto_2 = {
 		abbreviation = "semi2"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			soft_attack = 0.55
+			defense = 4
+			build_cost_ic = 0.15
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
 	}
 	semi_auto_3 = {
 		abbreviation = "semi3"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+
+		add_stats = {
+			soft_attack = 0.75
+			defense = 4.5
+			build_cost_ic = 0.2
+		}
+
+		build_cost_resources = {
+			steel = 1
+		}
 	}
-	submachine_gun = {
-		abbreviation = "sub"
+	battle_rifle = {
+		abbreviation = "batr"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	assault_rifle = {
+		abbreviation = "assr"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	carbine = {
+		abbreviation = "carb"
+		category = infantry_light_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	submachine_gun_1 = {
+		abbreviation = "sub1"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
 	}
@@ -48,5 +113,30 @@ equipment_modules = {
 		abbreviation = "sub3"
 		category = infantry_light_weapon
 		sfx = sfx_ui_sd_module_engine
+	}
+	light_machine_gun_1 = {
+		abbreviation = "lmg1"
+		category = infantry_heavy_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	light_machine_gun_2 = {
+		abbreviation = "lmg2"
+		category = infantry_heavy_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	light_machine_gun_3 = {
+		abbreviation = "lmg3"
+		category = infantry_heavy_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	automatic_rifle_1 = {
+		abbreviation = "autor1"
+		category = infantry_heavy_weapon
+		sfx = sfx_ui_sd_module_engine	
+	}
+	automatic_rifle_2 = {
+		abbreviation = "autor2"
+		category = infantry_heavy_weapon
+		sfx = sfx_ui_sd_module_engine	
 	}
 }
