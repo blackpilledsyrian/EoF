@@ -2653,7 +2653,12 @@ EoF_JER_DOMINATION = {
 EoF_HIP_DOMINATION = {
 	color = rgb { 22 139 181 }
 	color_ui = rgb { 22 139 181 }
-}Riseia_formable = {
+}
+EoF_GRY_WNG = {
+	color = rgb { 151 110 255 }
+	color_ui = rgb { 151 110 255 }	
+}
+Riseia_formable = {
 	color = rgb { 132 10 41 }
     color_ui = rgb { 132 10 41 }
 }
