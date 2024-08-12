@@ -1385,7 +1385,7 @@ hidden_effect = {
 
 		}
 		allow_branch = {
-		has_country_flag = EQC_EQS_invasion
+			has_country_flag = EQC_EQS_invasion
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1569,7 +1569,7 @@ hidden_effect = {
 
 		}
 		allow_branch = {
-		has_country_flag = EQC_EQS_invasion
+			has_country_flag = EQC_EQS_invasion
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -2239,17 +2239,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -2355,18 +2345,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -2578,23 +2557,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_kingfisher_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -3073,7 +3036,7 @@ hidden_effect = {
 				}
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 50
 				}
 			}
 			add_tech_bonus = {
@@ -3372,23 +3335,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_kingfisher_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -3869,23 +3816,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -4006,7 +3937,7 @@ hidden_effect = {
 			356 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -4723,23 +4654,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_kingfisher_wins
-					}
-				}
-			}
+			always = no
 		}
 		
 		available = {
@@ -6566,18 +6481,7 @@ hidden_effect = {
 		}
 		
 		allow_branch = {
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_commonwelth_congress
-				}
-			}
+			always = no
 		}
 		
 		available = {

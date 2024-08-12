@@ -3096,7 +3096,7 @@ prospect_for_resources = {
 				set_state_flag = coltberley_iron_mines_developed
 				add_resource = {
 					type = steel
-					amount = 3
+					amount = 30
 				}
 			}
 		}
@@ -3157,7 +3157,7 @@ prospect_for_resources = {
 				set_state_flag = buckeelong_crystal_mines_developed
 				add_resource = {
 					type = crystals
-					amount = 7
+					amount = 70
 				}
 			}
 		}
@@ -3218,7 +3218,7 @@ prospect_for_resources = {
 				set_state_flag = trartalon_coal_mine_developed
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 		}
