@@ -3509,11 +3509,23 @@ focus_tree = {
 					uses = 1
 					category = light_air
 				}
-				generic_early_fighter = yes
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
-					variant_name = "Early Fighter"
-					amount = 75
+					variant_name = "Sv.109"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "Sv.109"
+						amount = 100
+					}
 				}
 			}
 			else_if = {
@@ -3532,7 +3544,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
 					variant_name = "Early Fighter"
-					amount = 75
+					amount = 100
 				}
 			}
 			else_if = {
@@ -3546,8 +3558,20 @@ focus_tree = {
 					category = light_fighter
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 75
+					type = fighter_equipment_0
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 100
+					}
 				}
 			}
 			else = {
@@ -3555,8 +3579,8 @@ focus_tree = {
 					early_fighter = 1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 75
+					type = fighter_equipment_0
+					amount = 100
 				}
 			}
 			if = {
@@ -3574,11 +3598,10 @@ focus_tree = {
 					uses = 1
 					category = medium_air
 				}
-				generic_early_tac_bomber = yes
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_0
-					variant_name = "Early Tactical Bomber"
-					amount = 30
+					type = medium_plane_airframe_1
+					variant_name = "UWA.111"
+					amount = 50
 				}
 			}
 			else_if = {
@@ -3611,7 +3634,7 @@ focus_tree = {
 					category = tactical_bomber
 				}
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe
+					type = tac_bomber_equipment_0
 					amount = 30
 				}
 			}
@@ -3620,8 +3643,53 @@ focus_tree = {
 					early_bomber = 1
 				}
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe
+					type = tac_bomber_equipment_0
 					amount = 30
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = basic_small_airframe
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					variant_name = "Vs.87"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_cas_airframe_1
+						variant_name = "Vs.87"
+						amount = 100
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = CAS1
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 100
+					}
 				}
 			}
 		}
@@ -4532,6 +4600,7 @@ focus_tree = {
 						tank_nsb_armor_upgrade = 4
 					}
 					icon = "gfx/interface/technologies/CHN_panzerIV.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_panzerIV.dds"
 				}		
 			}
 		}
@@ -4599,7 +4668,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 11
 						tank_nsb_armor_upgrade = 10
 					}
-					icon = "gfx/interface/technologies/CHN_panther.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_panther.dds"
 				}		
 			}
 		custom_effect_tooltip = CHN_TigerI_tooltip
@@ -4632,7 +4701,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 7
 						tank_nsb_armor_upgrade = 7
 					}
-					icon = "gfx/interface/technologies/CHN_tiger.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_tiger.dds"
 				}		
 			}
 		}
@@ -4719,7 +4788,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 11
 						tank_nsb_armor_upgrade = 18
 					}
-					icon = "gfx/interface/technologies/CHN_King_Tiger.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_King_Tiger.dds"
 				}		
 			}
 		}
@@ -7806,8 +7875,24 @@ focus_tree = {
 		icon = GFX_goal_chn_man_colony
 		cost = 7.2
 		available = {
-			14 = { is_owned_and_controlled_by = ROOT }
-			136 = { is_owned_and_controlled_by = ROOT }
+			14 = {
+				owner = {
+					has_full_control_of_state = PREV
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			136 = {
+				owner = {
+					has_full_control_of_state = PREV
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
 			if = {
 				limit = {
 					has_global_flag = ZRS_uprising_has_happened

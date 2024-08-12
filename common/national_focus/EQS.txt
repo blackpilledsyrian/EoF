@@ -207,13 +207,7 @@ shared_focus = {
 				limit = { amount_research_slots < 5 }
 				add_research_slot = 1
 			}
-			else_if = {
-				limit = { has_dlc = "Together for Victory" }
-				add_ideas = CRY_EQS_techshare
-			}
-			else = {
-				add_ideas = CRY_EQS_techshare_no_tfv
-			}
+			add_ideas = CRY_EQS_techshare
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
@@ -2274,7 +2268,7 @@ shared_focus = {
 							tank_nsb_engine_upgrade = 6
 							tank_nsb_armor_upgrade = 2
 						}
-						icon = "gfx/interface/technologies/EQS_comet.dds"
+						icon = "gfx/interface/technologies/armour_folder/commonwealth_2d/EQS_comet.dds"
 					}		
 			}
 	}

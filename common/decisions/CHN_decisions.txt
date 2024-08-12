@@ -3521,7 +3521,7 @@ CHN_love_consumption_mechanic = {
 
 		custom_cost_trigger = {
 			has_political_power > 49
-			command_power > 29
+			check_variable = { var = command_power value = 30 compare = greater_than_or_equals }
 		}
 
 		custom_cost_text = decision_cost_pp_50_30_cp
@@ -3596,7 +3596,7 @@ CHN_love_consumption_mechanic = {
 
 		custom_cost_trigger = {
 			has_political_power > 49
-			command_power > 29
+			check_variable = { var = command_power value = 30 compare = greater_than_or_equals }
 		}
 
 		custom_cost_text = decision_cost_pp_50_30_cp
@@ -4520,8 +4520,8 @@ CHN_equestrian_insurgency_category = {
 				remove_from_array = { CHN_dispatched_mtf_state_decision_1_arr = FROM }
 				FROM = {
 					clr_state_flag = CHN_dispatched_mtf_state_decision_1
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 01\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 02\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 01\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 02\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
 				}
 			}
 		}
@@ -4615,8 +4615,8 @@ CHN_equestrian_insurgency_category = {
 				remove_from_array = { CHN_dispatched_mtf_state_decision_2_arr = FROM }
 				FROM = {
 					clr_state_flag = CHN_dispatched_mtf_state_decision_2
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 03\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 04\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 03\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 04\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
 				}
 			}
 		}
@@ -4710,8 +4710,8 @@ CHN_equestrian_insurgency_category = {
 				remove_from_array = { CHN_dispatched_mtf_state_decision_3_arr = FROM }
 				FROM = {
 					clr_state_flag = CHN_dispatched_mtf_state_decision_3
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 05\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 06\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 05\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 06\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
 				}
 			}
 		}
@@ -4805,8 +4805,8 @@ CHN_equestrian_insurgency_category = {
 				remove_from_array = { CHN_dispatched_mtf_state_decision_4_arr = FROM }
 				FROM = {
 					clr_state_flag = CHN_dispatched_mtf_state_decision_4
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 07\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 08\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 07\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 08\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
 				}
 			}
 		}
@@ -4900,8 +4900,8 @@ CHN_equestrian_insurgency_category = {
 				remove_from_array = { CHN_dispatched_mtf_state_decision_5_arr = FROM }
 				FROM = {
 					clr_state_flag = CHN_dispatched_mtf_state_decision_5
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 09\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
-					create_unit = { division = "name = \"Jagdkommando-Einsatzgruppe 10\" division_template = \"Jagdkommando Einsatzgruppe\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 09\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
+					create_unit = { division = "name = \"Sturmjäger Kommando 10\" division_template = \"Sturmjäger Kommando\" start_experience_factor = 0.75" owner = ROOT allow_spawning_on_enemy_provs = yes }
 				}
 			}
 		}
@@ -4947,10 +4947,9 @@ CHN_equestrian_insurgency_category = {
 			hidden_effect = {
 				clr_country_flag = CHN_recall_jagdkommandos_decision_in_progress_flag
 				delete_unit_template_and_units = {
-					division_template = "Jagdkommando Einsatzgruppe"
 				}
 				division_template = {
-					name = "Jagdkommando Einsatzgruppe"
+					name = "Sturmjäger Kommando"
 					division_names_group = CHN_LTINF_01
 					template_counter = 91
 					is_locked = yes
@@ -5045,7 +5044,17 @@ CHN_settlement_plan_cat = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = CHN_colonisation_decision_control_acornage_tt
-					14 = { NOT = { is_controlled_by = CHN } }
+					NOT = {
+						136 = {
+							owner = {
+								controls_state = PREV
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -5103,7 +5112,17 @@ CHN_settlement_plan_cat = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = CHN_colonisation_decision_control_vanhoover_tt
-					14 = { NOT = { is_controlled_by = CHN } }
+					NOT = {
+						14 = {
+							owner = {
+								controls_state = PREV
+								OR = {
+									tag = ROOT
+									is_subject_of = ROOT
+								}
+							}
+						}
+					}
 				}
 			}
 		}
@@ -5444,7 +5463,7 @@ CHN_chaos_in_the_everfree = {
 		}
 
 		custom_cost_trigger = {
-			command_power > 29
+			check_variable = { var = command_power value = 30 compare = greater_than_or_equals }
 			has_political_power > 24
 		}
 		custom_cost_text = decision_cost_CP_30_pp_25
@@ -5480,7 +5499,7 @@ CHN_chaos_in_the_everfree = {
 		}
 
 		custom_cost_trigger = {
-			command_power > 29
+			check_variable = { var = command_power value = 30 compare = greater_than_or_equals }
 			has_political_power > 24
 		}
 		custom_cost_text = decision_cost_CP_30_pp_25
@@ -5637,7 +5656,11 @@ military_training_category = {
 			}
 		}
 		custom_cost_trigger = {
-			command_power > 99
+			check_variable = {
+				var = command_power
+				value = 100
+				compare = greater_than_or_equals
+			}
 		}
 		custom_cost_text = decision_cost_CP_100
 		fire_only_once = yes
@@ -5687,7 +5710,11 @@ military_training_category = {
 			}
 		}
 		custom_cost_trigger = {
-			command_power > 99
+			check_variable = {
+				var = command_power
+				value = 100
+				compare = greater_than_or_equals
+			}
 		}
 		custom_cost_text = decision_cost_CP_100
 		fire_only_once = yes
