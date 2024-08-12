@@ -2,7 +2,32 @@ equipment_modules = {
 	limit = {
 		has_dlc = "No Step Back" 
 	}
+	advanced_light_tank_turret = {
+		abbreviation = "al3m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
 
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_small_main_armament
+			}
+			advanced_main_armament_slot = {
+				tank_small_main_armament
+				tank_advanced_small_main_armament
+			}
+		}
+		add_stats = {
+			maximum_speed = -0.4
+			build_cost_ic = 1.5
+			breakthrough = 10
+		}
+		multiply_stats = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		xp_cost = 0
+
+	}
 	advanced_medium_tank_turret = {
 		abbreviation = "am3m"
 		category = tank_medium_turret_type
@@ -26,7 +51,6 @@ equipment_modules = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-		dismantle_cost_ic = 1
 		xp_cost = 0
 
 	}
@@ -56,7 +80,6 @@ equipment_modules = {
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
-		dismantle_cost_ic = 1
 		xp_cost = 0
 	}
 	tank_optics_1 = {

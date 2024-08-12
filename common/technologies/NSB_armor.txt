@@ -284,9 +284,6 @@ technologies = {
 			light_tank_artillery_chassis_2
 			light_tank_aa_chassis_2
 		}
-		enable_equipment_modules = {
-			cupola_2
-		}
 
 		path = {
 			leads_to_tech = advanced_light_tank_chassis
@@ -513,20 +510,20 @@ technologies = {
 			light_tank_aa_chassis_3
 		}
 		enable_equipment_modules = {
-			cupola_3
+			cupola_2
 		}
 
 		path = {
-			leads_to_tech = semi_modern_light_tank_chassis
+			leads_to_tech = advanced_light_tank_turret
 			research_cost_coeff = 1
 		}
 
 		research_cost = 2
-		start_year = 1012
+		start_year = 1011
 
 		folder = {
 			name = nsb_armour_folder
-			position = { x = -1 y = @1012 }
+			position = { x = -1 y = @1011 }
 		}
 
 		ai_will_do = {
@@ -565,23 +562,56 @@ technologies = {
 		}
 	}
 
+	advanced_light_tank_turret = {
+
+		enable_equipment_modules = {
+			advanced_light_tank_turret
+			cupola_3
+		}
+
+		path = {
+			leads_to_tech = semi_modern_light_tank_chassis
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 1013
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -1 y = @1013 }
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_light_armor
+			mio_cat_tech_light_armor_and_modules
+		}
+	}
+
 	semi_modern_light_tank_chassis = { #M41 Walker Bulldog
 
 		enable_equipments = {
 			light_tank_chassis_4
 		}
 
-		enable_equipment_modules = {
-			oscillating_turret
-		}
-
 		path = {
 			leads_to_tech = modern_light_tank_chassis
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = main_battle_tank_chassis
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
-		start_year = 1018
+		start_year = 1014
+
+		folder = {
+			name = nsb_armour_folder
+			position = { x = -1 y = @1014 }
+		}
 
 		ai_will_do = {
 			factor = 1

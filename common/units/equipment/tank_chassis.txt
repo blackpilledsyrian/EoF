@@ -337,7 +337,7 @@ equipments = {
 		abbreviation = "lt3"
 		derived_variant_name = light_tank_equipment_3
 		visual_level = 2
-		year = 1012
+		year = 1011
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_2
 		priority = 2000
@@ -387,17 +387,182 @@ equipments = {
 		abbreviation = "lt4"
 		derived_variant_name = light_tank_equipment_x
 		visual_level = 3
-		year = 1018
+		year = 1014
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_3
 		priority = 2000
-		module_slots = inherit
 		build_cost_ic = 2.5
-		maximum_speed = 5.5
+		maximum_speed = 7
 		reliability = 1.5
-		armor_value = 25
+		armor_value = 50
+		breakthrough = 16
+		defense = 6
 		resources = {
-			steel = 30
+			steel = 10
+		}
+
+		module_slots = {
+			turret_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_light_turret_type
+				}
+			}
+			
+			advanced_main_armament_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_small_main_armament
+					tank_magic_cannon_light
+					tank_flamethrower
+				}
+			}
+
+			suspension_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_suspension_type
+				}
+			}
+
+			armor_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_armor_type
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					tank_engine_type
+				}
+			}
+
+			radio_type_slot = {
+				required = no
+				allowed_module_categories = {
+					tank_radio_module
+				}
+			}
+
+			optics_type_slot = {
+				required = no
+				allowed_module_categories = {
+					tank_optics_type
+				}
+			}
+
+			main_armament_slot = {
+				required = no
+				allowed_module_categories = {
+				}
+			}
+
+			special_type_slot_1 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
+
+			special_type_slot_7 = {
+				required = no
+				allowed_module_categories = {
+					tank_special_module
+					tank_simplification_module
+					tank_cupola_module
+					tank_coaxial_module
+					tank_rocket_module
+					tank_special_module_stabilizer
+					tank_special_module_maintenance
+					tank_special_module_skirts
+					tank_secondary_turret
+				}
+			}
 		}
 	}
 	light_tank_chassis_5 = {
