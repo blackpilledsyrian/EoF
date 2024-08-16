@@ -5468,8 +5468,8 @@ leader_traits = {
 
 	prince_of_terror = {
 		resistance_damage_to_garrison = -0.25
-		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.02
+		command_power_gain_mult = 0.15
+		org_loss_at_low_org_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -5478,8 +5478,8 @@ leader_traits = {
 
 	compassionate_gentleman = {
 		random = yes
-		opinion_gain_monthly_factor = 0.15
-		resistance_damage_to_garrison = -0.15
+		political_power_factor = 0.05
+		stability_weekly = 0.001
 
 		ai_will_do = {
 			factor = 1
@@ -5487,8 +5487,8 @@ leader_traits = {
 	}
 
 	backroom_backstabber = {
-		subversive_activites_upkeep = -0.25
-		drift_defence_factor = 0.25
+		political_power_factor = 0.05
+		war_support_weekly = 0.001
 
 		ai_will_do = {
 			factor = 1
@@ -5497,8 +5497,8 @@ leader_traits = {
 
 	smooth_talking_charmer = {
 		random = yes
-		improve_relations_maintain_cost_factor = -0.5
-		trade_opinion_factor = 0.10
+		local_resources_factor = 0.1
+		min_export = -0.05
 
 		ai_will_do = {
 			factor = 1
@@ -5507,8 +5507,9 @@ leader_traits = {
 
 	ideological_crusader = {
 		random = yes
-		opinion_gain_monthly_same_ideology_factor = 1.0
 		party_popularity_stability_factor = 0.1
+		conscription_factor = 0.1
+		surrender_limit = 0.05
 
 		ai_will_do = {
 			factor = 0.2
@@ -5519,7 +5520,8 @@ leader_traits = {
 		random = yes
 		production_speed_bunker_factor = 0.2
 		production_speed_coastal_bunker_factor = 0.2
-		production_speed_anti_air_building_factor = 0.2
+		land_bunker_effectiveness_factor = 0.2
+		coastal_bunker_effectiveness_factor = 0.2
 
 		ai_will_do = {
 			factor = 1
@@ -5591,7 +5593,8 @@ leader_traits = {
 	armaments_organizer = {
 		random = yes
 		conversion_cost_civ_to_mil_factor = -0.2
-		production_speed_supply_node_factor = 0.1
+		production_factory_efficiency_gain_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
 		# civ_to_mil_industry_conversion_rate = -1
 
 		ai_will_do = {
@@ -5610,11 +5613,8 @@ leader_traits = {
 	}
 	quartermaster_general = {
 		random = yes
-		production_speed_air_base_factor = 0.15
-		production_speed_naval_base_factor = 0.15
-		production_speed_rocket_site_factor = 0.15
-		production_speed_radar_station_factor = 0.15
-		production_speed_nuclear_reactor_factor = 0.15
+		supply_node_range = 0.1
+		production_cost_supply_node_factor = -0.25
 
 		ai_will_do = {
 			factor = 0.2
@@ -5804,10 +5804,9 @@ leader_traits = {
 
 	princess_of_terror = {
 		random = no
-
 		resistance_damage_to_garrison = -0.25
-		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.02
+		command_power_gain_mult = 0.15
+		org_loss_at_low_org_factor = -0.15
 
 		ai_will_do = {
 			factor = 1

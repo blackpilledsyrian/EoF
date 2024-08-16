@@ -445,6 +445,7 @@ equipment_modules = {
 			advanced_main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				tank_advanced_small_main_armament
 				tank_advanced_medium_main_armament
 				tank_advanced_heavy_main_armament
 			}
@@ -542,6 +543,7 @@ equipment_modules = {
 			advanced_main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
+				tank_advanced_small_main_armament
 				tank_advanced_medium_main_armament
 				tank_advanced_heavy_main_armament
 				tank_super_heavy_main_armament

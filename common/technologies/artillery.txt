@@ -1526,6 +1526,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
+			tank_light_high_velocity_cannon
 			squeezebore_adaptor
 		}
 		path = {
@@ -1607,6 +1608,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_small_cannon_2
+			tank_light_high_velocity_cannon
 			squeezebore_adaptor
 		}
 		path = {
@@ -1640,7 +1642,6 @@ technologies = {
 			anti_tank_equipment_2
 		}
 		enable_equipment_modules = {
-			tank_light_high_velocity_cannon
 			tank_medium_cannon_2
 			tank_medium_high_velocity_cannon_2
 			tank_buster_2
@@ -1723,6 +1724,7 @@ technologies = {
 	antitank3 = {
 		enable_equipment_modules = {
 			tank_small_cannon_3
+			tank_light_high_velocity_cannon_2
 		}
 		anti_tank = {
 			hard_attack = 0.1
@@ -1794,7 +1796,6 @@ technologies = {
 	antitank4 = {
 
 		enable_equipment_modules = {
-			tank_light_high_velocity_cannon_2
 			special_ammunition
 		}
 		anti_tank = {
@@ -1866,6 +1867,8 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_cannon_3
 			tank_medium_high_velocity_cannon_3
+			tank_small_cannon_4
+			tank_light_high_velocity_cannon_3
 			auto_loader
 		}
 		

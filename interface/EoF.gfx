@@ -128,7 +128,13 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+
 	###Tank Modules###
+	spriteType = {
+		name = "GFX_EMI_advanced_light_tank_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_advanced_light_turret.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_advanced_medium_tank_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_advanced_medium_turret.dds"
@@ -157,6 +163,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_light_high_velocity_cannon_2"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_light_high_velocity_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_3.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -229,7 +240,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_3.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_EMI_tank_advanced_small_main_armament"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_tank_advanced_medium_main_armament"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
@@ -418,6 +433,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tank_super_heavy_cannon_medium"
 		textureFile = "gfx/interface/technologies/super_heavy_cannon.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_light_tank_turret_medium"
+		textureFile = "gfx/interface/technologies/advanced_light_turret.dds"
 	}
 	SpriteType = {
 		name = "GFX_advanced_medium_tank_turret_medium"
@@ -850,6 +869,46 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_EoF_kemerkai"
 		texturefile = "gfx/interface/ideas/kemerkai.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_1"
+		texturefile = "gfx/interface/ideas/idea_procurement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_2"
+		texturefile = "gfx/interface/ideas/idea_procurement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_3"
+		texturefile = "gfx/interface/ideas/idea_procurement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_4"
+		texturefile = "gfx/interface/ideas/idea_procurement_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_5"
+		texturefile = "gfx/interface/ideas/idea_procurement_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_1"
+		texturefile = "gfx/interface/ideas/idea_professionalism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_2"
+		texturefile = "gfx/interface/ideas/idea_professionalism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_3"
+		texturefile = "gfx/interface/ideas/idea_professionalism_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_4"
+		texturefile = "gfx/interface/ideas/idea_professionalism_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_5"
+		texturefile = "gfx/interface/ideas/idea_professionalism_5.dds"
 	}
 	spriteType = {
 		name = "GFX_idea_EQS_ember_spark"
