@@ -558,7 +558,7 @@ focus_tree = {
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 10
 			}
 			country_event = {
 				id = changelings.37 days = 1
