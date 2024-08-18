@@ -194,6 +194,8 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
+	defence_contracts
+	semi_professional_army
 	lack_of_scientists3
 	poverty3
 	outdated_industry

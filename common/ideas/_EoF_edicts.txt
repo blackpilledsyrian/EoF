@@ -1,0 +1,29 @@
+ideas = {
+	edicts = {
+		law = yes
+		use_list_view = yes
+		
+		technological_primacy = {
+			picture = generic_research_bonus
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+				political_power_cost = 1.0
+			}
+		}
+	}
+}

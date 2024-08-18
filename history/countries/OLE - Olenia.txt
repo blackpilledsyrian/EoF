@@ -149,6 +149,8 @@ set_politics = {
 }
 
 add_ideas = {
+	corporate_arms_partnerships
+	reservist_system
 	EoF_OLE_corrupt_government_2
 	EoF_OLE_raising_dissent
 	outdated_industry

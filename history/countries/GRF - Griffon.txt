@@ -136,6 +136,8 @@ set_autonomy = {
 }
 
 add_ideas = {
+	subsidized_defence_contracts
+	militia_system
 	modern_society
 	GRF_colonial_economy
 	GRF_falcons_of_griffinstone

@@ -189,6 +189,8 @@ set_politics = {
 	elections_allowed = yes
 }
 add_ideas = {
+	corporate_arms_partnerships
+	semi_professional_army
 	proper_science_base
 	WNG_garibald_talonuel_iii
 	WNG_political_deadlock

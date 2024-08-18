@@ -846,6 +846,7 @@ script_enum_equipment_bonus_type = {
 	amphibious_tank_equipment_6
 
 	#EoF
+	EoF_cat_eq_all_equipment
 	EoF_cat_eq_all_tank_artillery
 	EoF_cat_eq_all_tank_destroyer
 	heavy_anti_tank_equipment

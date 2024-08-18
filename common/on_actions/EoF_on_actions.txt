@@ -141,29 +141,29 @@ on_actions = {
 						retire = yes
 				}
 			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = CHN
-						tag = OLE
-						tag = PLB
-						tag = GRF
-						tag = FAT
-						tag = JER
-						tag = GRI
-						tag = EQS
-						tag = CRY
-						tag = STG
-						tag = EQC
-						tag = HIP
-						tag = WNG
-						tag = MCW
-						#tag = RCT
-						#tag = FEA
-					}
-				}
-				add_ideas = EoF_peacetime_training
-			}
+			# every_country = {
+			# 	limit = {
+			# 		OR = {
+			# 			tag = CHN
+			# 			tag = OLE
+			# 			tag = PLB
+			# 			tag = GRF
+			# 			tag = FAT
+			# 			tag = JER
+			# 			tag = GRI
+			# 			tag = EQS
+			# 			tag = CRY
+			# 			tag = STG
+			# 			tag = EQC
+			# 			tag = HIP
+			# 			tag = WNG
+			# 			tag = MCW
+			# 			#tag = RCT
+			# 			#tag = FEA
+			# 		}
+			# 	}
+			# 	add_ideas = EoF_peacetime_training
+			# }
 		}
 	}
 	#All Starting Dynamic Modifiers Here

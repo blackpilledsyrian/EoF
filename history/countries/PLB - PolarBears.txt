@@ -68,6 +68,8 @@ add_ideas = {
 	PLB_outcasts
 	PLB_clan_divides
 	pre_industrial_society
+	nationalized_military_industry
+	martial_society
 	limited_exports
 	lack_of_scientists3
 	low_economic_mobilisation

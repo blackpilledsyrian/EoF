@@ -360,6 +360,8 @@ set_politics = {
 }
 
 add_ideas = {
+	national_arms_enterprises
+	semi_professional_army
 	proper_science_base
 	outdated_industry
 	GRI_bureaucracy

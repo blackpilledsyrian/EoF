@@ -146,7 +146,9 @@ set_politics = {
 	elections_allowed = no
 }
 set_country_flag = JER_is_monarchist
-add_ideas = { 
+add_ideas = {
+	subsidized_defence_contracts
+	professional_army
     outdated_industry 
 	lack_of_scientists 
 	EoF_griffonian_contender

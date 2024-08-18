@@ -152,6 +152,8 @@ add_equipment_to_stockpile = {
 	producer = EQS
 }
 add_ideas = {
+	defence_contracts
+	militia_system
 	crystal_heart
 	royal_family
 	sombra_threat

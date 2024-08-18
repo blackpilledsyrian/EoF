@@ -456,6 +456,8 @@ set_politics = {
 }
 
 add_ideas = {
+	defence_contracts
+	militia_system
 	EoF_EQS_southern_island_campaign_5
 	home_of_ponies
 	alicorn_sisters
