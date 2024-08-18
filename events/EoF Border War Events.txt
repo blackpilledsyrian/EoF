@@ -1,4 +1,5 @@
 add_namespace = GRF_border_war
+add_namespace = GRI_border_war
 
 country_event = {
 	id = GRF_border_war.1

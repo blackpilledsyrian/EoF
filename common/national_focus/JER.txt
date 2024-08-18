@@ -7571,9 +7571,9 @@ focus_tree = {
 					1196 = { is_controlled_by = JER } 
 				}
 				1196 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -7614,9 +7614,9 @@ focus_tree = {
 					1197 = { is_controlled_by = JER } 
 				}
 				1197 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -7657,9 +7657,9 @@ focus_tree = {
 					1198 = { is_controlled_by = JER } 
 				}
 				1198 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
