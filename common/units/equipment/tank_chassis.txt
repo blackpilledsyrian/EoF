@@ -214,7 +214,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
@@ -804,7 +804,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
@@ -1341,7 +1341,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
@@ -1936,7 +1936,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
@@ -2308,7 +2308,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
@@ -2607,7 +2607,7 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
-			category = tank_computer_module
+			module = fire_control_computer
 			count < 2
 		}
 		module_count_limit = {
