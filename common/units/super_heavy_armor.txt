@@ -41,7 +41,7 @@ sub_units = {
 			armor_value = 0.05
 			breakthrough = 0.05
 		}
-		supply_consumption = 0.4
+		supply_consumption = 0.47
 
 		#Support nerfs to combat abilities
 		#soft_attack = -0.30

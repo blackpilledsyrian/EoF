@@ -84,6 +84,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -99,6 +100,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -114,6 +116,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -203,6 +206,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -279,8 +286,6 @@ equipments = {
 		build_cost_ic = 1
 		reliability = 0.90
 		armor_value = 15
-		breakthrough = 4
-		defense = 2
 	}
 
 	light_tank_chassis_2 = {
@@ -296,8 +301,8 @@ equipments = {
 		maximum_speed = 6
 		reliability = 1.1
 		armor_value = 30
-		breakthrough = 8
-		defense = 4
+		breakthrough = 2
+		defense = 2
 		resources = {
 			steel = 10
 		}
@@ -346,8 +351,8 @@ equipments = {
 		maximum_speed = 7
 		reliability = 1.3
 		armor_value = 40
-		breakthrough = 12
-		defense = 6
+		breakthrough = 4
+		defense = 3
 		resources = {
 			steel = 10
 		}
@@ -395,8 +400,8 @@ equipments = {
 		maximum_speed = 7
 		reliability = 1.5
 		armor_value = 50
-		breakthrough = 16
-		defense = 6
+		breakthrough = 6
+		defense = 4
 		resources = {
 			steel = 10
 		}
@@ -468,6 +473,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -483,6 +489,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -498,6 +505,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -513,6 +521,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -528,6 +537,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -543,6 +553,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -558,6 +569,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -664,6 +676,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -679,6 +692,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -694,6 +708,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -781,6 +796,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -842,6 +861,7 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.75
 		armor_value = 20
+		defense = 2
 		resources = {
 			steel = 10
 		}
@@ -860,8 +880,8 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.9
 		maximum_speed = 5
-		breakthrough = 3
-		defense = 3
+		breakthrough = 2
+		defense = 4
 		resources = {
 			steel = 10
 		}
@@ -879,7 +899,7 @@ equipments = {
 		build_cost_ic = 6
 		reliability = 1.1
 		armor_value = 60
-		breakthrough = 6
+		breakthrough = 4
 		defense = 6
 		resources = {
 			steel = 10
@@ -895,6 +915,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -910,6 +931,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -929,8 +951,8 @@ equipments = {
 		build_cost_ic = 8
 		reliability = 1.3
 		armor_value = 80
-		breakthrough = 9
-		defense = 9
+		breakthrough = 6
+		defense = 8
 		resources = {
 			steel = 10
 		}
@@ -1004,6 +1026,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1019,6 +1042,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1034,6 +1058,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1049,6 +1074,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1064,6 +1090,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1079,6 +1106,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1094,6 +1122,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1183,6 +1212,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1198,6 +1228,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1213,6 +1244,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1301,6 +1333,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -1364,6 +1400,8 @@ equipments = {
 		build_cost_ic = 10
 		reliability = 0.75
 		armor_value = 35
+		breakthrough = 1
+		defense = 3
 	}
 
 	heavy_tank_chassis_1 = {
@@ -1379,8 +1417,8 @@ equipments = {
 		maximum_speed = 4
 		build_cost_ic = 10
 		reliability = 0.8
-		breakthrough = 2
-		defense = 4
+		breakthrough = 4
+		defense = 6
 	}
 
 	heavy_tank_chassis_2 = {
@@ -1396,8 +1434,8 @@ equipments = {
 		maximum_speed = 4
 		reliability = 1
 		armor_value = 75
-		breakthrough = 4
-		defense = 8
+		breakthrough = 7
+		defense = 9
 		resources = {
 			steel = 10
 			chromium = 10
@@ -1413,6 +1451,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1428,6 +1467,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1448,7 +1488,7 @@ equipments = {
 		maximum_speed = 4
 		reliability = 1.2
 		armor_value = 100
-		breakthrough = 6
+		breakthrough = 10
 		defense = 12
 		resources = {
 			steel = 20
@@ -1526,6 +1566,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1541,6 +1582,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1556,6 +1598,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1571,6 +1614,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1586,6 +1630,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1601,6 +1646,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1616,6 +1662,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -1707,6 +1754,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1721,6 +1769,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1735,6 +1784,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1749,6 +1799,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1763,6 +1814,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1777,6 +1829,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1791,6 +1844,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -1874,6 +1928,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -1911,8 +1969,8 @@ equipments = {
 		build_cost_ic = 10
 		reliability = 1.4
 		armor_value = 90
-		breakthrough = 12
-		defense = 12
+		breakthrough = 8
+		defense = 10
 		hardness = 0.75
 		resources = {
 			steel = 10
@@ -2058,6 +2116,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2073,6 +2132,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2088,6 +2148,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2103,6 +2164,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2118,6 +2180,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2133,6 +2196,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2148,6 +2212,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 					tank_secondary_turret
@@ -2235,6 +2300,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -2271,8 +2340,8 @@ equipments = {
 		build_cost_ic = 40
 		reliability = 1
 		armor_value = 120
-		breakthrough = 12
-		defense = 12
+		breakthrough = 13
+		defense = 15
 		hardness = 0.9
 		
 		resources = {
@@ -2416,6 +2485,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -2430,6 +2500,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -2444,6 +2515,7 @@ equipments = {
 					tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
+					tank_special_module_rangefinder
 					tank_special_module_maintenance
 					tank_special_module_skirts
 				}
@@ -2527,6 +2599,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = expanded_fuel_tank
+			count < 3
+		}
+		module_count_limit = {
 			module = fire_suppression_system
 			count < 2
 		}
@@ -2564,8 +2640,8 @@ equipments = {
 		build_cost_ic = 4
 		reliability = 0.8
 		armor_value = 15
-		breakthrough = 8
-		defense = 4
+		breakthrough = 2
+		defense = 2
 		hardness = 0.6
 		resources = {
 			steel = 10
