@@ -2,6 +2,7 @@
 oob = "BRZ_1007"
 set_research_slots = 3
 
+
 set_technology = {
 	diamond_dog_race = 1
 	tech_ironpaws = 1
@@ -97,6 +98,8 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
+	subsidized_defence_contracts
+	militia_system
 	outdated_industry
 	BRZ_imperial_industry
 	BRZ_pacifism1

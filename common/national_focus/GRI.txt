@@ -703,14 +703,14 @@ shared_focus = {
 				}
 			} 
 		}
-		NOT = {
-	        BRZ = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
+		# NOT = {
+	    #     BRZ = { 
+		# 		OR = {
+		# 			is_subject_of = ROOT 
+		# 			is_in_faction_with = ROOT
+		# 		}
+		# 	} 
+		# }
 	}
 	will_lead_to_war_with = STW
 	will_lead_to_war_with = FEA
@@ -765,23 +765,23 @@ shared_focus = {
 				} 
 			}
 		}
-		if = {
-			limit = { 
-			    BRZ = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}					
-				}
-			} 
-			unlock_decision_tooltip = GRI_intergrate_bronzehill
-		}
+		# if = {
+		# 	limit = { 
+		# 	    BRZ = { 
+		# 		    OR = {
+		# 				is_subject_of = ROOT 
+		# 				is_in_faction_with = ROOT
+		# 			}					
+		# 		}
+		# 	} 
+		# 	unlock_decision_tooltip = GRI_intergrate_bronzehill
+		# }
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
 			every_state = {
 				limit = { 
 					OR = {
-						is_core_of = BRZ
+						#is_core_of = BRZ
 						is_core_of = STW
 						is_core_of = FEA
 						is_core_of = PYT
@@ -1438,17 +1438,17 @@ shared_focus = {
 				} 
 			}
 		}
-		if = {
-			limit = { 
-			    BRZ = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}					
-				}
-			} 
-			unlock_decision_tooltip = GRI_intergrate_bronzehill
-		}
+		# if = {
+		# 	limit = { 
+		# 	    BRZ = { 
+		# 		    OR = {
+		# 				is_subject_of = ROOT 
+		# 				is_in_faction_with = ROOT
+		# 			}					
+		# 		}
+		# 	} 
+		# 	unlock_decision_tooltip = GRI_intergrate_bronzehill
+		# }
 		hidden_effect = {
 			country_event = { id = imperial.65 days = 15 random = 720 }#days to hours applied
 			every_state = {

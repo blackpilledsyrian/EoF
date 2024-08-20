@@ -388,6 +388,38 @@ EoF_category = {
 			}
 		}
 	}
+
+	EoF_AI_BRZ_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = GRI
+		}
+		visible = {
+			BRZ = {
+				is_ai = yes
+			}
+			OR = {
+				539 = { is_controlled_by = BRZ }
+				492 = { is_controlled_by = BRZ }
+				424 = { is_controlled_by = BRZ }
+				479 = { is_controlled_by = BRZ }
+				568 = { is_controlled_by = BRZ }
+			}
+		}
+		complete_effect = {
+			BRZ = {
+				every_owned_state = {
+					add_core_of = GRI
+					remove_core_of = BRZ
+				}
+			}
+			GRI = {
+				annex_country = {
+					target = BRZ
+				}
+			}
+		}
+	}
 	EoF_AI_EQC_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
