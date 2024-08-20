@@ -177,6 +177,7 @@ political_actions = {
 			CHN = {
 				add_to_faction = JER
 				add_to_faction = GRI
+				add_to_faction = BRZ
 			}
 			EQS = {
 				add_to_faction = WNG
@@ -205,6 +206,7 @@ economy_decisions = {
 				tag = FAT
 				tag = GRI
 				tag = JER
+				tag = BRZ
 			}
 		}
 		activation = {

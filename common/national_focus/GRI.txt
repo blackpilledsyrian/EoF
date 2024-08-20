@@ -5323,7 +5323,10 @@ shared_focus = {
 		}
 		JER = {
 			add_ideas = EoF_north_integrated_economy
-		}	
+		}
+		BRZ = {
+			add_ideas = EoF_north_integrated_economy
+		}		
 	}
 }
 shared_focus = {

@@ -48,11 +48,11 @@ horst_host_country = {
 	# 	text = "Penguins"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = ROU
-	# 	text = "Romau"
-	# 	desc = ""
-	# }
+	option = {
+		name = BRZ
+	 	text = "Bronzehill"
+		desc = ""
+	}
 	# option = {
 	# 	name = YAL
 	# 	text = "Yale"
