@@ -59,6 +59,9 @@ set_politics = {
 }
 
 add_ideas = {
+	no_edict
+	reservist_system
+	subsidized_defence_contracts
 	agrarian_society
 	YAK_resilience
 	lack_of_scientists2

@@ -132,6 +132,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
+	no_edict
 	nationalized_military_industry
 	reservist_system
 	FAT_republican_struggle

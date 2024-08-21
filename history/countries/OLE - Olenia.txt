@@ -149,6 +149,7 @@ set_politics = {
 }
 
 add_ideas = {
+	no_edict
 	corporate_arms_partnerships
 	reservist_system
 	EoF_OLE_corrupt_government_2

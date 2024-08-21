@@ -327,6 +327,7 @@ if = {
 }
 
 add_ideas = {
+	no_edict
 	canterlot_defeat_1
 	political_divisions
 	limited_exports

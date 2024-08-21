@@ -3,8 +3,30 @@ ideas = {
 		law = yes
 		use_list_view = yes
 		
+		no_edict = {
+			picture = empty_slot
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				NOT = {
+					has_country_flag = EoF_edict_flag
+				}
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+
 		technological_primacy = {
-			picture = generic_research_bonus
+			picture = jap_supremacy_of_technology
 			cost = 50
 			removal_cost = -1
 			level = 1
@@ -95,7 +117,10 @@ ideas = {
 			}
 			modifier = {
 				political_power_cost = 0.5
-				
+				consumer_goods_factor = 0.05
+				#I suck at balancing this stuff, you do you Tassen
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
 			}
 		}
 		diplomatic_grants = {
@@ -180,6 +205,10 @@ ideas = {
 				}
 			}
 			modifier = {
+				political_power_cost = 0.5
+				special_forces_cap = 0.15
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
 			}
 		}
 		military_modernization = {
@@ -204,7 +233,7 @@ ideas = {
 			}
 		}
 		total_resistance = {
-			picture = ARG_civilian_economy_boost
+			picture = citizen_militia_2
 			cost = 50
 			removal_cost = -1
 			level = 1

@@ -136,6 +136,7 @@ set_autonomy = {
 }
 
 add_ideas = {
+	no_edict
 	subsidized_defence_contracts
 	militia_system
 	modern_society

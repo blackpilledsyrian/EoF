@@ -203,6 +203,7 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 set_cosmetic_tag = RIV_federation_mem
 
 add_ideas = {
+	no_edict
 	martial_society
 	subsidized_defence_contracts
 	pre_industrial_society

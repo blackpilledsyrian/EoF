@@ -889,6 +889,7 @@ add_offsite_building = {
 }
 
 add_ideas = {
+	no_edict
 	subsidized_defence_contracts
 	professional_army
 	HIP_divided_society_5

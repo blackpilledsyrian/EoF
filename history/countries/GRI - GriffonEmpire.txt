@@ -360,6 +360,7 @@ set_politics = {
 }
 
 add_ideas = {
+	no_edict
 	national_arms_enterprises
 	semi_professional_army
 	proper_science_base

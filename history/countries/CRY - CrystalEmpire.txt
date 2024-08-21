@@ -152,6 +152,7 @@ add_equipment_to_stockpile = {
 	producer = EQS
 }
 add_ideas = {
+	no_edict
 	defence_contracts
 	militia_system
 	crystal_heart

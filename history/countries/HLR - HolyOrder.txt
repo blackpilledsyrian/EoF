@@ -26,6 +26,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
+	no_edict
 	detached_country
 	griffon_race
 	EoF_neutral_country

@@ -98,6 +98,7 @@ set_politics = {
 	elections_allowed = no
 }
 add_ideas = {
+	no_edict
 	subsidized_defence_contracts
 	militia_system
 	outdated_industry
