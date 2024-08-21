@@ -113,11 +113,11 @@ horst_host_country = {
 	# 	text = "Wittenland"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = NIM
-	# 	text = "Nimbusia"
-	# 	desc = ""
-	# }
+	option = {
+	 	name = NIM
+	 	text = "Nimbusia"
+	 	desc = ""
+	}
 	# option = {
 	# 	name = BAK
 	# 	text = "Bakara"

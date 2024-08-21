@@ -194,7 +194,7 @@ RCT_Under_Water = { set_character_flag = RIV_advisor_from_RCT }
 
 create_faction = "river_coalition_faction"
 add_to_faction = LCT
-add_to_faction = NIM
+
 add_to_faction = WIT
 add_to_faction = BAK
 add_to_faction = DEP

@@ -93,10 +93,10 @@ on_actions = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = WIT} }
 			# 	set_variable = { host = WIT.id }
 			# }
-			# 			else_if = {
-			# 	limit = {has_game_rule = { rule = horst_host_country option = NIM} }
-			# 	set_variable = { host = NIM.id }
-			# }
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = NIM} }
+			 	set_variable = { host = NIM.id }
+			}
 			# 			else_if = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = BAK} }
 			# 	set_variable = { host = BAK.id }

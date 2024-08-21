@@ -556,6 +556,38 @@ EoF_category = {
 			}
 		}
 	}
+
+	EoF_AI_NIM_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			NIM = {
+				is_ai = yes
+			}
+			OR = {
+				452 = { is_controlled_by = NIM }
+				587 = { is_controlled_by = NIM }
+				622 = { is_controlled_by = NIM }
+				645 = { is_controlled_by = NIM }
+			}
+		}
+		complete_effect = {
+			NIM = {
+				every_owned_state = {
+					add_core_of = EQS
+					remove_core_of = NIM
+				}
+			}
+			EQS = {
+				annex_country = {
+					target = NIM
+				}
+			}
+		}
+	}
+
 	EoF_AI_OLE_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
