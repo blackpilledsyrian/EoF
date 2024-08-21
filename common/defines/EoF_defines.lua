@@ -6,6 +6,11 @@ NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.0005-- If puppet pro
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.2			-- base amount of fuel gained hourly per excess oil
 NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0 	--each percent of collaboration will lower surrender limit by this percentage
 
+NDefines.NCountry.MIN_STABILITY = 0.0
+NDefines.NCountry.MAX_STABILITY = 1.5
+NDefines.NCountry.MIN_WAR_SUPPORT = 0.0
+NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
+
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 NDefines.NMilitary.MAX_NUM_TRAITS = 8				-- cant have more, -1 to disable
 
@@ -91,6 +96,8 @@ NDefines.NCharacter.POLITICAL_ADVISOR_SLOTS_IN_MENU = 6		--For Alert manager to 
 
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4.5		-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
 
+NDefines.NProduction.	INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1	-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
+
 NDefines.NProduction.PRODUCTION_RESOURCE_LACK_PENALTY = -0.005	-- Penalty decrease while lack of resource per factory
 
 NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0		-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
@@ -105,6 +112,7 @@ NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0		-- IC cost equipment for
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 1000000	-- How many deployment lines minimum can be training
 
 NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.3			-- Fraction of the chassis industry cost which is always included in the conversion cost.
+NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1			-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
 
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.1		-- Conversion scale for planes to air supply
 

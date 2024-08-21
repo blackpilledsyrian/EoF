@@ -5,7 +5,7 @@ ideas = {
 		
 		technological_primacy = {
 			picture = generic_research_bonus
-			cost = 150
+			cost = 50
 			removal_cost = -1
 			level = 1
 
@@ -22,7 +22,206 @@ ideas = {
 				}
 			}
 			modifier = {
-				political_power_cost = 1.0
+				political_power_cost = 0.5
+				research_speed_factor = 0.1
+			}
+		}
+		fortify_the_border = {
+			picture = generic_fortify_the_borders
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+				political_power_cost = 0.5
+				production_cost_bunker_factor = -0.2
+				repair_speed_bunker_factor = 1.0
+				land_bunker_effectiveness_factor = 0.2
+			}
+		}
+		expand_welfare = {
+			picture = ARG_civilian_economy_boost
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+				political_power_cost = 0.5
+				consumer_goods_factor = 0.05
+				stability_factor = 0.2
+			}
+		}
+		civil_works_expansion = {
+			picture = ARG_public_works_investment
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+				political_power_cost = 0.5
+				
+			}
+		}
+		diplomatic_grants = {
+			picture = generic_political_support
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+		bureau_of_intelligence = {
+			picture = generic_spy_intel
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+		two_power_navy = {
+			picture = generic_navy_bonus
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+		special_forces_department = {
+			picture = generic_war_preparation
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+		military_modernization = {
+			picture = generic_license_production
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
+			}
+		}
+		total_resistance = {
+			picture = ARG_civilian_economy_boost
+			cost = 50
+			removal_cost = -1
+			level = 1
+
+			available = {
+				 NOT = {
+					has_country_flag = EoF_edict_flag
+				 }
+			}
+			on_add = {
+				set_country_flag = {
+					flag = EoF_edict_flag
+					days = 120
+					value = 1
+				}
+			}
+			modifier = {
 			}
 		}
 	}

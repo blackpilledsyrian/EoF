@@ -6638,6 +6638,15 @@ focus_tree = {
 				remove_idea = GRF_militias
 				add_idea = GRF_proper_army
 			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = militia_system
+						has_idea = reservist_system
+					}
+				}
+				add_ideas = semi_professional_army
+			}
 			add_stability = -0.10
 			add_war_support = 0.10
 		}

@@ -376,12 +376,12 @@ on_actions = {
 			1204 = {
 				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
 			}
-			every_state = {
-				limit = {
-					is_core_of = WNG
-				}
-				add_dynamic_modifier = { modifier = EoF_WNG_terrain }
-			}
+			# every_state = {
+			# 	limit = {
+			# 		is_core_of = WNG
+			# 	}
+			# 	add_dynamic_modifier = { modifier = EoF_WNG_terrain }
+			# }
 			699 = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
