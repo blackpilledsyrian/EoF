@@ -1,257 +1,218 @@
-ideas = {
-	edicts = {
-		law = yes
-		use_list_view = yes
+# ideas = {
+# 	edicts = {
+# 		law = yes
+# 		use_list_view = yes
 		
-		no_edict = {
-			picture = empty_slot
-			cost = 50
-			removal_cost = -1
-			level = 1
+# 		technological_primacy = {
+# 			picture = jap_supremacy_of_technology
+# 			cost = 50
+# 			removal_cost = -1
+# 			allowed_to_remove = {
+# 				NOT = {
+# 					has_country_flag = EoF_edict_flag
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 				research_speed_factor = 0.1
+# 			}
+# 		}
+# 		fortify_the_border = {
+# 			picture = generic_fortify_the_borders
+# 			cost = 50
+# 			removal_cost = -1
+# 			allowed_to_remove = {
+# 				NOT = {
+# 					has_country_flag = EoF_edict_flag
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 				production_cost_bunker_factor = -0.25
+# 				land_bunker_effectiveness_factor = 0.25
+# 			}
+# 		}
+# 		expand_welfare = {
+# 			picture = ARG_civilian_economy_boost
+# 			cost = 50
+# 			removal_cost = -1
+# 			allowed_to_remove = {
+# 				NOT = {
+# 					has_country_flag = EoF_edict_flag
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 				consumer_goods_factor = 0.05
+# 				stability_factor = 0.2
+# 			}
+# 		}
+# 		civil_works_expansion = {
+# 			picture = ARG_public_works_investment
+# 			cost = 50
+# 			removal_cost = -1
+# 			allowed_to_remove = {
+# 				NOT = {
+# 					has_country_flag = EoF_edict_flag
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 				consumer_goods_factor = 0.05
+# 				production_speed_infrastructure_factor = 0.3
+# 			}
+# 		}
+# 		diplomatic_grants = {
+# 			picture = generic_political_support
+# 			cost = 50
+# 			removal_cost = -1
+# 			allowed_to_remove = {
+# 				NOT = {
+# 					has_country_flag = EoF_edict_flag
+# 				}
+# 			}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+				
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 			}
+# 		}
+# 		bureau_of_intelligence = {
+# 			picture = generic_spy_intel
+# 			cost = 50
+# 			removal_cost = -1
 
-			available = {
-				NOT = {
-					has_country_flag = EoF_edict_flag
-				}
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
 
-		technological_primacy = {
-			picture = jap_supremacy_of_technology
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-				political_power_cost = 0.5
-				research_speed_factor = 0.1
-			}
-		}
-		fortify_the_border = {
-			picture = generic_fortify_the_borders
-			cost = 50
-			removal_cost = -1
-			level = 1
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 			}
+# 		}
+# 		two_power_navy = {
+# 			picture = generic_navy_bonus
+# 			cost = 50
+# 			removal_cost = -1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-				political_power_cost = 0.5
-				production_cost_bunker_factor = -0.2
-				repair_speed_bunker_factor = 1.0
-				land_bunker_effectiveness_factor = 0.2
-			}
-		}
-		expand_welfare = {
-			picture = ARG_civilian_economy_boost
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-				political_power_cost = 0.5
-				consumer_goods_factor = 0.05
-				stability_factor = 0.2
-			}
-		}
-		civil_works_expansion = {
-			picture = ARG_public_works_investment
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-				political_power_cost = 0.5
-				consumer_goods_factor = 0.05
-				#I suck at balancing this stuff, you do you Tassen
-				production_speed_infrastructure_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
-			}
-		}
-		diplomatic_grants = {
-			picture = generic_political_support
-			cost = 50
-			removal_cost = -1
-			level = 1
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 			}
+# 		}
+# 		special_forces_department = {
+# 			picture = generic_war_preparation
+# 			cost = 50
+# 			removal_cost = -1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
-		bureau_of_intelligence = {
-			picture = generic_spy_intel
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
-		two_power_navy = {
-			picture = generic_navy_bonus
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
-		special_forces_department = {
-			picture = generic_war_preparation
-			cost = 50
-			removal_cost = -1
-			level = 1
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 				political_power_cost = 0.5
+# 				special_forces_cap = 0.15
+# 				special_forces_attack_factor = 0.05
+# 				special_forces_defence_factor = 0.05
+# 			}
+# 		}
+# 		military_modernization = {
+# 			picture = generic_license_production
+# 			cost = 50
+# 			removal_cost = -1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-				political_power_cost = 0.5
-				special_forces_cap = 0.15
-				special_forces_attack_factor = 0.05
-				special_forces_defence_factor = 0.05
-			}
-		}
-		military_modernization = {
-			picture = generic_license_production
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
-		total_resistance = {
-			picture = citizen_militia_2
-			cost = 50
-			removal_cost = -1
-			level = 1
 
-			available = {
-				 NOT = {
-					has_country_flag = EoF_edict_flag
-				 }
-			}
-			on_add = {
-				set_country_flag = {
-					flag = EoF_edict_flag
-					days = 120
-					value = 1
-				}
-			}
-			modifier = {
-			}
-		}
-	}
-}
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 			}
+# 		}
+# 		total_resistance = {
+# 			picture = citizen_militia_2
+# 			cost = 50
+# 			removal_cost = -1
+
+
+
+# 			on_add = {
+# 				set_country_flag = {
+# 					flag = EoF_edict_flag
+# 					days = 120
+# 					value = 1
+# 				}
+# 			}
+# 			modifier = {
+# 			}
+# 		}
+# 		no_edict = {
+# 			picture = empty_slot
+# 			cost = 0
+# 			removal_cost = -1
+# 			modifier = {
+# 			}
+# 		}
+# 	}
+# }

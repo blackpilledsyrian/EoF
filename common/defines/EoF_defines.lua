@@ -1,5 +1,5 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.5, 0.3, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.3, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.0005-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
 

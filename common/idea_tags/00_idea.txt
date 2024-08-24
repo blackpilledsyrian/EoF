@@ -43,7 +43,7 @@ idea_categories = {
 		slot = economy
 		slot = procurement
 		slot = army_professionalism
-		slot = edicts
+		# slot = edicts
 		
 		ledger = civilian
 
