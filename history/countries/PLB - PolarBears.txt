@@ -64,7 +64,7 @@ set_politics = {
 
 
 add_ideas = {
-	no_edict
+	# no_edict
 	PLB_bears
 	PLB_outcasts
 	PLB_clan_divides

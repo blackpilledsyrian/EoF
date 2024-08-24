@@ -147,7 +147,7 @@ set_politics = {
 }
 set_country_flag = JER_is_monarchist
 add_ideas = {
-	no_edict
+	# no_edict
 	subsidized_defence_contracts
 	professional_army
     outdated_industry 
