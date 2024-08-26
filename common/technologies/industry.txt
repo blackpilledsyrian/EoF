@@ -233,7 +233,7 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 
-		equipment_conversion_speed = 0.1
+		equipment_conversion_speed = 0.2
 
 		allow_branch = {
 			has_dlc = "Death or Dishonor"
@@ -270,7 +270,7 @@ technologies = {
 
 	advanced_equipment_conversion = {
 
-		equipment_conversion_speed = 0.1
+		equipment_conversion_speed = 0.2
 
 		research_cost = 1
 		start_year = 1010
@@ -2036,7 +2036,7 @@ technologies = {
 
 	construction1 = {
 
-		production_speed_buildings_factor = 0.2
+		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 		dependencies = {
 			infantry_weapons = 1
@@ -2126,7 +2126,7 @@ technologies = {
 
 	construction2 = {
 
-		production_speed_buildings_factor = 0.2
+		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 
 		path = {
@@ -2214,7 +2214,7 @@ technologies = {
 
 	construction3 = {
 
-		production_speed_buildings_factor = 0.2
+		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 
 		path = {
@@ -2314,7 +2314,7 @@ technologies = {
 
 	construction4 = {
 
-		production_speed_buildings_factor = 0.2
+		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 
 		path = {
@@ -2404,7 +2404,7 @@ technologies = {
 
 	construction5 = {
 
-		production_speed_buildings_factor = 0.2
+		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
 
 		path = {

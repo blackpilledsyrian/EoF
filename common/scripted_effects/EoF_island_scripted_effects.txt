@@ -1668,3 +1668,439 @@ decrease_HIP_invasion_terrain = {
 		}
 	}
 }
+increase_TRD_invasion_terrain = {
+	if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 } } }
+		379 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		380 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		381 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		396 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		390 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		208 = {
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+	}
+}
+decrease_TRD_invasion_terrain = {
+	if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }    
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 } } }
+		379 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		380 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		381 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		396 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		390 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+		208 = {
+			add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }    
+		}
+	}
+}

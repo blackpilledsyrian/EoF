@@ -307,36 +307,6 @@ equipments = {
 		resources = {
 			steel = 10
 		}
-
-		module_slots = {
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_simplification_module
-					tank_cupola_module
-					tank_coaxial_module
-					tank_special_module_maintenance
-					tank_special_module_stabilizer
-					tank_special_module_skirts
-					tank_secondary_turret
-				}
-			}
-
-			special_type_slot_5 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_simplification_module
-					tank_cupola_module
-					tank_coaxial_module
-					tank_special_module_maintenance
-					tank_special_module_stabilizer
-					tank_special_module_skirts
-					tank_secondary_turret
-				}
-			}
-		}
 	}
 
 	light_tank_chassis_3 = {
@@ -359,7 +329,7 @@ equipments = {
 		}
 
 		module_slots = {
-			special_type_slot_6 = {
+			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -373,7 +343,7 @@ equipments = {
 				}
 			}
 
-			special_type_slot_7 = {
+			special_type_slot_5 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
@@ -2638,8 +2608,8 @@ equipments = {
 		}
 
 		fuel_consumption = 0
-		maximum_speed = 4
-		build_cost_ic = 4
+		maximum_speed = 5
+		build_cost_ic = 2
 		reliability = 0.8
 		armor_value = 15
 		breakthrough = 3

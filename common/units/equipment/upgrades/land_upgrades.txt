@@ -38,7 +38,7 @@ upgrades = {
 		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
-			build_cost_ic = 0.1
+			build_cost_ic = 0.3
 			maximum_speed = 0.2
 		}
 	}
@@ -77,93 +77,91 @@ upgrades = {
 		resource_cost_thresholds = {
 			1 = {
 				steel = 1
-				chromium = 1
 			}
 			2 = {
+				steel = 1
+				chromium = 1
+			}
+			3 = {
+				steel = 2
+				chromium = 1
+			}
+			4 = {
 				steel = 2
 				chromium = 2
 			}
-			3 = {
+			5 = {
+				steel = 3
+				chromium = 2
+			}
+			6 = {
 				steel = 3
 				chromium = 3
 			}
-			4 = {
+			7 = {
+				steel = 4
+				chromium = 3
+			}
+			8 = {
 				steel = 4
 				chromium = 4
 			}
-			5 = {
+			9 = {
+				steel = 5
+				chromium = 4
+			}
+			10 = {
 				steel = 5
 				chromium = 5
 			}
-			6 = {
+			11 = {
+				steel = 6
+				chromium = 5
+			}
+			12 = {
 				steel = 6
 				chromium = 6
 			}
-			7 = {
+			13 = {
+				steel = 7
+				chromium = 6
+			}
+			14 = {
 				steel = 7
 				chromium = 7
 			}
-			8 = {
+			15 = {
+				steel = 8
+				chromium = 7
+			}
+			16 = {
 				steel = 8
 				chromium = 8
 			}
-			9 = {
+			17 = {
+				steel = 9
+				chromium = 8
+			}
+			18 = {
 				steel = 9
 				chromium = 9
 			}
-			10 = {
-				steel = 10
-				chromium = 10
-			}
-			11 = {
-				steel = 11
-				chromium = 11
-			}
-			12 = {
-				steel = 12
-				chromium = 12
-			}
-			13 = {
-				steel = 13
-				chromium = 13
-			}
-			14 = {
-				steel = 14
-				chromium = 14
-			}
-			15 = {
-				steel = 15
-				chromium = 15
-			}
-			16 = {
-				steel = 16
-				chromium = 16
-			}
-			17 = {
-				steel = 17
-				chromium = 17
-			}
-			18 = {
-				steel = 18
-				chromium = 18
-			}
 			19 = {
-				steel = 19
-				chromium = 19
+				steel = 10
+				chromium = 9
 			}
 			20 = {
-				steel = 20
-				chromium = 20
-			}			
+				steel = 10
+				chromium = 10
+			}					
 		}
 
 		reliability = -0.015
+		hardness = 0.05
 		add_stats = {
 			maximum_speed = -0.1
-			hardness = 0.02
-			build_cost_ic = 0.5
+			build_cost_ic = 0.3
 			armor_value = 2
-
 		}
 	}
 

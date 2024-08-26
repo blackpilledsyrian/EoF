@@ -34,7 +34,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 13
 		breakthrough = 6
-		hardness = 0.3
+		hardness = 0.4
 		armor_value = 20
 
 		#Offensive Abilities
@@ -80,14 +80,14 @@ equipments = {
 		#Defensive Abilities
 		defense = 15
 		breakthrough = 8
-		hardness = 0.3
+		hardness = 0.5
 
 		#Offensive Abilities
 		ap_attack = 16
 
 		build_cost_ic = 10
 		resources = {
-			steel = 30
+			steel = 25
 			rubber = 10
 			#oil = 1
 		}
@@ -113,7 +113,7 @@ equipments = {
 		#Defensive Abilities
 		defense = 17
 		breakthrough = 10
-		hardness = 0.3
+		hardness = 0.6
 		armor_value = 40
 
 		#Offensive Abilities
@@ -121,7 +121,7 @@ equipments = {
 
 		build_cost_ic = 12
 		resources = {
-			steel = 40
+			steel = 30
 			rubber = 10
 			#oil = 2
 		}

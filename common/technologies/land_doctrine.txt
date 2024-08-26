@@ -1087,8 +1087,8 @@ technologies = {
 
 	
 		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.25
+			max_organisation = 5
+			soft_attack = 0.15
 		}
 		
 		path = {
@@ -1138,8 +1138,8 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.25
+			max_organisation = 5
+			soft_attack = 0.15
 		}
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -4256,7 +4256,7 @@ technologies = {
 		category_support_battalions = {
 			soft_attack = 0.05
 			hard_attack = 0.05
-			max_organisation = 5
+			max_organisation = 2
 		}
 			
 		doctrine = yes	

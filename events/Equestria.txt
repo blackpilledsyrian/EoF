@@ -6102,21 +6102,21 @@ country_event = { #Remove magic of friendship
 
 	is_triggered_only = yes
 
-	option = {
-		name = equestria.144.a #just a temporary measure
-		remove_ideas = friendly_harmony
-		hidden_effect = { set_country_flag = eqs_bring_back_friendship }
-		ai_chance = {
-			factor = 15
-			modifier = {
-				factor = 0
-				OR = {
-					OR = { is_historical_focus_on = yes has_global_flag = EQS_nice_celestia }
-					has_global_flag = EQS_evil_celestia
-				}
-			}
-		}
-	}
+	# option = {
+	# 	name = equestria.144.a #just a temporary measure
+	# 	remove_ideas = friendly_harmony
+	# 	hidden_effect = { set_country_flag = eqs_bring_back_friendship }
+	# 	ai_chance = {
+	# 		factor = 15
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				OR = { is_historical_focus_on = yes has_global_flag = EQS_nice_celestia }
+	# 				has_global_flag = EQS_evil_celestia
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	option = {
 		name = equestria.144.b #remove permanently

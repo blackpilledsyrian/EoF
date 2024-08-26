@@ -14,7 +14,6 @@ ability = {
 			OWNER = {
 				NOT = { tag = DED }
 				has_super_last_stand = yes
-				has_completed_focus = EoF_death_dishonour
 			}
 		}
 
@@ -73,7 +72,6 @@ ability = {
 					}
 				}
 				has_super_force_attack = yes
-				has_completed_focus = EoF_death_dishonour
 			}
 		}
 
