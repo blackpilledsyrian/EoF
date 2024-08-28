@@ -314,7 +314,7 @@ leader_traits = {
 
 	head_of_intelligence_kirin = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 
 		ai_will_do = {
@@ -340,7 +340,7 @@ leader_traits = {
 	
 	HEL_general_secretary_lar = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		fascism_drift = 0.02
 
@@ -367,7 +367,7 @@ leader_traits = {
 	
 	FAT_head_of_intelligence_lar = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		recon_factor = 0.15
 
@@ -395,7 +395,7 @@ leader_traits = {
 	
 	head_of_ohs_lar = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		drift_defence_factor = 0.15
 		political_power_factor = 0.1
@@ -410,7 +410,7 @@ leader_traits = {
 	}
 	cryptologic_genius_lar = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		decryption_power = 15
 		crypto_strength = 1
@@ -460,7 +460,7 @@ leader_traits = {
 		offensive_war_stability_factor = 0.4
 		war_support_factor = 0.1
 		political_power_gain = 0.15
-		operative_slot = 1
+		operative_slot = 2
 
 		ai_will_do = {
 			factor = 1
@@ -1099,7 +1099,7 @@ leader_traits = {
 		random = no
 		enemy_operative_detection_chance_factor = 0.10
 		own_operative_detection_chance_factor = -0.10
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.05
 
 		ai_will_do = {
@@ -3949,7 +3949,7 @@ apn_time_queen= {
 		random = no
 		enemy_operative_detection_chance_factor = 0.10
 		own_operative_detection_chance_factor = -0.10
-		operative_slot = 1
+		operative_slot = 2
 		intel_network_gain_factor = 0.05
 		agency_upgrade_time = -0.05
 
@@ -4729,7 +4729,7 @@ apn_time_queen= {
 		intel_network_gain_factor = 0.1
 		resistance_garrison_penetration_chance = -0.05
 		
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.1
 	}
 	
@@ -5514,7 +5514,7 @@ apn_time_queen= {
 		random = no
 		enemy_operative_detection_chance_factor = 0.10
 		own_operative_detection_chance_factor = -0.10
-		operative_slot = 1
+		operative_slot = 2
 		compliance_growth = 0.05
 		resistance_target = -0.05
 		agency_upgrade_time = -0.05
@@ -5653,7 +5653,7 @@ apn_time_queen= {
 	head_of_intelligence_useless = {
 		random = no
 		political_power_gain = -0.1
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.05
 	}
 	

@@ -423,7 +423,7 @@ sabotage_oil = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_oil = -12 }
+		add_to_variable = { sabotaged_oil = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -446,7 +446,7 @@ sabotage_oil = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_oil = -8 }
+			add_to_variable = { sabotaged_oil = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {
@@ -494,7 +494,7 @@ sabotage_aluminium = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_aluminium = -12 }
+		add_to_variable = { sabotaged_aluminium = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -517,7 +517,7 @@ sabotage_aluminium = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_aluminium = -8 }
+			add_to_variable = { sabotaged_aluminium = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {
@@ -565,7 +565,7 @@ sabotage_rubber = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_rubber = -12 }
+		add_to_variable = { sabotaged_rubber = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -588,7 +588,7 @@ sabotage_rubber = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_rubber = -8 }
+			add_to_variable = { sabotaged_rubber = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {
@@ -636,7 +636,7 @@ sabotage_tungsten = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_tungsten = -12 }
+		add_to_variable = { sabotaged_tungsten = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -659,7 +659,7 @@ sabotage_tungsten = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_tungsten = -8 }
+			add_to_variable = { sabotaged_tungsten = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {
@@ -708,7 +708,7 @@ sabotage_steel = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_steel = -12 }
+		add_to_variable = { sabotaged_steel = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -731,7 +731,7 @@ sabotage_steel = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_steel = -8 }
+			add_to_variable = { sabotaged_steel = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {
@@ -779,7 +779,7 @@ sabotage_chromium = {
 
 	effect = {
 		clear_sabotaged_resources_if_necesary = yes
-		add_to_variable = { sabotaged_chromium = -12 }
+		add_to_variable = { sabotaged_chromium = -120 }
 		set_temp_variable = { duration = 180 }
 		if = {
 			limit = {
@@ -802,7 +802,7 @@ sabotage_chromium = {
 				check_variable = { targeted_sabotage_resources > 0 }
 			}
 
-			add_to_variable = { sabotaged_chromium = -8 }
+			add_to_variable = { sabotaged_chromium = -80 }
 			subtract_from_variable = { var = targeted_sabotage_resources value = 1 }
 		}
 		add_dynamic_modifier = {

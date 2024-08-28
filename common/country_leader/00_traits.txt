@@ -345,7 +345,7 @@ leader_traits = {
 	head_of_intelligence = {
 		random = no
 		
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		ai_will_do = {
 			factor = 1

@@ -32,6 +32,11 @@ NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modi
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.028	-- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.028	-- global damage modifier
 
+NDefines.NMilitary.PLANNING_DECAY = 0.02
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.05		-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLANNING_GAIN = 0.01
+NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01	-- Planning Bonus gain per day for naval invasions
+NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -1	-- Malus in percentage for the planning bonus gain for naval invasions
 NDefines.NMilitary.PLANNING_MAX = 0.1				-- can get more from techs
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1		-- over combat width penalty per %.
@@ -227,3 +232,8 @@ NDefines.NSupply.RAILWAY_MIN_FLOW = 15.0			-- minimum railway flow can be reduce
 -- used for calculating "flow" from a naval node to another naval node when it is connected via a convoy route
 NDefines.NSupply.NAVAL_BASE_FLOW = 10.0				-- max output/input of a naval node is limited by this base value + additional ratio for each level
 NDefines.NSupply.NAVAL_FLOW_PER_LEVEL = 3.0			-- max output/input of a naval node is limited by previous base value + this define per its level
+
+NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 5					-- Number of upgrade needed to unlock an additional operative slot
+NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 2				-- max operative slots gained from upgrades
+
+NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.1 -- Attack bonus factor against whoever occupies your core territory.

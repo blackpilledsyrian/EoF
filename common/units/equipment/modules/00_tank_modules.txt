@@ -14,7 +14,7 @@ equipment_modules = {
 			fuel_consumption = 2
 		}
 		multiply_stats = {
-			maximum_speed = 0.1
+			maximum_speed = 0.15
 		}
 
 	}
@@ -98,7 +98,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0
 		xp_cost = 0
 		multiply_stats = {
-			build_cost_ic = 0.05
+			build_cost_ic = 0.1
 			armor_value = 0.4
 		}
 	}
@@ -109,8 +109,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_sonar
 		xp_cost = 0
 		add_stats = {
-			defense = 2
-			breakthrough = 2
+			defense = 3
+			breakthrough = 3
 		}
 		dismantle_cost_ic = 0
 		multiply_stats = {
