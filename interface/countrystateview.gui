@@ -23,18 +23,18 @@ guiTypes = {
 	
 	containerWindowType = {
 		name = "countrystateview"
-		position = { x=-416 y=-779}
-		show_position = { x=-6 y =-779 }
+		position = { x=-416 y=-879}
+		show_position = { x=-6 y =-879 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		orientation = lower_left
-		size = { width=436 height=726 }
+		size = { width=436 height=826 }
 		
 		containerWindowType = {
 			name = "state_info_window"
 			position = { x = 0 y = 0 }
-			size = { width=780 height=726 }
+			size = { width=780 height=826 }
 			
 			
 			background = {
@@ -59,13 +59,13 @@ guiTypes = {
 				position = { x = 155 y = 45 }
 				size = { width = 480 height = 105 }
 				format = "UPPER_LEFT"
-				slotsize = { width = 60 height = 52 }
+				slotsize = { width = 60 height = 100 }
 				max_slots_horizontal = 5
 			}
 			
 			instantTextboxType = {
 				name = "shared_slot_count"
-				position = { x = 170 y = 147 }
+				position = { x = 170 y = 247 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				text = "SLOTS"
@@ -77,7 +77,7 @@ guiTypes = {
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
-				position = { x = 153 y = 170 }
+				position = { x = 153 y = 270 }
 				size = { width = 480 height = 90%% }
 				format = "UPPER_LEFT"
 				slotsize = { width = 58 height = 46 }
@@ -161,7 +161,7 @@ guiTypes = {
 			
 			containerWindowType = {
 				name = "state_resources"
-				position = { x= 26 y=531}
+				position = { x= 26 y=631}
 				size = { width=135 height=99 }
 				
 				
@@ -274,7 +274,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "province_info_window"
-			position = { x = 20 y = 665 }
+			position = { x = 20 y = 765 }
 			size = { width=480 height=29%% }
 			
 			iconType = {
@@ -556,7 +556,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "scorched_earth_state_button"
-			position = { x = -31 y = 135 }
+			position = { x = -31 y = 235 }
 			quadTextureSprite ="GFX_scorched_earth"
 			buttonFont = "Main_14_black"
 			Orientation = "UPPER_RIGHT"

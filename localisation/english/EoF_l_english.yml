@@ -25,6 +25,11 @@ SOUTH_SEAQUESTRIAN_STRAIT:0 "Seaquestrian Strait"
 
 VICTORY_POINTS_10222:0 "El Alamane"
 
+super_air_base:0 "Expanded Air Base"
+super_air_base_plural:0 "Expanded Air Bases"
+super_air_base_desc:0 "This building provides the state with additional air force capacity beyond regular air bases."
+EoF_super_air_base_tech:0 "Expanded Air Base Technology"
+
 ABILITY_ARTILLERY_BOMBARDMENT:0 "Artillery Bombardment"
 ABILITY_ARTILLERY_BOMBARDMENT_DESC:0 "Your units will bombard the enemy, but leave themselves vulnerable to counterattack."
 
