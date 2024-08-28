@@ -53,4 +53,11 @@ leader_traits = {
 		random = no
 		surrender_limit = 0.25
 	}
+	EoF_snake = {
+		random = no
+		civilian_intel_factor = 0.15
+		army_intel_factor = 0.15
+		intel_network_gain_factor = 0.25
+		own_operative_detection_chance_factor = -0.25
+	}
 }

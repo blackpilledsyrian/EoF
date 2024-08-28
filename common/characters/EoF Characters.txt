@@ -158,4 +158,24 @@ characters={
 			}
 		}
 	}
+	EoF_duchess_groverina = {
+		name = EoF_duchess_groverina
+		portraits = {
+			civilian = {
+				small = "GFX_idea_EoF_duchess_groverina"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = groverina
+			allowed = {
+				original_tag = EQC
+			}
+
+			available = {
+				has_completed_focus = EoF_imperial_resistance_coalition
+			}
+			traits = { EoF_snake }
+		}
+	}
 }

@@ -38,6 +38,7 @@ focus_tree = {
 	shared_focus = EQC_industral_support_fund
 	shared_focus = EQC_national_census
 	shared_focus = EQC_commonwealth_defence
+	shared_focus = EoF_receive_refugees
 
 	focus = {
 		id = EQC_strengthen_equestrian_ties
@@ -2165,7 +2166,265 @@ hidden_effect = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
-	}				
+	}
+	#EoF Changes
+	focus = {
+		id = EoF_receive_refugees
+		icon = GFX_goal_expand_refugee_zone
+		available = {
+			TRD = {
+				all_core_state = {
+					NOT = {
+						is_controlled_by = EQC
+					}
+				}
+			}
+		}
+		relative_position_id = EQC_strengthen_equestrian_ties
+		x = 10
+		y = 0
+
+		cost = 3
+
+		completion_reward = {
+			379 = {
+				add_manpower = -60000
+			}
+			380 = {
+				add_manpower = -240000
+			}
+			381 = {
+				add_manpower = -400000
+			}
+			396 = {
+				add_manpower = -30000
+			}
+			390 = {
+				add_manpower = -120000
+			}
+			208 = {
+				add_manpower = -20000
+			}
+			362 = {
+				add_manpower = 190000
+			}
+			359 = {
+				add_manpower = 190000
+			}
+			356 = {
+				add_manpower = 190000
+			}
+		}
+	}
+	focus = {
+		id = EoF_formal_resistance
+		icon = GFX_goal_government_icon
+		available = {
+		}	
+		prerequisite = {
+			focus = EoF_receive_refugees
+		}
+		relative_position_id = EoF_receive_refugees
+		x = -1
+		y = 1
+
+		cost = 8
+
+		completion_reward = {
+			TRD = {
+				become_exiled_in = {
+					target = EQC
+					legitimacy = 100
+				}
+			}
+			hidden_effect = {
+				add_to_war = {
+					targeted_alliance = EQC
+					enemy = GRI
+					hostility_reason = asked_to_join
+				}
+				add_to_war = {
+					targeted_alliance = EQC
+					enemy = CHN
+					hostility_reason = asked_to_join
+				}
+				set_state_owner = 379
+				set_state_owner = 380
+				set_state_owner = 381
+				set_state_owner = 396
+				set_state_owner = 390
+				set_state_owner = 208
+			}
+		}
+	}
+	focus = {
+		id = EoF_underground_resistance
+		icon = GFX_focus_generic_support_the_left_right_claw
+		available = {
+			has_equipment = {
+				infantry_equipment > 4999
+			}
+		}	
+		prerequisite = {
+			focus = EoF_recieve_refugees
+		}
+		relative_position_id = EoF_recieve_refugees
+		x = 1
+		y = 1
+
+		cost = 2
+
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -5000
+			}
+			TRD = {
+				every_core_state = {
+					add_resistance_target = {
+						amount = 20
+						tooltip = EoF_underground_resistance_tt
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_imperial_resistance_coalition
+		icon = GFX_goal_generic_major_alliance_pony_griffon
+		available = {
+		}	
+		prerequisite = {
+			focus = EoF_formal_resistance
+		}	
+		prerequisite = {
+			focus = EoF_underground_resistance
+		}
+		relative_position_id = EoF_formal_resistance
+		x = 1
+		y = 1
+
+		cost = 3
+
+		completion_reward = {
+			add_ideas = EoF_anti_imperial_coalition_0
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = groverina
+		}
+	}
+	focus = {
+		id = EoF_skyfall_liberation_divisions
+		icon = GFX_goal_skyfall
+		available = {
+		}	
+		prerequisite = {
+			focus = EoF_imperial_resistance_coalition
+		}	
+		relative_position_id = EoF_imperial_resistance_coalition
+		x = -2
+		y = 1
+
+		cost = 8
+
+		completion_reward = {
+			TRD = {
+				add_ideas = EoF_liberation_divisions
+			}
+		}
+	}
+	focus = {
+		id = EoF_united_anti_imperial_command
+		icon = GFX_goal_planning_bonus
+		available = {
+		}	
+		prerequisite = {
+			focus = EoF_imperial_resistance_coalition
+		}	
+		relative_position_id = EoF_imperial_resistance_coalition
+		x = 0
+		y = 1
+
+		cost = 10
+
+		completion_reward = {
+			swap_ideas = {
+				add_idea = EoF_anti_imperial_coalition_1
+				remove_idea = EoF_anti_imperial_coalition_0
+			}
+		}
+	}
+	focus = {
+		id = EoF_underground_campaign
+		icon = GFX_goal_generic_major_war
+		available = {
+			381 = {
+				resistance > 30
+			}
+		}	
+		prerequisite = {
+			focus = EoF_imperial_resistance_coalition
+		}
+		relative_position_id = EoF_imperial_resistance_coalition
+		x = 2
+		y = 1
+
+		cost = 3
+
+		completion_reward = {
+			379 = {
+				remove_core_of = GRI
+			}
+		}
+	}
+	focus = {
+		id = EoF_liberate_skyfall
+		icon = GFX_goal_Attack_Skyfall
+		available = {
+			controls_state = 658
+			controls_state = 659
+			controls_state = 660
+		}
+		prerequisite = {
+			focus = EoF_skyfall_liberation_divisions
+		}
+		prerequisite = {
+			focus = EoF_united_anti_imperial_command
+		}
+		prerequisite = {
+			focus = EoF_underground_campaign
+		}
+		relative_position_id = EoF_united_anti_imperial_command
+		x = 0
+		y = 1
+
+		cost = 10
+
+		completion_reward = {
+			apply_TRD_invasion_terrain = yes
+			658 = {
+				add_building_construction = {
+					type = super_air_base
+					level = 15
+					instant_build = yes
+				}
+			}
+			659 = {
+				add_building_construction = {
+					type = super_air_base
+					level = 15
+					instant_build = yes
+				}
+			}
+			660 = {
+				add_building_construction = {
+					type = super_air_base
+					level = 15
+					instant_build = yes
+				}
+			}
+		}
+	}
+	#EoF Changes
 	############################
 	#### LEAVE EQUESTRIA    ####
 	############################

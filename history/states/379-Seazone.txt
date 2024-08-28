@@ -14,6 +14,7 @@ state={
 		owner = EQC
 		add_core_of = EQC
 		add_core_of = GRI
+		add_core_of = TRD
 
 		victory_points = { 10536 10 }
 

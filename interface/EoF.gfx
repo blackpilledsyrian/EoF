@@ -887,6 +887,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/kemerkai.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_EoF_duchess_groverina"
+		texturefile = "gfx/interface/ideas/advisors/EoF_duchess_groverina.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_procurement_1"
 		texturefile = "gfx/interface/ideas/idea_procurement_1.dds"
 	}

@@ -1,0 +1,37 @@
+ideas = {
+	country = {
+		EoF_anti_imperial_coalition_0 = {
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				weekly_manpower = 1000
+			}
+			targeted_modifier = {
+				tag = GRI
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+		}
+		EoF_anti_imperial_coalition_1 = {
+			removal_cost = -1
+			picture = generic_constitutional_guarantees
+			modifier = {
+				max_command_power = 50
+				experience_gain_army = 0.05
+				weekly_manpower = 1000
+			}
+			targeted_modifier = {
+				tag = GRI
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+		EoF_liberation_divisions = {
+			removal_cost = -1
+			picture = generic_reserve_divisions
+			modifier = {
+				weekly_manpower = 5000
+			}
+		}
+	}
+}

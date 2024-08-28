@@ -639,9 +639,8 @@ recruit_character = EoF_war_prep_board
 create_faction = "All_ponies_front"
 add_to_faction = CRY
 add_to_faction = EQC
-add_to_faction = PCB
 add_to_faction = HIP
-add_to_faction = NIM
+add_to_faction = TRD
 
 set_rule = {
 	can_generate_female_aces = yes
