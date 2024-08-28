@@ -1140,7 +1140,7 @@ technologies = {
 
 	heavy_bombs = {
 		enable_equipment_modules = {
-					heavy_bomb_locks
+			heavy_bomb_locks
 		}
 			
 		research_cost = 1
@@ -1225,7 +1225,7 @@ technologies = {
 
 	armor_piercing_bombs = {
 		enable_equipment_modules = {
-					armor_piercing_bomb_locks
+			armor_piercing_bomb_locks
 		}
 			
 		research_cost = 1
@@ -1257,6 +1257,124 @@ technologies = {
 			}
 		}
 	}
+
+	#EoF Changes
+	at_cannon_1 = {
+
+		dependencies = {
+			infantry_weapons = 1
+		}
+
+		enable_equipment_modules = {
+			tank_buster_1
+		}
+		
+		research_cost = 1
+		start_year = 993
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -1 y = 2 }
+		}
+
+		path = {
+			leads_to_tech = at_cannon_2
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+	at_cannon_2 = {
+
+		enable_equipment_modules = {
+			tank_buster_2
+		}
+		
+		research_cost = 1
+		start_year = 1010
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -1 y = 5 }
+		}
+
+		path = {
+			leads_to_tech = at_cannon_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = at_rocket_1
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+	at_cannon_3 = {
+
+		enable_equipment_modules = {
+			tank_buster_3
+		}
+		
+		research_cost = 1
+		start_year = 1015
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+	at_rocket_1 = {
+
+		enable_equipment_modules = {
+			rocket_rails
+		}
+		
+		research_cost = 1
+		start_year = 1014
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 7 }
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+			mio_cat_all_cas_and_modules
+			mio_cat_all_medium_aircraft_and_modules
+			mio_cat_all_heavy_aircraft_and_modules
+			mio_cat_all_light_aircraft_and_modules
+		}
+	}
+	#EoF Changes
 
 	photo_reconnaisance = {
 

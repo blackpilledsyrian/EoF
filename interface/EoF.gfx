@@ -551,6 +551,22 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/nsb_optics_tech_4.dds"
 	}
 	SpriteType = {
+		name = "GFX_at_cannon_1_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_cannon_2_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_cannon_3_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_rocket_1_medium"
+		textureFile = "gfx/interface/technologies/at_rocket_1.dds"
+	}
+	SpriteType = {
 		name = "GFX_basic_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_1.dds"
 	}

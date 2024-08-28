@@ -21,7 +21,7 @@ technologies = {
 		start_year = 950 # was 800, moved for license reasons
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = -2 }
+			position = { x = -1 y = -2 }
 		}
 
 		categories = {
@@ -736,7 +736,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
-			rocket_rails
 		}
 		
 		path = {
@@ -1442,7 +1441,6 @@ technologies = {
 			tank_medium_high_velocity_cannon
 			tank_heavy_cannon
 			tank_heavy_high_velocity_cannon
-			tank_buster_1
 		}
 		path = {
 			leads_to_tech = antitank1
@@ -1644,7 +1642,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_cannon_2
 			tank_medium_high_velocity_cannon_2
-			tank_buster_2
 		}		
 		path = {
 			leads_to_tech = antitank3
@@ -1976,16 +1973,16 @@ technologies = {
 	heavyantitank2 = {
 
 		heavy_anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1			
+			hard_attack = 0.2
+			ap_attack = 0.2		
 		}
 		heavy_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.2
+			ap_attack = 0.2
 		}
 		mech_heavy_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.2
+			ap_attack = 0.2
 		}
 
 		path = {
@@ -2015,16 +2012,16 @@ technologies = {
 			special_ammunition
 		}
 		heavy_anti_tank = {
-			hard_attack = 0.1
-			ap_attack = 0.1			
+			hard_attack = 0.2
+			ap_attack = 0.2			
 		}
 		heavy_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.2
+			ap_attack = 0.2
 		}
 		mech_heavy_anti_tank_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
+			hard_attack = 0.2
+			ap_attack = 0.2
 		}
 
 		path = {
@@ -2220,7 +2217,6 @@ technologies = {
 		enable_equipment_modules = {
 			tank_medium_high_velocity_cannon_4
 			tank_heavy_cannon_4
-			tank_buster_3
 		}
 
 		path = {
