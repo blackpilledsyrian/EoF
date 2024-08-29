@@ -149,7 +149,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer war_hero griffon_race_trait }
+			traits={ war_hero griffon_race_trait panzer_leader }
 			skill=4
 			attack_skill=4
 			defense_skill=3
@@ -553,11 +553,11 @@ characters={
 		}
 		corps_commander={
 			traits={ war_hero griffon_race_trait }
-			skill=3
-			attack_skill=4
+			skill=4
+			attack_skill=5
 			defense_skill=2
-			planning_skill=2
-			logistics_skill=2
+			planning_skill=3
+			logistics_skill=3
 			legacy_id=322
 		}
 	}

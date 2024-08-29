@@ -20,7 +20,7 @@ ideas = {
 				consumer_goods_factor = 0.2
 				conscription_factor = 0.05
 				minimum_training_level = 0.3
-				mobilization_speed = -0.4
+				mobilization_speed = -0.2
 				experience_gain_army = 0.18
 				army_org_factor = 0.05
 			}
@@ -36,7 +36,7 @@ ideas = {
 				consumer_goods_factor = 0.15
 				conscription_factor = -0.1
 				minimum_training_level = 0.2
-				mobilization_speed = -0.4
+				mobilization_speed = -0.2
 				experience_gain_army = 0.24
 				army_org_factor = 0.05
 			}
@@ -52,7 +52,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 				conscription_factor = -0.05
 				minimum_training_level = 0.1
-				mobilization_speed = -0.2
+				mobilization_speed = -0.1
 				experience_gain_army = 0.21
 				army_org_factor = 0.025
 			}

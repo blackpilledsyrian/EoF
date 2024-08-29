@@ -2266,9 +2266,9 @@ hidden_effect = {
 			}
 		}	
 		prerequisite = {
-			focus = EoF_recieve_refugees
+			focus = EoF_receive_refugees
 		}
-		relative_position_id = EoF_recieve_refugees
+		relative_position_id = EoF_receive_refugees
 		x = 1
 		y = 1
 
