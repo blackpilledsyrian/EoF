@@ -2,7 +2,7 @@
 
 oob = "NCH_1007"
 
-set_research_slots = 2
+set_research_slots = 3
 
 set_technology = {
 	changeling_race = 1
@@ -132,10 +132,13 @@ set_politics = {
 }
 
 add_ideas = {
+	defence_contracts
+	militia_system
 	isolation
-	agrarian_society
+	pre_industrial_society
+	proper_science_base
 	NCH_FBK_pact
-	lack_of_scientists
+	lack_of_scientists3
 	NCH_idyllic_society
 }
 

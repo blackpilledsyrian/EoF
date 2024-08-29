@@ -495,7 +495,7 @@ ideas = {
 		}
 
 		NCH_tank_tactics_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -510,7 +510,7 @@ ideas = {
 		}
 
 		NCH_spy_tactics_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -523,7 +523,7 @@ ideas = {
 			}
 		}
 		NCH_spy_tactics_idea_lar = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -537,7 +537,7 @@ ideas = {
 		}
 
 		NCH_continent_infiltrate_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -550,7 +550,7 @@ ideas = {
 			}
 		}
 		NCH_continent_infiltrate_idea_lar = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -564,7 +564,7 @@ ideas = {
 		}
 
 		NCH_communist_production_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -578,7 +578,7 @@ ideas = {
 		}
 
 		NCH_equestria_tech_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -592,7 +592,7 @@ ideas = {
 		}
 
 		NCH_immigration_tech_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -601,12 +601,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				research_speed_factor = 0.02
+				research_speed_factor = 0.08
 			}
 		}
 
 		NCH_crisis_of_faith_idea = {
-			picture = kingdom_with_no_king
+			picture = BOI_kingdom_with_no_king
 			allowed = {
 				always = no
 			}
@@ -625,7 +625,7 @@ ideas = {
 		}
 
 		NCH_Foreign_Constructors_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -641,7 +641,7 @@ ideas = {
 		}
 
 		NCH_Resource_Extraction_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -657,7 +657,7 @@ ideas = {
 		}
 
 		NCH_Splendid_Isolation_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -666,16 +666,13 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-
-				army_core_defence_factor = 0.1
-				production_speed_coastal_bunker_factor = 0.15
-				production_speed_bunker_factor = 0.15
-				production_speed_anti_air_building_factor = 0.15
+				army_core_attack_factor = 0.15
+				army_core_defence_factor = 0.15
 			}
 		}
 
 		NCH_Old_Ways_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -689,7 +686,7 @@ ideas = {
 		}
 
 		NCH_Academic_Infiltration_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -698,13 +695,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-
-				research_speed_factor = 0.05
+				research_speed_factor = 0.3
 			}
 		}
 
 		NCH_Industry_Infiltration_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -713,13 +709,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-
-				production_speed_buildings_factor = 0.05
+				production_speed_buildings_factor = 0.15
 			}
 		}
 
 		NCH_Military_Infiltration_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -735,7 +730,7 @@ ideas = {
 		}
 
 		NCH_Passive_Approach_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -745,12 +740,12 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_defence_factor = 0.10
-				
+				conscription = 0.01
 			}
 		}
 
 		NCH_Support_Conservatives_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -764,7 +759,7 @@ ideas = {
 		}
 
 		NCH_Support_Communists_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -777,7 +772,7 @@ ideas = {
 			}
 		}
 		NCH_Communism_Small_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -791,7 +786,7 @@ ideas = {
 		}
 
 		NCH_Communism_Large_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -805,7 +800,7 @@ ideas = {
 		}
 
 		NCH_Unions_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -819,7 +814,7 @@ ideas = {
 		}
 
 		NCH_Collective_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -833,7 +828,7 @@ ideas = {
 		}
 
 		NCH_Centralisation_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -923,7 +918,7 @@ ideas = {
 		}
 
 		NCH_looking_beyond_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -932,12 +927,12 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				max_planning = 0.20
+				max_planning = 0.1
 				planning_speed = 0.05
 			}
 		}
 		NCH_modern_changeling_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -975,11 +970,11 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
+				production_speed_arms_factory_factor = 0.2
 			}
 		}
 		NCH_end_deals_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -996,12 +991,12 @@ ideas = {
 
 			modifier = {
 				land_doctrine_cost_factor = -0.05
-				production_factory_max_efficiency_factor = 0.05
-				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 		NCH_extend_deals_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1010,21 +1005,13 @@ ideas = {
 			}
 			removal_cost = -1
 
-			research_bonus = { 
-				infantry_weapons = 0.05
-				armor = 0.05
-				motorized_equipment = 0.05
-			}
-
 			modifier = {
-				land_doctrine_cost_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
-				production_factory_efficiency_gain_factor = -0.05
+				license_production_speed = 0.35
 			}
 		}
 
 		NCH_conscription_regulations_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1039,7 +1026,7 @@ ideas = {
 			}
 		}
 		NCH_call_to_arms_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1055,7 +1042,7 @@ ideas = {
 		}
 
 		NCH_perfect_planning_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1069,7 +1056,7 @@ ideas = {
 			}
 		}
 		NCH_jager_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1082,7 +1069,7 @@ ideas = {
 			}
 		}
 		NCH_submarine_buff_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}
@@ -1096,7 +1083,7 @@ ideas = {
 			}
 		}
 		NCH_foreign_pilots_idea = {
-			picture = idea_NCH_changeling_submarine
+			picture = NCH_changeling_submarine
 			allowed = {
 				always = no
 			}

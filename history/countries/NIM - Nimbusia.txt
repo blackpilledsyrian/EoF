@@ -205,7 +205,7 @@ set_cosmetic_tag = RIV_federation_mem
 add_ideas = {
 	# no_edict
 	martial_society
-	subsidized_defence_contracts
+	nationalized_military_industry
 	pre_industrial_society
 	better_science_base
 	limited_exports
