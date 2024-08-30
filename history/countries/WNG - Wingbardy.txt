@@ -284,6 +284,8 @@ recruit_character = WNG_king_trubach
 
 create_faction = Southern_Kingdoms
 add_to_faction = MCW
+add_to_faction = NIM
+add_to_faction = BAK
 
 add_opinion_modifier = { target = BRF modifier = made_friends }
 

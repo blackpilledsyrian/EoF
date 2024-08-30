@@ -317,18 +317,18 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus NIM_boule_deliberates"
 		add_political_power = 50
-		hidden_effect = {
-			country_event = { id = nimbusia.12 days = 7 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.13 days = 6 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.14 days = 8 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.15 days = 5 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.16 days = 9 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.17 days = 4 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.18 days = 3 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.19 days = 10 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.20 days = 5 random = 7200 }#days to hours applied
-			country_event = { id = nimbusia.21 days = 1 random = 7200 }#days to hours applied
-		}
+		# hidden_effect = {
+		# 	country_event = { id = nimbusia.12 days = 7 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.13 days = 6 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.14 days = 8 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.15 days = 5 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.16 days = 9 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.17 days = 4 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.18 days = 3 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.19 days = 10 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.20 days = 5 random = 7200 }#days to hours applied
+		# 	country_event = { id = nimbusia.21 days = 1 random = 7200 }#days to hours applied
+		# }
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
 }
@@ -357,12 +357,25 @@ shared_focus = {
 
 
 	select_effect = {
-		random_list = {
-			1 = { set_variable = { NIM_debate = 1 } }
-			1 = { set_variable = { NIM_debate = 2 } }
-			1 = { set_variable = { NIM_debate = 3 } }
+		if = {
+			limit = {
+				has_completed_focus = NIM_choose_harmony
+			}
+			set_variable = { NIM_debate = 1 }
 		}
-		country_event = { id = nimbusia.7 days = 1 random = 480 }#days to hours applied
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_neutrality
+			}
+			set_variable = { NIM_debate = 2 }
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_fascism
+			}
+			set_variable = { NIM_debate = 3 }
+		}
+		country_event = { id = nimbusia.7 days = 10 }#days to hours applied
 	}
 
 	cancel_if_invalid = yes
@@ -402,12 +415,25 @@ shared_focus = {
 
 
 	select_effect = {
-		random_list = {
-			1 = { set_variable = { NIM_debate = 1 } }
-			1 = { set_variable = { NIM_debate = 2 } }
-			1 = { set_variable = { NIM_debate = 3 } }
+		if = {
+			limit = {
+				has_completed_focus = NIM_choose_harmony
+			}
+			set_variable = { NIM_debate = 1 }
 		}
-		country_event = { id = nimbusia.8 days = 1 random = 480 }#days to hours applied
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_neutrality
+			}
+			set_variable = { NIM_debate = 2 }
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_fascism
+			}
+			set_variable = { NIM_debate = 3 }
+		}
+		country_event = { id = nimbusia.8 days = 10 }#days to hours applied
 	}
 
 	cancel_if_invalid = yes
@@ -447,12 +473,25 @@ shared_focus = {
 
 
 	select_effect = {
-		random_list = {
-			1 = { set_variable = { NIM_debate = 1 } }
-			1 = { set_variable = { NIM_debate = 2 } }
-			1 = { set_variable = { NIM_debate = 3 } }
+		if = {
+			limit = {
+				has_completed_focus = NIM_choose_harmony
+			}
+			set_variable = { NIM_debate = 1 }
 		}
-		country_event = { id = nimbusia.9 days = 1 random = 480 }#days to hours applied
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_neutrality
+			}
+			set_variable = { NIM_debate = 2 }
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_fascism
+			}
+			set_variable = { NIM_debate = 3 }
+		}
+		country_event = { id = nimbusia.9 days = 10 }#days to hours applied
 	}
 
 	cancel_if_invalid = yes
@@ -492,12 +531,25 @@ shared_focus = {
 
 
 	select_effect = {
-		random_list = {
-			1 = { set_variable = { NIM_debate = 1 } }
-			1 = { set_variable = { NIM_debate = 2 } }
-			1 = { set_variable = { NIM_debate = 3 } }
+		if = {
+			limit = {
+				has_completed_focus = NIM_choose_harmony
+			}
+			set_variable = { NIM_debate = 1 }
 		}
-		country_event = { id = nimbusia.10 days = 1 random = 480 }#days to hours applied
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_neutrality
+			}
+			set_variable = { NIM_debate = 2 }
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_fascism
+			}
+			set_variable = { NIM_debate = 3 }
+		}
+		country_event = { id = nimbusia.10 days = 10 }#days to hours applied
 	}
 
 	cancel_if_invalid = yes
@@ -537,12 +589,25 @@ shared_focus = {
 
 
 	select_effect = {
-		random_list = {
-			1 = { set_variable = { NIM_debate = 1 } }
-			1 = { set_variable = { NIM_debate = 2 } }
-			1 = { set_variable = { NIM_debate = 3 } }
+		if = {
+			limit = {
+				has_completed_focus = NIM_choose_harmony
+			}
+			set_variable = { NIM_debate = 1 }
 		}
-		country_event = { id = nimbusia.11 days = 1 random = 480 }#days to hours applied
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_neutrality
+			}
+			set_variable = { NIM_debate = 2 }
+		}
+		else_if = {
+			limit = {
+				has_completed_focus = NIM_choose_fascism
+			}
+			set_variable = { NIM_debate = 3 }
+		}
+		country_event = { id = nimbusia.11 days = 10 }#days to hours applied
 	}
 
 	cancel_if_invalid = yes
@@ -3130,19 +3195,19 @@ shared_focus = {
 
 			add_resource = {
 				type = aluminium
-				amount = 18
+				amount = 180
 			}
 
 			add_resource = {
 				type = steel
-				amount = 10
+				amount = 100
 			}
 		}
 
 		622 = {
 			add_resource = {
 				type = tungsten
-				amount = 6
+				amount = 60
 			}
 		}
 	}
@@ -4774,7 +4839,7 @@ shared_focus = {
 		645 = {
 			add_resource = {
 				type = oil
-				amount = 20
+				amount = 200
 			}
 		}
 	}
