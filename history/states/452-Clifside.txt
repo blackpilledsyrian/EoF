@@ -7,7 +7,7 @@ state={
 	}
 
 	manpower=767890
-	state_category = rural
+	state_category = town
 	buildings_max_level_factor=1.00
 
 	history={
@@ -20,6 +20,7 @@ state={
 
 		buildings = {
 			infrastructure = 1
+			industrial_complex = 1
 
 			12834 = {
 				naval_base = 1

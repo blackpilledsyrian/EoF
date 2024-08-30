@@ -295,7 +295,7 @@ shared_focus = {
 	icon = GFX_goal_nim_government
 	x = 4
 	y = 1
-	cost = 3
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_choose_harmony
@@ -339,7 +339,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = -4
 	y = 1
-	cost = 3
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_boule_deliberates
@@ -375,7 +375,7 @@ shared_focus = {
 			}
 			set_variable = { NIM_debate = 3 }
 		}
-		country_event = { id = nimbusia.7 days = 10 }#days to hours applied
+		country_event = nimbusia.7
 	}
 
 	cancel_if_invalid = yes
@@ -397,7 +397,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = -2
 	y = 1
-	cost = 4
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_boule_deliberates
@@ -433,7 +433,7 @@ shared_focus = {
 			}
 			set_variable = { NIM_debate = 3 }
 		}
-		country_event = { id = nimbusia.8 days = 10 }#days to hours applied
+		country_event = nimbusia.8
 	}
 
 	cancel_if_invalid = yes
@@ -455,7 +455,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 0
 	y = 1
-	cost = 3
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_boule_deliberates
@@ -491,7 +491,7 @@ shared_focus = {
 			}
 			set_variable = { NIM_debate = 3 }
 		}
-		country_event = { id = nimbusia.9 days = 10 }#days to hours applied
+		country_event = nimbusia.9
 	}
 
 	cancel_if_invalid = yes
@@ -513,7 +513,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 2
 	y = 1
-	cost = 4
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_boule_deliberates
@@ -549,7 +549,7 @@ shared_focus = {
 			}
 			set_variable = { NIM_debate = 3 }
 		}
-		country_event = { id = nimbusia.10 days = 10 }#days to hours applied
+		country_event = nimbusia.10
 	}
 
 	cancel_if_invalid = yes
@@ -571,7 +571,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 4
 	y = 1
-	cost = 3
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_boule_deliberates
@@ -607,7 +607,7 @@ shared_focus = {
 			}
 			set_variable = { NIM_debate = 3 }
 		}
-		country_event = { id = nimbusia.11 days = 10 }#days to hours applied
+		country_event = nimbusia.11
 	}
 
 	cancel_if_invalid = yes
@@ -629,7 +629,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = -3
 	y = 2
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_what_to_grow
@@ -658,7 +658,7 @@ shared_focus = {
 
 
 	select_effect = {
-		country_event = { id = nimbusia.22 days = 33 }
+		country_event = nimbusia.22
 	}
 
 	cancel_if_invalid = yes
@@ -677,7 +677,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 0
 	y = 2
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_what_to_grow
@@ -706,7 +706,7 @@ shared_focus = {
 
 
 	select_effect = {
-		country_event = { id = nimbusia.26 days = 33 }
+		country_event = nimbusia.26
 	}
 
 	cancel_if_invalid = yes
@@ -725,7 +725,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 3
 	y = 2
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_what_to_grow
@@ -753,7 +753,7 @@ shared_focus = {
 	}
 
 	select_effect = {
-		country_event = { id = nimbusia.30 days = 33 }
+		country_event = nimbusia.30
 	}
 
 
@@ -773,7 +773,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 0
 	y = 3
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_censorship
@@ -796,7 +796,7 @@ shared_focus = {
 
 
 	select_effect = {
-		country_event = { id = nimbusia.35 days = 40 }
+		country_event = nimbusia.35
 	}
 
 	cancel_if_invalid = yes
@@ -815,7 +815,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 0
 	y = 4
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_big_issue
@@ -841,7 +841,7 @@ shared_focus = {
 				limit = { is_ai = yes has_global_flag = NIM_have_helots_rebel }
 				set_stability = 0.40
 			}
-			country_event = { id = nimbusia.62 days = 4 random = 240 }
+			country_event = { id = nimbusia.62 days = 3 }
 		}
 	}
 }
@@ -852,7 +852,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = -3
 	y = 5
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_appoint_new_commander
@@ -896,7 +896,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 0
 	y = 5
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_appoint_new_commander
@@ -940,7 +940,7 @@ shared_focus = {
 	relative_position_id = NIM_boule_deliberates
 	x = 3
 	y = 5
-	cost = 5
+	cost = 1
 
 	prerequisite = {
 		focus = NIM_appoint_new_commander

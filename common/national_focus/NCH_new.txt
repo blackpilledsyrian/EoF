@@ -10,7 +10,166 @@ focus_tree = {
 	default = no
 	continuous_focus_position = { x = 100 y = 1300 }
 
+	#EoF Changes
+	focus = {
+		id = EoF_expand_trade_org
+		icon = GFX_goal_generic_trade
+		cost = 8
+		x = 17
+		y = 0
 
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_NCH_trade
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = EoF_reinvest_trade
+		icon = GFX_goal_generic_positive_trade_relations
+		cost = 8
+		relative_position_id = EoF_expand_trade_org
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = EoF_expand_trade_org
+		}
+		mutually_exclusive = {
+			focus = EoF_invest_hives
+		}
+		available = {
+			has_idea = EoF_NCH_trade
+		}
+		completion_reward = {
+			modify_timed_idea = {
+				idea = EoF_NCH_trade
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = EoF_invest_hives
+		icon = GFX_focus_generic_industry_2
+		cost = 8
+		relative_position_id = EoF_expand_trade_org
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = EoF_expand_trade_org
+		}
+		mutually_exclusive = {
+			focus = EoF_reinvest_trade
+		}
+		completion_reward = {
+			670 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			669 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			668 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_continental_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 8
+		relative_position_id = EoF_reinvest_trade
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_reinvest_trade
+			focus = EoF_invest_hives
+		}
+		mutually_exclusive = {
+			focus = EoF_island_infra
+		}
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					NOT = {
+						is_in_home_area = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_island_infra
+		icon = GFX_focus_generic_industry_3
+		cost = 8
+		relative_position_id = EoF_invest_hives
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_reinvest_trade
+			focus = EoF_invest_hives
+		}
+		mutually_exclusive = {
+			focus = EoF_continental_infra
+		}
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_mainland_hive
+		icon = GFX_goal_chn_city_hives
+		cost = 8
+		relative_position_id = EoF_continental_infra
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = EoF_continental_infra
+			focus = EoF_island_infra
+		}
+		available = {
+			controls_state = 455
+		}
+		completion_reward = {
+			455 = {
+				add_dynamic_modifier = {
+					modifier = EoF_NCH_hive_building
+					days = 365
+				}
+			}
+		}
+	}
+	#EoF Changes
 
 	### TRADE MAIN BRANCH ####
 
@@ -19,7 +178,7 @@ focus_tree = {
 		text = NCH_assess_the_situation
 		icon = GFX_goal_generic_national_unity
 		cost = 2.00
-		x = 4
+		x = 11
 		y = 0
 		ai_will_do = {
 			factor = 100
@@ -58,7 +217,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_assess_the_situation
 		}
-		x = 4
+		x = 11
 		y = 1
 		ai_will_do = {
 			factor = 100
@@ -109,7 +268,7 @@ focus_tree = {
 			focus = NCH_meet_with_the_outsiders
 		}
 
-		x = 2
+		x = 9
 		y = 2
 
 		ai_will_do = {
@@ -173,7 +332,7 @@ focus_tree = {
 			# country_event = { id = greneclyf.23 days = 1 }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-		x = 6
+		x = 13
 		y = 2
 		ai_will_do = {
 			factor = 100
@@ -240,7 +399,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_trading_with_the_continentals
 		}
-		x = 2
+		x = 9
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_a_different_kind_of_changeling"
@@ -282,7 +441,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_trading_with_the_continentals
 		}
-		x = 2
+		x = 9
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_encourage_migration_to_the_continent"
@@ -383,7 +542,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_encourage_migration_to_the_continent
 		}
-		x = 2
+		x = 9
 		y = 4
 		complete_tooltip = {
 			add_offsite_building = { type = industrial_complex level = 2 }
@@ -506,7 +665,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_continental_investors
 		}
-		x = 2
+		x = 9
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_set_up_an_academic_exchange"
@@ -657,7 +816,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_beyond_the_continent
 		}
-		x = 6
+		x = 13
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_contact_our_kind"
@@ -687,7 +846,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_contact_our_kind
 		}
-		x = 6
+		x = 13
 		y = 4
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_foreign_advisors"
@@ -892,7 +1051,7 @@ focus_tree = {
 			focus = NCH_bound_by_harmony
 			focus = NCH_united_in_race
 		}
-		x = 6
+		x = 13
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_love_triumphs"
@@ -946,7 +1105,7 @@ focus_tree = {
 			focus = NCH_love_triumphs
 			focus = NCH_bound_by_harmony
 		}
-		x = 6
+		x = 13
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_united_in_race"
@@ -986,7 +1145,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_united_in_race
 		}
-		x = 6
+		x = 13
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_intercontinental_contraband"
@@ -1028,7 +1187,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_intercontinental_contraband
 		}
-		x = 6
+		x = 13
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_subterfuge_and_sabotage"
@@ -1065,7 +1224,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_subterfuge_and_sabotage
 		}
-		x = 6
+		x = 13
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_the_greneclyf_legion"
@@ -1106,7 +1265,7 @@ focus_tree = {
 			focus = NCH_love_triumphs
 		}
 
-		x = 6
+		x = 13
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_strictly_professional"
@@ -1150,7 +1309,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_strictly_professional
 		}
-		x = 6
+		x = 13
 		y = 7
 
 		completion_reward = {

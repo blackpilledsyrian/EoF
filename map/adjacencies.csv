@@ -812,8 +812,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3069;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 3069;6079;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 
-3465;12558;impassable;-1;-1;-1;-1;-1;;Griffbraltar
-3465;4314;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+12558;4298;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;4298;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;9114;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;4087;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;11140;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+4314;11140;impassable;-1;-1;-1;-1;-1;;Griffbraltar
 
 531;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
 12615;12882;impassable;-1;-1;-1;-1;-1;;Skyfall

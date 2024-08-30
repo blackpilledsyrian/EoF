@@ -6,8 +6,8 @@ state={
 		1075 2009 4957 5010 7179 7849 10617 11911 11968 12010 12751 12800 12802 12856 
 	}
 
-	manpower=1711109
-	state_category=large_city
+	manpower=2311109
+	state_category = large_city
 	buildings_max_level_factor=1.00
 
 	history={
@@ -22,7 +22,7 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
-			arms_factory = 2
+			arms_factory = 3
 			dockyard = 1
 			air_base = 4
 

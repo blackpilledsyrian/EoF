@@ -60,6 +60,13 @@ EoF_pony_panzers:0 "Special Battalion: Bucephalus"
 EoF_death_dishonour:0 "Death or Dishonour"
 EoF_species_fate:0 "Fate of Our Species"
 
+EoF_expand_trade_org:0 "Expand Trade Organizations"
+EoF_reinvest_trade:0 "Reinvest Profits in Trade"
+EoF_invest_hives:0 "Invest Profits in Hives"
+EoF_continental_infra:0 "Continental Infrastructure"
+EoF_island_infra:0 "Island Infrastructure"
+EoF_mainland_hive:0 "First Mainland Hive"
+
 
 EoF_war_begins:0 "War Begins"
 EoF_war_begins_desc:0 "The inevetible has happened - we've entered a period of war. We're shifting our entire lives, public and private, into the background. The entire effort of Equestria must go in one direction - Victory."

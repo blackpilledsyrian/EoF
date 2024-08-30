@@ -2361,7 +2361,7 @@ country_event = {
 			ideology = democratic
 			popularity = 0.07
 		}
-		hidden_effect = { country_event = { id = nimbusia.43 days = 7 random = 168 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.43 days = 1 } }#days to hours applied
 	}
 }
 
@@ -2383,7 +2383,7 @@ country_event = {
 			ideology = neutrality
 			popularity = 0.07
 		}
-		hidden_effect = { country_event = { id = nimbusia.43 days = 7 random = 168 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.43 days = 1 } }#days to hours applied
 	}
 }
 
@@ -2413,18 +2413,18 @@ country_event = {
 		}
 		if = {
 			limit = { has_completed_focus = NIM_choose_fascism }
-			hidden_effect = { country_event = { id = nimbusia.45 days = 7 random = 336 } }#days to hours applied
+			hidden_effect = { country_event = { id = nimbusia.45 days = 1 } }#days to hours applied
 		}
 		else_if = {
 			limit = { has_idea = NIM_harmony_army_chief }
-			hidden_effect = { country_event = { id = nimbusia.46 days = 21 random = 168 } }#days to hours applied
+			hidden_effect = { country_event = { id = nimbusia.46 days = 1 } }#days to hours applied
 		}
 		else_if = {
 			limit = { has_idea = NIM_fascism_army_chief }
-			hidden_effect = { country_event = { id = nimbusia.52 days = 23 random = 168 } }#days to hours applied
+			hidden_effect = { country_event = { id = nimbusia.52 days = 1 } }#days to hours applied
 		}
 		else = {
-			hidden_effect = { country_event = { id = nimbusia.51 days = 22 random = 168 } }#days to hours applied
+			hidden_effect = { country_event = { id = nimbusia.51 days = 1 } }#days to hours applied
 		}
 	}
 }
@@ -2445,7 +2445,7 @@ country_event = {
 			ideology = fascism
 			popularity = -0.2
 		}
-		hidden_effect = { country_event = { id = nimbusia.45 days = 7 random = 336 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.45 days = 1 } }#days to hours applied
 	}
 }
 
@@ -2511,7 +2511,7 @@ country_event = {
 			popularity = -0.03
 		}
 		add_political_power = -20
-		hidden_effect = { country_event = { id = nimbusia.49 days = 3 random = 48 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.49 days = 1 } }#days to hours applied
 	}
 
 	option = {
@@ -2522,7 +2522,7 @@ country_event = {
 			popularity = -0.03
 		}
 		add_political_power = 20
-		hidden_effect = { country_event = { id = nimbusia.50 days = 3 random = 48 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.50 days = 1 } }#days to hours applied
 	}
 }
 
@@ -2795,7 +2795,7 @@ country_event = {
 			ideology = fascism
 			popularity = 0.08
 		}
-		hidden_effect = { country_event = { id = nimbusia.52 days = 5 } }
+		hidden_effect = { country_event = { id = nimbusia.52 days = 1 } }
 	}
 }
 
@@ -2871,7 +2871,7 @@ country_event = {
 			set_country_flag = NIM_fash_coup_fash
 			every_country = { limit = { is_riverlands_country = yes } news_event = { id = nimbusia_news.3 hours = 6 } }
 		}
-		hidden_effect = { country_event = { id = nimbusia.53 days = 4 random = 144 } }#days to hours applied
+		hidden_effect = { country_event = { id = nimbusia.53 days = 1 } }#days to hours applied
 	}
 }
 

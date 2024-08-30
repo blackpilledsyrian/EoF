@@ -272,3 +272,8 @@ EoF_ant_thrax_EQS = {
 	army_org_regain = -0.15
 	attrition = 0.05
 }
+EoF_NCH_hive_building = {
+	icon = GFX_idea_CHN_new_hives_3
+
+	state_production_speed_buildings_factor = 0.3
+}
