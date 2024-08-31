@@ -104,6 +104,8 @@ ideas = {
 				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
 				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
+				planning_speed = 1.0
 			}
 		}
 		EoF_YAK_JAK_civil_war_volunteers_2 = {
@@ -117,6 +119,8 @@ ideas = {
 				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
 				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
+				planning_speed = 1.0
 			}
 		}
 		EoF_YAK_thanks = {
