@@ -46,9 +46,9 @@ NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.3	-- defend combat pe
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1		-- over combat width penalty per %.
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.15	-- over combat width max (when you cant join no more).
-NDefines.NMilitary.COMBAT_STACKING_START = 2			-- at what nr of divisions stacking penalty starts
+NDefines.NMilitary.COMBAT_STACKING_START = 4			-- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                    -- extra stacking from directions
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.05		-- how much stacking penalty per division
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1		-- how much stacking penalty per division
 
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  	-- amount of extra attrition from being in training
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 6.0

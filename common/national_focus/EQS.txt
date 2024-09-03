@@ -4050,12 +4050,18 @@ shared_focus = {
 				infantry = { x = 0 y = 2 }
 				infantry = { x = 0 y = 3 }
 				infantry = { x = 0 y = 4 }
-
+				
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
 				infantry = { x = 1 y = 3 }
 				infantry = { x = 1 y = 4 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
 			}
 			support = {
 				artillery = { x = 0 y = 0 }
@@ -4129,12 +4135,18 @@ shared_focus = {
 				infantry = { x = 0 y = 2 }
 				infantry = { x = 0 y = 3 }
 				infantry = { x = 0 y = 4 }
-
+				
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
 				infantry = { x = 1 y = 3 }
 				infantry = { x = 1 y = 4 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
 			}
 			support = {
 				artillery = { x = 0 y = 0 }
@@ -4216,12 +4228,18 @@ shared_focus = {
 				infantry = { x = 0 y = 2 }
 				infantry = { x = 0 y = 3 }
 				infantry = { x = 0 y = 4 }
-
+				
 				infantry = { x = 1 y = 0 }
 				infantry = { x = 1 y = 1 }
 				infantry = { x = 1 y = 2 }
 				infantry = { x = 1 y = 3 }
 				infantry = { x = 1 y = 4 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 2 y = 4 }
 			}
 			support = {
 				artillery = { x = 0 y = 0 }
