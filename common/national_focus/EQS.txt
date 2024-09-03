@@ -1544,11 +1544,7 @@ shared_focus = {
 	x = 29
 	y = 1
 	available = {
-		date > 1009.01.01
-		OR = {
-			date > 1010.01.01
-			has_war_support > 0.5
-		}
+		has_war_support > 0.4
 	}
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -1609,6 +1605,11 @@ shared_focus = {
 	x = 27
 	y = 3
 	available = {
+		date > 1009.01.01
+		OR = {
+			has_war_support > 0.5
+			date > 1010.01.01
+		}
 	}
 	bypass = {
 		NOT = {
@@ -1758,7 +1759,7 @@ shared_focus = {
 shared_focus = {
 	id = EoF_EQS_offensive_1
 	icon = GFX_goal_generic_equestria
-	cost = 5
+	cost = 1
 	prerequisite = {
 		focus = War_Plan
 	}
@@ -1792,7 +1793,7 @@ shared_focus = {
 shared_focus = {
 	id = EoF_EQS_offensive_2
 	icon = GFX_goal_generic_equestria
-	cost = 5
+	cost = 1
 	prerequisite = {
 		focus = EoF_EQS_offensive_1
 	}

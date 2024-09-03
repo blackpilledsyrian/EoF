@@ -1904,7 +1904,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			max_strength = 0.5
+			max_strength = 1.0
 			reliability = 0.075
 			build_cost_ic = 1
 		}

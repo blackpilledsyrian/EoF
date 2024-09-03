@@ -22,7 +22,7 @@ NDefines.NMilitary.MAX_DIVISION_SUPPORT_HEIGHT = 7		-- Max height of support in 
 
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0 	--Base cost to unlock a regiment slot,
 NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0	--Base cost to change a regiment column.
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0 		--Base cost to unlock a support slot
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0	 	--Base cost to unlock a support slot
 
 NDefines.NMilitary.SUPPLY_GRACE = 120				-- troops always carry 5 days of food and supply
 
@@ -32,12 +32,17 @@ NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modi
 NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.028	-- air global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.028	-- global damage modifier
 
-NDefines.NMilitary.PLANNING_DECAY = 0.02
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.05		-- Amount of planning lost due to player manual order
-NDefines.NMilitary.PLANNING_GAIN = 0.01
+NDefines.NMilitary.PLANNING_DECAY = 0.01
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03		-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLANNING_GAIN = 0.02
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01	-- Planning Bonus gain per day for naval invasions
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -1	-- Malus in percentage for the planning bonus gain for naval invasions
 NDefines.NMilitary.PLANNING_MAX = 0.1				-- can get more from techs
+
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_ATTACK = -0.4	-- attack combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_ATTACKER_DEFEND = -0.6	-- defend combat penalty for attacker if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_ATTACK = -0.2	-- attack combat penalty for defender if out of supply
+NDefines.NMilitary.COMBAT_SUPPLY_LACK_DEFENDER_DEFEND = -0.3	-- defend combat penalty for defender if out of supply
 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1		-- over combat width penalty per %.
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.15	-- over combat width max (when you cant join no more).
@@ -196,12 +201,12 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.0					-- A global facto
 -- defines that are used for supply reach for built nodes
 NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.0
 NDefines.NSupply.NODE_STARTING_PENALTY_PER_PROVINCE = 0.30
-NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.50
+NDefines.NSupply.NODE_ADDED_PENALTY_PER_PROVINCE = 0.5
 
 -- defines that are used for supply reach for dockyards
 NDefines.NSupply.NAVAL_BASE_INITIAL_SUPPLY_FLOW = 3.0
 NDefines.NSupply.NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 1.1
-NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.50
+NDefines.NSupply.NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 0.5
 
 -- Node Flow (i.e. province caps) increase by this amount per railway level of the node's bottleneck
 NDefines.NSupply.NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.6
@@ -212,7 +217,7 @@ NDefines.NSupply.FLOATING_HARBOR_STARTING_PENALTY_PER_PROVINCE = 0.8
 NDefines.NSupply.FLOATING_HARBOR_ADDED_PENALTY_PER_PROVINCE = 0.5
 
 NDefines.NSupply.FLOATING_HARBOR_BASE_SUPPLY = 15.0		-- supply given by a floating harbor
-NDefines.NSupply.FLOATING_HARBOR_BASE_DURATION = 21		-- duration of a full hp floating harbor
+NDefines.NSupply.FLOATING_HARBOR_BASE_DURATION = 30		-- duration of a full hp floating harbor
 NDefines.NSupply.FLOATING_HARBOR_DURATION_RATIO_AT_MIN_HP = 0.0					-- duration mult for a harbor that was reduced to 0 hp
 
 -- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above.

@@ -17,6 +17,9 @@ reservist_system:0 "Reservist Based System"
 militia_system:0 "Militia Based System"
 
 STRATEGICREGION_342:0 "Haukland"
+STRATEGICREGION_343:0 "Eastern Starry Sea"
+STRATEGICREGION_344:0 "Teal Plain"
+STRATEGICREGION_345:0 "Puerto Caballo"
 
 STATE_1209:0 "Griffbraltar"
 STATE_1210:0 "Dazzhip Island"

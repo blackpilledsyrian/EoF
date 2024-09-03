@@ -415,7 +415,7 @@ EoF_harmonic_war_industry_category = {
 		days_remove = 270
 		cost = 5
 		modifier = {
-			research_speed_factor = -0.08
+			research_speed_factor = -0.05
 		}
 		complete_effect = {
 			if = {
@@ -467,7 +467,7 @@ EoF_harmonic_war_industry_category = {
 		days_remove = 270
 		cost = 5
 		modifier = {
-			production_speed_buildings_factor = -0.1
+			production_speed_buildings_factor = -0.075
 		}
 		complete_effect = {
 			if = {
@@ -519,7 +519,7 @@ EoF_harmonic_war_industry_category = {
 		days_remove = 270
 		cost = 5
 		modifier = {
-			production_factory_max_efficiency_factor = -0.05
+			production_factory_max_efficiency_factor = -0.035
 		}
 		complete_effect = {
 			if = {
