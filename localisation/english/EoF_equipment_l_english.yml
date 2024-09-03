@@ -6,6 +6,10 @@ EoF_cat_eq_all_tank_destroyer:0 "Tank Destroyer"
 category_light_aa:0 "Light Anti-Air"
 category_heavy_aa:0 "Heavy Anti-Air"
 
+category_td:0 "Tank Destroyer"
+category_spg:0 "Self-Propelled Gun"
+category_spaa:0 "Self-Propelled Anti-Air"
+
 heavy_artillery_equipment:0 "Heavy Artillery"
 heavy_artillery_equipment_desc:0 ""
 heavy_artillery_equipment_1:0 "Basic Heavy Artillery"

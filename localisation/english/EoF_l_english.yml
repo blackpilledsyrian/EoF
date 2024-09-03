@@ -34,6 +34,11 @@ super_air_base_plural:0 "Expanded Air Bases"
 super_air_base_desc:0 "This building provides the state with additional air force capacity beyond regular air bases."
 EoF_super_air_base_tech:0 "Expanded Air Base Technology"
 
+EoF_mass_motorization_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
+EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §YLeg Infantry§! by 20."
+EoF_operational_concentration_tt:0 "§GDecreases§! §YLight Tank Chassis§!, §YMedium Tank Chassis§! and §YHeavy Tank Chassis§! requirement for §YTanks§! by 4, 4 and 3."
+EoF_mechanized_wave_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
+
 ABILITY_ARTILLERY_BOMBARDMENT:0 "Artillery Bombardment"
 ABILITY_ARTILLERY_BOMBARDMENT_DESC:0 "Your units will bombard the enemy, but leave themselves vulnerable to counterattack."
 

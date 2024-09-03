@@ -21,6 +21,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
+			category_spaa
 		}
 
 		combat_width = 2
@@ -89,6 +90,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
+			category_spaa
 		}
 
 		combat_width = 2
@@ -161,6 +163,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
+			category_spaa
 		}
 
 		combat_width = 2
@@ -223,6 +226,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
+			category_spaa
 		}
 		
 		group = support
@@ -283,6 +287,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
+			category_spaa
 		}
 
 		combat_width = 2

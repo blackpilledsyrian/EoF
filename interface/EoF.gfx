@@ -950,4 +950,37 @@ spriteTypes = {
 		name = "GFX_orb_of_chital_event"
 		texturefile = "gfx/event_pictures/GRF_hope_master.dds"
 	}
+
+
+	### Texticons ###
+	spriteType = {
+		name = "GFX_unit_category_td"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_at_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_td_icon_small"
+		texturefile = "gfx/texticons/unit_category_td_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_spg"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_artillery_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_spg_icon_small"
+		texturefile = "gfx/texticons/unit_category_spg_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_spaa"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_antiair_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_spaa_icon_small"
+		texturefile = "gfx/texticons/unit_category_spaa_icon_small.dds"
+		legacy_lazy_load = no
+	}
 }

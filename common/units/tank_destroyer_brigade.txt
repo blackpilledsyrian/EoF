@@ -21,6 +21,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
+			category_td
 		}
 
 		combat_width = 2
@@ -92,6 +93,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
+			category_td
 		}
 
 
@@ -168,6 +170,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
+			category_td
 		}
 
 
@@ -246,6 +249,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
+			category_td
 		}
 
 		combat_width = 0
@@ -301,6 +305,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
+			category_td
 		}
 
 
