@@ -41,8 +41,6 @@ entity = {
 	name = "eastern_european_gfx_heavy_artillery_entity"
 }
 
-# "Deer? like there's ever gonna be a deer player. 
-
 entity = {
 	name = "deer_gfx_heavy_artillery_entity"
 	pdxmesh = "frame_artillery_mesh"
