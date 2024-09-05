@@ -984,8 +984,6 @@ equipment_modules = {
 			naval_light_gun_hit_chance_factor = 0.025
 			naval_heavy_gun_hit_chance_factor = 0.025
 		}
-		multiply_stats = {
-		}
 	}
 	ship_fire_control_system_1 = {
 		category = ship_fire_control_system

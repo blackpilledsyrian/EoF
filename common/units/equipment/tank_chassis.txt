@@ -29,7 +29,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
 					tank_flamethrower
 				}
 			}
@@ -391,7 +390,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
 					tank_flamethrower
 				}
 			}
@@ -593,8 +591,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
 					tank_flamethrower
 				}
 			}
@@ -944,8 +940,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
 					tank_flamethrower
 				}
 			}
@@ -1129,9 +1123,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
-					tank_magic_cannon_heavy
 					tank_flamethrower
 				}
 			}
@@ -1483,9 +1474,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
-					tank_magic_cannon_heavy
 					tank_flamethrower
 				}
 			}
@@ -1670,9 +1658,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
-					tank_magic_cannon_heavy
 					tank_flamethrower
 				}
 			}
@@ -2033,9 +2018,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
-					tank_magic_cannon_medium
-					tank_magic_cannon_heavy
 					tank_flamethrower
 				}
 			}
@@ -2405,7 +2387,6 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_small_main_armament
-					tank_magic_cannon_light
 				}
 			}
 

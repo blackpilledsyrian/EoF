@@ -29,7 +29,6 @@ equipment_modules = {
 			fuel_consumption = 2
 			reliability = 0.2
 		}
-		multiply_stats = {  }
 	}
 
 	tank_petrol_electric_engine = {
@@ -87,7 +86,7 @@ equipment_modules = {
 	}
 
 	tank_cast_armor = {
-		abbreviation = "cas"
+		abbreviation = "cast"
 		category = tank_armor_type
 		sfx = sfx_ui_sd_module_sonar
 
@@ -169,8 +168,6 @@ equipment_modules = {
 			reliability = 0.15
 		}
 		dismantle_cost_ic = 0
-		multiply_stats = {
-		}
 	}
 
 	tank_christie_suspension = {
@@ -192,8 +189,6 @@ equipment_modules = {
 		category = tank_suspension_type
 		sfx = sfx_ui_sd_module_sonar
 
-		add_stats = {
-		}
 		dismantle_cost_ic = 0
 	}
 
@@ -207,9 +202,6 @@ equipment_modules = {
 			breakthrough = 3
 		}
 		dismantle_cost_ic = 0
-
-		multiply_stats =  {
-		}
 	}
 
 	tank_hydropneumatic_suspension	= {
@@ -1618,10 +1610,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
-		multiply_stats = {
-			
-		}
-
 	}
 
 
@@ -1634,12 +1622,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 1.5
+			build_cost_ic = 1
+			max_organisation = 0.3
+		}
+		multiply_stats = {
+			breakthrough = 0.025
 		}
 		xp_cost = 0
-		add_stats = {
-			max_organisation = 0.4
-		}
 	}
 
 	tank_radio_2 = {
@@ -1649,12 +1638,13 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			build_cost_ic = 1.5
+			build_cost_ic = 1
+			max_organisation = 0.4
+		}
+		multiply_stats = {
+			breakthrough = 0.05
 		}
 		xp_cost = 0
-		add_stats = {
-			max_organisation = 0.6
-		}
 	}
 
 	tank_radio_3 = {
@@ -1665,11 +1655,12 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
+			max_organisation = 0.5
+		}
+		multiply_stats = {
+			breakthrough = 0.075
 		}
 		xp_cost = 0
-		add_stats = {
-			max_organisation = 0.8
-		}
 	}
 
 	tank_radio_4 = {
@@ -1680,11 +1671,12 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
+			max_organisation = 0.6
+		}
+		multiply_stats = {
+			breakthrough = 0.1
 		}
 		xp_cost = 0
-		add_stats = {
-			max_organisation = 1.0
-		}
 	}
 
 	tank_radio_5 = {
@@ -1710,11 +1702,9 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 5.5
-		}
-		xp_cost = 1
-		add_stats = {
 			reliability = -0.1
 		}
+		xp_cost = 1
 		multiply_stats = {
 			fuel_consumption = 0.1
 			air_attack = 0.4
@@ -1796,8 +1786,6 @@ equipment_modules = {
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
-		multiply_stats = {
-		}
 	}
 
 	sloped_armor = {
@@ -1805,8 +1793,6 @@ equipment_modules = {
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
-		add_stats = {
-		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
 		multiply_stats = {
@@ -1878,9 +1864,6 @@ equipment_modules = {
 			build_cost_ic = 0.5
 		}
 		xp_cost = 0
-		multiply_stats = {
-
-		}
 	}
 
 	extra_ammo_storage = {
@@ -1915,12 +1898,6 @@ equipment_modules = {
 		abbreviation = "sque"
 		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
-
-		forbid_module_categories = {
-			tank_magic_cannon_light
-			tank_magic_cannon_medium
-			tank_magic_cannon_heavy
-		}
 
 		add_stats = {
 			build_cost_ic = 1			
@@ -1962,9 +1939,6 @@ equipment_modules = {
 			build_cost_ic = 1.5
 		}
 		xp_cost = 0
-		multiply_stats = {
-			
-		}
 	}
 
 	dozer_blade = {
@@ -1978,9 +1952,6 @@ equipment_modules = {
 			build_cost_ic = 1
 		}
 		xp_cost = 0
-		multiply_stats = {
-			
-		}
 	}
 
 	auto_loader = {
@@ -2094,9 +2065,6 @@ equipment_modules = {
 			build_cost_ic = 0.5
 		}
 		xp_cost = 0
-		multiply_stats = {
-			
-		}
 	}
 	anti_air_machine_guns = {
 		abbreviation = "aamg"
@@ -2108,9 +2076,6 @@ equipment_modules = {
 			build_cost_ic = 0.5
 		}
 		xp_cost = 0
-		multiply_stats = {
-			
-		}
 	}
 	
 	expanded_fuel_tank = {

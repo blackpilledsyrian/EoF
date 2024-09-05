@@ -2733,8 +2733,6 @@ equipments = {
 		fuel_consumption = 0.16
 		build_cost_ic = 16
 		lend_lease_cost = 12
-		resources = {
-		}
 
 		module_slots = {
 			fixed_main_weapon_slot = {

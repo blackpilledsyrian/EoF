@@ -3218,7 +3218,7 @@ technologies = {
 		}
 		heavy_armor = {
 			need = {
-				heavy_tank_chassis = -4
+				heavy_tank_chassis = -3
 			}		
 		}
 		reinforced_heavy_armor = {
