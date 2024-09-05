@@ -983,4 +983,14 @@ spriteTypes = {
 		texturefile = "gfx/texticons/unit_category_spaa_icon_small.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_unit_category_all_aa_icon_small"
+		texturefile = "gfx/texticons/unit_category_all_aa_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_at_icon_small"
+		texturefile = "gfx/texticons/unit_category_all_at_icon_small.dds"
+		legacy_lazy_load = no
+	}
 }

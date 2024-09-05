@@ -176,7 +176,7 @@ EoF_category = {
 				limit = {
 					has_tech = improved_small_airframe
 					has_tech = engines_3
-					has_tech = antitank2
+					has_tech = at_cannon_2
 				}
 				create_equipment_variant = {
 					name = "A-60 Thundercloud" 
@@ -334,11 +334,19 @@ EoF_category = {
 					owner = HIP
 				}
 				create_unit = {
-					division = "name = \"3rd Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
+					division = "name = \"5th Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
 					owner = HIP
 				}
 				create_unit = {
-					division = "name = \"4th Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
+					division = "name = \"6th Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"7th Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
+					owner = HIP
+				}
+				create_unit = {
+					division = "name = \"8th Heavy Artillery Division\" division_template = \"Heavy Artillery Division\" start_experience_factor = 1.0" 
 					owner = HIP
 				}
 			}

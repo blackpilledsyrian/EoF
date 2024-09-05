@@ -2612,7 +2612,7 @@ focus_tree = {
 		}
 		relative_position_id = EoF_fall_hellgrun
 		x = 0
-		y = 2`
+		y = 2
 		completion_reward = {
 		}
 	}

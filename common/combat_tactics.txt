@@ -478,6 +478,7 @@ tactic_elastic_defense = { #counters blitz
 
 	base =  { factor = 4 }
 	picture = elastic_defence
+	countered_by = tactic_masterful_blitz
 
 	attacker_movement_speed = -0.25
 	attacker = -0.15
@@ -1090,7 +1091,6 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	}
 	
 	picture = SOV_tank_desant_blitz
-	countered_by = tactic_elastic_defense
 	
 	attacker_movement_speed = 0.5
 	combat_width = 0.33

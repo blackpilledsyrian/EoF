@@ -10,6 +10,10 @@ EoF_CTH_terrain = {
 	icon = GFX_idea_MZN_Loyalty_To_Colthage
 	recruitable_population_factor = -1
 }
+EoF_PNG_terrain = {
+	icon = GFX_idea_penguin_race
+	recruitable_population_factor = -1
+}
 EoF_YAK_JAK_civil_war_terrain = {
 	icon = GFX_unplanned_offensive
 	attacker_modifier = yes

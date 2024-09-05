@@ -35,7 +35,7 @@ super_air_base_desc:0 "This building provides the state with additional air forc
 EoF_super_air_base_tech:0 "Expanded Air Base Technology"
 
 EoF_mass_motorization_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
-EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §YLeg Infantry§! by 20."
+EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §YInfantry§! by 20."
 EoF_operational_concentration_tt:0 "§GDecreases§! §YLight Tank Chassis§!, §YMedium Tank Chassis§! and §YHeavy Tank Chassis§! requirement for §YTanks§! by 4, 4 and 3."
 EoF_mechanized_wave_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
 
@@ -644,7 +644,7 @@ EoF_HIP_air_mission:0 "Airforce Modernization Directive"
 EoF_HIP_army_mission:0 "Army Mobilization Directive"
 EoF_HIP_directive_navy_tt:0 "Spawns in a powerful fleet comprised of three §YGuardian Class§! battleships, four §YFirework Class§! heavy cruisers and twelve §YWakefish Class§! destroyers."
 EoF_HIP_directive_air_tt:0 "Researching better modules and airframes will improve the quality of the §YP-32 Corvus§! fighter and §YA-60 Thundercloud§! CAS."
-EoF_HIP_directive_army_tt:0 "Spawns in six 40 width §YHeavy Artillery Divisions§! as well as preparing eighteen 20 width §YHome Guard Divisions§! in case of an invasion."
+EoF_HIP_directive_army_tt:0 "Spawns in eight 30 width §YHeavy Artillery Divisions§! as well as preparing eighteen 30 width §YHome Guard Divisions§! in case of an invasion."
 
 EoF_HIP_armed_citizens:0 "Citizen Militias"
 EoF_HIP_situation_stable_army:0 "Defensive Posture"
@@ -709,6 +709,9 @@ EoF_payment:0 "Industrial Payments"
 
 EoF_CTH_terrain:0 "Colthaginian Service Exemption"
 EoF_CTH_terrain_desc:0 "Despite being considered full citizens of Macawia, the political and economic turmoil of the North Zebrican War have made the recruitment of Colthaginian citizens into the armed forces nonviable."
+
+EoF_PNG_terrain:0 "Penguin Service Exemption"
+EoF_PNG_terrain_desc:0 "While integration of Penguins into any army is difficult given their stature, the sheer size difference between them and Polar Bears makes any potential integration of them into the armed forces effectively impossible."
 
 EoF_MCW_divided:0 "Macawia Divided"
 EoF_MCW_divided_desc:0 "The recent unification of Asterion and Colthage into Macawia have turned the rich trade nation into an international power overnight. Yet, the strain of integrating these three vastly different cultures and economies hampers the true potential of Macawia."

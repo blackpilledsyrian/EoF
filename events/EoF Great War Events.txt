@@ -412,6 +412,10 @@ country_event = {
 					division = "name = \"5th 'Bonple High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
 				}
+				create_unit = {
+					division = "name = \"6th 'St. Gloriana Girls' College' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
+					owner = EQS
+				}
 			}
 		}
 	}
@@ -476,6 +480,14 @@ country_event = {
 				}
 				create_unit = {
 					division = "name = \"7th 'Pravda High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"8th 'Saunders University High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"9th 'Anzio High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
 					owner = EQS
 				}
 			}	
@@ -550,6 +562,18 @@ country_event = {
 				}
 				create_unit = {
 					division = "name = \"9th 'Anzio High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"10th 'Chi-Ha-Tan Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"11th 'Jatkosota High School' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
+					owner = EQS
+				}
+				create_unit = {
+					division = "name = \"12th 'BC Freedom Academy' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1  start_equipment_factor = 1"
 					owner = EQS
 				}
 			}	

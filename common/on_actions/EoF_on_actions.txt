@@ -433,6 +433,21 @@ on_actions = {
 			1095 = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
+			282 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			284 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			285 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			266 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			325 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
 		}
 	}
 	#Yak-Jak Civil War
