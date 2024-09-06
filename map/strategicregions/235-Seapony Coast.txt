@@ -1,11 +1,10 @@
 
 strategic_region={
-	id=344
-	name="STRATEGICREGION_344"
+	id=235
+	name="STRATEGICREGION_235"
 	provinces={
-		4894 5385 5653 5756 5783 5809 5811 5835 5837 7510 7735 7962 8171 8279 8539 
+		1709 4447 5479 5861 5934 7396 13394 20217 20221 20227 20233 20237 20273 20274 20275 20276 20277 
 	}
-	naval_terrain=water_deep_ocean
 	static_modifiers={
 				water_modifier_shark_infested=always
 

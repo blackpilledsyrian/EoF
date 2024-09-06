@@ -1258,15 +1258,15 @@ country_event = { ### unspeakable horror conjured.... but we can't control it oo
 		290 = {
 			add_resource = {
 				type = chromium
-				amount = 12
+				amount = 120
 			}
 			add_resource = {
 				type = tungsten
-				amount = 12
+				amount = 120
 			}
 			add_resource = {
 				type = crystals
-				amount = 12
+				amount = 120
 			}
 		}
 	}
@@ -1352,11 +1352,11 @@ country_event = { ### mirror failures
 		263 = {
 			add_resource = {
 				type = chromium
-				amount = 12
+				amount = 120
 			}
 			add_resource = {
 				type = tungsten
-				amount = 12
+				amount = 120
 			}
 		}
 		hidden_effect = {

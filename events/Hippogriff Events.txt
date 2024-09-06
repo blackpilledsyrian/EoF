@@ -16438,7 +16438,7 @@ country_event = { # scientifids have a massive brained idea to use magic crystal
 		1165 = {
 			add_resource = {
 				type = crystals
-				amount = -20
+				amount = -200
 			}
 		}
 		set_temp_variable = { HIP_SIR_magic_change_var = -50 }
@@ -17142,7 +17142,7 @@ country_event = { # OIL IN ZARANTIA
 		878 = {
 			add_resource = {
 				type = oil
-				amount = 40
+				amount = 400
 			}
 			add_resistance = -10
 			add_compliance = -10
@@ -17150,7 +17150,7 @@ country_event = { # OIL IN ZARANTIA
 		755 = {
 			add_resource = {
 				type = oil
-				amount = 24
+				amount = 240
 			}
 			add_resistance = -10
 			add_compliance = -10
@@ -17158,7 +17158,7 @@ country_event = { # OIL IN ZARANTIA
 		756 = {
 			add_resource = {
 				type = oil
-				amount = 20
+				amount = 200
 			}
 			add_resistance = -10
 			add_compliance = -10
@@ -17176,7 +17176,7 @@ country_event = { # OIL IN ZARANTIA
 		878 = {
 			add_resource = {
 				type = oil
-				amount = 20
+				amount = 200
 			}
 			add_resistance = 10
 			add_compliance = 10
@@ -17184,7 +17184,7 @@ country_event = { # OIL IN ZARANTIA
 		755 = {
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 120
 			}
 			add_resistance = 10
 			add_compliance = 10
@@ -17192,7 +17192,7 @@ country_event = { # OIL IN ZARANTIA
 		756 = {
 			add_resource = {
 				type = oil
-				amount = 10
+				amount = 100
 			}
 			add_resistance = 10
 			add_compliance = 10

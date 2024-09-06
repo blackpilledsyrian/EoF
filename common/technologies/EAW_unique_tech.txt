@@ -2668,7 +2668,7 @@ tech_vampire_armour = {
 				attack = 0.1
 			}
 		}
-		super_heavy_tank_destroyer_brigade = {
+		super_heavy_tank_destroyer = {
 			river = {
 				attack = 0.05
 				movement = 0.05
@@ -2681,7 +2681,7 @@ tech_vampire_armour = {
 				attack = 0.1
 			}
 		}
-		super_heavy_sp_artillery_brigade = {
+		super_heavy_sp_artillery = {
 			river = {
 				attack = 0.05
 				movement = 0.05
@@ -2694,7 +2694,7 @@ tech_vampire_armour = {
 				attack = 0.1
 			}
 		}
-		super_heavy_sp_anti_air_brigade = {
+		super_heavy_sp_anti_air = {
 			river = {
 				attack = 0.05
 				movement = 0.05

@@ -3580,7 +3580,7 @@ technologies = {
 				attack = -0.3
 			}
 		}
-		super_heavy_tank_destroyer_brigade = {
+		super_heavy_tank_destroyer = {
 			marsh = {
 				attack = -0.1
 				movement = -0.05
@@ -3593,7 +3593,7 @@ technologies = {
 				attack = -0.3
 			}
 		}
-		super_heavy_sp_artillery_brigade = {
+		super_heavy_sp_artillery = {
 			marsh = {
 				attack = -0.1
 				movement = -0.05
@@ -3606,7 +3606,7 @@ technologies = {
 				attack = -0.3
 			}
 		}
-		super_heavy_sp_anti_air_brigade = {
+		super_heavy_sp_anti_air = {
 			marsh = {
 				attack = -0.1
 				movement = -0.05

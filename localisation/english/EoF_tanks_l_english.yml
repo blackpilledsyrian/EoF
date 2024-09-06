@@ -208,3 +208,12 @@ reinforced_light_armor:0 "Reinforced Light Tank"
 reinforced_medium_armor:0 "Reinforced Medium Tank"
 reinforced_heavy_armor:0 "Reinforced Heavy Tank"
 reinforced_modern_armor:0 "Reinforced Main Battle Tank"
+
+super_heavy_sp_artillery:0 "Super Heavy SP Artillery"
+super_heavy_tank_destroyer:0 "Super Heavy Tank Destroyer"
+super_heavy_tank_destroyer_desc:0 "A super heavy tank chassis with an even larger gun in a fixed mount instead of a turret."
+super_heavy_sp_anti_air:0 "Super Heavy SP Anti-Air"
+
+modifier_unit_super_heavy_tank_destroyer_design_cost_factor:0 "Super Heavy Tank Destroyer Unit Design Cost"
+modifier_unit_super_heavy_sp_artillery_design_cost_factor:0 "Super Heavy SP Artillery Unit Design Cost"
+modifier_unit_super_heavy_sp_anti_air_design_cost_factor:0 "Super Heavy SP Anti-Air Unit Design Cost"

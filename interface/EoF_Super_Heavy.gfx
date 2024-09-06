@@ -1,0 +1,37 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_unit_super_heavy_sp_anti_air_icon_small"
+		texturefile = "gfx/texticons/unit_super_heavy_armor_icon_AA_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_super_heavy_tank_destroyer_icon_small"
+		texturefile = "gfx/texticons/unit_super_heavy_armor_icon_AT_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_super_heavy_sp_artillery_icon_small"
+		texturefile = "gfx/texticons/unit_super_heavy_armor_icon_art_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_sp_anti_air_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_antiair_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_tank_destroyer_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_at_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_super_heavy_sp_artillery_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_super_heavy_armor_artillery_icon.dds"
+		noOfFrames = 2
+	}
+}
