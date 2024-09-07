@@ -8,6 +8,7 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			check_variable = { num_units_defensive_combats = 0 }
 		}
 		
 		one_time_effect = {
@@ -15,6 +16,7 @@ ability = {
 				combat_offense = -0.3
 				combat_defense = -1.0
 				str_damage_multiplier = -1.0
+				org_damage_multiplier = -0.3
 				days = 7
 			}
 		}
