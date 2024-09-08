@@ -1,0 +1,13 @@
+EoF_debug_category = {
+	EoF_show_school_gui = {
+		icon = GFX_decision_generic_break_treaty
+		visible = {
+			NOT = {
+				has_country_flag = EoF_show_school_window
+			}
+		}
+		complete_effect = {
+			set_country_flag = EoF_show_school_window
+		}
+	}
+}

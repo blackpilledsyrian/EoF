@@ -1,6 +1,10 @@
 spriteTypes = {
 	###GUIs###
 	spriteType = {
+		name = "GFX_EOF_academy_bg"
+		textureFile = "gfx/interface/academy_gfx/academy_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_division_designer_popup_bg_2"
 		textureFile = "gfx//interface//division_designer_popup_bg_2.dds"
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"

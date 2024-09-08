@@ -1,0 +1,37 @@
+scripted_gui = {
+	EoF_academy_show_button = {
+		context_type = decision_category
+
+		
+		window_name = "EoF_academy_show_button"
+
+		effects = {
+			academy_toogle_button_click = {
+				log = "Button Works"
+				if = {
+					limit = {
+						has_country_flag = EoF_show_school_window
+					}
+					clr_country_flag = EoF_show_school_window
+				}
+				else = {
+					set_country_flag = EoF_show_school_window
+				}
+			}
+		}
+	}
+
+	EoF_academy_window = {
+		context_type = player_context
+
+		window_name = "EoF_academy_window"
+
+		visible = {
+			has_country_flag = EoF_show_school_window
+		}
+
+		# effect = {
+
+		# }
+	}
+}
