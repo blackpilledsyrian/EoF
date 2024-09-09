@@ -227,6 +227,23 @@ CRY_sombra_arms_organization = {
 	}
 }
 
+CRY_fillydelphia_arms_organization = {
+	name = fillydelphia_arms
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_EQS_fillydelphia_arms
+	allowed = {
+		has_dlc = "Arms Against Tyranny"
+		OR = {
+			original_tag = CRY
+		}
+	}
+	initial_trait = {
+		equipment_bonus = {
+			maximum_speed = 0.05
+			build_cost_ic = -0.05
+		}
+	}
+}
 
 CRY_darkar_design_organization = {
 	include = generic_artillery_organization
@@ -238,12 +255,6 @@ CRY_darkar_design_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	
-	visible = {
-		owner = { has_focus_tree = crystalempire_sombra }
-	}
-	available = {
-		owner = { has_completed_focus = CRY_darkar } 
-	}
 	initial_trait = {
 
 		limit_to_equipment_type = { artillery_equipment }
