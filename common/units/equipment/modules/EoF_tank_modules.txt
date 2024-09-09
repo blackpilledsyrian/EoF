@@ -334,7 +334,7 @@ equipment_modules = {
 
 		add_stats = {
 			hardness = 0.1
-			max_strength = 1.5
+			max_strength = 1.0
 			maximum_speed = -0.2
 		}
 		xp_cost = 0
@@ -426,7 +426,7 @@ equipment_modules = {
 
 		xp_cost = 0
 		add_stats = {
-			max_strength = 1.5
+			max_strength = 0.5
 			build_cost_ic = 1
 		}
 		multiply_stats =  {

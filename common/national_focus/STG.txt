@@ -13,7 +13,7 @@ focus_tree = {
 		id = the_palace
 		icon = GFX_goal_stg_palace
 		cost = 10
-		x = 4
+		x = 3
 		y = 0
 		ai_will_do = {
 			factor = 5
@@ -42,7 +42,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		x = 2
+		x = 1
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus vasya_1"
@@ -68,7 +68,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		x = 3
+		x = 2
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus vasya_2"
@@ -139,7 +139,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = vasya_1
 		}
-		x = 6
+		x = 5
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus polya_1"
@@ -165,7 +165,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		x = 5
+		x = 4
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus polya_2"
@@ -210,7 +210,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		x = 4
+		x = 3
 		y = 3
 		mutually_exclusive = {
 			focus = keep_polya
@@ -245,7 +245,7 @@ focus_tree = {
 			has_government = communism
 			NOT = { is_subject = yes }
 		}
-		x = 4
+		x = 3
 		y = 4
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus conditions"
@@ -277,7 +277,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
-		x = 4
+		x = 3
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus purge"
@@ -298,7 +298,7 @@ focus_tree = {
 			has_government = communism
 			NOT = { is_subject = yes }
 		}
-		x = 4
+		x = 3
 		y = 4
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus elections"
@@ -333,7 +333,7 @@ focus_tree = {
 			has_government = communism
 			NOT = { is_subject = yes }
 		}
-		x = 6
+		x = 5
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus keep_polya"
@@ -378,7 +378,7 @@ focus_tree = {
 	focus = {
 		id = vasya_leader
 		icon = GFX_goal_vasya
-		cost = 10
+		cost = 7
 		x = 19
 		y = 0
 		available = {
@@ -402,7 +402,7 @@ focus_tree = {
 	focus = {
 		id = sinister_leader
 		icon = GFX_goal_sinister_focus
-		cost = 10
+		cost = 7
 		x = 23
 		y = 0
 		mutually_exclusive = {
@@ -464,8 +464,8 @@ focus_tree = {
 	focus = {
 		id = manifesto_of_materialism
 		icon = GFX_goal_socialist_science
-		cost = 10
-		x = 4
+		cost = 5
+		x = 3
 		y = 6
 		available = {
 			OR = {
@@ -492,7 +492,7 @@ focus_tree = {
 		id = pioneer_movement
 		icon = GFX_goal_pioneer_movement
 		cost = 6
-		x = 12
+		x = 9
 		y = 0
 		available = {
 			date > 1007.5.25
@@ -523,7 +523,7 @@ focus_tree = {
 		id = culture_fest
 		icon = GFX_goal_culture_fest
 		cost = 3
-		x = 12
+		x = 9
 		y = 3
 		prerequisite = {
 			focus = free_education
@@ -557,7 +557,7 @@ focus_tree = {
 		id = day_of_knowledge
 		icon = GFX_goal_day_of_knowledge
 		cost = 3
-		x = 12
+		x = 9
 		y = 1
 		prerequisite = {
 			focus = pioneer_movement
@@ -589,8 +589,8 @@ focus_tree = {
 	focus = {
 		id = free_education
 		icon = GFX_goal_free_education
-		cost = 10
-		x = 12
+		cost = 3
+		x = 9
 		y = 2
 		prerequisite = {
 			focus = day_of_knowledge
@@ -623,7 +623,7 @@ focus_tree = {
 		id = origanize_clubs
 		icon = GFX_goal_organize_clubs
 		cost = 8
-		x = 14
+		x = 11
 		y = 1
 		prerequisite = {
 			focus = pioneer_movement
@@ -658,7 +658,7 @@ focus_tree = {
 		id = STG_militarized_schools
 		icon = GFX_goal_GTO
 		cost = 9
-		x = 10
+		x = 7
 		y = 1
 		prerequisite = {
 			focus = pioneer_movement
@@ -680,8 +680,8 @@ focus_tree = {
 	focus = {
 		id = stg_factory_production
 		icon = GFX_goal_stg_factory_production
-		cost = 10
-		x = 9
+		cost = 5
+		x = 7
 		y = 2
 		available = {
 			has_government = communism
@@ -746,7 +746,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 10
 		}
-		x = 9
+		x = 7
 		y = 4
 		available = {
 			has_government = communism
@@ -766,14 +766,14 @@ focus_tree = {
 	focus = {
 		id = STG_colleges_and_universities
 		icon = GFX_goal_stg_universities
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = stg_factory_production
 		}
 		ai_will_do = {
 			factor = 15
 		}
-		x = 9
+		x = 7
 		y = 3
 		available = {
 			has_government = communism
@@ -799,7 +799,7 @@ focus_tree = {
 	focus = {
 		id = strenghten_collectivization
 		icon = GFX_goal_collectivization
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = vasya_leader
 		}
@@ -819,7 +819,7 @@ focus_tree = {
 	focus = {
 		id = end_food_problem1
 		icon = GFX_goal_food_problem1
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = strenghten_collectivization
 		}
@@ -2101,7 +2101,7 @@ focus_tree = {
 	focus = {
 		id = STG_food_market
 		icon = GFX_goal_food_market
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = sinister_leader
 		}
@@ -2119,7 +2119,7 @@ focus_tree = {
 	focus = {
 		id = end_food_problem2
 		icon = GFX_goal_food_problem2
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = STG_food_market
 		}
@@ -2141,7 +2141,7 @@ focus_tree = {
 	focus = {
 		id = simplify_bureaucracy
 		icon = GFX_goal_continuous_naval_production
-		cost = 10
+		cost = 7
 		prerequisite = {
 			focus = end_food_problem2
 		}
@@ -3802,12 +3802,12 @@ focus_tree = {
 	focus = {
 		id = peterhoof_academy
 		icon = GFX_goal_stg_petershoof
-		cost = 10
+		cost = 3
 		prerequisite = {
 			focus = new_radar_technologies
 			focus = complete_electrification
 		}
-		x = 3
+		x = 2
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus peterhoof_academy"
@@ -3819,11 +3819,11 @@ focus_tree = {
 	focus = {
 		id = konzan_research_facility
 		icon = GFX_goal_stg_konzan_university
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = new_radar_technologies
 		}
-		x = 5
+		x = 4
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus konzan_research_facility"
@@ -3843,7 +3843,7 @@ focus_tree = {
 		prerequisite = {
 			focus = peterhoof_academy
 		}
-		x = 3
+		x = 2
 		y = 9
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus nuclear_research_f"
@@ -3866,7 +3866,7 @@ focus_tree = {
 		prerequisite = {
 			focus = peterhoof_academy
 		}
-		x = 5
+		x = 4
 		y = 9
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus rocket_technology"
@@ -3897,14 +3897,14 @@ focus_tree = {
 	focus = {
 		id = complete_electrification
 		icon = GFX_goal_stg_electricity
-		cost = 10
+		cost = 8
 		prerequisite = {
 			focus = manifesto_of_materialism
 		}
 		bypass = {
 			NOT = { has_idea = incomplete_industrialization }
 		}
-		x = 3
+		x = 2
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus complete_electrification"
@@ -3914,11 +3914,11 @@ focus_tree = {
 	focus = {
 		id = new_radar_technologies
 		icon = GFX_goal_stg_radio
-		cost = 10
+		cost = 5
 		prerequisite = {
 			focus = manifesto_of_materialism
 		}
-		x = 5
+		x = 4
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus new_radar_technologies"
@@ -3934,13 +3934,234 @@ focus_tree = {
 
 	###EoF Changes###
 	focus = {
-		id = EoF_join_UPA
-		icon = GFX_goal_eqs_stg_relations
-		cost = 2
+		id = EoF_threat_evaluation
+		icon = GFX_goal_stg_chn
+		cost = 5
 		prerequisite = {
 		}
-		x = 16
+		x = 15
 		y = 0
+		available = {
+			threat > 0.1
+		}
+		completion_reward = {
+			add_ideas = EoF_STG_state_defense_committee_0
+		}
+	}
+	focus = {
+		id = EoF_internal_safety
+		icon = GFX_goal_stg_eqscom
+		cost = 5
+		prerequisite = {
+			focus = EoF_threat_evaluation
+		}
+		x = -2
+		y = 1
+		relative_position_id = EoF_threat_evaluation
+		available = {
+			threat > 0.4
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = EoF_STG_state_defense_committee_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_STG_state_defense_committee_0
+					add_idea = EoF_STG_state_defense_committee_1
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = EoF_STG_state_defense_committee_2
+					add_idea = EoF_STG_state_defense_committee_3
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_STG_war_eco
+		icon = GFX_focus_generic_communist_industry
+		cost = 5
+		prerequisite = {
+			focus = EoF_internal_safety
+		}
+		x = 0
+		y = 1
+		relative_position_id = EoF_internal_safety
+		completion_reward = {
+			add_ideas = STG_economic_policy
+		}
+	}
+	focus = {
+		id = EoF_activate_old_armour
+		icon = GFX_focus_generic_tankette
+		cost = 5
+		prerequisite = {
+			focus = EoF_STG_war_eco
+		}
+		x = 0
+		y = 1
+		relative_position_id = EoF_STG_war_eco
+		completion_reward = {
+			hidden_effect = {
+				create_equipment_variant = {
+					name = "BT-7 Obr.1007"
+					type = light_tank_chassis_2
+					modules = {
+						main_armament_slot = tank_small_cannon_2
+						turret_type_slot = tank_light_three_man_tank_turret
+						optics_type_slot = tank_optics_1
+						engine_type_slot = tank_gasoline_engine
+						armor_type_slot = tank_welded_armor
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = coaxial_hmg
+						special_type_slot_2 = smoke_launchers
+						special_type_slot_3 = cupola_1
+					}
+					upgrades = {
+					}
+					icon = "GFX_stalliongrad_2d_improved_light_tank_medium"
+				}
+				create_equipment_variant = {
+					name = "T-28 Obr.1007"
+					type = medium_tank_chassis_1
+					modules = {
+						main_armament_slot = tank_medium_cannon
+						turret_type_slot = tank_medium_three_man_tank_turret
+						optics_type_slot = tank_optics_1
+						engine_type_slot = tank_gasoline_engine
+						armor_type_slot = tank_welded_armor
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = coaxial_hmg
+						special_type_slot_2 = smoke_launchers
+						special_type_slot_3 = cupola_1
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 5
+						tank_nsb_armor_upgrade = 3
+					}
+					icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+				}
+				create_equipment_variant = {
+					name = "T-35 Obr.1007"
+					type = heavy_tank_chassis_1
+					modules = {
+						main_armament_slot = tank_heavy_cannon
+						turret_type_slot = tank_heavy_three_man_tank_turret
+						optics_type_slot = tank_optics_1
+						engine_type_slot = tank_diesel_engine
+						armor_type_slot = tank_welded_armor
+						suspension_type_slot = tank_bogie_suspension
+						special_type_slot_1 = coaxial_hmg
+						special_type_slot_2 = smoke_launchers
+						special_type_slot_3 = cupola_1
+					}
+					upgrades = {
+						tank_nsb_engine_upgrade = 5
+						tank_nsb_armor_upgrade = 4
+					}
+					icon = "gfx/interface/technologies/armour_folder/stalliongrad_2d/STG_T35.dds"
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = light_tank_chassis_2
+				amount = 300
+				variant_name = "BT-7 Obr.1007"
+			}
+			add_equipment_to_stockpile = {
+				type = medium_tank_chassis_1
+				amount = 600
+				variant_name = "T-28 Obr.1007"
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis_1
+				amount = 300
+				variant_name = "T-35 Obr.1007"
+			}
+		}
+	}
+	focus = {
+		id = EoF_full_scale_war_academy
+		icon = GFX_goal_military_academy
+		cost = 5
+		prerequisite = {
+			focus = EoF_internal_safety
+		}
+		x = 2
+		y = 1
+		relative_position_id = EoF_internal_safety
+		completion_reward = {
+			custom_effect_tooltip = EoF_advanced_academy_tt
+			set_country_flag = EoF_advanced_academy
+		}
+	}
+	focus = {
+		id = EoF_share_academy
+		icon = GFX_goal_generic_intelligence_exchange_pony
+		cost = 5
+		prerequisite = {
+			focus = EoF_full_scale_war_academy
+		}
+		prerequisite = {
+			focus = EoF_join_UPA
+		}
+		x = 1
+		y = 1
+		relative_position_id = EoF_full_scale_war_academy
+		completion_reward = {
+			STG_that_bt7  = {
+				set_nationality = {
+					target_country = EQS
+					character = STG_that_bt7
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_external_safety
+		icon = GFX_goal_stg_eqs_friendship
+		cost = 5
+		prerequisite = {
+			focus = EoF_threat_evaluation
+		}
+		x = 2
+		y = 1
+		relative_position_id = EoF_threat_evaluation
+		available = {
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = EoF_STG_state_defense_committee_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_STG_state_defense_committee_0
+					add_idea = EoF_STG_state_defense_committee_2
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = EoF_STG_state_defense_committee_1
+					add_idea = EoF_STG_state_defense_committee_3
+				}
+			}
+			give_guarantee = EQS
+			EQS = {
+				give_guarantee = STG
+			}
+		}
+	}
+	focus = {
+		id = EoF_join_UPA
+		icon = GFX_goal_eqs_stg_relations
+		cost = 5
+		prerequisite = {
+			focus = EoF_external_safety
+		}
+		x = 0
+		y = 1
+		relative_position_id = EoF_external_safety
 		available = {
 			threat > 0.2
 		}
@@ -3948,19 +4169,6 @@ focus_tree = {
 			EQS = {
 				country_event = { id = EoF.4 }
 			}
-		}
-	}
-	focus = {
-		id = EoF_STG_war_eco
-		icon = GFX_goal_stg_nourishing_the_revolution
-		cost = 2
-		prerequisite = {
-			focus = EoF_join_UPA
-		}
-		x = 16
-		y = 1
-		completion_reward = {
-			add_ideas = STG_economic_policy
 		}
 	}
 }

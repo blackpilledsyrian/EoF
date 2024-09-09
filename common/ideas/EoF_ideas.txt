@@ -44,6 +44,10 @@ ideas = {
 				trade_cost_for_target_factor = 1
 			}
 			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = 1
+			}
+			targeted_modifier = {
 				tag = CHN
 				trade_cost_for_target_factor = 1
 			}
@@ -69,6 +73,10 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = GRI
+				trade_cost_for_target_factor = 1
+			}
+			targeted_modifier = {
+				tag = NCH
 				trade_cost_for_target_factor = 1
 			}
 		}

@@ -97,7 +97,11 @@ EoF_JER_aeb_organization:0 "AEB"
 EoF_JER_acl_organization:0 "ACL"
 EoF_JER_acf_organization:0 "ACF"
 
-STG_economic_policy:0 "War Communism"
+STG_economic_policy:0 "State Economic Mandate"
+EoF_STG_state_defense_committee_0: "State Defense Committee"
+EoF_STG_state_defense_committee_1: "State Defense Committee"
+EoF_STG_state_defense_committee_2: "State Defense Committee"
+EoF_STG_state_defense_committee_3: "State Defense Committee"
 
 EoF_category:0 "Game Decisions"
 EoF_big_division_decision:0 "Add a 48w Template"

@@ -1607,7 +1607,7 @@ shared_focus = {
 	available = {
 		date > 1009.01.01
 		OR = {
-			has_war_support > 0.5
+			has_war_support > 0.6
 			date > 1010.01.01
 		}
 	}

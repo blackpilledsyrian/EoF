@@ -2108,7 +2108,6 @@ technologies = {
 			infantry_offensive
 		}
 		
-		enable_tactic = tactic_blitz
 		enable_tactic = tactic_elastic_defense
 
 
@@ -2283,7 +2282,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		enable_tactic = tactic_breakthrough
+		enable_tactic = tactic_blitz
 
 		category_all_armor = {
 			max_organisation = 3
@@ -2667,25 +2666,9 @@ technologies = {
 	night_assault_tactics = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
-		infantry = {
-			combat_width = -0.2
-		}
-		magical_infantry = {
-			combat_width = -0.2
-		}
-		marine = {
-			combat_width = -0.2
-		}
-		marine_commando = {
-			combat_width = -0.2
-		}
-		mountaineers = {
-			combat_width = -0.2
-		}
-		paratrooper = {
-			combat_width = -0.2
-		}
+
+		special_forces_attack_factor = 0.1
+		special_forces_defence_factor = 0.1
 
 		land_night_attack = 0.25
 	
@@ -2791,10 +2774,10 @@ technologies = {
 	infiltration_in_depth = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-
-		special_forces_attack_factor = 0.1
-		special_forces_defence_factor = 0.1
 		
+		category_all_infantry = {
+			soft_attack = 0.1
+		}
 		category_recon = { 
 			recon = 2
 		} 
@@ -3193,8 +3176,8 @@ technologies = {
 		
 		enable_tactic = tactic_overwhelming_fire
 
-		category_tanks = {
-			max_strength = 1
+		category_motmech = {
+			max_strength = 3
 		}
 		light_armor = {
 			need = {

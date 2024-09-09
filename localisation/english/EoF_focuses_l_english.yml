@@ -225,11 +225,27 @@ EoF_crystal_commandos_desc:0 ""
 EoF_join_UPA:0 "Join the UPA"
 EoF_join_UPA_desc:0 "The Changeling invasion of Olenia has set a dangerous precedent on Equus. In order to deter further Changeling aggression and protect ourselves from hostile foreign powers it may be nessecary to put aside our differences with the Equestrians and enter a formal military alliance. Even still, we must join as equals and Equestria must return our rightful territory is a token of good faith to begin negotiations."
 
+EoF_threat_evaluation:0 "Form the GKO"
+EoF_threat_evaluation_desc:0 ""
+
+EoF_internal_safety:0 "Bastion of Socialism"
+EoF_internal_safety_desc:0 ""
+
 EoF_STG_war_eco:0 "Service to the Motherland"
 EoF_STG_war_eco_desc:0 ""
 
-EoF_STG_red_star:0 "Contract Red Star Manufacturing"
-EoF_STG_red_star_desc:0 ""
+EoF_activate_old_armour:0 "Activate Armour Reserves"
+EoF_activate_old_armour_desc:0 ""
+
+EoF_full_scale_war_academy:0 "Expand State Military Academy"
+EoF_full_scale_war_academy_desc:0 ""
+
+EoF_share_academy:0 "General Advisory Program"
+EoF_share_academy_desc:0 ""
+
+EoF_external_safety:0 "Foreign Security Guarantees"
+EoF_external_safety_desc:0 ""
+
 
 EoF_receive_refugees:0 "Receive Refugees"
 EoF_receive_refugees_desc:0 ""

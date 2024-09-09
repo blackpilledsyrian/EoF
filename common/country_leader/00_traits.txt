@@ -5507,8 +5507,7 @@ leader_traits = {
 
 	ideological_crusader = {
 		random = yes
-		party_popularity_stability_factor = 0.1
-		stability_factor = 0.1
+		party_popularity_stability_factor = 0.2
 		conscription_factor = 0.1
 
 		ai_will_do = {
