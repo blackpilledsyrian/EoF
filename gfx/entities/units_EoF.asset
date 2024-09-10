@@ -169,7 +169,7 @@ entity = {
 	state = { name = "idle"			animation = "idle03" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 1 next_state = "idle" }
 	state = { name = "idle"			animation = "idle04" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 6 next_state = "idle" }
 	state = { name = "idle"			animation = "idle05" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 8 next_state = "idle" }
-	state = { name = "training"			animation = "idle" 					animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "training"			animation = "training01" 					animation_blend_time = 0.3 animation_speed = 1.0 }
 	
 	attach = { 	name = "rifle1"	rifle_hold = "GER_infantry_weapon_rifle_left_entity" }
 	
@@ -197,12 +197,12 @@ entity = {
 	state = { name = "idle"			animation = "idle03" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 1 next_state = "idle" }
 	state = { name = "idle"			animation = "idle04" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 6 next_state = "idle" }
 	state = { name = "idle"			animation = "idle05" 				animation_blend_time = 0.1 animation_speed = 1.0 looping = no chance = 8 next_state = "idle" }
-	state = { name = "training"			animation = "idle" 					animation_blend_time = 0.3 animation_speed = 1.0 }
+	state = { name = "training"			animation = "training01" 					animation_blend_time = 0.3 animation_speed = 1.0 }
 	
 	attach = { 	name = "rifle1"	rifle = "GER_infantry_weapon_rifle_left_entity" }
 	attach = { 	name = "helmet1"	helmet = "EoF_ushanka_entity" }
 	
-	scale = 0.5
+	scale = 0.55
 }
 
 entity = {
