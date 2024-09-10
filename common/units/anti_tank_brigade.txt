@@ -25,7 +25,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			anti_tank_equipment = 30
+			anti_tank_equipment = 24
 		}
 		manpower = 500
 		max_organisation = 0
@@ -101,8 +101,8 @@ sub_units = {
 			motorized_equipment
 		}
 		need = {
-			anti_tank_equipment = 30
-			motorized_equipment = 50
+			anti_tank_equipment = 24
+			motorized_equipment = 35
 		}
 		manpower = 500
 		max_organisation = 0

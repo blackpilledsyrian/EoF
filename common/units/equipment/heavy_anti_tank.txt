@@ -58,7 +58,7 @@ equipments = {
 		hard_attack = 40
 		ap_attack = 200
 
-		build_cost_ic = 14
+		build_cost_ic = 12
 		resources = {
 			tungsten = 30
 			steel = 40
