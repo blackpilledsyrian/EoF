@@ -15,7 +15,7 @@ state={
 		add_core_of = HLR
 		add_core_of = HLR
 
-		victory_points = { 10377 35 }
+		victory_points = { 10377 20 }
 
 		buildings = {
 			infrastructure = 3

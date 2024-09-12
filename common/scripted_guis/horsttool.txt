@@ -72,8 +72,8 @@ scripted_gui = {
 						if={limit={check_variable= { Root.selected_cheat=8} } add_stability = 0.05 }
 						if={limit={check_variable= { Root.selected_cheat=9} } add_war_support = 0.05 }
 						if={limit={check_variable= { Root.selected_cheat=10} } add_manpower = 100000 }
-						if={limit={check_variable= { Root.selected_cheat=11} } add_ideas = WW_army_cheat }
-						if={limit={check_variable= { Root.selected_cheat=12} } remove_ideas = WW_army_cheat }
+						if={limit={check_variable= { Root.selected_cheat=11} } add_ideas = EoF_army_cheat }
+						if={limit={check_variable= { Root.selected_cheat=12} } remove_ideas = EoF_army_cheat }
 						if={limit={check_variable= { Root.selected_cheat=13} }
 							division_template = {
 								name = "Tank Division"
@@ -108,10 +108,10 @@ scripted_gui = {
 								}
 							}
 						}
-						if={limit={check_variable= { Root.selected_cheat=15} } add_ideas = WW_industry_growth_cheat }
-						if={limit={check_variable= { Root.selected_cheat=16} } remove_ideas = WW_industry_growth_cheat }
-						if={limit={check_variable= { Root.selected_cheat=17} } add_ideas = WW_dockyard_cheat }
-						if={limit={check_variable= { Root.selected_cheat=18} } remove_ideas = WW_dockyard_cheat }
+						if={limit={check_variable= { Root.selected_cheat=15} } add_ideas = EoF_industry_growth_cheat }
+						if={limit={check_variable= { Root.selected_cheat=16} } remove_ideas = EoF_industry_growth_cheat }
+						if={limit={check_variable= { Root.selected_cheat=17} } add_ideas = EoF_dockyard_cheat }
+						if={limit={check_variable= { Root.selected_cheat=18} } remove_ideas = EoF_dockyard_cheat }
 						if={limit={check_variable= { Root.selected_cheat=19} } army_experience = 20 }
 						if={limit={check_variable= { Root.selected_cheat=20} } air_experience = 20 }
 						if={limit={check_variable= { Root.selected_cheat=21} } navy_experience = 20 }

@@ -4382,6 +4382,7 @@ focus_tree = {
 
 		will_lead_to_war_with = CVA
 		will_lead_to_war_with = CTH
+		will_lead_to_war_with = HIE
 		will_lead_to_war_with = BAT
 		will_lead_to_war_with = WAR
 		will_lead_to_war_with = ZAR
@@ -4437,6 +4438,17 @@ focus_tree = {
 				create_wargoal = {
 					type = annex_everything
 					target = HIE
+				}
+			}
+			if = {
+				limit = {
+					TRO = {
+						exists = yes
+					}
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = TRO
 				}
 			}
 			if = {
@@ -12227,6 +12239,16 @@ shared_focus = {
 				desc = HIP_BRIGHT_HEART_DESC
 				traits = { hippogriff_race_trait trait_unpredictable naval_invader }
 			}
+			add_corps_commander_role = {
+				character = HIP_atlas_shine
+				skill = 1
+				attack_skill = 1
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 1
+				desc = HIP_ATLAS_SHINE_DESC
+				traits = { pony_race_trait desert_fox inflexible_strategist }
+			}
 			custom_effect_tooltip = bright_heart_stats_tp
 			custom_effect_tooltip = HIP_lose_army_spirits_tt
 			hidden_effect = {
@@ -13735,6 +13757,10 @@ shared_focus = {
 						}
 					}
 				}
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = HIP_middle_sea_treaty
 				CTH = {
 					country_event = {
 						id = hippocommie.67
@@ -13794,6 +13820,10 @@ shared_focus = {
 						}
 					}
 				}
+				set_rule = {
+					can_create_factions = yes
+				}
+				create_faction = HIP_middle_sea_treaty
 				CVA = {
 					country_event = {
 						id = hippocommie.67

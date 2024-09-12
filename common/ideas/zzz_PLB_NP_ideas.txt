@@ -92,7 +92,7 @@ ideas = {
 				original_tag = CHN
 			}
 			modifier = {
-				weekly_manpower = 600
+				weekly_manpower = 500
 			}
 		}
 		PLB_NP_cutie_pox = {
@@ -566,6 +566,19 @@ ideas = {
 				army_org_factor = 0.05
 				non_core_manpower = 0.02
 			}			
+		}
+		
+		PLB_cloning_vats_idea = {
+			picture = gre_phaliron_aircraft
+			allowed = {
+				original_tag = PLB
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				weekly_manpower = 250
+			}
+
 		}
 	}
 }
