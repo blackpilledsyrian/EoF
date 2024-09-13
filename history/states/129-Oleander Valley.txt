@@ -7,7 +7,7 @@ state={
 		owner = EQS
 		add_core_of = EQS
 		victory_points = {
-			3893 2 
+			3893 5 
 		}
 		buildings = {
 			infrastructure = 2
@@ -21,6 +21,6 @@ state={
 	}
 	manpower=189371
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	local_supplies=0.000
 }

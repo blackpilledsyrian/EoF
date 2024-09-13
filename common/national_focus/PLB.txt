@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 20
+			add = 10
 			tag = PLB
 		}
 	}
@@ -133,7 +133,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 10
+			add = 20
 			tag = PLB
 		}
 	}
@@ -31087,7 +31087,10 @@ shared_focus = {
 		y = 2
 
 		completion_reward = {
-			add_ideas = PLB_NP_ancient_tribes_rise
+			add_timed_idea = {
+				idea = PLB_NP_ancient_tribes_rise
+				days = 365
+			}
 			custom_effect_tooltip = PLB_autonomy_score_add_50
 			hidden_effect = {
 				add_autonomy_score = {
