@@ -52,6 +52,8 @@ leader_traits = {
 	EoF_orbital = {
 		random = no
 		surrender_limit = 0.25
+		army_core_attack_factor = 0.1
+		industrial_capacity_factory = -0.5
 	}
 	EoF_snake = {
 		random = no
