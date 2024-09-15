@@ -28,7 +28,7 @@ equipments = {
 		armor_value = 20
 
 		#Offensive Abilities
-		ap_attack = 11
+		ap_attack = 0
 		air_attack = 0
 
 		#Space taken in convoy
@@ -74,7 +74,7 @@ equipments = {
 		armor_value = 30
 
 		#Offensive Abilities
-		ap_attack = 16
+		ap_attack = 0
 		
 		build_cost_ic = 10
 		resources = {

@@ -73,7 +73,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 14
 		hard_attack = 3
-		ap_attack = 12
+		ap_attack = 6
 
 		reliability = 0.65
 		build_cost_ic = 0.9
@@ -103,7 +103,7 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 17
 		hard_attack = 3
-		ap_attack = 14
+		ap_attack = 7
 		air_attack = 0.002
 
 		reliability = 0.75
