@@ -29,8 +29,9 @@ NDefines.NMilitary.SUPPLY_GRACE = 120				-- troops always carry 5 days of food a
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060	-- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modifier
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.028	-- air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.028	-- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.016	-- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.016	-- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2	-- how many CAS/TAC can enter a combat depending on enemy width there
 
 NDefines.NMilitary.PLANNING_DECAY = 0.01
 NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03		-- Amount of planning lost due to player manual order
@@ -50,8 +51,18 @@ NDefines.NMilitary.COMBAT_STACKING_START = 4			-- at what nr of divisions stacki
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                    -- extra stacking from directions
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1		-- how much stacking penalty per division
 
+NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0	-- Division experience drop if unit has same batalion
+NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 1		-- Division experience drop if unit has different batalion
+NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.7			-- percentage of experienced solders who die when manpower is removed
+
+NDefines.NMilitary.TRAINING_MAX_LEVEL = 20
+NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
+NDefines.NMilitary.UNIT_EXP_LEVELS = {0.04,	0.08,	0.12,	0.16,	0.20,	0.24,	0.28,	0.32,	0.36,	0.40,	0.44,	0.48,	0.52,	0.56,	0.60,	0.64,	0.68,	0.72,	0.76,	0.80}		-- Experience needed to progress to the next level
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
+NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 10
+
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  	-- amount of extra attrition from being in training
-NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 6.0
+NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 0
 
 NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 24                  -- hours between tactic swaps
 NDefines.NMilitary.RECON_SKILL_IMPACT = 10				-- how many skillpoints is a recon advantage worth when picking a tactic.
@@ -60,20 +71,20 @@ NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1	-- advantage pe
 NDefines.NMilitary.SLOWEST_SPEED = 1
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.3		-- effect on defense due to enemy air superiorty
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.6		-- more AA attack will approach this amount of help (diminishing returns)
-NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 75 -- how quickly defense approaches the max impact diminishing returns curve
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3	-- effect on speed due to enemy air superiority
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE = 0.6		-- more AA attack will approach this amount of help (diminishing returns)
+NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 150 -- how quickly defense approaches the max impact diminishing returns curve
 
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02		-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003		-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.9	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.90	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.25	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25			-- Higher value = more shot down planes
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 20			-- same as above but used inside naval combat for carrier battles
 
-NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 3	-- extra damage dice if our armor outclasses enemy
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 6	-- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4	-- extra damage dice if our armor outclasses enemy
 
 NDefines.NMilitary.PIERCING_THRESHOLDS = {			-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
@@ -85,7 +96,8 @@ NDefines.NMilitary.PIERCING_THRESHOLDS = {			-- Our piercing / their armor must 
 		0.40,
 		0.30,
 		0.20,
-		0.00, 						--there isn't much point setting this higher than 0
+		0.10,
+		0.00						--there isn't much point setting this higher than 0
 	}
 NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {		-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
 		1.00,
@@ -98,6 +110,7 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {		-- 0 armor will always 
 		0.30,
 		0.20,
 		0.10,
+		0.00
 	}
 
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.4			-- how to weight in highest armor & pen vs the division average
@@ -132,7 +145,14 @@ NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.1		-- Conversion scale for pla
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0		-- Ratio for volunteer planes available for sending in relation to sender air force
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 1	-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
 
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 50.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.1	-- Modifier for army equipment reinforcement speed
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
+NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
+
+NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 72					-- max time it can take
+NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.3		-- time factor for total railway distance
+NDefines.NSupply.TRUCK_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.3		-- time factor for total truck distance
+NDefines.NSupply.NAVAL_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.3		-- time factor for total naval distance
 
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0		-- Each province owned by the target country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0		-- Each army unit owned by the source country contributes this amount of volunteers to the limit.

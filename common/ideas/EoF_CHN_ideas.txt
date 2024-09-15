@@ -46,21 +46,21 @@ ideas = {
 			removal_cost = -1
 			picture = CHN_plan_east_prep
 			modifier = {
-				supply_consumption_factor = -0.5
-				no_supply_grace	= 96.0
-				planning_speed = 2.0
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
 			}
 			targeted_modifier = {
 				tag = EQS
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 			targeted_modifier = {
 				tag = STG
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 			targeted_modifier = {
 				tag = CRY
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 		}
 		EoF_CHN_core_buff = {

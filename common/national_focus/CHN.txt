@@ -2479,29 +2479,27 @@ focus_tree = {
 		}
 		available = {
 			date > 1013.04.01
-			OR = {
-				14 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			14 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
-				175 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			}
+			175 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
-				138 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			}
+			138 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
 			}
@@ -2515,24 +2513,24 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = EoF_summer_offensive_2
-				days = 90
+				days = 60
 			}
 			OLE = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 			PLB = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 			GRF = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 		}
