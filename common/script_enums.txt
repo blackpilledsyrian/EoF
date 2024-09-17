@@ -220,6 +220,18 @@ script_enum_equipment_bonus_type = {
 	mechanized_equipment_1
 	mechanized_equipment_2
 	mechanized_equipment_3
+	at_mechanized_equipment
+	at_mechanized_equipment_1
+	at_mechanized_equipment_2
+	at_mechanized_equipment_3
+	spg_mechanized_equipment
+	spg_mechanized_equipment_1
+	spg_mechanized_equipment_2
+	spg_mechanized_equipment_3
+	aa_mechanized_equipment
+	aa_mechanized_equipment_1
+	aa_mechanized_equipment_2
+	aa_mechanized_equipment_3
 	motorized_equipment
 	motorized_equipment_0
 	motorized_equipment_1
@@ -849,6 +861,7 @@ script_enum_equipment_bonus_type = {
 	EoF_cat_eq_all_equipment
 	EoF_cat_eq_all_tank_artillery
 	EoF_cat_eq_all_tank_destroyer
+	EoF_cat_eq_all_mechanized
 	heavy_anti_tank_equipment
 	heavy_anti_tank_equipment_1
 	heavy_anti_tank_equipment_2

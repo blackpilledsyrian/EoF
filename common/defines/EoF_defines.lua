@@ -1,6 +1,8 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.3, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
+NDefines.NTechnology.MAX_SUBTECHS = 4				-- Max number of sub technologies a technology can have.
+
 NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.0005-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
 
 NDefines.NCountry.BASE_FUEL_GAIN_PER_OIL = 0.2			-- base amount of fuel gained hourly per excess oil

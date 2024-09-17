@@ -65,7 +65,7 @@ technologies = {
 		enable_equipment_modules = { 
 			ship_anti_air_1
 			tank_small_cannon
-			coaxial_small_cannon
+			# coaxial_small_cannon
 			secondary_turret_small_cannon
 		}
 		research_cost = 1.5
@@ -173,7 +173,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_light_close_support_gun
-			coaxial_close_support_gun
+			# coaxial_close_support_gun
 			secondary_turret_close_support_gun
 		}
 
@@ -902,7 +902,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			ship_anti_air_2
-			coaxial_autocannon
+			# coaxial_autocannon
 			secondary_turret_autocannon
 			tank_anti_air_cannon
 			tank_heavy_anti_air_cannon

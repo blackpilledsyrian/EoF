@@ -80,7 +80,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -96,7 +96,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -112,7 +112,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -242,7 +242,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 5
-		build_cost_ic = 1
+		build_cost_ic = 3
 		reliability = 0.75
 		hardness = 0.5
 		armor_value = 10
@@ -283,7 +283,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 6
-		build_cost_ic = 1
+		build_cost_ic = 3
 		reliability = 0.90
 		armor_value = 15
 		breakthrough = 4
@@ -299,7 +299,7 @@ equipments = {
 		parent = light_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 1.5
+		build_cost_ic = 3
 		maximum_speed = 6
 		reliability = 1.1
 		armor_value = 30
@@ -319,7 +319,7 @@ equipments = {
 		parent = light_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 2
+		build_cost_ic = 4
 		maximum_speed = 7
 		reliability = 1.3
 		armor_value = 40
@@ -336,7 +336,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_special_module_maintenance
 					tank_special_module_stabilizer
 					tank_special_module_skirts
@@ -350,7 +350,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_special_module_maintenance
 					tank_special_module_stabilizer
 					tank_special_module_skirts
@@ -368,7 +368,7 @@ equipments = {
 		archetype = light_tank_chassis
 		parent = light_tank_chassis_3
 		priority = 2000
-		build_cost_ic = 2.5
+		build_cost_ic = 5
 		maximum_speed = 7
 		reliability = 1.5
 		armor_value = 50
@@ -441,7 +441,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -457,7 +457,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -473,7 +473,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -489,7 +489,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -505,7 +505,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -521,7 +521,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -537,7 +537,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -642,7 +642,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -658,7 +658,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -674,7 +674,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -802,7 +802,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 4
-		build_cost_ic = 4
+		build_cost_ic = 6
 		reliability = 0.75
 		armor_value = 20
 		hardness = 0.6
@@ -827,7 +827,7 @@ equipments = {
 			tank_nsb_gun_upgrade
 		}
 		maximum_speed = 4
-		build_cost_ic = 4
+		build_cost_ic = 6
 		reliability = 0.75
 		armor_value = 20
 		breakthrough = 4
@@ -847,7 +847,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		armor_value = 40
-		build_cost_ic = 4
+		build_cost_ic = 6
 		reliability = 0.9
 		maximum_speed = 5
 		breakthrough = 5
@@ -866,7 +866,7 @@ equipments = {
 		priority = 2000
 		module_slots = inherit
 		maximum_speed = 5
-		build_cost_ic = 6
+		build_cost_ic = 8
 		reliability = 1.1
 		armor_value = 60
 		breakthrough = 6
@@ -882,7 +882,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -898,7 +898,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -918,7 +918,7 @@ equipments = {
 		archetype = medium_tank_chassis
 		priority = 2000
 		maximum_speed = 5
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 1.3
 		armor_value = 80
 		breakthrough = 7
@@ -991,7 +991,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1007,7 +1007,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1023,7 +1023,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1039,7 +1039,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1055,7 +1055,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1071,7 +1071,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1087,7 +1087,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1174,7 +1174,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1190,7 +1190,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1206,7 +1206,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1335,7 +1335,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 3
-		build_cost_ic = 10
+		build_cost_ic = 12
 		reliability = 0.75
 		armor_value = 35
 		hardness = 0.75
@@ -1362,7 +1362,7 @@ equipments = {
 			tank_nsb_gun_upgrade
 		}
 		maximum_speed = 3
-		build_cost_ic = 10
+		build_cost_ic = 12
 		reliability = 0.75
 		armor_value = 35
 		breakthrough = 4
@@ -1380,7 +1380,7 @@ equipments = {
 		module_slots = inherit
 		armor_value = 50
 		maximum_speed = 4
-		build_cost_ic = 10
+		build_cost_ic = 12
 		reliability = 0.8
 		breakthrough = 6
 		defense = 6
@@ -1395,7 +1395,7 @@ equipments = {
 		parent = heavy_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 12
+		build_cost_ic = 15
 		maximum_speed = 4
 		reliability = 1
 		armor_value = 75
@@ -1413,7 +1413,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1429,7 +1429,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1449,7 +1449,7 @@ equipments = {
 		archetype = heavy_tank_chassis
 		parent = heavy_tank_chassis_2
 		priority = 2000
-		build_cost_ic = 14
+		build_cost_ic = 18
 		maximum_speed = 4
 		reliability = 1.2
 		armor_value = 100
@@ -1525,7 +1525,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1541,7 +1541,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1557,7 +1557,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1573,7 +1573,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1589,7 +1589,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1605,7 +1605,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1621,7 +1621,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1710,7 +1710,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1725,7 +1725,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1740,7 +1740,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1755,7 +1755,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1770,7 +1770,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1785,7 +1785,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1800,7 +1800,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -1925,7 +1925,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 5
-		build_cost_ic = 10
+		build_cost_ic = 12
 		reliability = 1.4
 		armor_value = 90
 		breakthrough = 9
@@ -2069,7 +2069,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2085,7 +2085,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2101,7 +2101,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2117,7 +2117,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2133,7 +2133,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2149,7 +2149,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2165,7 +2165,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2437,7 +2437,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2452,7 +2452,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2467,7 +2467,7 @@ equipments = {
 					tank_special_module
 					tank_simplification_module
 					tank_cupola_module
-					tank_coaxial_module
+					# tank_coaxial_module
 					tank_rocket_module
 					tank_special_module_stabilizer
 					tank_special_module_rangefinder
@@ -2592,7 +2592,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 5
-		build_cost_ic = 2
+		build_cost_ic = 3
 		reliability = 0.8
 		armor_value = 15
 		breakthrough = 5

@@ -1460,10 +1460,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				mechanized_equipment = {
-					build_cost_ic = -0.1 instant = yes
-				}
-				amphibious_mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -1857,7 +1854,7 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.1
 					instant = yes
 				}

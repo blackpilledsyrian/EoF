@@ -123,7 +123,7 @@ ideas = {
 					reliability = 0.05
 					instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					reliability = 0.05
 					instant = yes
 				}

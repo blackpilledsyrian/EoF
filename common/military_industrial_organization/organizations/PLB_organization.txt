@@ -94,7 +94,7 @@ PLB_griffon_labourers_organization = {
 
 	equipment_type = {
 		motorized_equipment
-		mechanized_equipment
+		EoF_cat_eq_all_mechanized
 		motorized_rocket_equipment
 		polar_bear_equipment
 	}
@@ -382,7 +382,7 @@ PLB_clan_svartpels_organization = {
 	}
 	equipment_type = {
 		motorized_equipment
-		mechanized_equipment
+		EoF_cat_eq_all_mechanized
 		motorized_rocket_equipment
 		polar_bear_equipment
 	}

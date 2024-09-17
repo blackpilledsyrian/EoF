@@ -59,6 +59,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_air.dds"
 	}
 	spriteType = {
+		name = "GFX_EoF_cat_eq_all_mechanized"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_mechanized.dds"
+	}
+	spriteType = {
 		name = "GFX_goal_pawns"
 		texturefile = "gfx/interface/goals/goal_pawns.dds"
 	}
@@ -870,6 +874,54 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_headquarters_icon_small"
 		texturefile = "gfx/texticons/support_headquarters_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_at_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_at_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_at_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_at_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_at_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_spg_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_spg_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_spg_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spg_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_spg_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_spg_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aa_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_aa_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_aa_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_aa_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aa_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_aa_mechanized_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}

@@ -69,3 +69,12 @@ EoF_cat_eq_all_anti_air = {
 		heavy_anti_air_equipment
 	}
 }
+EoF_cat_eq_all_mechanized = {
+	equipment_type = {
+		mechanized_equipment
+		at_mechanized_equipment
+		spg_mechanized_equipment
+		aa_mechanized_equipment
+		amphibious_mechanized_equipment
+	}
+}

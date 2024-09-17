@@ -694,7 +694,7 @@ FAT_ignis_car_factory_organization = {
 				all_parents = { FAT_mio_trait_truck_mass_production }
 		
 				limit_to_equipment_type = {
-					mechanized_equipment
+					EoF_cat_eq_all_mechanized
 				}
 		
 				production_bonus = {
@@ -717,7 +717,7 @@ FAT_ignis_car_factory_organization = {
 				
 				limit_to_equipment_type = {
 					motorized_equipment
-					mechanized_equipment
+					EoF_cat_eq_all_mechanized
 				}
 		
 				equipment_bonus = {

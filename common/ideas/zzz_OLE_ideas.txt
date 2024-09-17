@@ -1481,7 +1481,7 @@ ideas = {
 				armor = {
 					build_cost_ic = -0.10
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.10
 				}
 				motorized_equipment = {

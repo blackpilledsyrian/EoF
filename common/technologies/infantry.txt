@@ -98,8 +98,8 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_heavy_machine_gun
-			coaxial_lmg
-			coaxial_hmg
+			# coaxial_lmg
+			# coaxial_hmg
 			secondary_turret_hmg
 			additional_machine_guns
 		}
@@ -2902,6 +2902,11 @@ technologies = {
 			name = infantry_folder
 			position = { x = 0 y = @1011 }
 		}
+		sub_technologies = {
+			at_mechanized_infantry
+			spg_mechanized_infantry
+			aa_mechanized_infantry
+		}
 		on_research_complete_limit = {
 			is_ai = yes
 		}
@@ -2957,6 +2962,54 @@ technologies = {
 				factor = 2
 				date > "1014.1.1"
 			}
+		}
+	}
+	at_mechanized_infantry = {
+		enable_equipments = {
+			at_mechanized_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1011
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	spg_mechanized_infantry = {
+		enable_equipments = {
+			spg_mechanized_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1011
+		sub_tech_index = 2
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	aa_mechanized_infantry = {
+		enable_equipments = {
+			aa_mechanized_equipment_1
+		}
+
+		research_cost = 1
+		start_year = 1011
+		sub_tech_index = 3
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
 		}
 	}
 	
@@ -3127,6 +3180,11 @@ technologies = {
 			name = infantry_folder
 			position = { x = 0 y = @1013 }
 		}
+		sub_technologies = {
+			at_mechanized_infantry2
+			spg_mechanized_infantry2
+			aa_mechanized_infantry2
+		}
 
 		categories = {
 			motorized_equipment
@@ -3171,6 +3229,54 @@ technologies = {
 			}
 		}
 	}
+	at_mechanized_infantry2 = {
+		enable_equipments = {
+			at_mechanized_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1013
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	spg_mechanized_infantry2 = {
+		enable_equipments = {
+			spg_mechanized_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1013
+		sub_tech_index = 2
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	aa_mechanized_infantry2 = {
+		enable_equipments = {
+			aa_mechanized_equipment_2
+		}
+
+		research_cost = 1
+		start_year = 1013
+		sub_tech_index = 3
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
 
 	###------> Old Mechanized Infantry   <><> <><> <><> <><> <><>
 
@@ -3185,20 +3291,16 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
-		magical_mechanized = {
-			soft_attack = 0.15
-			hard_attack = 0.15
-		}
-
 		research_cost = 3
 		start_year = 1015
 		folder = {
 			name = infantry_folder
 			position = { x = 0 y = @1015 }
+		}
+		sub_technologies = {
+			at_mechanized_infantry3
+			spg_mechanized_infantry3
+			aa_mechanized_infantry3
 		}
 
 		categories = {
@@ -3242,6 +3344,54 @@ technologies = {
 				factor = 2
 				date > "1018.1.1"
 			}
+		}
+	}
+	at_mechanized_infantry3 = {
+		enable_equipments = {
+			at_mechanized_equipment_3
+		}
+
+		research_cost = 1
+		start_year = 1015
+		sub_tech_index = 1
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	spg_mechanized_infantry3 = {
+		enable_equipments = {
+			spg_mechanized_equipment_3
+		}
+
+		research_cost = 1
+		start_year = 1015
+		sub_tech_index = 2
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
+		}
+	}
+	aa_mechanized_infantry3 = {
+		enable_equipments = {
+			aa_mechanized_equipment_3
+		}
+
+		research_cost = 1
+		start_year = 1015
+		sub_tech_index = 3
+		
+		categories = {
+			motorized_equipment
+			mio_cat_tech_all_motorized_mechanized
+			infantry_tech
+			cat_mechanized_equipment
 		}
 	}
 

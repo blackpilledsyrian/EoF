@@ -98,7 +98,7 @@ ideas = {
 			traits = { 	motorized_equipment_manufacturer }
 				
 			equipment_bonus = {
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					hard_attack = 0.05
 					build_cost_ic = -0.1
 					instant = yes
@@ -1104,7 +1104,7 @@ ideas = {
 			picture = PLB_we_are_winter
 			removal_cost = -1
 			equipment_bonus = {
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
@@ -1234,7 +1234,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.07
 					instant = yes
 				}
@@ -1268,7 +1268,7 @@ ideas = {
 			removal_cost = -1
 
 			equipment_bonus = {
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.07
 					soft_attack = 0.05
 					instant = yes
@@ -3269,7 +3269,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.05 instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.05 instant = yes
 				}
 			}
@@ -3309,7 +3309,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.07 instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.07 instant = yes
 				}
 			}
@@ -4610,7 +4610,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.08 instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.08 instant = yes	 
 				}
 			}
@@ -4845,7 +4845,7 @@ ideas = {
 				motorized_equipment = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.1 instant = yes	 
 				}
 			}
@@ -5063,7 +5063,7 @@ ideas = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.15
 					instant = yes
 				}
@@ -5618,7 +5618,7 @@ ideas = {
 				mechanized_defence_factor = 0.25
 			}
 			equipment_bonus = {
-				mechanized_equipment = {
+				EoF_cat_eq_all_mechanized = {
 					build_cost_ic = -0.25
 					instant = yes
 				}

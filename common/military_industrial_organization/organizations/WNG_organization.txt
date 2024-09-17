@@ -305,7 +305,7 @@ WNG_taloncia_organization = {
 	
 	equipment_type = {
 		motorized_equipment
-		mechanized_equipment
+		EoF_cat_eq_all_mechanized
 		motorized_rocket_equipment
 		train_equipment
 	}
@@ -328,7 +328,7 @@ WNG_taloncia_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mechanized_equipment
+			EoF_cat_eq_all_mechanized
 			motorized_rocket_equipment
 		}
 	}
@@ -338,7 +338,7 @@ WNG_taloncia_organization = {
 
 		limit_to_equipment_type = {
 			motorized_equipment
-			mechanized_equipment
+			EoF_cat_eq_all_mechanized
 			motorized_rocket_equipment
 		}
 	}
