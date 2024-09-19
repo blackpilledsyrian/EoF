@@ -281,3 +281,6 @@ EoF_NCH_hive_building = {
 
 	state_production_speed_buildings_factor = 0.3
 }
+EoF_sunset_line_warning = {
+	icon = GFX_idea_SWE_radiotjanst_corrupted
+}

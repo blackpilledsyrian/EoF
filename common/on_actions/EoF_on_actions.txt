@@ -448,6 +448,48 @@ on_actions = {
 			325 = {
 				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
 			}
+			29 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			106 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			5 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			1 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			2 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			68 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			103 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			179 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			178 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			70 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			148 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			147 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			144 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			141	 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
 		}
 	}
 	#Yak-Jak Civil War
