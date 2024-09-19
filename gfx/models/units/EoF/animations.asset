@@ -87,3 +87,4 @@ animation = {
 animation = {
 	name = "panzerbjorn_training01_anim"
 	file = "panzerbjorn_training01.anim"
+}
