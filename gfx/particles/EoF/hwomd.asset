@@ -1,0 +1,512 @@
+particle={
+	name="hwomd_file"
+	subsystem={
+														name="smoke_01"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=-2.88
+			y=0
+			z=0
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="smoke_02"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=-5.776
+			y=0
+			z=5
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="smoke_03"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=-2.88
+			y=0
+			z=10
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="smoke_04"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=2.88
+			y=0
+			z=10
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="smoke_05"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=5.776
+			y=0
+			z=5
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="smoke_06"
+		max_amount=325
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius={ 1 1 }
+		sphere_emitter_yaw={ 0 0 }
+		sphere_emitter_pitch={ 0 0 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud_4.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=195
+			y=195
+			z=195
+			alpha=225,particle_decay
+		}
+		position={
+			x=2.88
+			y=0
+			z=0
+		}
+		
+		start=0
+		duration=1.5
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 0.95 1.65 }
+		emission={ 60 25 }
+		size={ 0.95 1.15 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = orbital_force
+		force = point_force
+		force = rising_force
+	}
+	
+	subsystem={
+														name="blast_merge"
+		max_amount=1
+		slave_particles=0
+		sort="depth"
+		emitter_type="point"
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=no
+		hide=no
+		texture={
+			file="gfx/particles/EoF/blast_hwomd.dds"
+			x=1
+			y=1
+			shader="ParticleAdditive"
+		}
+		color={
+			x=255
+			y=255
+			z=255
+			alpha=255,particle_decay
+		}
+		position={
+			x=0
+			y=2.5
+			z=4.65
+		}
+		start=2.35
+		duration=0.100
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		velocity_pitch={ 20 0 }
+		velocity_yaw={ 0 180 }
+		velocity={ 0 0 }
+		life={ 1.45 0 }
+		emission=100
+		size={ 32,blast_shrink 0 }
+		particle_yaw={ 0 0 }
+		particle_pitch={ 90 0 }
+	}
+	
+	subsystem={
+														name="smoke_ground"
+		max_amount=425
+		slave_particles=0
+		sort = "depth"
+		
+		emitter_type="sphere"
+		sphere_emitter_radius = { 1 9 }
+		sphere_emitter_pitch = { 0 0 }
+		sphere_emitter_yaw = { 0 360 }
+		
+		invert=no
+		trail=no
+		local_space=yes
+		billboard=yes
+		hide=no
+		
+		texture={
+			file="gfx/particles/cloud.dds"
+			x=1
+			y=1
+			shader="ParticleAlphaBlend"
+		}
+		color={
+			x=135
+			y=135
+			z=135
+			alpha=122,particle_decay
+		}
+		position={
+			x=0
+			y=0.5
+			z=5
+		}
+		
+		start=0
+		duration=0.075
+		emitter_yaw={ 0 0 }
+		emitter_pitch={ 0 0 }
+		
+		velocity_pitch={ 0 }
+		velocity_yaw={ 0 0 }
+		velocity={ 0 0 }
+		
+		life={ 1.5 2.25 }
+		emission={ 2500 }
+		size={ 1.25 1.75 }
+		
+		rotation={ 0 0 }
+		rotation_speed={ 0 0 }
+		
+		force = smoke_ground_spread_force
+	}
+	
+	animation={
+		name="blast_shrink"
+		start=0
+		duration=0.5
+		repeat=no
+		minValue=0
+		maxValue=1
+		curve={
+			0 0.25
+			0.225 1
+			0.3 1
+			1 0 
+		}
+		op="MUL"
+		time="life"
+	}
+	
+	animation={
+		name="swirl_decay"
+		start=0
+		duration=1
+		repeat=no
+		maxValue=1
+		minValue=0
+		curve={
+			0	1
+			0.3 0.4
+			0.6	0 
+		}
+		op="MUL"
+		time="life"
+	}
+	
+	animation={
+		name="particle_decay"
+		start=0
+		duration=1
+		repeat=no
+		maxValue=1
+		minValue=0
+		curve={
+			0 1
+			0.6 1
+			0.8 0.6
+			1 0
+		}
+		op="MUL"
+		time="life"
+	}
+	
+	force = {
+		type = "turbulence"
+		name = "smoke_ground_spread_force"
+		amount = 1.45,particle_decay
+	}
+	
+	force = {
+	type = "point"
+	name = "point_force"
+	position = { 5 0 0 }
+	amount = -1.95,swirl_decay
+	}
+	
+	force = {
+	type = "spin"
+	name = "orbital_force"
+	position = { 5 0 0 }
+	direction = { 0.0 1.0 0.0 }
+	amount = -0.56,swirl_decay
+	}
+	
+	force = {
+		type = "planar"
+		name = "rising_force"
+		direction = { 0 1 0 }
+		amount = 1.15
+	}
+}

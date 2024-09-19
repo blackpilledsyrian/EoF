@@ -10,4 +10,14 @@ objectTypes = {
 		type = "volcano_lava_file"
 		scale = 1
 	}
+	pdxparticle = {
+		name = "hwomd_particle"
+		type = "hwomd_file"
+		scale = 1
+	}
+	pdxparticle = {
+		name = "hwomd_explosion_particle"
+		type = "hwomd_explosion_file"
+		scale = 1
+	}
 }

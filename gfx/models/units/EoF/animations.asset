@@ -80,4 +80,10 @@ animation = {
 animation = {
 	name = "panzerbjorn_training01_anim"
 	file = "panzerbjorn_training01.anim"
+
+#HARMONIC NUKE
+
+animation = {
+	name = "elements_idle_anim"
+	file = "elements_idle.anim"
 }
