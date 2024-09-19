@@ -78,11 +78,11 @@ equipment_modules = {
 			reliability = -0.05
 			hardness = -0.1
 		}
-		dismantle_cost_ic = 0
-		xp_cost = 0
 		multiply_stats = {
 			build_cost_ic = -0.1
 		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
 	}
 
 	tank_cast_armor = {
@@ -94,12 +94,12 @@ equipment_modules = {
 			defense = 6
 			breakthrough = 6
 		}
-		dismantle_cost_ic = 0
-		xp_cost = 0
 		multiply_stats = {
 			build_cost_ic = 0.1
-			armor_value = 0.4
+			armor_value = 0.3
 		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
 	}
 
 	tank_welded_armor = {
@@ -111,10 +111,10 @@ equipment_modules = {
 			defense = 3
 			breakthrough = 3
 		}
-		dismantle_cost_ic = 0
 		multiply_stats = {
-			armor_value = 0.3
+			armor_value = 0.2
 		}
+		dismantle_cost_ic = 0
 	}
 
 	tank_composite_armor = {
@@ -126,16 +126,16 @@ equipment_modules = {
 			defense = 6
 			breakthrough = 6
 			reliability = -0.1
-			hardness = 0.04
+			hardness = -0.5
+		}
+		multiply_stats = {
+			build_cost_ic = 0.2
+			armor_value = 0.5
 		}
 		dismantle_cost_ic = 0
-		multiply_stats = {
-			build_cost_ic = 0.4
-			armor_value = 0.6
-
-		}
 		build_cost_resources = {
-			chromium = 20
+			aluminium = 5
+			chromium = 5
 		}
 	}
 
@@ -1623,10 +1623,10 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			max_organisation = 0.3
+			max_organisation = 0.2
 		}
 		multiply_stats = {
-			breakthrough = 0.025
+			breakthrough = 0.05
 		}
 		xp_cost = 0
 	}
@@ -1639,10 +1639,10 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			max_organisation = 0.4
+			max_organisation = 0.3
 		}
 		multiply_stats = {
-			breakthrough = 0.05
+			breakthrough = 0.1
 		}
 		xp_cost = 0
 	}
@@ -1655,10 +1655,10 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
-			max_organisation = 0.5
+			max_organisation = 0.4
 		}
 		multiply_stats = {
-			breakthrough = 0.075
+			breakthrough = 0.15
 		}
 		xp_cost = 0
 	}
@@ -1671,10 +1671,10 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 2
-			max_organisation = 0.6
+			max_organisation = 0.5
 		}
 		multiply_stats = {
-			breakthrough = 0.1
+			breakthrough = 0.2
 		}
 		xp_cost = 0
 	}
@@ -1917,13 +1917,10 @@ equipment_modules = {
 
 		add_stats = {
 			hardness = 0.05
-			breakthrough = 3
+			breakthrough = 4
 			build_cost_ic = 1
 		}
 		xp_cost = 0
-		multiply_stats = {
-			armor_value = 0.05
-		}
 	}
 
 	armor_skirts_2 = {

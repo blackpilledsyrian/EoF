@@ -51,7 +51,7 @@ equipments = {
 		hardness = 0.4
 		armor_value = 20
 
-		build_cost_ic = 12
+		build_cost_ic = 8
 		resources = {
 			steel = 20
 			tungsten = 5
@@ -85,7 +85,7 @@ equipments = {
 		hardness = 0.4
 		armor_value = 30
 
-		build_cost_ic = 15
+		build_cost_ic = 9
 		resources = {
 			steel = 25
 			tungsten = 5
@@ -125,7 +125,7 @@ equipments = {
 		#Offensive Abilities
 		ap_attack = 0
 
-		build_cost_ic = 18
+		build_cost_ic = 10
 		resources = {
 			steel = 30
 			tungsten = 5

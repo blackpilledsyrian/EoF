@@ -50,7 +50,7 @@ equipments = {
 		hardness = 0.4
 		armor_value = 20
 
-		build_cost_ic = 12
+		build_cost_ic = 8
 		resources = {
 			steel = 20
 			rubber = 10
@@ -82,7 +82,7 @@ equipments = {
 		#Offensive Abilities
 		air_attack = 4
 
-		build_cost_ic = 15
+		build_cost_ic = 9
 		resources = {
 			steel = 25
 			rubber = 10
@@ -118,7 +118,7 @@ equipments = {
 		#Offensive Abilities
 		air_attack = 5
 
-		build_cost_ic = 18
+		build_cost_ic = 10
 		resources = {
 			steel = 30
 			rubber = 10

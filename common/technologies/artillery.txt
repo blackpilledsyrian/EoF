@@ -1974,7 +1974,7 @@ technologies = {
 
 		heavy_anti_tank = {
 			hard_attack = 0.2
-			ap_attack = 0.2		
+			ap_attack = 0.2
 		}
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.2
@@ -2013,7 +2013,7 @@ technologies = {
 		}
 		heavy_anti_tank = {
 			hard_attack = 0.2
-			ap_attack = 0.2			
+			ap_attack = 0.2
 		}
 		heavy_anti_tank_brigade = {
 			hard_attack = 0.2
