@@ -254,6 +254,21 @@ technologies = {
 				mechanized_equipment = -5
 			}
 		}
+		at_mechanized = {
+			need = {
+				at_mechanized_equipment = -5
+			}
+		}
+		spg_mechanized = {
+			need = {
+				spg_mechanized_equipment = -5
+			}
+		}
+		aa_mechanized = {
+			need = {
+				aa_mechanized_equipment = -5
+			}
+		}
 		amphibious_mechanized = {
 			need = {
 				amphibious_mechanized_equipment = -5
@@ -3330,6 +3345,21 @@ technologies = {
 		magical_mechanized = {
 			need = {
 				mechanized_equipment = -5
+			}
+		}
+		at_mechanized = {
+			need = {
+				at_mechanized_equipment = -5
+			}
+		}
+		spg_mechanized = {
+			need = {
+				spg_mechanized_equipment = -5
+			}
+		}
+		aa_mechanized = {
+			need = {
+				aa_mechanized_equipment = -5
 			}
 		}
 		amphibious_mechanized = {
