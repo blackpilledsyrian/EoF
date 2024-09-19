@@ -6,6 +6,5 @@ objectTypes = {
 		scale = 1
 		
 		animation = { id = "idle"  			type = "elements_idle_anim" }
-		animation = { id = "attack"  		type = "elements_attack_anim" }
 	}
 }

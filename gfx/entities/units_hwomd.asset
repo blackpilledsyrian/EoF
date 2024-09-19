@@ -19,5 +19,4 @@ entity = {
 	
 	default_state = "idle"
 	state = { name = "idle" animation = idle looping = no }
-	state = { name = "attack" animation = "attack" looping = no }
 }
