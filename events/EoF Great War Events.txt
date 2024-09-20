@@ -391,7 +391,7 @@ country_event = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 1 }
+				prioritize = { 3 }
 				create_unit = {
 					division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
@@ -450,7 +450,7 @@ country_event = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 1 }
+				prioritize = { 3 }
 				create_unit = {
 					division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
@@ -524,7 +524,7 @@ country_event = {
 				}
 			}
 			random_owned_controlled_state = {
-				prioritize = { 1 }
+				prioritize = { 3 }
 				create_unit = {
 					division = "name = \"1st 'Canterlot High' Tank Division\" division_template = \"Sunset Armour Division\" start_experience_factor = 1 start_equipment_factor = 1"
 					owner = EQS
@@ -575,5 +575,15 @@ country_event = {
 				}
 			}	
 		}
+	}
+}
+country_event = {
+	id = EoF_great_war.12
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+	immediate = {
+		destroy_entity = 404
+		destroy_entity = 405
 	}
 }

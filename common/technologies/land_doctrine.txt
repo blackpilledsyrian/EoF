@@ -2478,10 +2478,10 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 
 		category_light_infantry = {
-			max_organisation = 15
-			breakthrough = 0.2
-			soft_attack = 0.2
-			hard_attack = 0.2
+			max_organisation = 10
+			breakthrough = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
 
 		additional_brigade_column_size = 1

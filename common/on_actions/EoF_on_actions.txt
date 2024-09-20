@@ -807,11 +807,13 @@ on_actions = {
 					}
 					FROM.FROM = {
 						OR = {
-							state = 66
-							state = 119
-							state = 114
-							state = 101
+							state = 29
+							state = 106
+							state = 5
+							state = 1
+							state = 2
 							state = 68
+							state = 103
 							state = 179
 							state = 178
 							state = 70

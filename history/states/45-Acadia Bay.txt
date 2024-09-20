@@ -7,7 +7,7 @@ state={
 	}
 
 	manpower=327400
-	state_category=town
+	state_category=large_town
 	buildings_max_level_factor=1.00
 
 	history={
@@ -17,7 +17,9 @@ state={
 		victory_points = { 7077 5 }
 
 		buildings = {
-			infrastructure = 2
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
 
 			7077 = {
 				naval_base = 1
