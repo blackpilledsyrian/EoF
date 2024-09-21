@@ -157,7 +157,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_improved_industries
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -177,7 +177,7 @@ ideas = {
 			picture = generic_improved_industries
 			modifier = {
 				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.15
 				production_factory_max_efficiency_factor = 0.15	
 			}
 		}

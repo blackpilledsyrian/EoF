@@ -83,192 +83,192 @@ EoF_great_war_category_EQS = {
 	# 		}
 	# 	}
 	# }
-	EoF_fallback_decision_1 = {
-		icon = GFX_decision_generic_scorched_earth
-		allowed = {
-			original_tag = EQS
-		}
-		visible = {
-			has_completed_focus = EoF_losing
-			NOT = {
-				has_completed_focus = EoF_shire
-			}
-		}	
-		complete_effect = {
-			set_country_flag = EoF_fallback_1
-			318 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			137 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			136 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			172 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			175 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			14 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			73 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			72 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			173 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			133 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			45 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			59 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			60 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			61 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			46 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-		}	
-	}
-	EoF_fallback_decision_2 = {
-		icon = GFX_decision_generic_scorched_earth
-		allowed = {
-			original_tag = EQS
-		}
-		available = {
-			has_completed_focus = EoF_shire
-		}
-		visible = {
-			has_completed_focus = EoF_losing
-			NOT = {
-				has_completed_focus = EoF_hope
-			}
-		}
-		complete_effect = {
-			set_country_flag = EoF_fallback_2
-			318 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			137 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			136 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			172 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			175 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			14 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			73 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			72 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			173 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			133 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			45 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			59 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			60 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			61 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			46 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			139 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			140 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			142 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			343 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			143 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			146 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			138 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			174 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			324 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			131 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			180 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			181 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			169 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}			
-			170 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			171 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			132 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			126 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			129 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}			
-		}			
-	}
+	# EoF_fallback_decision_1 = {
+	# 	icon = GFX_decision_generic_scorched_earth
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = EoF_losing
+	# 		NOT = {
+	# 			has_completed_focus = EoF_shire
+	# 		}
+	# 	}	
+	# 	complete_effect = {
+	# 		set_country_flag = EoF_fallback_1
+	# 		318 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		137 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		136 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		172 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		175 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		14 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		73 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		72 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		173 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		133 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		45 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		59 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		60 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		61 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		46 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 	}	
+	# }
+	# EoF_fallback_decision_2 = {
+	# 	icon = GFX_decision_generic_scorched_earth
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	available = {
+	# 		has_completed_focus = EoF_shire
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = EoF_losing
+	# 		NOT = {
+	# 			has_completed_focus = EoF_hope
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = EoF_fallback_2
+	# 		318 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		137 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		136 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		172 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		175 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		14 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		73 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		72 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		173 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		133 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		45 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		59 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		60 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		61 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		46 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		139 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		140 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		142 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		343 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		143 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		146 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		138 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		174 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		324 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		131 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		180 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		181 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		169 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}			
+	# 		170 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		171 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		132 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		126 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		129 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}			
+	# 	}			
+	# }
 	EoF_operation_vegetarian_decision = {
 		icon = GFX_decision_changeling_skull
 		allowed = {

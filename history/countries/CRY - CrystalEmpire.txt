@@ -154,6 +154,7 @@ add_equipment_to_stockpile = {
 }
 add_ideas = {
 	# no_edict
+	proper_science_base
 	defence_contracts
 	militia_system
 	crystal_heart

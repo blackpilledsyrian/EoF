@@ -1015,10 +1015,10 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1016
 
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 2 y = @1016 }
-		}
+		# folder = {
+		# 	name = nsb_armour_folder
+		# 	position = { x = 2 y = @1016 }
+		# }
 		path = {
 			leads_to_tech = main_battle_tank_chassis_b
 			research_cost_coeff = 1
@@ -1733,10 +1733,10 @@ technologies = {
 			tank_composite_armor
 		}
 		research_cost = 1
-		start_year = 1015
+		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 3 y = @1015 }
+			position = { x = 3 y = @1014 }
 		}
 		path = {
 			leads_to_tech = armor_tech_5
@@ -2073,10 +2073,10 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		research_cost = 1
-		start_year = 1015
+		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 2 y = @1015 }
+			position = { x = 2 y = @1014 }
 		}
 		on_research_complete = {
 			custom_effect_tooltip = EoF_engine_tech_4_tt
@@ -2293,10 +2293,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1015
+		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1015 }
+			position = { x = 21 y = @1014 }
 		}
 
 		categories = {
@@ -2393,10 +2393,10 @@ technologies = {
 		}
 		show_effect_as_desc = yes
 		research_cost = 1
-		start_year = 1015
+		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 20 y = @1015 }
+			position = { x = 20 y = @1014 }
 		}
 
 		categories = {
