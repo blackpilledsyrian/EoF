@@ -129,7 +129,6 @@ ideas = {
 					instant = yes
 				}
 			}
-
 		}
 		EoF_CHN_warplan_short_2 = {
 			removal_cost = -1

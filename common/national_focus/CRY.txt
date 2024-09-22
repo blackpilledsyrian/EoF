@@ -549,7 +549,7 @@ shared_focus = {
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0
-			uses = 1
+			uses = 2
 			category = cat_heavy_armor
 		}
 	}
@@ -837,7 +837,7 @@ shared_focus = { #Grand crystal festival (PP Buff, NU buff, something else buffe
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus CRY_grandfestival"
 		country_event = { id = cryscr.10 days = 1 }
-		add_timed_idea = { idea = grand_festival days = 30}
+		add_timed_idea = { idea = grand_festival days = 90}
 	}
 }
 shared_focus = { #Crystal Faire
@@ -2475,6 +2475,24 @@ shared_focus = {
 			cost_reduction = 0.5
 			uses = 2
 			category = land_doctrine
+		}
+		if = {
+			limit = {
+				has_idea = miltia_system
+			}
+			add_ideas = reservist_system
+		}
+		else_if = {
+			limit = {
+				has_idea = reservist_system
+			}
+			add_ideas = semi_professional_army
+		}
+		else_if = {
+			limit = {
+				has_idea = semi_professional_army
+			}
+			add_ideas = professional_army
 		}
 	}
 	search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }

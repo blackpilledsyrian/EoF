@@ -17,35 +17,35 @@ ideas = {
 			picture = trade
 			targeted_modifier = {
 				tag = EQS
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = CRY
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = STG
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = HIP
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = WNG
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = EQC
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = MCW
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = NIM
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = CHN

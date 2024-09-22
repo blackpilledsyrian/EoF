@@ -50,13 +50,11 @@ PLB_traditional_armorsmiths_organization = {
 	}
 	
     equipment_type = {  
-        armor
         train_equipment
 		polar_bear_equipment
     }
 
     research_categories = { 
-        mio_cat_tech_all_armor_and_modules
         train_tech
 		panzerbar_tech
     }

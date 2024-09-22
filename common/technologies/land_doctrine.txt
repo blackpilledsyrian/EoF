@@ -3210,12 +3210,12 @@ technologies = {
 		}
 		heavy_armor = {
 			need = {
-				heavy_tank_chassis = -3
+				heavy_tank_chassis = -4
 			}		
 		}
 		reinforced_heavy_armor = {
 			need = {
-				heavy_tank_chassis = -3
+				heavy_tank_chassis = -4
 			}
 		}
 

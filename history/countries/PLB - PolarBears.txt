@@ -66,6 +66,7 @@ set_politics = {
 add_ideas = {
 	# no_edict
 	PLB_bears
+	EoF_PLB_industry
 	PLB_outcasts
 	PLB_clan_divides
 	pre_industrial_society

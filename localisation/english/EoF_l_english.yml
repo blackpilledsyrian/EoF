@@ -122,6 +122,7 @@ EoF_board_of_war:0 "Board of War"
 EoF_busy_reforming_trait:0 "Leading Reform"
 EoF_Fluttershy:0 "Element of Kindness"
 EoF_snake:0 "Snake of Skyfall"
+EoF_armour_advocate:0 "Armour Advocate"
 
 EoF_neutral_country:0 "Neutral Country"
 EoF_neutral_trade:0 "Neutral Trade"
@@ -396,6 +397,9 @@ EoF_OLE_deal:0 "Olenian Economic Agreement"
 
 EoF_CHN_PLB_investment:0 "Polar Investments"
 
+EoF_PLB_industry:0 "Polar Equipment Specifications"
+EoF_PLB_industry_desc:0 "Our industry suffers from two issues, not only must our outdated traditional workshops manufacture state of the art equipment, but, our equipment must also be uniquely designed to support Polar Bear stature. These dual issues severely hamper our ability to produce certain types of equipment."
+
 EoF_CHN_final_army_expansion:0 "Final Army Expansion"
 EoF_CHN_final_army_expansion_tt:0 "This idea will be removed upon the beginning of the Great War."
 
@@ -646,6 +650,8 @@ EoF_tiffany_sortier:0 "Tiffany Sortier"
 EoF_marin_bataille:0 "Marin Bataille"
 
 EoF_duchess_groverina:0 "Duchess Groverina"
+
+EoF_bronislav_zashchitnikov:0 "Bronislav Zashchitnikov"
 
 EoF_polyphony_category:0 "Project Polyphony"
 EoF_polyphony_decision:0 "Activate Resonance"

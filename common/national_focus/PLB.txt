@@ -30572,7 +30572,7 @@ shared_focus = {
 			add_tech_bonus = {
 				name = armor_bonus
 				ahead_reduction = 0.5
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				technology = super_heavy_tank_chassis_a
 			}

@@ -25,7 +25,7 @@ characters={
 		name = EoF_halberd_spear
 		portraits = {
 			civilian = {
-				small = "GFX_idea_EoF_redacted"
+				small = "GFX_idea_EoF_halberd_spear"
 			}
 		}
 		advisor = {
@@ -176,6 +176,23 @@ characters={
 				has_completed_focus = EoF_imperial_resistance_coalition
 			}
 			traits = { EoF_snake }
+		}
+	}
+	EoF_bronislav_zashchitnikov = {
+		name = EoF_bronislav_zashchitnikov
+		portraits = {
+			civilian = {
+				small = "GFX_idea_EoF_bronislav_zashchitnikov"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = bronislav
+			allowed = {
+				original_tag = STG
+			}
+
+			traits = { EoF_armour_advocate }
 		}
 	}
 }

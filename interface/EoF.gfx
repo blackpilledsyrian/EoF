@@ -943,6 +943,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/advisors/EoF_duchess_groverina.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_EoF_bronislav_zashchitnikov"
+		texturefile = "gfx/interface/ideas/advisors/EoF_bronislav_zashchitnikov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EoF_halberd_spear"
+		texturefile = "gfx/interface/ideas/advisors/EoF_halberd_spear.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_procurement_1"
 		texturefile = "gfx/interface/ideas/idea_procurement_1.dds"
 	}

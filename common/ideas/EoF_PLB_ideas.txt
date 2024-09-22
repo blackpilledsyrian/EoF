@@ -1,0 +1,22 @@
+ideas = {
+	country = {
+		EoF_PLB_industry = {
+			removal_cost = -1
+			picture = PLB_mil_ind
+			equipment_bonus = {
+				armor = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				EoF_cat_eq_all_mechanized = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+				small_plane_airframe = {
+					instant = yes
+					build_cost_ic = 0.5
+				}
+			}	
+		}
+	}
+}

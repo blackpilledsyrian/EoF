@@ -97,6 +97,6 @@ sub_units = {
 
 
 		can_be_parachuted = yes
-		same_support_type = rocket_artillery
+		same_support_type = artillery
 	}
 }

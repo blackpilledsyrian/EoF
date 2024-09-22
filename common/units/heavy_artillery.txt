@@ -47,5 +47,6 @@ sub_units = {
 
 
 		can_be_parachuted = no
+		same_support_type = artillery
 	}
 }
