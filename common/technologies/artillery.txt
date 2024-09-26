@@ -1592,15 +1592,12 @@ technologies = {
 	fieldgun1 = {
 
 		anti_tank = {
-			ap_attack = -0.2
 			soft_attack = 2
 		}
 		anti_tank_brigade = {
-			ap_attack = -0.2
 			soft_attack = 2
 		}
 		mot_anti_tank_brigade = {
-			ap_attack = -0.2
 			soft_attack = 2
 		}
 

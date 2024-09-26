@@ -53,6 +53,11 @@ NDefines.NMilitary.COMBAT_STACKING_START = 4			-- at what nr of divisions stacki
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                    -- extra stacking from directions
 NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1		-- how much stacking penalty per division
 
+NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 8		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 8		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5			-- how many armies a field marshall is limited to. 0 = inf, < 0 = blocked
+NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0		-- armies gets increased cap when they are garrisoned
+
 NDefines.NMilitary.BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0	-- Division experience drop if unit has same batalion
 NDefines.NMilitary.BATALION_CHANGED_EXPERIENCE_DROP = 1		-- Division experience drop if unit has different batalion
 NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.7			-- percentage of experienced solders who die when manpower is removed
@@ -60,7 +65,7 @@ NDefines.NMilitary.EXPERIENCE_LOSS_FACTOR = 0.7			-- percentage of experienced s
 NDefines.NMilitary.TRAINING_MAX_LEVEL = 20
 NDefines.NMilitary.DEPLOY_TRAINING_MAX_LEVEL = 5
 NDefines.NMilitary.UNIT_EXP_LEVELS = {0.04,	0.08,	0.12,	0.16,	0.20,	0.24,	0.28,	0.32,	0.36,	0.40,	0.44,	0.48,	0.52,	0.56,	0.60,	0.64,	0.68,	0.72,	0.76,	0.80}		-- Experience needed to progress to the next level
-NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.03
+NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.02
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 10
 
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  	-- amount of extra attrition from being in training
@@ -71,6 +76,8 @@ NDefines.NMilitary.RECON_SKILL_IMPACT = 10				-- how many skillpoints is a recon
 NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1	-- advantage per leader level for picking a counter
 
 NDefines.NMilitary.SLOWEST_SPEED = 1
+
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15			-- CAS bonus factor for air support moddifier for land unit in combat
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.3		-- effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3	-- effect on speed due to enemy air superiority

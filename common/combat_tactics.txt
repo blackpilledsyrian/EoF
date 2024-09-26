@@ -351,6 +351,7 @@ tactic_tw_intercept = {
 
 	phase = no
 
+	combat_width = -0.165
 	attacker = -0.05
 	defender = -0.1
 }

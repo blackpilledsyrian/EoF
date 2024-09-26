@@ -502,7 +502,7 @@ technologies = {
 
 		enable_tactic = tactic_blitz
 
-		category_tanks = {
+		category_all_armor = {
 			max_organisation = 5
 			default_morale = 0.1
 			breakthrough = 0.1
@@ -1133,9 +1133,9 @@ technologies = {
 		}
 
 		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.2
-			hard_attack = 0.2
+			max_organisation = 5
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		
 		path = {
@@ -1188,9 +1188,9 @@ technologies = {
 		enable_tactic = tactic_overwhelming_fire
 
 		category_support_battalions = {
-			max_organisation = 10
-			soft_attack = 0.2
-			hard_attack = 0.2
+			max_organisation = 5
+			soft_attack = 0.15
+			hard_attack = 0.15
 		}
 		
 		path = {
@@ -1406,10 +1406,6 @@ technologies = {
 		category_all_artillery = {
 			soft_attack = 0.05
 			hard_attack = 0.15
-		}
-		category_all_at = {
-			soft_attack = 0.15
-			hard_attack = 0.05	
 		}
 		
 		path = {
@@ -1731,6 +1727,8 @@ technologies = {
 			}
 		}
 		
+		coordination_bonus = 0.25
+
 		path = {
 			leads_to_tech = advanced_firebases 
 			research_cost_coeff = 1
@@ -2243,7 +2241,7 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_support_battalions = {
-			max_organisation = 10
+			max_organisation = 5
 			soft_attack = 0.15
 			hard_attack = 0.15
 		}

@@ -1512,9 +1512,8 @@ ideas = {
 		OLE_hellfire = {
 			picture = generic_intel_bonus
 			modifier = {
-				army_attack_factor = 0.05
-				army_artillery_attack_factor = 0.15
-				army_artillery_defence_factor = 0.15
+				army_artillery_attack_factor = 0.1
+				army_artillery_defence_factor = 0.1
 			}
 		}
 	}
