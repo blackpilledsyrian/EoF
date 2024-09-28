@@ -29680,6 +29680,7 @@ shared_focus = {
 			add_political_power = -150
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip  = PLB_queen_guard
+			
 			add_corps_commander_role = {
 				character = PLB_queen_guard
 				traits = { changeling_race_trait infiltrator trait_guard_general }
@@ -29689,6 +29690,15 @@ shared_focus = {
 				planning_skill = 3
 				logistics_skill = 4
 			}
+			set_temp_variable = {
+				leader_r = token:PLB_queen_guard
+			}
+			add_to_array = {
+				ROOT.EoF_army_leaders = leader_r
+			}
+			
+			
+			
 			set_technology = { popup = yes tech_jager = 1 }
 			set_technology = { popup = yes tech_generic_r = 1 }
 			hidden_effect = {

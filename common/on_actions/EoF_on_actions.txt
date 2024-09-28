@@ -1,6 +1,22 @@
 on_actions = {
+	
 	on_startup = {
 		effect = {
+			every_country = {
+				for_each_loop = {
+					array = THIS.army_leaders
+					value = v
+					add_to_array = {
+						THIS.EoF_army_leaders = v
+					}
+				}
+				set_variable = {
+					THIS.EoF_army_leaders_no_token = THIS.EoF_army_leaders^num
+				}
+				# subtract_from_variable = {
+				# 	THIS.EoF_army_leaders_no_token = 1
+				# }
+			}
 			HLR = {
 				country_event = { id = EoF.1 days = 1095 }
 				# country_event = { id = EoF.8 days = 12 }
@@ -141,29 +157,9 @@ on_actions = {
 						retire = yes
 				}
 			}
-			# every_country = {
-			# 	limit = {
-			# 		OR = {
-			# 			tag = CHN
-			# 			tag = OLE
-			# 			tag = PLB
-			# 			tag = GRF
-			# 			tag = FAT
-			# 			tag = JER
-			# 			tag = GRI
-			# 			tag = EQS
-			# 			tag = CRY
-			# 			tag = STG
-			# 			tag = EQC
-			# 			tag = HIP
-			# 			tag = WNG
-			# 			tag = MCW
-			# 			#tag = RCT
-			# 			#tag = FEA
-			# 		}
-			# 	}
-			# 	add_ideas = EoF_peacetime_training
-			# }
+			every_country = {
+				set_variable = { selected_leader_index_var = 0 }
+			}
 		}
 	}
 	#All Starting Dynamic Modifiers Here
@@ -1046,4 +1042,26 @@ on_actions = {
 			}
 		}
 	}
+	on_unit_leader_created = {
+		effect = {
+			add_to_array = {
+				FROM.EoF_army_leaders = ROOT 
+			}
+		}
+	}
+	on_unit_leader_promote_from_ranks_veteran = {
+		effect = {
+			add_to_array = {
+				FROM.EoF_army_leaders = ROOT 
+			}
+		}
+	}
+	on_unit_leader_promote_from_ranks_green = {
+		effect = {
+			add_to_array = {
+				FROM.EoF_army_leaders = ROOT 
+			}
+		}
+	}
 }
+

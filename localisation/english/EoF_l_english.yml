@@ -832,3 +832,5 @@ EoF.cityfall.702.d:0 "[This.GetNewspaperHeader]The United Ponies alliance's troo
 EoF.cityfall.702.a:0 "Push the Attack!"
 EoF.cityfall.702.b:0 "Make a stand."
 EoF.cityfall.702.c:0 "Looks bad for the Changelings."
+
+selected_leader_loc:0 "[GetLeaderNameMechanic]"

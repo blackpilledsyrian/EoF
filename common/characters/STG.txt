@@ -371,7 +371,7 @@ characters={
 		name= STG_gemian_smit ####"Gemian Smit"
 		portraits={
 			army={
-				large="gfx/leaders/STG/Gemian Smit.tga"
+				large="gfx/leaders/Gemian_Smit.tga"
 				small="GFX_idea_STG_Gemian_Smit"
 			}
 		}

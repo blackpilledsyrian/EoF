@@ -37,3 +37,17 @@ update_sicarus_effect = {
 		MILS = "[?EoF_sicarus_mils]"
 	}
 }
+
+add_to_leaders_array_effect = {
+	add_to_array = {
+		ROOT.EoF_army_leaders = THIS 
+	}
+}
+
+remove_from_leaders_array_effect = {
+	ROOT = {
+		remove_from_array = {
+			FROM.EoF_army_leaders = THIS
+		}
+	}
+}

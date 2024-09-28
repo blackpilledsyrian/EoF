@@ -1,0 +1,912 @@
+defined_text = {
+	name = GetLeaderNameMechanic
+
+	text = {
+		trigger = {
+			check_variable = {
+				ROOT.selected_leader_index_var < THIS.EoF_army_leaders_no_token
+			}
+		}
+		localization_key = "[?ROOT.EoF_army_leaders^ROOT.selected_leader_index_var.GetName]"
+	}
+
+	text = {
+		localization_key = "[?ROOT.EoF_army_leaders^ROOT.selected_leader_index_var.GetTokenLocalizedKey]"
+	}
+
+}
+
+
+defined_text = {
+	name = GetLeaderPortrait
+
+
+	##Bullshit mechanic that makes it work with this shit
+
+
+	##EQS
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_prince_blueblood
+			}
+		}
+		localization_key = "GFX_EQS_Blueblood_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_princess_luna
+			}
+		}
+		localization_key = "GFX_EQS_Luna_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_ember_spark
+			}
+		}
+		localization_key = "GFX_EQS_EmberSpark_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_sunset_shimmer
+			}
+		}
+		localization_key = "GFX_EQS_SunsetShimmer_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_soarin
+			}
+		}
+		localization_key = "GFX_EQS_Soarin_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_fast_clip
+			}
+		}
+		localization_key = "GFX_EQS_FastClip_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_whiplash
+			}
+		}
+		localization_key = "GFX_EQS_Whiplash_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_braeburn
+			}
+		}
+		localization_key = "GFX_EQS_Braeburn_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_applejack
+			}
+		}
+		localization_key = "GFX_EQS_Applejack_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_allen_spark
+			}
+		}
+		localization_key = "GFX_EQS_AllenSpark_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_swift_wing
+			}
+		}
+		localization_key = "GFX_EQS_SwiftWing_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_Fireflight
+			}
+		}
+		localization_key = "GFX_EQS_Fireflight_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_anonfilly
+			}
+		}
+		localization_key = "GFX_EQS_Anonfilly_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_sergeant_reckless
+			}
+		}
+		localization_key = "GFX_EQS_SergeantReckless_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_big_macintosh
+			}
+		}
+		localization_key = "GFX_EQS_BigMac_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_pinkie_pie
+			}
+		}
+		localization_key = "GFX_EQS_PinkiePie_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_caltrop_decay
+			}
+		}
+		localization_key = "GFX_EQS_CaltropDecay_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_sun_marble
+			}
+		}
+		localization_key = "GFX_EQS_SunMarble_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_orion_star
+			}
+		}
+		localization_key = "GFX_EQS_OrionStar_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_bernard_hoofgonery
+			}
+		}
+		localization_key = "GFX_EQS_Hoofgonery_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_bernard_hoofgonery
+			}
+		}
+		localization_key = "GFX_EQS_SunriseMoonshadow_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = EQS
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = EQS_bernard_hoofgonery
+			}
+		}
+		localization_key = "GFX_EQS_SunriseMoonshadow_portrait"
+	}
+
+	##CRY
+
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_reese
+			}
+		}
+		localization_key = "GFX_CRY_reese_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_shining_armour
+			}
+		}
+		localization_key = "GFX_CRY_ShiningArmour_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_dusty_ember
+			}
+		}
+		localization_key = "GFX_CRY_DustyEmber_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_forest_nutmeg
+			}
+		}
+		localization_key = "GFX_CRY_ForestNutmeg_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_icy_snow
+			}
+		}
+		localization_key = "GFX_CRY_IcySnow_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_cloudie
+			}
+		}
+		localization_key = "GFX_CRY_Cloudie_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_deimos_falafel
+			}
+		}
+		localization_key = "GFX_CRY_Damiyan_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_crystalline
+			}
+		}
+		localization_key = "GFX_CRY_Crystalline_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_flash_sentry
+			}
+		}
+		localization_key = "GFX_CRY_FlashSentry_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_solid_shot
+			}
+		}
+		localization_key = "GFX_CRY_SolidShot_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_wondermane
+			}
+		}
+		localization_key = "GFX_CRY_Wondermane_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_ice
+			}
+		}
+		localization_key = "GFX_CRY_Ice_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_snow_puff
+			}
+		}
+		localization_key = "GFX_CRY_SnowPuff_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_wild_strikes
+			}
+		}
+		localization_key = "GFX_CRY_WildStrikes_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_squeeky_hooves
+			}
+		}
+		localization_key = "GFX_CRY_Sombra_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_atom
+			}
+		}
+		localization_key = "GFX_CRY_Atom_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CRY
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CRY_arstotzka_reptov
+			}
+		}
+		localization_key = "GFX_CRY_Arstozka_portrait"
+	}
+	##STG
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_nestor_lunin
+			}
+		}
+		localization_key = "GFX_STG_NestorLunin_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_ember_flare
+			}
+		}
+		localization_key = "GFX_STG_EmberFlame_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_veronika_krasnova
+			}
+		}
+		localization_key = "GFX_STG_Veronica_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_alexia_goldgear
+			}
+		}
+		localization_key = "GFX_STG_Gereval_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_cherry_swirl
+			}
+		}
+		localization_key = "GFX_STG_CherrySwirl_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_black_paint
+			}
+		}
+		localization_key = "GFX_STG_BlackPaint_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_comrade_ulman
+			}
+		}
+		localization_key = "GFX_STG_Ulman_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_fiat_coin
+			}
+		}
+		localization_key = "GFX_STG_FiatCoin_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_purple_heart
+			}
+		}
+		localization_key = "GFX_STG_PurpleHeart_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_katya_ironstead
+			}
+		}
+		localization_key = "GFX_STG_Katya_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_cogwheel_ponyarchuk
+			}
+		}
+		localization_key = "GFX_STG_Cogwheel_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_vinous_kostylev
+			}
+		}
+		localization_key = "GFX_STG_Vinous_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_vinous_kostylev
+			}
+		}
+		localization_key = "GFX_STG_GemianSmit_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_whagirl
+			}
+		}
+		localization_key = "GFX_STG_Whagirl_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_masha_norushkina
+			}
+		}
+		localization_key = "GFX_STG_Masha_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_depuresso
+			}
+		}
+		localization_key = "GFX_STG_Depuresso_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_marussia
+			}
+		}
+		localization_key = "GFX_STG_Marussia_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_victor_historia
+			}
+		}
+		localization_key = "GFX_STG_Victor_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_that_bt7
+			}
+		}
+		localization_key = "GFX_STG_BT7ohYeah_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = STG
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = STG_chernushka
+			}
+		}
+		localization_key = "GFX_STG_Chernushka_portrait"
+	}
+	##CHN
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_trimmel
+			}
+		}
+		localization_key = "GFX_CHN_Trimmel_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_hermis_thysbe
+			}
+		}
+		localization_key = "GFX_CHN_HermisThysbe_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_carolina_phymata
+			}
+		}
+		localization_key = "GFX_CHN_CarolinaPhymata_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_limacus_uptrich
+			}
+		}
+		localization_key = "GFX_CHN_LimacusUptrich_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_cimex
+			}
+		}
+		localization_key = "GFX_CHN_Cimex_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_lascor_erebidae
+			}
+		}
+		localization_key = "GFX_CHN_LascorErebidae_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_narcys_murx
+			}
+		}
+		localization_key = "GFX_CHN_NarcysMurx_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_vect
+			}
+		}
+		localization_key = "GFX_CHN_Vect_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_actia_pagala
+			}
+		}
+		localization_key = "GFX_CHN_ActiaPagala_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_thiefio_bit
+			}
+		}
+		localization_key = "GFX_CHN_ThiefioBit_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_osteitis
+			}
+		}
+		localization_key = "GFX_CHN_Osteitis_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_manti_ligiosa
+			}
+		}
+		localization_key = "GFX_CHN_MantiLigiosa_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_opteris
+			}
+		}
+		localization_key = "GFX_CHN_Phalanx_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_epargy_clarus
+			}
+		}
+		localization_key = "GFX_CHN_EpargyClarus_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_tetti_rhombi
+			}
+		}
+		localization_key = "GFX_CHN_TettiRhombi_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_oecan_fultoni
+			}
+		}
+		localization_key = "GFX_CHN_OecanFultoni_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_latro_mactans
+			}
+		}
+		localization_key = "GFX_CHN_LatroMactans_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_pharynx
+			}
+		}
+		localization_key = "GFX_CHN_Pharynx_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_azure_lore
+			}
+		}
+		localization_key = "GFX_CHN_Azure_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_larynx
+			}
+		}
+		localization_key = "GFX_CHN_Larynx_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_cinctus_araxis
+			}
+		}
+		localization_key = "GFX_CHN_CinctusAraxis_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_sooty
+			}
+		}
+		localization_key = "GFX_CHN_Sooty_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_dieter_heinrich
+			}
+		}
+		localization_key = "GFX_CHN_Dieter_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_venyx
+			}
+		}
+		localization_key = "GFX_CHN_Venyx_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_zellix
+			}
+		}
+		localization_key = "GFX_CHN_Zellix_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_lunason
+			}
+		}
+		localization_key = "GFX_CHN_Lunason_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_elvir_roland
+			}
+		}
+		localization_key = "GFX_CHN_Rommellol_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_kitu
+			}
+		}
+		localization_key = "GFX_CHN_Kitu_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = CHN
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = CHN_qwiksis
+			}
+		}
+		localization_key = "GFX_CHN_Qwiksis_portrait"
+	}
+	##OLE
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_carl_gustaf_manntlerhim
+			}
+		}
+		localization_key = "GFX_OLE_Manntlerhim_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_lord_roshuo
+			}
+		}
+		localization_key = "GFX_OLE_LordRoshuo_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_haakon_lurswig
+			}
+		}
+		localization_key = "GFX_OLE_Haakon_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_spurdo_s_perkele
+			}
+		}
+		localization_key = "GFX_OLE_Perkele_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_ansa_sito
+			}
+		}
+		localization_key = "GFX_OLE_Ansasito_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_alvari_pirhonen
+			}
+		}
+		localization_key = "GFX_OLE_Alvari_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_einair_kainen
+			}
+		}
+		localization_key = "GFX_OLE_EinairKainen_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_eilert
+			}
+		}
+		localization_key = "GFX_OLE_Olen_portrait"
+	}
+	text = {
+		trigger = {
+			original_tag = OLE
+			var:ROOT.EoF_army_leaders^ROOT.selected_leader_index_var = {
+				is_character = OLE_rikka_kaalinpaa
+			}
+		}
+		localization_key = "GFX_OLE_RikkaTakkeada_portrait"
+	}
+	##PLB
+
+	text = {
+		localization_key = "GFX_portrait_pony_generic_1"
+	}
+}

@@ -1,0 +1,400 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_EOF_academy_bg"
+		textureFile = "gfx/interface/academy_gfx/academy_bg.dds"
+	}
+
+
+	##PORTRAITS
+	#EQS
+	spriteType = {
+		name = "GFX_EQS_Blueblood_portrait"
+		textureFile = "gfx/leaders/EQS/Blueblood.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_EmberSpark_portrait"
+		textureFile = "gfx/leaders/EQS/Prez_Ember.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_SunsetShimmer_portrait"
+		textureFile = "gfx/leaders/EQS/Sunset.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Luna_portrait"
+		textureFile = "gfx/leaders/EQS/Luna.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Soarin_portrait"
+		textureFile = "gfx/leaders/EQS/Soarin.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_FastClip_portrait"
+		textureFile = "gfx/leaders/EQS/FastClip.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Whiplash_portrait"
+		textureFile = "gfx/leaders/EQS/Whiplash.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Braeburn_portrait"
+		textureFile = "gfx/leaders/EQS/Braeburn.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Applejack_portrait"
+		textureFile = "gfx/leaders/EQS/Applejack.dds"
+	}
+	spriteType = {
+		name = "GFX_EQS_AllenSpark_portrait"
+		textureFile = "gfx/leaders/EQS/Allen.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_SwiftWing_portrait"
+		textureFile = "gfx/leaders/EQS/Swift_Wing.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Fireflight_portrait"
+		textureFile = "gfx/leaders/EQS/Fireflight.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Anonfilly_portrait"
+		textureFile = "gfx/leaders/EQS/REEEEEE.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_SergeantReckless_portrait"
+		textureFile = "gfx/leaders/EQS/Sergeant_Reckless.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_BigMac_portrait"
+		textureFile = "gfx/leaders/EQS/BigMac.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_PinkiePie_portrait"
+		textureFile = "gfx/leaders/EQS/PinkiePie.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_CaltropDecay_portrait"
+		textureFile = "gfx/leaders/EQS/Gamma.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_SunMarble_portrait"
+		textureFile = "gfx/leaders/EQS/Wilson.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_OrionStar_portrait"
+		textureFile = "gfx/leaders/EQS/Orion.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_Hoofgonery_portrait"
+		textureFile = "gfx/leaders/EQS/ComradeKir.tga"
+	}
+	spriteType = {
+		name = "GFX_EQS_SunriseMoonshadow_portrait"
+		textureFile = "gfx/leaders/EQS/sunrise_moonshadow.tga"
+	}
+	#CRY
+	spriteType = {
+		name = "GFX_CRY_reese_portrait"
+		textureFile = "gfx/leaders/CRY/Reese.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_ShiningArmour_portrait"
+		textureFile = "gfx/leaders/CRY/ShiningArmour.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_DustyEmber_portrait"
+		textureFile = "gfx/leaders/CRY/Dusty_Ember.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_ForestNutmeg_portrait"
+		textureFile = "gfx/leaders/CRY/ForestNutmeg.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_IcySnow_portrait"
+		textureFile = "gfx/leaders/CRY/Icy_snow.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Cloudie_portrait"
+		textureFile = "gfx/leaders/CRY/Cloudie.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Damiyan_portrait"
+		textureFile = "gfx/leaders/CRY/Damiyan.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Crystalline_portrait"
+		textureFile = "gfx/leaders/CRY/Crystalline.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_FlashSentry_portrait"
+		textureFile = "gfx/leaders/CRY/FlashSentry.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_SolidShot_portrait"
+		textureFile = "gfx/leaders/CRY/Solid_Shot.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Wondermane_portrait"
+		textureFile = "gfx/leaders/CRY/wondermane.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Ice_portrait"
+		textureFile = "gfx/leaders/CRY/Ice_General_Crystal_Empire_1.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_SnowPuff_portrait"
+		textureFile = "gfx/leaders/CRY/FinskaBat.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_WildStrikes_portrait"
+		textureFile = "gfx/leaders/CRY/crynie.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Sombra_portrait"
+		textureFile = "gfx/leaders/CRY/SombraGeneral.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Atom_portrait"
+		textureFile = "gfx/leaders/CRY/somegay.tga"
+	}
+	spriteType = {
+		name = "GFX_CRY_Arstozka_portrait"
+		textureFile = "gfx/leaders/CRY/ArstotzkaReptov.tga"
+	}
+	#STG
+	spriteType = {
+		name = "GFX_STG_NestorLunin_portrait"
+		textureFile = "gfx/leaders/STG/Nestor.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_EmberFlame_portrait"
+		textureFile = "gfx/leaders/STG/Ember_Flare.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Veronica_portrait"
+		textureFile = "gfx/leaders/STG/Veronica.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Gereval_portrait"
+		textureFile = "gfx/leaders/STG/Gereval.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_CherrySwirl_portrait"
+		textureFile = "gfx/leaders/STG/Cherry_Swirl.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_BlackPaint_portrait"
+		textureFile = "gfx/leaders/STG/Black_Paint.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Ulman_portrait"
+		textureFile = "gfx/leaders/STG/Ulman.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_FiatCoin_portrait"
+		textureFile = "gfx/leaders/STG/Ikapoc.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_PurpleHeart_portrait"
+		textureFile = "gfx/leaders/STG/PurpleHeart.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Katya_portrait"
+		textureFile = "gfx/leaders/STG/Katya.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Cogwheel_portrait"
+		textureFile = "gfx/leaders/STG/Ponyarchuk.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Vinous_portrait"
+		textureFile = "gfx/leaders/STG/Vinous.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_GemianSmit_portrait"
+		textureFile = "gfx/leaders/Gemian_Smit.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Whagirl_portrait"
+		textureFile = "gfx/leaders/STG/Whagirl.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Masha_portrait"
+		textureFile = "gfx/leaders/STG/Vampirenok.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Depuresso_portrait"
+		textureFile = "gfx/leaders/STG/Depuresso.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Marussia_portrait"
+		textureFile = "gfx/leaders/STG/Marussia.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Victor_portrait"
+		textureFile = "gfx/leaders/STG/CHG.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_BT7ohYeah_portrait"
+		textureFile = "gfx/leaders/STG/ThatfuckingBt7.tga"
+	}
+	spriteType = {
+		name = "GFX_STG_Chernushka_portrait"
+		textureFile = "gfx/leaders/STG/Chernushka.tga"
+	}
+	#CHN
+	spriteType = {
+		name = "GFX_CHN_Trimmel_portrait"
+		textureFile = "gfx/leaders/CHN/Trimmel.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_HermisThysbe_portrait"
+		textureFile = "gfx/leaders/CHN/Hermis_Thysbe.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_CarolinaPhymata_portrait"
+		textureFile = "gfx/leaders/CHN/Carolina_Phymata.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_LimacusUptrich_portrait"
+		textureFile = "gfx/leaders/CHN/Limacus_Uptrich.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Cimex_portrait"
+		textureFile = "gfx/leaders/CHN/Cimex.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_LascorErebidae_portrait"
+		textureFile = "gfx/leaders/CHN/Lascor_Erebidae.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_NarcysMurx_portrait"
+		textureFile = "gfx/leaders/CHN/Narcys_Murx.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Vect_portrait"
+		textureFile = "gfx/leaders/CHN/Vect.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_ActiaPagala_portrait"
+		textureFile = "gfx/leaders/CHN/Actia_Pagala.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_ThiefioBit_portrait"
+		textureFile = "gfx/leaders/CHN/Thiefio_Bit.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Osteitis_portrait"
+		textureFile = "gfx/leaders/CHN/Default.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_MantiLigiosa_portrait"
+		textureFile = "gfx/leaders/CHN/Manti_Ligiosa.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Phalanx_portrait"
+		textureFile = "gfx/leaders/CHN/Phalanx.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_EpargyClarus_portrait"
+		textureFile = "gfx/leaders/CHN/Epargy_Clarus.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_TettiRhombi_portrait"
+		textureFile = "gfx/leaders/CHN/Tetti_Rhombi.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_OecanFultoni_portrait"
+		textureFile = "gfx/leaders/CHN/Oecan_Fultoni.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_LatroMactans_portrait"
+		textureFile = "gfx/leaders/CHN/Latro_Mactans.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Pharynx_portrait"
+		textureFile = "gfx/leaders/CHN/Pharynx.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Azure_portrait"
+		textureFile = "gfx/leaders/CHN/Azure.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Larynx_portrait"
+		textureFile = "gfx/leaders/CHN/Larynx.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_CinctusAraxis_portrait"
+		textureFile = "gfx/leaders/CHN/Cinctus_Araxis.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Sooty_portrait"
+		textureFile = "gfx/leaders/CHN/Sooty.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Dieter_portrait"
+		textureFile = "gfx/leaders/CHN/Dieter.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Venyx_portrait"
+		textureFile = "gfx/leaders/CHN/Venyx.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Zellix_portrait"
+		textureFile = "gfx/leaders/CHN/Zellix.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Lunason_portrait"
+		textureFile = "gfx/leaders/CHN/Lunason.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Rommellol_portrait"
+		textureFile = "gfx/leaders/CHN/Rommellol.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Kitu_portrait"
+		textureFile = "gfx/leaders/CHN/Kitu.tga"
+	}
+	spriteType = {
+		name = "GFX_CHN_Qwiksis_portrait"
+		textureFile = "gfx/leaders/CHN/Qwiksis.tga"
+	}
+	#OLE
+	spriteType = {
+		name = "GFX_OLE_Manntlerhim_portrait"
+		textureFile = "gfx/leaders/OLE/Manntlerhim.dds"
+	}
+	spriteType = {
+		name = "GFX_OLE_LordRoshuo_portrait"
+		textureFile = "gfx/leaders/OLE/Lord-Roshuo.dds"
+	}
+	spriteType = {
+		name = "GFX_OLE_Haakon_portrait"
+		textureFile = "gfx/leaders/OLE/Haakon.dds"
+	}
+	spriteType = {
+		name = "GFX_OLE_Perkele_portrait"
+		textureFile = "gfx/leaders/OLE/Perkele.dds"
+	}
+	spriteType = {
+		name = "GFX_OLE_Ansasito_portrait"
+		textureFile = "gfx/leaders/OLE/Ansasito.tga"
+	}
+	spriteType = {
+		name = "GFX_OLE_Alvari_portrait"
+		textureFile = "gfx/leaders/OLE/Alvari.tga"
+	}
+	spriteType = {
+		name = "GFX_OLE_EinairKainen_portrait"
+		textureFile = "gfx/leaders/OLE/Cherrypone.tga"
+	}
+	spriteType = {
+		name = "GFX_OLE_Olen_portrait"
+		textureFile = "gfx/leaders/OLE/Olen.tga"
+	}
+	spriteType = {
+		name = "GFX_OLE_RikkaTakkeada_portrait"
+		textureFile = "gfx/leaders/OLE/Rikka_Takkeada.tga"
+	}
+	#PLB
+	
+}

@@ -30,8 +30,10 @@ scripted_gui = {
 			has_country_flag = EoF_show_school_window
 		}
 
-		# effect = {
-
-		# }
+		properties = {
+			portrait_btn = {
+				image = "[GetLeaderPortrait]"
+			}
+		}
 	}
 }
