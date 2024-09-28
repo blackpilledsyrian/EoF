@@ -311,8 +311,7 @@ EoF_category = {
 				}
 				support = {
 					heavy_artillery = { x = 0 y = 0 }
-					artillery = { x = 0 y = 1 }
-					engineer = { x = 0 y = 2 }
+					engineer = { x = 0 y = 1 }
 				}
 			}
 			random_owned_controlled_state = {

@@ -2373,6 +2373,7 @@ hidden_effect = {
 		completion_reward = {
 			379 = {
 				remove_core_of = GRI
+				start_resistance = yes
 			}
 		}
 	}

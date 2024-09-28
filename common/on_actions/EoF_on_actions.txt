@@ -1090,4 +1090,37 @@ on_actions = {
 			}
 		}
 	}
+	#WNG Capitulation Whitepeace
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						tag = WNG
+					}
+				}
+				WNG = {
+					every_enemy_country = {
+						white_peace = WNG
+					}
+					leave_faction = yes
+					set_country_flag = demilitarized
+					add_ideas = civilian_economy
+					add_ideas = disarmed_nation
+				}
+				487 = {
+					add_core_of = JER
+					transfer_state_to = JER
+				}
+				652 = {
+					add_core_of = JER
+					transfer_state_to = JER
+				}
+				521 = {
+					add_core_of = JER
+					transfer_state_to = JER
+				}
+			}
+		}
+	}
 }

@@ -30851,6 +30851,7 @@ shared_focus = {
 				has_war = no
 			}
 		}
+		always = no
 	}
 
 	cancel_if_invalid = yes
