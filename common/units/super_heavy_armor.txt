@@ -41,7 +41,7 @@ sub_units = {
 			armor_value = 0.05
 			breakthrough = 0.05
 		}
-		supply_consumption = 0.47
+		supply_consumption = 0.4
 
 		suppression = 2.5
 		hills = {
@@ -95,7 +95,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.47
+		supply_consumption = 0.4
 
 		breakthrough = -0.25
 		soft_attack = -0.3
@@ -152,7 +152,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.47
+		supply_consumption = 0.4
 
 		breakthrough = -0.25
 		soft_attack = 0.3
@@ -262,7 +262,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.47
+		supply_consumption = 0.4
 
 		breakthrough = -0.25
 		soft_attack = -0.3
@@ -318,7 +318,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.75
-		supply_consumption = 0.47
+		supply_consumption = 0.4
 
 		breakthrough = -0.25
 		soft_attack = 0.3

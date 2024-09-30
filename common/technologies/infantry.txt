@@ -2431,9 +2431,10 @@ technologies = {
 
 	armored_car1 = {
 
-		# enable_subunits = {
-		# 	armored_car
-		# }
+		enable_subunits = {
+			armored_car
+			armored_car_support
+		}
 
 		enable_equipments = {
 			gw_armored_car_equipment

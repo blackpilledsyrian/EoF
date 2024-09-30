@@ -3191,31 +3191,31 @@ technologies = {
 				light_tank_chassis = -4
 			}		
 		}
-		reinforced_light_armor = {
-			need = {
-				light_tank_chassis = -4
-			}
-		}
+		# reinforced_light_armor = {
+		# 	need = {
+		# 		light_tank_chassis = -4
+		# 	}
+		# }
 		medium_armor = {
 			need = {
 				medium_tank_chassis = -4
 			}		
 		}
-		reinforced_medium_armor = {
-			need = {
-				medium_tank_chassis = -4
-			}
-		}
+		# reinforced_medium_armor = {
+		# 	need = {
+		# 		medium_tank_chassis = -4
+		# 	}
+		# }
 		heavy_armor = {
 			need = {
 				heavy_tank_chassis = -4
 			}		
 		}
-		reinforced_heavy_armor = {
-			need = {
-				heavy_tank_chassis = -4
-			}
-		}
+		# reinforced_heavy_armor = {
+		# 	need = {
+		# 		heavy_tank_chassis = -4
+		# 	}
+		# }
 
 		supply_consumption_factor = -0.10
 		custom_modifier_tooltip = EoF_operational_concentration_tt

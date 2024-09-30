@@ -35,7 +35,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1
-		supply_consumption = 0.3
+		supply_consumption = 0.25
 
 		breakthrough = -0.25
 		soft_attack = -0.3
@@ -108,7 +108,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.25
-		supply_consumption = 0.35
+		supply_consumption = 0.3
 
 		breakthrough = -0.25
 		soft_attack = -0.3
@@ -184,7 +184,7 @@ sub_units = {
 		default_morale = 0.3
 		max_strength = 2
 		weight = 1.5
-		supply_consumption = 0.4
+		supply_consumption = 0.35
 
 		breakthrough = -0.25
 		soft_attack = -0.3
@@ -263,7 +263,7 @@ sub_units = {
 		max_strength = 2
 		training_time = 180
 		weight = 1.5
-		supply_consumption = 0.35
+		supply_consumption = 0.3
 
 		breakthrough = -0.25
 		soft_attack = -0.3

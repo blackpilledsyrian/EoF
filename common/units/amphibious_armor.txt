@@ -36,7 +36,7 @@ sub_units = {
 		training_time = 180
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.27
+		supply_consumption = 0.25
 		suppression = 0.01
 
 		forest = {
@@ -106,7 +106,7 @@ sub_units = {
 		training_time = 180
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.27
+		supply_consumption = 0.25
 		suppression = 0.01
 
 		forest = {
@@ -172,7 +172,7 @@ sub_units = {
 		training_time = 180
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.27
+		supply_consumption = 0.3
 		suppression = 0.01
 
 		forest = {
@@ -241,7 +241,7 @@ sub_units = {
 		training_time = 180
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.27
+		supply_consumption = 0.35
 		suppression = 0.01
 
 		forest = {
@@ -312,7 +312,7 @@ sub_units = {
 		training_time = 180
 		max_strength = 2
 		weight = 1
-		supply_consumption = 0.27
+		supply_consumption = 0.3
 		suppression = 0.01
 
 		forest = {

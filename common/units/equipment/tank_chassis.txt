@@ -126,6 +126,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -170,7 +174,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -687,6 +691,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -730,7 +738,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -1219,6 +1227,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -1263,7 +1275,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -1812,6 +1824,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -1852,7 +1868,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -2178,6 +2194,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -2221,7 +2241,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret
@@ -2479,6 +2499,10 @@ equipments = {
 		module_count_limit = {
 			module = sloped_armor
 			count < 2
+		}
+		module_count_limit = {
+			module = pike_nose_armor
+			count < 2
 		}	
 		module_count_limit = {
 			category = tank_radio_module
@@ -2519,7 +2543,7 @@ equipments = {
 		}
 		module_count_limit = {
 			category = tank_special_module_stabilizer
-			count < 3
+			count < 2
 		}
 		module_count_limit = {
 			module = oscillating_turret

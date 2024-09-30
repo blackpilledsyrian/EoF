@@ -67,6 +67,8 @@ medium_tank_recon:0 "Medium Armored Recon Company"
 medium_tank_recon_desc:0 "Using medium tanks in a recon role, we can conduct reconnaisance by fire and get a better understanding of what we are facing."
 headquarters:0 "Headquarters"
 headquarter_desc:0 "The centre of the division's organization and tactical command."
+armored_car_support:0 "Armored Car Support"
+armored_car_support_desc:0 "Employment of armored cars as skirmishing, rapid response and infantry support vehicles."
 
 tech_headquarters:0 "Headquarters I"
 tech_headquarters_desc:0 "Maintaining an organized and effective command structure within a modern division requires dedicated personal, equipment and facilities. As the complexity of war deepens, frontline headquarters will become more and more important."

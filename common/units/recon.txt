@@ -233,8 +233,8 @@ sub_units = {
 			armored_car_equipment = 24
 		}
 		battalion_mult = {
-			category = category_artillery
-			soft_attack = 0.10
+			category = category_all_armor
+			hard_attack = 0.05
 		}
 		
 		forest = {

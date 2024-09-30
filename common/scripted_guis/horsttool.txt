@@ -86,17 +86,17 @@ scripted_gui = {
 									magical_mechanized = { x = 1 y = 1 }
 									magical_mechanized = { x = 1 y = 2 }
 							
-									reinforced_medium_armor = { x = 2 y = 0 }
-									reinforced_medium_armor = { x = 2 y = 1 }
-									reinforced_medium_armor = { x = 2 y = 2 }
+									medium_armor = { x = 2 y = 0 }
+									medium_armor = { x = 2 y = 1 }
+									medium_armor = { x = 2 y = 2 }
 
-									reinforced_medium_armor = { x = 3 y = 0 }
-									reinforced_medium_armor = { x = 3 y = 1 }
-									reinforced_medium_armor = { x = 3 y = 2 }
+									medium_armor = { x = 3 y = 0 }
+									medium_armor = { x = 3 y = 1 }
+									medium_armor = { x = 3 y = 2 }
 
-									reinforced_medium_armor = { x = 4 y = 0 }
-									reinforced_medium_armor = { x = 4 y = 1 }
-									reinforced_medium_armor = { x = 4 y = 2 }
+									medium_armor = { x = 4 y = 0 }
+									medium_armor = { x = 4 y = 1 }
+									medium_armor = { x = 4 y = 2 }
 								}
 							}
 						}

@@ -371,17 +371,17 @@ country_event = {
 					magical_mechanized = { x = 1 y = 1 }
 					magical_mechanized = { x = 1 y = 2 }
 
-					reinforced_heavy_armor = { x = 2 y = 0 }
-					reinforced_heavy_armor = { x = 2 y = 1 }
-					reinforced_heavy_armor = { x = 2 y = 2 }
+					heavy_armor = { x = 2 y = 0 }
+					heavy_armor = { x = 2 y = 1 }
+					heavy_armor = { x = 2 y = 2 }
 
-					reinforced_heavy_armor = { x = 3 y = 0 }
-					reinforced_heavy_armor = { x = 3 y = 1 }
-					reinforced_heavy_armor = { x = 3 y = 2 }
+					heavy_armor = { x = 3 y = 0 }
+					heavy_armor = { x = 3 y = 1 }
+					heavy_armor = { x = 3 y = 2 }
 
-					reinforced_heavy_armor = { x = 4 y = 0 }
-					reinforced_heavy_armor = { x = 4 y = 1 }
-					reinforced_heavy_armor = { x = 4 y = 2 }
+					heavy_armor = { x = 4 y = 0 }
+					heavy_armor = { x = 4 y = 1 }
+					heavy_armor = { x = 4 y = 2 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -433,17 +433,17 @@ country_event = {
 					magical_mechanized = { x = 1 y = 1 }
 					magical_mechanized = { x = 1 y = 2 }
 
-					reinforced_medium_armor = { x = 2 y = 0 }
-					reinforced_medium_armor = { x = 2 y = 1 }
-					reinforced_medium_armor = { x = 2 y = 2 }
+					medium_armor = { x = 2 y = 0 }
+					medium_armor = { x = 2 y = 1 }
+					medium_armor = { x = 2 y = 2 }
 
-					reinforced_medium_armor = { x = 3 y = 0 }
-					reinforced_medium_armor = { x = 3 y = 1 }
-					reinforced_medium_armor = { x = 3 y = 2 }
+					medium_armor = { x = 3 y = 0 }
+					medium_armor = { x = 3 y = 1 }
+					medium_armor = { x = 3 y = 2 }
 
-					reinforced_medium_armor = { x = 4 y = 0 }
-					reinforced_medium_armor = { x = 4 y = 1 }
-					reinforced_medium_armor = { x = 4 y = 2 }
+					medium_armor = { x = 4 y = 0 }
+					medium_armor = { x = 4 y = 1 }
+					medium_armor = { x = 4 y = 2 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }
@@ -504,17 +504,17 @@ country_event = {
 					magical_mechanized = { x = 1 y = 1 }
 					magical_mechanized = { x = 1 y = 2 }
 
-					reinforced_light_armor = { x = 2 y = 0 }
-					reinforced_light_armor = { x = 2 y = 1 }
-					reinforced_light_armor = { x = 2 y = 2 }
+					light_armor = { x = 2 y = 0 }
+					light_armor = { x = 2 y = 1 }
+					light_armor = { x = 2 y = 2 }
 
-					reinforced_light_armor = { x = 3 y = 0 }
-					reinforced_light_armor = { x = 3 y = 1 }
-					reinforced_light_armor = { x = 3 y = 2 }
+					light_armor = { x = 3 y = 0 }
+					light_armor = { x = 3 y = 1 }
+					light_armor = { x = 3 y = 2 }
 
-					reinforced_light_armor = { x = 4 y = 0 }
-					reinforced_light_armor = { x = 4 y = 1 }
-					reinforced_light_armor = { x = 4 y = 2 }
+					light_armor = { x = 4 y = 0 }
+					light_armor = { x = 4 y = 1 }
+					light_armor = { x = 4 y = 2 }
 				}
 				support = {
 					engineer = { x = 0 y = 0 }

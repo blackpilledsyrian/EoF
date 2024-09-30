@@ -7905,7 +7905,7 @@ leader_traits = {
 
 
 	army_chief_offensive_1 = { # +5 Offensive efficiency
-		army_attack_factor = 0.03
+		army_attack_factor = 0.06
 		ai_focus_aggressive_factor = 0.15
 		experience_gain_army = @chief_experience_gain_low
 
@@ -7921,7 +7921,7 @@ leader_traits = {
 	}
 
 	army_chief_offensive_2 = { # +10 Offensive efficiency
-		army_attack_factor = 0.06
+		army_attack_factor = 0.09
 		ai_focus_aggressive_factor = 0.15
 		experience_gain_army = @chief_experience_gain_medium
 
@@ -7937,7 +7937,7 @@ leader_traits = {
 	}
 
 	army_chief_offensive_3 = { # +15 Offensive efficiency
-		army_attack_factor = 0.09
+		army_attack_factor = 0.12
 		ai_focus_aggressive_factor = 0.15
 		experience_gain_army = @chief_experience_gain_high
 
@@ -8337,8 +8337,8 @@ leader_traits = {
 
 
 	army_armored_1 = { # +4 armor efficiency
-		army_armor_attack_factor = 0.03
-	    army_armor_defence_factor = 0.03
+		army_armor_attack_factor = 0.06
+	    army_armor_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8353,8 +8353,8 @@ leader_traits = {
 	}
 
 	army_armored_2 = { # +8 armor efficiency
-		army_armor_attack_factor = 0.06
-	    army_armor_defence_factor = 0.06
+		army_armor_attack_factor = 0.09
+	    army_armor_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8369,8 +8369,8 @@ leader_traits = {
 	}
 
 	army_armored_3 = { # +12 armor efficiency
-		army_armor_attack_factor = 0.09
-	    army_armor_defence_factor = 0.09
+		army_armor_attack_factor = 0.12
+	    army_armor_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8387,8 +8387,8 @@ leader_traits = {
 
 	army_artillery_1 = { # +4 artillery efficiency
 		
-		army_artillery_attack_factor = 0.03
-		army_artillery_defence_factor = 0.03
+		army_artillery_attack_factor = 0.06
+		army_artillery_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8404,8 +8404,8 @@ leader_traits = {
 
 	army_artillery_2 = { # +8 artillery efficiency
 		
-		army_artillery_attack_factor = 0.06
-		army_artillery_defence_factor = 0.06
+		army_artillery_attack_factor = 0.09
+		army_artillery_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8421,8 +8421,8 @@ leader_traits = {
 
 	army_artillery_3 = { # +12 artillery efficiency
 		
-		army_artillery_attack_factor = 0.09
-		army_artillery_defence_factor = 0.09
+		army_artillery_attack_factor = 0.12
+		army_artillery_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8438,8 +8438,8 @@ leader_traits = {
 
 
 	army_infantry_1 = { # +4 infantry efficiency
-		army_infantry_attack_factor = 0.03
-		army_infantry_defence_factor = 0.03
+		army_infantry_attack_factor = 0.06
+		army_infantry_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8454,8 +8454,8 @@ leader_traits = {
 	}
 
 	army_infantry_2 = { # +8 infantry efficiency
-		army_infantry_attack_factor = 0.06
-		army_infantry_defence_factor = 0.06
+		army_infantry_attack_factor = 0.09
+		army_infantry_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8470,8 +8470,8 @@ leader_traits = {
 	}
 
 	army_infantry_3 = { # +12 infantry efficiency
-		army_infantry_attack_factor = 0.09
-		army_infantry_defence_factor = 0.09
+		army_infantry_attack_factor = 0.12
+		army_infantry_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8487,8 +8487,8 @@ leader_traits = {
 
 
 	army_commando_1 = { # +4 paratrooper/marine/mountain efficiency
-		special_forces_attack_factor = 0.03
-		special_forces_defence_factor = 0.03
+		special_forces_attack_factor = 0.06
+		special_forces_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8503,8 +8503,8 @@ leader_traits = {
 	}
 
 	army_commando_2 = { # +8 paratrooper/marine/mountain efficiency
-		special_forces_attack_factor = 0.05
-		special_forces_defence_factor = 0.05
+		special_forces_attack_factor = 0.09
+		special_forces_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8519,8 +8519,8 @@ leader_traits = {
 	}
 
 	army_commando_3 = { # +12 paratrooper/marine/mountain efficiency
-		special_forces_attack_factor = 0.09
-		special_forces_defence_factor = 0.09
+		special_forces_attack_factor = 0.12
+		special_forces_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8536,8 +8536,8 @@ leader_traits = {
 
 
 	army_cavalry_1 = { # +4 cavalry/motorized efficiency
-		motorized_attack_factor = 0.03
-		motorized_defence_factor = 0.03		
+		motorized_attack_factor = 0.06
+		motorized_defence_factor = 0.06		
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8552,8 +8552,8 @@ leader_traits = {
 	}
 
 	army_cavalry_2 = { # +8 cavalry/motorized efficiency
-		motorized_attack_factor = 0.06
-		motorized_defence_factor = 0.06
+		motorized_attack_factor = 0.09
+		motorized_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8568,8 +8568,8 @@ leader_traits = {
 	}
 
 	army_cavalry_3 = { # +12 cavalry/motorized efficiency
-		motorized_attack_factor = 0.09
-		motorized_defence_factor = 0.09		
+		motorized_attack_factor = 0.12
+		motorized_defence_factor = 0.12		
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
@@ -8584,8 +8584,8 @@ leader_traits = {
 	}
 
 	army_CombinedArms_1 = { # +4 cavalry/motorized efficiency
-		mechanized_attack_factor = 0.03
-		mechanized_defence_factor = 0.03
+		mechanized_attack_factor = 0.06
+		mechanized_defence_factor = 0.06
 		#experience_gain_army = @experience_gain_low
 
 		command_cap = @tier1
@@ -8600,8 +8600,8 @@ leader_traits = {
 	}
 
 	army_CombinedArms_2 = { # +8 cavalry/motorized efficiency
-		mechanized_attack_factor = 0.06
-		mechanized_defence_factor = 0.06
+		mechanized_attack_factor = 0.09
+		mechanized_defence_factor = 0.09
 		#experience_gain_army = @experience_gain_medium
 
 		command_cap = @tier2
@@ -8616,8 +8616,8 @@ leader_traits = {
 	}
 
 	army_CombinedArms_3 = { # +12 cavalry/motorized efficiency
-		mechanized_attack_factor = 0.09
-		mechanized_defence_factor = 0.09
+		mechanized_attack_factor = 0.12
+		mechanized_defence_factor = 0.12
 		#experience_gain_army = @experience_gain_high
 
 		command_cap = @tier3
