@@ -164,18 +164,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_high_velocity_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_1.dds"
+		name = "GFX_EMI_tank_medium_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_high_velocity_cannon_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_2.dds"
+		name = "GFX_EMI_tank_small_high_velocity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_1.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_high_velocity_cannon_3"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_3.dds"
+		name = "GFX_EMI_tank_small_high_velocity_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_high_velocity_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -194,6 +204,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_high_velocity_cannon"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_1.dds"
 		legacy_lazy_load = no
@@ -206,6 +221,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_high_velocity_cannon_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -244,8 +264,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_medium_howitzer_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_medium_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -492,8 +532,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/artillery4.dds"
 	}
 	SpriteType = {
+		name = "GFX_heavyartillery9_medium"
+		textureFile = "gfx/interface/technologies/heavy_artillery_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_fieldgun0_medium"
+		textureFile = "gfx/interface/technologies/antitank1.dds"
+	}
+	SpriteType = {
 		name = "GFX_fieldgun1_medium"
 		textureFile = "gfx/interface/technologies/antitank1.dds"
+	}
+	SpriteType = {
+		name = "GFX_antitank0_medium"
+		textureFile = "gfx/interface/technologies/antitank2.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavyantitank1_medium"
@@ -517,19 +569,35 @@ spriteTypes = {
 	}
 	SpriteType = {
 		name = "GFX_heavyantiair2_medium"
-		textureFile = "gfx/interface/technologies/antiair2.dds"
+		textureFile = "gfx/interface/technologies/antiair1.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavyantiair3_medium"
-		textureFile = "gfx/interface/technologies/antiair3.dds"
+		textureFile = "gfx/interface/technologies/antiair2.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavyantiair4_medium"
-		textureFile = "gfx/interface/technologies/antiair4.dds"
+		textureFile = "gfx/interface/technologies/heavy_AA_2.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavyantiair5_medium"
-		textureFile = "gfx/interface/technologies/heavy_AA_2.dds"
+		textureFile = "gfx/interface/technologies/antiair3.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair6_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair6_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	SpriteType = {
+		name = "GFX_artillery0_medium"
+		textureFile = "gfx/interface/technologies/artillery1.dds"
+	}
+	SpriteType = {
+		name = "GFX_rocket_artillery5_medium"
+		textureFile = "gfx/interface/technologies/rocket_artillery4.dds"
 	}
 	SpriteType = {
 		name = "GFX_gun_tech_1_medium"

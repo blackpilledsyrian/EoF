@@ -126,6 +126,7 @@ shared_focus = {
 			technology = heavyartillery6
 			technology = heavyartillery7
 			technology = heavyartillery8
+			technology = heavyartillery9
 		}
 	}
 }

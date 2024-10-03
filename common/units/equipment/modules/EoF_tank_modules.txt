@@ -8,7 +8,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		allowed_module_categories = {
-			advanced_main_armament_slot = {
+			main_armament_slot = {
 				tank_advanced_small_main_armament
 			}
 		}
@@ -31,9 +31,6 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-			}
-			advanced_main_armament_slot = {
 				tank_medium_main_armament
 				tank_advanced_small_main_armament
 				tank_advanced_medium_main_armament
@@ -58,10 +55,6 @@ equipment_modules = {
 
 		allowed_module_categories = {
 			main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
-			}
-			advanced_main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
 				tank_advanced_small_main_armament

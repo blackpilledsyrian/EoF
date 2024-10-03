@@ -203,13 +203,11 @@ ideas = {
 			removal_cost = -1
 			picture = generic_navy_bonus
 			modifier = {
-				port_strike = 1
-				sortie_efficiency = 0.3
 				naval_hit_chance = 0.1
 				naval_damage_factor = 0.2
 				naval_defense_factor = 0.2
-				air_carrier_night_penalty_reduction_factor = 0.33
-				carrier_night_traffic = 0.5
+				naval_speed_factor = 0.1
+				positioning = 0.2
 			}			
 		}
 		EoF_payment = {

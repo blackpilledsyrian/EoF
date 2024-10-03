@@ -5107,7 +5107,6 @@ country_event = {
 		country_event = {
 			id = hippogriff_society.0
 			days = 120
-			random_days = 3
 		}
 	}
 
@@ -5125,43 +5124,19 @@ country_event = {
 				limit = {
 					HIP_is_going_seapony = yes
 				}
-				random_list = {
-					10 = {
-						country_event = {
-							id = hippogriff_society.1
-							days = 7
-							random_days = 6
-						}
-					}
-				}
+				country_event = hippogriff_society.1
 			}
 			else_if = {
 				limit = {
 					HIP_is_going_hippogriff = yes
 				}
-				random_list = {
-					10 = {
-						country_event = {
-							id = hippogriff_society.2
-							days = 7
-							random_days = 6
-						}
-					}
-				}
+				country_event = hippogriff_society.2
 			}
 			else_if = {
 				limit = {
 					has_idea = HIP_divided_society_5
 				}
-				random_list = {
-					10 = {
-						country_event = {
-							id = hippogriff_society.3
-							days = 7
-							random_days = 6
-						}
-					}
-				}
+				country_event = hippogriff_society.3
 			}
 		}
 	}
@@ -5178,7 +5153,6 @@ country_event = {
 	option = { # Hippogriff
 		name = hippogriff_society.1.a
 		HIP_increase_divided_society = yes
-		add_political_power = -30
 		ai_chance = {
 			base = 5
 			modifier = {
@@ -5193,7 +5167,6 @@ country_event = {
 	}
 	option = {
 		name = hippogriff_society.1.b
-		add_political_power = -5
 		ai_chance = {
 			base = 2
 		}
@@ -5217,7 +5190,6 @@ country_event = {
 
 	option = { # Seapony
 		name = hippogriff_society.2.a
-		add_political_power = -30
 		HIP_decrease_divided_society = yes
 		ai_chance = {
 			base = 5
@@ -5233,7 +5205,6 @@ country_event = {
 	}
 	option = {
 		name = hippogriff_society.2.b
-		add_political_power = -5
 		ai_chance = {
 			base = 2
 		}
@@ -5280,7 +5251,6 @@ country_event = {
 	}
 	option = {
 		name = hippogriff_society.3.b
-		add_political_power = -60
 		ai_chance = {
 			base = 5
 		}
