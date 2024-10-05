@@ -5340,7 +5340,12 @@ shared_focus = {
 	available = {
 		OLE = {
 			is_subject_of = CHN
+			controls_state = 558
+			controls_state = 578
+			controls_state = 413
+			controls_state = 680
 		}
+
 	}
 	completion_reward = {
 		if = {

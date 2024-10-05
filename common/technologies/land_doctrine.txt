@@ -1517,7 +1517,7 @@ technologies = {
 		enable_tactic = tactic_tactical_withdrawal
 
 		category_front_line = {
-			max_organisation = 5
+			max_organisation = 3
 		}
 		headquarters = {
 			battalion_mult = {

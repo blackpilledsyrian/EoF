@@ -142,7 +142,7 @@ NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {		-- 0 armor will always 
 		0.00
 	}
 
-NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.5			-- how to weight in highest armor & pen vs the division average
+NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.3			-- how to weight in highest armor & pen vs the division average
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.3
 
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 168		-- default capacity if not specified

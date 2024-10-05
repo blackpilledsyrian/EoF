@@ -911,7 +911,7 @@ focus_tree = {
 					instant_build = yes
 				} 
 			}
-			add_named_threat = { threat = 5 name = pressure_olenia }
+			add_named_threat = { threat = 10 name = pressure_olenia }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
@@ -5548,7 +5548,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EoF_polar_relations
 		completion_reward = {
-			add_threat = 10
+			add_threat = 5
 			country_event = EoF.6
 		}
 	}

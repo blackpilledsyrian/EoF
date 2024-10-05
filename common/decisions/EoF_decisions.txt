@@ -193,6 +193,12 @@ political_actions = {
 					idea = EoF_taifunkrieg
 					days = 120
 				}
+				GRI = {
+					add_timed_idea = {
+						idea = EoF_taifunkrieg
+						days = 120
+					}
+				}
 			}
 		}
 	}

@@ -9529,9 +9529,9 @@ leader_traits = {
 
 
 	navy_chief_naval_aviation_1 = {
-		navy_carrier_air_attack_factor = 2
-		navy_carrier_air_targetting_factor = 2
-		navy_carrier_air_agility_factor = 2
+		navy_carrier_air_attack_factor = 0.05
+		navy_carrier_air_targetting_factor = 0.05
+		navy_carrier_air_agility_factor = 0.05
 		experience_gain_navy = @chief_experience_gain_low
 
 		command_cap = @tier1
@@ -9546,9 +9546,9 @@ leader_traits = {
 	}
 
 	navy_chief_naval_aviation_2 = {
-		navy_carrier_air_attack_factor = 2
-		navy_carrier_air_targetting_factor = 2
-		navy_carrier_air_agility_factor = 2
+		navy_carrier_air_attack_factor = 0.1
+		navy_carrier_air_targetting_factor = 0.1
+		navy_carrier_air_agility_factor = 0.1
 		experience_gain_navy = @chief_experience_gain_medium
 
 		command_cap = @tier2
@@ -9563,9 +9563,9 @@ leader_traits = {
 	}
 
 	navy_chief_naval_aviation_3 = {
-		navy_carrier_air_attack_factor = 2
-		navy_carrier_air_targetting_factor = 2
-		navy_carrier_air_agility_factor = 2
+		navy_carrier_air_attack_factor = 0.15
+		navy_carrier_air_targetting_factor = 0.15
+		navy_carrier_air_agility_factor = 0.15
 		experience_gain_navy = @chief_experience_gain_high
 
 		command_cap = @tier3
