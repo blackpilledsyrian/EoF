@@ -52,7 +52,7 @@ equipments = {
 		visual_level = 2
 		reliability = 0.5
 		build_cost_ic = 0.81
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -63,9 +63,7 @@ equipments = {
 		parent = magical_equipment_1
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_1
-		}
+		
 		#Defensive Abilities
 		defense = 37
 		breakthrough = 5.5
@@ -81,7 +79,7 @@ equipments = {
 			steel = 30
 			crystals = 30
 		}
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -92,9 +90,7 @@ equipments = {
 		parent = magical_equipment_2
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_2
-		}
+		
 		#Defensive Abilities
 		defense = 43
 		breakthrough = 6.5
@@ -113,7 +109,7 @@ equipments = {
 			crystals = 40
 			tungsten = 10
 		}
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -124,9 +120,7 @@ equipments = {
 		parent = magical_equipment_3
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_3
-		}
+		
 		#Defensive Abilities
 		defense = 49
 		breakthrough = 7.5
@@ -157,7 +151,7 @@ equipments = {
 		is_archetype = yes
 		picture = archetype_medium_tank_equipment
 		is_buildable = no
-		is_convertable = no
+		
 		type = armor
 		group_by = archetype
 
@@ -205,7 +199,7 @@ equipments = {
 		archetype = magical_tank_equipment
 		priority = 50
 		visual_level = 0
-		is_convertable = no
+		
 
 	}
 	
@@ -257,6 +251,6 @@ equipments = {
 		archetype = magical_artillery_equipment
 		priority = 45
 		visual_level = 1
-		is_convertable = no
+		
 	}
 }

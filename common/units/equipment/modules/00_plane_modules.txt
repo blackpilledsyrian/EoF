@@ -81,10 +81,7 @@ equipment_modules = {
 			maximum_speed = 0.20
 		}
 
-		can_convert_from = {
-			module = engine_1_1x
-			convert_cost_ic = 1.5
-		}
+		
 	}
 
 	engine_2_2x = {
@@ -103,10 +100,7 @@ equipment_modules = {
 			maximum_speed = 0.20
 		}
 
-		can_convert_from = {
-			module = engine_1_2x
-			convert_cost_ic = 3
-		}
+		
 	}
 
 	engine_2_3x = {
@@ -125,10 +119,7 @@ equipment_modules = {
 			maximum_speed = 0.20
 		}
 
-		can_convert_from = {
-			module = engine_1_3x
-			convert_cost_ic = 4.5
-		}
+		
 	}
 
 	engine_2_4x = {
@@ -147,10 +138,7 @@ equipment_modules = {
 			maximum_speed = 0.20
 		}
 
-		can_convert_from = {
-			module = engine_1_4x
-			convert_cost_ic = 6
-		}
+		
 	}
 
 	engine_2_6x = {
@@ -169,10 +157,7 @@ equipment_modules = {
 			maximum_speed = 0.20
 		}
 
-		can_convert_from = {
-			module = engine_1_6x
-			convert_cost_ic = 9
-		}
+		
 	}
 
 	engine_3_1x = {
@@ -191,10 +176,7 @@ equipment_modules = {
 			maximum_speed = 0.30
 		}
 
-		can_convert_from = {
-			module = engine_2_1x
-			convert_cost_ic = 2.5
-		}
+		
 	}
 
 	engine_3_2x = {
@@ -213,10 +195,7 @@ equipment_modules = {
 			maximum_speed = 0.30
 		}
 
-		can_convert_from = {
-			module = engine_2_2x
-			convert_cost_ic = 5
-		}
+		
 	}
 
 	engine_3_3x = {
@@ -235,10 +214,7 @@ equipment_modules = {
 			maximum_speed = 0.30
 		}
 
-		can_convert_from = {
-			module = engine_2_3x
-			convert_cost_ic = 7.5
-		}
+		
 	}
 
 	engine_3_4x = {
@@ -257,10 +233,7 @@ equipment_modules = {
 			maximum_speed = 0.30
 		}
 
-		can_convert_from = {
-			module = engine_2_4x
-			convert_cost_ic = 10
-		}
+		
 	}
 
 	engine_3_6x = {
@@ -279,10 +252,7 @@ equipment_modules = {
 			maximum_speed = 0.30
 		}
 
-		can_convert_from = {
-			module = engine_2_4x
-			convert_cost_ic = 15
-		}
+		
 	}
 
 	engine_4_1x = {
@@ -301,10 +271,7 @@ equipment_modules = {
 			maximum_speed = 0.45
 		}
 
-		can_convert_from = {
-			module = engine_3_1x
-			convert_cost_ic = 3
-		}
+		
 	}
 
 	engine_4_2x = {
@@ -323,10 +290,7 @@ equipment_modules = {
 			maximum_speed = 0.45
 		}
 
-		can_convert_from = {
-			module = engine_3_2x
-			convert_cost_ic = 6
-		}
+		
 	}
 
 	engine_4_3x = {
@@ -345,10 +309,7 @@ equipment_modules = {
 			maximum_speed = 0.45
 		}
 
-		can_convert_from = {
-			module = engine_3_3x
-			convert_cost_ic = 9
-		}
+		
 	}
 
 	engine_4_4x = {
@@ -367,10 +328,7 @@ equipment_modules = {
 			maximum_speed = 0.45
 		}
 
-		can_convert_from = {
-			module = engine_3_4x
-			convert_cost_ic = 12
-		}
+		
 	}
 
 	engine_4_6x = {
@@ -389,10 +347,7 @@ equipment_modules = {
 			maximum_speed = 0.45
 		}
 
-		can_convert_from = {
-			module = engine_3_6x
-			convert_cost_ic = 18
-		}
+		
 	}
 
 	jet_engine_1x = {
@@ -417,10 +372,7 @@ equipment_modules = {
 			chromium = 10
 		}
 
-		can_convert_from = {
-			module_category = plane_engine_type
-			convert_cost_ic = 5
-		}
+		
 	}
 
 	jet_engine_2x = {
@@ -445,10 +397,7 @@ equipment_modules = {
 			chromium = 10
 		}
 
-		can_convert_from = {
-			module_category = plane_engine_type
-			convert_cost_ic = 10
-		}
+		
 	}
 
 	jet_engine_3x = {
@@ -473,10 +422,7 @@ equipment_modules = {
 			chromium = 20
 		}
 
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 15
-		}
+		
 	}
 
 	jet_engine_4x = {
@@ -500,10 +446,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 20
 		}
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 20
-		}
+		
 	}
 
 	jet_engine_6x = {
@@ -527,10 +470,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 30
 		}
-		can_convert_from = {
-			module_category = large_plane_engine_type
-			convert_cost_ic = 30
-		}
+		
 	}
 
 	jet_engine_8x = {
@@ -551,10 +491,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 40
 		}
-		can_convert_from = {
-			module_category = large_plane_jet_engine_type
-			convert_cost_ic = 40
-		}
+		
 	}
 	jet_engine_2_1x = {
 		abbreviation = "j21"
@@ -576,10 +513,7 @@ equipment_modules = {
 			chromium = 10
 		}
 
-		can_convert_from = {
-			module_category = plane_engine_type
-			convert_cost_ic = 6
-		}
+		
 	}
 
 	jet_engine_2_2x = {
@@ -602,10 +536,7 @@ equipment_modules = {
 			chromium = 10
 		}
 
-		can_convert_from = {
-			module_category = plane_engine_type
-			convert_cost_ic = 12
-		}
+		
 	}
 
 	jet_engine_2_3x = {
@@ -628,10 +559,7 @@ equipment_modules = {
 			chromium = 20
 		}
 
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 18
-		}
+		
 	}
 
 	jet_engine_2_4x = {
@@ -653,10 +581,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 20
 		}
-		can_convert_from = {
-			module_category = medium_plane_engine_type
-			convert_cost_ic = 24
-		}
+		
 	}
 
 	jet_engine_2_6x = {
@@ -678,10 +603,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 30
 		}
-		can_convert_from = {
-			module_category = large_plane_engine_type
-			convert_cost_ic = 36
-		}
+		
 	}
 
 	jet_engine_2_8x = {
@@ -703,10 +625,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 40
 		}
-		can_convert_from = {
-			module_category = large_plane_jet_engine_type
-			convert_cost_ic = 40
-		}
+		
 	}
 
 	fast_jet_engine_6x = { # special snowflake
@@ -728,10 +647,7 @@ equipment_modules = {
 		build_cost_resources = {
 			chromium = 40
 		}
-		can_convert_from = {
-			module_category = large_plane_jet_engine_type
-			convert_cost_ic = 30
-		}
+		
 	}
 
 	rocket_engine_1 = { #rocket engines only come in sets of 1
@@ -873,10 +789,7 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		can_convert_from = {
-			module = light_mg_2x
-			convert_cost_ic = 1
-		}
+		
 	}
 
 	heavy_mg_2x = {
@@ -921,10 +834,7 @@ equipment_modules = {
 				air_ground_attack = 1
 			}
 		}
-		can_convert_from = {
-			module = heavy_mg_2x
-			convert_cost_ic = 2
-		}
+		
 	}
 
 	aircraft_cannon_1_1x = {
@@ -971,10 +881,7 @@ equipment_modules = {
 				air_ground_attack = 2
 			}
 		}
-		can_convert_from = {
-			module = aircraft_cannon_1_1x
-			convert_cost_ic = 3
-		}
+		
 	}
 
 	aircraft_cannon_2_1x = {
@@ -1021,10 +928,7 @@ equipment_modules = {
 				air_ground_attack = 2
 			}
 		}
-		can_convert_from = {
-			module = aircraft_cannon_2_1x
-			convert_cost_ic = 4
-		}
+		
 	}
 
 	aircraft_cannon_3_1x = {
@@ -1065,10 +969,7 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		can_convert_from = {
-			module = aircraft_cannon_3_1x
-			convert_cost_ic = 5
-		}
+		
 	}
 
 	aircraft_cannon_4_1x = { # large line
@@ -1109,10 +1010,7 @@ equipment_modules = {
 			air_superiority
 			interception
 		}
-		can_convert_from = {
-			module = aircraft_cannon_4_1x
-			convert_cost_ic = 6
-		}
+		
 	}
 
 	large_aircraft_cannon_1x = {
@@ -1159,10 +1057,7 @@ equipment_modules = {
 				air_ground_attack = 2
 			}
 		}
-		can_convert_from = {
-			module = large_aircraft_cannon_1x
-			convert_cost_ic = 4
-		}
+		
 	}
 
 	bomb_locks = {
@@ -2962,18 +2857,9 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 1.25
-		}
-		can_convert_from = {
-			module = lmg_defense_turret
-			convert_cost_ic = 1
-		}
-		can_convert_from = {
-			module = cannon_defense_turret
-			convert_cost_ic = 1
-		}
+		
+		
+		
 		xp_cost = 0
 	}
 
@@ -3011,18 +2897,9 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 2.5
-		}
-		can_convert_from = {
-			module = hmg_defense_turret_2x
-			convert_cost_ic = 2.25
-		}
-		can_convert_from = {
-			module = cannon_defense_turret_2x
-			convert_cost_ic = 2.25
-		}
+		
+		
+		
 		xp_cost = 0
 	}
 
@@ -3059,18 +2936,9 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 2.75
-		}
-		can_convert_from = {
-			module = lmg_defense_turret
-			convert_cost_ic = 2
-		}
-		can_convert_from = {
-			module = cannon_defense_turret
-			convert_cost_ic = 2
-		}
+		
+		
+		
 		xp_cost = 0
 	}
 
@@ -3107,18 +2975,9 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 4
-		}
-		can_convert_from = {
-			module = lmg_defense_turret_2x
-			convert_cost_ic = 3
-		}
-		can_convert_from = {
-			module = cannon_defense_turret_2x
-			convert_cost_ic = 3
-		}
+		
+		
+		
 		xp_cost = 0
 	}
 
@@ -3155,14 +3014,8 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 3
-		}
-		can_convert_from = {
-			module = hmg_defense_turret
-			convert_cost_ic = 2.5
-		}
+		
+		
 		xp_cost = 0
 	}
 
@@ -3199,14 +3052,8 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 6
-		}
-		can_convert_from = {
-			module = hmg_defense_turret_2x
-			convert_cost_ic = 5
-		}
+		
+		
 		xp_cost = 0
 	}
 
@@ -3243,14 +3090,8 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 1
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret
-			convert_cost_ic = 4
-		}
-		can_convert_from = {
-			module = cannon_defense_turret
-			convert_cost_ic = 2.5
-		}
+		
+		
 		xp_cost = 0
 	}
 
@@ -3287,14 +3128,8 @@ equipment_modules = {
 		}
 
 		dismantle_cost_ic = 2
-		can_convert_from = {
-			module_category = plane_special_module_defense_turret_x2
-			convert_cost_ic = 8
-		}
-		can_convert_from = {
-			module = cannon_defense_turret_2x
-			convert_cost_ic = 5
-		}
+		
+		
 		xp_cost = 0
 	}
 

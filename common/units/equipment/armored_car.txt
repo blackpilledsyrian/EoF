@@ -10,7 +10,7 @@ equipments = {
 		# }
 		is_archetype = yes
 		is_buildable = no
-		is_convertable = yes
+		
 		picture = archetype_armored_car_equipment			
 		type = motorized
 		group_by = archetype
@@ -90,11 +90,9 @@ equipments = {
 		parent = gw_armored_car_equipment
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			gw_armored_car_equipment
-		}
+		
 
 		#recon = 2
 	}
@@ -106,7 +104,7 @@ equipments = {
 		parent = armored_car_equipment_1
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed 	= 9
@@ -131,9 +129,7 @@ equipments = {
 			tungsten = 10
 		}
 
-		can_convert_from = {
-			armored_car_equipment_1
-		}
+		
 	}
 
 	armored_car_at_equipment = {
@@ -144,7 +140,7 @@ equipments = {
 		parent = armored_car_equipment_2
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
 		#Misc Abilities
 		maximum_speed 	= 9
@@ -179,12 +175,9 @@ equipments = {
 		parent = armored_car_equipment_2
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			armored_car_equipment_2
-			armored_car_at_equipment
-		}
+		
 
 		#Misc Abilities
 		maximum_speed 	= 21
@@ -217,11 +210,9 @@ equipments = {
 		parent = armored_car_equipment_3
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			armored_car_equipment_3
-		}
+		
 
 		#Misc Abilities
 		maximum_speed 	= 24
@@ -256,11 +247,8 @@ equipments = {
 		parent = armored_car_equipment_4
 		priority = 20
 		visual_level = 1
-		can_convert_from = {
-			armored_car_equipment_4
-			armored_car_at_equipment
-		}
-		is_convertable = yes
+		
+		
 
 		#Misc Abilities
 		maximum_speed 	= 25

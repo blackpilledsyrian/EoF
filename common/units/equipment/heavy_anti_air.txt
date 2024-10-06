@@ -32,7 +32,7 @@ equipments = {
 		archetype = heavy_anti_air_equipment
 		priority = 50
 		visual_level = 0
-		is_convertable = yes
+		
 
 		#Offensive Abilities
 		soft_attack = 12
@@ -57,10 +57,8 @@ equipments = {
 		priority = 50
 		visual_level = 0
 
-		can_convert_from = {
-			heavy_anti_air_equipment_1
-		}
-		is_convertable = yes
+		
+		
 
 		#Offensive Abilities
 		soft_attack = 14

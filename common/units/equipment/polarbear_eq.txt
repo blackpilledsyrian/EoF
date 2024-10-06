@@ -35,15 +35,13 @@ equipments = {
 		archetype = polar_bear_equipment
 		priority = 30
 
-		is_convertable = yes
+		
 	}
 	polar_bear_equipment_1 = {
 		year = 1007
 		archetype = polar_bear_equipment
 		parent = polar_bear_equipment_0
-		can_convert_from = {
-			polar_bear_equipment_0
-		}
+		
 		
 		reliability = 0.8
 		hardness = 0.4

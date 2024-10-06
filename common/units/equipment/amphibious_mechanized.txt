@@ -69,9 +69,7 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		can_convert_from = {
-			amphibious_mechanized_equipment_1
-		}
+		
 
 		maximum_speed = 7
 
@@ -100,10 +98,7 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		can_convert_from = {
-			amphibious_mechanized_equipment_1
-			amphibious_mechanized_equipment_2
-		}
+		
 
 		maximum_speed = 12
 
@@ -132,10 +127,7 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		can_convert_from = {
-			amphibious_mechanized_equipment_2
-			amphibious_mechanized_equipment_3
-		}
+		
 
 		maximum_speed = 14
 
@@ -165,10 +157,7 @@ equipments = {
 		priority = 40
 		visual_level = 1
 
-		can_convert_from = {
-			amphibious_mechanized_equipment_3
-			amphibious_mechanized_equipment_4
-		}
+		
 
 		maximum_speed = 16
 

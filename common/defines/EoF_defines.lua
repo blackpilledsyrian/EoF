@@ -185,9 +185,6 @@ NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.50			-- Penalty for
 
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 1000000	-- How many deployment lines minimum can be training
 
-NDefines.NProduction.BASE_LAND_EQUIPMENT_CONVERSION_IC_COST_FACTOR = 0.5			-- Fraction of the chassis industry cost which is always included in the conversion cost.
-NDefines.NProduction.MIN_LAND_EQUIPMENT_CONVERSION_RESOURCE_COST_FACTOR = 1			-- Minimum fraction of a land equipment's strategic resource cost that any conversion will cost.
-
 NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.1		-- Conversion scale for planes to air supply
 
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0		-- Ratio for volunteer planes available for sending in relation to sender air force

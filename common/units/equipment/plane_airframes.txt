@@ -7,7 +7,7 @@ equipments = {
 		}
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_fighter_equipment
 		is_buildable = no
 		type = fighter
@@ -816,7 +816,7 @@ equipments = {
 		}
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		carrier_capable = yes
 		default_carrier_composition_weight = 1
 		picture = archetype_fighter_equipment
@@ -1603,7 +1603,7 @@ equipments = {
 		}
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = tactical_bomber
@@ -2708,7 +2708,7 @@ equipments = {
 		}
 
 		is_archetype = yes
-		is_convertable = yes
+		
 		picture = archetype_strat_bomber_equipment
 		is_buildable = no
 		type = strategic_bomber
