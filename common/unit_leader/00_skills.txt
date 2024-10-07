@@ -82,6 +82,13 @@ leader_skills = {
 		}
 	}
 
+	10 = {
+		cost = 999999
+		type = navy
+		modifier = {
+		}
+	}
+
 	### Corps Commander ###
 	1 = {
 		cost = 100

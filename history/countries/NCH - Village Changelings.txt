@@ -158,6 +158,7 @@ add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.83
 
+recruit_character = EoF_NCH_reserve_fleet
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite

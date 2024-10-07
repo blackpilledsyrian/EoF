@@ -1,0 +1,33 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = {
+					fleet_limit_var = 200
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			calculate_total_ship_var = yes
+			every_navy_leader = {
+				limit = {
+					has_trait = EoF_reserve_fleet_trait
+				}
+				calculate_reserve_ship_var = yes
+			}
+			subtract_from_variable = { total_ship_var = reserve_ship_var }
+			set_variable = { active_fleet_var = total_ship_var }
+			if = {
+				limit = {
+					check_variable = { active_fleet_var > fleet_limit_var }
+				}
+				add_ideas = EoF_naval_penalty
+			}
+			else = {
+				remove_ideas = EoF_naval_penalty
+			}
+		}
+	}
+}

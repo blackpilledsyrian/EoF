@@ -495,6 +495,7 @@ set_war_support = 0.32
 #country_event = { id = mareland.22 days = 1 }
 
 ### Leaders ###
+recruit_character = EoF_EQC_reserve_fleet
 recruit_character = EQC_gladmane
 recruit_character = EQC_duke_haygle
 recruit_character = EQC_jet_set

@@ -1,0 +1,410 @@
+characters={
+	EoF_CHN_reserve_fleet = {
+		name = EoF_CHN_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_OLE_reserve_fleet = {
+		name = EoF_OLE_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_PLB_reserve_fleet = {
+		name = EoF_PLB_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_GRF_reserve_fleet = {
+		name = EoF_GRF_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_FAT_reserve_fleet = {
+		name = EoF_FAT_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_GRI_reserve_fleet = {
+		name = EoF_GRI_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_JER_reserve_fleet = {
+		name = EoF_JER_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_NCH_reserve_fleet = {
+		name = EoF_NCH_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_EQS_reserve_fleet = {
+		name = EoF_EQS_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_CRY_reserve_fleet = {
+		name = EoF_CRY_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_STG_reserve_fleet = {
+		name = EoF_STG_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_EQC_reserve_fleet = {
+		name = EoF_EQC_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_HIP_reserve_fleet = {
+		name = EoF_HIP_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_WNG_reserve_fleet = {
+		name = EoF_WNG_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_MCW_reserve_fleet = {
+		name = EoF_MCW_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_RCT_reserve_fleet = {
+		name = EoF_RCT_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+	EoF_NIM_reserve_fleet = {
+		name = EoF_NIM_reserve_fleet
+		portraits = {
+			army = {
+				large="gfx/leaders/Reserve_Fleet.tga"
+			}
+		}
+		navy_leader={
+			traits={ EoF_reserve_fleet_trait }
+			skill=10
+			attack_skill=0
+			defense_skill=0
+			maneuvering_skill=0
+			coordination_skill=0
+		}
+		advisor = {
+			slot = high_command
+			ledger = navy
+			allowed = {
+				always = no
+			}
+			traits = { EoF_reserve_fleet_advisor }
+		}
+	}
+}

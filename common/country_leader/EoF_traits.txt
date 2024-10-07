@@ -72,4 +72,7 @@ leader_traits = {
 			}
 		}
 	}
+	EoF_reserve_fleet_advisor = {
+		random = no
+	}
 }

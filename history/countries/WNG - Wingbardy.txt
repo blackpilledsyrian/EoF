@@ -201,6 +201,7 @@ add_ideas = {
 	WNG_mafia_3
 }
 
+recruit_character = EoF_WNG_reserve_fleet
 recruit_character = WNG_gemilio_de_gono
 recruit_character = WNG_ginigo_gampioni
 recruit_character = WNG_gitalo_galbo

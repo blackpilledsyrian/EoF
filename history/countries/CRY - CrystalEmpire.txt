@@ -167,6 +167,7 @@ add_ideas = {
 set_stability = 0.50
 set_war_support = 0.3
 
+recruit_character = EoF_CRY_reserve_fleet
 recruit_character = CRY_reese
 recruit_character = CRY_disputed
 recruit_character = CRY_radiant_hope

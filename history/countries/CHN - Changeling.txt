@@ -359,6 +359,7 @@ add_equipment_to_stockpile = {
 }
 
 #Generals and Leaders
+recruit_character = EoF_CHN_reserve_fleet
 recruit_character = CHN_hivesmarschall_synovial
 recruit_character = CHN_queen_chrysalis
 recruit_character = CHN_changeling_king

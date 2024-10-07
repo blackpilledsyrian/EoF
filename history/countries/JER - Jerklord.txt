@@ -161,6 +161,7 @@ set_stability = 0.55
 set_war_support = 0.55
 
 ### Leaders & Generals ###
+recruit_character = EoF_JER_reserve_fleet
 recruit_character = JER_king_moriset_discret
 recruit_character = JER_vivienne_discret
 recruit_character = JER_leonard_rodier

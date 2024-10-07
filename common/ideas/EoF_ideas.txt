@@ -239,6 +239,15 @@ ideas = {
 				local_resources_factor = -0.2
 			}	
 		}
+		EoF_naval_penalty = {
+			removal_cost = -1
+			picture = unavailable_ships
+			modifier = {
+				naval_damage_factor = -1
+				naval_defense_factor = -1
+				sortie_efficiency = -1
+			}
+		}
 	}
 	hidden_ideas = {
 		EoF_continuous_infantry_production = {

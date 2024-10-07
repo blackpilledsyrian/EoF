@@ -207,6 +207,7 @@ set_country_flag = proper_science_base_unlocked
 set_stability = 0.45
 set_war_support = 0.5
 
+recruit_character = EoF_MCW_reserve_fleet
 recruit_character = MCW_julio_penario
 recruit_character = MCW_eloa_queruscos
 recruit_character = MCW_kiania_friere

@@ -97,6 +97,7 @@ add_equipment_to_stockpile = {
 	producer = GRF
 }
 
+recruit_character = EoF_PLB_reserve_fleet
 recruit_character = PLB_paw_wellington
 recruit_character = PLB_torben_of_clan_svartpels
 recruit_character = PLB_eira_of_clan_volsungr

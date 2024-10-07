@@ -377,6 +377,7 @@ set_major = yes
 set_stability = 0.45
 set_war_support = 0.50
 
+recruit_character = EoF_GRI_reserve_fleet
 recruit_character = GRI_emperor_grover_v
 recruit_character = GRI_archon_eros_vii
 recruit_character = GRI_edwin_van_cleef

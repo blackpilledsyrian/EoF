@@ -933,6 +933,7 @@ country_event = {
 	random_days = 40
 }
 
+recruit_character = EoF_HIP_reserve_fleet
 recruit_character = HIP_queen_novo
 recruit_character = HIP_stratus_skyranger
 recruit_character = HIP_posada

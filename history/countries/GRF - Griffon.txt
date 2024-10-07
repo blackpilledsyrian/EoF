@@ -148,6 +148,7 @@ add_ideas = {
 
 set_stability = 0.65
 
+recruit_character = EoF_GRF_reserve_fleet
 recruit_character = GRF_governor_teafeather
 recruit_character = GRF_provisional_council
 recruit_character = GRF_reyhard_ironclaw
