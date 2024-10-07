@@ -108,11 +108,12 @@ EoF_STG_state_defense_committee_3: "State Defense Committee"
 
 EoF_category:0 "Game Decisions"
 EoF_big_division_decision:0 "Add a 48w Template"
+EoF_convoy_decision:0 "Add 1 Convoy"
 EoF_AI_EQC_decision:0 "AI New Mareland"
 EoF_player_EQC_decision:0 "Player New Mareland"
 EoF_AI_OLE_decision:0 "AI Olenia"
 EoF_player_OLE_decision:0 "Player Olenia"
-EoF_AI_BRZ_decision:0 "AI Bronzehill"
+EoF_AI_NCH_decision:0 "AI Greneclyf"
 EoF_AI_NIM_decision:0 "AI Nimbusia"
 
 EoF_dandan:0 "Narcoleptic Genius"

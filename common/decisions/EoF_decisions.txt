@@ -182,7 +182,7 @@ political_actions = {
 			EQS = {
 				add_to_faction = WNG
 				add_to_faction = MCW
-				add_to_faction = BAK
+				add_to_faction = RCT
 				add_to_faction = NIM
 			}
 			if = {
@@ -398,34 +398,49 @@ EoF_category = {
 			}
 		}
 	}
+	EoF_convoy_decision = {		
+		icon = SWE_set_navy_budget
+		days_re_enable = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 1
+			}
+		}
+	}
 
-	EoF_AI_BRZ_decision = {
+	EoF_AI_NCH_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
-			original_tag = GRI
+			original_tag = CHN
 		}
 		visible = {
-			BRZ = {
+			NCH = {
 				is_ai = yes
 			}
 			OR = {
-				539 = { is_controlled_by = BRZ }
-				492 = { is_controlled_by = BRZ }
-				424 = { is_controlled_by = BRZ }
-				479 = { is_controlled_by = BRZ }
-				568 = { is_controlled_by = BRZ }
+				670 = { is_controlled_by = NCH }
+				669 = { is_controlled_by = NCH }
+				668 = { is_controlled_by = NCH }
+				569 = { is_controlled_by = NCH }
+				639 = { is_controlled_by = NCH }
+				572 = { is_controlled_by = NCH }
+				571 = { is_controlled_by = NCH }
+				455 = { is_controlled_by = NCH }
+				603 = { is_controlled_by = NCH }
 			}
 		}
 		complete_effect = {
-			BRZ = {
+			NCH = {
 				every_owned_state = {
-					add_core_of = GRI
-					remove_core_of = BRZ
+					add_core_of = NCH
+					remove_core_of = NCH
 				}
 			}
 			GRI = {
 				annex_country = {
-					target = BRZ
+					target = NCH
+					transfer_troops = yes
 				}
 			}
 		}
@@ -591,6 +606,7 @@ EoF_category = {
 			RCT = {
 				annex_country = {
 					target = NIM
+					transfer_troops = yes
 				}
 			}
 		}
