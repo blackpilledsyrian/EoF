@@ -568,7 +568,7 @@ EoF_category = {
 	EoF_AI_NIM_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
-			original_tag = EQS
+			original_tag = RCT
 		}
 		visible = {
 			NIM = {
@@ -584,11 +584,11 @@ EoF_category = {
 		complete_effect = {
 			NIM = {
 				every_owned_state = {
-					add_core_of = EQS
+					add_core_of = RCT
 					remove_core_of = NIM
 				}
 			}
-			EQS = {
+			RCT = {
 				annex_country = {
 					target = NIM
 				}

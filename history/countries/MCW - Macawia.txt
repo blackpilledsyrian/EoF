@@ -216,11 +216,6 @@ recruit_character = MCW_zloberto_zarbosa
 recruit_character = MCW_augusto_rademaker
 recruit_character = MCW_midnight_lancer
 
-set_autonomy = {
-	target = HRV
-	autonomy_state = autonomy_dominion
-}
-
 if = {
 	limit = {
 		has_dlc = "Man the Guns"

@@ -451,11 +451,6 @@ country_event = {
 	days = 20 
 }
 
-set_autonomy = {
-	target = BRZ
-	autonomy_state = autonomy_nominal_vassal
-}
-
 save_global_event_target_as = griffonian_empire
 set_variable = { global.griffonian_empire_var = THIS }
 create_faction = reichspakt

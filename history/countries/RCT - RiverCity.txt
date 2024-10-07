@@ -193,6 +193,9 @@ RCT_Up_Oven = { set_character_flag = RIV_advisor_from_RCT }
 RCT_Under_Water = { set_character_flag = RIV_advisor_from_RCT }
 
 create_faction = "river_coalition_faction"
+add_to_faction = MCW
+add_to_faction = NIM
+add_to_faction = WNG
 
 set_rule = {
 	can_generate_female_aces = yes

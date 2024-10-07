@@ -1120,6 +1120,141 @@ on_actions = {
 					add_core_of = JER
 					transfer_state_to = JER
 				}
+				679 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				471 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				488 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				383 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				384 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				389 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				531 = {
+					add_core_of = BOI
+					transfer_state_to = BOI
+				}
+				408 = {
+					add_core_of = FRN
+					transfer_state_to = FRN
+				}
+				481 = {
+					add_core_of = FRN
+					transfer_state_to = FRN
+				}
+				410 = {
+					add_core_of = FRN
+					transfer_state_to = FRN
+				}
+				515 = {
+					add_core_of = FRN
+					transfer_state_to = FRN
+				}
+				526 = {
+					add_core_of = FRN
+					transfer_state_to = FRN
+				}
+				388 = {
+					add_core_of = TAL
+					transfer_state_to = TAL
+				}
+				366 = {
+					add_core_of = TAL
+					transfer_state_to = TAL
+				}
+				367 = {
+					add_core_of = TAL
+					transfer_state_to = TAL
+				}
+				368 = {
+					add_core_of = TAL
+					transfer_state_to = TAL
+				}
+				528 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				518 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				570 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				527 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				535 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				444 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				509 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				395 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				394 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				460 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				445 = {
+					remove_core_of = WNG
+					add_core_of = MCW
+					transfer_state_to = MCW
+				}
+				GRI = {
+					set_autonomy = {
+						target = BOI
+						autonomous_state = autonomy_subjugated_vassal
+					}
+				}
+				JER = {
+					set_autonomy = {
+						target = FRN
+						autonomous_state = autonomy_integrated_puppet
+					}
+					set_autonomy = {
+						target = TAL
+						autonomous_state = autonomy_integrated_puppet
+					}
+				}
 			}
 		}
 	}
