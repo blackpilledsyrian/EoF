@@ -31,8 +31,8 @@ NDefines.NMilitary.SUPPLY_GRACE = 120				-- troops always carry 5 days of food a
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060	-- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modifier
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.032	-- air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.032	-- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.024	-- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.024	-- global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1	-- how many CAS/TAC can enter a combat depending on enemy width there
 
 NDefines.NMilitary.PLANNING_DECAY = 0.01
@@ -77,7 +77,7 @@ NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1	-- advantage pe
 
 NDefines.NMilitary.SLOWEST_SPEED = 1
 
-NDefines.NMilitary.AIR_SUPPORT_BASE = 0.1			-- CAS bonus factor for air support moddifier for land unit in combat
+NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15			-- CAS bonus factor for air support moddifier for land unit in combat
 
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_IMPACT = -0.3		-- effect on defense due to enemy air superiorty
 NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.3	-- effect on speed due to enemy air superiority
@@ -86,8 +86,8 @@ NDefines.NMilitary.ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 150 -- how quickly 
 
 NDefines.NMilitary.ANTI_AIR_TARGETTING_TO_CHANCE = 0.02		-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 NDefines.NMilitary.ANTI_AIR_ATTACK_TO_AMOUNT = 0.003		-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.
-NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.25	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
-NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.3	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.90	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25			-- Higher value = more shot down planes
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 20			-- same as above but used inside naval combat for carrier battles
