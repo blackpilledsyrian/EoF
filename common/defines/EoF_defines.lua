@@ -31,8 +31,8 @@ NDefines.NMilitary.SUPPLY_GRACE = 120				-- troops always carry 5 days of food a
 NDefines.NMilitary.LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.060	-- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 NDefines.NMilitary.LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.048	-- global damage modifier
 
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.024	-- air global damage modifier
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.024	-- global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.016	-- air global damage modifier
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.016	-- global damage modifier
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1	-- how many CAS/TAC can enter a combat depending on enemy width there
 
 NDefines.NMilitary.PLANNING_DECAY = 0.01
@@ -209,10 +209,22 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2.0			-- Balancing value to convert d
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 3.0			-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 4.0		-- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
+NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.1				-- multiplies supply usage
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.3		-- factor of planes that can sortie by default from a carrier
 
-NDefines.NNavy.CARRIER_STACK_PENALTY = 0			-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
-NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.02		-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+NDefines.NNavy.CARRIER_STACK_PENALTY = 4			-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
+NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20		-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
+
+NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0		-- hours from start of combat when carriers get to fight
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 6		-- hours from start of combat when only carriers, capitals and subs get to attack
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 8
+
+NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10		-- scoring for target picking for planes inside naval combat, one define per ship typ
+NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 50
+NDefines.NNavy.NAVAL_COMBAT_AIR_CARRIER_TARGET_SCORE = 100
+NDefines.NNavy.NAVAL_COMBAT_AIR_CONVOY_TARGET_SCORE = 1.0
+NDefines.NNavy.NAVAL_COMBAT_AIR_STRENGTH_TARGET_SCORE = 5	-- how much score factor from low health (scales between 0->this number)
+NDefines.NNavy.NAVAL_COMBAT_AIR_LOW_AA_TARGET_SCORE = 5		-- how much score factor from low AA guns (scales between 0->this number)
 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.0, -- HOLD
@@ -227,12 +239,17 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		0.1, -- NAVAL_INVASION_SUPPORT
 	}
 
+NDefines.NNavy.BASE_JOIN_COMBAT_HOURS = 24			-- the taskforces that wants to join existing combats will wait for at least this amount
+NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 2.0	-- low org of the ships will be factored in when a taskforce wants to join combat
+
 NDefines.NNavy.BASE_POSITIONING = 0.8				-- base value for positioning
 
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0				-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.2				-- this screen ratio to num convoys is needed for full screening beyond screen line
-NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 4.0				-- this capital ratio to num carriers is needed for full screening beyond screen line
+NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0				-- this capital ratio to num carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1				-- this capital ratio to num convoys is needed for full screening beyond screen line
+
+NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 999			-- admirals will start getting penalties after this amount of taskforces
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0			-- Chances one ship get damage each hour while on training
 
@@ -241,6 +258,8 @@ NDefines.NNavy.HIT_PROFILE_MULT = 50.0				-- multiplies hit profile of every shi
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.5			-- Vanilla is 0.25
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.01	-- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.005	-- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.05		-- Amount of exp each ship gain every 24h while training (before modifiers)
 
 -- defines that control submarine visibility
 NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 1.0			-- balance value for sub detection in combat by ships
