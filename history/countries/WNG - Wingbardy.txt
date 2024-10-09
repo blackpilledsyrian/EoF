@@ -193,6 +193,7 @@ add_ideas = {
 	corporate_arms_partnerships
 	semi_professional_army
 	proper_science_base
+	EoF_WNG_treaty
 	WNG_garibald_talonuel_iii
 	WNG_political_deadlock
 	WNG_economic_crisis

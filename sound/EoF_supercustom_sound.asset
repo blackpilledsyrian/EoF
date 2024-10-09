@@ -15,7 +15,7 @@ sound = {
 }
 sound = {
 	name = "mountain_bigevent_sound" #name you're using for the sound
-	file = "customsound/Venerable_ancient_battlefield.wav" ## location of the sound file
+	file = "customsound/Mt_everest.wav" ## location of the sound file
 	always_load = no
 }
 sound = {

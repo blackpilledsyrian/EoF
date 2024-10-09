@@ -3,12 +3,8 @@ state={
 	id=814
 	name="STATE_814"
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 
 	}
 	resources={

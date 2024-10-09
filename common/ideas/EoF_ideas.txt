@@ -44,6 +44,10 @@ ideas = {
 				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
 				tag = NIM
 				trade_cost_for_target_factor = -0.5
 			}
@@ -78,6 +82,9 @@ ideas = {
 			targeted_modifier = {
 				tag = NCH
 				trade_cost_for_target_factor = 1
+			}
+			modifier = {
+				# local_resources_factor = 1
 			}
 		}
 		EoF_peacetime_training = {

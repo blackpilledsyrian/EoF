@@ -11,7 +11,7 @@ calculate_total_ship_var = {
 	multiply_variable = { carrier_var = 16 }
 	multiply_variable = { battleship_var = 8 }
 	multiply_variable = { battle_cruiser_var = 8 }
-	multiply_variable = { heavy_cruiser_var = 4 }
+	multiply_variable = { heavy_cruiser_var = 2 }
 	multiply_variable = { light_cruiser_var = 2 }
 	multiply_variable = { destroyer_var = 1 }
 	multiply_variable = { monitor_var = 1 }
@@ -38,7 +38,7 @@ calculate_reserve_ship_var = {
 	multiply_variable = { carrier_var = 16 }
 	multiply_variable = { battleship_var = 8 }
 	multiply_variable = { battle_cruiser_var = 8 }
-	multiply_variable = { heavy_cruiser_var = 4 }
+	multiply_variable = { heavy_cruiser_var = 2 }
 	multiply_variable = { light_cruiser_var = 2 }
 	multiply_variable = { destroyer_var = 1 }
 	multiply_variable = { monitor_var = 1 }

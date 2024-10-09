@@ -471,45 +471,6 @@ ideas = {
 		civilian_economy = {
     
 			available = {
-				NOT = {
-					has_country_flag = war_economy_only_flag
-				}
-				if = {
-					limit = {
-						tag = HLQ
-					}
-					NOT = {
-					    OR = {
-						    has_completed_focus = HLQ_nothing_but_war
-							has_completed_focus = HLQ_the_brand_new_war_economy
-						}
-					}
-				}
-				if = {
-					limit = {
-						tag = ZES
-					}
-					NOT = {
-						has_country_flag = ZES_pasarinha_economy_block
-					}
-				}
-				if = {
-					limit = { has_completed_focus = LSC_violet_revolution }
-					NOT = {
-						OR = {
-							has_completed_focus = LSC_national_body_stratification
-							has_completed_focus = LSC_endgame
-						}
-					}
-				}
-				if = {
-				    limit = {
-					    tag = BAT
-					}
-					hidden_trigger = {
-						has_country_flag = BAT_national_catastrophe
-					}
-				}
 			}
 
 			cost = 150
@@ -538,20 +499,6 @@ ideas = {
 		low_economic_mobilisation = {
 
 			available = {
-				NOT = {
-					has_country_flag = war_economy_only_flag
-				}
-				if = {
-					limit = {
-						tag = ZES
-					}
-					NOT = {
-						has_country_flag = ZES_pasarinha_economy_block
-					}
-				}
-				NOT = {
-					has_country_flag = demilitarized
-				}
 				has_war_support > 0.15
 			}
 
@@ -592,42 +539,14 @@ ideas = {
 		partial_economic_mobilisation = {
 
 			available = {
+				has_war_support > 0.25
 				if = {
-					limit = { has_country_flag = is_maresoc }
-					has_country_flag = is_maresoc
-				}
-				else = {
-					has_war_support > 0.25
-					if = {
-						limit = {
-							tag = event_target:equestria
-						}
-						NOT = { has_country_flag = economic_laws_blocked }
+					limit = {
+						tag = HIP
 					}
-				}
-				NOT = {
-					has_country_flag = war_economy_only_flag
-				}
-				NOT = {
-					has_country_flag = demilitarized
+					NOT = { has_idea = HIP_cannot_mobilise }
 				}
 				NOT = { has_country_flag = economic_laws_blocked }
-				if = {
-					limit = {
-						tag = ZES
-					}
-					NOT = {
-						has_country_flag = ZES_pasarinha_economy_block
-					}
-				}
-				if = {
-					limit = {
-						original_tag = HIP
-					}
-					NOT = {
-						has_idea = HIP_cannot_mobilise
-					}
-				}
 			}
 
 			cost = 150
@@ -664,29 +583,8 @@ ideas = {
 		war_economy = {
 
 			available = {
-				if = {
-					limit = { has_country_flag = is_maresoc }
-					has_country_flag = is_maresoc
-				}
-				else = {
-					has_war = yes
-					has_war_support > 0.5
-					if = {
-						limit = {
-							tag = event_target:equestria
-						}
-						NOT = { has_country_flag = economic_laws_blocked }
-					}
-					if = {
-						limit = {
-							original_tag = EQC
-							NOT = {
-								has_country_flag = is_maresoc
-							}
-						}
-						has_completed_focus = EQC_full_economic_commitment
-					}
-				}
+				has_war = yes
+				has_war_support > 0.5
 				if = {
 					limit = {
 						tag = EQS
@@ -695,32 +593,17 @@ ideas = {
 				}
 				if = {
 					limit = {
-						original_tag = HIP
+						tag = EQC
 					}
-					NOT = {
-						has_idea = HIP_cannot_mobilise
-					}
+					has_completed_focus = EQC_full_economic_commitment
 				}
-				NOT = {
-					has_country_flag = demilitarized
+				if = {
+					limit = {
+						tag = HIP
+					}
+					NOT = { has_idea = HIP_cannot_mobilise }
 				}
 				NOT = { has_country_flag = economic_laws_blocked }
-				if = {
-					limit = {
-						tag = BAL
-					}
-					NOT = {
-						has_country_flag = BAL_anarchy_laws
-					}
-				}
-				if = {
-					limit = {
-						tag = ZES
-					}
-					NOT = {
-						has_country_flag = ZES_pasarinha_economy_block
-					}
-				}
 			}
 
 			cost = 150
@@ -760,75 +643,33 @@ ideas = {
 
 
 			available = {
+				has_war = yes
+				has_war_support > 0.8
 				if = {
-					limit = { has_country_flag = is_maresoc }
-					has_country_flag = is_maresoc
-				}
-				else = {
-					has_war = yes
-					has_war_support > 0.8
-					OR = {
-						any_enemy_country = {
-							ic_ratio = {
-								tag = ROOT
-								ratio > 0.25
-							}
-						}
-						surrender_progress > 0.5
+					limit = {
+						tag = EQS
 					}
-					if = {
-						limit = {
-							tag = EQS
-						}
-						has_completed_focus = EoF_real_war_industry
-					}
-					if = {
-						limit = {
-							tag = event_target:equestria
-						}
-						NOT = { has_country_flag = economic_laws_blocked }
-					}
-					if = {
-						limit = {
-							original_tag = EQC
-						}
-						has_completed_focus = EQC_full_economic_commitment
-					}
-					if = {
-						limit = {
-							original_tag = ELF
-						}
-						NOT = { has_completed_focus = ELF_left_1_b }
-					}
+					has_completed_focus = EoF_real_war_industry
 				}
 				if = {
 					limit = {
-						original_tag = HIP
+						tag = EQC
 					}
-					NOT = {
-						has_idea = HIP_cannot_mobilise
-					}
+					has_completed_focus = EQC_full_economic_commitment
 				}
-				NOT = {
-					has_country_flag = demilitarized
+				if = {
+					limit = {
+						tag = HIP
+					}
+					NOT = { has_idea = HIP_cannot_mobilise }
+				}
+				if = {
+					limit = {
+						tag = WNG
+					}
+					NOT = { has_idea = EoF_WNG_treaty }
 				}
 				NOT = { has_country_flag = economic_laws_blocked }
-				if = {
-					limit = {
-						tag = BAL
-					}
-					NOT = {
-						has_country_flag = BAL_anarchy_laws
-					}
-				}
-				if = {
-					limit = {
-						tag = ZES
-					}
-					NOT = {
-						has_country_flag = ZES_pasarinha_economy_block
-					}
-				}
 			}
 
 			ai_will_do = {

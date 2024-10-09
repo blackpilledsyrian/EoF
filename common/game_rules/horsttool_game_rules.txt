@@ -98,11 +98,11 @@ horst_host_country = {
 	# 	text = "Evi"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = RCT
-	# 	text = "River Republic"
-	# 	desc = ""
-	# }
+	option = {
+		name = RCT
+		text = "River Republic"
+		desc = ""
+	}
 	# option = {
 	# 	name = LCT
 	# 	text = "Lake City"
