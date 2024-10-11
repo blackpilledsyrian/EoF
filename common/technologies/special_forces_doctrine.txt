@@ -837,8 +837,8 @@ technologies = {
 		pioneer_support = {
 			battalion_mult = {
 				category = category_amphibious_tanks
-				armor_value = 0.15 # fixed PDX bug
-				breakthrough = 0.15
+				armor_value = 0.05
+				breakthrough = 0.05
 			}
 		}
 		

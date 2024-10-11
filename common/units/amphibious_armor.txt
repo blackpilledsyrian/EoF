@@ -98,7 +98,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_amphibious_chassis = 48
+			light_tank_amphibious_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
@@ -233,7 +233,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_amphibious_chassis = 32
+			heavy_tank_amphibious_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10

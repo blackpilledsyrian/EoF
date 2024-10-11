@@ -1,39 +1,3 @@
-#	joint_focus = {
-	#		id = RIV_
-	#		icon = GFX_
-	#		prerequisite = { focus = }
-	#		mutually_exclusive = { focus =  }
-	#		x = -3
-	#		y = 0
-	#		relative_position_id =
-	#
-	#		cost = 10
-	#
-	#		ai_will_do = {
-		#			factor = 1
-		#		}
-	#
-	#		available = {
-		#
-		#		}
-	#
-	#		bypass = {
-		#
-		#		}
-	#
-	#		cancel_if_invalid = yes
-	#		continue_if_invalid = no
-	#		available_if_capitulated = no
-	#
-	#		complete_tooltip = {
-		#
-		#		}
-	#
-	#		completion_reward = {
-		#
-		#		}
-	#	}
-
 shared_focus = {
 	id = RIV_dreams_of_a_federation
 	icon = GFX_goal_riv_dreams_of_the_federation
@@ -43,91 +7,14 @@ shared_focus = {
 		x = 15
 		y = 0
 		trigger = {
-			tag = LCT
-		}
-	}
-	offset = {
-		x = 13
-		y = 0
-		trigger = {
-			original_tag = DMT
-		}
-	}
-	offset = {
-		x = 15
-		y = 0
-		trigger = {
 			tag = RCT
 		}
 	}
-	offset = {
-		x = -4
-		y = 0
-		trigger = {
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = RCT_strengthen_the_ohs
-		}
-	}
-	offset = {
-		x = -6
-		y = 0
-		trigger = {
-			has_game_rule = {
-				rule = obsolete_focus_branches_visibility
-				option = HIDE
-			}
-			has_completed_focus = RCT_undermine_the_ohs
-		}
-	}
-	offset = {
-		x = 3
-		y = 0
-		trigger = {
-			tag = WIT
-		}
-	}
-	offset = {
-		x = 7
-		y = 0
-		trigger = {
-			tag = WIT
-			has_country_flag = have_regular_puppets
-		}
-	}
-	offset = {
-		x = 21
-		y = 0
-		trigger = {
-			tag = FBK
-		}
-	}
-	offset = {
-		x = 21
-		y = 0
-		trigger = {
-			tag = FIR
-		}
-	}
-	offset = {
-		x = 27
-		y = 0
-		trigger = {
-			tag = FIR
-			has_focus_tree = FIR_focus_evilmagic
-		}
-	}
-
 	allow_branch = {
-		is_river_fed_member = yes
-		NOT = {
-			is_subject_of = GRI
-		}
+		tag = RCT
 	}
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 4
@@ -167,22 +54,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		if = {
-			limit = { tag = NIM }
-			OR = {
-				has_completed_focus = NIM_polity
-				has_completed_focus = NIM_state_of_war
-				has_completed_focus = NIM_harmonia
-			}
-		}
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-
 	}
 
 	cancel_if_invalid = yes
@@ -208,7 +79,7 @@ joint_focus = {
 	
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 2
@@ -255,11 +126,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		amount_research_slots > 2
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	cancel_if_invalid = yes
@@ -273,7 +139,10 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		log = "[GetDateText]: [Root.GetName]: Focus RIV_science_society"
 		add_to_tech_sharing_group = RIV_science_society_group
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 		set_country_flag = RIV_science_society_founder
 		set_global_flag = RIV_science_society_founded
 		hidden_effect = {			
@@ -307,7 +176,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 2
@@ -353,13 +222,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 	
 	joint_trigger = {
@@ -384,7 +246,10 @@ joint_focus = {
 				country_event = riverfed.2
 			}
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 		set_country_flag = RIV_rcsc_founder
 		set_global_flag = RIV_rcsc_founded
 	}
@@ -418,7 +283,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -457,24 +322,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = DEP }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			DEP = { exists = no }
-			has_war_with = DEP
-			NOT = {
-				is_in_faction_with = DEP
-			}
-		}
 	}
 
 	joint_trigger = {
@@ -520,7 +367,10 @@ joint_focus = {
 			}
 			country_event = riverfed.3
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -535,7 +385,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -574,24 +424,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = DEP }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			DEP = { exists = no }
-			has_war_with = DEP
-			NOT = {
-				is_in_faction_with = DEP
-			}
-		}
 	}
 	
 	joint_trigger = {
@@ -634,7 +466,10 @@ joint_focus = {
 			}
 			country_event = riverfed.5
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -649,7 +484,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -688,24 +523,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = DEP }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			DEP = { exists = no }
-			has_war_with = DEP
-			NOT = {
-				is_in_faction_with = DEP
-			}
-		}
 	}
 	
 	joint_trigger = {
@@ -723,7 +540,10 @@ joint_focus = {
 			add_timed_idea = { idea = RIV_development_grants_idea days = 730 }
 			country_event = riverfed.7
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_RIVER_FED_RACE }
 	
@@ -740,7 +560,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -783,21 +603,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = FRE }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			FRE = { exists = no }
-		}
-
 	}
 	
 	joint_trigger = {
@@ -843,7 +648,10 @@ joint_focus = {
 			}
 			country_event = riverfed.4
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -858,7 +666,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -897,20 +705,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = FRE }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			FRE = { exists = no }
-		}
 	}
 	
 	joint_trigger = {
@@ -953,7 +747,10 @@ joint_focus = {
 			}
 			country_event = riverfed.6
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -968,7 +765,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -1007,20 +804,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		NOT = { original_tag = FRE }
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-		OR = {
-			FRE = { exists = no }
-		}
 	}
 	
 	joint_trigger = {
@@ -1037,7 +820,10 @@ joint_focus = {
 			add_timed_idea = { idea = RIV_development_grants_idea days = 730 }
 			country_event = riverfed.7
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 
 	search_filters = { FOCUS_FILTER_RIVER_FED_RACE }
@@ -1055,7 +841,7 @@ joint_focus = {
 	relative_position_id = RIV_development_grants_DEP
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -1101,13 +887,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	cancel_if_invalid = yes
@@ -1121,7 +900,10 @@ joint_focus = {
 	completion_reward_joint_originator = {
 		log = "[GetDateText]: [Root.GetName]: Focus RIV_found_the_rdc"
 		add_ideas = RIV_rdc
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 		set_country_flag = RIV_rdc_founder
 		set_global_flag = RIV_rdc_founded
 		hidden_effect = {
@@ -1157,7 +939,7 @@ joint_focus = {
 	relative_position_id = RIV_found_the_rdc
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -1203,19 +985,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rcsc_member
-		has_idea = RIV_rdc
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 	
 	joint_trigger = {
@@ -1232,7 +1001,10 @@ joint_focus = {
 			remove_idea = RIV_rcsc_member
 			add_idea = RIV_rec_member1
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 		set_country_flag = RIV_rec_founder
 		set_global_flag = RIV_rec_founded
 		hidden_effect = {
@@ -1293,18 +1065,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-
 	}
 
 	cancel_if_invalid = yes
@@ -1366,18 +1126,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-
 	}
 
 	cancel_if_invalid = yes
@@ -1454,18 +1202,6 @@ shared_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
-	}
-
-	bypass = {
-
 	}
 
 	cancel_if_invalid = yes
@@ -1519,7 +1255,7 @@ joint_focus = {
 	relative_position_id = RIV_rdc_rail_projects
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -1565,18 +1301,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rdc
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -1597,7 +1321,10 @@ joint_focus = {
 		set_country_flag = RIV_etf_founder
 		set_global_flag = RIV_etf_founded
 
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {		
 		custom_effect_tooltip = RIV_eastern_transport_fund_tt
@@ -1623,7 +1350,7 @@ joint_focus = {
 	relative_position_id = RIV_found_the_rec
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -1660,18 +1387,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rec_member1
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -1699,7 +1414,10 @@ joint_focus = {
 		}
 		set_country_flag = RIV_social_fund_founder
 		set_global_flag = RIV_social_fund_founded
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_social_fund_tt
@@ -1724,7 +1442,7 @@ joint_focus = {
 	relative_position_id = RIV_social_fund
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 2
@@ -1761,16 +1479,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -1788,7 +1496,10 @@ joint_focus = {
 		set_country_flag = RIV_beings_rights_founder
 		set_global_flag = RIV_beings_rights_founded
 
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 		hidden_effect = {
 			every_other_country = {
 				limit = {
@@ -1844,7 +1555,7 @@ joint_focus = {
 	relative_position_id = RIV_eastern_transport_fund
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -1893,19 +1604,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rec_member2
-		has_idea = RIV_rdc2
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -1934,7 +1632,10 @@ joint_focus = {
 		set_country_flag = RIV_river_parliament_founder
 		set_global_flag = RIV_river_parliament_founded
 
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_river_parliament_tt
@@ -1959,7 +1660,7 @@ joint_focus = {
 	relative_position_id = RIV_river_parliament
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2008,18 +1709,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rec_member3
-		num_of_civilian_factories > 5
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2047,7 +1736,10 @@ joint_focus = {
 		
 		set_country_flag = RIV_free_movement_founder
 		set_global_flag = RIV_free_movement_founded
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_free_movement_tt
@@ -2073,7 +1765,7 @@ joint_focus = {
 	relative_position_id = RIV_river_parliament
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2122,17 +1814,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		num_of_civilian_factories > 10
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2157,7 +1838,10 @@ joint_focus = {
 		}
 		set_country_flag = RIV_centeral_bank_founder
 		set_global_flag = RIV_centeral_bank_founded
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		effect_tooltip = {
@@ -2176,7 +1860,7 @@ joint_focus = {
 	relative_position_id = RIV_centeral_bank
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2225,18 +1909,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_centeral_bank_idea
-		num_of_civilian_factories > 10
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2264,7 +1936,10 @@ joint_focus = {
 		set_country_flag = RIV_rivbit_founder
 		set_global_flag = RIV_rivbit_founded
 
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_the_rivbit_tt
@@ -2290,7 +1965,7 @@ joint_focus = {
 	relative_position_id = RIV_the_rivbit
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2336,20 +2011,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_rec_member4
-		has_idea = RIV_rivbit_idea
-		num_of_civilian_factories > 10
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		has_war = no
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2377,7 +2038,10 @@ joint_focus = {
 
 		set_country_flag = RIV_the_river_union_founder
 		set_global_flag = RIV_the_river_union_founded
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_the_river_union_tt
@@ -2402,7 +2066,7 @@ joint_focus = {
 	relative_position_id = RIV_the_river_union
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2451,23 +2115,6 @@ joint_focus = {
 	}
 
 	available = {
-		custom_trigger_tooltip = {
-			tooltip = RIV_river_army_trigger_tt
-			or = {
-				has_idea = RIV_river_union_member1
-				has_idea = RIV_river_union_member2
-			}
-		}
-		num_of_civilian_factories > 10
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2494,7 +2141,10 @@ joint_focus = {
 				country_event = riverfed.23
 			}
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_river_army_tt
@@ -2522,7 +2172,7 @@ joint_focus = {
 	relative_position_id = RIV_the_river_union
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2571,18 +2221,6 @@ joint_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		has_idea = RIV_river_union_member1
-		num_of_civilian_factories > 10
-		does_not_have_tribal_society = yes
-		does_not_have_agrarian_society = yes
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-        NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	joint_trigger = {
@@ -2610,7 +2248,10 @@ joint_focus = {
 		set_country_flag = RIV_river_government_founder
 		set_global_flag = RIV_river_government_founded
 
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	completion_reward_joint_member = {
 		custom_effect_tooltip = RIV_river_government_tt
@@ -2636,7 +2277,7 @@ shared_focus = {
 	relative_position_id = RIV_river_army
 	text_icon = RIV_focus_style
 
-	cost = 20
+	cost = 10
 
 	ai_will_do = {
 		factor = 3
@@ -2685,30 +2326,7 @@ shared_focus = {
 	}
 
 	available = {
-		is_river_fed_member = yes
-		custom_trigger_tooltip = {
-			tooltip = RIV_the_federation_trigger_tt
-			NOT = {
-				any_allied_country = { check_variable = { RIV_fed_race > ROOT.RIV_fed_race } }
-			}
-		}
-
-		has_war = no
-		is_subject = no
-
-		has_idea = RIV_river_union_member2
-		NOT = {
-			any_allied_country = {
-				has_completed_focus = RIV_the_federation
-			}
-		}
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
+		threat > 0.99
 	}
 
 	bypass = {
@@ -2721,243 +2339,10 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus RIV_the_federation"
-		custom_effect_tooltip = RIV_found_the_federation_tt
-		set_global_flag = { flag = RIV_fed_founded_timeout value = 1 days = 5 }
-
-		set_cosmetic_tag = RIV
-		set_variable = { annexed_riv_members = 1 }
-		set_country_flag = river_federation_founder
-		set_global_flag = river_federation_founded
-		save_global_event_target_as = RivFed
-		if = {
-			limit = { NOT = { has_idea = modern_society } }
-			add_ideas = modern_society
-		}
-		if = {
-			limit = { NOT = { has_idea = proper_science_base } }
-			set_country_flag = proper_science_base_unlocked
-			add_ideas = proper_science_base
-		}
-		every_other_country = {
-			limit = {
-				is_river_fed_member = yes
-			}
-			country_event = riverfed.25
-		}
-
-		effect_tooltip = { set_faction_name = river_united_faction }
-		hidden_effect = {
-			dismantle_faction = yes
-			create_faction = river_united_faction
-		}
-		#News
-		if = {
-			limit = {
-				AND = {
-					original_tag = RCT
-					has_government = democratic
-				}
-			}
-			news_event = {id = riverfednews.0 days = 1 random = 48 }#hours to days applied
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = RCT
-					has_government = communism
-				}
-			}
-			news_event = {id = riverfednews.1 days = 1 random = 48 }#hours to days applied
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = LCT
-				}
-			}
-			news_event = {id = riverfednews.2 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = NIM
-				}
-			}
-			news_event = {id = riverfednews.3 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = WIT
-					has_country_leader = { ruling_only = yes character = WIT_white_star }
-				}
-			}
-			news_event = {id = riverfednews.4 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = WIT
-					has_country_leader = { ruling_only = yes character = WIT_voliare_gingerbeard }
-				}
-			}
-			news_event = {id = riverfednews.5 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = WIT
-					NOT = {
-						has_country_leader = { ruling_only = yes character = WIT_white_star }
-						has_country_leader = { ruling_only = yes character = WIT_voliare_gingerbeard }
-					}
-				}
-			}
-			news_event = {id = riverfednews.6 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = DMT
-					has_government = fascism
-				}
-			}
-			news_event = {id = riverfednews.7 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = DMT
-					has_government = democratic
-				}
-			}
-			news_event = {id = riverfednews.8 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				AND = {
-					original_tag = FRE
-				}
-			}
-			news_event = {id = riverfednews.9 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					original_tag = FIR
-					original_tag = FBK
-					original_tag = WAT
-				}
-			}
-			news_event = {id = riverfednews.10 days = 1 random = 48 }#hours to days applied
-		}
-		else_if = {
-			limit = {
-				OR = {
-					original_tag = NCH
-				}
-			}
-			news_event = {id = riverfednews.11 days = 1 random = 48 }#hours to days applied
-		}
-		else_if = {
-			limit = {
-				OR = {
-					original_tag = BAK
-				}
-			}
-			news_event = {id = riverfednews.12 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			DEP = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
-		}
-		else_if = {
-			limit = {
-				OR = {
-					original_tag = DEP
-				}
-			}
-			news_event = {id = riverfednews.13 days = 1 random = 48 }#hours to days applied
-			RCT = { add_to_ROOT_potential_original_cores = yes }
-			LCT = { add_to_ROOT_potential_original_cores = yes }
-			NIM = { add_to_ROOT_potential_original_cores = yes }
-			WIT = { add_to_ROOT_potential_original_cores = yes }
-			DMT = { add_to_ROOT_potential_original_cores = yes }
-			BAK = { add_to_ROOT_potential_original_cores = yes }
-			FRE = { add_to_ROOT_potential_original_cores = yes }
+		set_cosmetic_tag = RIV_8
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 1
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RIVER_FED_RACE }
@@ -2971,20 +2356,13 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 4
 	}
 
 	available = {
-		if = {
-			limit = { tag = NIM }
-			has_completed_focus = NIM_integration
-		}
-		NOT = {
-			has_country_flag = blocked_coalition_focuses_flag
-		}
 	}
 
 	bypass = {
@@ -2997,13 +2375,7 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus RIV_atomic_energy_community"
-		if = {
-			limit = {
-				amount_research_slots < 5
-			}
-			add_research_slot = 1
-			custom_effect_tooltip = CZE_war_college_effect_2_tt
-		}
+		add_research_slot = 1
 		add_tech_bonus = {
 			name = RIV_atomic_energy_community
 			bonus = 1.0
@@ -3022,7 +2394,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -3056,6 +2428,9 @@ shared_focus = {
 		NOT = {
 			has_country_flag = blocked_coalition_focuses_flag
 		}
+	}
+	allow_branch = {
+		always = no
 	}
 
 	cancel_if_invalid = yes
@@ -3131,7 +2506,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 10
+	cost = 5
 
 	ai_will_do = {
 		factor = 1
@@ -3175,6 +2550,9 @@ shared_focus = {
 		NOT = {
 			has_country_flag = blocked_coalition_focuses_flag
 		}
+	}
+	allow_branch = {
+		always = no
 	}
 
 	cancel_if_invalid = yes
@@ -3327,6 +2705,9 @@ shared_focus = {
 			has_country_flag = blocked_coalition_focuses_flag
 		}
 	}
+	allow_branch = {
+		always = no
+	}
 
 	bypass = {
 		OR = {
@@ -3452,7 +2833,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_friends
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	available = {
 		is_river_fed_member = yes
@@ -3566,7 +2947,10 @@ joint_focus = {
 			add_timed_idea = { idea = RIV_development_grants_idea days = 730 }
 			country_event = riverfed.8
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -3580,7 +2964,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_friends
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	available = {
 		is_river_fed_member = yes
@@ -3696,7 +3080,10 @@ joint_focus = {
 			add_timed_idea = { idea = RIV_development_grants_idea days = 730 }
 			country_event = riverfed.8
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }
@@ -3710,7 +3097,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_firtree
 	text_icon = RIV_focus_style
 
-	cost = 10
+	cost = 5
 
 	available = {
 		is_river_fed_member = yes
@@ -3828,7 +3215,10 @@ joint_focus = {
 			add_timed_idea = { idea = RIV_development_grants_idea days = 730 }
 			country_event = riverfed.8
 		}
-		RIV_add_to_fed_race = yes
+		add_power_balance_value = {
+			id = EoF_RIV_balance_of_power
+			value = 0.1
+		}
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RIVER_FED_RACE }
 }

@@ -434,7 +434,6 @@ EoF_category = {
 			NCH = {
 				every_owned_state = {
 					add_core_of = NCH
-					remove_core_of = NCH
 				}
 			}
 			GRI = {
@@ -600,7 +599,6 @@ EoF_category = {
 			NIM = {
 				every_owned_state = {
 					add_core_of = RCT
-					remove_core_of = NIM
 				}
 			}
 			RCT = {

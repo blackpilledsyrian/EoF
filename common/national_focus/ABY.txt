@@ -96,5 +96,10 @@ shared_focus = {
 			target = HIP
     		type = annex_everything
 		}
+		EMR = {
+			annex_country = {
+				target = SDL
+			}
+		}
 	}
 }

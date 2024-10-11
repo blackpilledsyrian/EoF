@@ -135,15 +135,11 @@ generic_DD_template = yes
 generic_CL_template = yes
 
 add_ideas = {
-	LCT_defenders_of_the_east
-	LCT_guilds
-	LCT_rising_militarism
-	RIV_member_state
-
 	outdated_industry
 	better_science_base
 	lack_of_scientists3
 	poverty4
+	RIV_member_state
 }
 set_country_flag = have_regular_puppets
 set_country_flag = better_science_base_unlocked
@@ -155,10 +151,6 @@ set_variable = {
 
 set_stability = 0.48
 set_war_support = 0.45
-
-country_event = { id = lakecity.2 days = 11 }
-country_event = { id = lakecityflavor.1 days = 137 }
-country_event = { id = lakecityflavor.12 days = 254 }
 
 set_cosmetic_tag = RIV_federation_mem
 set_popularities = {

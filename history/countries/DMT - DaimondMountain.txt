@@ -53,7 +53,6 @@ add_ideas = {
 	DMT_slavery1
 	DMT_slave_army1
 	DMT_risk_of_rebellion
-	RIV_member_state
 	lack_of_scientists
 	poverty2
 }

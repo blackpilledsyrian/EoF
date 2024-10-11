@@ -156,6 +156,7 @@ NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 		-- trait slot for 0 leve
 	0.0, -- operative
 }
 
+NDefines.NCharacter.OFFICER_CORP_HIGH_COMMAND_SLOTS_IN_MENU = 3 --For Alert manager to count the number of High Command Slots in the UI
 NDefines.NCharacter.POLITICAL_ADVISOR_SLOTS_IN_MENU = 6		--For Alert manager to count the number of Political Advisor Slots in the UI
 
 NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 3
@@ -250,6 +251,10 @@ NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0				-- this ca
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1				-- this capital ratio to num convoys is needed for full screening beyond screen line
 
 NDefines.NNavy.ADMIRAL_TASKFORCE_CAP = 999			-- admirals will start getting penalties after this amount of taskforces
+
+NDefines.NNavy.COMBAT_LOW_ORG_HIT_CHANCE_PENALTY = -1		-- % of penalty applied to hit chance when ORG is very low.
+
+NDefines.NNavy.MAX_ORG_ON_MANUAL_MOVE = 1			-- org will clamped to this ratio on manual move
 
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0			-- Chances one ship get damage each hour while on training
 

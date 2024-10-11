@@ -1,4 +1,15 @@
 focus_tree = {
+	id = EoF_BAK
+
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			original_tag = BAK
+		}
+	}
+}
+focus_tree = {
 	id = bakara_focus
 
 	country = {

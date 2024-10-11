@@ -34,7 +34,6 @@ add_ideas = {
 	poor_science_base
 	DEP_old_country
 	limited_exports
-	RIV_member_state
 	lack_of_scientists
 	poverty2
 }

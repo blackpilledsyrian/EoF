@@ -6,19 +6,19 @@ state={
 		1398 1702 7381 7913 8079 8175 10279 10307 10730 10732 12249 12712
 	}
 
-	manpower=2545600
-	state_category = large_city
+	manpower=2945600
+	state_category = metropolis
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = RCT
-		add_core_of = RCT
+		owner = LCT
+		add_core_of = LCT
 
 		victory_points = { 8079 30 }
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 5
 			arms_factory = 2
 			air_base = 2
 			anti_air_building = 1

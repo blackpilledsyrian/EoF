@@ -103,12 +103,8 @@ if = {
 add_ideas = {
 	outdated_industry
 	better_science_base
-	BAK_shipbuilding
-	BAK_militia_system
-	BAK_bastion_of_democracy
-	BAK_elections
-	RIV_member_state
 	lack_of_scientists2
+	RIV_member_state
 }
 
 set_country_flag = have_regular_puppets
@@ -119,11 +115,6 @@ set_convoys = 150
 set_stability = 0.75
 set_war_support = 0.35
 add_manpower = 20000
-
-country_event = { 
-	id = bakara.5
-	days = 30
-}
 
 set_variable = {
 	var = BAK_fascist_support_v

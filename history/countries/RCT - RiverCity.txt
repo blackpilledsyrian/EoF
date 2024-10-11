@@ -88,12 +88,12 @@ if = {
 		basic_naval_mines = 1
 		mtg_transport = 1
 	}
-	set_naval_oob = "RCT_1007_naval"
 }
 
 generic_DD_template = yes
 generic_CL_template = yes
 
+set_convoys = 200
 set_stability = 0.57
 set_war_support = 0.08
 
@@ -107,9 +107,9 @@ add_ideas = {
 	reservist_system
 	outdated_industry
 	proper_science_base
+	RIV_member_state
 	RCT_city_of_three_rivers
 	RCT_unstable_government
-	RIV_member_state
 	lack_of_scientists3
 	poverty4
 }
@@ -206,6 +206,28 @@ create_faction = "river_coalition_faction"
 add_to_faction = MCW
 add_to_faction = NIM
 add_to_faction = WNG
+
+set_autonomy = {
+	target = BAK
+	autonomy_state = autonomy_EoF_rivco_member
+}
+set_autonomy = {
+	target = LCT
+	autonomy_state = autonomy_EoF_rivco_member
+}
+set_autonomy = {
+	target = WIT
+	autonomy_state = autonomy_EoF_rivco_member
+}
+
+set_power_balance = {
+	id = EoF_RIV_balance_of_power
+	set_default = yes
+}
+add_power_balance_modifier = {
+    id = EoF_RIV_balance_of_power
+    modifier = EoF_RIV_balance_of_power_decay
+}
 
 set_rule = {
 	can_generate_female_aces = yes

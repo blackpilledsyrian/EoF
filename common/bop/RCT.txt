@@ -1,0 +1,63 @@
+
+EoF_RIV_balance_of_power = {
+	initial_value = 0
+	left_side = EoF_RIV_decentralize_side
+	right_side = EoF_RIV_centralize_side
+	decision_category = RIV_race_cat
+	range = {
+		id = EoF_RIV_mid_range
+		min = -0.2
+		max = 0.2
+		modifier = {
+		}
+	}
+	side = {
+		id = EoF_RIV_decentralize_side
+		icon = GFX_idea_generic_local_self_management
+		range = {
+			id = EoF_RIV_high_decentralize_range
+			min = -1
+			max = -0.6
+			modifier = {
+				political_power_gain = 0.3
+				stability_factor = -0.1
+				subjects_autonomy_gain = 0.4
+			}
+		}
+		range = {
+			id = EoF_RIV_low_decentralize_range
+			min = -0.6
+			max = -0.2
+			modifier = {
+				political_power_gain = 0.15
+				stability_factor = -0.05
+				subjects_autonomy_gain = 0.2
+			}
+		}
+	}
+	side = {
+		id = EoF_RIV_centralize_side
+		icon = GFX_idea_generic_central_management
+		range = {
+			id = EoF_RIV_low_centralize_range
+			min = 0.2
+			max = 0.6
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.05
+				subjects_autonomy_gain = -0.2
+			}
+		}
+		range = {
+			id = EoF_RIV_high_centralize_range
+			min = 0.6
+			max = 1
+			modifier = {
+				political_power_gain = -0.3
+				stability_factor = 0.1
+				subjects_autonomy_gain = -0.4
+			}
+		}
+	}
+}
+

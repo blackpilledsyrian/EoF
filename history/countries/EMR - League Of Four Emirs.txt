@@ -159,7 +159,9 @@ set_country_flag = proper_science_base_unlocked
 
 add_ideas = {
 	proper_science_base
-	outdated_industry
+	modern_society
+	limited_conscription
+	partial_economic_mobilisation
 }
 
 set_convoys = 100

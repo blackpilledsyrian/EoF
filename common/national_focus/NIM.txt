@@ -13,8 +13,6 @@ focus_tree = {
 
 	continuous_focus_position = { x = 2050 y = 1650 }
 
-	shared_focus = RIV_dreams_of_a_federation
-
 	shared_focus = NIM_choose_harmony
 	shared_focus = NIM_choose_neutrality
 	shared_focus = NIM_choose_fascism

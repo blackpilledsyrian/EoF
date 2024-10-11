@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		EoF_RIV_infrastructure_autonomy = {
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				master_build_autonomy_factor = 1.0
+			}
+		}
+		EoF_RIV_BAK_support = {
+			removal_cost = -1
+			picture = BAK_bigship
+			modifier = {
+				dockyard_donations = 5
+				industrial_capacity_dockyard = 0.4
+				naval_damage_factor = 0.1
+			}
+			cancel = {
+				BAK = {
+					exists = no
+				}
+			}
+		}
+		EoF_RIV_LCT_support = {
+			removal_cost = -1
+			picture = lake_city
+			modifier = {
+				military_factory_donations = 5
+				industrial_capacity_factory = 0.2
+				army_org_factor = 0.05
+			}
+			cancel = {
+				LCT = {
+					exists = no
+				}
+			}
+		}
+		EoF_RIV_WIT_support = {
+			removal_cost = -1
+			picture = WIT_trade_post_idea
+			modifier = {
+				industrial_factory_donations = 5
+				production_speed_buildings_factor = 0.2
+				research_speed_factor = 0.1
+			}
+			cancel = {
+				WIT = {
+					exists = no
+				}
+			}
+		}
+	}
+}

@@ -25,6 +25,6 @@
 
   EoF_naval_penalty:0 "§RFleet Limit Exceeded§!"
 
-  fleet_limit_tooltip:0 "§HFleet Limit§! \n\nActive Fleet: [?active_fleet_var|.0] \nFleet Limit: [?fleet_limit_var|.0] \n\nThe amount of contribution towards the Active Fleet count per ship are as following: \n§HCarriers§! = 16 \n§HBattleships§! = 8 \n§HBattlecruisers§! = 8 \n§HHeavy Cruisers§! = 2 \n§HLight Cruisers§! = 2 \n§HDestroyers§! = 1 \n§HSubmarines§! = 1"
+  fleet_limit_tooltip:0 "§HFleet Limit§! \n\nActive Fleet: [?active_fleet_var|.0] \nFleet Limit: [?fleet_limit_var|.0] \n\nThe amount of contribution towards the Active Fleet count per ship are as following: \n§HCarriers§! = 12 \n§HBattleships§! = 12 \n§HBattlecruisers§! = 12 \n§HHeavy Cruisers§! = 4 \n§HLight Cruisers§! = 4 \n§HDestroyers§! = 1 \n§HSubmarines§! = 1"
   
   fleet_limit_tooltip_delayed:0 "The §HActive Fleet§! count is the sum of all ships multiplied by their value subtracted by the amount of ships multiplied by their value assigned to the §HReserve Fleet§! admiral. Exceeding the §HFleet Limit§! will incur §Rheavy penalties§! to the effectiveness of your ships."

@@ -1,0 +1,67 @@
+focus_tree = {
+	id = EoF_EMR
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = EMR
+		}
+	}
+	shared_focus = EoF_EMR_war_win
+}
+shared_focus = {
+	id = EoF_EMR_war_win
+	icon = GFX_goal_generic_major_war
+	cost = 0
+	available = {
+		SDL = {
+			exists = no
+		}
+	}
+	ai_will_do = {
+		factor = 200
+	}
+	x = 1
+	y = 0
+	completion_reward = {
+		add_threat = 10
+		remove_ideas = EoF_SDL_EMR_war
+		SDL = {
+			remove_ideas = EoF_SDL_EMR_war
+			every_core_state = {
+				add_core_of = EMR
+				remove_core_of = SDL
+			}
+		}
+		EQC = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		WNG = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		HIP = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		MCW = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		RCT = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		NIM = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		FAT = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		GRI = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		JER = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+		NCH = {
+			remove_ideas = EoF_SDL_EMR_war_volunteers
+		}
+	}
+}

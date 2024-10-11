@@ -719,6 +719,9 @@ on_actions = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
 					}
 				}
+				JAK = {
+					remove_ideas = EoF_YAK_JAK_civil_war
+				}
 				EQS = {
 					remove_ideas = EoF_YAK_JAK_civil_war_volunteers_2
 					country_event = EoF.2
@@ -757,6 +760,9 @@ on_actions = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
 					}
 				}
+				YAK = {
+					remove_ideas = EoF_YAK_JAK_civil_war
+				}
 				EQS = {
 					remove_ideas = EoF_YAK_JAK_civil_war_volunteers_2
 				}
@@ -781,6 +787,362 @@ on_actions = {
 				GRF = {
 					remove_ideas = EoF_YAK_JAK_civil_war_volunteers_1
 					country_event = EoF.3
+				}
+			}
+		}
+	}
+	#SDL-EMR War
+	on_declare_war = { 
+		effect = {
+			if = {
+				limit = {
+					tag = SDL
+					FROM = { tag = EMR }
+				}
+				SDL = {
+					add_ideas = EoF_SDL_EMR_war
+					add_offsite_building = { type = industrial_complex level = 30 }
+					add_offsite_building = { type = arms_factory level = 30 }
+					add_opinion_modifier = {
+						target = EQC
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = WNG
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = HIP
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = MCW
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = RCT
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = NIM
+						modifier = shadow_of_kemerkai
+					}
+					division_template = {
+						name = "Haras Alsharaf 2"
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+			
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 1 y = 3 }
+		
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							mountaineers = { x = 2 y = 3 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 2 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								controller = {
+									tag = EMR
+								}
+							}
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+					}
+				}
+				EMR = {
+					add_ideas = EoF_SDL_EMR_war
+					add_offsite_building = { type = industrial_complex level = 30 }
+					add_offsite_building = { type = arms_factory level = 30 }
+					add_opinion_modifier = {
+						target = FAT
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = GRI
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = JER
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = NCH
+						modifier = light_of_kemerkai
+					}
+					division_template = {
+						name = "Haras Alsharaf 2"
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+			
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 1 y = 3 }
+		
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							mountaineers = { x = 2 y = 3 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 2 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								controller = {
+									tag = SDL
+								}
+							}
+							impassable = no
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+					}
+				}
+				EQC = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				WNG = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				HIP = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				MCW = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				RCT = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NIM = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				FAT = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				GRI = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				JER = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NCH = {
+					add_ideas = EoF_SDL_EMR_war_volunteers
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					#SDL wins the war
+					tag = EMR
+					FROM = { tag = SDL }
+				}
+				add_threat = 10
+				SDL = {
+					remove_ideas = EoF_SDL_EMR_war
+				}
+				EMR = {
+					remove_ideas = EoF_SDL_EMR_war
+					every_core_state = {
+						add_core_of = SDL
+						remove_core_of = EMR
+					}
+				}
+				EQC = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				WNG = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				HIP = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				MCW = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				RCT = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NIM = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				FAT = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				GRI = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				JER = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NCH = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+			}
+			else_if = {
+				limit = {
+					#EMR wins the war
+					tag = SDL
+					FROM = { tag = EMR }
+				}
+				add_threat = 10
+				SDL = {
+					remove_ideas = EoF_SDL_EMR_war
+					every_core_state = {
+						add_core_of = EMR
+						remove_core_of = SDL
+					}
+				}
+				EMR = {
+					remove_ideas = EoF_SDL_EMR_war
+				}
+				EQC = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				WNG = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				HIP = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				MCW = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				RCT = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NIM = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				FAT = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				GRI = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				JER = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
+				}
+				NCH = {
+					remove_ideas = EoF_SDL_EMR_war_volunteers
 				}
 			}
 		}
@@ -1103,8 +1465,6 @@ on_actions = {
 					every_enemy_country = {
 						white_peace = WNG
 					}
-					leave_faction = yes
-					set_country_flag = demilitarized
 					add_ideas = civilian_economy
 					add_ideas = disarmed_nation
 				}

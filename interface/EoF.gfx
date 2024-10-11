@@ -144,6 +144,22 @@ spriteTypes = {
 		name = "GFX_fleet_limit_topbar"
 		texturefile = "gfx/interface/topbar/fleet_limit_topbar.dds"
 	}
+	spriteType = {
+		name = "GFX_autonomy_EoF_rivfed_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_EoF_rivco_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_federation_advisor"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_federation_command"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
 
 	###Tank Modules###
 	spriteType = {

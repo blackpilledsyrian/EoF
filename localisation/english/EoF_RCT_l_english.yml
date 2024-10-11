@@ -1,0 +1,32 @@
+﻿l_english:
+autonomy_EoF_rivco_member:0 "River Coalition Member"
+autonomy_EoF_rivfed_member:0 "River Federation Member"
+
+EoF_RIV_balance_of_power:0 "Coalition Centralization Balance"
+EoF_RIV_balance_of_power_decay:0 "Coalition Decentralizing"
+
+EoF_RIV_centralize_side:0 "Centralization"
+EoF_RIV_decentralize_side:0 "Decentralization"
+EoF_RIV_high_decentralize_range:0 "High Decentralization"
+EoF_RIV_low_decentralize_range:0 "Low Decentralization"
+EoF_RIV_mid_range:0 "Balanced"
+EoF_RIV_low_centralize_range:0 "Low Centralization"
+EoF_RIV_high_centralize_range:0 "High Centralization"
+
+EoF_RIV_subject_lend_lease:0 "Military Aid for Subjects"
+EoF_RIV_subject_factories:0 "Economic Aid for Subjects"
+EoF_RIV_subject_infrastructure:0 "Infrastructure Aid for Subjects"
+
+EoF_RIV_favour_BAK:0 "Grant Bakara Special Permissions"
+EoF_RIV_favour_LCT:0 "Grant Lake City Special Permissions"
+EoF_RIV_favour_WIT:0 "Grant Wittenland Special Permissions"
+EoF_RIV_favour:0 "Special Permissions"
+EoF_RIV_BAK_support:0 "Bakaran Naval Exchange"
+EoF_RIV_LCT_support:0 "Lake City Army Exchange"
+EoF_RIV_WIT_support:0 "Wittenland Industry Exchange"
+
+EoF_RIV_invite_BAK:0 "Integrate Bakara"
+EoF_RIV_invite_LCT:0 "Integrate Lake City"
+EoF_RIV_invite_WIT:0 "Integrate Wittenland"
+
+EoF_RIV_infrastructure_autonomy:0 "Coalition Infrastructure Aid"

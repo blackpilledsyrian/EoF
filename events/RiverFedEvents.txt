@@ -35,16 +35,16 @@ country_event = {
 		}
 
 	}
-	option = {
-		name = riverfed.1.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.1.b
+	# 	ai_chance = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### RCSC Founded ###
@@ -81,16 +81,16 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.2.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.2.b
+	# 	ai_chance = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### We've been developed DEP ###
@@ -633,16 +633,16 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.14.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.14.b
+	# 	ai_chance = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### RCSC Founded ###
@@ -679,16 +679,16 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.15.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.15.b
+	# 	ai_chance = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### Social Fund Founded ###
@@ -716,16 +716,16 @@ country_event = {
 			add_idea = RIV_rec_member2
 		}
 	}
-	option = {
-		name = riverfed.16.b
-		ai_chance = {
-			factor = 0
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.16.b
+	# 	ai_chance = {
+	# 		factor = 0
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Convention on Beings Rights ###
@@ -775,29 +775,29 @@ country_event = {
 		}
 
 	}
-	option = {
-		name = riverfed.17.b
+	# option = {
+	# 	name = riverfed.17.b
 
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 5
-				has_government = fascism
-			}
-			modifier = {
-				add = 10
-				tag = NIM
-				OR = {
-					has_government = fascism
-					has_government = neutrality
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 5
+	# 			has_government = fascism
+	# 		}
+	# 		modifier = {
+	# 			add = 10
+	# 			tag = NIM
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = neutrality
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Parliament ###
@@ -826,23 +826,23 @@ country_event = {
 		}
 		ai_chance = { factor = 5 }
 	}
-	option = {
-		name = riverfed.16.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 3
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.16.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 3
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Free Movement ###
@@ -871,23 +871,23 @@ country_event = {
 		}
 		ai_chance = { factor = 5 }
 	}
-	option = {
-		name = riverfed.19.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.19.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### Central Bank ###
@@ -931,23 +931,23 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.20.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.20.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### RIvbit ###
@@ -994,23 +994,23 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.21.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.21.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Union ###
@@ -1048,23 +1048,23 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.22.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.22.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Army ###
@@ -1099,23 +1099,23 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.23.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.23.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Union ###
@@ -1153,23 +1153,23 @@ country_event = {
 			}
 		}
 	}
-	option = {
-		name = riverfed.24.b
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 10
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-			modifier = {
-				add = 1
-				has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
-			}
-		}
-	}
+	# option = {
+	# 	name = riverfed.24.b
+	# 	ai_chance = {
+	# 		base = 0
+	# 		modifier = {
+	# 			add = 10
+	# 			OR = {
+	# 				has_government = fascism
+	# 				has_government = communism
+	# 			}
+	# 		}
+	# 		modifier = {
+	# 			add = 1
+	# 			has_country_leader = { ruling_only = yes character = WIT_wulfric_grey }
+	# 		}
+	# 	}
+	# }
 }
 
 ### River Federation ###

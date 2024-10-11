@@ -127,6 +127,7 @@ leader_traits = {
 		modifier = {
 			naval_damage_factor = -1
 			naval_defense_factor = -1
+			navy_org_factor = -1
 			sortie_efficiency = -1
 		}
 		new_commander_weight = { factor = 0 }

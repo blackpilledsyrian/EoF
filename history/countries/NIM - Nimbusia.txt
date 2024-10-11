@@ -215,10 +215,10 @@ add_ideas = {
 	NIM_trials_of_the_cyclone
 	NIM_nimbusian_general_staff
 	NIM_warrior_society
-	RIV_member_state
 	lack_of_scientists3
 	poverty5
 	tot_economic_mobilisation
+	RIV_member_state
 }
 
 set_country_flag = have_regular_puppets
