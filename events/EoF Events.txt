@@ -478,7 +478,34 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
-		every_country = {
+		FAT = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		GRI = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		JER = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		NCH = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		EQC = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		WNG = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		HIP = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		MCW = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		RCT = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+		NIM = {
 			set_country_flag = EoF_big_event_custom_tarrin
 		}
 	}

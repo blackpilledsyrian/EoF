@@ -9919,6 +9919,11 @@ offset = {
 					type = annex_everything
 				}
 			}
+			hidden_effect = {
+				every_country = {
+					set_country_flag = EoF_big_event_custom_wingbardy
+				}
+			}
 		}
 	}
 	#EoF Changes

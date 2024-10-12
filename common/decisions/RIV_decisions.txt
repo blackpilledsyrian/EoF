@@ -119,6 +119,9 @@ RIV_race_cat = {
 			custom_effect_tooltip = EoF_RIV_federation_staff_tt
 			hidden_effect = {
 				EoF_RIV_transfer_federation_staff = yes
+				every_country = {
+					set_country_flag = EoF_big_event_custom_rivfed
+				}
 			}
 		}
 
