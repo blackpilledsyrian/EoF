@@ -9888,6 +9888,41 @@ offset = {
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
+	#EoF Changes
+	focus = {
+		id = EoF_liberate_WNG
+		icon = GFX_focus_wng_flag
+		cost = 0
+		prerequisite = {
+			focus = WNG_southern_security_council
+			focus = WNG_southern_sociaty_of_science
+		}
+		mutually_exclusive = {
+		}
+		relative_position_id = WNG_southern_security_council
+		x = 1
+		y = 1
+
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = EoF_WNG_shame_of_defeat
+			}
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = EoF_WNG_treaty
+			JER = {
+				declare_war_on = {
+					target = WNG
+					type = annex_everything
+				}
+			}
+		}
+	}
+	#EoF Changes
+
 	##..................................................
 	##.NNNN...NNNN.....AAAAA..AAAVV....VVVVVVVY....YYY..
 	##.NNNNN..NNNN.....AAAAA...AAVV....VVVVVVVY...YYYY..

@@ -276,6 +276,7 @@ add_ideas = {
 	modern_society
 	limited_conscription
 	partial_economic_mobilisation
+	EoF_south_trade
 }
 
 set_convoys = 100

@@ -13,6 +13,7 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 			dockyard = 1
+			air_base = 3
 			15503 = {
 				naval_base = 3
 			}

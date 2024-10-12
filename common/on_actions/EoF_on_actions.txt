@@ -1468,6 +1468,58 @@ on_actions = {
 					add_ideas = civilian_economy
 					add_ideas = disarmed_nation
 				}
+				else_if = {
+					limit = {
+						date > 1012.06.01
+					}
+					WNG = {
+						add_timed_idea = {
+							idea = EoF_WNG_shame_of_defeat
+							days = 60
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						date > 1012.05.01
+					}
+					WNG = {
+						add_timed_idea = {
+							idea = EoF_WNG_shame_of_defeat
+							days = 120
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						date > 1012.04.01
+					}
+					WNG = {
+						add_timed_idea = {
+							idea = EoF_WNG_shame_of_defeat
+							days = 180
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						date > 1012.03.01
+					}
+					WNG = {
+						add_timed_idea = {
+							idea = EoF_WNG_shame_of_defeat
+							days = 240
+						}
+					}
+				}
+				else = {
+					WNG = {
+						add_timed_idea = {
+							idea = EoF_WNG_shame_of_defeat
+							days = 300
+						}
+					}
+				}
 				487 = {
 					add_core_of = JER
 					transfer_state_to = JER

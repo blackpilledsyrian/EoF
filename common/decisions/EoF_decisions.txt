@@ -1,4 +1,92 @@
 political_actions = {
+	EoF_invade_SDL_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = CHN
+		}
+		visible = {
+			EMR = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			CHN = {
+				declare_war_on = {
+					target = SDL
+					type = annex_everything
+				}
+			}
+			EQS = {
+				add_to_faction = SDL
+			}
+		}
+	}
+	EoF_invade_EMR_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			SDL = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			EMR = {
+				declare_war_on = {
+					target = EQS
+					type = annex_everything
+				}
+			}
+			CHN = {
+				add_to_faction = EMR
+			}
+		}
+	}
+	EoF_invite_SDL_decision = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			EMR = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			EQS = {
+				add_to_faction = SDL
+			}
+		}
+	}
+	EoF_invite_EMR_decision = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = CHN
+		}
+		visible = {
+			SDL = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			CHN = {
+				add_to_faction = EMR
+			}
+		}
+	}
 	EoF_GRF_border_war_mission = {
 		icon = GFX_decision_border_war
 		allowed = {

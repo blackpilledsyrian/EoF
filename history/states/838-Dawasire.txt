@@ -7,6 +7,7 @@ state={
 		add_core_of = SDL
 		buildings = {
 			infrastructure = 2
+			air_base = 2
 		}
 		victory_points = { 15460 3 }
 	}

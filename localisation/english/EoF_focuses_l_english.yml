@@ -345,10 +345,20 @@ EoF_HIP_victoria_finalis_desc:0 "Aiming for heaven though serving in hell, victo
 EoF_HIP_naval_race:0 "Win the Naval Race"
 EoF_HIP_naval_race_desc:0 "For the first time in history, our navy is in danger of being surpassed. By temporarily concentrating our effort on developing our coastline, we can free up space to massively expand existing dockyards. If the Aquileians want to challenge us, so be it, we will give them the race they want."
 
+EoF_liberate_WNG:0 "Liberate Wingbardy"
+EoF_liberate_WNG_desc:0 ""
+
 EoF_ABY_tension:0 "Prepare the Border"
 EoF_ABY_tension_desc:0 ""
 EoF_ABY_war:0 "Attack Hippogriffia"
 EoF_ABY_war_desc:0 ""
+
+EoF_SDL_war_declare:0 "Attack Four Emirs"
+EoF_SDL_war_declare_desc:0 ""
+EoF_SDL_war_win:0 "Unite the Nations"
+EoF_SDL_war_win_desc:0 ""
+EoF_EMR_war_win:0 "Unite the Nations"
+EoF_EMR_war_win_desc:0 ""
 
 ###Olenia
 

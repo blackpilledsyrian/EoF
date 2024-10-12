@@ -24,4 +24,8 @@ state={
 			arms_factory = 3
 		}
 	}
+
+	resources={
+		tungsten = 80
+	}
 }

@@ -87,6 +87,156 @@ ideas = {
 				# local_resources_factor = 1
 			}
 		}
+		EoF_south_trade = {
+			removal_cost = -1
+			picture = trade
+			targeted_modifier = {
+				tag = EQS
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CRY
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = STG
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = HIP
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = WNG
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = EQC
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = MCW
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CHN
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = PLB
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = GRF
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = JER
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = OLE
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = GRI
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = NCH
+				trade_cost_for_target_factor = 9
+			}
+			modifier = {
+				# local_resources_factor = 1
+			}
+		}
+		EoF_north_trade = {
+			removal_cost = -1
+			picture = trade
+			targeted_modifier = {
+				tag = EQS
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = CRY
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = STG
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = HIP
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = WNG
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = EQC
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = MCW
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = CHN
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = PLB
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = GRF
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = JER
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = OLE
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = GRI
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = NCH
+				trade_cost_for_target_factor = -0.5
+			}
+			modifier = {
+				# local_resources_factor = 1
+			}
+		}
 		EoF_peacetime_training = {
 			removal_cost = -1
 			picture = generic_army_war_college

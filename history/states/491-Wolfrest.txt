@@ -13,6 +13,7 @@ state={
 	history = {
 		owner = LCT
 		add_core_of = LCT
+		add_core_of = DEP
 
 		victory_points = { 3338 1 }
 

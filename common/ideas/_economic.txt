@@ -669,6 +669,12 @@ ideas = {
 					}
 					NOT = { has_idea = EoF_WNG_treaty }
 				}
+				if = {
+					limit = {
+						tag = RCT
+					}
+					date > 1011.11.01
+				}
 				NOT = { has_country_flag = economic_laws_blocked }
 			}
 

@@ -117,6 +117,11 @@ EoF_player_OLE_decision:0 "Player Olenia"
 EoF_AI_NCH_decision:0 "AI Greneclyf"
 EoF_AI_NIM_decision:0 "AI Nimbusia"
 
+EoF_invade_SDL_decision:0 "Invade Saddle Arabia"
+EoF_invade_EMR_decision:0 "Invade Four Emirs"
+EoF_invite_SDL_decision:0 "Invite Saddle Arabia"
+EoF_invite_EMR_decision:0 "Invite Four Emirs"
+
 EoF_dandan:0 "Narcoleptic Genius"
 EoF_war_industrialists:0 "War Industrialist"
 EoF_production_conductor:0 "Conductor of Production"
@@ -128,6 +133,8 @@ EoF_armour_advocate:0 "Armour Advocate"
 
 EoF_neutral_country:0 "Neutral Country"
 EoF_neutral_trade:0 "Neutral Trade"
+EoF_south_trade:0 "South Trade"
+EoF_north_trade:0 "North Trade"
 
 EoF_north_integrated_economy:0 "Integrated Northern Economy"
 EoF_failed_integrated_economy:0 "Integrated Economy Collapse"
@@ -242,6 +249,10 @@ EoF_YAK_JAK_civil_war:0 "Yak-Jak Civil War"
 EoF_YAK_JAK_civil_war_volunteers_1:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_volunteers_2:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_terrain:0 "Yak-Jak Civil War Terrain"
+
+EoF_SDL_EMR_war:0 "Arab-Emir War"
+EoF_SDL_EMR_war_volunteers:0 "Arab-Emir War Volunteers"
+
 EoF_YAK_thanks:0 "Yak Gift"
 EoF_JAK_thanks:0 "Jak Gift"
 EoF.2.t:0 "Thanks From the Yaks"
@@ -756,6 +767,8 @@ EoF_WNG_treaty:0 "Victors of the Tarrin War"
 EoF_WNG_treaty_desc:0 "The Wingbardian nation has endured countless conflicts. Despite fighting heavily in the First and Second Great Griffonian Wars as well as the devastating Tarrin War, through it all, Wingbardy has remained unconquered and undefeated. However, the decades of peace and memories of past losses have sapped the will of the nation to endure a struggle of that magnitude ever again. The Wingbardian people naively hope that the current era of strife will pass quickly without the need to fight once more."
 EoF_WNG_militarization:0 "Fury of Karthin"
 EoF_WNG_militarization_desc:0 "The treacherous Aquileians have mistaken our unwillingness to fully commit to this war as a sign of weakness. Let them face the fury of Karthin, reserved for those who have forsaken all honour."
+
+EoF_WNG_shame_of_defeat:0 "Shame of Defeat"
 
 EoF_WNG_inundate_the_water_lines:0 "Inundate the Water Lines"
 EoF_WNG_drain_the_water_lines:0 "Drain the Water Lines"

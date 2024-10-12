@@ -13,6 +13,7 @@ state={
 	history = {
 		owner = BAK
 		add_core_of = BAK
+		add_core_of = DMT
 
 		victory_points = { 4010 3 }
 
@@ -23,6 +24,7 @@ state={
 
 	resources={
 		chromium=60
+		steel=60
 		crystals=190
 	}
 }

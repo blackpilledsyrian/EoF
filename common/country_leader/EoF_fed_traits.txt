@@ -15,12 +15,13 @@
 leader_traits = {
 	EoF_fed_silent_workhorse = {
 		random = no
-		political_power_factor = 0.15
+		federation_advisor_cost_factor = -0.33
+		federation_command_cost_factor = -0.33
 	}
 	EoF_fed_compassionate_gentleman = {
 		random = no
-		political_power_factor = 0.05
-		stability_weekly = 0.001
+		defensive_war_stability_factor = 0.1
+		army_core_defence_factor = 0.05
 	}
 	EoF_fed_financial_expert = {
 		random = no
@@ -28,8 +29,10 @@ leader_traits = {
 	}
 	EoF_fed_alt_navy_capital_ship_3 = {
 		random = no
-		navy_capital_ship_attack_factor = 0.15
-		navy_capital_ship_defence_factor = 0.15
+		navy_capital_ship_attack_factor = 0.05
+		navy_capital_ship_defence_factor = 0.05
+		naval_has_potf_in_combat_attack = 0.05
+		naval_has_potf_in_combat_defense = 0.05
 	}
 	EoF_fed_alt_navy_chief_old_guard = {
 		random = no
@@ -37,24 +40,25 @@ leader_traits = {
 	}
 	EoF_fed_navy_screen_3 = {
 		random = no
-		navy_screen_attack_factor = 0.15
-		navy_screen_defence_factor = 0.2
+		navy_screen_attack_factor = 0.1
+		navy_screen_defence_factor = 0.1
+		screening_efficiency = 0.25
 	}
 	EoF_fed_navy_fleet_logistics_3 = {
 		random = no
-		navy_max_range_factor = 0.15
+		navy_max_range_factor = 0.2
+		navy_fuel_consumption_factor = -0.2
+		refit_speed = 0.1
 	}
 	EoF_fed_captain_of_industry = {
 		random = no
-		production_speed_industrial_complex_factor = 0.1
-		production_speed_infrastructure_factor = 0.1
-		production_speed_rail_way_factor = 0.1
-		production_speed_synthetic_refinery_factor = 0.1
+		production_speed_industrial_complex_factor = 0.05
+		global_building_slots_factor = 0.1
 	}
 	EoF_fed_backroom_backstabber = {
 		random = no
-		political_power_factor = 0.05
-		war_support_weekly = 0.001
+		operative_slot = 1
+		surrender_limit = 0.05
 	}
 	EoF_fed_smooth_talking_charmer = {
 		random = no
@@ -63,27 +67,30 @@ leader_traits = {
 	}
 	EoF_fed_army_chief_morale_2 = {
 		random = no
-		army_morale_factor = 0.1
+		army_armor_attack_factor = 0.03
+		army_armor_defence_factor = 0.03
 	}
 	EoF_fed_army_concealment_2 = {
 		random = no
 		enemy_army_bonus_air_superiority_factor = -0.1
+		cas_damage_reduction = 0.1
 	}
 	EoF_fed_alt_army_chief_maneuver_2 = {
 		army_speed_factor = 0.1
+		breakthrough_factor = 0.025
 	}
 	EoF_fed_fortification_engineer = {
 		random = no
 		production_speed_bunker_factor = 0.2
-		production_speed_coastal_bunker_factor = 0.2
 		land_bunker_effectiveness_factor = 0.2
-		coastal_bunker_effectiveness_factor = 0.2
+		max_dig_in_factor = 0.1
 	}
 	EoF_fed_war_industrialist = {
 		random = no
-		production_speed_arms_factory_factor = 0.1
-		production_speed_dockyard_factor = 0.1
-		production_speed_fuel_silo_factor = 0.1
+		production_speed_arms_factory_factor = 0.05
+		production_speed_dockyard_factor = 0.05
+		military_factory_donations = 2
+		dockyard_donations = 2
 	}
 	EoF_fed_army_infantry_2 = {
 		random = no
@@ -94,6 +101,7 @@ leader_traits = {
 		supply_consumption_factor = -0.1
 	}
 	EoF_fed_army_entrenchment_2 = {
-		dig_in_speed_factor = 0.2
+		dig_in_speed_factor = 0.25
+		recon_factor_while_entrenched = 0.25
 	}
 }

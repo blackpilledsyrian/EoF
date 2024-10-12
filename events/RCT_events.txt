@@ -1447,79 +1447,79 @@ country_event = {#Event that gives you awful debuffs if you take over the River 
 	desc = rivercity.1927.d
 	picture = GFX_event_river_city
 
-	trigger = {
-		original_tag = RCT
-		has_government = communism
-		OR = {
-			has_country_flag = RCT_caramels_coup
-			has_country_flag = RCT_nova_remains
-			has_country_flag = RCT_caramel_took_power
-		}
-		617 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		580 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		645 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		649 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		619 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		637 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		544 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-		387 = {
-			owner = {
-				OR = {
-					tag = ROOT
-					is_subject_of = ROOT
-				}
-			}
-		}
-	}
+	# trigger = {
+	# 	original_tag = RCT
+	# 	has_government = communism
+	# 	OR = {
+	# 		has_country_flag = RCT_caramels_coup
+	# 		has_country_flag = RCT_nova_remains
+	# 		has_country_flag = RCT_caramel_took_power
+	# 	}
+	# 	617 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	580 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	645 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	649 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	619 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	637 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	544 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# 	387 = {
+	# 		owner = {
+	# 			OR = {
+	# 				tag = ROOT
+	# 				is_subject_of = ROOT
+	# 			}
+	# 		}
+	# 	}
+	# }
 	fire_only_once = yes
 	mean_time_to_happen = {
 		days = 1

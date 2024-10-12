@@ -13,6 +13,7 @@ state={
 	history = {
 		owner = BAK
 		add_core_of = BAK
+		add_core_of = DMT
 
 		victory_points = { 4704 5 }
 

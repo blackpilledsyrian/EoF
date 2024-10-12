@@ -22,6 +22,9 @@ state={
 	}
 
 	resources={
+		steel = 70
+		chromium = 30
+		tungsten = 100
 		crystals=60
 	}
 }
