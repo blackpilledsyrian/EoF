@@ -1047,106 +1047,6 @@ on_actions = {
 			}
 		}
 	}
-	on_capitulation = {
-		effect = {
-			if = {
-				limit = {
-					#SDL wins the war
-					tag = EMR
-					FROM = { tag = SDL }
-				}
-				add_threat = 10
-				SDL = {
-					remove_ideas = EoF_SDL_EMR_war
-				}
-				EMR = {
-					remove_ideas = EoF_SDL_EMR_war
-					every_core_state = {
-						add_core_of = SDL
-						remove_core_of = EMR
-					}
-				}
-				EQC = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				WNG = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				HIP = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				MCW = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				RCT = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				NIM = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				FAT = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				GRI = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				JER = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				NCH = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-			}
-			else_if = {
-				limit = {
-					#EMR wins the war
-					tag = SDL
-					FROM = { tag = EMR }
-				}
-				add_threat = 10
-				SDL = {
-					remove_ideas = EoF_SDL_EMR_war
-					every_core_state = {
-						add_core_of = EMR
-						remove_core_of = SDL
-					}
-				}
-				EMR = {
-					remove_ideas = EoF_SDL_EMR_war
-				}
-				EQC = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				WNG = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				HIP = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				MCW = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				RCT = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				NIM = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				FAT = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				GRI = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				JER = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-				NCH = {
-					remove_ideas = EoF_SDL_EMR_war_volunteers
-				}
-			}
-		}
-	}
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {
@@ -1457,16 +1357,17 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					ROOT = {
-						tag = WNG
-					}
+					tag = WNG
 				}
 				WNG = {
 					every_enemy_country = {
 						white_peace = WNG
 					}
-					add_ideas = civilian_economy
-					add_ideas = disarmed_nation
+				}
+				if = {
+					limit = {
+						date > 1012.07.01
+					}			
 				}
 				else_if = {
 					limit = {
