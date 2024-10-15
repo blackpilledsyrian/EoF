@@ -5887,7 +5887,7 @@ country_event = { #Illieracy Event 1
 		}
 		update_JER_parliament_max = yes
 		hidden_effect = {
-			country_event = { id = aquileia.115 days = 140 }
+			country_event = { id = aquileia.115 days = 70 }
 		}
 	}
 }

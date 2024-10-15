@@ -673,6 +673,8 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.025
+				industrial_capacity_factory = 0.025
 				communism_acceptance = 25
 			}
 		}
@@ -695,6 +697,7 @@ ideas = {
 				stability_factor = 0.05
 				MONTHLY_POPULATION = 0.15
 				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.1
 			}
 		}
 	}
@@ -713,7 +716,7 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.03
+			    consumer_goods_factor = -0.15
 				trade_opinion_factor = 0.15
 				political_power_gain = 0.05
 			}
@@ -734,9 +737,9 @@ ideas = {
 			picture = man_five_year_plan_industry
 			removal_cost = -1
 			modifier = {
-			    production_speed_industrial_complex_factor = 0.075
-				global_building_slots_factor = 0.05
-				conscription_factor = 0.05
+			    production_speed_industrial_complex_factor = 0.125
+				global_building_slots_factor = 0.1
+				conscription_factor = 0.1
 			}
 		}
 	}
@@ -756,7 +759,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			    political_power_factor = 0.05
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
 				stability_factor = 0.05
 				communism_acceptance = 25
 			}
@@ -777,9 +781,9 @@ ideas = {
 			picture = GRW_inf_manufacturer
 			removal_cost = -1
 			modifier = {
-			    non_core_manpower = 0.02
 				war_support_factor = 0.05
 				political_power_factor = 0.05
+				conscription_factor = 0.05
 			}
 		}
 	}
@@ -800,7 +804,8 @@ ideas = {
 			modifier = {
 			    industrial_capacity_factory = 0.05
 				production_speed_arms_factory_factor = 0.05
-				consumer_goods_factor = -0.04
+				consumer_goods_factor = -0.1
+				military_factory_donations = 3
 			}
 		}
 	}
@@ -819,9 +824,9 @@ ideas = {
 			picture = STG_less_bureaucracy
 			removal_cost = -1
 			modifier = {
-			    MONTHLY_POPULATION = 0.10
 				research_speed_factor = 0.03
-				stability_factor = 0.05
+				party_popularity_stability_factor = 0.1
+				political_power_gain = 0.1
 			}
 		}
 	}
@@ -840,9 +845,9 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.06
-				stability_factor = 0.05
-				political_power_factor = 0.075
+			    consumer_goods_factor = -0.15
+				stability_factor = 0.1
+				political_power_factor = 0.05
 			}
 		}
 	}
@@ -861,9 +866,10 @@ ideas = {
 			picture = chi_hyper_inflation3
 			removal_cost = -1
 			modifier = {
-			    conscription = 0.01
+			    conscription = 0.015
 				war_support_factor = 0.05
 				political_power_factor = -0.10
+				production_speed_arms_factory_factor = 0.05
 			}
 		}
 	}
@@ -958,9 +964,10 @@ ideas = {
 			picture = NOR_syndicalist_support
 			removal_cost = -1
 			modifier = {
-				political_power_factor = 0.075
-				production_factory_efficiency_gain_factor = 0.075
-				industrial_capacity_factory = 0.025
+				political_power_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
 				communism_acceptance = 25
 			}
 		}
@@ -980,9 +987,9 @@ ideas = {
 			picture = generic_victors_of_ww1
 			removal_cost = -1
 			modifier = {
-				stability_factor = 0.05
-				political_power_gain = 0.10
-				compliance_growth = 0.05
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				surrender_limit = 0.05
 			}
 		}
 	}
@@ -1001,10 +1008,11 @@ ideas = {
 			picture = ast_volunteer_defence_corps
 			removal_cost = -1
 			modifier = {
-			    conscription_factor = 0.10
+			    conscription_factor = 0.1
 			    training_time_army_factor = -0.05
-				resistance_growth_on_our_occupied_states = 0.10
-				mobilization_speed = 0.05
+				resistance_growth_on_our_occupied_states = 0.1
+				resistance_target_on_our_occupied_states = 0.1
+				mobilization_speed = 0.2
 			}
 		}
 	}
@@ -1023,7 +1031,7 @@ ideas = {
 			picture = jap_supremacy_of_will
 			removal_cost = -1
 			modifier = {
-			    research_speed_factor = 0.03
+			    research_speed_factor = 0.05
 			}
 		}
 	}
@@ -1042,7 +1050,7 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.06
+			    consumer_goods_factor = -0.25
 				trade_opinion_factor = 0.25
 				political_power_gain = 0.10
 			}
@@ -1064,8 +1072,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			    stability_factor = 0.05
-			    resistance_target = -0.05
-				army_morale_factor = 0.05
+				own_operative_detection_chance_factor = -0.1
+				intel_from_operatives_factor = 0.1
 				operative_slot = 1
 			}
 		}
@@ -1085,9 +1093,9 @@ ideas = {
 			picture = ger_mefo_bills
 			removal_cost = -1
 			modifier = {
-			    compliance_growth = 0.05
-				stability_factor = 0.05
-				surrender_limit = 0.05
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				compliance_growth = 0.1
 			}
 		}
 	}
@@ -1107,7 +1115,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 			    political_power_factor = 0.10
-				industrial_capacity_factory = 0.075
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
 				stability_factor = 0.075
 				communism_acceptance = 25
 			}
@@ -1128,9 +1137,10 @@ ideas = {
 			picture = man_five_year_plan_industry
 			removal_cost = -1
 			modifier = {
-			    industrial_capacity_factory = 0.05
-				production_speed_arms_factory_factor = 0.10
-				consumer_goods_factor = -0.06
+			    industrial_capacity_factory = 0.075
+				production_speed_arms_factory_factor = 0.1
+				consumer_goods_factor = -0.1
+				military_factory_donations = 5
 			}
 		}
 	}
@@ -1234,10 +1244,11 @@ ideas = {
 			picture = GRW_inf_manufacturer
 			removal_cost = -1
 			modifier = {
-			    non_core_manpower = 0.03
-				war_support_factor = 0.075
+				war_support_factor = 0.05
 				political_power_factor = 0.05
-				army_morale_factor = 0.05
+				conscription_factor = 0.1
+				army_org_factor = 0.05
+				army_attack_factor = 0.025
 			}
 		}
 	}
@@ -1278,10 +1289,9 @@ ideas = {
 			picture = STG_less_bureaucracy
 			removal_cost = -1
 			modifier = {
-			    MONTHLY_POPULATION = 0.15
-				research_speed_factor = 0.03
-				stability_factor = 0.10
-				conscription_factor = 0.05
+				research_speed_factor = 0.05
+				party_popularity_stability_factor = 0.15
+				political_power_gain = 0.15
 			}
 		}
 	}
@@ -1300,9 +1310,10 @@ ideas = {
 			picture = chi_hyper_inflation3
 			removal_cost = -1
 			modifier = {
-			    conscription = 0.015
+			    conscription = 0.03
 				war_support_factor = 0.075
-				political_power_factor = -0.125
+				political_power_factor = -0.15
+				production_speed_arms_factory_factor = 0.1
 			}
 		}
 	}
@@ -1321,10 +1332,10 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.06
-				stability_factor = 0.05
+			    consumer_goods_factor = -0.15
+				stability_factor = 0.1
 				political_power_factor = 0.10
-				production_speed_arms_factory_factor = 0.05
+				production_speed_arms_factory_factor = 0.075
 			}
 		}
 	}
@@ -1343,9 +1354,10 @@ ideas = {
 			picture = generic_constitutional_guarantees
 			removal_cost = -1
 			modifier = {
-				operative_slot = 1
-				MONTHLY_POPULATION = 0.15
-				political_power_gain = 0.10
+				political_power_gain = 0.1
+				civilian_intel_factor = 0.1
+				industrial_capacity_factory = 0.025
+				weekly_manpower = 800 
 			}
 		}
 	}
@@ -1364,9 +1376,9 @@ ideas = {
 			picture = generic_pp_unity_bonus
 			removal_cost = -1
 			modifier = {
-			    compliance_growth = 0.05
-				stability_factor = 0.05
-				intel_from_operatives_factor = 0.10
+				stability_factor = 0.1
+				compliance_growth = 0.1
+				army_intel_factor = 0.1
 			}
 		}
 	}
@@ -1673,8 +1685,9 @@ ideas = {
 			picture = ROM_king_carol_emptied_accounts
 			removal_cost = -1
 			modifier = {
-			    consumer_goods_factor = -0.1
+			    consumer_goods_factor = -0.25
 				trade_opinion_factor = 0.25
+				political_power_gain = 0.10
 			}
 		}
 	}
@@ -1734,9 +1747,9 @@ ideas = {
 			picture = ger_mefo_bills
 			removal_cost = -1
 			modifier = {
-			    compliance_growth = 0.10
-				stability_factor = 0.10
-				surrender_limit = 0.10
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				compliance_growth = 0.1
 			}
 		}
 	}
