@@ -26,6 +26,10 @@ shared_focus = {
 			target = EMR
 			type = annex_everything
 		}
+		add_named_threat = {
+			threat = 3
+			name = EoF_SDL_EMR_war_start_tension
+		}
 	}
 }
 shared_focus = {
@@ -47,7 +51,10 @@ shared_focus = {
 	x = 0
 	y = 1
 	completion_reward = {
-		add_threat = 10
+		add_named_threat = {
+			threat = 10
+			name = EoF_SDL_EMR_war_end_tension
+		}
 		remove_ideas = EoF_SDL_EMR_war
 		EMR = {
 			remove_ideas = EoF_SDL_EMR_war

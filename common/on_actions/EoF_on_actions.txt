@@ -589,6 +589,10 @@ on_actions = {
 					}
 				}
 				JAK = {
+					add_named_threat = {
+						threat = 3
+						name = EoF_YAK_JAK_civil_war_start_tension
+					}
 					add_ideas = EoF_YAK_JAK_civil_war
 					add_offsite_building = { type = industrial_complex level = 20 }
 					add_offsite_building = { type = arms_factory level = 20 }
@@ -712,8 +716,11 @@ on_actions = {
 					tag = JAK
 					FROM = { tag = YAK }
 				}
-				add_threat = 30
 				YAK = {
+					add_named_threat = {
+						threat = 10
+						name = EoF_YAK_JAK_civil_war_end_tension
+					}
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
@@ -753,8 +760,11 @@ on_actions = {
 					tag = YAK
 					FROM = { tag = JAK }
 				}
-				add_threat = 30
 				JAK = {
+					add_named_threat = {
+						threat = 10
+						name = EoF_YAK_JAK_civil_war_end_tension
+					}
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }

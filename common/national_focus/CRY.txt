@@ -94,7 +94,10 @@ shared_focus = {
 	y = 1
 	relative_position_id = CRY_military
 	completion_reward = {
-		add_threat = 3
+		add_named_threat = {
+			threat = 3
+			name = EoF_CRY_imperialism_tension
+		}
 		268 = {
 			transfer_state_to = CRY
 			add_core_of = CRY

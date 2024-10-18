@@ -33,7 +33,10 @@ country_event = {
 		}
 		hidden_effect = {
 			GRF = {
-				add_threat = 15
+				add_named_threat = {
+					threat = 5
+					name = EoF_GRF_border_war_start_tension
+				}
 			}
 		}
 	}
@@ -51,6 +54,14 @@ country_event = {
 		241 = {
 			transfer_state_to = GRF
 		}
+		hidden_effect = {
+			GRF = {
+				add_named_threat = {
+					threat = 3
+					name = EoF_GRF_border_war_end_tension
+				}
+			}
+		}
 	}
 }
 country_event = {
@@ -61,6 +72,14 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = GRF_border_war.3.a
+		hidden_effect = {
+			GRF = {
+				add_named_threat = {
+					threat = 3
+					name = EoF_GRF_border_war_end_tension
+				}
+			}
+		}
 	}
 }
 country_event = {

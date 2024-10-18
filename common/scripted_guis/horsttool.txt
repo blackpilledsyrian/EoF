@@ -115,6 +115,7 @@ scripted_gui = {
 						if={limit={check_variable= { Root.selected_cheat=19} } army_experience = 20 }
 						if={limit={check_variable= { Root.selected_cheat=20} } air_experience = 20 }
 						if={limit={check_variable= { Root.selected_cheat=21} } navy_experience = 20 }
+						if={limit={check_variable= { Root.selected_cheat=22} } add_threat = 3 }
 						} }
 				clear_variable = ROOT.taker
 
@@ -228,6 +229,7 @@ scripted_gui = {
 			cheat19_click={set_variable={Root.selected_cheat=19} ROOT= { clr_country_flag = cheating} }
 			cheat20_click={set_variable={Root.selected_cheat=20} ROOT= { clr_country_flag = cheating} }
 			cheat21_click={set_variable={Root.selected_cheat=21} ROOT= { clr_country_flag = cheating} }
+			cheat22_click={set_variable={Root.selected_cheat=22} ROOT= { clr_country_flag = cheating} }
 		}
 		properties = {
 
@@ -272,6 +274,7 @@ scripted_gui = {
 			cheat19_visible={ROOT= { has_country_flag = cheating} }
 			cheat20_visible={ROOT= { has_country_flag = cheating} }
 			cheat21_visible={ROOT= { has_country_flag = cheating} }
+			cheat22_visible={ROOT= { has_country_flag = cheating} }
 			cheat8_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat9_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat10_text_visible={ROOT= { has_country_flag = cheating} }
@@ -286,6 +289,7 @@ scripted_gui = {
 			cheat19_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat20_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat21_text_visible={ROOT= { has_country_flag = cheating} }
+			cheat22_text_visible={ROOT= { has_country_flag = cheating} }
 			clear_all_markings_click_enabled = {
 				check_variable = { ROOT.marked_states^num > 0 }
 			}

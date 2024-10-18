@@ -677,118 +677,10 @@ shared_focus = {
 	}
 	prerequisite = { focus = GRI_noble_industrial }
 	prerequisite = { focus = GRI_the_secret_service }
-	bypass = {
-		STW = {
-			OR = {
-				tag = ROOT
-				NOT = { 
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				} 
-			}
-		}
-	    NOT = {
-	        FEA = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        PYT = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		# NOT = {
-	    #     BRZ = { 
-		# 		OR = {
-		# 			is_subject_of = ROOT 
-		# 			is_in_faction_with = ROOT
-		# 		}
-		# 	} 
-		# }
-	}
-	will_lead_to_war_with = STW
-	will_lead_to_war_with = FEA
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRI_unite_nobles"
-		if = {
-			limit = { 
-				STW = { 
-					NOT = { tag = ROOT }
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			STW = { 
-			    country_event = { 
-			        id = imperial.31 
-					days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-				FEA = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			FEA = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-				PYT = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			PYT = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
-		}
-		# if = {
-		# 	limit = { 
-		# 	    BRZ = { 
-		# 		    OR = {
-		# 				is_subject_of = ROOT 
-		# 				is_in_faction_with = ROOT
-		# 			}					
-		# 		}
-		# 	} 
-		# 	unlock_decision_tooltip = GRI_intergrate_bronzehill
-		# }
-		hidden_effect = {
-			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
-			every_state = {
-				limit = { 
-					OR = {
-						#is_core_of = BRZ
-						is_core_of = STW
-						is_core_of = FEA
-						is_core_of = PYT
-					}
-				}
-				add_core_of = ROOT
-			}
+		add_named_threat = {
+			threat = 5
+			name = EoF_unite_empire_tension
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1339,129 +1231,10 @@ shared_focus = {
 	}
 	prerequisite = { focus = GRI_holy_order }
 	prerequisite = { focus = GRI_kill_the_traitors }
-	bypass = {
-	    NOT = {
-	        ROU = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	    NOT = {
-	        YAL = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        ANG = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        KAT = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	}
-	will_lead_to_war_with = ROU
-	will_lead_to_war_with = YAL
-	will_lead_to_war_with = ANG
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRI_reward_loyalty"
-		if = {
-			limit = { 
-			    ROU = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			ROU = { 
-			    country_event = { 
-				    id = imperial.14 days = 2
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    YAL = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			YAL = { 
-			    country_event = { 
-				    id = imperial.15 days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    ANG = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			ANG = { 
-			    country_event = { 
-				    id = imperial.15 days = 2
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    KAT = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			KAT = { 
-			    country_event = { 
-				    id = imperial.15 days = 1 
-				} 
-			}
-		}
-		# if = {
-		# 	limit = { 
-		# 	    BRZ = { 
-		# 		    OR = {
-		# 				is_subject_of = ROOT 
-		# 				is_in_faction_with = ROOT
-		# 			}					
-		# 		}
-		# 	} 
-		# 	unlock_decision_tooltip = GRI_intergrate_bronzehill
-		# }
-		hidden_effect = {
-			country_event = { id = imperial.65 days = 15 random = 720 }#days to hours applied
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = ANG
-						is_core_of = KAT
-						is_core_of = ROU
-						is_core_of = YAL
-					}
-				}
-				add_core_of = ROOT
-			}
+		add_named_threat = {
+			threat = 5
+			name = EoF_unite_empire_tension
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2351,6 +2124,9 @@ shared_focus = {
 				has_war_with = ROOT
 			}
 		}
+	}
+	allow_branch = {
+		always = no
 	}
 
 	ai_will_do = {
@@ -4661,6 +4437,7 @@ shared_focus = {
 	id = GRI_new_navy
 	icon = GFX_goal_Griffonian_Marine_1
 	available = {
+		has_completed_focus = EoF_expand_our_shores
 		any_controlled_state_is_coastal = yes
 		433 = { 
 		    is_owned_and_controlled_by = ROOT 
@@ -5149,7 +4926,10 @@ shared_focus = {
 	relative_position_id = GRI_submarines_and_long_lance
 	cost = 3
 	completion_reward = {
-		add_threat = 5
+		add_named_threat = {
+			threat = 3
+			name = EoF_expand_shores_tension
+		}
 		news_event = EoF.news.5
 		433 = {
 			add_dynamic_modifier = {
@@ -5187,7 +4967,10 @@ shared_focus = {
 		focus = EoF_princess_kaiser
 	}
 	completion_reward = {
-		add_threat = 3
+		add_named_threat = {
+			threat = 5
+			name = EoF_GRI_border_war_tension
+		}
 		unlock_decision_tooltip = EoF_GRI_border_war_decision
 	}
 }
@@ -5931,7 +5714,7 @@ shared_focus = {
 			name = armor_bonus
 			bonus = 1.0
 			uses = 1
-			category = cat_light_armor
+			category = armor
 		}
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
@@ -5954,8 +5737,11 @@ shared_focus = {
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0
-			uses = 1
-			category = cat_medium_armor
+			uses = 2
+			technology = armor_tech_1
+			technology = armor_tech_2
+			technology = armor_tech_3
+			technology = armor_tech_4
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6048,8 +5834,10 @@ shared_focus = {
 shared_focus = {
 	id = GRI_combined_arms_warfare
 	icon = GFX_goal_Black_State_Rising_2
-	prerequisite = { focus = GRI_officer_training }
-	prerequisite = { focus = GRI_imperial_heavy_tanks }
+	prerequisite = { 
+		focus = GRI_officer_training
+		focus = GRI_imperial_heavy_tanks
+	}
 	x = 37
 	y = 6
 	cost = 5

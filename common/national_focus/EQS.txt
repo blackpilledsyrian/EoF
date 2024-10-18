@@ -1228,7 +1228,7 @@ shared_focus = {
 	x = 23
 	y = 3
 	available = { 
-		CHN = { has_added_tension_amount > 5 }
+		CHN = { has_added_tension_amount > 0 }
 		controls_state = 14
 		controls_state = 172
 		controls_state = 175
@@ -3978,12 +3978,7 @@ shared_focus = {
 		}
 	}
 	available = {
-		has_war = no
-		has_war_support > 0.4
-		OR = {
-			date > 1011.01.01
-			CHN = { has_added_tension_amount > 10 }
-		}
+		always = no
 	}
 	bypass = {
 		CHN = {

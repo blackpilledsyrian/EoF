@@ -288,6 +288,12 @@ political_actions = {
 					}
 				}
 			}
+			hidden_effect = {
+				add_named_threat = {
+					threat = 20
+					name = EoF_JER_war_start_tension
+				}
+			}
 		}
 	}
 }

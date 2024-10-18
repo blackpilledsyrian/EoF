@@ -9908,6 +9908,7 @@ offset = {
 			NOT = {
 				has_idea = EoF_WNG_shame_of_defeat
 			}
+			date > 1011.11.01
 		}
 		available_if_capitulated = yes
 

@@ -911,7 +911,10 @@ focus_tree = {
 					instant_build = yes
 				} 
 			}
-			add_named_threat = { threat = 10 name = pressure_olenia }
+			add_named_threat = { 
+				threat = 5
+				name = EoF_pressure_olenia_tension
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
@@ -1045,7 +1048,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_named_threat = { threat = 5 name = pressure_olenia }
+			add_named_threat = { 
+				threat = 10
+				name = EoF_conquest_olenia_tension
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		x = 13
@@ -1670,7 +1676,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_named_threat = { threat = 5 name = prepare_for_war }
+			add_named_threat = {
+				threat = 5
+				name = EoF_CHN_war_buildup_tension
+			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -5548,7 +5557,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = EoF_polar_relations
 		completion_reward = {
-			add_threat = 5
+			add_named_threat = {
+				threat = 5
+				name = EoF_first_wesslandia_tension
+			}
 			country_event = EoF.6
 		}
 	}
@@ -5586,7 +5598,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = EoF_first_wesslandia_award
 		completion_reward = {
-			add_threat = 5
+			add_named_threat = {
+				threat = 5
+				name = EoF_second_wesslandia_tension
+			}
 			country_event = EoF.16
 		}
 	}

@@ -24,7 +24,10 @@ shared_focus = {
 	x = 1
 	y = 0
 	completion_reward = {
-		add_threat = 10
+		add_named_threat = {
+			threat = 10
+			name = EoF_SDL_EMR_war_end_tension
+		}
 		remove_ideas = EoF_SDL_EMR_war
 		SDL = {
 			remove_ideas = EoF_SDL_EMR_war

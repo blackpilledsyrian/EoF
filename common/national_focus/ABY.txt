@@ -69,8 +69,8 @@ shared_focus = {
 		}
 		hidden_effect = {
 			add_named_threat = {
-				threat = 10
-				name = EoF_ABY_war_tension
+				threat = 3
+				name = EoF_ABY_war_buildup_tension
 			}
 		}
 	}
@@ -95,6 +95,12 @@ shared_focus = {
 		declare_war_on = {
 			target = HIP
     		type = annex_everything
+		}
+		hidden_effect = {
+			add_named_threat = {
+				threat = 10
+				name = EoF_ABY_war_start_tension
+			}
 		}
 		EMR = {
 			annex_country = {

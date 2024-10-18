@@ -1974,6 +1974,10 @@ focus_tree = {
 			add_to_array = { JER_revolution_countries = JEB }
 			add_to_array = { JER_revolution_countries = JRR }
 			set_variable = { JERrev_selected_country = JEB }
+			add_named_threat = {
+				threat = 5
+				name = EoF_JER_civil_war_tension
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -6471,6 +6475,14 @@ focus_tree = {
 			date > 1009.05.01
 		}
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = tot_economic_mobilisation
+					}
+					add_ideas = war_economy
+				}
+			}
 			activate_mission_tooltip = EoF_JER_invade_equestria_mission
 			add_timed_idea = {
 				idea = EoF_invasion_preparation
@@ -6478,7 +6490,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = EoF.news.3
-				add_threat = 20
+				add_named_threat = {
+					threat = 10
+					name = EoF_JER_invade_equestria_tension
+				}
 			}
 		}
 	}

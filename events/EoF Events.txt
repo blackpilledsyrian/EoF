@@ -53,8 +53,10 @@ country_event = {
 	option = {
 		name = EoF.4.a
 		STG = {
-			add_threat = 10
-
+			add_named_threat = {
+				threat = 5
+				name = EoF_STG_join_UPA_tension
+			}
 		}
 		add_to_faction = STG
 		326 = {
@@ -166,8 +168,10 @@ country_event = {
 	option = {
 		name = EoF.4.b
 		STG = {
-			add_threat = 10
-
+			add_named_threat = {
+				threat = 5
+				name = EoF_STG_join_UPA_tension
+			}
 		}
 		add_to_faction = STG
 		326 = {
