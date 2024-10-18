@@ -396,6 +396,7 @@ equipments = {
 				required = yes
 				allowed_module_categories = {
 					tank_suspension_type
+					tank_non_tracked_suspension_type
 				}
 			}
 

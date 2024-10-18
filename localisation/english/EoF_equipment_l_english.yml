@@ -55,6 +55,10 @@ at_mechanized:0 "Anti-Tank Mechanized Infantry"
 spg_mechanized:0 "Artillery Mechanized Infantry"
 aa_mechanized:0 "Anti-Air Mechanized Infantry"
 
+light_tank_destroyer_equipment_4:0 "Semi-Modern Light Tank Destroyer"
+light_tank_artillery_equipment_4:0 "Semi-Modern Light SP Artillery"
+light_tank_aa_equipment_4:0 "Semi-Modern Light SP Anti-Air"
+
 at_cannon_1:0 "30mm Anti-Tank Cannon"
 at_cannon_1_desc:0 "Large rapid-fire autocannons designed specifically for armour penetration offer superior anti-ground performance against vehicles than bombs."
 at_cannon_2:0 "50mm Anti-Tank Cannon"
