@@ -611,17 +611,17 @@ on_actions = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					ROOT = {
-						is_river_fed_member = yes
-					}
-					FROM = {
-						is_river_fed_member = no
-					}
-				}
-				RIV_leave_fed_no_ally = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		ROOT = {
+			# 			is_river_fed_member = yes
+			# 		}
+			# 		FROM = {
+			# 			is_river_fed_member = no
+			# 		}
+			# 	}
+			# 	RIV_leave_fed_no_ally = yes
+			# }
 			if = {#If RCT has done Friendship Without Borders, this will apply it to any future vassals they make
 				limit = {
 					FROM = {
@@ -1356,17 +1356,17 @@ on_actions = {
 				}
 				add_ideas = RCT_friendship_without_borders_idea
 			}
-			if = {
-				limit = {
-					ROOT = {
-						is_river_fed_member = yes
-					}
-					FROM = {
-						is_river_fed_member = no
-					}
-				}
-				RIV_leave_fed_no_ally = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		ROOT = {
+			# 			is_river_fed_member = yes
+			# 		}
+			# 		FROM = {
+			# 			is_river_fed_member = no
+			# 		}
+			# 	}
+			# 	RIV_leave_fed_no_ally = yes
+			# }
 
 			if = {
 				limit = {
@@ -4624,12 +4624,12 @@ on_actions = {
 				}
 				country_event = { id = stalliongrad.151 hours = 1 }
 			}
-			if = {
-				limit = {
-					is_river_fed_member = yes
-				}
-				RIV_leave_fed_no_ally = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		is_river_fed_member = yes
+			# 	}
+			# 	RIV_leave_fed_no_ally = yes
+			# }
 			if = {
 				limit = {
 					has_idea = RCT_subtle_creep1

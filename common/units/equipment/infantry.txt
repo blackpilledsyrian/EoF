@@ -189,7 +189,6 @@ equipments = {
 		resources = {
 			steel = 40
 		}
-		
 	}
 
 	assault_equipment_1 = {

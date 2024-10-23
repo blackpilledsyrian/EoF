@@ -1363,15 +1363,40 @@ on_actions = {
 		}
 	}
 	#WNG Capitulation Whitepeace
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					tag = WNG
+					has_idea = EoF_WNG_treaty
+				}
+				WNG = {
+					delete_unit = {
+						disband = yes
+					}
+				}
+			}
+		}
+	}
 	on_capitulation = {
 		effect = {
 			if = {
 				limit = {
 					tag = WNG
+					has_idea = EoF_WNG_treaty
 				}
 				WNG = {
 					every_enemy_country = {
 						white_peace = WNG
+					}
+					set_equipment_fraction = 0.5
+					send_equipment_fraction = {
+						value = 0.2
+						target = JER
+					}
+					send_equipment_fraction = {
+						value = 0.2
+						target = GRI
 					}
 				}
 				if = {

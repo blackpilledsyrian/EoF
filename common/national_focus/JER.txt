@@ -6480,8 +6480,8 @@ focus_tree = {
 					NOT = {
 						has_idea = tot_economic_mobilisation
 					}
-					add_ideas = war_economy
 				}
+				add_ideas = war_economy
 			}
 			activate_mission_tooltip = EoF_JER_invade_equestria_mission
 			add_timed_idea = {
