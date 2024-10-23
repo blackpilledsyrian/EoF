@@ -2640,8 +2640,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EoF_max_our_weapons
-		icon = GFX_goal_chn_man_panzerfaust
+		id = EoF_industry_deadline
+		icon = GFX_goal_chn_man_devolution
 		cost = 5
 		prerequisite = {
 			focus = EoF_our_war_plan
@@ -2652,14 +2652,16 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = EoF_CHN_warplan_short_flag
+			date < 1012.03.01
 		}
 		relative_position_id = EoF_our_war_plan
 		x = -2
 		y = 1
 		completion_reward = {
+			custom_effect_tooltip = EoF_industry_deadline_tt
 			add_timed_idea = {
-				idea = EoF_CHN_warplan_short_1
-				days = 120
+				idea = EoF_CHN_warplan_short_3
+				days = EoF_industry_deadline_var
 			}
 		}
 	}
@@ -2669,9 +2671,9 @@ focus_tree = {
 		icon = GFX_goal_chn_man_gears
 		cost = 5
 		prerequisite = {
-			focus = EoF_max_our_weapons
+			focus = EoF_industry_deadline
 		}
-		relative_position_id = EoF_max_our_weapons
+		relative_position_id = EoF_industry_deadline
 		x = 0
 		y = 1
 		completion_reward = {
@@ -2680,8 +2682,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EoF_industry_deadline
-		icon = GFX_goal_chn_man_devolution
+		id = EoF_max_our_weapons
+		icon = GFX_goal_chn_man_panzerfaust
 		cost = 5
 		prerequisite = {
 			focus = EoF_existing_production
@@ -2690,11 +2692,13 @@ focus_tree = {
 		x = 0
 		y = 1
 		completion_reward = {
-			activate_mission_tooltip = EoF_industry_deadline_mission
-			custom_effect_tooltip = EoF_industry_deadline_tt
-			add_ideas = EoF_CHN_warplan_short_3
+			add_timed_idea = {
+				idea = EoF_CHN_warplan_short_1
+				days = 90
+			}
 		}
 	}
+
 
 	focus = {
 		id = EoF_modern_industry_war
@@ -2704,7 +2708,7 @@ focus_tree = {
 			focus = EoF_our_war_plan
 		}
 		mutually_exclusive = {
-			focus = EoF_max_our_weapons
+			focus = EoF_industry_deadline
 			focus = EoF_retool_eco
 		}
 		available = {
@@ -2755,6 +2759,9 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = EoF_hive_plants_category
 			custom_effect_tooltip = EoF_hive_plants_tt
+			update_lyctida_effect = yes
+			update_vraks_effect = yes
+			update_sicarus_effect = yes
 		}
 	}
 
@@ -2766,7 +2773,7 @@ focus_tree = {
 			focus = EoF_our_war_plan
 		}
 		mutually_exclusive = {
-			focus = EoF_max_our_weapons
+			focus = EoF_industry_deadline
 			focus = EoF_modern_industry_war
 		}
 		available = {

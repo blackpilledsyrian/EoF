@@ -1146,20 +1146,15 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					CHN = {
-						has_completed_focus = EoF_industry_deadline
-					}
 					FROM = { 
 						OR = { 
-							is_in_faction_with = EQS  
 							tag = EQS
 						} 
 					}
 					ROOT = { 
 						OR = { 
 							tag = CHN
-							tag = GRF
-							tag = PLB
+							tag = OLE
 						} 
 					}
 					FROM.FROM = {
@@ -1168,15 +1163,39 @@ on_actions = {
 						}
 					}
 				}
+				add_to_variable = { EoF_industry_deadline_var = 20 }
 			 	CHN = { 
-					add_days_mission_timeout = {
-						mission = EoF_industry_deadline_mission
+					modify_timed_idea = {
+						idea = EoF_CHN_warplan_short_3
 						days = 20
 					}
 			 	}
 				FROM.FROM = {
 					set_state_flag = EoF_industry_deadline_flag
 				}
+			}
+		}
+	}
+	#CHN Hive Plants Mechanic
+	on_monthly_CHN = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = EoF_hive_plants
+					309 = {
+						is_owned_by = CHN
+					}
+					259 = {
+						is_owned_by = CHN
+					}
+					248 = {
+						is_owned_by = CHN
+					}
+				}
+				remove_all_plant_buffs = yes
+				update_lyctida_effect = yes
+				update_vraks_effect = yes
+				update_sicarus_effect = yes
 			}
 		}
 	}
