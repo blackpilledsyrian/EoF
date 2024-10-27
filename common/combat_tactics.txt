@@ -670,6 +670,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 		owner = { NOT = { has_tech = tech_deer_army_def } }
 		is_attacker = no
 		phase = no
+		hardness < 0.1
 	}
 
 	active = no

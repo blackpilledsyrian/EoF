@@ -87,6 +87,7 @@ sub_units = {
 			category_line_artillery
 			category_all_aa
 			category_light_aa
+			category_all_motmech_artillery
 		}		
 		
 		combat_width = 1

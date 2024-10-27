@@ -20,7 +20,7 @@ technologies = {
 		army_speed_factor = 0.10
 
 		category_all_armor = {
-			breakthrough = 0.1
+			breakthrough = 0.2
 		}
 
 		doctrine = yes	
@@ -173,7 +173,9 @@ technologies = {
 			max_organisation = 10
 			defense = 0.1
 		}
-		
+		category_all_motmech_artillery = {
+			max_organisation = 10
+		}
 		
 		path = {
 			leads_to_tech = mass_motorization 
@@ -230,7 +232,7 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_motmech = {
-			max_organisation = 5
+			max_organisation = 10
 			default_morale = 0.1
 			defense = 0.05
 		}
@@ -326,7 +328,7 @@ technologies = {
 		enable_tactic = tactic_blitz
 		
 		category_motmech = {
-			max_organisation = 10
+			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
 			hard_attack = 0.1
@@ -446,6 +448,7 @@ technologies = {
 		xp_unlock_cost = 100
 
 		category_tanks = {
+			max_organisation = 5
 			soft_attack = 0.05
 			hard_attack = 0.05
 		}
@@ -506,6 +509,9 @@ technologies = {
 			max_organisation = 5
 			default_morale = 0.1
 			breakthrough = 0.1
+		}
+		category_motmech = {
+			max_organisation = 10
 		}
 		
 		air_cas_present_factor = 0.1	
@@ -1343,7 +1349,7 @@ technologies = {
 		enable_tactic = tactic_blitz
 
 		category_motmech = {
-			max_organisation = 10
+			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
 			hard_attack = 0.1
@@ -2128,7 +2134,7 @@ technologies = {
 
 
 		category_motmech = {
-			max_organisation = 10
+			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
 			hard_attack = 0.1
@@ -3480,10 +3486,13 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		enable_tactic = tactic_human_wave_tactics
+
+		category_all_armor = {
+			combat_width = 1.0
+		}
+		custom_modifier_tooltip = EoF_peoples_army_tt
 		
 		conscription = 0.05
-		resistance_target_on_our_occupied_states = 0.2
-		resistance_growth_on_our_occupied_states = 0.2
 		additional_brigade_column_size = 1
 		
 		

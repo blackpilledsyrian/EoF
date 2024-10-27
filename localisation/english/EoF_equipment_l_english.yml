@@ -11,6 +11,8 @@ category_td:0 "Tank Destroyer"
 category_spg:0 "Self-Propelled Gun"
 category_spaa:0 "Self-Propelled Anti-Air"
 
+category_all_motmech_artillery:0 "Motorized/Mechanized Guns"
+
 heavy_artillery_equipment:0 "Heavy Artillery"
 heavy_artillery_equipment_desc:0 ""
 heavy_artillery_equipment_1:0 "Basic Heavy Artillery"

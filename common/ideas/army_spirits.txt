@@ -613,7 +613,7 @@ ideas = {
 			ledger = army
 			visible = { has_tech = mass_assault }
 			modifier = {
-				tactic_relentless_assault_preferred_weight_factor = 1
+				tactic_masterful_blitz_preferred_weight_factor = 1
 				army_strength_factor = 0.1
 			}
 			ai_will_do = {

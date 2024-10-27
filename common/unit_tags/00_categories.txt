@@ -34,6 +34,7 @@ sub_unit_categories = {
 	category_airship
 	category_magical_infantry
 	category_motmech
+	category_all_motmech_artillery
 	category_militia
 	category_ap_super_griffons
 	category_mountaineers
