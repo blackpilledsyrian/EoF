@@ -23,6 +23,8 @@ set_technology = {
 	fuel_silos = 1
 	basic_train = 1
 	tech_trucks = 1
+	motorised_infantry = 1
+	basic_machine_tools = 1
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -148,7 +150,7 @@ add_ideas = {
 	# no_edict
 	subsidized_defence_contracts
 	militia_system
-	outdated_industry
+	modern_society
 	GRF_colonial_economy
 	GRF_falcons_of_griffinstone
 	GRF_militias

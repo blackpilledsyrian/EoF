@@ -14,20 +14,19 @@ focus_tree = {
 	focus = {
 		id = GRF_new_economy
 		icon = GFX_goal_GRF_new_economy
-		cost = 20.00
+		cost = 10.00
 		ai_will_do = { factor = 80 }
 		x = -2
 		y = 1
 		cancelable = no 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_new_economy"
-			swap_ideas = {
-				remove_idea = GRF_colonial_economy
-				add_idea = GRF_stagnated_economy
-			}
-			swap_ideas = {
-				remove_idea = outdated_industry
-				add_idea = outdated_industry2
+			if = {
+				limit = { has_idea = GRF_colonial_economy }		
+				swap_ideas = {
+					remove_idea = GRF_colonial_economy
+					add_idea = GRF_stagnated_economy
+				}
 			}
 			if = {
 				limit = { has_idea = GRF_great_winter_strike }
@@ -55,12 +54,12 @@ focus_tree = {
 			238 = {	add_extra_state_shared_building_slots = 2 }
 			add_resource = {
 				type = steel
-				amount = 16
+				amount = 160
 				state = 238
 			}
 			add_resource = {
 				type = aluminium
-				amount = 16
+				amount = 160
 				state = 238
 			}
 		}
@@ -82,12 +81,12 @@ focus_tree = {
 			245 = {	add_extra_state_shared_building_slots = 2 }
 			add_resource = {
 				type = steel
-				amount = 12
+				amount = 120
 				state = 245
 			}
 			add_resource = {
 				type = chromium
-				amount = 29
+				amount = 290
 				state = 245
 			}
 			unlock_decision_tooltip = GRF_investment_in_minings_in_dulli_mountains
@@ -110,13 +109,13 @@ focus_tree = {
 			287 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 80
 				state = 287
 			}
 			288 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = oil
-				amount = 16
+				amount = 160
 				state = 288
 			}
 			unlock_decision_tooltip = GRF_investment_in_groenstein_port
@@ -301,7 +300,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = GRF_southern_roads
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		available = {
 			243 = { is_owned_and_controlled_by = ROOT }
@@ -334,7 +333,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = GRF_northern_roads
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		available = {
 			288 = { is_owned_and_controlled_by = ROOT }
@@ -367,7 +366,7 @@ focus_tree = {
 	focus = {
 		id = GRF_military_south
 		icon = GFX_goal_GRF_military_south
-		cost = 10.00
+		cost = 8.00
 		prerequisite = { focus = GRF_southern_industry }
 		mutually_exclusive = { focus = GRF_military_north }
 		x = 0
@@ -418,7 +417,7 @@ focus_tree = {
 	focus = {
 		id = GRF_dubious_friends
 		icon = GFX_goal_generic_small_arms
-		cost = 10.00
+		cost = 8.00
 		prerequisite = { focus = GRF_military_south }
 		x = -1
 		y = 1
@@ -444,7 +443,7 @@ focus_tree = {
 	focus = {
 		id = GRF_military_north
 		icon = GFX_goal_GRF_military_north
-		cost = 10.00
+		cost = 8.00
 		prerequisite = { focus = GRF_northern_industry  }
 		mutually_exclusive = { focus = GRF_military_south }
 		x = 0
@@ -490,7 +489,7 @@ focus_tree = {
 	focus = {
 		id = GRF_interesting_friends
 		icon = GFX_goal_generic_construct_civ_factory
-		cost = 10.00
+		cost = 8.00
 		prerequisite = { focus = GRF_military_north  }
 		x = 1
 		y = 1
@@ -522,7 +521,7 @@ focus_tree = {
 	focus = {
 		id = GRF_weter_university
 		icon = GFX_goal_GRF_weter_university
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = {
 			factor = 80
 		}
@@ -540,7 +539,7 @@ focus_tree = {
 	focus = {
 		id = GRF_good_economy
 		icon = GFX_goal_generic_positive_trade_relations
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_weter_university }
 		prerequisite = { focus = GRF_interesting_friends focus = GRF_dubious_friends }
@@ -550,7 +549,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_good_economy"
 			remove_ideas = GRF_stagnated_economy
-			increase_society_development = yes
 			country_event = { id = griffons.159 days = 2 }
 			add_political_power = 50
 		}
@@ -607,19 +605,19 @@ focus_tree = {
 			271 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 80
 				state = 271
 			}
 			286 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 80
 				state = 286
 			}
 			279 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = oil
-				amount = 8
+				amount = 80
 				state = 279
 			}
 		}
@@ -673,7 +671,7 @@ focus_tree = {
 	focus = {
 		id = GRF_great_lake_industry
 		icon = GFX_focus_generic_industry_2
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_great_lake_oil }
 		prerequisite = { focus = GRF_infrastructure_projects }
@@ -821,13 +819,13 @@ focus_tree = {
 			278 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = crystals
-				amount = 16
+				amount = 160
 				state = 278
 			}
 			283 = {	add_extra_state_shared_building_slots = 1 }
 			add_resource = {
 				type = crystals
-				amount = 16
+				amount = 160
 				state = 283
 			}
 		}
@@ -837,7 +835,7 @@ focus_tree = {
 	focus = {
 		id = GRF_frontier_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_frontier_crystals }
 		prerequisite = { focus = GRF_frontier_infrastructure }
@@ -873,7 +871,7 @@ focus_tree = {
 	focus = {
 		id = GRF_immigration
 		icon = GFX_goal_GRF_immigration
-		cost = 10.00
+		cost = 8.00
 		ai_will_do = { factor = 80 }
 		prerequisite = { focus = GRF_good_economy }
 		relative_position_id = GRF_good_economy
@@ -1273,7 +1271,7 @@ focus_tree = {
 				country_event = {
 					id = griffons.30
 					days = 30
-					random = 16080 #days to hours applied
+					random = 16080 #days to hours applied <====== TF is this rng lmao
 				}
 			}
 		}
@@ -1508,7 +1506,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_pick_your_fights
+		id = GRF_pick_your_fights # ADD A BYPASS TO THIS FOCUS FOR WW
 		icon = GFX_goal_generic_major_war
 		cost = 10.00
 		prerequisite = {
@@ -1595,7 +1593,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_yaki_industrial_area
+		id = GRF_yaki_industrial_area # ADD A BYPASS TO THIS FOCUS FOR WW
 		icon = GFX_goal_forced_con
 		cost = 8.00
 		prerequisite = {
@@ -1904,17 +1902,17 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_drill_the_shelf"
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 120
 				state = 284
 			}
 			add_resource = {
 				type = oil
-				amount = 14
+				amount = 140
 				state = 266
 			}
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 120
 				state = 325
 			}
 		}
@@ -2808,7 +2806,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_take_haukland
+		id = GRF_take_haukland # ADD A BYPASS TO THIS FOCUS FOR WW
 		icon = GFX_goal_demand_sudetenland
 		cost = 10.00
 		prerequisite = {
@@ -2857,7 +2855,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_haukland_plan
+		id = GRF_haukland_plan # ADD A BYPASS TO THIS FOCUS FOR WW
 		icon = GFX_goal_skull_treaty
 		cost = 8.00
 		prerequisite = {
@@ -2934,7 +2932,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_the_great_northern_war
+		id = GRF_the_great_northern_war # ADD A BYPASS TO THIS FOCUS FOR WW
 		icon = GFX_goal_generic_more_territorial_claims
 		cost = 10.00
 		prerequisite = {
@@ -3584,7 +3582,7 @@ focus_tree = {
 		
 		available = {
 			#has_war = no
-			has_country_flag = GRF_civil_war_over
+			#has_country_flag = GRF_civil_war_over
 			has_country_flag = GRF_refuse_junta
 		}
 		ai_will_do = {
@@ -6033,7 +6031,7 @@ focus_tree = {
 			}
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 120
 				state = 244
 			}
 			if = {
@@ -6057,7 +6055,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 					state = 325
 				}
 			}
@@ -6082,7 +6080,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 					state = 290
 				}
 			}
@@ -6107,7 +6105,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 					state = 274
 				}
 			}
@@ -6132,7 +6130,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 					state = 11
 				}
 			}
@@ -6894,6 +6892,8 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_state_army"
 			army_experience = 30
+			add_ideas = war_economy
+			add_political_power = -150
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -6953,6 +6953,10 @@ focus_tree = {
 			}
 			add_stability = 0.05
 			add_war_support = 0.05
+			if = {
+				limit = { has_idea = militia_system }
+				add_ideas = reservist_system
+			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -6985,6 +6989,15 @@ focus_tree = {
 					id = GRF_civil_war_bop
 					value = 0.1
 				}
+			}
+			if = {
+				limit = {
+					OR = {
+						has_idea = militia_system
+						has_idea = reservist_system
+					}
+				}
+					add_ideas = semi_professional_army
 			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY FOCUS_FILTER_ARMY_BONUS }
@@ -7415,10 +7428,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_motorized_f"
 			add_tech_bonus = {
-				name = mech_bonus
+				name = mech_army_bonus
 				bonus = 1.0
 				uses = 1
-				category = motorized_equipment
+				category = cat_mechanized_equipment
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -7487,6 +7500,12 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_ranger_corps"
 			add_ideas = GRF_ranger_corps_idea
+			add_tech_bonus = {
+				name = mech_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -8176,8 +8195,7 @@ focus_tree = {
 	focus = {
 		id = GRF_rule_the_skies
 		icon = GFX_goal_authority
-		prerequisite = { focus = GRF_paratroopers focus = GRF_heavy_fighter_focus }
-		prerequisite = { focus = GRF_jets }
+		prerequisite = { focus = GRF_paratroopers focus = GRF_heavy_fighter_focus focus = GRF_jets }
 		relative_position_id = GRF_jets
 		x = 0
 		y = 1
@@ -8192,6 +8210,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_rule_the_skies"
 			add_ideas = GRF_trained_pilots
+			add_timed_idea = {
+				idea = EoF_air_expansion
+				days = 365
+			}
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
 	}
@@ -8567,9 +8589,11 @@ focus_tree = {
 		id = GRF_massive_expansion
 		icon = GFX_SIA_maritmesilkroad
 		cost = 8.00
-		prerequisite = { focus = GRF_naval_aviation_f }
-		prerequisite = { focus = GRF_battleship_f }
-		prerequisite = { focus = GRF_submarine_f }
+		prerequisite = { 
+			focus = GRF_naval_aviation_f
+			focus = GRF_battleship_f
+			focus = GRF_submarine_f
+		}
 		available = {
 			239 = { is_owned_and_controlled_by = ROOT }
 			243 = { is_owned_and_controlled_by = ROOT }
@@ -8624,7 +8648,50 @@ focus_tree = {
 				custom_effect_tooltip = available_designer
 				show_ideas_tooltip = grf_united_shipbuilding_corporation
 			}
+			add_timed_idea = {
+				idea = EoF_naval_expansion
+				days = 365
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+	
+	focus = {
+		id = EoF_GRF_naval_slot
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = { 
+			focus = GRF_massive_expansion
+		}
+		available = {
+			NOT = { has_completed_focus = EoF_GRF_air_slot }
+		}
+		relative_position_id = GRF_battleship_f
+		x = 0
+		y = 2
+				
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = EoF_GRF_air_slot
+		icon = GFX_focus_research
+		cost = 8.00
+		prerequisite = { 
+			focus = GRF_rule_the_skies
+		}
+		available = {
+			NOT = { has_completed_focus = EoF_GRF_naval_slot }
+		}
+		relative_position_id = GRF_rule_the_skies
+		x = 0
+		y = 1
+				
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+	
 }
