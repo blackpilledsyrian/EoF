@@ -4,12 +4,12 @@ state={
 	name="STATE_781"
 
 	history={
-		owner = ABY
+		owner = HLR
 		buildings = {
 			infrastructure = 1
 
 		}
-		add_core_of = ABY
+		add_core_of = HLR
 
 	}
 
@@ -19,5 +19,5 @@ state={
 	manpower=35478
 	buildings_max_level_factor=1.000
 	state_category=wasteland
-	impassable = yes
+	local_supplies=0.000
 }

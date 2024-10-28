@@ -3,24 +3,27 @@ state={
 	id=801
 	name="STATE_801"
 	resources={
-		oil=80.000
+		oil=8.000
 	}
 
 	history={
-		owner = EMR
-		add_core_of = EMR
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 1
 
 		}
+		victory_points = {
+			15605 3 
+		}
+
 	}
 
 	provinces={
 		15595 15597 15598 15604 15606 15609 15612 15614 15616 15617 15621 15627 15628 15629 15631 15637 15638 15642 15643 15645 15652 15655 15658 15660 15664 15666 15667 15673 
 	}
-	manpower=28854
+	manpower=288541
 	buildings_max_level_factor=1.000
-	state_category=wasteland
+	state_category=rural
 	local_supplies=0.000
-	impassable=yes
 }

@@ -31020,54 +31020,56 @@ shared_focus = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
-	# shared_focus = {
-	# 	id = PLB_northern_front
-	# 	icon = GFX_goal_chn_man_pop_boil
-	# 	cost = 5.00
+	shared_focus = {
+		id = PLB_northern_front
+		icon = GFX_goal_chn_man_pop_boil
+		cost = 5.00
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = PLB_the_polar_connection
+		}
+		available = {
+			CHN = {
+				has_completed_focus = demand_equestria
+			}
+		}
 
-	# 	prerequisite = {
-	# 		focus = PLB_the_polar_connection
-	# 	}
-	# 	available = {
-	# 		CHN = {
-	# 			has_completed_focus = demand_equestria
-	# 		}
-	# 	}
 
+		ai_will_do = {
+			factor = 10
+		}
+		will_lead_to_war_with = YAK
+		will_lead_to_war_with = JAK
 
-	# 	ai_will_do = {
-	# 		factor = 10
-	# 	}
-	# 	will_lead_to_war_with = YAK
-	# 	will_lead_to_war_with = JAK
+		relative_position_id = PLB_the_polar_connection
+		x = 1
+		y = 1
 
-	# 	relative_position_id = PLB_the_polar_connection
-	# 	x = 1
-	# 	y = 1
-
-	# 	completion_reward = {
-	# 		hidden_effect = {
-	# 			create_wargoal = {
-	# 				type = annex_everything
-	# 				target = YAK
-	# 			}
-	# 			create_wargoal = {
-	# 				type = annex_everything
-	# 				target = JAK
-	# 			}
-	# 		}
-	# 		declare_war_on = { type = annex_everything target = YAK }
-	# 		declare_war_on = { type = annex_everything target = JAK }
-	# 		custom_effect_tooltip = PLB_autonomy_score_add_50
-	# 		hidden_effect = {
-	# 			add_autonomy_score = {
-	# 				value = 50
-	# 				localization = PLB_northern_front
-	# 			}
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_ANNEXATION }
-	# }
+		completion_reward = {
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = YAK
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = JAK
+				}
+			}
+			declare_war_on = { type = annex_everything target = YAK }
+			declare_war_on = { type = annex_everything target = JAK }
+			custom_effect_tooltip = PLB_autonomy_score_add_50
+			hidden_effect = {
+				add_autonomy_score = {
+					value = 50
+					localization = PLB_northern_front
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
 	shared_focus = {
 		id = PLB_wave_of_bears
 		icon = GFX_goal_chn_man_tesla

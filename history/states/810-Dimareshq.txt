@@ -3,12 +3,12 @@ state={
 	id=810
 	name="STATE_810"
 	resources={
-		steel=80.000
+		steel=8.000
 	}
 
 	history={
-		owner = EMR
-		add_core_of = EMR
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -17,7 +17,7 @@ state={
 				naval_base = 3
 
 			}
-			air_base = 3
+			air_base = 1
 			dockyard = 1
 			15593 = {
 				naval_base = 1
@@ -40,5 +40,4 @@ state={
 	manpower=1198973
 	buildings_max_level_factor=1.000
 	state_category=city
-	local_supplies=0.000
 }

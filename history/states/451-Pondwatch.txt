@@ -1,23 +1,24 @@
+
 state={
 	id=451
 	name="STATE_451"
-
-	provinces={
-		990 1167 1191 3134 4197 7050 7145 7212 10052 10055 11985 12031
+	resources={
+		steel=8.000
+		tungsten=4.000
+		chromium=6.000
 	}
 
-	manpower=96507
-	state_category = pastoral
-	buildings_max_level_factor=1.00
-
-	history = {
+	history={
 		owner = HLR
 		add_core_of = HLR
+
 	}
 
-	resources={
-		steel=80
-		tungsten=40
-		chromium=60
+	provinces={
+		990 1167 1191 3134 4197 7050 7145 7212 10052 10055 11985 12031 
 	}
+	manpower=96507
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
 }

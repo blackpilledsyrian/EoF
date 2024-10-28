@@ -3,12 +3,12 @@ state={
 	id=808
 	name="STATE_808"
 	resources={
-		oil=80.000
+		oil=8.000
 	}
 
 	history={
-		owner = EMR
-		add_core_of = EMR
+		owner = HLR
+		add_core_of = HLR
 		buildings = {
 			infrastructure = 1
 
@@ -16,9 +16,7 @@ state={
 		victory_points = {
 			15562 3 
 		}
-		victory_points = {
-			15605 3 
-		}
+
 	}
 
 	provinces={
