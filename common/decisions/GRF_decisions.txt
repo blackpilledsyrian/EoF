@@ -659,7 +659,7 @@ GRF_civil_war_bop_category = {
 	}
 	GRF_triton_offer_to_YAK = {
 		allowed = {
-			tag = GRF
+			always = no ## Locked in EoF because fuck Yaks all my northbros support Jaks
 		}
 		available = {
 			YAK = { has_war_with = JAK }
@@ -732,10 +732,10 @@ GRF_civil_war_bop_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_goldfeather_supports_jaks_inf_eq"
 			JAK = { country_event = { id = griffons.112 } }
-			add_power_balance_value = {
-				id = GRF_civil_war_bop
-				value = 0.05
-			}
+			#add_power_balance_value = {
+			#	id = GRF_civil_war_bop
+			#	value = 0.05
+			#}
 		}
 	}
 	GRF_goldfeather_supports_jaks_artillery = {
@@ -765,10 +765,10 @@ GRF_civil_war_bop_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_goldfeather_supports_jaks_artillery"
 			JAK = { country_event = { id = griffons.160 } }
-			add_power_balance_value = {
-				id = GRF_civil_war_bop
-				value = 0.05
-			}
+			#add_power_balance_value = {
+			#	id = GRF_civil_war_bop
+			#	value = 0.05
+			#}
 		}
 	}
 	GRF_goldfeather_supports_jaks_sup_eq = {
@@ -798,10 +798,10 @@ GRF_civil_war_bop_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_goldfeather_supports_jaks_sup_eq"
 			JAK = { country_event = { id = griffons.161 } }
-			add_power_balance_value = {
-				id = GRF_civil_war_bop
-				value = 0.05
-			}
+			#add_power_balance_value = {
+			#	id = GRF_civil_war_bop
+			#	value = 0.05
+			#}
 		}
 	}
 	GRF_goldfeather_supports_jaks_military_factory = {
@@ -836,10 +836,10 @@ GRF_civil_war_bop_category = {
 				uses = 1
 				category = industry
 			}
-			add_power_balance_value = {
-				id = GRF_civil_war_bop
-				value = 0.05
-			}
+			#add_power_balance_value = {
+			#	id = GRF_civil_war_bop
+			#	value = 0.05
+			#}
 		}
 	}
 	GRF_goldfeather_supports_jaks_sell_trains = {
@@ -868,10 +868,10 @@ GRF_civil_war_bop_category = {
 		complete_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_goldfeather_supports_jaks_sell_trains"
 			JAK = { country_event = { id = griffons.163 } }
-			add_power_balance_value = {
-				id = GRF_civil_war_bop
-				value = 0.05
-			}
+			#add_power_balance_value = {
+			#	id = GRF_civil_war_bop
+			#	value = 0.05
+			#}
 		}
 	}
 	GRF_triton_supports_yaks_inf_eq= {
@@ -1077,10 +1077,7 @@ operations = {
 	seize_control_of_241 = {
 		icon = border_war
 		allowed = {
-			OR = {
-				original_tag = GRF
-				original_tag = GFF
-			}
+			always = no
 		}
 		target_root_trigger = {
 			eqs_has_civil_war = yes
@@ -1243,7 +1240,7 @@ foreign_politics = {
 	GRF_call_back_calims_on_STG = {
 		icon = GFX_decision_red_star
 		cost = 15
-		allowed = { original_tag = GRF }
+		allowed = { original_tag = GRF } 
 		visible = {
 			AND = {
 				has_civil_war = no
@@ -1265,183 +1262,10 @@ foreign_politics = {
 			STG = { country_event = { id = griffons.173 days = 1 } }
 		}
 	}
-	GRF_STG_border_war_preparation = {
-		icon = border_war
-		allowed = { always = no }
-		available = {
-			always = no
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 58
-				state = 678
-			}
-		}
-		ai_will_do = {
-			base = 0
-		}
-		days_mission_timeout = 30
-		is_good = no
-		fire_only_once = yes
-		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_STG_border_war_preparation"
-			#activate_targeted_decision = {
-			#	target = GRF
-			#	decision = GRF_STG_border_war
-			#}
-			activate_decision = GRF_STG_border_war
-			activate_decision = GRF_STG_border_war_timeout
-		}
-	}
 	
-	GRF_STG_border_war = {
-		icon = border_war
-		allowed = { always = no }
-		available = {
-			58 = { is_owned_and_controlled_by = GRF }
-			678 = { is_owned_and_controlled_by = STG }
-			if = {
-				limit = { is_ai = no }
-				divisions_in_state = {
-					state = 58
-					size > 0
-				}
-			}
-		}
-		visible = {
-			is_subject = no
-			678 = {
-				owner = {
-					can_have_border_war_with_ROOT = yes
-				}
-			}
-		}
-		ai_will_do = {
-			factor = 50
-		}
-
-		fire_only_once = yes
-
-		highlight_states = {
-			highlight_state_targets = {
-				state = 678
-			}
-		}
-
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRF_STG_border_war"
-			hidden_effect = {
-				activate_targeted_decision = {
-					target = GRF
-					decision = GRF_STG_border_war_timeout
-				}
-			}
-			start_border_war = {
-				change_state_after_war = no
-				attacker = {
-					state = 58
-					num_provinces = 4
-					on_win = griffons.103
-					on_lose = griffons.102
-					on_cancel = griffons.104
-				}
-
-				defender = {
-					state = 678
-					num_provinces = 4
-					on_win = griffons.106
-					on_lose = griffons.105
-					on_cancel = griffons.107
-				}
-			}
-		}
-	}
-	GRF_STG_border_war_timeout = {
-		icon = border_war
-		allowed = { always = no }
-		available = {
-			58 = { has_border_war = no }
-			678 = { has_border_war = no }
-		}
-		highlight_states = {
-			highlight_state_targets = {
-				state = 58
-				state = 678
-			}
-		}
-		ai_will_do = {
-			base = 0
-		}
-		days_mission_timeout = 30
-		is_good = no
-		fire_only_once = yes
-		# Modifier cannot be applied on a timeout mission. Need to apply it another way
-		#modifier = {
-		#	land_reinforce_rate = 0.15
-		#}
-		timeout_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision timeout GRF_STG_border_war_timeout"
-			cancel_border_war = {
-				defender = 58
-				attacker = 678
-			}
-		}
-	}
-	GRF_subjugate_STL = {
-		icon = GFX_decision_category_hammer_and_horseshoe_equ
-		allowed = { original_tag = GRF }
-		visible = {
-			STL = { exists = yes }
-			57 = { is_claimed_by = ROOT }
-		}
-		available = { 
-			is_subject = no 
-			NOT = { is_in_faction_with = STL }
-		}
-		custom_cost_trigger = {
-			check_variable = { var = command_power value = 125 compare = greater_than_or_equals }
-		}
-		custom_cost_text = decision_cost_CP_125
-		fire_only_once = yes
-		ai_will_do = {
-			factor = 500
-			modifier = {
-				factor = 0
-				has_war = yes
-			}
-			modifier = {
-				factor = 0.01
-				STG = {
-					OR = {
-						STG_vasiliy_wheatin = {
-							is_country_leader = yes
-						}
-						STG_sinister_serov = {
-							is_country_leader = yes
-						}
-					}
-				}
-			}
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
-		}
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision GRF_subjugate_STL"
-			hidden_effect = {
-				add_command_power = -125
-			}
-			STL = { 
-				country_event = { id = griffons.156 days = 2 } 
-			}
-			custom_effect_tooltip = GRF_warning_about_relations_with_yaks_ns_tt
-			custom_effect_tooltip = GRF_warning_about_divisions_on_border_ns_tt
-		}
-	}
 	GRF_send_help_to_EQS = {
 		icon = rifles
-		allowed = { tag = GRF }
+		allowed = { tag = GRF } 
 		available = {
 			has_war = no 
 			is_subject = no
@@ -1593,18 +1417,18 @@ foreign_politics = {
 			custom_effect_tooltip = GRF_highhill_coup
 
 			hidden_effect = {
-				if = {
-					limit = {
-						power_balance_value = {
-							id = GRF_civil_war_bop
-							value < -0.75
-						}
-					}
-					country_event = griffons.119
-				}
-				else = {
-					country_event =griffons.3
-				}
+				#if = {
+				#	limit = {
+				#		power_balance_value = {
+				#			id = GRF_civil_war_bop
+				#			value < -0.75
+				#		}
+				#	}
+				#	country_event = griffons.119
+				#}
+				#else = {
+					country_event = griffons.3
+				#}
 			}
 		}
 		fire_only_once = yes
