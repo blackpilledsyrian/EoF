@@ -9241,6 +9241,7 @@ shared_focus = {
 				OR = {
 					tag = ROOT
 					is_subject_of = ROOT
+					is_in_faction_with = ROOT
 				}
 			}
 		}
@@ -9250,6 +9251,7 @@ shared_focus = {
 				OR = {
 					tag = ROOT
 					is_subject_of = ROOT
+					is_in_faction_with = ROOT
 				}
 			}
 		}
@@ -9762,6 +9764,7 @@ shared_focus = {
 			custom_trigger_tooltip = {
 				tooltip = FAT_CSN_EXISTS
 				MIT = {
+					exists = yes
 					has_completed_focus = MIT_democratic_alliance
 					has_government = democratic
 				}
@@ -9810,6 +9813,7 @@ shared_focus = {
 	}
 	bypass = {
 	    custom_trigger_tooltip = {
+			tooltip = FAT_core_HLQ_LNS_LSM_LSC_LUS_GRW_BRF_GRY_GRU_tp
 		    HLQ = {
 			    OR = {
 				    exists = no
@@ -11646,7 +11650,7 @@ shared_focus = {
 		army_experience = 5
 		add_doctrine_cost_reduction = {
 			name = cat_superior_firepower
-			cost_reduction = 1
+			cost_reduction = 0.5
 			uses = 1
 			category = cat_superior_firepower
 		}

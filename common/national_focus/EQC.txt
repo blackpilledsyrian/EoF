@@ -1186,7 +1186,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			has_global_flag = formed_alliance_of_the_free
 		}
 
 		cancel_if_invalid = yes
@@ -1386,7 +1386,7 @@ hidden_effect = {
 
 		}
 		allow_branch = {
-			has_country_flag = EQC_EQS_invasion
+		has_country_flag = EQC_EQS_invasion
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no
@@ -1570,7 +1570,7 @@ hidden_effect = {
 
 		}
 		allow_branch = {
-			has_country_flag = EQC_EQS_invasion
+		has_country_flag = EQC_EQS_invasion
 		}
 		cancel_if_invalid = yes
 		continue_if_invalid = no

@@ -11,6 +11,7 @@ guiTypes = {
 		Orientation = CENTER
 		fade_time = 500
 		fade_type = linear
+		clipping = no
 		
 		show_sound = pop_up
 
@@ -118,7 +119,7 @@ guiTypes = {
 			clicksound = click_close
 			pdx_tooltip = "CLOSE"
 		}
-
+		
 		buttonType = {
 			name = "select_model_button"
 			position = { x=-61 y=80 }
@@ -128,7 +129,7 @@ guiTypes = {
 			buttonText = "SELECT_3D_MODEL"
 			Orientation = "CENTER_UP"
 		}
-		
+
 		editBoxType = {
 			name = "variant_name"
 			position = { x = 125 y = 49 }
@@ -148,7 +149,7 @@ guiTypes = {
 			Orientation = "LOWER_RIGHT"
 			clicksound = click_default
 		}
-
+		
 		containerWindowType = {
 			name = "equipment_select_model"
 			position = { x=537 y=0 }

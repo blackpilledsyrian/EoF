@@ -19,11 +19,10 @@ set_technology = {
 	tech_recon = 1
 	tech_engineers = 1
 	tech_mountaineers = 1
+	tech_military_police = 1
 	fuel_silos = 1
 	basic_train = 1
 	tech_trucks = 1
-	motorised_infantry = 1
-	basic_machine_tools = 1
 }
 if = {
 	limit = { has_dlc = "By Blood Alone" }
@@ -80,6 +79,15 @@ if = {
 	}
 	set_technology = {
 		gwtank_chassis = 1
+	}
+}
+
+if = {
+	limit = {
+		has_dlc = "La Resistance"
+	}
+	set_technology = {
+		armored_car1 = 1
 	}
 }
 if = {
@@ -140,12 +148,26 @@ add_ideas = {
 	# no_edict
 	subsidized_defence_contracts
 	militia_system
-	modern_society
+	outdated_industry
 	GRF_colonial_economy
 	GRF_falcons_of_griffinstone
 	GRF_militias
 }
-
+add_equipment_to_stockpile = {
+	type = motorized_equipment_0
+	amount = 50
+	producer = EQS
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment_0
+	amount = 50
+	producer = GRF
+}
+add_equipment_to_stockpile = {
+	type = train_equipment_1
+	amount = 17
+	producer = GRI
+}
 set_stability = 0.65
 
 recruit_character = EoF_GRF_reserve_fleet
@@ -195,6 +217,7 @@ recruit_character = GRF_felix_cloudtalon
 recruit_character = GRF_lord_protector_trubach
 recruit_character = GRF_elder_elsa
 recruit_character = GRF_urlik_of_scyfling
+recruit_character = GRF_sus_griffon
 
 set_rule = {
 	can_generate_female_aces = yes

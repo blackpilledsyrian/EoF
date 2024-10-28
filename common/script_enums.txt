@@ -874,4 +874,6 @@ script_enum_equipment_bonus_type = {
 	heavy_artillery_equipment_3
 	assault_equipment_1
 	assault_equipment_2
+	ponies_of_shadow_equipment
+	ponies_of_shadow_equipment_0
 }

@@ -18,10 +18,9 @@ state={
 		owner = JAK
 		add_core_of = JAK
 
-		victory_points = { 9200 5 }
-
 		buildings = {
 			air_base = 3
 		}
+		victory_points = { 9200 2 }
 	}
 }

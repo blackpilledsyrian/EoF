@@ -12255,42 +12255,42 @@ GRU = {
 	#)#
 
     #(Polish Heavy Tank I			
-	# heavy_tank_chassis_1 = {
-	# 	pool = {
-	# 		icons = {
-	# 			"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_1/pol_30tp.dds" 
-	# 		}
-	# 		models = {				
-	# 			"POL_heavy_armor_entity"				
-	# 		}
-	# 	}
-	# }
-	# #)#
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_1/pol_30tp.dds" 
+			}
+			# models = {				
+			# 	"POL_heavy_armor_entity"				
+			# }
+		}
+	}
+	#)#
 
-    # #(Polish Heavy Tank II	
-	# heavy_tank_chassis_2 = {
-	# 	pool = {
-	# 		icons = {
-	# 			"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_2/pol_45tp.dds" 
-	# 		}
-	# 		models = {				
-	# 			"POL_heavy_armor_entity"				
-	# 		}
-	# 	}
-	# }
-	# #)#
+    #(Polish Heavy Tank II	
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_2/pol_45tp.dds" 
+			}
+			# models = {				
+			# 	"POL_heavy_armor_entity"				
+			# }
+		}
+	}
+	#)#
 
-    # #(Polish Heavy Tank III	
-	# heavy_tank_chassis_3 = {
-	# 	pool = {
-	# 		icons = {
-	# 			"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_3/pol_65tp.dds" 
-	# 		}
-	# 		models = {				
-	# 			"POL_heavy_armor_entity"				
-	# 		}
-	# 	}
-	# }
+    #(Polish Heavy Tank III	
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/lamp_POL/heavy_3/pol_65tp.dds" 
+			}
+			# models = {				
+			# 	"POL_heavy_armor_entity"				
+			# }
+		}
+	}
 	#)#
 
     #(Polish Super Heavy Tank		

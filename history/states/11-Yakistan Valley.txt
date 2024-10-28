@@ -14,11 +14,11 @@ state={
 		owner = YAK
 		add_core_of = YAK
 
-		victory_points = { 11269 30 }
+		victory_points = { 11269 25 }
 
 		buildings = {
 			infrastructure = 3
-			industrial_complex = 3
+			industrial_complex = 2
 			arms_factory = 1
 			air_base = 5
 		}

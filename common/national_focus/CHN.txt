@@ -109,7 +109,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_support_workers"
-			one_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -143,6 +143,15 @@ focus_tree = {
 				bonus = 1
 				uses = 1
 				category = industry
+			}
+			mio:CHN_chntank3_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank2_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank1_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -306,10 +315,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_Hive_Factories"
 			309 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -345,7 +354,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -461,7 +470,10 @@ focus_tree = {
 				state = 251
 			}
 			add_timed_idea = {
-				days = 50 idea = chn_vesalipolis_construction
+				days = 70 idea = chn_vesalipolis_construction
+			}
+			mio:CHN_chnequip3_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
@@ -509,6 +521,12 @@ focus_tree = {
 			}
 			country_event = {
 				id = changelings.36 days = 1
+			}
+			mio:CHN_chnnavy1_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chnnavy2_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -562,6 +580,15 @@ focus_tree = {
 			}
 			country_event = {
 				id = changelings.37 days = 1
+			}
+			mio:CHN_chntank1_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank2_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank3_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -1475,7 +1502,7 @@ focus_tree = {
 			247 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1490,11 +1517,33 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 			319 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			316 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
 					instant_build = yes
 				}
 			}
