@@ -4581,12 +4581,12 @@ country_event = {
 			id = GRF_civil_war_bop
 			value = 0.2
 		}
-		hidden_effect = {
-			activate_targeted_decision = {
-				target = GRF
-				decision = GRF_STG_border_war_preparation
-			}
-		}
+		#hidden_effect = {
+			#activate_targeted_decision = {
+			#	target = GRF
+			#	decision = GRF_STG_border_war_preparation
+			#}
+		#}
 	}
 	option = {
 		name = griffons.110.b	#Humuliation!
