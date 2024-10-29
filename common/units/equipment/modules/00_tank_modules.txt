@@ -1030,7 +1030,7 @@ equipment_modules = {
 	}
 
 	tank_small_high_velocity_cannon_4 = {
-		abbreviation = "shv3"
+		abbreviation = "shv4"
 		category = tank_advanced_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
@@ -1308,7 +1308,7 @@ equipment_modules = {
 	}
 
 	tank_medium_howitzer_4 = {
-		abbreviation = "mh5"
+		abbreviation = "mh4"
 		category = tank_advanced_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
@@ -1380,7 +1380,7 @@ equipment_modules = {
 	}
 
 	tank_medium_high_velocity_cannon_2 = {
-		abbreviation = "hv2"
+		abbreviation = "mhv2"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
@@ -1400,7 +1400,7 @@ equipment_modules = {
 		}
 	}
 	tank_medium_high_velocity_cannon_3 = {
-		abbreviation = "hv3"
+		abbreviation = "mhv3"
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
@@ -1420,7 +1420,7 @@ equipment_modules = {
 		}
 	}
 	tank_medium_high_velocity_cannon_4 = {
-		abbreviation = "hv4"
+		abbreviation = "mhv4"
 		category = tank_advanced_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
@@ -1756,7 +1756,7 @@ equipment_modules = {
 	}
 
 	tank_super_heavy_cannon = {
-		abbreviation = "sh1"
+		abbreviation = "shc1"
 		category = tank_super_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
