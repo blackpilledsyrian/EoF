@@ -322,6 +322,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				329 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -358,6 +370,25 @@ focus_tree = {
 					province = 9258
 					instant_build = yes
 				}
+				if = {
+					limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+					}
+					288 = {	add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+					288 = {	add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -392,6 +423,18 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				245 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			if = {
@@ -435,6 +478,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				243 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 			add_popularity = { ideology = fascism popularity = 0.05 }
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -460,6 +515,18 @@ focus_tree = {
 					type = arms_factory
 					level = 3
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				288 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			add_victory_points = {
@@ -511,6 +578,18 @@ focus_tree = {
 					level = 4
 					province = 9258
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				288 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = dockyard
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 			add_popularity = { ideology = democratic popularity = 0.05 }
@@ -700,6 +779,18 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				271 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -862,6 +953,18 @@ focus_tree = {
 					type = arms_factory
 					level = 1
 					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					GRI = { has_completed_focus = EoF_imperial_coast }
+				}
+				278 = {	add_extra_state_shared_building_slots = 1
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
@@ -1506,9 +1609,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_pick_your_fights # ADD A BYPASS TO THIS FOCUS FOR WW
-		icon = GFX_goal_generic_major_war
-		cost = 10.00
+		id = GRF_pick_your_fights 
+		icon = GFX_goal_generic_major_alliance
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_remove_falcons
 		}
@@ -1524,69 +1627,17 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-		will_lead_to_war_with = YAK
-		will_lead_to_war_with = JAK
-		will_lead_to_war_with = PLB
 		bypass = {
-			YAK = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-			JAK = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-			PLB = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
+
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_pick_your_fights"
-			if = {
-				limit = { 
-					YAK = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = YAK }
-			}
-			if = {
-				limit = { 
-					JAK = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = JAK }
-			}
-			if = {
-				limit = { 
-					PLB = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = PLB }
+			add_stability = 0.05
+			PLB = { add_stability = 0.05 }
+			every_state = {
+				limit = {
+						is_core_of = GRF
+					}
+				remove_claim_by = PLB
 			}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -1601,19 +1652,19 @@ focus_tree = {
 		}
 		available = {
 			has_government = neutrality
-			11 = {
+			277 = {
 				owner = {
 					OR = {
 						tag = ROOT
-						is_subject_of = ROOT
+						is_in_faction_with = ROOT
 					}
 				}
 			}
-			274 = {
+			281 = {
 				owner = {
 					OR = {
 						tag = ROOT
-						is_subject_of = ROOT
+						is_in_faction_with = ROOT
 					}
 				}
 			}
@@ -1621,7 +1672,7 @@ focus_tree = {
 				owner = {
 					OR = {
 						tag = ROOT
-						is_subject_of = ROOT
+						is_in_faction_with = ROOT
 					}
 				}
 			}
@@ -1634,14 +1685,14 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_yaki_industrial_area"
-			11 = {	add_extra_state_shared_building_slots = 2
+			277 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-			274 = {	add_extra_state_shared_building_slots = 2
+			281 = {	add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1815,8 +1866,8 @@ focus_tree = {
 
 	focus = {
 		id = GRF_the_new_frontier
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10.00
+		icon = GFX_All_resource
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_the_owls
 		}
@@ -1833,49 +1884,12 @@ focus_tree = {
 			factor = 80
 		}
 		bypass = {
-			PNG = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
-			GFF = {
-				OR = {
-					exists = no
-					has_war_with = ROOT
-					is_subject_of = ROOT
-				}
-			}
+
 		}
-		will_lead_to_war_with = PNG
-		will_lead_to_war_with = GFF
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_the_new_frontier"
-			if = {
-				limit = { 
-					PNG = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = PNG }
-			}
-			if = {
-				limit = { 
-					GFF = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = GFF }
-			}
+			give_resource_rights = { receiver = GRF state = 340 }
+			give_resource_rights = { receiver = GRF state = 342 }
+			give_resource_rights = { receiver = GRF state = 274 }
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
@@ -2152,7 +2166,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_mcnuke"
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 2
 				category = nuclear
 			}
@@ -2251,7 +2265,7 @@ focus_tree = {
 	focus = {
 		id = GRF_unhindered_industrailisation
 		icon = GFX_goal_factory_complex
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_revoke_labour_laws
 		}
@@ -2397,7 +2411,7 @@ focus_tree = {
 	focus = {
 		id = GRF_oil_deals
 		icon = GFX_goal_generic_oil_refinery
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_unhindered_industrailisation
 		}
@@ -2806,9 +2820,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_take_haukland # ADD A BYPASS TO THIS FOCUS FOR WW
+		id = GRF_take_haukland
 		icon = GFX_goal_demand_sudetenland
-		cost = 10.00
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_local_democracy
 		}
@@ -2836,18 +2850,29 @@ focus_tree = {
 		}
 		will_lead_to_war_with = HAU
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_take_haukland"
 			if = {
 				limit = {
-					HAU = { owns_state = 659 }
+					has_dlc = "Arms Against Tyranny"
 				}
-				create_wargoal = { type = annex_everything target = HAU }
+				add_doctrine_cost_reduction = {
+					name = special_forces_bonus
+					cost_reduction = 0.75
+					uses = 2
+					category = cat_marines_doctrine
+				}
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 2.0
+					uses = 2
+					category = marine_tech
+				}
 			}
 			else = {
-				create_wargoal = {
-					type = take_state_focus
-					generator = { 659 }
-					target = 659.owner
+				add_tech_bonus = {
+					name = special_forces_bonus
+					bonus = 1.0
+					uses = 2
+					category = marine_tech
 				}
 			}
 		}
@@ -2855,7 +2880,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_haukland_plan # ADD A BYPASS TO THIS FOCUS FOR WW
+		id = GRF_haukland_plan
 		icon = GFX_goal_skull_treaty
 		cost = 8.00
 		prerequisite = {
@@ -2864,10 +2889,26 @@ focus_tree = {
 		available = {
 			has_government = fascism
 			659 = {
-				owner = {
+				controller = {
 					OR = {
-						tag = ROOT
-						is_subject_of = ROOT
+						tag = GRF
+						is_in_faction_with = GRF
+					}
+				}
+			}
+			658 = {
+				controller = {
+					OR = {
+						tag = GRF
+						is_in_faction_with = GRF
+					}
+				}
+			}
+			660 = {
+				controller = {
+					OR = {
+						tag = GRF
+						is_in_faction_with = GRF
 					}
 				}
 			}
@@ -2879,26 +2920,92 @@ focus_tree = {
 			factor = 80
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_haukland_plan"
-			add_political_power = -50
+			add_political_power = 100
 			add_popularity = { ideology = fascism popularity = 0.05 }
 			add_stability = 0.05
-			save_current_manpower = yes
-			243 = {
-				add_manpower = -75000
-			}
-			242 = {
-				add_manpower = -75000
-			}
-			239 = {
-				add_manpower = -75000
-			}
-			288 = {
-				add_manpower = -75000
-			}
-			restore_previous_manpower = yes
 			659 = {
-				add_manpower = 300000
+				add_building_construction = {
+					type = bunker
+					province = 7463
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 7463
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					province = 10138
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 10138
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			658 = {
+				add_building_construction = {
+					type = bunker
+					province = 10522
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 10522
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			660 = {
+				add_building_construction = {
+					type = bunker
+					province = 10382
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					province = 10382
+					level = 4
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = anti_air_building
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
@@ -2932,9 +3039,9 @@ focus_tree = {
 	}
 
 	focus = {
-		id = GRF_the_great_northern_war # ADD A BYPASS TO THIS FOCUS FOR WW
-		icon = GFX_goal_generic_more_territorial_claims
-		cost = 10.00
+		id = GRF_the_great_northern_war 
+		icon = GFX_All_resource
+		cost = 8.00
 		prerequisite = {
 			focus = GRF_legalize_falcons
 		}
@@ -2950,11 +3057,6 @@ focus_tree = {
 		ai_will_do = {
 			factor = 80
 		}
-		will_lead_to_war_with = YAK
-		will_lead_to_war_with = JAK
-		will_lead_to_war_with = PLB
-		will_lead_to_war_with = PNG
-		will_lead_to_war_with = GFF
 		bypass = {
 			YAK = {
 				OR = {
@@ -2993,67 +3095,9 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_the_great_northern_war"
-			if = {
-				limit = { 
-					PLB = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = PLB }
-			}
-			if = {
-				limit = { 
-					PNG = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = PNG }
-			}
-			if = {
-				limit = { 
-					GFF = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = GFF }
-			}
-			if = {
-				limit = { 
-					YAK = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = YAK }
-			}
-			if = {
-				limit = { 
-					JAK = { 
-						NOT = {
-							exists = no
-							has_war_with = ROOT
-							is_subject_of = ROOT
-						}
-					} 
-				}
-				create_wargoal = { type = annex_everything target = JAK }
-			}
+			give_resource_rights = { receiver = GRF state = 340 }
+			give_resource_rights = { receiver = GRF state = 342 }
+			give_resource_rights = { receiver = GRF state = 274 }
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}

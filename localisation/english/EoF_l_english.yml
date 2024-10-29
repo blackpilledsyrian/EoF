@@ -226,6 +226,7 @@ GRF_border_war.8.a:0 "How dare... fine..."
 EoF_GRF_border_war_decision_1:0 "Retake Frosthill"
 EoF_GRF_border_war_decision_2:0 "Retake Tsasbaatar"
 EoF_GRI_border_war_decision:0 "Seize Skyfallian Territory"
+EoF_GRI_imperial_coast_tooltip:0 "All focuses within §YNova Griffonia§!'s Industrial Tree that grant factories shall grant §G1 additional factory§!."
 
 EoF.news.1.t:0 "Snowy Mountain Eruption"
 EoF.news.1.d:0 "[This.GetNewspaperHeader] A giant fucking volcano erupted on the Nova-Stalliongrad Border. Even though this has basically no political implications whatsoever, everyone around the world is tense for some reason. Observers do comment; however, that this is incredibly convenient if a war were to break out between the countries of Northern Equus and Southern Equus to prevent either of the bordering countries from being rolled over instantly."
