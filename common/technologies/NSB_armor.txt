@@ -75,6 +75,7 @@ technologies = {
 			wartime_simplification_tungsten
 			wartime_simplification_chromium
 			wartime_simplification_general
+			open_top_design
 		}
 		enable_subunits = {
 			light_armor

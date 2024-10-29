@@ -468,6 +468,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_open_top_design"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_top.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_coaxial_module"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/coaxial.dds"
 		legacy_lazy_load = no

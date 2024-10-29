@@ -153,6 +153,9 @@ supercharger_desc:0 "A supercharger system which compresses the air entering the
 fire_suppression_system:0 "Fire Suppression System"
 fire_suppression_system_desc:0 "An automatic fire suppression system that releases foam upon the detection of an engine fire. While effective at preventing the spread of fire, the additional space requirements limit the size of the engine."
 
+open_top_design:0 "Open Top Design"
+open_top_design_desc:0 "By leaving the top section of the vehicle open, the visibility and production efficiency of our vehicles may be improved. However, they are more vulnerable to enemy attack, especially from high ground."
+
 coaxial_lmg:0 "Coaxial Light Machine Gun"
 coaxial_lmg_desc:0 "The coaxial weapon mount is an effective method of increasing the firepower and flexibility of an armoured vehicle. Aimed concurrently with the main gun, a coaxial light machine gun allows the tank to engage a diverse set of targets unsuitable for the main gun."
 coaxial_hmg:0 "Coaxial Heavy Machine Gun"
