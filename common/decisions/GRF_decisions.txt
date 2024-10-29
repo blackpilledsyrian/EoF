@@ -567,7 +567,7 @@ GRF_civil_war_bop_category = {
 			}
 			add_resource = {
 				type = steel
-				amount = 6
+				amount = 60
 				state = 245
 			}
 			add_power_balance_value = {
@@ -584,7 +584,7 @@ GRF_civil_war_bop_category = {
 			245 = {
 				has_resources_amount = {
 					resource = steel
-					amount > 16
+					amount > 160
 				}
 			}
 		}
@@ -607,7 +607,7 @@ GRF_civil_war_bop_category = {
 			}
 			add_resource = {
 				type = steel
-				amount = 4
+				amount = 40
 				state = 243
 			}
 			add_power_balance_value = {
