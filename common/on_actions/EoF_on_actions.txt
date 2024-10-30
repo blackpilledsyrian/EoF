@@ -1182,20 +1182,50 @@ on_actions = {
 			if = {
 				limit = {
 					has_completed_focus = EoF_hive_plants
-					309 = {
-						is_owned_by = CHN
-					}
-					259 = {
-						is_owned_by = CHN
-					}
-					248 = {
-						is_owned_by = CHN
-					}
+					309 = { is_owned_by = CHN }
+					259 = { is_owned_by = CHN }
+					248 = { is_owned_by = CHN }
 				}
 				remove_all_plant_buffs = yes
 				update_lyctida_effect = yes
 				update_vraks_effect = yes
 				update_sicarus_effect = yes
+			}
+		}
+	}
+	#NCH Dockyards Mechanic
+	on_monthly_NCH = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = EoF_NCH_dockyards_0
+						has_idea = EoF_NCH_dockyards_1
+					}
+					668 = { is_owned_by = NCH }
+					669 = { is_owned_by = NCH }
+					670 = { is_owned_by = NCH }
+				}
+				every_core_state = {
+					limit = {
+						is_in_home_area = yes
+					}
+					if = {
+						limit = {
+							dockyard > 5
+						}
+						remove_building = {
+							type = dockyard
+							level = 1
+						}
+						NCH = {
+							add_offsite_building = {
+								type = dockyard
+								level = 1
+							}
+						}
+					}
+				}
 			}
 		}
 	}

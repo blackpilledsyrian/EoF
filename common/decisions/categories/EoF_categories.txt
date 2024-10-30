@@ -60,3 +60,10 @@ EoF_OLE_deal_with_oligarchs_category = {
 		original_tag = OLE
 	}
 }
+EoF_NCH_naval_expansion_category = {
+	icon = GFX_decision_category_MTG_naval_treaties
+	priority = 100
+	allowed = {
+		original_tag = NCH
+	}
+}

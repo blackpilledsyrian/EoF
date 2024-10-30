@@ -810,14 +810,10 @@ ideas = {
 
 			picture = generic_victors_of_ww1
 
-			rule = {
-				can_send_volunteers = yes
-			}
-
 			modifier = {
-				send_volunteers_tension = -0.25
-				send_volunteer_divisions_required = -1
-				send_volunteer_size = 1
+				army_attack_against_major_factor = 0.05
+				army_defence_against_major_factor = 0.05
+				defensive_war_stability_factor = 0.1
 			}
 		}
 

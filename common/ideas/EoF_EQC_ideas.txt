@@ -30,7 +30,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_reserve_divisions
 			modifier = {
-				weekly_manpower = 5000
+				weekly_manpower = 3000
 			}
 		}
 	}

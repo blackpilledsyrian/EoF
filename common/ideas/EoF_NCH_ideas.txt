@@ -8,5 +8,168 @@ ideas = {
 				industrial_capacity_factory = 0.1
 			}
 		}
+		EoF_NCH_dockyards_0 = {
+			removal_cost = -1
+			picture = CHN_naval_effort
+			modifier = {
+				production_cost_dockyard_factor = 0.25
+				industrial_capacity_dockyard = 0.1
+				custom_modifier_tooltip = EoF_NCH_dockyards_tt
+			}
+		}
+		EoF_NCH_dockyards_1 = {
+			removal_cost = -1
+			picture = CHN_naval_effort
+			modifier = {
+				production_cost_dockyard_factor = 0.15
+				industrial_capacity_dockyard = 0.2
+				custom_modifier_tooltip = EoF_NCH_dockyards_tt
+			}
+		}
+		EoF_NCH_fleet_0 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+			}
+		}
+		EoF_NCH_fleet_1 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+				positioning = 0.03
+				naval_damage_factor = 0.02
+				naval_defense_factor = 0.02
+			}
+		}
+		EoF_NCH_fleet_2 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+				positioning = 0.06
+				naval_damage_factor = 0.04
+				naval_defense_factor = 0.04
+			}
+		}
+		EoF_NCH_fleet_3 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+				positioning = 0.09
+				naval_damage_factor = 0.06
+				naval_defense_factor = 0.06
+			}
+		}
+		EoF_NCH_fleet_4 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+				positioning = 0.12
+				naval_damage_factor = 0.08
+				naval_defense_factor = 0.08
+			}
+		}
+		EoF_NCH_fleet_5 = {
+			removal_cost = -1
+			picture = shipwaves
+			modifier = {
+				naval_has_potf_in_combat_attack = 0.025
+				naval_has_potf_in_combat_defense = 0.025
+				naval_hit_chance = 0.05
+				positioning = 0.15
+				naval_damage_factor = 0.1
+				naval_defense_factor = 0.1
+			}
+		}
+		EoF_NCH_swarms_in_the_sea = {
+			removal_cost = -1
+			picture = generic_navy_bonus
+			equipment_bonus = {
+				carrier = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				capital_ship = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				screen_ship = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+				submarine = {
+					instant = yes
+					build_cost_ic = -0.2
+				}
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_0 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_dockyard = 0.15
+				production_speed_dockyard_factor = 0.15
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_1 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_dockyard = 0.125
+				production_speed_dockyard_factor = 0.125
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_2 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_dockyard = 0.1
+				production_speed_dockyard_factor = 0.1
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_3 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_dockyard = 0.075
+				production_speed_dockyard_factor = 0.075
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_4 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_dockyard = 0.05
+				production_speed_dockyard_factor = 0.05
+			}
+		}
+		EoF_NCH_million_ton_plan_idea_5 = {
+			removal_cost = -1
+			picture = gre_schachtplan
+			modifier = {
+				consumer_goods_factor = 0.3
+				industrial_capacity_dockyard = 0.025
+				production_speed_dockyard_factor = 0.025
+			}
+		}
 	}
 }

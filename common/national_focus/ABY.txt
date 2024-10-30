@@ -102,9 +102,9 @@ shared_focus = {
 				name = EoF_ABY_war_start_tension
 			}
 		}
-		EMR = {
+		SDL = {
 			annex_country = {
-				target = SDL
+				target = EMR
 			}
 		}
 	}

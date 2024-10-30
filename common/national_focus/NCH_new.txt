@@ -169,6 +169,669 @@ focus_tree = {
 			}
 		}
 	}
+	focus = {
+		id = EoF_hive_docks
+		icon = GFX_goal_chn_hive_dockyards
+		cost = 5
+		x = 28
+		y = 0
+		available = {
+		}
+		completion_reward = {
+			every_core_state = {
+				limit = {
+					is_in_home_area = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_great_eastern_fleet
+		icon = GFX_focus_SMB_blue_water_fleet
+		cost = 5
+		relative_position_id = EoF_hive_docks
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_hive_docks
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EoF_NCH_fleet_0
+			add_tech_bonus = {
+				bonus = 0.25
+				uses = 4
+				category = naval_equipment
+			}
+		}
+	}
+	focus = {
+		id = EoF_assess_rivals
+		icon = GFX_zebra_spy
+		cost = 5
+		relative_position_id = EoF_great_eastern_fleet
+		x = -2
+		y = 1
+		prerequisite = {
+			focus = EoF_great_eastern_fleet
+		}
+		available = {
+			has_intelligence_agency = yes
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = obscura
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = EoF_establish_GEF
+		icon = GFX_goal_navy_hat_ships
+		cost = 5
+		relative_position_id = EoF_assess_rivals
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = EoF_assess_rivals
+		}
+		available = {
+		}
+		completion_reward = {
+			add_naval_commander_role = {
+				character = EoF_spire
+				traits={ changeling_race_trait gentlemanly promising_general }
+				skill=3
+				attack_skill=3
+				defense_skill=2
+				maneuvering_skill=2
+				coordination_skill=3
+			}
+			custom_effect_tooltip = EoF_spire_tt
+			add_naval_commander_role = {
+				character = EoF_antdama
+				traits={ changeling_race_trait blockade_runner fleet_protector air_controller}
+				skill=4
+				attack_skill=2
+				defense_skill=6
+				maneuvering_skill=2
+				coordination_skill=3
+			}
+			custom_effect_tooltip = EoF_antdama_tt
+			add_naval_commander_role = {
+				character = EoF_prawn
+				traits={ changeling_race_trait superior_tactician }
+				skill=5
+				attack_skill=7
+				defense_skill=3
+				maneuvering_skill=5
+				coordination_skill=1
+			}
+			custom_effect_tooltip = EoF_prawn_tt
+			navy_experience = 50
+		}
+	}
+	focus = {
+		id = EoF_CHN_naval_exchange
+		icon = GFX_goal_chn_marines
+		cost = 5
+		relative_position_id = EoF_establish_GEF
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_establish_GEF
+		}
+		available = {
+			is_in_faction_with = CHN
+		}
+		completion_reward = {
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHN_chnnavy2_organization
+			mio:CHN_chnnavy2_organization = {
+				add_mio_funds = 1000
+			}
+			custom_effect_tooltip = available_mio_tt
+			show_mio_tooltip = CHN_chnnavy1_organization
+			mio:CHN_chnnavy1_organization = {
+				add_mio_funds = 1000
+			}
+		}
+	}
+	focus = {
+		id = EoF_infiltrate_south_navy
+		icon = GFX_goal_chn_infiltrate_eqs
+		cost = 5
+		relative_position_id = EoF_assess_rivals
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = EoF_assess_rivals
+		}
+		available = {
+		}
+		completion_reward = {
+			unlock_decision_tooltip = EoF_infiltrate_EQS
+			unlock_decision_tooltip = EoF_infiltrate_HIP
+			unlock_decision_tooltip = EoF_infiltrate_RCT
+			unlock_decision_tooltip = EoF_infiltrate_WNG
+			unlock_decision_tooltip = EoF_infiltrate_MCW
+		}
+	}
+	focus = {
+		id = EoF_million_ton_plan
+		icon = GFX_goal_generic_naval_industry
+		cost = 5
+		relative_position_id = EoF_great_eastern_fleet
+		x = 2
+		y = 1
+		prerequisite = {
+			focus = EoF_great_eastern_fleet
+		}
+		available = {
+		}
+		completion_reward = {
+			unlock_decision_tooltip = EoF_NCH_million_ton_mission
+			add_ideas = EoF_NCH_million_ton_plan_idea_0
+		}
+	}
+	focus = {
+		id = EoF_cicada_plan
+		icon = GFX_focus_generic_refit_civilian_ships
+		cost = 20
+		relative_position_id = EoF_million_ton_plan
+		x = -1
+		y = 1
+		prerequisite = {
+			focus = EoF_million_ton_plan
+		}
+		available = {
+		}
+		completion_reward = {
+			add_ideas = EoF_NCH_swarms_in_the_sea
+		}
+	}
+	focus = {
+		id = EoF_first_circle_expansion
+		icon = GFX_focus_generic_cruiser2
+		cost = 5
+		relative_position_id = EoF_million_ton_plan
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = EoF_million_ton_plan
+		}
+		available = {
+			has_tech = basic_ship_hull_heavy
+			has_tech = basic_ship_hull_cruiser
+			has_tech = basic_ship_hull_light
+		}
+		select_effect = {
+			create_equipment_variant = {
+				name = "Type 100 Class"
+				type = ship_hull_heavy_2
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Type 50 Class"
+				type = ship_hull_cruiser_2
+				modules = {
+					fixed_ship_battery_slot = ship_medium_battery_1
+					fixed_ship_engine_slot = cruiser_ship_engine_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Type 1 Class"
+				type = ship_hull_light_2
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_engine_slot = light_ship_engine_1
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_first_circle_expansion_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "NCH" 
+						version_name = "Type 100 Class"
+					}
+					progress = 0.3
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "NCH" 
+						version_name = "Type 100 Class"
+					}
+					progress = 0.3
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_cruiser_2
+						creator = "NCH" 
+						version_name = "Type 50 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 1 Class"
+					}
+					progress = 0.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_second_circle_expansion
+		icon = GFX_goal_generic_navy_carrier
+		cost = 5
+		relative_position_id = EoF_first_circle_expansion
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_first_circle_expansion
+		}
+		available = {
+			has_tech = basic_ship_hull_carrier
+		}
+		select_effect = {
+			create_equipment_variant = {
+				name = "Type 200 Class"
+				type = ship_hull_carrier_1
+				modules = {
+					fixed_ship_deck_slot_1 = ship_deck_space
+					fixed_ship_engine_slot = carrier_ship_engine_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Type 110 Class"
+				type = ship_hull_heavy_2
+				modules = {
+					fixed_ship_battery_slot = ship_heavy_battery_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Type 2 Class"
+				type = ship_hull_light_2
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_engine_slot = light_ship_engine_1
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_second_circle_expansion_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "NCH" 
+						version_name = "Type 200 Class"
+					}
+					progress = 0.7
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "NCH" 
+						version_name = "Type 200 Class"
+					}
+					progress = 0.7
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_carrier_1
+						creator = "NCH" 
+						version_name = "Type 200 Class"
+					}
+					progress = 0.7
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "NCH" 
+						version_name = "Type 110 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_heavy_2
+						creator = "NCH" 
+						version_name = "Type 110 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 2 Class"
+					}
+					progress = 0.8
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_third_circle_expansion
+		icon = GFX_focus_generic_navy_battleship2
+		cost = 5
+		relative_position_id = EoF_second_circle_expansion
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = EoF_second_circle_expansion
+		}
+		available = {
+			has_tech = ship_hull_super_heavy
+			has_tech = basic_heavy_battery
+		}
+		select_effect = {
+			create_equipment_variant = {
+				name = "Type 120 Class"
+				type = ship_hull_super_heavy_1
+				modules = {
+					fixed_ship_battery_slot = ship_super_heavy_battery_1
+					fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+					fixed_ship_engine_slot = heavy_ship_engine_1
+					fixed_ship_armor_slot = ship_armor_bb_1
+				}
+			}
+			create_equipment_variant = {
+				name = "Type 3 Class"
+				type = ship_hull_light_2
+				modules = {
+					fixed_ship_battery_slot = ship_light_battery_1
+					fixed_ship_engine_slot = light_ship_engine_1
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_third_circle_expansion_tt
+			hidden_effect = {
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "NCH" 
+						version_name = "Type 120 Class"
+					}
+					progress = 0.9
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_super_heavy_1
+						creator = "NCH" 
+						version_name = "Type 120 Class"
+					}
+					progress = 0.9
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 3 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 3 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 3 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 3 Class"
+					}
+					progress = 0.5
+				}
+				add_equipment_production = {
+					equipment = {
+						type = ship_hull_light_2
+						creator = "NCH" 
+						version_name = "Type 3 Class"
+					}
+					progress = 0.5
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_underwater_hives
+		icon = GFX_goal_chn_red_hive_dockyards
+		cost = 10
+		relative_position_id = EoF_million_ton_plan
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = EoF_million_ton_plan
+		}
+		available = {
+			has_idea = EoF_NCH_dockyards_0
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = EoF_NCH_dockyards_0
+				add_idea = EoF_NCH_dockyards_1
+			}
+		}
+	}
 	#EoF Changes
 
 	### TRADE MAIN BRANCH ####
@@ -1342,7 +2005,7 @@ focus_tree = {
 		text = NCH_crisis_of_faith
 		icon = GFX_focus_rom_abdicate
 		cost = 1.00
-		x = 23
+		x = 21
 		y = 0
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_crisis_of_faith"
@@ -1369,7 +2032,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_crisis_of_faith
 		}
-		x = 23
+		x = 21
 		y = 1
 		ai_will_do = {
 			factor = 100
@@ -1396,7 +2059,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_maintain_the_status_quo
 		}
-		x = 23
+		x = 21
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_a_new_path"
@@ -1750,7 +2413,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_passive_approach
 		}
-		x = 22
+		x = 20
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_splendid_isolation"
@@ -1773,7 +2436,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_invite_cader_sclerite
 		}
-		x = 23
+		x = 21
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_the_old_ways"
@@ -1806,7 +2469,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_the_old_ways
 		}
-		x = 23
+		x = 21
 		y = 4
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_infiltrating_the_continent"
@@ -1847,7 +2510,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_continent
 		}
-		x = 21
+		x = 19
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_infiltrating_the_academia"
@@ -1868,7 +2531,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_academia
 		}
-		x = 21
+		x = 19
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_operation_farseer"
@@ -1887,7 +2550,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_continent
 		}
-		x = 23
+		x = 21
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_infiltrating_the_industries"
@@ -1904,7 +2567,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_industries
 		}
-		x = 23
+		x = 21
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_operation_lightspark"
@@ -1920,7 +2583,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_continent
 		}
-		x = 25
+		x = 23
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_infiltrating_the_military"
@@ -1943,7 +2606,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_infiltrating_the_military
 		}
-		x = 25
+		x = 23
 		y = 6
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_operation_brass"
@@ -1980,7 +2643,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_take_the_initiative
 		}
-		x = 22
+		x = 20
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_passive_approach"
@@ -2005,7 +2668,7 @@ focus_tree = {
 		mutually_exclusive = {
 			focus = NCH_passive_approach
 		}
-		x = 24
+		x = 22
 		y = 7
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_take_the_initiative"
@@ -2034,7 +2697,7 @@ focus_tree = {
 	# 			exists = yes
 	# 		}
 	# 	}
-	# 	x = 24
+	# 	x = 22
 	# 	y = 8
 	# 	completion_reward = {
 	# 		log = "[GetDateText]: [Root.GetName]: Focus NCH_plan_white"
@@ -2060,7 +2723,7 @@ focus_tree = {
 	# 	mutually_exclusive = {
 	# 		focus = NCH_Coup_FBK_Fascist
 	# 	}
-	# 	x = 25
+	# 	x = 23
 	# 	y = 9
 	# 	completion_reward = {
 	# 		log = "[GetDateText]: [Root.GetName]: Focus NCH_Ally_With_Fascist_FBK"
@@ -2088,7 +2751,7 @@ focus_tree = {
 	# 	mutually_exclusive = {
 	# 		focus = NCH_Ally_With_Fascist_FBK
 	# 	}
-	# 	x = 23
+	# 	x = 21
 	# 	y = 9
 	# 	completion_reward = {
 	# 		log = "[GetDateText]: [Root.GetName]: Focus NCH_Coup_FBK_Fascist"
@@ -2125,7 +2788,7 @@ focus_tree = {
 	# 		has_country_flag = NCH_Out_Coup_Failed_Flag
 	# 	}
 
-	# 	x = 24
+	# 	x = 22
 	# 	y = 10
 	# 	completion_reward = {
 	# 		log = "[GetDateText]: [Root.GetName]: Focus NCH_oversee_farbrook"
@@ -2141,7 +2804,7 @@ focus_tree = {
 		prerequisite = {
 			focus = NCH_take_the_initiative
 		}
-		x = 24
+		x = 22
 		y = 8
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus NCH_look_beyond"

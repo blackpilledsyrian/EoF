@@ -1,0 +1,463 @@
+EoF_NCH_naval_expansion_category = {
+	EoF_NCH_million_ton_mission = {
+		icon = GFX_decision_generic_merge_plant_ship
+		allowed = {
+			original_tag = NCH
+		}
+		activation = {
+			has_completed_focus = EoF_million_ton_plan
+			NOT = {
+				has_country_flag = EoF_NCH_million_ton_complete
+			}
+		}
+		available = {
+			has_navy_size = {
+				size > 4
+				archetype = ship_hull_carrier
+			}
+			has_navy_size = {
+				size > 9
+				archetype = ship_hull_heavy
+			}
+			has_navy_size = {
+				size > 29
+				archetype = ship_hull_cruiser
+			}
+			has_navy_size = {
+				size > 49
+				archetype = ship_hull_light
+			}
+		}
+		is_good = no
+		days_mission_timeout = 365
+		complete_effect = {
+			set_country_flag = EoF_NCH_million_ton_complete
+			if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_0
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_0
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_1
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_1
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_2
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_2
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_3
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_3
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_4
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_4
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_5
+				}
+				remove_ideas = EoF_NCH_million_ton_plan_idea_5
+			}
+		}
+		timeout_effect = {
+			activate_mission = EoF_NCH_million_ton_mission
+			if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_million_ton_plan_idea_0
+					add_idea = EoF_NCH_million_ton_plan_idea_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_million_ton_plan_idea_1
+					add_idea = EoF_NCH_million_ton_plan_idea_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_million_ton_plan_idea_2
+					add_idea = EoF_NCH_million_ton_plan_idea_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_million_ton_plan_idea_3
+					add_idea = EoF_NCH_million_ton_plan_idea_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_million_ton_plan_idea_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_million_ton_plan_idea_4
+					add_idea = EoF_NCH_million_ton_plan_idea_5
+				}
+			}
+		}
+	}
+	EoF_infiltrate_EQS = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = NCH
+		}
+		visible = {
+			has_completed_focus = EoF_infiltrate_south_navy
+		}
+		available = {
+			has_operation_token = {
+				tag = EQS
+				token = token_navy
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		complete_effect = {
+			remove_operation_token = {
+				tag = EQS
+				token = token_navy
+			}
+			if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_0
+					add_idea = EoF_NCH_fleet_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_1
+					add_idea = EoF_NCH_fleet_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_2
+					add_idea = EoF_NCH_fleet_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_3
+					add_idea = EoF_NCH_fleet_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_4
+					add_idea = EoF_NCH_fleet_5
+				}
+			}
+		}
+	}
+	EoF_infiltrate_HIP = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = NCH
+		}
+		visible = {
+			has_completed_focus = EoF_infiltrate_south_navy
+		}
+		available = {
+			has_operation_token = {
+				tag = HIP
+				token = token_navy
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		complete_effect = {
+			remove_operation_token = {
+				tag = HIP
+				token = token_navy
+			}
+			if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_0
+					add_idea = EoF_NCH_fleet_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_1
+					add_idea = EoF_NCH_fleet_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_2
+					add_idea = EoF_NCH_fleet_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_3
+					add_idea = EoF_NCH_fleet_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_4
+					add_idea = EoF_NCH_fleet_5
+				}
+			}
+		}
+	}
+	EoF_infiltrate_RCT = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = NCH
+		}
+		visible = {
+			has_completed_focus = EoF_infiltrate_south_navy
+		}
+		available = {
+			has_operation_token = {
+				tag = RCT
+				token = token_navy
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		complete_effect = {
+			remove_operation_token = {
+				tag = RCT
+				token = token_navy
+			}
+			if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_0
+					add_idea = EoF_NCH_fleet_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_1
+					add_idea = EoF_NCH_fleet_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_2
+					add_idea = EoF_NCH_fleet_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_3
+					add_idea = EoF_NCH_fleet_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_4
+					add_idea = EoF_NCH_fleet_5
+				}
+			}
+		}
+	}
+	EoF_infiltrate_WNG = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = NCH
+		}
+		visible = {
+			has_completed_focus = EoF_infiltrate_south_navy
+		}
+		available = {
+			has_operation_token = {
+				tag = WNG
+				token = token_navy
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		complete_effect = {
+			remove_operation_token = {
+				tag = WNG
+				token = token_navy
+			}
+			if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_0
+					add_idea = EoF_NCH_fleet_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_1
+					add_idea = EoF_NCH_fleet_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_2
+					add_idea = EoF_NCH_fleet_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_3
+					add_idea = EoF_NCH_fleet_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_4
+					add_idea = EoF_NCH_fleet_5
+				}
+			}
+		}
+	}
+	EoF_infiltrate_MCW = {
+		icon = GFX_decision_generic_naval
+		allowed = {
+			original_tag = NCH
+		}
+		visible = {
+			has_completed_focus = EoF_infiltrate_south_navy
+		}
+		available = {
+			has_operation_token = {
+				tag = MCW
+				token = token_navy
+			}
+		}
+		cost = 30
+		fire_only_once = yes
+		complete_effect = {
+			remove_operation_token = {
+				tag = MCW
+				token = token_navy
+			}
+			if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_0
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_0
+					add_idea = EoF_NCH_fleet_1
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_1
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_1
+					add_idea = EoF_NCH_fleet_2
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_2
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_2
+					add_idea = EoF_NCH_fleet_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_3
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_3
+					add_idea = EoF_NCH_fleet_4
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = EoF_NCH_fleet_4
+				}
+				swap_ideas = {
+					remove_idea = EoF_NCH_fleet_4
+					add_idea = EoF_NCH_fleet_5
+				}
+			}
+		}
+	}
+}
+	
+	

@@ -137,8 +137,8 @@ add_ideas = {
 	isolation
 	pre_industrial_society
 	proper_science_base
-	NCH_FBK_pact
 	lack_of_scientists3
+	EoF_NCH_dockyards_0
 	NCH_idyllic_society
 }
 
@@ -159,6 +159,10 @@ add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.83
 
 recruit_character = EoF_NCH_reserve_fleet
+recruit_character = EoF_formis_obscura
+recruit_character = EoF_spire
+recruit_character = EoF_antdama
+recruit_character = EoF_prawn
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite

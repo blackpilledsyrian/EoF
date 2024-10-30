@@ -75,4 +75,11 @@ leader_traits = {
 	EoF_reserve_fleet_advisor = {
 		random = no
 	}
+	EoF_naval_spy = {
+		random = no
+		operative_slot = 2
+		positioning = 0.05
+		navy_intel_factor = 0.1
+		navy_intel_to_others = -10
+	}
 }

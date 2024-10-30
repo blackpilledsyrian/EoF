@@ -47,7 +47,7 @@ focus_tree = {
 		x = 30
 		y = 0
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -122,7 +122,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -157,7 +157,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -256,7 +256,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -298,7 +298,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -338,7 +338,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -478,7 +478,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -524,7 +524,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -542,56 +542,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			add_stability = -0.05
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state1
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state2
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_land_grants"
 			add_stability = -0.05
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-				}
+			362 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { has_state_flag = EQC_land_grants_state }
-					is_core_of = ROOT
-				}
+			359 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { OR = { has_state_flag = EQC_land_grants_state has_state_flag = EQC_land_grants_state1 } }
-					is_core_of = ROOT
-				}
+			358 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -606,7 +567,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -639,7 +600,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -687,7 +648,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1276,7 +1237,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -2228,7 +2189,7 @@ hidden_effect = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		completion_reward = {
 			TRD = {
@@ -2324,7 +2285,7 @@ hidden_effect = {
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		completion_reward = {
 			TRD = {
@@ -2480,7 +2441,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_strengthen_equestrian_ties
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -2591,7 +2552,7 @@ hidden_effect = {
 			}
 		}
 		prerequisite = { focus = EQC_patriation }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -2643,7 +2604,7 @@ hidden_effect = {
 		relative_position_id = EQC_commonwelth_congress
 		prerequisite = { focus = EQC_commonwelth_congress }
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2683,7 +2644,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_commonwelth_congress
 		prerequisite = { focus = EQC_commonwelth_congress }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2725,7 +2686,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_support_the_harmonists
 		prerequisite = { focus = EQC_support_the_harmonists focus = EQC_let_all_have_a_say }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 20
@@ -2875,7 +2836,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_jet_set_wins
 		prerequisite = { focus = EQC_jet_set_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2907,7 +2868,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_education_programms
 		prerequisite = { focus = EQC_education_programms }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2955,7 +2916,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_education_programms
 		prerequisite = { focus = EQC_trade_negotiations }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3005,7 +2966,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_education_programms
 		prerequisite = { focus = EQC_trade_negotiations_EQS }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3045,7 +3006,7 @@ hidden_effect = {
 		y = 4
 		relative_position_id = EQC_education_programms
 		prerequisite = { focus = EQC_poach_eqs_talent}
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3095,7 +3056,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_jet_set_wins
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3186,7 +3147,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_nationalise_assets
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3220,7 +3181,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_public_works_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3264,7 +3225,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_expand_charity_work
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3317,7 +3278,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_expand_oil_industry
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3362,7 +3323,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -3399,7 +3360,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_trade_negotiations
 		prerequisite = { focus = EQC_trade_negotiations }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -3461,7 +3422,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -3499,7 +3460,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -3533,7 +3494,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -3651,7 +3612,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_gladmane_wins
 		prerequisite = { focus = EQC_gladmane_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3684,7 +3645,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_gladmane_wins
 		prerequisite = { focus = EQC_gladmane_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3718,7 +3679,7 @@ hidden_effect = {
 		relative_position_id = EQC_gambling_freedom_act
 		prerequisite = { focus = EQC_gambling_freedom_act }
 		prerequisite = { focus = EQC_embrace_neutrality }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3766,7 +3727,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_build_the_wall
 		prerequisite = { focus = EQC_build_the_wall }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3811,7 +3772,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_work_act
 		prerequisite = { focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3914,7 +3875,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_national_work_act
 		prerequisite = { focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3958,7 +3919,7 @@ hidden_effect = {
 		relative_position_id = EQC_cut_red_tape
 		prerequisite = { focus = EQC_cut_red_tape }
 		prerequisite = { focus = EQC_open_banks_to_griffons }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4009,7 +3970,7 @@ hidden_effect = {
 				has_completed_focus = EQC_kingfisher_wins
 			}
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -4140,7 +4101,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_bust_the_monopolies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4211,7 +4172,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4312,7 +4273,7 @@ hidden_effect = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_share_the_wealth_program }
 		prerequisite = { focus = EQC_bust_the_monopolies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4374,7 +4335,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_the_election
 		prerequisite = { focus = EQC_affordable_utilities focus = EQC_seize_control }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4411,7 +4372,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4455,7 +4416,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4491,7 +4452,7 @@ hidden_effect = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_national_political_machine }
 		prerequisite = { focus = EQC_for_the_poor_pony }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -4535,7 +4496,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_affordable_utilities
 		prerequisite = { focus = EQC_public_works_projects focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 		
 		offset = {
 			x = -1
@@ -4593,7 +4554,7 @@ hidden_effect = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_for_the_poor_pony }
 		prerequisite = { focus = EQC_national_political_machine }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4626,7 +4587,7 @@ hidden_effect = {
 		relative_position_id = EQC_share_the_wealth_program
 		prerequisite = { focus = EQC_public_works_projects }
 		prerequisite = { focus = EQC_affordable_utilities }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4665,7 +4626,7 @@ hidden_effect = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_education_reform_act }
 		mutually_exclusive = { focus = EQC_token_reforms }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4727,7 +4688,7 @@ hidden_effect = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_education_reform_act }
 		mutually_exclusive = { focus = EQC_civil_rights }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -4765,7 +4726,7 @@ hidden_effect = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_civil_rights focus = EQC_token_reforms }
 		mutually_exclusive = { focus = EQC_perfect_democracy }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4818,7 +4779,7 @@ hidden_effect = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_civil_rights focus = EQC_token_reforms }
 		mutually_exclusive = { focus = EQC_imperial_presidency }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -4853,7 +4814,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_imperial_presidency focus = EQC_perfect_democracy }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -5021,7 +4982,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_the_duke_wins
 		prerequisite = { focus = EQC_the_duke_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -5061,7 +5022,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_the_duke_wins
 		prerequisite = { focus = EQC_the_duke_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5092,7 +5053,7 @@ hidden_effect = {
 		relative_position_id = EQC_build_now_play_later
 		prerequisite = { focus = EQC_build_now_play_later }
 		prerequisite = { focus = EQC_autarky }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5147,7 +5108,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_united_shadowworks }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -5201,7 +5162,7 @@ hidden_effect = {
 		y = 0
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_autarky focus = EQC_regulated_capitalism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -5311,7 +5272,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_seize_control }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -5354,7 +5315,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_three_year_plan
 		prerequisite = { focus = EQC_three_year_plan }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -5386,7 +5347,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_empower_the_army
 		prerequisite = { focus = EQC_empower_the_army }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -5424,7 +5385,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_three_year_plan
 		prerequisite = { focus = EQC_three_year_plan }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -5459,7 +5420,7 @@ hidden_effect = {
 		relative_position_id = EQC_empower_the_army
 		prerequisite = { focus = EQC_empower_the_army }
 		prerequisite = { focus = EQC_expand_the_stormponies }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -5503,7 +5464,7 @@ hidden_effect = {
 		relative_position_id = EQC_work_for_the_nation
 		prerequisite = { focus = EQC_work_for_the_nation }
 		mutually_exclusive = { focus = EQC_stand_against_griffons }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 3
 		}
@@ -5543,7 +5504,7 @@ hidden_effect = {
 		relative_position_id = EQC_work_for_the_nation
 		prerequisite = { focus = EQC_work_for_the_nation }
 		mutually_exclusive = { focus = EQC_a_deal_with_the_duce }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -5662,7 +5623,7 @@ hidden_effect = {
 			}
 		}
 		relative_position_id = EQC_stand_against_griffons
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -5821,7 +5782,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_picket_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -5851,7 +5812,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_picket_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -5896,7 +5857,7 @@ hidden_effect = {
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_break_the_bankers }
 		prerequisite = { focus = EQC_regulated_capitalism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5929,7 +5890,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_defend_democracy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5959,7 +5920,7 @@ hidden_effect = {
 		y = 5
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_pony_citizen_councils }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5989,7 +5950,7 @@ hidden_effect = {
 		y = 3
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_defend_democracy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6025,7 +5986,7 @@ hidden_effect = {
 		mutually_exclusive = {
 		    focus = EQC_encourage_them_to_leave
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6058,7 +6019,7 @@ hidden_effect = {
 		mutually_exclusive = {
 		    focus = EQC_accept_the_bats
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6088,7 +6049,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_implement_segregation
 		prerequisite = { focus = EQC_accept_the_bats focus = EQC_encourage_them_to_leave }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6129,7 +6090,7 @@ hidden_effect = {
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_united_shadowworks }
 		prerequisite = { focus = EQC_pony_citizen_councils }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6166,7 +6127,7 @@ hidden_effect = {
 		y = 5
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_tuitions_for_ponies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -6212,7 +6173,7 @@ hidden_effect = {
 		prerequisite = { focus = EQC_marelandian_recovery }
 		prerequisite = { focus = EQC_the_national_guard }
 		prerequisite = { focus = EQC_model_communities }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -6260,7 +6221,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 			modifier = {
@@ -6332,7 +6293,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_stand_against_griffons focus = EQC_the_silver_crescent_doctrine focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 			modifier = {
@@ -6390,7 +6351,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -6435,7 +6396,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_the_new_mareland_century
 		prerequisite = { focus = EQC_the_new_mareland_century }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 4
 		}
@@ -6485,7 +6446,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_the_new_mareland_century
 		prerequisite = { focus = EQC_join_the_concordant }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 4
 		}
@@ -6530,7 +6491,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -6655,7 +6616,7 @@ hidden_effect = {
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
 		prerequisite = { focus = EQC_war_with_wingbardy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -6728,7 +6689,7 @@ hidden_effect = {
 		}
 		relative_position_id = EQC_patriation
 		prerequisite = { focus = EQC_patriation }
-		cost = 8
+		cost = 7
 
 		mutually_exclusive = { focus = EQC_commonwelth_congress	}
 
@@ -6797,7 +6758,7 @@ hidden_effect = {
 			}
 		}
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 20
@@ -6846,7 +6807,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_form_communist_unions
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -6937,7 +6898,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_burn_celestias_portrait }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -6981,7 +6942,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_liquidate_bourgouise_assets }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -7270,7 +7231,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_burn_celestias_portrait }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -7312,7 +7273,7 @@ hidden_effect = {
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_implement_democratic_centralism }
 		prerequisite = { focus = EQC_liquidate_bourgouise_assets }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -7342,7 +7303,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_implement_democratic_centralism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -7381,7 +7342,7 @@ hidden_effect = {
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_found_the_RES }
 		prerequisite = { focus = EQC_bat_communes }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 15
 		}
@@ -7416,7 +7377,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_racial_harmony
 		prerequisite = { focus = EQC_racial_harmony }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -7460,7 +7421,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_griffon_enfranchisment
 		prerequisite = { focus = EQC_griffon_enfranchisment }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 9
 		}
@@ -7497,7 +7458,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_socialise_education
 		prerequisite = { focus = EQC_socialise_education }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -7528,7 +7489,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_racial_harmony
 		prerequisite = { focus = EQC_racial_harmony }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 15
 		}
@@ -7557,7 +7518,7 @@ hidden_effect = {
 		y = 1
 		relative_position_id = EQC_centralize_unions
 		prerequisite = { focus = EQC_centralize_unions }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -7591,7 +7552,7 @@ hidden_effect = {
 		y = 2
 		relative_position_id = EQC_centralize_unions
 		prerequisite = { focus = EQC_collectivize_housing}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -7629,7 +7590,7 @@ hidden_effect = {
 		relative_position_id = EQC_socialise_education
 		prerequisite = { focus = EQC_purge_the_reactionaries }
 		prerequisite = { focus = EQC_collectivize_agriculture }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}

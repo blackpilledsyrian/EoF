@@ -195,4 +195,51 @@ characters={
 			traits = { EoF_armour_advocate }
 		}
 	}
+	EoF_formis_obscura= {
+		name = EoF_formis_obscura
+		portraits = {
+			civilian = {
+				small = "GFX_idea_unknown_advisor_bug"
+
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = obscura
+			allowed = {
+				original_tag = NCH
+			}
+			available = {
+				has_completed_focus = EoF_assess_rivals
+			}
+			traits = { EoF_naval_spy }
+		}
+	}
+	EoF_spire = {
+		name = EoF_spire
+		portraits = {
+			army = {
+				large="gfx/leaders/CHN/unknown_bug.tga"
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+	}
+	EoF_antdama = {
+		name = EoF_antdama
+		portraits = {
+			army = {
+				large="gfx/leaders/CHN/unknown_bug.tga"
+				small="GFX_idea_unknown_advisor_bug"
+			}
+		}
+	}
+	EoF_prawn = {
+		name = EoF_prawn
+		portraits = {
+			army = {
+				large="gfx/leaders/Prawn.tga"
+				small="GFX_idea_EoF_prawn"
+			}
+		}
+	}
 }
