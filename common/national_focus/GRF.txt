@@ -7212,7 +7212,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_mass_assault_f focus = GRF_grand_battleplan_f focus = GRF_superior_firepower_f focus = GRF_mobile_warfare_f }
 		relative_position_id = GRF_mass_assault_f
-		x = 1
+		x = 0
 		y = 1
 
 
@@ -7232,7 +7232,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_military_research_department }
 		relative_position_id = GRF_military_research_department
-		x = -3
+		x = -2
 		y = 1
 
 
@@ -7295,7 +7295,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_military_research_department }
 		relative_position_id = GRF_military_research_department
-		x = -1
+		x = 0
 		y = 1
 
 
@@ -7389,7 +7389,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_mass_assault_f focus = GRF_grand_battleplan_f focus = GRF_superior_firepower_f focus = GRF_mobile_warfare_f }
 		relative_position_id = GRF_grand_battleplan_f
-		x = 1
+		x = 0
 		y = 1
 
 
@@ -7404,6 +7404,31 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+
+	focus = {
+		id = GRF_motorized_f
+		icon = GFX_goal_generic_army_motorized
+		cost = 8.00
+		ai_will_do = {
+			factor = 50
+		}
+		prerequisite = { focus = GRF_mass_assault_f focus = GRF_grand_battleplan_f focus = GRF_superior_firepower_f focus = GRF_mobile_warfare_f }
+		relative_position_id = GRF_grand_battleplan_f
+		x = 2
+		y = 1
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus GRF_motorized_f"
+			add_tech_bonus = {
+				name = mech_army_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+	}
 	
 	focus = {
 		id = GRF_standard_artillery
@@ -7412,9 +7437,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
-		prerequisite = { focus = GRF_standard_rifles }
+		prerequisite = { focus = GRF_standard_rifles focus = GRF_motorized_f }
 		relative_position_id = GRF_military_research_department
-		x = 1
+		x = 2
 		y = 1
 
 
@@ -7437,9 +7462,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
-		prerequisite = { focus = GRF_standard_rifles }
+		prerequisite = { focus = GRF_standard_rifles focus = GRF_motorized_f}
 		relative_position_id = GRF_standard_rifles
-		x = 1
+		x = 2
 		y = 1
 
 
@@ -7454,23 +7479,19 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
-	
+
+	#EoF Changes
 	focus = {
-		id = GRF_motorized_f
-		icon = GFX_goal_generic_army_motorized
+		id = EoF_GRF_mechanized_bonus
+		icon = GFX_goal_generic_build_tank
 		cost = 8.00
-		ai_will_do = {
-			factor = 50
-		}
 		prerequisite = { focus = GRF_standard_artillery }
 		prerequisite = { focus = GRF_standard_support }
 		relative_position_id = GRF_standard_artillery
 		x = 1
 		y = 1
 
-
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus GRF_motorized_f"
 			add_tech_bonus = {
 				name = mech_army_bonus
 				bonus = 1.0
@@ -7478,8 +7499,8 @@ focus_tree = {
 				category = cat_mechanized_equipment
 			}
 		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	#EoF Changes
 	
 	focus = {
 		id = GRF_heavy_tank_f
@@ -7488,7 +7509,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
-		prerequisite = { focus = GRF_motorized_f }
+		prerequisite = { focus = EoF_GRF_mechanized_bonus }
 		prerequisite = { focus = GRF_medium_tank_f }
 		relative_position_id = GRF_medium_tank_f
 		x = 1
@@ -7514,9 +7535,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
-		prerequisite = { focus = GRF_motorized_f }
+		prerequisite = { focus = EoF_GRF_mechanized_bonus }
 		prerequisite = { focus = GRF_train_officers }
-		relative_position_id = GRF_motorized_f
+		relative_position_id = EoF_GRF_mechanized_bonus
 		x = 1
 		y = 1
 
@@ -7537,19 +7558,13 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_mass_assault_f focus = GRF_grand_battleplan_f focus = GRF_superior_firepower_f focus = GRF_mobile_warfare_f }
 		relative_position_id = GRF_superior_firepower_f
-		x = 1
+		x = 2
 		y = 1
 
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_ranger_corps"
 			add_ideas = GRF_ranger_corps_idea
-			add_tech_bonus = {
-				name = mech_bonus
-				bonus = 1.0
-				uses = 1
-				category = motorized_equipment
-			}
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS }
 	}
@@ -7563,7 +7578,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_ranger_corps }
 		relative_position_id = GRF_ranger_corps
-		x = 1
+		x = 0
 		y = 1
 
 
@@ -7618,7 +7633,7 @@ focus_tree = {
 		}
 		prerequisite = { focus = GRF_ranger_corps }
 		relative_position_id = GRF_ranger_corps
-		x = 3
+		x = 2
 		y = 1
 
 

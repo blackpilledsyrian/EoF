@@ -5,6 +5,9 @@ state={
 	provinces={
 		2651 2650 2649 2629 2628 2627 2626 2607 2603 
 	}
+	resources={
+		rubber=30
+	}
 	history={
 		owner = HIP
 		add_core_of = HIP

@@ -6,7 +6,7 @@ state={
 		2503 2498 2496 2470 2452 2445 2429 2428 2346 2302 2277 
 	}
 	resources={
-		rubber=40
+		rubber=50
 	}
 	history={
 		owner = JER

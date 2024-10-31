@@ -564,23 +564,31 @@ on_actions = {
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Great Yak Warband\" division_template = \"Great Yak Warband\" start_experience_factor = 1 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = YAK
+						}
+						create_unit = {
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = YAK
+						}
+						create_unit = {
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 					}
@@ -656,27 +664,23 @@ on_actions = {
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 0.5"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 					}

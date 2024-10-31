@@ -148,7 +148,7 @@ if = {
 		design_team = mio:CHN_chnairm5_organization
 		modules = {
 			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}
@@ -326,6 +326,11 @@ set_politics = {
 	last_election = "1000.10.10"
 	election_frequency = 36
 	elections_allowed = no
+}
+
+set_autonomy = {
+	target = ABY
+	autonomy_state = autonomy_reichskommissariat
 }
 
 add_to_tech_sharing_group = CHN_research
