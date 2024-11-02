@@ -2500,6 +2500,7 @@ focus_tree = {
 				type = aluminium
 				amount = 150
 				state = 166
+			}
 			mio:STG_prolet_airfleet_organization = {
 				add_mio_funds = 500
 			}
