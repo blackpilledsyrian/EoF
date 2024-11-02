@@ -600,6 +600,10 @@ recruit_character = EQC_flawless_glow
 recruit_character = EQC_deviant_bat
 
 recruit_character = EoF_duchess_groverina
+### Reichsmandat Leaders ###
+recruit_character = EQC_elsa_von_schnabeltass
+recruit_character = EQC_willy_pferdefreund
+recruit_character = EQC_werner_rotfluegel
 
 add_to_tech_sharing_group = equestrian_research
 
