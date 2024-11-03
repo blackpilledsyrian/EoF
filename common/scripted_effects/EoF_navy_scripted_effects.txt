@@ -8,9 +8,9 @@ calculate_total_ship_var = {
 	set_variable = { destroyer_var = num_ships_with_type@destroyer }
 	set_variable = { monitor_var = num_ships_with_type@monitor }
 	set_variable = { submarine_var = num_ships_with_type@submarine }
-	multiply_variable = { carrier_var = 12 }
-	multiply_variable = { battleship_var = 12 }
-	multiply_variable = { battle_cruiser_var = 12 }
+	multiply_variable = { carrier_var = 8 }
+	multiply_variable = { battleship_var = 8 }
+	multiply_variable = { battle_cruiser_var = 6 }
 	multiply_variable = { heavy_cruiser_var = 4 }
 	multiply_variable = { light_cruiser_var = 4 }
 	multiply_variable = { destroyer_var = 1 }
@@ -35,9 +35,9 @@ calculate_reserve_ship_var = {
 	set_variable = { destroyer_var = num_ships_with_type@destroyer }
 	set_variable = { monitor_var = num_ships_with_type@monitor }
 	set_variable = { submarine_var = num_ships_with_type@submarine }
-	multiply_variable = { carrier_var = 12 }
-	multiply_variable = { battleship_var = 12 }
-	multiply_variable = { battle_cruiser_var = 12 }
+	multiply_variable = { carrier_var = 8 }
+	multiply_variable = { battleship_var = 8 }
+	multiply_variable = { battle_cruiser_var = 6 }
 	multiply_variable = { heavy_cruiser_var = 4 }
 	multiply_variable = { light_cruiser_var = 4 }
 	multiply_variable = { destroyer_var = 1 }

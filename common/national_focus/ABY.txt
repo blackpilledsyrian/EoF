@@ -14,7 +14,7 @@ shared_focus = {
 	icon = GFX_goal_generic_major_war
 	cost = 0
 	available = {
-		date > 1010.04.01
+		date > 1010.01.01
 	}
 	ai_will_do = {
 		factor = 200
@@ -72,6 +72,18 @@ shared_focus = {
 				threat = 3
 				name = EoF_ABY_war_buildup_tension
 			}
+			if = {
+				limit = {
+					SDL = {
+						exists = yes
+					}
+				}
+				SDL = {
+					annex_country = {
+						target = EMR
+					}
+				}
+			}
 		}
 	}
 }
@@ -100,11 +112,6 @@ shared_focus = {
 			add_named_threat = {
 				threat = 10
 				name = EoF_ABY_war_start_tension
-			}
-		}
-		SDL = {
-			annex_country = {
-				target = EMR
 			}
 		}
 	}

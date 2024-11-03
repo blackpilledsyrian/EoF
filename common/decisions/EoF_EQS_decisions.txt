@@ -611,7 +611,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 30
+		days_remove = 60
 		complete_effect = {
 			if = {
 				limit = {
@@ -671,7 +671,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 30
+		days_remove = 60
 		complete_effect = {
 			if = {
 				limit = {

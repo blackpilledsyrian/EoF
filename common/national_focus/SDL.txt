@@ -14,7 +14,7 @@ shared_focus = {
 	icon = GFX_goal_generic_major_war
 	cost = 0
 	available = {
-		date > 1008.06.01
+		date > 1008.01.01
 	}
 	ai_will_do = {
 		factor = 200
