@@ -10,8 +10,6 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 0 y = 2475 }
-
-	shared_focus = JAK_this_is_madness
 }
 
 
@@ -21,9 +19,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = JAK_civil_war_happening
-	shared_focus = JAK_end_of_civil_war
 }
 
 
@@ -33,12 +28,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = JAK_the_traditionalist_triumphant
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_army_primacy
 }
 
 
@@ -48,13 +37,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = JAK_the_traditionalist_triumphant
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_army_primacy
-	shared_focus = JAK_new_eqs_feelers
 }
 
 
@@ -64,13 +46,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = JAK_the_traditionalist_triumphant
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_army_primacy
-	shared_focus = JAK_our_worst_fears
 }
 
 
@@ -80,14 +55,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = JAK_the_traditionalist_triumphant
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_army_primacy
-	shared_focus = JAK_our_worst_fears
-	shared_focus = JAK_to_save_an_idea
 }
 
 
@@ -97,11 +64,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-	shared_focus = JAK_glory_to_yakyakistan
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_army_primacy
 }
 
 
@@ -111,12 +73,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-	shared_focus = JAK_glory_to_yakyakistan
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_the_pact_of_destiny
-	shared_focus = JAK_army_primacy
 }
 
 
@@ -126,13 +82,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-	shared_focus = JAK_glory_to_yakyakistan
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_the_pact_of_destiny
-	shared_focus = JAK_our_greatest_war
-	shared_focus = JAK_army_primacy
 }
 
 
@@ -142,12 +91,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-	shared_focus = JAK_glory_to_yakyakistan
-	shared_focus = JAK_a_modern_industry
-	shared_focus = JAK_into_modern_age
-	shared_focus = JAK_even_more_science
-	shared_focus = JAK_a_destiny_forgotten
-	shared_focus = JAK_army_primacy
 }
 
 
@@ -157,8 +100,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3500 }
-
-	shared_focus = JAK_my_journal
 }
 
 
@@ -168,10 +109,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3500 }
-
-	shared_focus = JAK_my_journal
-	shared_focus = JAK_a_harmonist_in_severyana
-	shared_focus = JAK_an_autocrat_in_the_north
 }
 
 
@@ -181,12 +118,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3500 }
-
-	shared_focus = JAK_my_journal
-	shared_focus = JAK_a_harmonist_in_severyana
-	shared_focus = JAK_an_autocrat_in_the_north
-	shared_focus = JAK_celestia_is_a_commie
-	shared_focus = JAK_the_home_of_harmony_has_fallen
 }
 
 

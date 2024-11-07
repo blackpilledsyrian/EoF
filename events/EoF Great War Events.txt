@@ -49,7 +49,10 @@ country_event = {
 				limit = {
 					any_neighbor_state = {
 						controller = {
-							has_war_with = EQS
+							OR = {
+								tag = CHN
+								tag = OLE
+							}
 						}
 					}
 				}
@@ -108,9 +111,12 @@ country_event = {
 				limit = {
 					any_neighbor_state = {
 						controller = {
-							has_war_with = EQS
+							OR = {
+								tag = CHN
+								tag = OLE
+							}
 						}
-					}
+					} 
 				}
 				create_unit = {
 					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"

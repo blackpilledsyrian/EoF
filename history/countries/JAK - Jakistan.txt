@@ -71,7 +71,6 @@ add_ideas = {
 	big_science_base
 	low_economic_mobilisation
 	limited_conscription
-	JAK_clan_unity_4
 }
 
 set_truce = {

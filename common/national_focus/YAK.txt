@@ -10,8 +10,6 @@ focus_tree = {
 		}
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_left_centre_coalition
 }
 
 
@@ -21,9 +19,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_civil_war_happening
-	shared_focus = YAK_end_of_civil_war
 }
 
 
@@ -33,15 +28,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_crown_stands_firm
-	shared_focus = YAK_first_elections
-	shared_focus = YAK_army_primacy
-	shared_focus = YAK_revitalize_industry
-	shared_focus = YAK_into_modern_age
-	shared_focus = YAK_even_more_science
-	shared_focus = YAK_reintegrate_the_traitors
-	shared_focus = YAK_looking_south
 }
 
 
@@ -51,15 +37,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_popular_revolution
-	shared_focus = YAK_red_junta
-	shared_focus = YAK_army_primacy
-	shared_focus = YAK_revitalize_industry
-	shared_focus = YAK_into_modern_age
-	shared_focus = YAK_even_more_science
-	shared_focus = YAK_the_revolution_at_home
-	shared_focus = YAK_northern_comintern_branch
 }
 
 
@@ -69,16 +46,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_popular_revolution
-	shared_focus = YAK_red_junta
-	shared_focus = YAK_army_primacy
-	shared_focus = YAK_revitalize_industry
-	shared_focus = YAK_into_modern_age
-	shared_focus = YAK_even_more_science
-	shared_focus = YAK_the_revolution_at_home
-	shared_focus = YAK_northern_comintern_branch
-	shared_focus = YAK_ending_racism_and_reaction
 }
 
 
@@ -88,16 +55,6 @@ focus_tree = {
 		factor = 0
 	}
 	continuous_focus_position = { x = 50 y = 3000 }
-
-	shared_focus = YAK_popular_revolution
-	shared_focus = YAK_red_junta
-	shared_focus = YAK_army_primacy
-	shared_focus = YAK_revitalize_industry
-	shared_focus = YAK_into_modern_age
-	shared_focus = YAK_even_more_science
-	shared_focus = YAK_the_revolution_at_home
-	shared_focus = YAK_northern_comintern_branch
-	shared_focus = YAK_our_greatest_war
 }
 
 

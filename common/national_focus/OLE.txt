@@ -4123,7 +4123,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1.5
 		}
-		x = 23
+		x = 22
 		y = 6
 		cost = 10
 		completion_reward = {
@@ -4283,7 +4283,7 @@ focus_tree = {
 		icon = GFX_focus_rocketry
 		cost = 10.0
 		prerequisite = { focus = OLE_better_arty }
-		x = 27
+		x = 28
 		y = 6
 
 		ai_will_do = {
@@ -4312,6 +4312,9 @@ focus_tree = {
 			factor = 1.5
 		}
 		prerequisite = { focus = OLE_rocketry focus = OLE_super_tank }
+		allow_branch= {
+			always = no
+		}
 		x = 25
 		y = 7
 		completion_reward = {

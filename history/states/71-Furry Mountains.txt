@@ -2,7 +2,10 @@
 state={
 	id=71
 	name="STATE_71"
-
+	resources={
+		steel = 60
+		chromium = 90
+	}
 	history={
 		owner = EQS
 		add_core_of = EQS

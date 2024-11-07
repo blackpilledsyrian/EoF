@@ -208,7 +208,7 @@ NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE =
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1			-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 1		-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.25			-- base MIC speed modifier for licensed equipment
-NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.1		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
+NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.05		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 4			-- Maximum years for MIC speed modifier
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.10		-- MIC speed modifier for licensed equipment for not being in faction
 NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.0			-- XP cost for upgrading licensed equipment
@@ -295,11 +295,17 @@ NDefines.NNavy.HIT_PROFILE_MULT = 100.0				-- multiplies hit profile of every sh
 NDefines.NNavy.HIT_PROFILE_SPEED_FACTOR	= 1.0			-- factors speed value when determining it profile (Vis * NDefines.NNavy.HIT_PROFILE_MULT * Ship Hit Profile Mult)
 NDefines.NNavy.HIT_PROFILE_SPEED_BASE	= 0			-- Base value added to hitprofile speed calulation
 
+NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0		-- hours from start of combat when carriers get to fight
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0		-- hours from start of combat when only carriers, capitals and subs get to attack
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24 
+
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3			-- Vanilla is 0.25
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1	-- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05	-- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.05		-- Amount of exp each ship gain every 24h while training (before modifiers)
+
+NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1	-- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 
 -- defines that control submarine visibility
 NDefines.NNavy.NAVAL_COMBAT_SUB_DETECTION_FACTOR = 1.0			-- balance value for sub detection in combat by ships
