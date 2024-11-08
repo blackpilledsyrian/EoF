@@ -1210,7 +1210,7 @@ on_actions = {
 					669 = { is_owned_by = NCH }
 					670 = { is_owned_by = NCH }
 				}
-				every_core_state = {
+				random_core_state = {
 					limit = {
 						is_in_home_area = yes
 					}

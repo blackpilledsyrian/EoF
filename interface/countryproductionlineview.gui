@@ -1848,9 +1848,10 @@ guiTypes = {
 
 		buttonType = {
 			name = "convert"
-			position = { x=30 y=75 }
+			position = { x=-100 y=75 }
 			quadTextureSprite = "GFX_production_line_convert"
 			clicksound = click_default
+			alwaystransparent = yes
 		}
 
 		buttonType = {
@@ -2186,9 +2187,10 @@ guiTypes = {
 
 		buttonType = {
 			name = "convert"
-			position = { x=7 y=30 }
+			position = { x=-100 y=30 }
 			quadTextureSprite = "GFX_production_line_convert"
 			clicksound = click_default
+			alwaystransparent = yes
 		}
 
 		buttonType = {
