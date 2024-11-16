@@ -16,11 +16,12 @@ sub_units = {
 		group = armor_combat_support
 
 		categories = {
+			#category_sp_battalion_tanks
 			category_all_armor
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}		
 
 		combat_width = 2
@@ -86,11 +87,12 @@ sub_units = {
 		group = armor_combat_support
 
 		categories = {
+			#category_sp_battalion_tanks
 			category_all_armor
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}		
 		combat_width = 2
 
@@ -159,11 +161,12 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			#category_sp_battalion_tanks
 			category_all_armor
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}
 
 		combat_width = 2
@@ -231,11 +234,12 @@ sub_units = {
 		group = armor_combat_support
 		
 		categories = {
+			#category_sp_battalion_tanks
 			category_all_armor
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}
 
 		combat_width = 2
