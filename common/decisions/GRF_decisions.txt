@@ -1043,6 +1043,44 @@ GRF_civil_war_bop_category = {
 			}
 		}
 	}
+	GRF_debug_BoP_max_auth = {
+		allowed = {
+			tag = GRF
+		}
+		visible = {
+			is_debug = yes
+		}
+		icon = GFX_decision_griffon_claw
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRF_triton_offer_to_YAK"
+			add_power_balance_value = {
+				id = GRF_civil_war_bop
+				value = 1.0
+			}
+		}
+	}
+	GRF_debug_BoP_max_repub = {
+		allowed = {
+			tag = GRF
+		}
+		visible = {
+			is_debug = yes
+		}
+		icon = GFX_decision_red_star
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision GRF_triton_offer_to_YAK"
+			add_power_balance_value = {
+				id = GRF_civil_war_bop
+				value = -1.0
+			}
+		}
+	}
 }
 GRF_war_with_GFF_category = {
 	GRF_GFF_war_crisis = {
