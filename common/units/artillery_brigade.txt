@@ -96,7 +96,7 @@ sub_units = {
 			category_line_artillery
 			category_artillery
 			category_all_artillery
-			category_all_motmech_artillery
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 1
@@ -250,7 +250,7 @@ sub_units = {
 			category_line_artillery
 			category_artillery
 			category_all_artillery
-			category_all_motmech_artillery
+			category_mobile_and_mobile_combat_sup
 		}		
 
 		combat_width = 1
@@ -327,7 +327,7 @@ sub_units = {
 			category_line_artillery
 			category_all_artillery
 			category_artillery
-			category_all_motmech_artillery
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 1

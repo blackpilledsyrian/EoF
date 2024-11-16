@@ -1109,7 +1109,7 @@ leader_traits = {
 				check_variable = { num_units > 99 }
 			}
 			else = {
-				check_variable = { num_units > 7 }
+				check_variable = { num_units > 23 }
 			}
 		}
 		custom_gain_xp_trigger_tooltip = fighting_with_enough_units
@@ -1700,7 +1700,7 @@ leader_traits = {
 		}
 		cost = 500
 		modifier = {
-			shore_bombardment_bonus = 0.1
+			shore_bombardment_bonus = 0.25
 		}
 		
 		ai_will_do = {
@@ -2022,7 +2022,7 @@ leader_traits = {
 	concealment_expert = { 
 		type = navy
 		modifier = {
-			navy_visibility = -0.2
+			navy_visibility = -0.15
 		}
 				
 		ai_will_do = {
@@ -2089,7 +2089,8 @@ leader_traits = {
 		
 		trait_type = assignable_trait
 		any_parent = { seawolf spotter fleet_protector superior_tactician }
-		
+		mutually_exclusive = silent_hunter
+
 		gui_row = 3
 		gui_column = 1
 	}
@@ -2210,7 +2211,7 @@ leader_traits = {
 	ground_pounder = { 
 		type = navy
 		modifier = {
-			shore_bombardment_bonus = 0.1
+			shore_bombardment_bonus = 0.25 
 		}
 				
 		ai_will_do = {
