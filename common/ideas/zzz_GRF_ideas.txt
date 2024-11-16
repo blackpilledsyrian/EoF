@@ -80,7 +80,6 @@ ideas = {
 	materiel_manufacturer = {
 		designer = yes
 
-		talon = {
 			picture = GRF_talon
 
 			allowed = {
