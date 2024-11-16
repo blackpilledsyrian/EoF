@@ -2171,11 +2171,26 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus GRF_mcnuke"
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 3.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1.0
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -8076,6 +8091,10 @@ focus_tree = {
 				uses = 1
 				category = jet_technology
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1.5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -8112,6 +8131,10 @@ focus_tree = {
 					bonus = 0.5
 					uses = 2
 					category = cat_anti_tank
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.25
 				}
 			}
 			else = {

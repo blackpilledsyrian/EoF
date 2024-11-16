@@ -1748,6 +1748,7 @@ shared_focus = {
 		effect_tooltip = {
 			swap_ideas = { remove_idea = harmonic_stagnation add_idea = harmonic_stagnation2 }
 		}
+		custom_effect_tooltip = EQS_extreme_measures_conscription_tt
 		country_event = { days = 1 id = equestria.147 }
 		hidden_effect = {
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }
@@ -1772,19 +1773,19 @@ shared_focus = {
 				add_building_construction = {
 					type = bunker
 					province = 13058
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
 					province = 11114
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
 					province = 9138
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1805,13 +1806,13 @@ shared_focus = {
 				add_building_construction = {
 					type = bunker
 					province = 3768
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
 					type = bunker
 					province = 776
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1823,7 +1824,7 @@ shared_focus = {
 				add_building_construction = {
 					type = bunker
 					province = 6631
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2060,7 +2061,47 @@ shared_focus = {
 	y = 6
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus EQS_WMD"
-		effect_tooltip = {
+		custom_effect_tooltip = {
+			localization_key = nuclear_facility_construction_tt
+			temp_facility_state_loc = "[75.GetName]"
+			temp_facility_province_loc = "[75.GetCapitalVictoryPointName]"
+		}
+		hidden_effect = {
+			if = {
+				limit = { 
+					75 = {
+						is_fully_controlled_by = ROOT
+						can_construct_building = nuclear_facility
+					}
+				}
+				75 = {
+					add_building_construction = {
+						type = nuclear_facility
+						level = 1
+						instant_build = yes
+						province = 758
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = {
+			localization_key = available_scientist_one_line_tt
+			CHARACTER = EQS_fluttershy
+		}
+		if = {
+			limit = {
+				has_tech = atomic_research
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1.25
+			}
+		}
+		else = {
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.75
+			}
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -2136,6 +2177,10 @@ shared_focus = {
 				bonus = 0.65
 				uses = 2
 				category = cat_anti_tank
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.3
 			}
 		}
 		else = {
@@ -2496,11 +2541,22 @@ shared_focus = {
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus Nuclear_Power"
 		add_ideas = nuclear_power_EQS
-		add_tech_bonus = {
-			name = secret_bonus
-			bonus = 1.0
-			uses = 1
-			category = nuclear
+		if = {
+			limit = {
+				has_tech = atomic_research
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
