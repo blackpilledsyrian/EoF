@@ -2,6 +2,10 @@
 
 technologies = {
 
+	@anti_air = -7
+	@anti_tank = 7
+	@rocket_artillery = 4
+	
 	pre_gw_artillery = {
 
 		enable_equipments = {
@@ -21,14 +25,15 @@ technologies = {
 		start_year = 950 # was 800, moved for license reasons
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = -2 }
+			position = { x = 1 y = -2 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery
 		}
-
+		special_project_specialization = { specialization_land }
 		ai_will_do = {
 			factor = 800
 		}
@@ -63,23 +68,37 @@ technologies = {
 			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
+
 		path = {
 			leads_to_tech = heavyartillery1
 			research_cost_coeff = 1
 		}
-		enable_equipment_modules = { 
-		}
+		
 		research_cost = 1.5
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 0 }
+			position = { x = 1 y = 0 }
+		}
+		
+		on_research_complete = {
+			if = {
+				limit = {
+					has_dlc = "Gotterdammerung"
+				}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_land_super_heavy_howitzer
+				}
+			}
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 50
@@ -117,6 +136,12 @@ technologies = {
 			soft_attack = 0.1
 		}
 
+		enable_equipment_modules = {
+			tank_small_cannon_2
+			tank_close_support_gun
+			secondary_turret_close_support_gun
+		}
+
 		path = {
 			leads_to_tech = artillery0
 			research_cost_coeff = 1
@@ -128,13 +153,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 2 }
+			position = { x = 1 y = 2 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 6
@@ -192,13 +219,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 4 }
+			position = { x = 1 y = 4 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 6
@@ -237,13 +266,14 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
+			lc_medium_cannon_turret #Module for Land Cruiser
+			lc_assault_gun #Module for Land Cruiser
 		}
 
 		path = {
 			leads_to_tech = artillery2
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
@@ -255,13 +285,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 6 }
+			position = { x = 1 y = 6 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
+
 
 		ai_will_do = {
 			factor = 6
@@ -276,12 +309,12 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 3
+				factor = 5
 				date > "1009.1.9"
 			}
 
 			modifier = {
-				factor = 3
+				factor = 5
 				date > "1010.1.1"
 			}
 
@@ -307,7 +340,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-
+		
 		path = {
 			leads_to_tech = artillery3
 			research_cost_coeff = 1
@@ -319,13 +352,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 8 }
+			position = { x = 1 y = 8 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
+
 
 		ai_will_do = {
 			factor = 6
@@ -374,12 +410,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 10 }
+			position = { x = 1 y = 10 }
 		}
+		special_project_specialization = { specialization_land }
+
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
 
 		ai_will_do = {
@@ -417,13 +456,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 12 }
+			position = { x = 1 y = 12 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
+
 
 		ai_will_do = {
 			factor = 3
@@ -476,13 +518,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 14 }
+			position = { x = 1 y = 14 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
+
 
 		ai_will_do = {
 			factor = 3
@@ -503,6 +548,7 @@ technologies = {
 			}
 		}
 	}
+
 	#EoF Heavy Artillery
 
 	heavyartillery1 = {
@@ -524,13 +570,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 2 }
+			position = { x = -3 y = 2 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery2 = {
@@ -555,13 +603,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 4 }
+			position = { x = -3 y = 4 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery3 = {
@@ -590,19 +640,29 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 6 }
+			position = { x = -3 y = 6 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery4 = {
 
 		enable_equipments = {
 			heavy_artillery_equipment_2
+		}
+		path = {
+			leads_to_tech = sp_artillery_purpose_built_gun_motor_carriages_tech
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sp_artillery_rocket_assisted_projectiles_tech
+			research_cost_coeff = 1
 		}
 
 		start_year = 1011
@@ -618,13 +678,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 8 }
+			position = { x = -3 y = 8 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery5 = {
@@ -655,13 +717,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = 10 }
+			position = { x = -4 y = 10 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery6 = {
@@ -685,13 +749,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -5 y = 12 }
+			position = { x = -4 y = 12 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery7 = {
@@ -723,13 +789,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 10 }
+			position = { x = -2 y = 10 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery8 = {
@@ -754,13 +822,15 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -3 y = 12 }
+			position = { x = -2 y = 12 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyartillery9 = {
@@ -778,16 +848,17 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -4 y = 14 }
+			position = { x = -3 y = 14 }
 		}
 
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
 		}
+		special_project_specialization = { specialization_land }
 	}
 
-	
 	###------> X <><> <><> <><> <><> <><>
 
 	mountain_gun = {
@@ -825,6 +896,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
+			lc_rocket_launcher #Module for Land Cruiser
 		}
 		
 		path = {
@@ -838,7 +910,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 6 }
+			position = { x = @rocket_artillery y = 6 }
 		}
 
 		ai_will_do = {
@@ -849,6 +921,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery2 = {
@@ -877,7 +950,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 8 }
+			position = { x = @rocket_artillery y = 8 }
 		}
 
 		ai_will_do = {
@@ -893,6 +966,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery3 = {
@@ -921,7 +995,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 10 }
+			position = { x = @rocket_artillery y = 10 }
 		}
 
 		ai_will_do = {
@@ -937,6 +1011,8 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
+
 	}
 
 	###------> Old Rocket Artillery <><> <><> <><> <><> <><>
@@ -965,7 +1041,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 12 }
+			position = { x = @rocket_artillery y = 12 }
 		}
 
 		ai_will_do = {
@@ -981,6 +1057,8 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
+
 	}
 
 	rocket_artillery5 = {
@@ -1009,7 +1087,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 2 y = 14 }
+			position = { x = @rocket_artillery y = 14 }
 		}
 
 		ai_will_do = {
@@ -1025,6 +1103,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 	###------> X <><> <><> <><> <><> <><>
 
@@ -1038,6 +1117,7 @@ technologies = {
 			tank_anti_air_cannon
 			tank_heavy_anti_air_cannon
 			ship_anti_air_1
+			lc_light_anti_air_battery #Module for Land Cruiser
 		}
 
 		enable_building = {
@@ -1056,14 +1136,14 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 2 }
+			position = { x = @anti_air y = 2 }
 		}
 
 		ai_will_do = {
 			factor = 15
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1008.1.1"
 			}
 
@@ -1083,6 +1163,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair1 = {
@@ -1092,7 +1173,6 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -1104,7 +1184,6 @@ technologies = {
 			leads_to_tech = antiair2
 			research_cost_coeff = 1
 		}
-
 		path = {
 			leads_to_tech = heavyantiair1
 			research_cost_coeff = 1
@@ -1112,18 +1191,18 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1009
+		start_year = 1010
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 4 }
+			position = { x = @anti_air y = 4 }
 		}
 
 		ai_will_do = {
 			factor = 15
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1009.1.9"
 			}
 
@@ -1143,6 +1222,8 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
+
 	}
 
 	antiair2 = {
@@ -1157,6 +1238,7 @@ technologies = {
 			tank_anti_air_cannon_2
 			tank_heavy_anti_air_cannon_2
 			ship_anti_air_2
+			lc_heavy_anti_air_battery #Module for Land Cruiser
 		}
 
 		path = {
@@ -1166,18 +1248,18 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1010
+		start_year = 1011
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 6 }
+			position = { x = @anti_air y = 6 }
 		}
 
 		ai_will_do = {
 			factor = 15
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1011.1.6"
 			}
 
@@ -1197,6 +1279,8 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
+
 	}
 
 	antiair3 = {
@@ -1206,7 +1290,6 @@ technologies = {
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -1221,18 +1304,18 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1011
+		start_year = 1012
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 8 }
+			position = { x = @anti_air y = 8 }
 		}
 
 		ai_will_do = {
 			factor = 15
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1012.1.6"
 			}
 
@@ -1247,14 +1330,17 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
+
 	}
 
 	antiair4 = {
 
+		#navy_anti_air_attack_factor = 0.05
+
 		anti_air = {
 			air_attack = 0.1
 		}
-
 		anti_air_brigade = {
 			air_attack = 0.1
 		}
@@ -1269,11 +1355,11 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1013
+		start_year = 1014
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 12 }
+			position = { x = @anti_air y = 12 }
 		}
 
 		ai_will_do = {
@@ -1300,11 +1386,15 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
+
 	}
 
 	###------> Old Anti-Air Artillery <><> <><> <><> <><> <><>
 
 	antiair5 = {
+
+		#navy_anti_air_attack_factor = 0.05
 
 		enable_equipments = {
 			anti_air_equipment_3
@@ -1313,22 +1403,21 @@ technologies = {
 			tank_anti_air_cannon_3
 			tank_heavy_anti_air_cannon_3
 			ship_anti_air_3
+			lc_heavy_anti_air_platform #Module for Land Cruiser
 		}
 
 		path = {
 			leads_to_tech = antiair4
 			research_cost_coeff = 1
 		}
-		enable_equipment_modules = {
-		}
 
 		research_cost = 1
 
-		start_year = 1012
+		start_year = 1013
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 10 }
+			position = { x = @anti_air y = 10 }
 		}
 
 		ai_will_do = {
@@ -1355,6 +1444,8 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
+
 	}
 
 	antiair6 = {
@@ -1387,7 +1478,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -7 y = 14 }
+			position = { x = @anti_air y = 14 }
 		}
 
 		ai_will_do = {
@@ -1445,6 +1536,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	heavyantiair2 = {
 
@@ -1479,6 +1571,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	heavyantiair3 = {
 
@@ -1498,6 +1591,7 @@ technologies = {
 			leads_to_tech = heavyantiair4
 			research_cost_coeff = 1
 		}
+		special_project_specialization = { specialization_land specialization_air }
 
 		research_cost = 1
 
@@ -1513,6 +1607,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	heavyantiair4 = {
 
@@ -1524,6 +1619,10 @@ technologies = {
 
 		path = {
 			leads_to_tech = heavyantiair5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sp_shock_hardening_techniques
 			research_cost_coeff = 1
 		}
 
@@ -1541,7 +1640,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
-		
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	heavyantiair5 = {
 
@@ -1568,7 +1667,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -10 y = 12 }
+			position = { x = -11 y = 12 }
 		}
 
 		categories = {
@@ -1576,6 +1675,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 	heavyantiair6 = {
 
@@ -1597,7 +1697,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = -10 y = 14 }
+			position = { x = -11 y = 14 }
 		}
 
 		categories = {
@@ -1605,6 +1705,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	###------> X <><> <><> <><> <><> <><>
@@ -1619,6 +1720,7 @@ technologies = {
 			tank_medium_high_velocity_cannon
 			tank_heavy_cannon
 			tank_heavy_high_velocity_cannon
+			lc_high_velocity_cannon_turret 
 		}
 		path = {
 			leads_to_tech = antitank0
@@ -1635,14 +1737,14 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 2 }
+			position = { x = @anti_tank  y = 2 }
 		}
 
 		ai_will_do = {
 			factor = 18
 
 			modifier = {
-				factor = 5
+				factor = 10
 				has_tech = basic_medium_tank_chassis
 				NOT = {
 					has_tech = artillery1
@@ -1683,6 +1785,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	antitank0 = {
@@ -1720,7 +1824,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 4 y = 4 }
+			position = { x = 6 y = 4 }
 		}
 
 		ai_will_do = {
@@ -1763,6 +1867,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	antitank1 = {
@@ -1797,7 +1902,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 4 y = 6 }
+			position = { x = 6 y = 6 }
 		}
 
 		ai_will_do = {
@@ -1816,7 +1921,7 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 5
+				factor = 10
 				has_tech = basic_medium_tank_chassis
 				NOT = {
 					has_tech = artillery1
@@ -1840,6 +1945,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	#EoF Field Guns
@@ -1873,7 +1979,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 4 }
+			position = { x = 8 y = 4 }
 		}
 
 		categories = {
@@ -1881,6 +1987,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	fieldgun1 = {
@@ -1908,7 +2015,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 6 y = 6 }
+			position = { x = 8 y = 6 }
 		}
 
 		categories = {
@@ -1916,6 +2023,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	antitank2 = {
@@ -1942,18 +2050,14 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 8 }
-		}
-
-		sub_technologies = {
-			# large_medium_cannon
+			position = { x = @anti_tank y = 8 }
 		}
 
 		ai_will_do = {
 			factor = 18
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1010.1.9"
 			}
 
@@ -1986,6 +2090,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	large_medium_cannon = {
@@ -2034,8 +2140,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 10 }
+			position = { x = @anti_tank y = 10 }
 		}
+
+		categories = {
+			artillery
+			cat_anti_tank
+			mio_cat_all_artillery_equipment
+		}
+		
+		special_project_specialization = { specialization_land }
 
 		ai_will_do = {
 			factor = 18
@@ -2046,7 +2160,7 @@ technologies = {
 			}
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1013.1.1"
 			}
 
@@ -2067,16 +2181,9 @@ technologies = {
 				}
 			}
 		}
-
-		categories = {
-			artillery
-			cat_anti_tank
-			mio_cat_all_artillery_equipment
-		}
 	}
 
 	antitank4 = {
-
 		enable_equipment_modules = {
 			tank_small_cannon_4
 			tank_small_high_velocity_cannon_4
@@ -2106,14 +2213,14 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 12 }
+			position = { x = @anti_tank y = 12 }
 		}
 
 		ai_will_do = {
 			factor = 18
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1013.1.6"
 			}
 
@@ -2140,10 +2247,11 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	antitank5 = {
-
 		enable_equipments = {
 			anti_tank_equipment_3
 		}	
@@ -2151,6 +2259,12 @@ technologies = {
 			tank_medium_cannon_4
 			tank_medium_high_velocity_cannon_4
 			auto_loader
+			lc_heavy_high_velocity_cannons #Module for Land Cruiser
+		}
+		
+		path = {
+			leads_to_tech = antitank_a
+			research_cost_coeff = 1
 		}
 		
 		path = {
@@ -2164,18 +2278,18 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 5 y = 14 }
+			position = { x = @anti_tank y = 14 }
 		}
 
 		ai_will_do = {
 			factor = 18
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1013.1.9"
 			}
 
 			modifier = {
-				factor = 2
+				factor = 5
 				date > "1014.1.1"
 			}
 
@@ -2202,6 +2316,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	#EoF Heavy Anti-Tank
@@ -2224,7 +2340,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = 8 }
+			position = { x = 10 y = 8 }
 		}
 
 		sub_technologies = {
@@ -2236,6 +2352,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	large_heavy_cannon = {
@@ -2249,7 +2366,8 @@ technologies = {
 			artillery
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
-		}	
+		}
+		special_project_specialization = { specialization_land }	
 	}
 
 	heavyantitank2 = {
@@ -2284,7 +2402,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = 10 }
+			position = { x = 10 y = 10 }
 		}
 
 		categories = {
@@ -2292,6 +2410,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyantitank3 = {
@@ -2322,7 +2441,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = 12 }
+			position = { x = 10 y = 12 }
 		}
 
 		categories = {
@@ -2330,6 +2449,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	heavyantitank4 = {
@@ -2349,7 +2469,7 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 8 y = 14 }
+			position = { x = 10 y = 14 }
 		}
 
 		categories = {
@@ -2357,6 +2477,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	###------> New Anti-Tank <><> <><> <><> <><> <><>
@@ -2375,23 +2496,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		super_heavy_tank_destroyer = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		modern_tank_destroyer_brigade = {
+		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.05
 		}
@@ -2404,6 +2509,11 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1016
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_tank y = 14 }
+		# }
 
 		ai_will_do = {
 			factor = 18
@@ -2426,6 +2536,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	antitank_b = {
@@ -2442,23 +2553,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		super_heavy_tank_destroyer = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		modern_tank_destroyer_brigade = {
+		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.05
 		}
@@ -2472,6 +2567,11 @@ technologies = {
 
 		start_year = 1018
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_tank y = 16 }
+		# }
+
 		ai_will_do = {
 			factor = 18
 			modifier = {
@@ -2493,6 +2593,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	antitank_c = {
@@ -2502,6 +2603,9 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_high_velocity_cannon_4
+			tank_heavy_cannon_4
+			tank_buster_3
 		}
 
 		path = {
@@ -2513,6 +2617,11 @@ technologies = {
 
 		start_year = 1020
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_tank y = 18 }
+		# }
+
 		ai_will_do = {
 			factor = 18
 			modifier = {
@@ -2534,6 +2643,7 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
 	}
 
 	antitank_d = {
@@ -2550,23 +2660,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		super_heavy_tank_destroyer = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		modern_tank_destroyer_brigade = {
+		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.05
 		}
@@ -2579,6 +2673,11 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1022
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_tank y = 20 }
+		# }
 
 		ai_will_do = {
 			factor = 18
@@ -2601,6 +2700,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	antitank_e = {
@@ -2617,23 +2718,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		super_heavy_tank_destroyer = {
-			hard_attack = 0.1
-			ap_attack = 0.05
-		}
-		modern_tank_destroyer_brigade = {
+		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.05
 		}
@@ -2646,6 +2731,10 @@ technologies = {
 			leads_to_tech = antitank_f
 			research_cost_coeff = 1
 		}
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x =  @anti_tank y = 22 }
+		# }
 
 		ai_will_do = {
 			factor = 18
@@ -2668,6 +2757,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	
@@ -2678,12 +2769,21 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_high_velocity_cannon_5
+			tank_heavy_cannon_5
+			tank_agtm_launcher
+			anti_tank_guided_missiles
 		}
 
 
 		research_cost = 1
 
 		start_year = 1026
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_tank y = 24 }
+		# }
 
 		ai_will_do = {
 			factor = 18
@@ -2706,6 +2806,8 @@ technologies = {
 			cat_anti_tank
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	###------> X <><> <><> <><> <><> <><>
@@ -2716,6 +2818,8 @@ technologies = {
 
 
 		enable_equipment_modules = {
+			tank_small_cannon_3
+			tank_medium_cannon_3
 		}
 		artillery = {
 			soft_attack = 0.1
@@ -2727,19 +2831,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
+		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
 		path = {
@@ -2751,6 +2843,11 @@ technologies = {
 
 		start_year = 1016
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 14 }
+		# }
+
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -2759,6 +2856,8 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	artillery_b = {
@@ -2768,6 +2867,8 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_heavy_howitzer_2
+			tank_super_heavy_howitzer_2
 		}
 
 		path = {
@@ -2779,6 +2880,11 @@ technologies = {
 
 		start_year = 1018
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 16 }
+		# }
+
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -2787,6 +2893,8 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	artillery_c = {
@@ -2801,19 +2909,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
+		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
 		path = {
@@ -2825,6 +2921,11 @@ technologies = {
 
 		start_year = 1020
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 18 }
+		# }
+
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -2833,10 +2934,13 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	artillery_d = {
 		enable_equipment_modules = {
+			tank_small_cannon_4
 		}
 
 		artillery = {
@@ -2849,19 +2953,7 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
+		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
 		path = {
@@ -2873,6 +2965,11 @@ technologies = {
 
 		start_year = 1022
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 20 }
+		# }
+
 		categories = {
 			artillery
 			mio_cat_all_artillery_equipment
@@ -2881,6 +2978,8 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	artillery_e = {
@@ -2889,6 +2988,8 @@ technologies = {
 			artillery_equipment_x_2
 		}
 		enable_equipment_modules = {
+			tank_heavy_howitzer_3
+			tank_super_heavy_howitzer_3
 		}
 		research_cost = 1
 
@@ -2898,6 +2999,10 @@ technologies = {
 			leads_to_tech = artillery_f
 			research_cost_coeff = 1
 		}
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 22 }
+		# }
 
 		categories = {
 			artillery
@@ -2907,6 +3012,8 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	artillery_f = {
@@ -2921,24 +3028,17 @@ technologies = {
 		mot_artillery_brigade = {
 			soft_attack = 0.1
 		}
-		light_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_artillery_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_artillery = {
-			soft_attack = 0.05
-		}
-		modern_sp_artillery_brigade= {
+		category_self_propelled_artillery = {
 			soft_attack = 0.05
 		}
 		research_cost = 1
 
 		start_year = 1026
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 1 y = 24 }
+		# }
 
 		categories = {
 			artillery
@@ -2948,6 +3048,8 @@ technologies = {
 		ai_will_do = {
 			factor = 3
 		}
+		special_project_specialization = { specialization_land }
+
 	}
 
 	###------> X <><> <><> <><> <><> <><>
@@ -2978,6 +3080,11 @@ technologies = {
 
 		start_year = 1016
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 14 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -2986,6 +3093,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery_b = {
@@ -3014,6 +3122,11 @@ technologies = {
 
 		start_year = 1018
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 16 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -3022,6 +3135,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery_c = {
@@ -3031,6 +3145,8 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
+			tank_rocket_launcher_3
+			rocket_pods
 		}
 	
 		
@@ -3047,6 +3163,11 @@ technologies = {
 
 		start_year = 1020
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 18 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -3055,6 +3176,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery_d = {
@@ -3082,6 +3204,11 @@ technologies = {
 
 		start_year = 1022
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 20 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -3090,6 +3217,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	rocket_artillery_e = {
@@ -3117,6 +3245,11 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 22 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -3125,6 +3258,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	
@@ -3135,6 +3269,8 @@ technologies = {
 		}
 	
 		enable_equipment_modules = {
+			tank_rocket_launcher_4
+			advanced_rocket_pods
 		}
 		
 		motorized_rocket_brigade = {
@@ -3146,6 +3282,11 @@ technologies = {
 
 		start_year = 1026
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = 3 y = 24 }
+		# }
+
 		ai_will_do = {
 			factor = 2
 		}
@@ -3154,6 +3295,7 @@ technologies = {
 			rocketry
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_air }
 	}
 
 	###------> X <><> <><> <><> <><> <><>
@@ -3177,20 +3319,8 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		light_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_anti_air = {
-			soft_attack = 0.05
-		}
-		modern_sp_anti_air_brigade= {
-			soft_attack = 0.05
+		category_self_propelled_anti_air = {
+			air_attack = 0.05
 		}
 
 		#navy_anti_air_attack_factor = 0.025
@@ -3198,6 +3328,11 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1016
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 14 }
+		# }
 
 		ai_will_do = {
 			factor = 4
@@ -3208,6 +3343,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair_b = {
@@ -3222,24 +3358,13 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		light_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_anti_air = {
-			soft_attack = 0.05
-		}
-		modern_sp_anti_air_brigade= {
-			soft_attack = 0.05
+		category_self_propelled_anti_air = {
+			air_attack = 0.05
 		}
 
 		#navy_anti_air_attack_factor = 0.025
-
+		static_anti_air_damage_factor = 0.1
+		
 		path = {
 			leads_to_tech = antiair_c
 			research_cost_coeff = 1
@@ -3248,6 +3373,11 @@ technologies = {
 		research_cost = 1
 
 		start_year = 1018
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 16 }
+		# }
 
 		ai_will_do = {
 			factor = 5
@@ -3258,6 +3388,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair_c = {
@@ -3266,11 +3397,13 @@ technologies = {
 			anti_air_equipment_x
 		}
 		enable_equipment_modules = {
+			ship_anti_air_5
+			tank_heavy_cannon_4
+			tank_anti_air_cannon_4
+			tank_heavy_anti_air_cannon_4
 		}
 
 		#navy_anti_air_attack_factor = 0.05
-
-		static_anti_air_damage_factor = 0.1
 
 		path = {
 			leads_to_tech = antiair_d
@@ -3281,6 +3414,11 @@ technologies = {
 
 		start_year = 1020
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 18 }
+		# }
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -3290,6 +3428,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair_d = {
@@ -3304,23 +3443,12 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		light_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_anti_air = {
-			soft_attack = 0.05
-		}
-		modern_sp_anti_air_brigade= {
-			soft_attack = 0.05
+		category_self_propelled_anti_air = {
+			air_attack = 0.05
 		}
 
 		#navy_anti_air_attack_factor = 0.025
+		static_anti_air_damage_factor = 0.1
 
 		path = {
 			leads_to_tech = antiair_e
@@ -3331,6 +3459,11 @@ technologies = {
 
 		start_year = 1022
 
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 20 }
+		# }
+
 		ai_will_do = {
 			factor = 5
 		}
@@ -3340,6 +3473,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	antiair_e = {
@@ -3354,20 +3488,8 @@ technologies = {
 		mot_anti_air_brigade = {
 			air_attack = 0.1
 		}
-		light_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		medium_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		heavy_sp_anti_air_brigade = {
-			soft_attack = 0.05
-		}
-		super_heavy_sp_anti_air = {
-			soft_attack = 0.05
-		}
-		modern_sp_anti_air_brigade= {
-			soft_attack = 0.05
+		category_self_propelled_anti_air = {
+			air_attack = 0.05
 		}
 
 		#navy_anti_air_attack_factor = 0.025
@@ -3380,6 +3502,10 @@ technologies = {
 			leads_to_tech = antiair_f
 			research_cost_coeff = 1
 		}
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 22 }
+		# }
 
 		ai_will_do = {
 			factor = 5
@@ -3390,6 +3516,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	
@@ -3399,16 +3526,31 @@ technologies = {
 			anti_air_equipment_x_2
 		}
 		enable_equipment_modules = {
+			ship_anti_air_6
+			tank_heavy_cannon_5
+			tank_anti_air_cannon_5
+			tank_heavy_anti_air_cannon_5
 		}
 
 		#navy_anti_air_attack_factor = 0.05
 
 		static_anti_air_damage_factor = 0.1
 
+		on_research_complete = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_land_heavy_sam	
+			}
+		}
 
 		research_cost = 1
 
 		start_year = 1026
+
+		# folder = {
+		# 	name = artillery_folder
+		# 	position = { x = @anti_air y = 24 }
+		# }
 
 		ai_will_do = {
 			factor = 5
@@ -3419,6 +3561,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	###------> X <><> <><> <><> <><> <><>
@@ -3444,23 +3587,7 @@ technologies = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		heavy_tank_destroyer_brigade = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		super_heavy_tank_destroyer = {
-			hard_attack = 0.1
-			ap_attack = 0.1
-		}
-		modern_tank_destroyer_brigade = {
+		category_tank_destroyers = {
 			hard_attack = 0.1
 			ap_attack = 0.1
 		}
@@ -3471,6 +3598,193 @@ technologies = {
 			mio_cat_all_artillery_equipment
 		}
 	}
+	
+	sp_artillery_rocket_assisted_projectiles_tech  = {
+		allow_branch = {
+			has_dlc = "Gotterdammerung"
+	   }
+
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_super_heavy_howitzer
+				has_tech = experimental_rockets
+			}
+		}
+
+		is_special_project_tech = yes
+
+		super_heavy_artillery = {
+			soft_attack = 0.1
+		}
+
+		self_propelled_super_heavy_artillery = {
+			soft_attack = 0.1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1011 #TODO_Manu: Adjust if necessary
+
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 8 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+		}
+	}
+
+
+	sp_artillery_purpose_built_gun_motor_carriages_tech  = {
+		allow_branch = {
+			has_dlc = "Gotterdammerung"
+	   }
+
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_land_self_propelled_super_heavy_howitzer
+			}
+		}
+
+		is_special_project_tech = yes
+
+		super_heavy_artillery = {
+			reliability = 0.07
+			supply_consumption = -0.1
+		}
+
+		self_propelled_super_heavy_artillery = {
+			reliability = 0.07
+			supply_consumption = -0.1
+		}
+		self_propelled_super_heavy_anti_air = {
+			reliability = 0.07
+			supply_consumption = -0.1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1011 #TODO_Manu: Adjust if necessary
+
+		folder = {
+			name = artillery_folder
+			position = { x = -5 y = 8 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery #Only Artillery
+		}
+		special_project_specialization = { specialization_land }
+
+		ai_will_do = {
+			base = 5
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+			modifier = {
+				factor = 2
+				date > "1013.1.1"
+			}
+		}
+	}
+	sp_shock_hardening_techniques = {
+		allow_branch = {
+			has_dlc = "Gotterdammerung"
+	   }
+
+		allow = {
+	 		ROOT = {
+				is_special_project_completed = sp:sp_naval_proximity_fuze
+			}
+		}
+
+		static_anti_air_damage_factor = 0.15 #Remember to adjust sp_naval_proximity_fuze_custom_tt when changing value
+		static_anti_air_hit_chance_factor = 0.3 
+
+		path = {
+			leads_to_tech = sp_variable_time_fuze_shells
+			research_cost_coeff = 1
+		}
+        
+        force_use_small_tech_layout = yes		
+		is_special_project_tech = yes	
+		research_cost = 1.5
+		start_year = 1013
+		folder = {
+			name = artillery_folder
+			position = { x = -9 y = 12 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery
+		}
+		special_project_specialization = { specialization_land specialization_air }
+
+	}
+
+	sp_variable_time_fuze_shells = {
+		allow_branch = {
+			has_dlc = "Gotterdammerung"
+	   }
+
+	   allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_naval_proximity_fuze
+		   }
+	   }
+		artillery = {
+			soft_attack = 0.1
+		}
+		artillery_brigade = {
+			soft_attack = 0.2
+		}
+		mot_artillery_brigade = {
+			soft_attack = 0.2
+		}
+		category_self_propelled_artillery = {
+			soft_attack = 0.1
+		}
+
+		force_use_small_tech_layout = yes
+		research_cost = 1.5
+		start_year = 1014
+		is_special_project_tech = yes
+			
+		folder = {
+			name = artillery_folder
+			position = { x = -9 y = 14 }
+		}
+
+		categories = {
+			artillery
+			mio_cat_all_artillery_equipment
+			mio_cat_artillery
+		}	
+		special_project_specialization = { specialization_land specialization_air }
+
+	}
+
 }
 
 #####---------------------------------------------------------------------> End

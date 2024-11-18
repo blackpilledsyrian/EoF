@@ -510,7 +510,9 @@ CHN_chnnavy1_organization = {
 				}
 			}
 		}
+		
 	}
+
 	override_trait = {
 		token = generic_mio_trait_unescorted_raider_requirements
 		
