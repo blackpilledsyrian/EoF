@@ -1,12 +1,12 @@
-technologies = {
-	EoF_super_air_base_tech = {
-		research_cost = 1
-		allow = {
-			always = no
-		}
-		enable_building = {
-			building = super_air_base
-			level = 1
-		}
-	}
-}
+# technologies = {
+# 	EoF_super_air_base_tech = {
+# 		research_cost = 1
+# 		allow = {
+# 			always = no
+# 		}
+# 		enable_building = {
+# 			building = super_air_base
+# 			level = 1
+# 		}
+# 	}
+# } Depricated - will leave it here for now
