@@ -1505,6 +1505,7 @@ technologies = {
 			cat_anti_air
 			mio_cat_all_artillery_equipment
 		}
+		special_project_specialization = { specialization_land specialization_air }
 	}
 
 	#EoF Heavy Anti-Air
