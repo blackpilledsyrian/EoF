@@ -1191,7 +1191,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1010
+		start_year = 1009
 
 		folder = {
 			name = artillery_folder
@@ -1248,7 +1248,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1011
+		start_year = 1010
 
 		folder = {
 			name = artillery_folder
@@ -1304,7 +1304,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1012
+		start_year = 1011
 
 		folder = {
 			name = artillery_folder
@@ -1355,7 +1355,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1014
+		start_year = 1013
 
 		folder = {
 			name = artillery_folder
@@ -1413,7 +1413,7 @@ technologies = {
 
 		research_cost = 1
 
-		start_year = 1013
+		start_year = 1012
 
 		folder = {
 			name = artillery_folder

@@ -551,6 +551,7 @@ equipments = {
 					ship_dp_secondaries
 					ship_shields
 					ship_deck_space
+					big_ship_deck_space
 					ship_carrier_armor
 					ship_advanced_sensors
 				}
