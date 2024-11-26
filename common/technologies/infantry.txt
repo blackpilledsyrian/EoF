@@ -1648,9 +1648,6 @@ technologies = {
     }
 
 	super_elite_forces = { # Advanced and Extreme combined
-		xor={
-			massed_forces
-		}
 		
 		category_special_forces = {
 			max_organisation = 5
@@ -1688,9 +1685,6 @@ technologies = {
 		}
 	}
 	massed_forces = { # Expanded and Survival Combined
-		xor={
-			super_elite_forces
-		}
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.2
 			acclimatization_cold_climate_gain_factor = 0.2
@@ -1727,9 +1721,6 @@ technologies = {
 	}
 	
 	independent_strike_groups = {
-		xor={
-			assault_squadrons
-		}
 		
 		category_special_forces = {
 			max_organisation = 10
@@ -1757,9 +1748,6 @@ technologies = {
 		}
 	}
 	assault_squadrons = {
-		xor={
-			independent_strike_groups
-		}
 		category_special_forces = {
 			max_organisation = 5
 			defense = 0.05
@@ -1785,9 +1773,6 @@ technologies = {
 		}
 	}
 	veteran_experience = {
-		xor={
-			army_integration
-		}
 		
 		category_special_forces = {
 			acclimatization_hot_climate_gain_factor = 0.20
@@ -1816,9 +1801,6 @@ technologies = {
 		}
 	}
 	army_integration = {
-		xor={
-			veteran_experience
-		}
 		
 		special_forces_cap = 0.15
 		special_forces_training_time_factor = -0.25

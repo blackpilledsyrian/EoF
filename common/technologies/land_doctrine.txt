@@ -169,11 +169,11 @@ technologies = {
 		xor={
 			armored_spearhead
 		}
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 10
 			defense = 0.1
 		}
-		category_all_motmech_artillery = {
+		category_mobile_and_mobile_combat_sup = {
 			max_organisation = 10
 		}
 		
@@ -231,7 +231,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 10
 			default_morale = 0.1
 			defense = 0.05
@@ -327,7 +327,7 @@ technologies = {
 
 		enable_tactic = tactic_blitz
 		
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
@@ -510,7 +510,7 @@ technologies = {
 			default_morale = 0.1
 			breakthrough = 0.1
 		}
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 10
 		}
 		
@@ -740,7 +740,7 @@ technologies = {
 			max_organisation = 3
 			breakthrough = 0.1
 		}
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 10
 		}
 
@@ -1084,7 +1084,7 @@ technologies = {
 		
 		enable_tactic = tactic_elastic_defense
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 5
 			default_morale = 0.1
 			defense = 0.05
@@ -1348,7 +1348,7 @@ technologies = {
 		
 		enable_tactic = tactic_blitz
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
@@ -1464,10 +1464,10 @@ technologies = {
 		category_tanks = {
 			breakthrough = 0.1
 		}
-		category_td = {
+		category_tank_destroyers = {
 			hard_attack = 0.2
 		}
-		category_spg = {
+		category_self_propelled_artillery = {
 			soft_attack = 0.2
 		}
 		
@@ -1584,7 +1584,7 @@ technologies = {
 		category_all_armor = {
 			max_organisation = 3
 		}
-		category_spaa = {
+		category_self_propelled_anti_air = {
 			air_attack = 0.1
 		}
 		
@@ -2133,7 +2133,7 @@ technologies = {
 		enable_tactic = tactic_elastic_defense
 
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 5
 			breakthrough = 0.2
 			soft_attack = 0.1
@@ -3189,7 +3189,7 @@ technologies = {
 		
 		enable_tactic = tactic_overwhelming_fire
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_strength = 3
 		}
 		amphibious_armor = {
@@ -3331,7 +3331,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 10
 			default_morale = 0.2
 			breakthrough = 0.2
@@ -4022,7 +4022,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 			
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 3
 		}
 		
@@ -4057,7 +4057,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 			
-		category_motmech = {
+		category_vehicle_infantry = {
 			maximum_speed = 0.05
 			default_morale = 0.05
 		}
@@ -4709,7 +4709,7 @@ technologies = {
 		xor = { military_schools }
 		xp_research_type = army
 		xp_unlock_cost = 100
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 1
 			breakthrough = 0.1
 		}
@@ -5073,7 +5073,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		category_motmech = {
+		category_vehicle_infantry = {
 			max_organisation = 1
 			default_morale = 0.05
 		}

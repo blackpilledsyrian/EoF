@@ -1601,11 +1601,11 @@ never_buy_unique_equipment = { # Similar to above never_buy_melee_equipment but 
 		equipment_type = CHN_manehattan_protectorate_railway_gun # CHN Manehattan - Soryth-Klasse Eisenbahnwaffe
 		value = -50000
 	}
-	ai_strategy = {
-		type = equipment_market_buy
-		equipment_type = CTH_convoy # CTH - Armoured Convoys
-		value = -50000
-	}
+	# ai_strategy = {
+	# 	type = equipment_market_buy
+	# 	equipment_type = CTH_convoy # CTH - Armoured Convoys
+	# 	value = -50000
+	# }
 }
 
 dont_build_capitals_if_on_treaty = {

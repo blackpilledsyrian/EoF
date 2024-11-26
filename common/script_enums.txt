@@ -669,7 +669,7 @@ script_enum_equipment_bonus_type = {
 	super_griffons_armor
 	super_griffons_weapon
 	bar_leopold_equipment_1
-	CTH_convoy
+	# CTH_convoy
 	living_factory_equipment
 	living_factory_equipment_0
 	bone_abomination_equipment

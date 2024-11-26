@@ -77,7 +77,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
-			category_td
+			category_tank_destroyers
 		}
 
 		combat_width = 0
@@ -133,7 +133,7 @@ sub_units = {
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}
 		battalion_mult = {
 			category = category_all_artillery
@@ -181,7 +181,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
-			category_spaa
+			category_self_propelled_anti_air
 		}
 		
 		group = support
@@ -245,7 +245,7 @@ sub_units = {
 			category_army
 			category_all_at
 			category_mechanical
-			category_td
+			category_tank_destroyers
 		}
 
 		combat_width = 0
@@ -300,7 +300,7 @@ sub_units = {
 			category_army
 			category_all_artillery
 			category_mechanical
-			category_spg
+			category_self_propelled_artillery
 		}
 		battalion_mult = {
 			category = category_all_artillery
@@ -348,7 +348,7 @@ sub_units = {
 			category_all_aa
 			category_light_aa
 			category_mechanical
-			category_spaa
+			category_self_propelled_anti_air
 		}
 		
 		group = support

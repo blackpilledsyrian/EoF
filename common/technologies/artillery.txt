@@ -1592,7 +1592,6 @@ technologies = {
 			leads_to_tech = heavyantiair4
 			research_cost_coeff = 1
 		}
-		special_project_specialization = { specialization_land specialization_air }
 
 		research_cost = 1
 

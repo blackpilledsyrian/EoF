@@ -15839,7 +15839,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {
@@ -18385,7 +18384,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {
@@ -18400,7 +18398,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {
@@ -18415,7 +18412,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {
@@ -18430,7 +18426,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {
@@ -18445,7 +18440,6 @@ shared_focus = {
 				free_building_slots = {
 					building = air_base
 					size > 2
-					include_locked = yes
 				}
 			}
 			add_building_construction = {

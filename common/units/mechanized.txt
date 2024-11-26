@@ -23,7 +23,8 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 			category_all_at
 		}
 
@@ -100,7 +101,8 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 			category_all_artillery
 		}
 
@@ -177,7 +179,8 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 			category_light_aa
 			category_anti_air
 		}
