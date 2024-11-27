@@ -20,6 +20,9 @@ state={
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 3
+			12392 = {
+				dam = 1
+			}
 		}
 	}
 

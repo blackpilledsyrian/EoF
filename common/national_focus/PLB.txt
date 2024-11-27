@@ -31379,11 +31379,26 @@ shared_focus = {
 				uses = 1
 				category = heavy_air
 			}
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 2.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 2
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 2.0
+					uses = 1
+					category = nuclear
+				}
 			}
 			custom_effect_tooltip = PLB_autonomy_score_add_50
 			hidden_effect = {
@@ -33223,7 +33238,7 @@ shared_focus = {
 			focus = PLB_closed_cities
 		}
 		available = {
-			has_tech = nuclear_reactor
+			is_special_project_completed = sp:sp_nuclear_reactor
 		}
 
 		relative_position_id = PLB_hyperbearia_restored_loyal

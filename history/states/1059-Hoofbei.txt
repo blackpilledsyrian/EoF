@@ -18,6 +18,7 @@ state={
 			}
 			5679 = {
 				dam = 1
+				landmark_vermilion_palace = 1
 			}
 		}
 		victory_points={

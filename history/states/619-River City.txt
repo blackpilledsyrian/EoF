@@ -21,6 +21,9 @@ state={
 			industrial_complex = 6
 			arms_factory = 3
 			air_base = 1
+			5013 = {
+				landmark_palaca_rijeke = 1
+			}
 		}
 	}
 

@@ -527,6 +527,7 @@ ideas = {
 				industrial_capacity_factory = 0.1
 				global_building_slots_factor = 0.15
 				industry_air_damage_factor = 0.1
+				
 			}
 		}
 		continous_war_plan_CHN = {
@@ -549,7 +550,7 @@ ideas = {
 				communism_drift = 0.01
 				industry_repair_factor = 0.1
 				industry_free_repair_factor = 0.1
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.1
 			}
 		}
@@ -671,6 +672,7 @@ ideas = {
 				experience_gain_army = 0.02
 				experience_gain_navy = 0.02
 				experience_gain_air = 0.02
+				training_time_factor = -0.1
 			}
 		}
 		CHN_army_griffon_type = {
@@ -1206,7 +1208,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
 				non_core_manpower = -0.01
 			}
 		}
@@ -1264,7 +1267,7 @@ ideas = {
 				dig_in_speed_factor = 0.2
 				max_dig_in = 3.0
 				army_defence_factor = 0.15
-				supply_consumption_factor = -0.1
+				supply_consumption_factor = -0.05
 				industry_free_repair_factor = 0.25
 				ai_focus_defense_factor = 0.75		#because Chryssy is 50% and offensive advisor is 65%, so its just a 10%
 			}
