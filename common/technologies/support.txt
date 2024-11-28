@@ -578,6 +578,9 @@ technologies = {
 		helicopter_recon = {
 			recon = 1
 		}
+		enable_equipment_modules = {
+			rangefinder
+		}
 
 		path = {
 			leads_to_tech = tech_recon3
@@ -1440,6 +1443,9 @@ technologies = {
 
 		enable_subunits = {
 			logistics_company
+		}
+		enable_equipment_modules = {
+			ventilation_system
 		}
 
 		path = {

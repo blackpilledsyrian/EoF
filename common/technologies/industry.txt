@@ -2140,7 +2140,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_crystal_refinery
 				resource = crystals
-				amount = 1
+				amount = 10
 			}
 			add_to_variable = { crystals_per_refinery = 1 }
 		}
@@ -2184,7 +2184,7 @@ technologies = {
 			modify_building_resources = {
 				building = synthetic_crystal_refinery
 				resource = crystals
-				amount = 1
+				amount = 10
 			}
 			add_to_variable = { crystals_per_refinery = 1 }
 		}
@@ -2241,10 +2241,10 @@ technologies = {
 
 		research_cost = 1.5
 
-		folder = {
-			name = industry_folder
-			position = { x = 3 y = 14 }
-		}
+		# folder = {
+		# 	name = industry_folder
+		# 	position = { x = 3 y = 14 }
+		# }
 
 		categories = {
 			industry
@@ -2280,10 +2280,10 @@ technologies = {
 
 		research_cost = 1.5
 
-		folder = {
-			name = industry_folder
-			position = { x = 3 y = 18 }
-		}
+		# folder = {
+		# 	name = industry_folder
+		# 	position = { x = 3 y = 18 }
+		# }
 
 		categories = {
 			industry

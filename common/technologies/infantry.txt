@@ -565,10 +565,10 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1019
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = @1019 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 6 y = @1019 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -617,10 +617,10 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1025
-		folder = {
-			name = infantry_folder
-			position = { x = 6 y = @1025 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 6 y = @1025 }
+		# }
 
 		ai_research_weights = {
 			magical_tech = 1.0
@@ -2073,10 +2073,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1021
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1021 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 0 y = @1021 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -3251,10 +3251,10 @@ technologies = {
 
 		research_cost = 3
 		start_year = 1019
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1019 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 0 y = @1019 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -3559,10 +3559,10 @@ technologies = {
         }
 		research_cost = 3
 		start_year = 1025
-		folder = {
-			name = infantry_folder
-			position = { x = 0 y = @1025 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 0 y = @1025 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -3633,10 +3633,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1014
 
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1014 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1014 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -3674,10 +3674,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1021
 
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1021 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1021 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -3724,10 +3724,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1016
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1016 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 2 y = @1016 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -3790,10 +3790,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1020
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1020 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 2 y = @1020 }
+		# }
 		on_research_complete = {
 			hidden_effect = {
 				fix_weapon_techs = yes
@@ -3860,10 +3860,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1024
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1024 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 2 y = @1024 }
+		# }
 		
 		categories = {
 			motorized_equipment
@@ -4086,10 +4086,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1017
-		folder = {
-			name = infantry_folder
-			position = { x = 5 y = @1017 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 5 y = @1017 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4116,10 +4116,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1019
-		folder = {
-			name = infantry_folder
-			position = { x = 4 y = @1019 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 4 y = @1019 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4147,10 +4147,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1021
-		folder = {
-			name = infantry_folder
-			position = { x = 5 y = @1021 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 5 y = @1021 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4182,10 +4182,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1023
-		folder = {
-			name = infantry_folder
-			position = { x = 5 y = @1023 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 5 y = @1023 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4207,10 +4207,10 @@ technologies = {
 		}
 		research_cost = 1.5
 		start_year = 1025
-		folder = {
-			name = infantry_folder
-			position = { x = 4 y = @1025 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 4 y = @1025 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4237,10 +4237,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1018
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1018 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 2 y = @1018 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4271,10 +4271,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1022
-		folder = {
-			name = infantry_folder
-			position = { x = 2 y = @1022 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 2 y = @1022 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4341,10 +4341,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1016
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1016 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1016 }
+		# }
 
 		on_research_complete = {
 			hidden_effect = {
@@ -4375,10 +4375,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1020
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1020 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1020 }
+		# }
 
 		on_research_complete = {
 			hidden_effect = {
@@ -4404,10 +4404,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1024
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1024 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1024 }
+		# }
 
 		on_research_complete = {
 			hidden_effect = {
@@ -4448,10 +4448,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1016
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1016 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1016 }
+		# }
 
 		categories = {
 			marine_tech
@@ -4492,10 +4492,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1020
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1020 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1020 }
+		# }
 
 		categories = {
 			marine_tech
@@ -4525,10 +4525,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1024
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1024 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1024 }
+		# }
 
 		on_research_complete = {
 			hidden_effect = {
@@ -4580,10 +4580,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1016
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1016 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1016 }
+		# }
 
 		categories = {
 			infantry_tech
@@ -4615,10 +4615,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1020
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1020 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1020 }
+		# }
 
 		categories = {
 			infantry_tech
@@ -4639,10 +4639,10 @@ technologies = {
 
 		research_cost = 2.0
 		start_year = 1024
-		folder = {
-			name = infantry_folder
-			position = { x = 3 y = @1024 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 3 y = @1024 }
+		# }
 
 		on_research_complete = {
 			hidden_effect = {
@@ -4683,10 +4683,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1015
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1015 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1015 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4717,10 +4717,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1017
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1017 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1017 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4752,10 +4752,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1019
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1019 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1019 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4787,10 +4787,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1021
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1021 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1021 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4822,10 +4822,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1023
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1023 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1023 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4853,10 +4853,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1025
-		folder = {
-			name = infantry_folder
-			position = { x = -2 y = @1025 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = -2 y = @1025 }
+		# }
 
 		categories = {
 			infantry_weapons
@@ -4890,10 +4890,10 @@ technologies = {
 
 		research_cost = 3
 		start_year = 1019
-		folder = {
-			name = infantry_folder
-			position = { x = 4 y = @1019 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 4 y = @1019 }
+		# }
 
 		categories = {
 			motorized_equipment
@@ -4918,10 +4918,10 @@ technologies = {
 
 		research_cost = 3
 		start_year = 1023
-		folder = {
-			name = infantry_folder
-			position = { x = 4 y = @1023 }
-		}
+		# folder = {
+		# 	name = infantry_folder
+		# 	position = { x = 4 y = @1023 }
+		# }
 
 		categories = {
 			motorized_equipment
