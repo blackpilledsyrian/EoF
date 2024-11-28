@@ -39,6 +39,7 @@ NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 NDefines.NMilitary.MAX_NUM_TRAITS = 8				-- cant have more, -1 to disable
 
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.25			-- fort penalty
 NDefines.NMilitary.DIG_IN_FACTOR = 0.015			-- bonus factor for each dug-in level
 
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 6		-- Max width of regiments in division designer.

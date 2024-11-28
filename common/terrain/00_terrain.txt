@@ -34,8 +34,8 @@ categories =  {
 		match_value = 5
 		sound_type = forest
 		buildings_max_level = {
-			bunker = 4
-			coastal_bunker = 6
+			bunker = 5
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -61,7 +61,7 @@ categories =  {
 		sound_type = desert
 		buildings_max_level = {
 			bunker = 5
-			coastal_bunker = 6
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -86,8 +86,8 @@ categories =  {
 		match_value = 10
 		sound_type = desert
 		buildings_max_level = {
-			bunker = 4
-			coastal_bunker = 6
+			bunker = 5
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -112,7 +112,7 @@ categories =  {
 		sound_type = plains
 		buildings_max_level = {
 			bunker = 5
-			coastal_bunker = 6
+			coastal_bunker = 5
 		}
 	}
 	
@@ -126,7 +126,7 @@ categories =  {
 		sound_type = plains
 		buildings_max_level = {
 			bunker = 5
-			coastal_bunker = 6
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -151,8 +151,8 @@ categories =  {
 		match_value = 6
 		sound_type = forest
 		buildings_max_level = {
-			bunker = 3
-			coastal_bunker = 6
+			bunker = 5
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -180,8 +180,8 @@ categories =  {
 		match_value = 8
 		sound_type = forest
 		buildings_max_level = {
-			bunker = 3
-			coastal_bunker = 6
+			bunker = 5
+			coastal_bunker = 5
 		}
 
 		units = {
@@ -206,8 +206,8 @@ categories =  {
 		match_value = 8
 		sound_type = desert
 		buildings_max_level = {
-			bunker = 4
-			coastal_bunker = 6
+			bunker = 5
+			coastal_bunker = 5
 		}
 		
 		sickness_chance = 1.0

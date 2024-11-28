@@ -444,7 +444,7 @@ guiTypes = {
 				name = "techtree_stripes"
 				position = { x= 0 y= 0 }
 				size = {
-					width = 2800 height = 800 #EAW modified from vanila width was 1400
+					width = 2800 height = 2000 #EAW modified from vanila width was 1400
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
@@ -619,7 +619,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "support_subtitle_trains"
-					position = { x = 40 y = 1280 }
+					position = { x = 40 y = 1500 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = { x = 0 y = 0}
@@ -635,7 +635,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg"
 				position = { x=150 y=720 }
-				size = { width = 2600 height = 550 } #EAW modified width was 1340
+				size = { width = 2600 height = 630 } #EAW modified width was 1340
 				clipping = no
 
 				background = {
@@ -647,7 +647,7 @@ guiTypes = {
 			containerWindowType = {
 				name = "tiled_research_bg_2"
 				position = { x=160 y=1075 }
-				size = { width = 2580 height = 190 } #EAW modified width was 1320
+				size = { width = 2580 height = 270 } #EAW modified width was 1320
 				clipping = no
 
 				background = {
@@ -677,7 +677,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "basic_train_tree"
-				position = { x = 100 y = 1380 }
+				position = { x = 100 y = 1580 }
 				slotsize = { width = 70 height = 70 }
 				format = "LEFT"
 			}

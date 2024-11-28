@@ -630,6 +630,10 @@ technologies = {
 			leads_to_tech = tech_recon4
 			research_cost_coeff = 1
 		}
+		path = {
+			leads_to_tech = tech_medium_tank_recon
+			research_cost_coeff = 1
+		}
 
 		research_cost = 2
 		start_year = 1013
@@ -1907,10 +1911,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = @signal_x y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @signal_x y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -1949,10 +1953,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = @signal_x y = @1022 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @signal_x y = @1022 }
+		# }
 
 		categories = {
 			support_tech
@@ -1986,10 +1990,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = @signal_x y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @signal_x y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2028,7 +2032,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = support_folder
-			position = { x = 14 y = @1007 }
+			position = { x = 16 y = @1007 }
 		}
 
 		categories = {
@@ -2056,7 +2060,7 @@ technologies = {
 		start_year = 1010
 		folder = {
 			name = support_folder
-			position = { x = 14 y = @1010 }
+			position = { x = 16 y = @1010 }
 		}
 
 		categories = {
@@ -2084,7 +2088,7 @@ technologies = {
 		start_year = 1013
 		folder = {
 			name = support_folder
-			position = { x = 14 y = @1013 }
+			position = { x = 16 y = @1013 }
 		}
 
 		categories = {
@@ -2107,13 +2111,30 @@ technologies = {
 		start_year = 1016
 		folder = {
 			name = support_folder
-			position = { x = 14 y = @1016 }
+			position = { x = 16 y = @1016 }
 		}
 
 		categories = {
 			support_tech
 			headquarters_tech
 			electronics
+		}
+	}
+	tech_medium_tank_recon = {
+		enable_subunits = {
+			medium_tank_recon
+		}
+		
+		research_cost = 2.0
+		start_year = 1013
+		folder = {
+			name = support_folder
+			position = { x = 3 y = @1014 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
 		}
 	}
 	#EoF Changes
@@ -2203,10 +2224,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 0 y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2300,10 +2321,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1022 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 0 y = @1022 }
+		# }
 
 		categories = {
 			support_tech
@@ -2390,10 +2411,10 @@ technologies = {
 
 		research_cost =2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = 0 y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 0 y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2425,10 +2446,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 2 y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2458,10 +2479,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1022 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 2 y = @1022 }
+		# }
 
 		categories = {
 			support_tech
@@ -2484,10 +2505,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 2 y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2525,10 +2546,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 4 y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2570,10 +2591,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1022 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 4 y = @1022 }
+		# }
 
 		categories = {
 			support_tech
@@ -2610,10 +2631,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 4 y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2660,10 +2681,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 6 y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2697,10 +2718,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1022 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 6 y = @1022 }
+		# }
 
 		categories = {
 			support_tech
@@ -2729,10 +2750,10 @@ technologies = {
 		}
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = 6 y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 6 y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2776,10 +2797,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = @field_hospital_x y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @field_hospital_x y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2819,11 +2840,11 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x = @field_hospital_x y = @1022 }
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @field_hospital_x y = @1022 }
 
-		}
+		# }
 
 		categories = {
 			support_tech
@@ -2857,10 +2878,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = @field_hospital_x y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = @field_hospital_x y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -2897,10 +2918,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x =  @logistic_x y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x =  @logistic_x y = @1019 }
+		# }
 
 		categories = {
 			support_tech
@@ -2934,11 +2955,11 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1022
-		folder = {
-			name = support_folder
-			position = { x =  @logistic_x y = @1022 }
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x =  @logistic_x y = @1022 }
 
-		}
+		# }
 
 		categories = {
 			support_tech
@@ -2966,10 +2987,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x =  @logistic_x y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x =  @logistic_x y = @1025 }
+		# }
 
 		categories = {
 			support_tech
@@ -3158,9 +3179,7 @@ technologies = {
 			   is_special_project_completed = sp:sp_air_axial_jet_engine
 			   is_special_project_completed = sp:sp_air_helicopter
 		   }
-	   }
-	    }
-
+	   	}
 	    is_special_project_tech = yes
 		enable_equipments = {
 			attack_helicopter_equipment_1
@@ -3171,10 +3190,10 @@ technologies = {
 
 		research_cost = 2
 		start_year = 1021
-		folder = {
-			name = support_folder
-			position = { x = 12  y = @1021 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 12  y = @1021 }
+		# }
 
 		categories = {
 			support_tech
@@ -3295,25 +3314,24 @@ technologies = {
 	}
 
 	tactical_missile_system = {
-		
 		allow = {
 			ROOT = {
 			   is_special_project_completed = sp:sp_land_super_heavy_railway_gun
 			   is_special_project_completed = sp:sp_rockets_ballistic_missile
 		   }
-	   }
+	  	}
 
-	   is_special_project_tech = yes
+	   	is_special_project_tech = yes
 		enable_equipments = {
 			super_heavy_railway_gun_equipment_2
 		}
 
 		research_cost = 1.5
 		start_year = 1025
-		folder = {
-			name = support_folder
-			position = { x = 4 y = @1025 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 4 y = @1025 }
+		# }
 		
 		categories = {
 			train_tech
@@ -3445,10 +3463,10 @@ technologies = {
 		
 		research_cost = 1.5
 		start_year = 1019
-		folder = {
-			name = support_folder
-			position = { x = 2 y = @1019 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 2 y = @1019 }
+		# }
 		
 		categories = {
 			train_tech

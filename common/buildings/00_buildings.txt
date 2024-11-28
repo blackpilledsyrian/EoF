@@ -191,7 +191,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 12
+			province_max = 10
 		}
 	}
 
@@ -207,7 +207,7 @@ buildings = {
 		value = 1
 		infrastructure_construction_effect = yes
 		level_cap = {
-			province_max = 12
+			province_max = 10
 		}
 	}
 
@@ -309,7 +309,7 @@ buildings = {
 		local_resources_aluminium = 0
 		local_resources_chromium = 0
 		local_resources_oil = 0
-		local_resources_crystals = 3  # May use local_resources_ + any resource name #EAW modified from vanilla was 1
+		local_resources_crystals = 30  # May use local_resources_ + any resource name #EAW modified from vanilla was 1
 		refinery = yes
 		value = 5
 		infrastructure_construction_effect = yes

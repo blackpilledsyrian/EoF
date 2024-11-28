@@ -209,13 +209,13 @@ technologies = {
 		land_reinforce_rate = 0.01
 		coordination_bonus = 0.02
 		
-		start_year = 1012
+		start_year = 1011
 		
 		research_cost = 2
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @radio y = @electronics_1012 }
+			position = { x = @radio y = @electronics_1011 }
 		}
 				
 		path = {
@@ -259,13 +259,13 @@ technologies = {
 		land_reinforce_rate = 0.01
 		coordination_bonus = 0.02
 		
-		start_year = 1018
+		start_year = 1013
 		
 		research_cost = 2
 		
 		folder = {
 			name = electronics_folder
-			position = { x = @radio y = @electronics_1018 }
+			position = { x = @radio y = @electronics_1013 }
 		}
 				
 		path = {
@@ -300,10 +300,10 @@ technologies = {
 		
 		research_cost = 2
 		
-		folder = {
-			name = electronics_folder
-			position = { x = @radio y = @electronics_1026 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @radio y = @electronics_1026 }
+		# }
 		
 		enable_equipment_modules = { 
 			tank_radio_5
@@ -1161,10 +1161,10 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1013
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = @electronics_1014 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @firecontrol y = @electronics_1014 }
+		# }
 		
 		ai_will_do = {
 			factor = 0.75
@@ -1195,10 +1195,10 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1015
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = @electronics_1016 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @firecontrol y = @electronics_1016 }
+		# }
 		
 		ai_will_do = {
 			factor = 0.75
@@ -1229,10 +1229,10 @@ technologies = {
 
 		research_cost = 1
 		start_year = 1018
-		folder = {
-			name = electronics_folder
-			position = { x = @firecontrol y = @electronics_1020 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @firecontrol y = @electronics_1020 }
+		# }
 		
 		ai_will_do = {
 			factor = 0.75
@@ -1316,10 +1316,10 @@ technologies = {
 		bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1009
+		start_year = 1007
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -1338,10 +1338,10 @@ technologies = {
 		bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1011
+		start_year = 1009
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 10 }
+			position = { x = 0 y = @electronics_1009 }
 		}
 		
 		
@@ -1366,10 +1366,10 @@ technologies = {
 		bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1018
+		start_year = 1011
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 22 }
+			position = { x = 0 y = @electronics_1011 }
 		}
 		
 		
@@ -1394,10 +1394,10 @@ technologies = {
 		bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1026
+		start_year = 1013
 		folder = {
 			name = electronics_folder
-			position = { x = 0 y = 30 }
+			position = { x = 0 y = @electronics_1013 }
 		}
 		
 		
@@ -1443,13 +1443,13 @@ technologies = {
 
 	coastal_fort_tech_2 = {
 
-		coastal_bunker_max_level_terrain_limit = 2
+		coastal_bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1011
+		start_year = 1009
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 10 }
+			position = { x = 2 y = @electronics_1009 }
 		}
 		path = {
 			leads_to_tech = coastal_fort_tech_future
@@ -1471,10 +1471,10 @@ technologies = {
 		coastal_bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1018
+		start_year = 1011
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 22 }
+			position = { x = 2 y = @electronics_1011 }
 		}
 		path = {
 			leads_to_tech = coastal_fort_tech_future_2
@@ -1497,10 +1497,10 @@ technologies = {
 		coastal_bunker_max_level_terrain_limit = 1
 		
 		research_cost = 1.5
-		start_year = 1026
+		start_year = 1013
 		folder = {
 			name = electronics_folder
-			position = { x = 2 y = 30 }
+			position = { x = 2 y = @electronics_1013 }
 		}
 		ai_will_do = {
 			factor = 1
@@ -1839,10 +1839,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1024
 		
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 15 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = 2 y = 15 }
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -2323,10 +2323,10 @@ technologies = {
 			}
 		}
 
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @electronics_1010 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = 0 y = @electronics_1010 }
+		# }
 		on_research_complete = {
 			if = {
 				limit = {
@@ -2467,10 +2467,10 @@ technologies = {
 		start_year = 1016
 
 
-		folder = {
-			name = electronics_folder
-			position = { x = @radar y = @electronics_1016 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @radar y = @electronics_1016 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2517,10 +2517,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1020
 
-		folder = {
-			name = electronics_folder
-			position = { x = @radar y = @electronics_1020 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @radar y = @electronics_1020 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2563,10 +2563,10 @@ technologies = {
 		start_year = 1024
 
 
-		folder = {
-			name = electronics_folder
-			position = { x = @radar  y = @electronics_1024 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @radar  y = @electronics_1024 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2598,10 +2598,10 @@ technologies = {
 		research_cost = 1.75
 		start_year = 1023
 
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = 26 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = -2 y = 26 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2641,10 +2641,10 @@ technologies = {
 		}
 		special_project_specialization = { specialization_air specialization_nuclear }
 
-		folder = {
-			name = electronics_folder
-			position = { x = @radar y = @electronics_1026 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @radar y = @electronics_1026 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -2693,10 +2693,10 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1015
 
-		folder = {
-			name = electronics_folder
-			position = { x = @computing y = @electronics_1015 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @computing y = @electronics_1015 }
+		# }
 
 		ai_will_do = {
 			factor = 3
@@ -2753,10 +2753,10 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1018
 
-		folder = {
-			name = electronics_folder
-			position = { x = @computing y = @electronics_1018 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @computing y = @electronics_1018 }
+		# }
 
 		ai_will_do = {
 			factor = 3
@@ -2808,10 +2808,10 @@ technologies = {
 		research_cost = 2.5
 		start_year = 1022
 
-		folder = {
-			name = electronics_folder
-			position = { x =  @computing y = @electronics_1022 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x =  @computing y = @electronics_1022 }
+		# }
 
 		ai_will_do = {
 			factor = 3
@@ -2842,10 +2842,10 @@ technologies = {
 			streamlined_line_c = 1
 		}
 
-		folder = {
-			name = electronics_folder
-			position = { x =  @computing y = @electronics_1026 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x =  @computing y = @electronics_1026 }
+		# }
 
 		ai_will_do = {
 			factor = 3
@@ -2874,10 +2874,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1015
 
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1015 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1015 }
+		# }
 
 		ai_will_do = {
 			factor = 1.5
@@ -2899,10 +2899,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1015
 
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1015 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1015 }
+		# }
 
 		ai_will_do = {
 			factor = 1.25
@@ -2924,10 +2924,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1018
 
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1018 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1018 }
+		# }
 
 		ai_will_do = {
 			factor = 1.5
@@ -2949,10 +2949,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1018
 
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1018 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1018 }
+		# }
 
 		ai_will_do = {
 			factor = 1.25
@@ -2974,10 +2974,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1022
 
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1022 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1022 }
+		# }
 
 		ai_will_do = {
 			factor = 1.5
@@ -2999,10 +2999,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1022
 
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1022 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1022 }
+		# }
 
 		ai_will_do = {
 			factor = 1.25
@@ -3379,10 +3379,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1015
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1015 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1015 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.5
@@ -3405,10 +3405,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1015
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1015 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1015 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.25
@@ -3435,10 +3435,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1018
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1018 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1018 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.5
@@ -3461,10 +3461,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1018
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1018 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1018 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.25
@@ -3491,10 +3491,10 @@ technologies = {
 		research_cost = 2
 		start_year = 1022
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @encryption_x y = @electronics_1022 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @encryption_x y = @electronics_1022 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.5
@@ -3517,10 +3517,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1022
 	
-		folder = {
-			name = electronics_folder
-			position = { x = @decryption_x y = @electronics_1022 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = @decryption_x y = @electronics_1022 }
+		# }
 	
 		ai_will_do = {
 			factor = 1.25
@@ -3668,10 +3668,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1023
 		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = @rockets_1023 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = -2 y = @rockets_1023 }
+		# }
 
 		ai_will_do = {
 			factor = 1
@@ -3709,10 +3709,10 @@ technologies = {
 		research_cost = 1.5
 		start_year = 1026
 		
-		folder = {
-			name = electronics_folder
-			position = { x = -2 y = @rockets_1026 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = -2 y = @rockets_1026 }
+		# }
 
 		ai_will_do = {
 			factor = 1

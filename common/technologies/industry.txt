@@ -268,10 +268,9 @@ technologies = {
 	#Conversion branch - Enabled in DoD
 	improved_equipment_conversion = {
 
-		equipment_conversion_speed = 0.2
+		equipment_conversion_speed = 0.40
 
 		allow_branch = {
-			has_dlc = "Death or Dishonor"
 		}
 
 		path = {
@@ -279,7 +278,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1008
 
 		folder = {
@@ -305,9 +304,9 @@ technologies = {
 
 	advanced_equipment_conversion = {
 
-		equipment_conversion_speed = 0.2
+		equipment_conversion_speed = 0.40
 
-		research_cost = 1
+		research_cost = 2
 		start_year = 1010
 
 		folder = {
@@ -886,7 +885,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 2 }
+			position = { x = 5 y = 2 }
 		}
 
 		categories = {
@@ -947,7 +946,7 @@ technologies = {
 		start_year = 1008
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 4 }
+			position = { x = 5 y = 4 }
 		}
 
 		categories = {
@@ -999,7 +998,7 @@ technologies = {
 		start_year = 1010
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 6 }
+			position = { x = 5 y = 6 }
 		}
 
 		categories = {
@@ -1043,7 +1042,7 @@ technologies = {
 		start_year = 1012
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 8 }
+			position = { x = 5 y = 8 }
 		}
 
 		categories = {
@@ -1088,7 +1087,7 @@ technologies = {
 		start_year = 1014
 		folder = {
 			name = industry_folder
-			position = { x = 3 y = 10 }
+			position = { x = 5 y = 10 }
 		}
 
 		categories = {
@@ -1128,7 +1127,7 @@ technologies = {
 		on_research_complete = {
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_PROJECT_WITH_EXTRA_TECH
-				EXTRA_TECH = synth_oil_experiments
+				EXTRA_TECH = magical_weapons1
 				PROJECT = sp_magical_synthetic_mineral_growth
 			}
 			set_variable = {
@@ -2442,6 +2441,7 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+		
 
 		research_cost = 2
 		start_year = 1008
@@ -2490,7 +2490,6 @@ technologies = {
 
 		production_speed_buildings_factor = 0.15
 		industry_repair_factor = 0.10
-
 		path = {
 			leads_to_tech = construction4
 			research_cost_coeff = 1
@@ -2560,6 +2559,7 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
+		
 
 		research_cost = 2
 		start_year = 1010
@@ -2654,7 +2654,7 @@ technologies = {
 		path = {
 			research_cost_coeff = 1
 		}
-
+		
 		research_cost = 2
 		start_year = 1012
 
@@ -3416,6 +3416,8 @@ technologies = {
 	}
 
 	###------> X <><> <><> <><> <><> <><>
+
+	
 
 }
 
