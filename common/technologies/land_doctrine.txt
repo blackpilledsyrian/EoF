@@ -1413,6 +1413,8 @@ technologies = {
 			soft_attack = 0.05
 			hard_attack = 0.15
 		}
+
+		coordination_bonus = 0.25
 		
 		path = {
 			leads_to_tech = combined_arms 
@@ -2195,8 +2197,6 @@ technologies = {
 		category_army = {
 			breakthrough = 0.05
 		}
-
-		coordination_bonus = 0.25
 		
 		path = {
 			leads_to_tech = branch_interoperation 
@@ -3022,14 +3022,50 @@ technologies = {
 			peoples_army
 		}
 
-		enable_tactic = tactic_relentless_assault
-
 		category_all_infantry = {
 			max_organisation = 10
 		}
 
 		supply_consumption_factor = -0.10
 		additional_brigade_column_size = 1
+
+		amphibious_armor = {
+			need = {
+				amphibious_tank_chassis = -2
+			}			
+		}
+		light_armor = {
+			need = {
+				light_tank_chassis = -2
+			}		
+		}
+		amphibious_light_armor = {
+			need = {
+				light_tank_amphibious_chassis = -2
+			}		
+		}
+		medium_armor = {
+			need = {
+				medium_tank_chassis = -2
+			}		
+		}
+		amphibious_medium_armor = {
+			need = {
+				medium_tank_amphibious_chassis = -2
+			}		
+		}
+		heavy_armor = {
+			need = {
+				heavy_tank_chassis = -2
+			}		
+		}
+		amphibious_heavy_armor = {
+			need = {
+				heavy_tank_amphibious_chassis = -2
+			}		
+		}
+
+		custom_modifier_tooltip = EoF_large_front_operations_tt
 		
 		path = {
 			leads_to_tech = deep_operations
@@ -3186,8 +3222,6 @@ technologies = {
 	vast_offensives = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
-		enable_tactic = tactic_overwhelming_fire
 
 		category_vehicle_infantry = {
 			max_strength = 3

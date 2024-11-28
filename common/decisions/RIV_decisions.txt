@@ -136,7 +136,7 @@ RIV_race_cat = {
 		available = {
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -160,7 +160,7 @@ RIV_race_cat = {
 		available = {
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		modifier = {
@@ -185,7 +185,7 @@ RIV_race_cat = {
 		available = {
 		}
 
-		cost = 25
+		cost = 10
 		days_remove = 120
 
 		complete_effect = {
@@ -217,7 +217,7 @@ RIV_race_cat = {
 			}
 		}
 
-		cost = 100
+		cost = 50
 		fire_only_once = yes
 
 		complete_effect = {
@@ -263,7 +263,7 @@ RIV_race_cat = {
 			}
 		}
 
-		cost = 100
+		cost = 50
 		fire_only_once = yes
 
 		complete_effect = {
@@ -309,7 +309,7 @@ RIV_race_cat = {
 			}
 		}
 
-		cost = 100
+		cost = 50
 		fire_only_once = yes
 
 		complete_effect = {
@@ -362,7 +362,7 @@ RIV_race_cat = {
 		}
 
 		fire_only_once = yes
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 			BAK = {
@@ -376,7 +376,7 @@ RIV_race_cat = {
 			}
 			add_power_balance_value = {
 				id = EoF_RIV_balance_of_power
-				value = -1
+				value = -0.5
 
 			}
 		}
@@ -401,7 +401,7 @@ RIV_race_cat = {
 		}
 
 		fire_only_once = yes
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 			LCT = {
@@ -415,7 +415,7 @@ RIV_race_cat = {
 			}
 			add_power_balance_value = {
 				id = EoF_RIV_balance_of_power
-				value = -1
+				value = -0.5
 
 			}
 		}	
@@ -439,7 +439,7 @@ RIV_race_cat = {
 		}
 
 		fire_only_once = yes
-		cost = 50
+		cost = 25
 
 		complete_effect = {
 			WIT = {
@@ -453,7 +453,7 @@ RIV_race_cat = {
 			}
 			add_power_balance_value = {
 				id = EoF_RIV_balance_of_power
-				value = -1
+				value = -0.5
 
 			}
 		}

@@ -14,7 +14,7 @@ shared_focus = {
 		tag = RCT
 	}
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 4
@@ -73,13 +73,13 @@ joint_focus = {
 	id = RIV_science_society
 	icon = GFX_goal_riv_science
 	prerequisite = { focus = RIV_dreams_of_a_federation }
-	x = -3
+	x = -2
 	y = 1
 	relative_position_id = RIV_dreams_of_a_federation
 	
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -176,7 +176,7 @@ joint_focus = {
 
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -327,6 +327,10 @@ joint_focus = {
 	joint_trigger = {
 		is_river_fed_member = yes
 	}
+
+	allow_branch = {
+		always = no
+	}
 	
 	cancel_if_invalid = yes
 	continue_if_invalid = no
@@ -431,6 +435,10 @@ joint_focus = {
 		is_river_fed_member = yes
 	}
 
+	allow_branch = {
+		always = no
+	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -511,6 +519,10 @@ joint_focus = {
 		is_river_fed_member = yes
 	}
 
+	allow_branch = {
+		always = no
+	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -530,7 +542,7 @@ joint_focus = {
 	
 }
 
-### FRE ###
+# ### FRE ###
 joint_focus = {
 	id = RIV_develop_FRE
 	icon = GFX_goal_riv_industry_fre
@@ -588,6 +600,10 @@ joint_focus = {
 	
 	joint_trigger = {
 		is_river_fed_member = yes
+	}
+
+	allow_branch = {
+		always = no
 	}
 
 	cancel_if_invalid = yes
@@ -693,6 +709,10 @@ joint_focus = {
 		is_river_fed_member = yes
 	}
 
+	allow_branch = {
+		always = no
+	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -773,6 +793,10 @@ joint_focus = {
 		is_river_fed_member = yes
 	}
 
+	allow_branch = {
+		always = no
+	}
+
 	cancel_if_invalid = yes
 	continue_if_invalid = no
 	available_if_capitulated = no
@@ -796,14 +820,13 @@ joint_focus = {
 joint_focus = {
 	id = RIV_found_the_rdc
 	icon = GFX_goal_riv_development
-	prerequisite = { focus = RIV_development_grants_DEP }
-	prerequisite = { focus = RIV_development_grants_FRE }
-	x = 1
-	y = 1
-	relative_position_id = RIV_development_grants_DEP
+	prerequisite = { focus = RIV_dreams_of_a_federation }
+	x = 0
+	y = 2
+	relative_position_id = RIV_dreams_of_a_federation
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -901,7 +924,7 @@ joint_focus = {
 	relative_position_id = RIV_found_the_rdc
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1001,7 +1024,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rdc
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 5
@@ -1062,7 +1085,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_found_the_rdc
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 5
@@ -1138,7 +1161,7 @@ shared_focus = {
 	y = 2
 	relative_position_id = RIV_rdc_industry_projects
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 5
@@ -1217,7 +1240,7 @@ joint_focus = {
 	relative_position_id = RIV_rdc_rail_projects
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1312,7 +1335,7 @@ joint_focus = {
 	relative_position_id = RIV_found_the_rec
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1404,7 +1427,7 @@ joint_focus = {
 	relative_position_id = RIV_social_fund
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 2
@@ -1517,7 +1540,7 @@ joint_focus = {
 	relative_position_id = RIV_eastern_transport_fund
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1622,7 +1645,7 @@ joint_focus = {
 	relative_position_id = RIV_river_parliament
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1727,7 +1750,7 @@ joint_focus = {
 	relative_position_id = RIV_river_parliament
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1822,7 +1845,7 @@ joint_focus = {
 	relative_position_id = RIV_centeral_bank
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -1927,7 +1950,7 @@ joint_focus = {
 	relative_position_id = RIV_the_rivbit
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -2028,7 +2051,7 @@ joint_focus = {
 	relative_position_id = RIV_the_river_union
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -2134,7 +2157,7 @@ joint_focus = {
 	relative_position_id = RIV_the_river_union
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -2318,7 +2341,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 4
@@ -2343,17 +2366,17 @@ shared_focus = {
 			}
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
-				value = 1
+				value = 3
 			}
 		}
 		else = {
 			add_breakthrough_progress = {
 				specialization = specialization_nuclear
-				value = 0.5
+				value = 3
 			}
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
+				bonus = 3.0
 				uses = 1
 				category = nuclear
 			}
@@ -2370,7 +2393,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
@@ -2482,7 +2505,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_the_federation
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 1
@@ -2638,7 +2661,7 @@ shared_focus = {
 	y = 1
 	relative_position_id = RIV_dreams_of_a_federation
 
-	cost = 5
+	cost = 3
 
 	ai_will_do = {
 		factor = 3
@@ -2809,7 +2832,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_friends
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	available = {
 		is_river_fed_member = yes
@@ -2940,7 +2963,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_friends
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	available = {
 		is_river_fed_member = yes
@@ -3073,7 +3096,7 @@ joint_focus = {
 	relative_position_id = RIV_develop_firtree
 	text_icon = RIV_focus_style
 
-	cost = 5
+	cost = 3
 
 	available = {
 		is_river_fed_member = yes
@@ -3207,7 +3230,7 @@ shared_focus = {
 	y = 1
 	prerequisite = { focus = RIV_develop_farbrook }
 
-	cost = 5
+	cost = 3
 
 	available = {
 		is_river_fed_member = yes
@@ -3286,7 +3309,7 @@ shared_focus = {
 	x = 1
 	y = 1
 
-	cost = 5
+	cost = 3
 
 	available = {
 		OR = {

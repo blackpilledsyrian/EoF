@@ -473,7 +473,7 @@ equipment_modules = {
 		dismantle_cost_ic = 0
 		add_stats = {
 			maximum_speed = -0.4
-			build_cost_ic = 5.5
+			build_cost_ic = 7.5
 			breakthrough = 6
 		}
 		multiply_stats = {
@@ -498,7 +498,7 @@ equipment_modules = {
 		xp_cost = 0
 		add_stats = {
 			maximum_speed = -0.6
-			build_cost_ic = 7
+			build_cost_ic = 9
 			breakthrough = 10
 		}
 	}
@@ -531,7 +531,7 @@ equipment_modules = {
 		xp_cost = 0
 		add_stats = {
 			maximum_speed = -0.6
-			build_cost_ic = 7
+			build_cost_ic = 9
 			defense = 3
 		}
 
@@ -1510,7 +1510,7 @@ equipment_modules = {
 			hard_attack = 28
 			ap_attack = 40
 			reliability = -0.2
-			build_cost_ic = 5
+			build_cost_ic = 8
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1532,7 +1532,7 @@ equipment_modules = {
 			hard_attack = 32
 			ap_attack = 60
 			reliability = -0.2
-			build_cost_ic = 6.5
+			build_cost_ic = 10
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1554,7 +1554,7 @@ equipment_modules = {
 			hard_attack = 36
 			ap_attack = 80
 			reliability = -0.2
-			build_cost_ic = 8
+			build_cost_ic = 12
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1576,7 +1576,7 @@ equipment_modules = {
 			hard_attack = 40
 			ap_attack = 100
 			reliability = -0.2
-			build_cost_ic = 9.5
+			build_cost_ic = 14
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1619,7 +1619,7 @@ equipment_modules = {
 			hard_attack = 35
 			ap_attack = 60
 			reliability = -0.2
-			build_cost_ic = 5
+			build_cost_ic = 8
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1641,7 +1641,7 @@ equipment_modules = {
 			hard_attack = 40
 			ap_attack = 80
 			reliability = -0.2
-			build_cost_ic = 6.5
+			build_cost_ic = 10
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1663,7 +1663,7 @@ equipment_modules = {
 			hard_attack = 45
 			ap_attack = 100
 			reliability = -0.2
-			build_cost_ic = 8
+			build_cost_ic = 12
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1685,7 +1685,7 @@ equipment_modules = {
 			hard_attack = 50
 			ap_attack = 120
 			reliability = -0.2
-			build_cost_ic = 9.5
+			build_cost_ic = 14
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1707,7 +1707,7 @@ equipment_modules = {
 			hard_attack = 7
 			ap_attack = 4
 			reliability = -0.2
-			build_cost_ic = 5
+			build_cost_ic = 8
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1731,7 +1731,7 @@ equipment_modules = {
 			hard_attack = 8
 			ap_attack = 6
 			reliability = -0.2
-			build_cost_ic = 6.5
+			build_cost_ic = 10
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1755,7 +1755,7 @@ equipment_modules = {
 			hard_attack = 9
 			ap_attack = 8
 			reliability = -0.2
-			build_cost_ic = 8
+			build_cost_ic = 12
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1779,7 +1779,7 @@ equipment_modules = {
 			hard_attack = 10
 			ap_attack = 10
 			reliability = -0.2
-			build_cost_ic = 9.5
+			build_cost_ic = 14
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1802,7 +1802,7 @@ equipment_modules = {
 			hard_attack = 11
 			ap_attack = 12
 			reliability = -0.3
-			build_cost_ic = 12
+			build_cost_ic = 16
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -1825,7 +1825,7 @@ equipment_modules = {
 			hard_attack = 44
 			ap_attack = 120
 			reliability = -0.3
-			build_cost_ic = 12
+			build_cost_ic = 16
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0

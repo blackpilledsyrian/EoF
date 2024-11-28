@@ -11,8 +11,8 @@ ideas = {
 			removal_cost = -1
 			picture = BAK_bigship
 			modifier = {
-				dockyard_donations = 5
-				industrial_capacity_dockyard = 0.4
+				dockyard_donations = 3
+				industrial_capacity_dockyard = 0.2
 				naval_damage_factor = 0.1
 			}
 			cancel = {
@@ -25,8 +25,8 @@ ideas = {
 			removal_cost = -1
 			picture = lake_city
 			modifier = {
-				military_factory_donations = 5
-				industrial_capacity_factory = 0.2
+				military_factory_donations = 3
+				industrial_capacity_factory = 0.1
 				army_org_factor = 0.05
 			}
 			cancel = {
@@ -39,9 +39,9 @@ ideas = {
 			removal_cost = -1
 			picture = WIT_trade_post_idea
 			modifier = {
-				industrial_factory_donations = 5
-				production_speed_buildings_factor = 0.2
-				research_speed_factor = 0.1
+				industrial_factory_donations = 3
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
 			}
 			cancel = {
 				WIT = {

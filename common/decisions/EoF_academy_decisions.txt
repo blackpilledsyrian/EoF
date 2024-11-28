@@ -17,15 +17,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -63,15 +63,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -109,15 +109,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -155,15 +155,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -201,15 +201,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -247,15 +247,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -293,15 +293,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -339,15 +339,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -385,15 +385,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -431,15 +431,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 9
-			has_political_power > 29
+			has_political_power > 9
 		}
-		custom_cost_text = decision_cost_army_xp_10_pp_30
+		custom_cost_text = decision_cost_army_xp_10_pp_10
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -10
-				add_political_power = -30
+				add_political_power = -10
 			}
 		}
 		remove_effect = {
@@ -475,15 +475,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -519,15 +519,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -563,15 +563,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -607,15 +607,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -651,15 +651,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -695,15 +695,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -739,15 +739,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -783,15 +783,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {
@@ -827,15 +827,15 @@ EoF_academy_category = {
 		}
 		custom_cost_trigger = {
 			has_army_experience > 29
-			has_political_power > 49
+			has_political_power > 29
 		}
-		custom_cost_text = decision_cost_army_xp_30_pp_50
+		custom_cost_text = decision_cost_army_xp_30_pp_30
 		days_remove = 180
 		complete_effect = {
 			set_country_flag = EoF_academy_in_progress
 			hidden_effect = {
 				army_experience = -30
-				add_political_power = -50
+				add_political_power = -30
 			}
 		}
 		remove_effect = {

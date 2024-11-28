@@ -13,7 +13,7 @@ if = {
 	}
 	set_oob = "WNG_1007_nsb"
 }
-set_research_slots = 4
+set_research_slots = 3
 starting_train_buffer = 1.5
 
 add_breakthrough_progress = {

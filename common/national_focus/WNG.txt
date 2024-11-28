@@ -9920,6 +9920,7 @@ offset = {
 					type = annex_everything
 				}
 			}
+			GRI = { add_to_faction = HLQ }
 			hidden_effect = {
 				every_country = {
 					set_country_flag = EoF_big_event_custom_wingbardy

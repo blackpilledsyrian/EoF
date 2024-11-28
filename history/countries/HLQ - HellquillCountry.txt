@@ -90,45 +90,45 @@ set_politics = {
 add_ideas = {
 	lack_of_scientists2
 	pre_industrial_society
-	HLQ_knights_1
-	HLQ_reformists
-	HLQ_pony_minorities
+	# HLQ_knights_1
+	# HLQ_reformists
+	# HLQ_pony_minorities
 }
 
-country_event = {
-	id = hellquill.1
-	days = 7
-}
+# country_event = {
+# 	id = hellquill.1
+# 	days = 7
+# }
 
-country_event = {
-	id = hellquill.2
-	days = 40
-}
+# country_event = {
+# 	id = hellquill.2
+# 	days = 40
+# }
 
-country_event = {
-	id = hellquill.200
-	days = 21
-}
+# country_event = {
+# 	id = hellquill.200
+# 	days = 21
+# }
 
-country_event = {
-	id = hellquill.201
-	days = 50
-}
+# country_event = {
+# 	id = hellquill.201
+# 	days = 50
+# }
 
-country_event = {
-	id = hellquill.202
-	days = 55
-}
+# country_event = {
+# 	id = hellquill.202
+# 	days = 55
+# }
 
-country_event = {
-	id = hellquill.203
-	days = 15
-}
+# country_event = {
+# 	id = hellquill.203
+# 	days = 15
+# }
 
-country_event = {
-	id = hellquill.204
-	days = 30
-}
+# country_event = {
+# 	id = hellquill.204
+# 	days = 30
+# }
 
 set_stability = 0.45
 set_war_support = 0.50

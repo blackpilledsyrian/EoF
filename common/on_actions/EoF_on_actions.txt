@@ -564,18 +564,6 @@ on_actions = {
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Great Yak Warband\" division_template = \"Great Yak Warband\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = YAK
-						}
-						create_unit = {
-							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = YAK
-						}
-						create_unit = {
-							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = YAK
-						}
-						create_unit = {
 							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
@@ -661,14 +649,6 @@ on_actions = {
 						}
 						create_unit = {
 							division = "name = \"Great Clan Hussars\" division_template = \"Great Clan Hussars\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
@@ -889,18 +869,6 @@ on_actions = {
 							owner = SDL
 						}
 						create_unit = {
-							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = SDL
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = SDL
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = SDL
-						}
-						create_unit = {
 							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = SDL
 						}
@@ -984,30 +952,6 @@ on_actions = {
 						}
 						create_unit = {
 							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = EMR
-						}
-						create_unit = {
-							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = EMR
 						}
 						create_unit = {

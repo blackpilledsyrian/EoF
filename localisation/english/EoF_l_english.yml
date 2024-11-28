@@ -45,6 +45,7 @@ EoF_super_air_base_tech:0 "Expanded Air Base Technology"
 
 EoF_mass_motorization_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
 EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §YInfantry§! by 20."
+EoF_large_front_operations_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 5%."
 EoF_operational_concentration_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 10%."
 EoF_mechanized_wave_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
 EoF_peoples_army_tt:0 "§RIncreases§! §YCombat Width§! of §YAll Armour§! by 1"

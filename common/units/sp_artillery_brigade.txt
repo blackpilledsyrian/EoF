@@ -37,8 +37,8 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.25
 
-		breakthrough = -0.2
-		soft_attack = 0.3
+		breakthrough = -0.3
+		soft_attack = 0.1
 		hard_attack = -0.3
 
 		suppression = 1.25
@@ -107,8 +107,8 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.3
 
-		breakthrough = -0.2
-		soft_attack = 0.3
+		breakthrough = -0.3
+		soft_attack = 0.1
 		hard_attack = -0.3
 
 		suppression = 1.5
@@ -181,8 +181,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.35
 
-		breakthrough = -0.2
-		soft_attack = 0.3
+		breakthrough = -0.3
+		soft_attack = 0.1
 		hard_attack = -0.3
 		
 		suppression = 1.5
@@ -255,8 +255,8 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.3
 
-		breakthrough = -0.2
-		soft_attack = 0.3
+		breakthrough = -0.3
+		soft_attack = 0.1
 		hard_attack = -0.3
 
 		suppression = 1.5

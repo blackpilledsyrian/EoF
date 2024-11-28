@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = GRI
-		add_core_of = GRI
+		owner = HLQ
+		add_core_of = HLQ
 
 		victory_points = { 9773 5 }
 		victory_points = { 10894 3 }
