@@ -1815,6 +1815,10 @@ technologies = {
 
 		on_research_complete = {
 			custom_effect_tooltip = EoF_armor_tech_4_tt
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_PROJECT
+				PROJECT = sp_land_composite_armor	
+			}
 		}
 		show_effect_as_desc = yes
 
@@ -1917,10 +1921,6 @@ technologies = {
 
 		on_research_complete = {
 			custom_effect_tooltip = armor_tech_6_tt
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_land_composite_armor	
-			}
 		}
 		show_effect_as_desc = yes
 
