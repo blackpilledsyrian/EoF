@@ -374,3 +374,10 @@ NDefines.NOperatives.AGENCY_UPGRADE_PER_OPERATIVE_SLOT = 5					-- Number of upgr
 NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 2				-- max operative slots gained from upgrades
 
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.1 -- Attack bonus factor against whoever occupies your core territory.
+
+NDefines. NProject.RECRUIT_SCIENTIST_COST = {			-- Amount of pp to hire a scientist based on available scientist
+		10,			-- pp cost if no available scientist
+		20,			-- pp cost if 1 available scientist
+		30,			-- pp cost if 2 available scientist
+		40			-- pp cost if more than 2 available scientist
+	}

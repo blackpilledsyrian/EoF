@@ -537,14 +537,14 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 500
 			convert_cost_resources = {
-				steel = 2
+				steel = 0
 			}
 		}
 		can_convert_from = {
 			module = ship_medium_battery_2
 			convert_cost_ic = 350
 			convert_cost_resources = {
-				steel = 1
+				steel = 0
 			}
 		}
 		critical_parts = { damaged_heavy_guns }
@@ -584,7 +584,7 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 600
 			convert_cost_resources = {
-				steel = 2
+				steel = 0
 			}
 		}
 		can_convert_from = {
@@ -651,7 +651,7 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 400
 			convert_cost_resources = {
-				steel = 1
+				steel = 0
 			}
 		}
 		can_convert_from = {
@@ -692,7 +692,7 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 500
 			convert_cost_resources = {
-				steel = 1
+				steel = 0
 			}
 		}
 		can_convert_from = {
@@ -733,7 +733,7 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 600
 			convert_cost_resources = {
-				steel = 1
+				steel = 0
 			}
 		}
 		can_convert_from = {
@@ -773,7 +773,7 @@ equipment_modules = {
 			module_category = ship_medium_battery
 			convert_cost_ic = 650
 			convert_cost_resources = {
-				steel = 1
+				steel = 0
 			}
 		}
 		can_convert_from = {
@@ -4707,21 +4707,21 @@ equipment_modules = {
 			module_category = ship_light_battery
 			convert_cost_ic = 75
 			convert_cost_resources = {
-				crystals = 1
+				crystals = 0
 			}
 		}
 		can_convert_from = {
 			module = ship_light_battery_1
 			convert_cost_ic = 45
 			convert_cost_resources = {
-				crystals = 1
+				crystals = 0
 			}
 		}
 		can_convert_from = {
 			module = ship_light_battery_2
 			convert_cost_ic = 45
 			convert_cost_resources = {
-				crystals = 1
+				crystals = 0
 			}
 		}
 		critical_parts = {
