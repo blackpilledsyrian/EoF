@@ -156,9 +156,17 @@ shadow_of_kemerkai:0 "Shadow of Kemerkai"
 
 EoF_ABY_cat_therine_earnshaw:0 "█████ ████████"
 
+decision_cost_army_xp_10_pp_10:0 "£army_experience  §Y10§! £pol_power  §Y10§!"
+decision_cost_army_xp_10_pp_10_blocked:0 "£army_experience  §R10§! £pol_power  §R10§!"
+decision_cost_army_xp_10_pp_10_tooltip:0 "It costs £army_experience  §Y10§! £pol_power  §Y10§! to take the decision"
+
 decision_cost_army_xp_10_pp_30:0 "£army_experience  §Y10§! £pol_power  §Y30§!"
 decision_cost_army_xp_10_pp_30_blocked:0 "£army_experience  §R10§! £pol_power  §R30§!"
 decision_cost_army_xp_10_pp_30_tooltip:0 "It costs £army_experience  §Y10§! £pol_power  §Y30§! to take the decision"
+
+decision_cost_army_xp_30_pp_30:0 "£army_experience  §Y30§! £pol_power  §Y30§!"
+decision_cost_army_xp_30_pp_30_blocked:0 "£army_experience  §R30§! £pol_power  §R30§!"
+decision_cost_army_xp_30_pp_30_tooltip:0 "It costs £army_experience  §Y30§! £pol_power  §Y30§! to take the decision"
 
 decision_cost_army_xp_30_pp_50:0 "£army_experience  §Y30§! £pol_power  §Y50§!"
 decision_cost_army_xp_30_pp_50_blocked:0 "£army_experience  §R30§! £pol_power  §R50§!"

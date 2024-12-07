@@ -1551,7 +1551,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		path = {
 			leads_to_tech = heavyantiair3
@@ -1586,7 +1586,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		path = {
 			leads_to_tech = heavyantiair4
@@ -1654,7 +1654,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		path = {
 			leads_to_tech = heavyantiair6
@@ -1689,7 +1689,7 @@ technologies = {
 			air_attack = 0.1
 		}
 
-		tech_air_damage_factor = -0.02
+		tech_air_damage_factor = -0.01
 
 		research_cost = 1
 

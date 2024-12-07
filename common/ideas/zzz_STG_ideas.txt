@@ -666,9 +666,9 @@ ideas = {
 			removal_cost = -1
 			picture = STG_less_bureaucracy
 			modifier = {
-				political_power_gain = 0.2
+				political_power_gain = 0.1
 				production_speed_buildings_factor = 0.05
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 			}
 		}
 	}
@@ -733,7 +733,7 @@ ideas = {
 			modifier = {
 				land_reinforce_rate = 0.05
 				army_morale_factor = 0.05
-				army_org_factor = 0.1
+				army_org_factor = 0.05
 			}
 		}
 	}	
@@ -885,8 +885,6 @@ ideas = {
 				stability_factor = -0.1
 				war_support_factor = -0.05
 				conscription = 0.075
-				army_strength_factor = 0.15
-				army_org_factor = 0.1
 			}
 		}
 	}

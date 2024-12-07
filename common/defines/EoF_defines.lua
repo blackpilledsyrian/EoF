@@ -123,6 +123,8 @@ NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.90	-- Maximum damage 
 NDefines.NAir.COMBAT_DAMAGE_SCALE = 0.25			-- Higher value = more shot down planes
 NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 20			-- same as above but used inside naval combat for carrier battles
 
+NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.1		-- 5x levels = 60% defense from bombing
+
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our armor outclasses enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4	-- extra damage dice if our armor outclasses enemy
 
@@ -251,8 +253,8 @@ NDefines.NNavy.CARRIER_STACK_PENALTY = 4			-- The most efficient is 4 carriers i
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20		-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
 
 NDefines.NNavy.CARRIER_ONLY_COMBAT_ACTIVATE_TIME = 0		-- hours from start of combat when carriers get to fight
-NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 6		-- hours from start of combat when only carriers, capitals and subs get to attack
-NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 8
+NDefines.NNavy.CAPITAL_ONLY_COMBAT_ACTIVATE_TIME = 0		-- hours from start of combat when only carriers, capitals and subs get to attack
+NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 0
 
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_TARGET_SCORE = 10		-- scoring for target picking for planes inside naval combat, one define per ship typ
 NDefines.NNavy.NAVAL_COMBAT_AIR_CAPITAL_TARGET_SCORE = 50

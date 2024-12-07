@@ -1669,6 +1669,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus Extreme_war_comittee"
 		country_event = equestria.7
 		unlock_decision_tooltip = EQS_celestia_speech_decision
+		custom_effect_tooltip = EQS_extreme_measures_conscription_tt
 		add_political_power = 300
 		hidden_effect = { set_global_flag = EQS_completed_Extreme_war_comittee }
 	}
@@ -1748,7 +1749,6 @@ shared_focus = {
 		effect_tooltip = {
 			swap_ideas = { remove_idea = harmonic_stagnation add_idea = harmonic_stagnation2 }
 		}
-		custom_effect_tooltip = EQS_extreme_measures_conscription_tt
 		country_event = { days = 1 id = equestria.147 }
 		hidden_effect = {
 			modify_country_flag = { flag = celestia_evil_meter value = 1 }

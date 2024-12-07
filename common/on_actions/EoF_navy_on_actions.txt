@@ -3,7 +3,7 @@ on_actions = {
 		effect = {
 			every_country = {
 				set_variable = {
-					fleet_limit_var = 200
+					fleet_limit_var = 100
 				}
 			}
 		}

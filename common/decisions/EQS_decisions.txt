@@ -51,7 +51,7 @@ EQS_celestia_evil_meter_category = {
 		visible = {
 			OR = {
 				has_defensive_war = yes
-				has_completed_focus = Extreme_measures
+				has_completed_focus = Extreme_war_comittee
 				#focus_progress = {
 				#	focus = Extreme_war_comittee
 				#	progress > 0

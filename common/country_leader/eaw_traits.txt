@@ -3297,7 +3297,7 @@ apn_time_queen= {
 	
 	queen_yaria = {
 		random = no
-		consumer_goods_factor = 0.3
+		consumer_goods_factor = 0.2
 		research_speed_factor = 0.05
 		ai_will_do = {
 			factor = 1

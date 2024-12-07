@@ -798,7 +798,6 @@ leader_traits = {
 	}
 	eager_collaborator = {
 		random = yes
-		send_volunteer_size = 2
 		improve_relations_maintain_cost_factor = -1
 		fascism_acceptance = 75
 		ai_will_do = {
@@ -5589,8 +5588,8 @@ leader_traits = {
 
 	prince_of_terror = {
 		resistance_damage_to_garrison = -0.25
-		foreign_subversive_activites = -0.3
-		non_core_manpower = 0.02
+		command_power_gain_mult = 0.15
+		org_loss_at_low_org_factor = -0.15
 
 		ai_will_do = {
 			factor = 1
@@ -5950,7 +5949,6 @@ leader_traits = {
 
 	princess_of_terror = {
 		random = no
-
 		resistance_damage_to_garrison = -0.25
 		command_power_gain_mult = 0.15
 		org_loss_at_low_org_factor = -0.15

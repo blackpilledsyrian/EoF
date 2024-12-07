@@ -2329,15 +2329,10 @@ focus_tree = {
 		y = 5
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus new_factories_in_konzan"
-			225 = { add_extra_state_shared_building_slots = 3
+			225 = { add_extra_state_shared_building_slots = 2
 				add_building_construction = { 
 					type = industrial_complex
 					level = 2
-					instant_build = yes 
-				}
-				add_building_construction = { 
-					type = arms_factory
-					level = 1
 					instant_build = yes 
 				}
 				set_state_category = city 
@@ -2393,11 +2388,6 @@ focus_tree = {
 		continue_if_invalid = no
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus STG_steel2"
-			168 = { add_extra_state_shared_building_slots = 1
-				add_building_construction = { type = industrial_complex
-					level = 1
-					instant_build = yes }
-			}
 			add_resource = {
 				type = steel
 				amount = 80
@@ -4263,20 +4253,6 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus complete_electrification"
 			remove_ideas = incomplete_industrialization
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 0.5
-				uses = 1
-				category = industry
-			}
-			225 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 	focus = {

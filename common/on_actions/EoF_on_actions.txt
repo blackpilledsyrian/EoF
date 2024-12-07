@@ -579,6 +579,10 @@ on_actions = {
 							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
+						create_unit = {
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = YAK
+						}
 					}
 					every_controlled_state = {
 						add_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
@@ -649,6 +653,14 @@ on_actions = {
 						}
 						create_unit = {
 							division = "name = \"Great Clan Hussars\" division_template = \"Great Clan Hussars\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = JAK
+						}
+						create_unit = {
+							division = "name = \"Great Clan Hussars\" division_template = \"Great Clan Hussars\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = JAK
+						}
+						create_unit = {
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
