@@ -155,6 +155,8 @@ set_politics = {
 #	target = GFF
 #	autonomy_state = autonomy_colony
 #}
+set_country_flag = has_custom_advisors
+set_country_flag = has_custom_designers
 
 add_ideas = {
 	# no_edict

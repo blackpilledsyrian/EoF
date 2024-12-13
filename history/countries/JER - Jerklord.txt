@@ -161,6 +161,9 @@ add_ideas = {
 	# no_edict
 	subsidized_defence_contracts
 	professional_army
+set_country_flag = has_custom_advisors
+set_country_flag = has_custom_designers
+set_country_flag = has_custom_spymaster
     outdated_industry 
 	lack_of_scientists 
 	EoF_griffonian_contender
@@ -296,6 +299,8 @@ if = {
 	limit = {
 		has_dlc = "Together for Victory"
 	}
+JER_felix_murat = { set_character_flag = FAT_advisor_from_JER }
+JER_victor_moreau = { set_character_flag = FAT_advisor_from_JER }
 }
 
 if = {
