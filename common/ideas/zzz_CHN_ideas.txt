@@ -510,7 +510,7 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.25
 				production_speed_buildings_factor = 0.075
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.025
 				global_building_slots_factor = 0.05
 			}
 		}
@@ -524,7 +524,7 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.35
 				production_speed_buildings_factor = 0.075
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				global_building_slots_factor = 0.15
 				industry_air_damage_factor = 0.1
 				

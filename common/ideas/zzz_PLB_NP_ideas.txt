@@ -148,11 +148,11 @@ ideas = {
 				original_tag = PLB
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.2
-				industrial_capacity_factory = 0.2
-				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = -0.4
+				consumer_goods_factor = -0.2
 			}
 		}
 		PLB_NP_last_bastion_of_polaria = {

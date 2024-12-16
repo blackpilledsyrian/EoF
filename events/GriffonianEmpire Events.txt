@@ -29,7 +29,6 @@ country_event = { #A Train Trip
 	}
 	option = {
 		name = imperial.1.a
-		add_political_power = 100
 		add_stability = 0.10
 		hidden_effect = {
 			country_event = { days = 40 id = imperial.2 }

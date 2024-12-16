@@ -224,14 +224,7 @@ NDefines.NCountry.AIR_SUPPLY_CONVERSION_SCALE = 0.1		-- Conversion scale for pla
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_RATIO = 0		-- Ratio for volunteer planes available for sending in relation to sender air force
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 1	-- Ratio for volunteer planes available for sending in relation to receiver air base capacity
 
-NDefines.NCountry.REINFORCEMENT_EQUIPMENT_DELIVERY_SPEED = 0.1	-- Modifier for army equipment reinforcement speed
-NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 20.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
-NDefines.NCountry.REINFORCEMENT_MANPOWER_CHUNK = 0.1				-- Chunk size of manpower reinforcement delivery, in % of total manpower needed by the template.
-
-NDefines.NSupply.SUPPLY_PATH_MAX_DISTANCE = 72					-- max time it can take
-NDefines.NSupply.RAILWAY_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.1		-- time factor for total railway distance
-NDefines.NSupply.TRUCK_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.1		-- time factor for total truck distance
-NDefines.NSupply.NAVAL_DISTANCE_FACTOR_FOR_REINFORCEMENT_SPEED = 0.3		-- time factor for total naval distance
+NDefines.NCountry.REINFORCEMENT_MANPOWER_DELIVERY_SPEED = 50.0	-- Modifier for army manpower reinforcement delivery speed (travel time)
 
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0		-- Each province owned by the target country contributes this amount of volunteers to the limit.
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0		-- Each army unit owned by the source country contributes this amount of volunteers to the limit.

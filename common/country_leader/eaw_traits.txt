@@ -1804,8 +1804,7 @@ leader_traits = {
 	friendly_priest = {
 		random = no
 		army_morale_factor = 0.025
-		stability_weekly = 0.005
-		political_power_gain = -0.10
+		political_power_gain = -0.05
 		ai_will_do = {
 			factor = 1
 		}
@@ -3273,8 +3272,8 @@ apn_time_queen= {
 	queen_helvia = {
 		random = no
 		custom_modifier_tooltip = queen_helvia_admiral_tt
-		industrial_capacity_dockyard = 0.15
-		production_cost_dockyard_factor = -0.25
+		industrial_capacity_dockyard = 0.1
+		production_cost_dockyard_factor = -0.2
 		equipment_bonus = {
 			ship_hull_heavy = {
 				build_cost_ic = -0.15 instant = yes
@@ -3306,9 +3305,9 @@ apn_time_queen= {
 	
 	queen_argynnis = {
 		random = no
-		production_factory_max_efficiency_factor = 0.05
-		industrial_capacity_factory = 0.15
-		production_cost_arms_factory_factor = 0.1
+		production_factory_max_efficiency_factor = 0.025
+		industrial_capacity_factory = 0.1
+		production_cost_arms_factory_factor = 0.075
 		ai_will_do = {
 			factor = 1
 		}

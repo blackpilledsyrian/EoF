@@ -257,6 +257,14 @@ EoF_superindustrial_zone = {
 	local_factories	= 0.5
 	state_production_speed_buildings_factor = -0.3
 }
+EoF_naval_industrial_zone = {
+	icon = GFX_idea_KIS_continuous_industry_research_idea
+
+	local_building_slots = 3
+	local_factories	= 0.5
+	production_speed_industrial_complex_factor = -1
+	production_speed_arms_factory_factor = -1
+}
 EoF_supply_stockpile = {
 	icon = GFX_idea_generic_supply_depot
 

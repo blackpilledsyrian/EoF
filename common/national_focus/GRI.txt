@@ -126,7 +126,7 @@ shared_focus = {
 		add_political_power = 50
 		custom_effect_tooltip = GRI_education_tooltip
 		hidden_effect = {
-			country_event = { id = imperial.40 days = 75 random = 3600 }#days to hours applied
+			country_event = { id = imperial.40 days = 150 }#days to hours applied
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4427,7 +4427,10 @@ shared_focus = {
 	ai_will_do = { factor = 8 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_economic_miracle"
-		add_ideas = GRI_industrial_miracle
+		add_timed_idea = {
+			idea = GRI_industrial_miracle
+			days = 365
+		}
 	}
 }
 
@@ -4925,6 +4928,9 @@ shared_focus = {
 	y = 2
 	relative_position_id = GRI_submarines_and_long_lance
 	cost = 3
+	bypass = {
+		date > 1007.03.01
+	}
 	completion_reward = {
 		add_named_threat = {
 			threat = 3
@@ -4933,7 +4939,7 @@ shared_focus = {
 		news_event = EoF.news.5
 		433 = {
 			add_dynamic_modifier = {
-				modifier = EoF_superindustrial_zone
+				modifier = EoF_naval_industrial_zone
 			}
 		}
 	}

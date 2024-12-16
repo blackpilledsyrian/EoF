@@ -23,6 +23,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_all_aa
+			category_light_aa
 			category_anti_air
 		}
 
