@@ -1,4 +1,4 @@
-version="0.20.2"
+version="0.20.3"
 tags={
 	"Balance"
 	"Gameplay"
@@ -9,6 +9,6 @@ dependencies={
 replace_path="common/ai_equipment"
 replace_path="gfx/models/EAWEntity/ponies"
 name="Equus on Fire: Redux"
-supported_version="1.15.1"
+supported_version="1.15.3"
 picture="thumbnail.png"
 remote_file_id="3166665930"
