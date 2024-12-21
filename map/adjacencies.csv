@@ -42,8 +42,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11575;9604;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Islands
 11575;753;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Shore
 8101;11213;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia
-12413;12320;sea;7226;-1;-1;-1;-1;;New Manehattan-Aquilia2
-901;7184;sea;5890;-1;-1;-1;-1;;New Manehattan-Aquilia3
 10882;7107;sea;5890;-1;-1;-1;-1;;New Manehattan-Talononte
 9055;12142;sea;5838;-1;-1;-1;-1;;Southern-Islands-Mainland
 9055;9045;sea;5838;-1;-1;-1;-1;;Southern-Islands-IslandSouth
@@ -56,7 +54,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 1642;4576;sea;8308;-1;-1;-1;-1;;LandofHeroes-Mainland
 1248;1577;sea;411;-1;-1;-1;-1;;uwotm8
 1577;10453;sea;411;-1;-1;-1;-1;;uwotm8-2
-1248;8160;sea;411;-1;-1;-1;-1;;ToMinotauria
 5214;12965;sea;5185;-1;-1;-1;-1;;Minotauria3
 12919;4335;sea;464;-1;-1;-1;-1;;Minotauria2
 11020;12129;sea;8334;-1;-1;-1;-1;;Minotauria2
@@ -759,14 +756,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 10425;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
 1502;4529;impassable;-1;-1;-1;-1;-1;;BlackRockMountains
 
-1157;4119;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-1157;12197;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-1157;12267;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-10158;12267;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-10158;7254;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-1296;7254;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-1296;4275;impassable;-1;-1;-1;-1;-1;;SicameonMountains
-
 1502;4424;impassable;-1;-1;-1;-1;-1;;SicameonMountains
 10313;4424;impassable;-1;-1;-1;-1;-1;;SicameonMountains
 10313;7427;impassable;-1;-1;-1;-1;-1;;SicameonMountains
@@ -868,6 +857,21 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3086;1276;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
 84;1276;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
 84;6166;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
+
+10033;1142;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+9991;1142;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+10313;1811;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+7399;1811;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+12271;1811;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+1871;1811;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+12554;1811;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+12554;7578;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+12554;10363;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+7648;10363;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+7648;12348;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+4147;12348;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+4147;7115;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
+10033;7115;impassable;-1;-1;-1;-1;-1;;WNG-MCW Front
 
 10457;15863;sea;2285;1898;1961;1898;1961;;CHN-ABY Front
 

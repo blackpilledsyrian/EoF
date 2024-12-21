@@ -7,8 +7,10 @@ state={
 	}
 
 	manpower=59484
-	state_category=pastoral
-	buildings_max_level_factor=1.00
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+	impassable=yes
 
 	history={
 		owner = WNG

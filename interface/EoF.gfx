@@ -153,6 +153,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
 	}
 	spriteType = {
+		name = "GFX_autonomy_EoF_enforced_ally_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_slot_federation_advisor"
 		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
 	}

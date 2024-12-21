@@ -6475,14 +6475,6 @@ focus_tree = {
 			date > 1009.05.01
 		}
 		completion_reward = {
-			if = {
-				limit = {
-					NOT = {
-						has_idea = tot_economic_mobilisation
-					}
-				}
-				add_ideas = war_economy
-			}
 			activate_mission_tooltip = EoF_JER_invade_equestria_mission
 			add_timed_idea = {
 				idea = EoF_invasion_preparation

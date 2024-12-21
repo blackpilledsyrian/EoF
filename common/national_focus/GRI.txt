@@ -5460,7 +5460,7 @@ shared_focus = {
 	id = GRI_rocket_artillery_development
 	icon = GFX_goal_rocket
 	prerequisite = { focus = GRI_joint_wargames }
-	prerequisite = { focus = GRI_artillery_modernisation }
+	# prerequisite = { focus = GRI_artillery_modernisation }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5495,7 +5495,7 @@ shared_focus = {
 	id = GRI_joint_industrial_development
 	icon = GFX_goal_generic_production
 	prerequisite = { focus = GRI_joint_wargames }
-	prerequisite = { focus = GRI_auxiliary_engineer_corps }
+	# prerequisite = { focus = GRI_auxiliary_engineer_corps }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5520,8 +5520,7 @@ shared_focus = {
 shared_focus = {
 	id = GRI_joint_military_RD_department
 	icon = GFX_goal_tfv_generic_tech_sharing
-	prerequisite = { focus = GRI_rocket_artillery_development }
-	prerequisite = { focus = GRI_joint_industrial_development }
+	prerequisite = { focus = GRI_rocket_artillery_development focus = GRI_joint_industrial_development }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5540,6 +5539,7 @@ shared_focus = {
 			    id = imperial.114
 			}
 		}
+		add_research_slot = 1
 	}
 }
 

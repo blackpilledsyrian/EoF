@@ -58,7 +58,7 @@ sub_units = {
 
 		need = {
 			amphibious_mechanized_equipment = 40
-			support_equipment = 30
+			support_equipment = 50
 		}
 
 		forest = {

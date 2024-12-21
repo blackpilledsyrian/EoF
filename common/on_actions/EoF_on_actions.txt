@@ -1400,7 +1400,7 @@ on_actions = {
 				GRI = {
 					set_autonomy = {
 						target = WNG
-						autonomous_state = autonomy_vassal
+						autonomous_state = autonomy_EoF_enforced_ally
 					}
 				}
 			}

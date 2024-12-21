@@ -1,6 +1,7 @@
 ﻿l_english:
 autonomy_EoF_rivco_member:0 "River Coalition Member"
 autonomy_EoF_rivfed_member:0 "River Federation Member"
+autonomy_EoF_enforced_ally:0 "Enforced Ally"
 
 EoF_RIV_balance_of_power:0 "Coalition Centralization Balance"
 EoF_RIV_balance_of_power_decay:0 "Coalition Decentralizing"

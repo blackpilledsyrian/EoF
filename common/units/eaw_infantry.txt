@@ -280,7 +280,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 10
+			support_equipment = 30
 		}
 	}
 
@@ -336,7 +336,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 10
+			support_equipment = 30
 		}
 
         marsh = {
@@ -426,7 +426,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 10
+			support_equipment = 30
 		}
 	}
 
@@ -482,7 +482,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 10
+			support_equipment = 30
 		}
 
 		urban = {
@@ -685,7 +685,7 @@ sub_units = {
 		}
 
 		need = {
-			support_equipment = 10
+			support_equipment = 30
 		}
 		urban = {
 			attack = -0.05
