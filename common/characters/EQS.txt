@@ -1535,6 +1535,10 @@ characters={
 	EQS_fluttershy = {
 		name = EQS_fluttershy
 		portraits = {
+			civilian = {
+				large = "GFX_portrait_EQS_fluttershy"
+				small = "GFX_portrait_EQS_fluttershy_small"
+			}
 			army = {
 				large = "GFX_portrait_EQS_fluttershy"
 				small = "GFX_portrait_EQS_fluttershy_small"
@@ -1542,95 +1546,95 @@ characters={
 		}
 
 		advisor = {
-			slot = theorist
+			slot = political_advisor
 			idea_token = fluttershy
-			ledger = army
+			#ledger = army
 			cost = 100
 
 			allowed = {
 				original_tag = EQS
 			}
-			available = {
-				if = {
-					limit = { is_original_EQS = yes }
-					has_completed_focus = EQS_WMD
-				}
-				if = {
-					limit = { is_EQS_SOL = yes }
-					has_global_flag = EQS_completed_EQS_WMD
-				}
-				if = {
-					limit = { NOT = { tag = event_target:solar_empire } }
-					has_government = democratic
-				}
-				if = {
-					limit = { event_target:solar_empire = { exists = yes } }
-					OR = {
-						AND = {
-							tag = event_target:solar_empire
-							NOT = { country_exists = event_target:equestria }
-							NOT = {
-								has_country_flag = SOL_harmonic_commanders_leave
-								has_country_flag = SOL_purge_finished
-							}
-						}
-						tag = event_target:equestria
-					}
-				}
-				NOT = {
-					has_country_flag = EQS_HIP_elements_sent
-				}
-			}
+			#available = {
+			#	if = {
+			#		limit = { is_original_EQS = yes }
+			#		has_completed_focus = EQS_WMD
+			#	}
+			#	if = {
+			#		limit = { is_EQS_SOL = yes }
+			#		has_global_flag = EQS_completed_EQS_WMD
+			#	}
+			#	if = {
+			#		limit = { NOT = { tag = event_target:solar_empire } }
+			#		has_government = democratic
+			#	}
+			#	if = {
+			#		limit = { event_target:solar_empire = { exists = yes } }
+			#		OR = {
+			#			AND = {
+			#				tag = event_target:solar_empire
+			#				NOT = { country_exists = event_target:equestria }
+			#				NOT = {
+			#					has_country_flag = SOL_harmonic_commanders_leave
+			#					has_country_flag = SOL_purge_finished
+			#				}
+			#			}
+			#			tag = event_target:equestria
+			#		}
+			#	}
+			#	NOT = {
+			#		has_country_flag = EQS_HIP_elements_sent
+			#	}
+			#}
 			research_bonus = {
-				nuclear = 0.15
+				nuclear = -0.5
 			}
 
-			traits = { nuclear_scientist }
+			traits = { EoF_Fluttershy }
 		}
 		
 		
-		scientist = {
-			traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
-			skills = {
-				specialization_nuclear = 3
-			}
-			
-			
-			desc = fluttershy_desc
-			visible = {
-				owner = {
-					if = {
-						limit = { is_original_EQS = yes }
-						has_completed_focus = EQS_WMD
-					}
-					if = {
-						limit = { is_EQS_SOL = yes }
-						has_global_flag = EQS_completed_EQS_WMD
-					}
-					if = {
-						limit = { NOT = { tag = event_target:solar_empire } }
-						has_government = democratic
-					}
-					if = {
-						limit = { event_target:solar_empire = { exists = yes } }
-						OR = {
-							AND = {
-								tag = event_target:solar_empire
-								NOT = { country_exists = event_target:equestria }
-								NOT = {
-									has_country_flag = SOL_harmonic_commanders_leave
-									has_country_flag = SOL_purge_finished
-								}
-							}
-							tag = event_target:equestria
-						}
-					}
-					NOT = {
-						has_country_flag = EQS_HIP_elements_sent
-					}
-				}
-			}
-		}
+		#scientist = {
+			#traits = { scientist_trait_nuclear_specialist scientist_trait_bright }
+			#skills = {
+			#	specialization_nuclear = 3
+			#}
+			#
+			#
+			#desc = fluttershy_desc
+			#visible = {
+			#	owner = {
+			#		if = {
+			#			limit = { is_original_EQS = yes }
+			#		#	has_completed_focus = EQS_WMD
+			#		}
+			#		if = {
+			#			limit = { is_EQS_SOL = yes }
+			#			has_global_flag = EQS_completed_EQS_WMD
+			#		}
+			#		if = {
+			#			limit = { NOT = { tag = event_target:solar_empire } }
+			#			has_government = democratic
+			#		}
+			#		if = {
+			#			limit = { event_target:solar_empire = { exists = yes } }
+			#			OR = {
+			#				AND = {
+			#					tag = event_target:solar_empire
+			#					NOT = { country_exists = event_target:equestria }
+			#					NOT = {
+			#						has_country_flag = SOL_harmonic_commanders_leave
+			#						has_country_flag = SOL_purge_finished
+			#					}
+			#				}
+			#				tag = event_target:equestria
+			#			}
+			#		}
+			#		NOT = {
+			#			has_country_flag = EQS_HIP_elements_sent
+			#		}
+			#	}
+			#}
+		#}
 		gender = female
 	}
 	

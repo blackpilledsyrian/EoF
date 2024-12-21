@@ -1131,6 +1131,10 @@ spriteTypes = {
 		name = "GFX_orb_of_chital_event"
 		texturefile = "gfx/event_pictures/GRF_hope_master.dds"
 	}
+	spriteType = {
+		name = "GFX_advisor_principal_cinch"
+		texturefile = "gfx/interface/ideas/advisors/principal_cinch_small.tga"
+	}
 
 
 	### Texticons ###

@@ -898,6 +898,9 @@ EoF_orbital:0 "Delusional Hoper"
 EoF_orb_of_chital:0 "Orb of Chital"
 EoF_orb_of_chital_desc:0 "Born in Kiria, Orb of Chital is widely known for two things: that he never gives up even against the worst odds, and that his analogies and wild jumps in logic never make sense.\n\nBest exemplified by his favorite phrase 'can win', Orb of Chital's philosophy is centered around the belief that maximum effort should be exerted even in hopeless scenarios, because a bad outcome is still preferable to a disastrous one. While not a religious man, his faith in himself and those around him, particularly in the Long March, is legendary. \n\nAccording to Orb of Chital, his genius will only be revealed to the rest of the world once mindreading magic is discovered. Until then, his thoughts remain trapped inside his mind, unable to be vocalized in a way his peers may comprehend. Perhaps in the future this hypothesis will be put to the test. In the meantime, UPA high command have opted to simply take his words at face value so as to avoid any strange metaphors. \n\nRumors say that he hates ponies so much that he replaces every painting of them with weird hairless bipedal creatures."
 
+EoF_principal_cinch:0 "Principal Cinch"
+EoF_principal_cinch_desc:0 "that bitch from EQg that was the principal of the Crystal school \n\nbut a pony"
+
 EoF.cityfall.701.t:0 "The Fall of Coltoba"
 EoF.cityfall.701.d:0 "[This.GetNewspaperHeader]Today the changling and their Feline allies suffers a defeat. News from the frontline has been scarce due to its remote nature, however, official sources has confirmed that the frontline city of Coltoba has fallen to the United Ponies Alliance. The Hedgmony's forces is beten back from the edges of the city and is now in full retreat. \n\nThe Queendom must send reinforcements to the frontline immediatly to attempt to stabilise the situation and prevent the UPA from taking over the valuable Abysinnian rubber plantations and oilfields. Without more concentrated efforts the Alliance forces are sure to achive victory."
 EoF.cityfall.701.a:0 "Forward, to victory!"
@@ -912,3 +915,4 @@ EoF.cityfall.702.c:0 "Looks bad for the Changelings."
 
 EoF.crystal.11.a:0 "Attend a dissident tea party, then rat them out to police"
 EoF.crystal.11.b:0 "Do nothing"
+
