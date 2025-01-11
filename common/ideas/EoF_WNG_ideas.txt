@@ -14,6 +14,18 @@ ideas = {
 				production_speed_arms_factory_factor = -0.5
 			}		
 		}
+		EoF_WNG_treaty_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = triumphant_will
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.5
+				surrender_limit = 1
+			}		
+		}
 		EoF_WNG_militarization = {
 			removal_cost = -1
 			picture = SOV_third_five_year_plan_military

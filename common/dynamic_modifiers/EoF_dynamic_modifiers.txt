@@ -262,8 +262,8 @@ EoF_naval_industrial_zone = {
 
 	local_building_slots = 3
 	local_factories	= 0.5
-	production_speed_industrial_complex_factor = -1
-	production_speed_arms_factory_factor = -1
+	state_production_speed_industrial_complex_factor = -1
+	state_production_speed_arms_factory_factor = -1
 }
 EoF_supply_stockpile = {
 	icon = GFX_idea_generic_supply_depot

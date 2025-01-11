@@ -265,7 +265,7 @@ ideas = {
 				date > 1010.06.01
 			}
 			modifier = {
-				send_volunteer_size = 2
+				send_volunteer_size = 3
 				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
 				weekly_casualties_war_support = 0.01

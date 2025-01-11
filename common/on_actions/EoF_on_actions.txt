@@ -1395,7 +1395,10 @@ on_actions = {
 					has_idea = EoF_WNG_treaty
 				}
 				WNG = {
-					remove_ideas = EoF_WNG_treaty
+					swap_ideas = {
+						remove_idea = EoF_WNG_treaty
+						add_idea = EoF_WNG_treaty_2
+					}
 				}
 				GRI = {
 					set_autonomy = {
