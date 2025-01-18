@@ -985,34 +985,34 @@ on_actions = {
 					}
 				}
 				EQC = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				WNG = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				HIP = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				MCW = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				RCT = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				NIM = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
 				}
 				FAT = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
 				GRI = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
 				JER = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
 				NCH = {
-					add_ideas = EoF_SDL_EMR_war_volunteers
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
 			}
 		}

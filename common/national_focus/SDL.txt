@@ -64,34 +64,34 @@ shared_focus = {
 			}
 		}
 		EQC = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		WNG = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		HIP = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		MCW = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		RCT = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		NIM = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_2
 		}
 		FAT = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
 		GRI = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
 		JER = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
 		NCH = {
-			remove_ideas = EoF_SDL_EMR_war_volunteers
+			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
 	}
 }

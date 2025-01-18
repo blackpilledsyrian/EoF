@@ -1,6 +1,8 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.3, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
+NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20			-- This much progress can be saved while not having a focus selected
+
 NDefines.NTechnology.MAX_SUBTECHS = 4				-- Max number of sub technologies a technology can have.
 
 NDefines.NDiplomacy.RESOURCE_SENT_AUTONOMY_DAILY_FACTOR = 0.0005-- If puppet provides resources to its master they increasy their autonomy by the resources factored by this
@@ -39,7 +41,7 @@ NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 NDefines.NMilitary.MAX_NUM_TRAITS = 8				-- cant have more, -1 to disable
 
-NDefines.NMilitary.BASE_FORT_PENALTY = -0.25			-- fort penalty
+NDefines.NMilitary.BASE_FORT_PENALTY = -0.15			-- fort penalty
 NDefines.NMilitary.DIG_IN_FACTOR = 0.015			-- bonus factor for each dug-in level
 
 NDefines.NMilitary.MAX_DIVISION_BRIGADE_WIDTH = 6		-- Max width of regiments in division designer.
@@ -188,6 +190,8 @@ NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 		-- trait slot for 0 leve
 	1.0, -- navy general
 	0.0, -- operative
 }
+
+NDefines.NRailwayGun.ATTACK_TO_FORTS_MODIFIER_FACTOR = 1	-- Forts modifier is calculated by multiplying railway gun attack value with this and dividing by 100
 
 NDefines.NCharacter.OFFICER_CORP_HIGH_COMMAND_SLOTS_IN_MENU = 3 --For Alert manager to count the number of High Command Slots in the UI
 NDefines.NCharacter.POLITICAL_ADVISOR_SLOTS_IN_MENU = 6		--For Alert manager to count the number of Political Advisor Slots in the UI

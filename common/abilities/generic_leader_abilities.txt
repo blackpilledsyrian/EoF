@@ -73,7 +73,7 @@ ability = {
 			}
 		}
 
-		cost = 0.18
+		cost = 0.15
 		duration = 168
 
 		one_time_effect = {

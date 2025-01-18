@@ -265,7 +265,8 @@ EoF_YAK_JAK_civil_war_volunteers_2:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_terrain:0 "Yak-Jak Civil War Terrain"
 
 EoF_SDL_EMR_war:0 "Arab-Emir War"
-EoF_SDL_EMR_war_volunteers:0 "Arab-Emir War Volunteers"
+EoF_SDL_EMR_war_volunteers_1:0 "Arab-Emir War Volunteers"
+EoF_SDL_EMR_war_volunteers_2:0 "Arab-Emir War Volunteers"
 
 EoF_YAK_thanks:0 "Yak Gift"
 EoF_JAK_thanks:0 "Jak Gift"

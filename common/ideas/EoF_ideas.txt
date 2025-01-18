@@ -265,7 +265,7 @@ ideas = {
 				date > 1010.06.01
 			}
 			modifier = {
-				send_volunteer_size = 3
+				send_volunteer_size = 2
 				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
 				weekly_casualties_war_support = 0.01
@@ -296,7 +296,21 @@ ideas = {
 				supply_node_range = 1
 			}
 		}
-		EoF_SDL_EMR_war_volunteers = {
+		EoF_SDL_EMR_war_volunteers_1 = {
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			cancel = {
+				date > 1010.06.01
+			}
+			modifier = {
+				send_volunteer_size = 4
+				air_volunteer_cap = 8
+				supply_consumption_factor = -0.8
+				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
+			}
+		}
+		EoF_SDL_EMR_war_volunteers_2 = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			cancel = {
