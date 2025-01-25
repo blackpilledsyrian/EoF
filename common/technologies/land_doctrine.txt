@@ -3690,7 +3690,7 @@ technologies = {
 			combat_width = -0.5
 		}
 
-		land_reinforce_rate = 0.15
+		land_reinforce_rate = 0.05
 		
 		path = {
 			leads_to_tech = guerilla_warfare

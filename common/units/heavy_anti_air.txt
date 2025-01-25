@@ -38,7 +38,7 @@ sub_units = {
 
 		battalion_mult = {
 			category = category_light_aa
-			air_attack = 1
+			air_attack = 0.25
 		}
 
 		can_be_parachuted = no

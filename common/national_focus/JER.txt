@@ -6967,7 +6967,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = JER_liberal_industry
-		cost = 7.20
+		cost = 4.40
 		prerequisite = { focus = JER_industrial_projects }
 		available = {
 			377 = {
@@ -7425,10 +7425,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = JER_mistral_organization
+			mio:JER_mistral_organization = {
+				add_mio_size = 5
+			}
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = JER_loup_shipping_organization
+			mio:JER_loup_shipping_organization = {
+				add_mio_size = 5
+			}
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = EoF_JER_aeb_organization
+			mio:EoF_JER_aeb_organization = {
+				add_mio_size = 5
+			}
 		}
 	}
 	shared_focus = {
@@ -7444,7 +7453,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = EoF_funding_naval_mio
-				days = 120
+				days = 365
 			}
 			mio:JER_mistral_organization = {
 				add_mio_funds = 2000

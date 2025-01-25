@@ -169,8 +169,8 @@ if = {
 		type = small_plane_airframe_1
 		design_team = mio:CHN_chnairm5_organization
 		modules = {
-			fixed_main_weapon_slot = light_mg_2x
-			fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+			fixed_main_weapon_slot = light_mg_4x
+			fixed_auxiliary_weapon_slot_1 = light_mg_4x
 			engine_type_slot = engine_2_1x
 			special_type_slot_1 = empty
 		}

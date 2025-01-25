@@ -2278,7 +2278,7 @@ equipment_modules = {
 		add_equipment_type = { naval_bomber maritime_patrol_plane }
 
 		add_stats = {	
-			build_cost_ic = 15
+			build_cost_ic = 10
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -2294,7 +2294,7 @@ equipment_modules = {
 			add_stats = {
 				air_agility = -20
 				weight = 20
-				naval_strike_attack = 25
+				naval_strike_attack = 15
 			}
 			add_average_stats = {
 				naval_strike_targetting = 15 # increased from vanilla

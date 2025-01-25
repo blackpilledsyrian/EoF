@@ -665,6 +665,10 @@ technologies = {
 			hard_attack = 0.25
 			ap_attack = 1
 		}
+		at_mechanized = {
+			hard_attack = -0.2
+			ap_attack = -1
+		}
 
 		path = {
 			leads_to_tech = infantry_at2
@@ -709,6 +713,10 @@ technologies = {
 		category_all_infantry = {
 			hard_attack = 0.25
 			ap_attack = 1
+		}
+		at_mechanized = {
+			hard_attack = -0.2
+			ap_attack = -1
 		}
 
 		path = {

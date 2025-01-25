@@ -129,9 +129,10 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 				military_industrial_organization_research_bonus = 0.1
 				military_industrial_organization_funds_gain = 0.3
+				dockyard_donations = 5
 			}	
 		}
 		EoF_gday_marines = {

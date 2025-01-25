@@ -1174,7 +1174,7 @@ focus_tree = {
 	focus = {
 		id = CHN_olenian_factories
 		icon = GFX_goal_chn_ole_factories
-		cost = 8
+		cost = 5
 		prerequisite = {
 			# focus = offer_puppet
 			focus = conquest
@@ -1199,21 +1199,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_olenian_factories"
-			76 = {
+			194 = {
 			    remove_building = {
-				    type = industrial_complex
-				    level = 2
+				    type = dockyard
+				    level = 1
 			    }
+		    }
+			76 = {
 				remove_building = {
 					type = dockyard
-					level = 2
+					level = 3
 				}
-		    }
-			191 = {
-			    remove_building = {
-				    type = arms_factory
-				    level = 2
-			    }
 		    }
 			69 = {
 				remove_building = {
@@ -1221,37 +1217,8 @@ focus_tree = {
 					level = 2
 				}
 			}
-			309 = {
-			    add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = industrial_complex
-				    level = 2
-				    instant_build = yes
-			    }
-		    }
-			259 = {
-			    add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = arms_factory
-				    level = 2
-				    instant_build = yes
-			    }
-		    }
-			304 = {
-				add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = dockyard
-				    level = 2
-				    instant_build = yes
-			    }
-			}
-			305 = {
-				add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = dockyard
-				    level = 2
-				    instant_build = yes
-			    }
+			add_offsite_building = { 
+				type = dockyard level = 6 
 			}
 		}
 	}
@@ -2751,8 +2718,8 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EoF_industry_deadline
-		icon = GFX_goal_chn_man_devolution
+		id = EoF_max_our_weapons
+		icon = GFX_goal_chn_man_panzerfaust
 		cost = 5
 		prerequisite = {
 			focus = EoF_our_war_plan
@@ -2763,10 +2730,45 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = EoF_CHN_warplan_short_flag
-			date < 1012.03.01
 		}
 		relative_position_id = EoF_our_war_plan
 		x = -2
+		y = 1
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_CHN_warplan_short_1
+				days = 90
+			}
+		}
+	}
+
+	focus = {
+		id = EoF_existing_production
+		icon = GFX_goal_chn_man_gears
+		cost = 5
+		prerequisite = {
+			focus = EoF_max_our_weapons
+		}
+		relative_position_id = EoF_max_our_weapons
+		x = 0
+		y = 1
+		completion_reward = {
+			add_ideas = EoF_CHN_warplan_short_2
+		}
+	}
+
+	focus = {
+		id = EoF_industry_deadline
+		icon = GFX_goal_chn_man_devolution
+		cost = 5
+		prerequisite = {
+			focus = EoF_existing_production
+		}
+		available = {
+			date < 1012.06.01
+		}
+		relative_position_id = EoF_existing_production
+		x = 0
 		y = 1
 		completion_reward = {
 			custom_effect_tooltip = EoF_industry_deadline_tt
@@ -2778,40 +2780,6 @@ focus_tree = {
 	}
 
 	focus = {
-		id = EoF_existing_production
-		icon = GFX_goal_chn_man_gears
-		cost = 5
-		prerequisite = {
-			focus = EoF_industry_deadline
-		}
-		relative_position_id = EoF_industry_deadline
-		x = 0
-		y = 1
-		completion_reward = {
-			add_ideas = EoF_CHN_warplan_short_2
-		}
-	}
-
-	focus = {
-		id = EoF_max_our_weapons
-		icon = GFX_goal_chn_man_panzerfaust
-		cost = 5
-		prerequisite = {
-			focus = EoF_existing_production
-		}
-		relative_position_id = EoF_existing_production
-		x = 0
-		y = 1
-		completion_reward = {
-			add_timed_idea = {
-				idea = EoF_CHN_warplan_short_1
-				days = 90
-			}
-		}
-	}
-
-
-	focus = {
 		id = EoF_modern_industry_war
 		icon = GFX_goal_chn_man_bullets
 		cost = 5
@@ -2819,7 +2787,7 @@ focus_tree = {
 			focus = EoF_our_war_plan
 		}
 		mutually_exclusive = {
-			focus = EoF_industry_deadline
+			focus = EoF_max_our_weapons
 			focus = EoF_retool_eco
 		}
 		available = {
@@ -2884,7 +2852,7 @@ focus_tree = {
 			focus = EoF_our_war_plan
 		}
 		mutually_exclusive = {
-			focus = EoF_industry_deadline
+			focus = EoF_max_our_weapons
 			focus = EoF_modern_industry_war
 		}
 		available = {
@@ -5059,7 +5027,7 @@ focus_tree = {
 	focus = {
 		id = chn_navylysander
 		icon = GFX_goal_chn_lysander
-		cost = 9
+		cost = 5
 		x = 39
 		y = 0
 		# available = {
@@ -5115,7 +5083,7 @@ focus_tree = {
 	focus = {
 		id = chn_navymimic
 		icon = GFX_goal_chn_mimic
-		cost = 9
+		cost = 5
 		x = 37
 		y = 0
 		# available = {
@@ -5179,7 +5147,7 @@ focus_tree = {
 		x = 36
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 0 }
 
 
@@ -5213,7 +5181,7 @@ focus_tree = {
 		x = 38
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5238,7 +5206,7 @@ focus_tree = {
 		x = 38
 		y = 3
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5270,7 +5238,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5315,7 +5283,7 @@ focus_tree = {
 		x = 42
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5340,7 +5308,7 @@ focus_tree = {
 		x = 42
 		y = 3
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5395,7 +5363,7 @@ focus_tree = {
 		x = 38
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 20 }
 
 
@@ -5431,7 +5399,7 @@ focus_tree = {
 		x = 40
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 0 }
 
 
@@ -5466,7 +5434,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5493,7 +5461,7 @@ focus_tree = {
 		x = -2
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5519,7 +5487,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5545,7 +5513,7 @@ focus_tree = {
 		relative_position_id = CHN_battleship_navy
 		x = 0
 		y = 2
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5576,7 +5544,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5607,7 +5575,7 @@ focus_tree = {
 		relative_position_id = CHN_submarine_navy
 		x = 0
 		y = 3
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 		available = {
 			if = {

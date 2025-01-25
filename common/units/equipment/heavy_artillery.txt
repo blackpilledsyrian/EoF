@@ -26,7 +26,6 @@ equipments = {
 		archetype = heavy_artillery_equipment
 		priority = 50
 		visual_level = 0
-		
 
 		#Defensive Abilities
 		defense = 16
@@ -52,8 +51,6 @@ equipments = {
 		parent = heavy_artillery_equipment_1
 		priority = 50
 		visual_level = 0
-		
-		
 
 		#Defensive Abilities
 		defense = 20
@@ -80,8 +77,6 @@ equipments = {
 		priority = 50
 		visual_level = 0
 		
-		
-
 		#Defensive Abilities
 		defense = 24
 		breakthrough = 0

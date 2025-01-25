@@ -64,7 +64,7 @@ NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.016	-- global damage 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1	-- how many CAS/TAC can enter a combat depending on enemy width there
 
 NDefines.NMilitary.PLANNING_DECAY = 0.01
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03		-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01		-- Amount of planning lost due to player manual order
 NDefines.NMilitary.PLANNING_GAIN = 0.02
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01	-- Planning Bonus gain per day for naval invasions
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -1	-- Malus in percentage for the planning bonus gain for naval invasions
@@ -84,7 +84,7 @@ NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY = -1		-- over combat width penalty 
 NDefines.NMilitary.COMBAT_OVER_WIDTH_PENALTY_MAX = -0.15	-- over combat width max (when you cant join no more).
 NDefines.NMilitary.COMBAT_STACKING_START = 4			-- at what nr of divisions stacking penalty starts
 NDefines.NMilitary.COMBAT_STACKING_EXTRA = 1                    -- extra stacking from directions
-NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.1		-- how much stacking penalty per division
+NDefines.NMilitary.COMBAT_STACKING_PENALTY = -0.25		-- how much stacking penalty per division
 
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 24		-- how many divisions a corps commander is limited to. 0 = inf, < 0 = blocked
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 24		-- how many divisions a field marshall is limited to. 0 = inf, < 0 = blocked

@@ -4440,10 +4440,12 @@ shared_focus = {
 	id = GRI_new_navy
 	icon = GFX_goal_Griffonian_Marine_1
 	available = {
-		has_completed_focus = EoF_expand_our_shores
 		any_controlled_state_is_coastal = yes
 		433 = { 
 		    is_owned_and_controlled_by = ROOT 
+			has_dynamic_modifier = {
+				modifier = EoF_naval_industrial_zone
+			}
 		}
 	}
 	x = 27
