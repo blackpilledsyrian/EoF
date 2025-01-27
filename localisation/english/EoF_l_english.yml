@@ -432,6 +432,8 @@ EoF_CHN_PLB_investment:0 "Polar Investments"
 EoF_PLB_industry:0 "Polar Equipment Specifications"
 EoF_PLB_industry_desc:0 "Our industry suffers from two issues, not only must our outdated traditional workshops manufacture state of the art equipment, but, our equipment must also be uniquely designed to support Polar Bear stature. These dual issues severely hamper our ability to produce certain types of equipment."
 
+EoF_CHN_initial_army_expansion:0 "Initial Army Expansion"
+
 EoF_CHN_final_army_expansion:0 "Final Army Expansion"
 EoF_CHN_final_army_expansion_tt:0 "This idea will be removed upon the beginning of the Great War."
 

@@ -721,7 +721,7 @@ equipment_modules = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 1
 		}
-		xp_cost = 1
+		xp_cost = 0
 	}
 	demolition_gun = { #Centurion AVRE!
 		abbreviation = "dmg"

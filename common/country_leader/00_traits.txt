@@ -374,7 +374,7 @@ leader_traits = {
 	head_of_intelligence = {
 		random = no
 		
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.15
 		ai_will_do = {
 			factor = 1
@@ -2307,7 +2307,7 @@ leader_traits = {
 		agency_upgrade_time = -0.1
 		intel_network_gain_factor = 0.1
 		resistance_growth_on_our_occupied_states = 0.1
-		operative_slot = 1
+		operative_slot = 2
 	}
 	commander_of_the_fetno_derash_no_lar = {
 		random = no
@@ -2755,7 +2755,7 @@ leader_traits = {
 		}
 		drift_defence_factor = 0.05
 		research_speed_factor = 0.025 
-		operative_slot = 1
+		operative_slot = 2
 	}
 
 	ITA_tomislav_of_croatia = {
@@ -2848,7 +2848,7 @@ leader_traits = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 		resistance_target_on_our_occupied_states = 0.1
 		boost_ideology_mission_factor = 0.15
-		operative_slot = 1
+		operative_slot = 2
 		modifier_army_sub_unit_militia_defence_factor = 0.05
 	}
 
@@ -3111,7 +3111,7 @@ leader_traits = {
 		agency_upgrade_time = -0.15
 		decryption_factor = 0.1
 		army_intel_factor = 0.3
-		operative_slot = 1
+		operative_slot = 2
 	}
 
 	SWI_humanitarian = { #Unlocks Support Humanitarian Efforts 
@@ -4300,7 +4300,7 @@ leader_traits = {
 
 	special_envoy = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.2
 		civilian_intel_factor = 0.2
 		stability_factor = 0.05
@@ -4672,7 +4672,7 @@ leader_traits = {
 		random = no
 		intel_network_gain_factor = 0.2
 		agency_upgrade_time = -0.2
-		operative_slot = 1
+		operative_slot = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -4808,7 +4808,7 @@ leader_traits = {
 		intel_network_gain_factor = 0.2
 		communism_drift = 0.05
 		war_support_factor = 0.10
-		operative_slot = 1
+		operative_slot = 2
 	}
 
 	BRA_emperor_trait = {
@@ -5006,7 +5006,7 @@ leader_traits = {
 		random = no
 		resistance_activity = -0.1
 		resistance_damage_to_garrison = -0.1
-		operative_slot = 1
+		operative_slot = 2
 		resistance_decay = 0.1
 		stability_factor = -0.05
 	}
@@ -7448,7 +7448,7 @@ leader_traits = {
 
 	HUN_military_intelligence_officer = {
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		army_intel_to_others = -10.0
 		army_intel_factor = 0.15
 	}
@@ -9210,7 +9210,7 @@ leader_traits = {
 	AUS_secretive_priest = {
 		random = no #this is heinrich maier
 
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.2
 		civilian_intel_factor = 0.2
 		democratic_drift = 0.02
@@ -10099,14 +10099,14 @@ leader_traits = {
 	GER_intelligence_coordinator = { #Zaisser
 		random = no
 
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.2
 	}
 
 	GER_secretary_of_state_security = { #Zaisser Upgrade
 		random = no
 
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.2
 		resistance_damage_to_garrison = -0.2
 		foreign_subversive_activites = -0.3
@@ -10118,7 +10118,7 @@ leader_traits = {
 		resistance_growth = -0.05
 		civilian_intel_to_others = -0.2
 		army_intel_to_others = -0.2
-		operative_slot = 1
+		operative_slot = 2
 	}
 
 	GER_reich_security_main_office_director_no_lar = { #Heydrich
@@ -10130,7 +10130,7 @@ leader_traits = {
 
 	head_of_the_abwehr = { # Canaris
 		random = no
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.2
 	}
 
@@ -10355,7 +10355,7 @@ leader_traits = {
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.02
 		subversive_activites_upkeep = -0.25
-		operative_slot = 1
+		operative_slot = 2
 		intelligence_agency_defense = 0.2
 		intel_from_combat_factor = 0.25
 	}
@@ -10369,7 +10369,7 @@ leader_traits = {
 		foreign_subversive_activites = -0.3
 		non_core_manpower = 0.04
 		subversive_activites_upkeep = -0.25
-		operative_slot = 1
+		operative_slot = 2
 		intelligence_agency_defense = 0.2
 		intel_from_combat_factor = 0.25
 		resistance_growth = -0.15

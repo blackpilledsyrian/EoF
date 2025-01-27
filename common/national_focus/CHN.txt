@@ -437,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vesalipolis
 		icon = GFX_goal_chn_vesalipolis
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = industrial_research
 		}
@@ -3542,8 +3542,7 @@ focus_tree = {
 			focus = CHN_griffon_school_of_war
 		}
 		available = {
-			date > 1010.01.01
-			date < 1011.01.01
+			has_war = no
 		}
 		completion_reward = {
 			custom_effect_tooltip = EoF_afrika_korps_tt
@@ -3594,6 +3593,26 @@ focus_tree = {
 						unit_medals = EoF_afrika_korps_medal
 					}
 				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_industrialized_army
+		icon = GFX_goal_chn_man_bullets
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CHN_Army
+		prerequisite = {
+			focus = CHN_Army
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_CHN_initial_army_expansion
+				days = 365
 			}
 		}
 	}

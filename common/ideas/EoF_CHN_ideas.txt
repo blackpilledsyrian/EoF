@@ -72,6 +72,16 @@ ideas = {
 				custom_modifier_tooltip = EoF_CHN_core_buff_tt
 			}
 		}
+		EoF_CHN_initial_army_expansion = {
+			removal_cost = -1
+			picture = ARG_rapid_militarization
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.05
+				military_factory_donations = 5
+			}
+		}
 		EoF_CHN_final_army_expansion = {
 			removal_cost = -1
 			picture = ARG_rapid_militarization
@@ -79,7 +89,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				industrial_capacity_factory = 0.15
-				military_factory_donations = 20
+				military_factory_donations = 10
 			}
 		}
 		EoF_war_measures = {

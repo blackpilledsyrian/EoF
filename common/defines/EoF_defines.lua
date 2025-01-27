@@ -278,7 +278,7 @@ NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 2.0	-- low org of the sh
 
 NDefines.NNavy.BASE_POSITIONING = 0.8				-- base value for positioning
 
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 3.0				-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 1.0				-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.2				-- this screen ratio to num convoys is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0				-- this capital ratio to num carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1				-- this capital ratio to num convoys is needed for full screening beyond screen line

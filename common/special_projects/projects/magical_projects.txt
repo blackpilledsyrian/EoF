@@ -122,10 +122,12 @@ sp_magical_telekinetic_fields = { ## Induced Telekinetic Fields
 		specialization_magical = 1
 	}
 
+	allowed = {
+		always = no
+	}
+	
 	available = {
-		FROM = {
-			has_tech = magical_weapons1
-		}
+		always = no
 	}
 
 	project_output = {
@@ -1025,10 +1027,12 @@ sp_magical_earth_shatter_crystal_projectiles = { ## Energy Shatter Crystal Proje
 		}
 	}
 
+	allowed = {
+		always = no
+	}
+	
 	available = {
-		FROM = {
-			has_tech = magical_weapons2
-		}
+		always = no
 	}
 
 	ai_will_do = {

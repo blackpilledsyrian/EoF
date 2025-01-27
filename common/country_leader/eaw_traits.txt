@@ -5007,7 +5007,7 @@ apn_time_queen= {
 		intel_network_gain_factor = 0.1
 		resistance_garrison_penetration_chance = -0.05
 		
-		operative_slot = 1
+		operative_slot = 2
 		agency_upgrade_time = -0.1
 	}
 	

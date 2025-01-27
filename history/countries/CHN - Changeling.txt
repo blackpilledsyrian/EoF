@@ -367,7 +367,7 @@ add_ideas = {
 	political_divisions
 	limited_exports
 	limited_conscription
-	low_economic_mobilisation
+	partial_economic_mobilisation
 	national_arms_enterprises
 	martial_society
 	CHN_GRI_Attache_For_CHN

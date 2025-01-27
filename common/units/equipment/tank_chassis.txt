@@ -215,6 +215,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = ventilation_system
+			count < 2
+		}
+		module_count_limit = {
 			module = open_top_design
 			count < 2
 		}
@@ -646,6 +650,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = ventilation_system
+			count < 2
+		}
+		module_count_limit = {
 			module = open_top_design
 			count < 2
 		}
@@ -1042,6 +1050,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = fire_control_computer
+			count < 2
+		}
+		module_count_limit = {
+			module = ventilation_system
 			count < 2
 		}
 		module_count_limit = {
@@ -1499,6 +1511,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = ventilation_system
+			count < 2
+		}
+		module_count_limit = {
 			module = open_top_design
 			count < 2
 		}
@@ -1870,6 +1886,10 @@ equipments = {
 			count < 2
 		}
 		module_count_limit = {
+			module = ventilation_system
+			count < 2
+		}
+		module_count_limit = {
 			module = open_top_design
 			count < 2
 		}
@@ -2167,6 +2187,10 @@ equipments = {
 		}
 		module_count_limit = {
 			module = fire_control_computer
+			count < 2
+		}
+		module_count_limit = {
+			module = ventilation_system
 			count < 2
 		}
 		module_count_limit = {
