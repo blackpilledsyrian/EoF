@@ -1168,6 +1168,100 @@ decrease_southern_equus_invasion_idea = {
 		}
 	}
 }
+increase_STG_southern_equus_invasion_idea = {
+	if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_0 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_0
+				add_idea = EoF_STG_southern_island_campaign_1
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_1 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_1
+				add_idea = EoF_STG_southern_island_campaign_2
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_2 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_2
+				add_idea = EoF_STG_southern_island_campaign_3
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_3 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_3
+				add_idea = EoF_STG_southern_island_campaign_4
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_4 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_4
+				add_idea = EoF_STG_southern_island_campaign_5
+			}
+		}
+	}
+}
+decrease_STG_southern_equus_invasion_idea = {
+	if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_1 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_1
+				add_idea = EoF_STG_southern_island_campaign_0
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_2 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_2
+				add_idea = EoF_STG_southern_island_campaign_1
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_3 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_3
+				add_idea = EoF_STG_southern_island_campaign_2
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_4 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_4
+				add_idea = EoF_STG_southern_island_campaign_3
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_5 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_5
+				add_idea = EoF_STG_southern_island_campaign_4
+			}
+		}
+	}
+}
 increase_HIP_invasion_terrain = {
 	if = {
 		limit = { 683 = { has_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_0 } } }

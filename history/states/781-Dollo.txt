@@ -6,7 +6,7 @@ state={
 	history={
 		owner = ABY
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 
 		}
 		add_core_of = ABY
@@ -20,4 +20,5 @@ state={
 	buildings_max_level_factor=1.000
 	state_category=wasteland
 	local_supplies=0.000
+	impassable=yes
 }

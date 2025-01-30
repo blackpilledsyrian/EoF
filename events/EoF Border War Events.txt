@@ -31,6 +31,9 @@ country_event = {
 				terrain_factor = 0
 			}
 		}
+		set_border_war_data = {
+			combat_width = 90
+		}
 		hidden_effect = {
 			GRF = {
 				add_named_threat = {

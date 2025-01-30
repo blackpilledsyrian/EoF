@@ -3801,6 +3801,12 @@ technologies = {
 	berlin_path = {
 		doctrine_name = "TITLE_BERLIN_PATH"
 
+		allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_EoF_advanced_land_doctrine
+		   }
+	   	}
+
 		xor = { brussels_path global_path warsaw_path }
 		
 		xp_research_type = army
@@ -4191,6 +4197,12 @@ technologies = {
 	brussels_path = {
 		doctrine_name = "TITLE_BRUSSELS_PATH"
 
+		allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_EoF_advanced_land_doctrine
+		   }
+	   	}
+
 		xp_research_type = army
 		xp_unlock_cost = 100
 		
@@ -4576,6 +4588,12 @@ technologies = {
 		
 	global_path = {
 		doctrine_name = "TITLE_GLOBAL_PATH"
+
+		allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_EoF_advanced_land_doctrine
+		   }
+	   	}
 
 		xp_research_type = army
 		xp_unlock_cost = 100
@@ -5015,6 +5033,12 @@ technologies = {
 		
 	warsaw_path = {
 		doctrine_name = "TITLE_WARSAW_PATH"
+
+		allow = {
+			ROOT = {
+			   is_special_project_completed = sp:sp_EoF_advanced_land_doctrine
+		   }
+	   	}
 
 		xp_research_type = army
 		xp_unlock_cost = 100

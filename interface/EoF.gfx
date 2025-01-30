@@ -517,6 +517,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
 	}
 	SpriteType = {
+		name = "GFX_early_super_heavy_tank_chassis_medium"
+		textureFile = "gfx/interface/technologies/generic_super_heavy_tank_chassis.dds"
+	}
+	SpriteType = {
 		name = "GFX_tank_super_heavy_cannon_medium"
 		textureFile = "gfx/interface/technologies/super_heavy_cannon.dds"
 	}

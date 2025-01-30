@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sp_EoF_fire_control_computer"
+		texturefile = "gfx/interface/special_project/project_icons/sp_EoF_fire_control_computer.dds"
+	}
+	spriteType = {
+		name = "GFX_sp_EoF_advanced_land_doctrine"
+		texturefile = "gfx/interface/special_project/project_icons/sp_EoF_advanced_land_doctrine.dds"
+	}
+}

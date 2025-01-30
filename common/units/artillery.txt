@@ -203,5 +203,10 @@ sub_units = {
 			category = category_self_propelled_artillery
 			soft_attack = 0.05
 		}
+
+		battalion_mult = {
+			category = category_line_artillery
+			soft_attack = 0.05
+		}
 	}
 }

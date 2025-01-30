@@ -127,7 +127,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = tank_super_heavy_cannon
+			leads_to_tech = early_super_heavy_tank_chassis
 			research_cost_coeff = 1
 		}
 
@@ -1440,6 +1440,41 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
+	early_super_heavy_tank_chassis = { #Char 2C
+
+		enable_equipments = {
+			super_heavy_tank_chassis_0
+		}
+
+		enable_subunits = {
+			super_heavy_armor
+		}
+
+		path = {
+			leads_to_tech = tank_super_heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2.5
+		start_year = 1005
+		folder = {
+			name = nsb_armour_folder
+			position = { x = 8 y = @1005 }
+		}
+
+		ai_will_do = {
+			factor = 0 # Hitler cries on the inside
+		}
+
+		categories = {
+			armor
+			mio_cat_tech_all_armor_and_modules
+			cat_heavy_armor
+			mio_cat_tech_heavy_armor_and_modules
+		}
+		special_project_specialization = { specialization_land }
+	}
+
 	tank_super_heavy_cannon = {
 		enable_equipment_modules = {
 			tank_super_heavy_cannon
@@ -1478,14 +1513,6 @@ technologies = {
 			super_heavy_tank_destroyer_chassis_1
 			super_heavy_tank_artillery_chassis_1
 			super_heavy_tank_aa_chassis_1
-		}
-
-		enable_subunits = {
-			super_heavy_armor
-		}
-
-		enable_equipment_modules = {
-			tank_super_heavy_cannon
 		}
 
 		path = {

@@ -107,10 +107,13 @@ EoF_JER_acl_organization:0 "ACL"
 EoF_JER_acf_organization:0 "ACF"
 
 STG_economic_policy:0 "State Economic Mandate"
-EoF_STG_state_defense_committee_0: "State Defense Committee"
-EoF_STG_state_defense_committee_1: "State Defense Committee"
-EoF_STG_state_defense_committee_2: "State Defense Committee"
-EoF_STG_state_defense_committee_3: "State Defense Committee"
+EoF_STG_state_defense_committee_0:0 "State Defense Committee"
+EoF_STG_state_defense_committee_1:0 "State Defense Committee"
+EoF_STG_state_defense_committee_2:0 "State Defense Committee"
+EoF_STG_state_defense_committee_3:0 "State Defense Committee"
+
+EoF_STG_delayed_UPA:0 "UPA Membership Negotiations"
+EoF_STG_delayed_UPA_tt:0 "Once this idea §Yexpires§!, or on §YOctober 1st, 1011§!, whichever first, §YSTG§! will join the §YUPA§!."
 
 EoF_category:0 "Game Decisions"
 EoF_big_division_decision:0 "Add a 48w Template"
@@ -238,27 +241,6 @@ EoF_GRF_border_war_decision_2:0 "Retake Tsasbaatar"
 EoF_GRI_border_war_decision:0 "Seize Skyfallian Territory"
 EoF_GRI_imperial_coast_tooltip:0 "All focuses within §YNova Griffonia§!'s Industrial Tree that grant factories shall grant §G1 additional factory§!."
 
-EoF.news.1.t:0 "Snowy Mountain Eruption"
-EoF.news.1.d:0 "[This.GetNewspaperHeader] A giant fucking volcano erupted on the Nova-Stalliongrad Border. Even though this has basically no political implications whatsoever, everyone around the world is tense for some reason. Observers do comment; however, that this is incredibly convenient if a war were to break out between the countries of Northern Equus and Southern Equus to prevent either of the bordering countries from being rolled over instantly."
-EoF.news.1.a:0 "So that's why it's impassable."
-EoF_GRF_volcano_tension:0 "Snowy Mountain Eruption"
-
-EoF.news.2.t:0 "Rising Tensions in North Zebrica"
-EoF.news.2.d:0 "[This.GetNewspaperHeader] Recent Abyssinian war camps have been spotted close to the border around El Alamane. Although no aggressive actions have been taken yet, the movement of additional troops and stockpiling of supplies in the region lends credence to theories of a possible attack in the future. Equally importantly, it is as of yet unknown whether the Abyssianian government is undertaking this operation alone, or is doing so under the orders of the Changelings. Though with their head of government currently missing, it seems likely that the Abyssinian military is recieving orders from elsewhere."
-EoF.news.2.a:0 "Who was in charge again?"
-
-EoF.news.3.t:0 "Aquileia Threatens Equestria"
-EoF.news.3.d:0 "[This.GetNewspaperHeader] Aquileian delegates have recently returned from a diplomatic mission to Equestria. Reportedly, the delegates demanded that Equestrian territory in Fezera, New Mareland and Skyfall be handed over to Aquileian control as they presented 'legitimate security concerns'. In response, Equestrian officials have made it clear that despite any grievances the Aquileian government may have, these territories will forevermore remain under the protection of Equestria and her allies."
-EoF.news.3.a:0 "War is Looming."
-
-EoF.news.4.t:0 "Aquileia Threatens Wingbardy"
-EoF.news.4.d:0 "[This.GetNewspaperHeader] Following a stunning series of victories against Equestria, Aquileia has officially called into question the validity of the Treaty of Tarrin. Meanwhile in Karthin, Wingbardian officials responded decisively with a unilaterial denouncement of Aquileian aggression, as well as passing several unprecedented laws that would see the first fulltime remilitarization of Wingbardy since its unification years ago."
-EoF.news.4.a:0 "Wingbardy will be tested."
-
-EoF.news.5.t:0 "Imperial Naval Expansion"
-EoF.news.5.d:0 "[This.GetNewspaperHeader] The Griffonian Empire, renowned for its formidable land-based military prowess, is now setting its sights on the seas. With a small but strategic shoreline, the Empire has launched an ambitious project to expand its dockyard capacity. Officials announced the initiative aims to bolster naval capabilities, supporting both defense and trade. The expansion signifies a pivotal shift in Griffonia's strategic focus, reflecting growing maritime ambitions and a commitment to securing its coastal borders."
-EoF.news.5.a:0 "More coast is needed..."
-
 EoF_YAK_JAK_civil_war:0 "Yak-Jak Civil War"
 EoF_YAK_JAK_civil_war_volunteers_1:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_volunteers_2:0 "Yak-Jak Civil War Volunteers"
@@ -270,44 +252,7 @@ EoF_SDL_EMR_war_volunteers_2:0 "Arab-Emir War Volunteers"
 
 EoF_YAK_thanks:0 "Yak Gift"
 EoF_JAK_thanks:0 "Jak Gift"
-EoF.2.t:0 "Thanks From the Yaks"
-EoF.2.desc:0 "As thanks for our contribution to their victory in the civil war, the Yaks have sent over a delegation bearing traditional gifts of their country. After the official celebratory ceremony, the Yak delegation privately confirmed the transfer of 50 tonnes of gold seized from the Jaks."
-EoF.2.a:0 "We can't accept all this..."
-EoF.3.t:0 "Thanks From the Jaks"
-EoF.3.desc:0 "As thanks for our contribution to their victory in the civil war, the Jaks have sent over a delegation bearing traditional gifts of their country. After the official celebratory ceremony, the Jak delegation privately confirmed the transfer of 100 tonnes of gold seized from the Yaks."
-EoF.3.a:0 "Quid pro quo."
 
-EoF.4.t:0 "Stalliongrad Proposes Deal to Join the UPA"
-EoF.4.desc:0 "Stalliongrad has offered us a deal to secure their entry into the UPA. If we return their claimed border territory and give them access to several strategic islands, they would be willing to join our alliance. While the current situation behooves us to accept their proposal, perhaps we should send a counteroffer that does not require us transfer as much territory."
-EoF.4.a:0 "Their requests are reasonable."
-EoF.4.b:0"A compromise is nessecary."
-
-EoF.5.t:0 "Request Nova Griffonian Assistance"
-EoF.5.desc:0 "While our army is more than capable of handing the pathetic Penguins alone, the approach to Amundsen is devoid of infrastructure as well as bordered by both mountains and sea. By asking the Nova Griffonians to join us in this endeavour we will soldify our friendship and speed up our conquest of Pingland."
-EoF.5.a:0 "Send the request."
-
-EoF.6.t:0 "First Wesslandia Award"
-EoF.6.desc:0 "The Polar Bears have requested we arbitrate a transfer of territorial ownership within the former Griffon Frontier. Bjornling argues that these historical lands were wrongfully colonized during the height of the Griffonian Empire but have now been left in a sordid state by the incompetent Nova Griffonian government. Thusly, he claims, that under Polar Bear management the full potential of these lands may be utilized for the greater good of the Changeling Hegemony."
-EoF.6.a:0 "He has a point, but Nova Griffonia is still an ally."
-EoF.6.b:0 "Bjornling is right, they are weak."
-
-EoF.16.t:0 "Second Wesslandia Award"
-EoF.16.desc:0 "The Polar Bears have requested we arbitrate a transfer of territorial ownership within the former Jaki-Clan. Bjornling argues that these historical lands were wrongfully occupied by the Kingdom of Yakyakistan but have now been left in a sordid state by the incompetent Yak government. Thusly, he claims, that under Polar Bear management the full potential of these lands may be utilized for the greater good of the Changeling Hegemony. Additionally, under advice from Griffonian Republic diplomats, Bjornling has also requested that some territory be given to Nova Griffonia."
-EoF.16.a:0 "It worked so well last time..."
-
-EoF.13.t:0 "Our New Naval Strategy"
-EoF.13.desc:0 "After several months of rapid fire research and testing at the École Navale, our premier theorists and admirals have presented us with several options addressing different actions our fleet may be required to conduct. Which of these should take precedent over the others?"
-EoF.13.a:0 "Support."
-EoF.13.b:0 "Supremacy."
-EoF.13.c:0 "Speed."
-
-EoF.14.t:0 "Grover's Birthday Present"
-EoF.14.desc:0 "Dear Princess Celestia,\nHi! It's me, Grover. My birthday is coming up, and I was wondering if you could give me the city of Skyfall as a present? It would be amazing!\nThank you,\nGrover\n\nDear Princess Celestia,\nHello again! Just a reminder about my birthday. I really, really want Skyfall as my present. It’s my dream to have it!\nBest wishes,\nGrover\n\nDear Princess Celestia,\nIt’s Grover. My birthday is soon, and I’m hoping you’ll give me Skyfall. It’s the best gift I could ever ask for!\nThanks a lot,\nGrover\n\nDear Princess Celestia,\nIt’s almost my birthday, and I just wanted to say how much I want Skyfall as my present. Please, it would make me so happy!\nThank you so much,\nGrover"
-EoF.14.a:0 "I hate kids."
-
-EoF_great_war.1.t:0 "Sunset's Counteroffensive"
-EoF_great_war.1.desc:0 "In our darkest hour, an unexpected ally has appeared to help us. Despite being gone for several years, Sunset Shimmer has recently returned to help Equestria defend against the Changeling attack, and she did not return alone. Over the past week, hundreds of thousands of volunteer soldiers from alternate dimensions have arrived along with heavy equipment and integrated themselves within our armed forces."
-EoF_great_war.1.a:0 "This war now spans more than one world..."
 EoF_sunset_shimmer:0 "Sunset Shimmer"
 EoF_sunset_trait:0 "Otherworldly Experience"
 EoF_sunset_trait_desc:0 "§LThis general was long absent from the land, and has only recently returned. During their time abroad they picked up several quirks that some call unsettling and even alien, but which also make them a more effective commander.§!"
@@ -315,51 +260,6 @@ EoF_sunset_shimmer_stats_tp:0 "§YSunset Shimmer§! becomes a Field Marshal.\n§
 
 EoF_equestrian_army_decision:0 "Recruit Local Conscripts"
 EoF_locals_conscripted:0 "Locals Conscripted"
-
-EoF_great_war.2.t:0 "The Question of Winter"
-EoF_great_war.2.desc:0 "The premier question facing our high command at this moment is whether to attack immediately or wait until winter is over to launch our offensive. While every day wasted allows Equestria to mobilize more material, the harsh conditions of winter risk blunting our operation before it even begins."
-EoF_great_war.2.a:0 "Our actions in the next few months will decide the war, attack immediately."
-EoF_great_war.2.b:0 "The Equestrian response will be slow, a summer attack will break them."
-
-EoF_great_war.3.t:0 "Our New War Plan"
-EoF_great_war.3.desc:0 "It is now time to decide how we plan to conduct the future of this war. Whether we prepare for a long attritional conflict or a lightning fast decisive one, we must plan our economy and industry accordingly."
-EoF_great_war.3.a:0 "Maximize our near-future production."
-EoF_great_war.3.b:0 "Maintain steady production."
-EoF_great_war.3.c:0 "Prepare to increase long-term production."
-
-EoF_great_war.4.t:0 "Our New War Plan"
-EoF_great_war.4.desc:0 "So like we gotta come up with a plan to stop the Changelings right? Pick the option you think is the most meta, probably the second or third one. First one's not gonna be good until I rework the island campaign mechanics, though you do get a couple more planes I guess. Man, I need someone to write my events for me."
-EoF_great_war.4.a:0 "The floatie and the flyie things, I like'em."
-EoF_great_war.4.b:0 "Ackchyually, the increased mils and factory output is better."
-EoF_great_war.4.c:0 "My name is Comrade Soviet, or Kettle, or some other bad player who just roaches."
-
-EoF_great_war.5.t:0 "Reform from the Roots"
-EoF_great_war.5.desc:0 "Despite attempts to improve our army command and doctrine pre-war, combat with the Changelings has made it clear that temporary and unplanned solutions will not do. The Equestrian military needs to be reformed from its very roots with clear and specific guiding principles. In order to effect this change, we must decide on a chief architect who will lead us in this task."
-EoF_great_war.5.a:0 "Luna."
-EoF_great_war.5.b:0 "Blueblood."
-EoF_great_war.5.c:0 "Twilight?"
-
-EoF_great_war.6.t:0 "Army Incompetence"
-EoF_great_war.6.desc:0 "In the face of the Changeling offensive, our troops are proving themselves unable to handle sustained combat. Divisonal commanders complain of incompetent officers and poor training, while reports reach high command daily of generals ordering unplanned retreats and failing to communicate. If this does not change quickly, all of our previous effects to modernize and prepare our army will have been for naught."
-EoF_great_war.6.a:0 "We must convene a meeting immediately."
-
-EoF_great_war.8.t:0 "Starlight's Counteroffensive"
-EoF_great_war.8.desc:0 "My dear, soviet comrades. I bring grave news. Equestria is at war, nay, Equus itself is on fire. If we are to succeed here and defeat our sole nemesis, this dark thing, we must try hard. Some might have heard the Changelings deny or reject my ability to turn the tide. To that I say only this, nah I'm a pro."
-EoF_great_war.8.a:0 "Hearts of Iron."
-
-EoF_great_war.9.t:0 "Contingency Plans"
-EoF_great_war.9.desc:0 "My princess, our current military forces have proven unable to fully contain the Changeling offensive. As such, it is now imperative to begin the development of contingencies to halt the enemy's advance if conventional means fail. The war council has reluctantly suggested the potential use of chemical weapons as a last resort. This decision weighs heavily on my conscience, knowing the devastating consequences it could bring, but the survival of Equestria may depend on our ability to enact such drastic measures.\n\nWith your permission, our scientists may begin the work of developing and stockpiling the prerequisite amount of chemical agent nessecary to grant us this capibility."
-EoF_great_war.9.a:0 "Take the utmost caution, but proceed."
-
-EoF_great_war.10.t:0 "Operation Vegetarian"
-EoF_great_war.10.desc:0 "Our scientists have recently completed the refinement of large quantities of the insecticide Ant-Thrax. Although the ecological and ethical implications are massive, the fate of our populace under Changeling occupation is worse. Enemy aerial power prevents the effective deployment of these chemical weapons by air; therefore, the only possible delivery method will be via high-power artillery. However, while our troops will be spared the harshest effects, the toxicity and proximity will still likely cause adverse effects within our army.\n\nFor us to deploy such a weapon, we need your explicit signed permission, my princess."
-EoF_great_war.10.a:0 "Ruthlessness is mercy upon ourselves."
-
-EoF_great_war.11.t:0 "Sunset Armour Selection"
-EoF_great_war.11.desc:0 "Marshal Sunset has presented us with several options on available armour support options from our otherworldly benefactors. It should be known that the total expense of the pledged support will not change depending on our selected option; therefore, the request for heavier vehicles will in turn result in a lesser total vehicle count."
-EoF_great_war.11.a:0 "Heavy Armour"
-EoF_great_war.11.b:0 "Medium Armour"
-EoF_great_war.11.c:0 "Light Armour"
 
 EoF_operation_vegetarian_stockpile:0 "Operation Vegetarian Preparation"
 EoF_operation_vegetarian_decision:0 "Enact Operation Vegetarian"
@@ -860,6 +760,13 @@ EoF_EQS_southern_island_campaign_3:0 "Celestial Sea Islands: §YHeavily Threaten
 EoF_EQS_southern_island_campaign_4:0 "Celestial Sea Islands: §7Threatened§!"
 EoF_EQS_southern_island_campaign_5:0 "Celestial Sea Islands: §GNormal§!"
 
+EoF_STG_southern_island_campaign_0:0 "Celestial Sea Islands: §RCatastrophic§!"
+EoF_STG_southern_island_campaign_1:0 "Celestial Sea Islands: §tVery Dangerous§!"
+EoF_STG_southern_island_campaign_2:0 "Celestial Sea Islands: §ODangerous§!"
+EoF_STG_southern_island_campaign_3:0 "Celestial Sea Islands: §YHeavily Threatened§!"
+EoF_STG_southern_island_campaign_4:0 "Celestial Sea Islands: §7Threatened§!"
+EoF_STG_southern_island_campaign_5:0 "Celestial Sea Islands: §GNormal§!"
+
 EoF_sunset_line_warning:0 "Multiversal Emergency SOS Beacon"
 
 ### Olenia
@@ -905,19 +812,4 @@ EoF_orb_of_chital_desc:0 "Born in Kiria, Orb of Chital is widely known for two t
 
 EoF_principal_cinch:0 "Principal Cinch"
 EoF_principal_cinch_desc:0 "that bitch from EQg that was the principal of the Crystal school \n\nbut a pony"
-
-EoF.cityfall.701.t:0 "The Fall of Coltoba"
-EoF.cityfall.701.d:0 "[This.GetNewspaperHeader]Today the changling and their Feline allies suffers a defeat. News from the frontline has been scarce due to its remote nature, however, official sources has confirmed that the frontline city of Coltoba has fallen to the United Ponies Alliance. The Hedgmony's forces is beten back from the edges of the city and is now in full retreat. \n\nThe Queendom must send reinforcements to the frontline immediatly to attempt to stabilise the situation and prevent the UPA from taking over the valuable Abysinnian rubber plantations and oilfields. Without more concentrated efforts the Alliance forces are sure to achive victory."
-EoF.cityfall.701.a:0 "Forward, to victory!"
-EoF.cityfall.701.b:0 "We must counter-attack!"
-EoF.cityfall.701.c:0 "The situation develops."
-
-EoF.cityfall.702.t:0 "The Fall of Aspurra"
-EoF.cityfall.702.d:0 "[This.GetNewspaperHeader]The United Ponies alliance's troops have captured the vital port town of Aspurra, The Changeling forces and their Feline allies have begun withdrawing from the town together. Redamentary reports of a general fallback form the Cheangeling high commands signifies another victory for the Alliance forcees. \n\nWithout a major renewal of efforts from the Hedgmony, Abysinnia is sure to fall."
-EoF.cityfall.702.a:0 "Push the Attack!"
-EoF.cityfall.702.b:0 "Make a stand."
-EoF.cityfall.702.c:0 "Looks bad for the Changelings."
-
-EoF.crystal.11.a:0 "Attend a dissident tea party, then rat them out to police"
-EoF.crystal.11.b:0 "Do nothing"
 

@@ -53,187 +53,124 @@ country_event = {
 	option = {
 		name = EoF.4.a
 		STG = {
-			add_named_threat = {
-				threat = 5
-				name = EoF_STG_join_UPA_tension
-			}
+			country_event = EoF.17
 		}
-		add_to_faction = STG
-		326 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		STG = {
+			transfer_state = 326
+			add_state_core = 326
+			transfer_state = 167
+			add_state_core = 167
+			transfer_state = 164
+			add_state_core = 164
+			transfer_state = 162
+			add_state_core = 162
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 157
+			add_state_core = 157
+			transfer_state = 156
+			add_state_core = 156
+			transfer_state = 155
+			add_state_core = 155
+			transfer_state = 154
+			add_state_core = 154
+			transfer_state = 653
+			add_state_core = 653
+			transfer_state = 662
+			add_state_core = 662
+			transfer_state = 661
+			add_state_core = 661
+			transfer_state = 229
+			add_state_core = 229
+			transfer_state = 67
+			add_state_core = 67
+			transfer_state = 1194
+			add_state_core = 1194
+			transfer_state = 1193
+			add_state_core = 1193
 		}
-		167 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		
+		EQS = {
+			remove_state_core = 326
+			remove_state_core = 167
+			remove_state_core = 164
+			remove_state_core = 162
+			remove_state_core = 160
+			remove_state_core = 159
+			remove_state_core = 158
+			remove_state_core = 157
+			remove_state_core = 156
+			remove_state_core = 155
+			remove_state_core = 154
+			remove_state_core = 653
+			remove_state_core = 662
+			remove_state_core = 661
+			remove_state_core = 229
+			remove_state_core = 67
+			remove_state_core = 1194
+			remove_state_core = 1193
 		}
-		164 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		162 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		160 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		159 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		158 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		157 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		156 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		155 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		154 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		653 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		662 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		661 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		229 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		67 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		10 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		9 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		8 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		7 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		6 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		328 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		1194 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		1193 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
+		
 	}
 	option = {
 		name = EoF.4.b
 		STG = {
-			add_named_threat = {
-				threat = 5
-				name = EoF_STG_join_UPA_tension
-			}
+			country_event = EoF.18
 		}
-		add_to_faction = STG
-		326 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		STG = {
+			transfer_state = 326
+			add_state_core = 326
+			transfer_state = 167
+			add_state_core = 167
+			transfer_state = 164
+			add_state_core = 164
+			transfer_state = 162
+			add_state_core = 162
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 157
+			add_state_core = 157
+			transfer_state = 156
+			add_state_core = 156
+			transfer_state = 155
+			add_state_core = 155
+			transfer_state = 154
+			add_state_core = 154
+			transfer_state = 653
+			add_state_core = 653
+			transfer_state = 662
+			add_state_core = 662
+			transfer_state = 661
+			add_state_core = 661
+			transfer_state = 229
+			add_state_core = 229
 		}
-		167 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		164 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		162 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		160 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		159 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		158 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		157 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		156 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		155 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		154 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		653 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		662 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		661 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		229 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
+		
+		EQS = {
+			remove_state_core = 326
+			remove_state_core = 167
+			remove_state_core = 164
+			remove_state_core = 162
+			remove_state_core = 160
+			remove_state_core = 159
+			remove_state_core = 158
+			remove_state_core = 157
+			remove_state_core = 156
+			remove_state_core = 155
+			remove_state_core = 154
+			remove_state_core = 653
+			remove_state_core = 662
+			remove_state_core = 661
+			remove_state_core = 229
+		}		
 	}
 }
 country_event = {
@@ -537,6 +474,44 @@ country_event = {
 			transfer_state_to = PLB
 			add_core_of = PLB
 			remove_core_of = YAK
+		}
+	}
+}
+
+country_event = {
+	id = EoF.17
+	title = EoF.17.t
+	desc = EoF.17.desc
+	picture = GFX_event_stalliongrad
+	is_triggered_only = yes
+	option = {
+		name = EoF.17.a
+		EQS = {
+			add_to_faction = STG
+		}
+		add_ideas = EoF_STG_southern_island_campaign_5
+		add_named_threat = {
+			threat = 5
+			name = EoF_STG_join_UPA_tension
+		}
+	}
+}
+
+country_event = {
+	id = EoF.18
+	title = EoF.18.t
+	desc = EoF.18.desc
+	picture = GFX_event_stalliongrad
+	is_triggered_only = yes
+	option = {
+		name = EoF.18.a
+		add_timed_idea = {
+			idea = EoF_STG_delayed_UPA
+			days = 900
+		}
+		add_named_threat = {
+			threat = 5
+			name = EoF_STG_join_UPA_tension
 		}
 	}
 }

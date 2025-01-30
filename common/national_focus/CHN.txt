@@ -3596,26 +3596,6 @@ focus_tree = {
 			}
 		}
 	}
-	focus = {
-		id = EoF_industrialized_army
-		icon = GFX_goal_chn_man_bullets
-		cost = 3
-		x = 0
-		y = 1
-		relative_position_id = CHN_Army
-		prerequisite = {
-			focus = CHN_Army
-		}
-		available = {
-			has_war = no
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = EoF_CHN_initial_army_expansion
-				days = 365
-			}
-		}
-	}
 	#EoF Changes
 	
 	######AIRFORCE FOCUSES########
@@ -4540,6 +4520,29 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
 	}
+
+	#EoF Changes
+	focus = {
+		id = EoF_industrialized_army
+		icon = GFX_goal_chn_man_bullets
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CHN_Army
+		prerequisite = {
+			focus = CHN_Army
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_CHN_initial_army_expansion
+				days = 365
+			}
+		}
+	}
+	#EoF Changes
 
 	focus = {
 		id = CHN_Infantry_1
