@@ -128,7 +128,7 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 20			-- same as above but used insid
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.1		-- 5x levels = 60% defense from bombing
 
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our armor outclasses enemy
-NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 4	-- extra damage dice if our armor outclasses enemy
+NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5	-- extra damage dice if our armor outclasses enemy
 
 NDefines.NMilitary.PIERCING_THRESHOLDS = {			-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
 		1.00,
@@ -265,7 +265,7 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = {
 		1.0, -- PATROL
 		0.1, -- STRIKE FORCE
 		0.3, -- CONVOY RAIDING
-		0.3, -- CONVOY ESCORT
+		0.6, -- CONVOY ESCORT
 		0.0, -- MINES PLANTING
 		0.0, -- MINES SWEEPING
 		0.0, -- TRAIN

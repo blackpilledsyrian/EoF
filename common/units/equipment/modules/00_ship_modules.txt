@@ -437,7 +437,7 @@ equipment_modules = {
 			hg_armor_piercing = 22
 		}
 		build_cost_resources = {
-			steel = 1
+			steel = 0
 		}
 
 		forbid_module_categories = {

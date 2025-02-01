@@ -233,7 +233,6 @@ equipments = {
 		}
 
 		surface_detection = 20
-		surface_visibility = 10
 		reliability = 0.90
 		naval_range = 2000
 		max_strength = 50

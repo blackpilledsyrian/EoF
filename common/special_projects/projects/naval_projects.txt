@@ -3200,15 +3200,15 @@ sp_naval_ice_carrier = {
 	}
 	
 	available = {
-				FROM = {
+		FROM = {
 			if = {
 				limit = {
 					has_dlc = "Man the Guns"
 				}  
-				has_tech = improved_ship_hull_carrier
+				has_tech = basic_ship_hull_carrier
 			}
 			else = {
-				has_tech = improved_carrier
+				has_tech = basic_carrier
 			}
 
 		}

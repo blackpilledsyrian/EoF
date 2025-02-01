@@ -334,8 +334,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			soft_attack = -0.1
-			hard_attack = -0.1
+			breakthrough = -0.2
 			build_cost_ic = -0.025
 		}
 		build_cost_resources = {
@@ -448,8 +447,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			soft_attack = -0.2
-			hard_attack = -0.2
+			breakthrough = -0.2
 			build_cost_ic = -0.025
 		}
 		build_cost_resources = {
@@ -535,8 +533,7 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			soft_attack = -0.2
-			hard_attack = -0.2
+			breakthrough = -0.2
 			build_cost_ic = -0.025
 		}
 		build_cost_resources = {
@@ -676,8 +673,6 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			soft_attack = -0.2
-			hard_attack = -0.2
 			build_cost_ic = -0.025
 		}
 		build_cost_resources = {
@@ -1505,8 +1500,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 28
-			hard_attack = 28
+			soft_attack = 24
+			hard_attack = 24
 			ap_attack = 40
 			reliability = -0.2
 			build_cost_ic = 8
@@ -1527,8 +1522,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_cannon
 		add_stats = {
-			soft_attack = 32
-			hard_attack = 32
+			soft_attack = 28
+			hard_attack = 28
 			ap_attack = 60
 			reliability = -0.2
 			build_cost_ic = 10
@@ -1549,8 +1544,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_cannon_2
 		add_stats = {
-			soft_attack = 36
-			hard_attack = 36
+			soft_attack = 32
+			hard_attack = 32
 			ap_attack = 80
 			reliability = -0.2
 			build_cost_ic = 12
@@ -1571,8 +1566,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_cannon_3
 		add_stats = {
-			soft_attack = 40
-			hard_attack = 40
+			soft_attack = 36
+			hard_attack = 36
 			ap_attack = 100
 			reliability = -0.2
 			build_cost_ic = 14
@@ -1614,8 +1609,8 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 		add_stats = {
-			soft_attack = 21
-			hard_attack = 35
+			soft_attack = 18
+			hard_attack = 30
 			ap_attack = 60
 			reliability = -0.2
 			build_cost_ic = 8
@@ -1636,8 +1631,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_high_velocity_cannon
 		add_stats = {
-			soft_attack = 24
-			hard_attack = 40
+			soft_attack = 21
+			hard_attack = 35
 			ap_attack = 80
 			reliability = -0.2
 			build_cost_ic = 10
@@ -1658,8 +1653,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_high_velocity_cannon_2
 		add_stats = {
-			soft_attack = 27
-			hard_attack = 45
+			soft_attack = 24
+			hard_attack = 40
 			ap_attack = 100
 			reliability = -0.2
 			build_cost_ic = 12
@@ -1680,8 +1675,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 		parent = tank_heavy_high_velocity_cannon_3
 		add_stats = {
-			soft_attack = 30
-			hard_attack = 50
+			soft_attack = 27
+			hard_attack = 45
 			ap_attack = 120
 			reliability = -0.2
 			build_cost_ic = 14
@@ -1702,8 +1697,8 @@ equipment_modules = {
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 49
-			hard_attack = 7
+			soft_attack = 42
+			hard_attack = 6
 			ap_attack = 4
 			reliability = -0.2
 			build_cost_ic = 8
@@ -1726,8 +1721,8 @@ equipment_modules = {
 		parent = tank_heavy_howitzer
 
 		add_stats = {
-			soft_attack = 56
-			hard_attack = 8
+			soft_attack = 49
+			hard_attack = 7
 			ap_attack = 6
 			reliability = -0.2
 			build_cost_ic = 10
@@ -1750,8 +1745,8 @@ equipment_modules = {
 		parent = tank_heavy_howitzer_2
 
 		add_stats = {
-			soft_attack = 63
-			hard_attack = 9
+			soft_attack = 56
+			hard_attack = 8
 			ap_attack = 8
 			reliability = -0.2
 			build_cost_ic = 12
@@ -1774,8 +1769,8 @@ equipment_modules = {
 		parent = tank_heavy_howitzer_3
 
 		add_stats = {
-			soft_attack = 70
-			hard_attack = 10
+			soft_attack = 63
+			hard_attack = 9
 			ap_attack = 10
 			reliability = -0.2
 			build_cost_ic = 14
@@ -1797,8 +1792,8 @@ equipment_modules = {
 		allow_equipment_type = artillery
 
 		add_stats = {
-			soft_attack = 77
-			hard_attack = 11
+			soft_attack = 70
+			hard_attack = 10
 			ap_attack = 12
 			reliability = -0.3
 			build_cost_ic = 16
@@ -1820,8 +1815,8 @@ equipment_modules = {
 		allow_equipment_type = anti_tank
 
 		add_stats = {
-			soft_attack = 44
-			hard_attack = 44
+			soft_attack = 40
+			hard_attack = 40
 			ap_attack = 120
 			reliability = -0.3
 			build_cost_ic = 16

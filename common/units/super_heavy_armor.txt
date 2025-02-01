@@ -35,15 +35,16 @@ sub_units = {
 		default_morale = 0.3
 		max_strength = 2
 		training_time = 180
-		weight = 1.0
-		battalion_mult = {
-			category = category_all_armor
-			armor_value = 0.05
-			breakthrough = 0.05
-		}
+		weight = 1.75
 		supply_consumption = 0.4
 
-		suppression = 2.5
+		defense = -0.5
+		breakthrough = -0.5
+		soft_attack = -0.5
+		hard_attack = -0.5
+
+		suppression = 1.25
+
 		hills = {
 		    movement = -0.10
 		}
@@ -53,6 +54,13 @@ sub_units = {
 		fort = {
 			attack = 0.10
 		}
+
+		battalion_mult = {
+			category = category_all_armor
+			armor_value = 0.05
+			breakthrough = 0.05
+		}
+
 		same_support_type = super_heavy_armor
 	}
 	super_heavy_tank_destroyer = {
@@ -85,10 +93,7 @@ sub_units = {
 		need = {
 			super_heavy_tank_destroyer_chassis = 20
 		}
-		battalion_mult = {
-			category = category_all_at
-			ap_attack = 0.1
-		}
+
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.3
@@ -97,9 +102,10 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.5
-		soft_attack = -0.3
-		hard_attack = 0.1
+		defense = -0.5
+		breakthrough = -0.75
+		soft_attack = -0.65
+		hard_attack = -0.45
 		ap_attack = 0.3
 
 		suppression = 1.25
@@ -110,6 +116,12 @@ sub_units = {
 		mountain = 	{
 		    movement = -0.20
 		}
+
+		battalion_mult = {
+			category = category_all_at
+			ap_attack = 0.1
+		}
+
 		same_support_type = super_heavy_armor
 	}
 	super_heavy_sp_artillery = {
@@ -135,17 +147,13 @@ sub_units = {
 			category_mechanical
 			category_self_propelled_artillery
 		}
-		battalion_mult = {
-			category = category_all_artillery
-			soft_attack = 0.05
-		}
-		
 
 		combat_width = 0
 
 		need = {
 			super_heavy_tank_artillery_chassis = 20
 		}
+
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.1
@@ -154,9 +162,10 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.4
 
-		breakthrough = -0.3
-		soft_attack = 0.1
-		hard_attack = -0.3
+		defense = -0.5
+		breakthrough = -0.65
+		soft_attack = -0.45
+		hard_attack = -0.65
 
 		suppression = 1.25
 
@@ -166,6 +175,12 @@ sub_units = {
 		mountain = 	{
 		    movement = -0.20
 		}
+
+		battalion_mult = {
+			category = category_all_artillery
+			soft_attack = 0.05
+		}
+
 		same_support_type = super_heavy_armor
 	}
 	super_heavy_sp_anti_air = {
@@ -209,7 +224,10 @@ sub_units = {
 		weight = 1.75
 		supply_consumption = 0.2
 
-		breakthrough = -0.5
+		defense = -0.5
+		breakthrough = -0.75
+		soft_attack = -0.5
+		hard_attack = -0.5
 		armor_value = -0.5
 
 		suppression = 0.75

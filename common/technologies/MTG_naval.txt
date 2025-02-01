@@ -2458,6 +2458,17 @@ early_ship_hull_carrier = {
 		enable_equipment_modules = { 
 			carrier_ship_engine_2
 		}
+		
+		on_research_complete = {
+			if = {
+				limit = {has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_ice_carrier	
+				}
+			}
+		}	
+
 		path = {
 			leads_to_tech = improved_ship_hull_carrier
 			research_cost_coeff = 1
@@ -2515,15 +2526,6 @@ early_ship_hull_carrier = {
 			research_cost_coeff = 1
 		}
 
-		on_research_complete = {
-			if = {
-				limit = {has_dlc = "Gotterdammerung"}
-				custom_effect_tooltip = {
-					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_naval_ice_carrier	
-				}
-			}
-		}	
 		research_cost = 1.5
 
 		start_year = 1011
@@ -2569,15 +2571,15 @@ early_ship_hull_carrier = {
 
 		start_year = 1015
 		
-		# on_research_complete = {
-		# 	if = {
-		# 		limit = { has_dlc = "Gotterdammerung"}
-		# 		custom_effect_tooltip = {
-		# 			localization_key = SP_UNLOCK_PROJECT
-		# 			PROJECT = sp_naval_modern_carrier	
-		# 		}
-		# 	}
-		# }
+		on_research_complete = {
+			if = {
+				limit = { has_dlc = "Gotterdammerung"}
+				custom_effect_tooltip = {
+					localization_key = SP_UNLOCK_PROJECT
+					PROJECT = sp_naval_modern_carrier	
+				}
+			}
+		}
 		folder = {
 			name = mtgnavalfolder
 			position = {  x = -1 y = @1015 }

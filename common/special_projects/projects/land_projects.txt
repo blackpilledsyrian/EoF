@@ -85,98 +85,78 @@ sp_land_flamethrower_tank = {
 		
 		sub_unit_bonus = {
 			light_flame_tank = {
-				forest = {
-					attack = 0.05
-				}
-				hills = {
-					attack = 0.05
-				}
 				jungle = {
-					attack = 0.05
+					attack = 0.025
 				}
-				urban = {
-					attack = 0.05
+				mountain = {
+					attack = 0.025
 				}
-				fort = {
-					attack = 0.05
+				marsh = {
+					attack = 0.025
 				}
 			}
 			medium_flame_tank = {
 				forest = {
-					attack = 0.05
+					attack = 0.025
 				}
 				hills = {
-					attack = 0.05
+					attack = 0.025
 				}
-				jungle = {
-					attack = 0.05
-				}
-				urban = {
-					attack = 0.05
-				}
-				fort = {
-					attack = 0.05
+				amphibious = {
+					attack = 0.025
 				}
 			}
-			modern_flame_tank = {
-				forest = {
-					attack = 0.05
-				}
-				hills = {
-					attack = 0.05
-				}
-				jungle = {
-					attack = 0.05
-				}
-				urban = {
-					attack = 0.05
-				}
-				fort = {
-					attack = 0.05
-				}
-			}
+			# modern_flame_tank = {
+			# 	forest = {
+			# 		attack = 0.05
+			# 	}
+			# 	hills = {
+			# 		attack = 0.05
+			# 	}
+			# 	jungle = {
+			# 		attack = 0.05
+			# 	}
+			# 	urban = {
+			# 		attack = 0.05
+			# 	}
+			# 	fort = {
+			# 		attack = 0.05
+			# 	}
+			# }
 			heavy_flame_tank = {
-				forest = {
-					attack = 0.05
-				}
 				hills = {
-					attack = 0.05
-				}
-				jungle = {
-					attack = 0.05
+					attack = 0.025
 				}
 				urban = {
-					attack = 0.05
+					attack = 0.025
 				}
 				fort = {
-					attack = 0.05
+					attack = 0.025
 				}
 			}
-			super_heavy_flame_tank = {
-				forest = {
-					attack = 0.05
-				}
-				hills = {
-					attack = 0.05
-				}
-				jungle = {
-					attack = 0.05
-				}
-				urban = {
-					attack = 0.05
-				}
-				fort = {
-					attack = 0.05
-				}
-			}
+			# super_heavy_flame_tank = {
+			# 	forest = {
+			# 		attack = 0.05
+			# 	}
+			# 	hills = {
+			# 		attack = 0.05
+			# 	}
+			# 	jungle = {
+			# 		attack = 0.05
+			# 	}
+			# 	urban = {
+			# 		attack = 0.05
+			# 	}
+			# 	fort = {
+			# 		attack = 0.05
+			# 	}
+			# }
 		}
 
 		enable_subunits = {
 			light_flame_tank
 			medium_flame_tank
-			modern_flame_tank
 			heavy_flame_tank
-			super_heavy_flame_tank
 		}
 	}
 
