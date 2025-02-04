@@ -1048,7 +1048,7 @@ generic_mobile_tank_organization = {
 		
 		equipment_bonus = {
 			reliability = 0.05
-			build_cost_ic = 0.05
+			build_cost_ic = 0.50
 		}
 	}
 
