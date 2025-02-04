@@ -6399,75 +6399,9 @@ country_event = {
 
 	option = { # Welp that happened
 		name = arisfirst.42.a
-		complete_national_focus = HIP_hippogriffia_first
-		effect_tooltip = {
-			create_country_leader = {
-				name = "Raft Wood and Crack Lightning"
-				desc = "ARISFIRST_DUUMVIRATE_DESC"
-				picture = "HIP_arisfirst_duumvirate.tga"
-				expire = "1965.1.1"
-				ideology = populism
-				traits = {
-					uneasy_duumvirate
-				}
-			}
-		}
-		hidden_effect = {
-			HIP_raft_wood = {
-				set_character_name = HIP_af_duumvirate
-				remove_advisor_role = { slot = political_advisor }
-				set_portraits = {
-					civilian = {
-						large = "gfx/leaders/HIP/HIP_arisfirst_duumvirate.tga"
-					}
-				}
-				set_character_flag = HIP_duumvirate_active
-				remove_country_leader_role = { ideology=populism }
-
-				add_country_leader_role = {
-					promote_leader = yes
-
-					country_leader = {
-						desc = "ARISFIRST_DUUMVIRATE_DESC"
-						expire = "1965.1.1"
-						ideology = populism
-						traits = {
-							uneasy_duumvirate
-						}
-					}
-				}
-			}
-		}
-		set_politics = {
-			ruling_party = neutrality
-			elections_allowed = no
-		}
-		add_popularity = {
-			ideology = neutrality
-			popularity = 0.05
-		}
-		add_popularity = {
-			ideology = fascism
-			popularity = 0.05
-		}
-		add_ideas = HIP_figurehead_novo
-		custom_effect_tooltip = available_political_advisor
-		show_ideas_tooltip = HIP_screaming_eagle
-		hidden_effect = {
-			news_event = {
-				id = hippogriff_news.2
-				hours = 6
-			}
-		}
-		hidden_effect = {
-			country_event = {
-				id = arisfirst.43
-				days = 40
-				}
-			}
-		hidden_effect = {
-			set_country_flag = HIP_arisfirst_government
-		}
+		complete_national_focus = HIP_harmony_above_all
+		add_political_power = -150
+		add_stability = -10
 	}
 }
 

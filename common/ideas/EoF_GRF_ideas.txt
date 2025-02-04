@@ -1,0 +1,12 @@
+ideas = {
+	country = {
+		EoF_GRF_tank_exchange = {
+			picture = generic_license_production
+			targeted_modifier = {
+				tag = CHN    # this can also take a variable that stores a scope
+				license_tech_difference_speed = 0.20
+				license_production_speed = 0.25
+			}
+		}
+	}
+}

@@ -745,7 +745,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.125
 			}
 		}
 
@@ -2523,8 +2523,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				mobilization_speed = 0.5
-				war_support_weekly = 0.02
+				mobilization_speed = 0.2
+				# war_support_weekly = 0.02
 				political_power_gain = 0.1
 				army_core_attack_factor = 0.1
 				army_core_defence_factor = 0.1

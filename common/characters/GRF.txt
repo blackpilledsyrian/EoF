@@ -334,12 +334,12 @@ characters={
         }
 		
 		corps_commander={
-			traits={ griffon_race_trait panzer_leader }
-			skill=2
+			traits={ griffon_race_trait panzer_leader cavalry_leader }
+			skill=4
 			attack_skill=3
-			defense_skill=1
+			defense_skill=5
 			planning_skill=2
-			logistics_skill=1
+			logistics_skill=3
 			legacy_id=810
 			desc = chernobyl_beak
 		}
@@ -351,6 +351,17 @@ characters={
 				original_tag = GRF
 			}
 			traits = { EoF_dandan }
+		}
+		advisor = {
+			slot = high_command
+			idea_token = daniel_crimsonbeak2
+			ledger = army
+			cost = 200
+			
+			allowed = {
+				original_tag = GRF
+			}
+			traits = { army_CombinedArms_3 }
 		}
 	}
 	GRF_paddy_rockfeller={

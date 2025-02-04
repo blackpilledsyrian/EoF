@@ -64,7 +64,7 @@ NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.016	-- global damage 
 NDefines.NMilitary.LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 1	-- how many CAS/TAC can enter a combat depending on enemy width there
 
 NDefines.NMilitary.PLANNING_DECAY = 0.01
-NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.01		-- Amount of planning lost due to player manual order
+NDefines.NMilitary.PLAYER_ORDER_PLANNING_DECAY = 0.03		-- Amount of planning lost due to player manual order
 NDefines.NMilitary.PLANNING_GAIN = 0.02
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_GAIN = 0.01	-- Planning Bonus gain per day for naval invasions
 NDefines.NMilitary.NAVAL_INVASION_PLANNING_BONUS_MALUS = -1	-- Malus in percentage for the planning bonus gain for naval invasions
@@ -200,7 +200,10 @@ NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 3
 NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 5
 NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 7
 
-NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5			-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 50	-- Base max efficiency for factories expressed in %.
+
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 4			-- Base factory speed multiplier (how much hoi3 style IC each factory gives).
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 4			-- vanilla is 2.5
 
 NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 1	-- Building in a state with higher infrastructure will reduce the cost of shared buildings.
 
@@ -374,9 +377,6 @@ NDefines.NOperatives.MAX_OPERATIVE_SLOT_FROM_AGENCY_UPGRADES = 2				-- max opera
 
 NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.1 -- Attack bonus factor against whoever occupies your core territory.
 
-NDefines. NProject.RECRUIT_SCIENTIST_COST = {			-- Amount of pp to hire a scientist based on available scientist
-		10,			-- pp cost if no available scientist
-		20,			-- pp cost if 1 available scientist
-		30,			-- pp cost if 2 available scientist
-		40			-- pp cost if more than 2 available scientist
+NDefines.NProject.RECRUIT_SCIENTIST_COST = {			-- Amount of pp to hire a scientist based on available scientist
+		20,			-- pp cost if no available scientist
 	}

@@ -20,7 +20,7 @@ state={
 			infrastructure = 4
 			industrial_complex = 3
 			arms_factory = 3
-			dockyard = 3
+			dockyard = 4
 			anti_air_building = 1
 
 			3164 = {

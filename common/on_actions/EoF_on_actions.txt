@@ -1406,6 +1406,28 @@ on_actions = {
 						autonomous_state = autonomy_EoF_enforced_ally
 					}
 				}
+				HLR = {
+					transfer_state = 570
+					add_state_core = 570
+					transfer_state = 572
+					add_state_core = 572
+					transfer_state = 444
+					add_state_core = 444
+					transfer_state = 509
+					add_state_core = 509
+					transfer_state = 460
+					add_state_core = 460
+					transfer_state = 445
+					add_state_core = 445
+				}
+				WNG = {
+					remove_state_core = 570
+					remove_state_core = 572
+					remove_state_core = 444
+					remove_state_core = 509
+					remove_state_core = 460
+					remove_state_core = 445
+				}
 			}
 		}
 	}

@@ -516,10 +516,10 @@ ideas = {
 				max_fuel_factor = -0.25
 				fuel_gain_factor = -0.4
 			}
-			research_bonus = {
-				industry = 0.03
-				electronics = 0.025
-			}
+			# research_bonus = {
+			# 	industry = 0.03
+			# 	electronics = 0.025
+			# }
 			default = yes
 
 			cancel_if_invalid = no
@@ -541,9 +541,9 @@ ideas = {
 				production_speed_infrastructure_factor = 0.05
 				fuel_gain_factor = -0.25
 			}
-			research_bonus = {
-				industry = 0.025
-			}
+			# research_bonus = {
+			# 	industry = 0.025
+			# }
 
 			cancel_if_invalid = no
 

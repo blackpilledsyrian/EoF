@@ -1,5 +1,5 @@
 ﻿capital = 382
-set_research_slots = 3
+set_research_slots = 4
 add_breakthrough_progress = {
 	specialization = specialization_land
 	value = 0.5

@@ -231,7 +231,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_plecate_the_isolationists
 		icon = GFX_goal_generic_dangerous_deal_pony_griffon
-		cost = 6
+		cost = 3
 		x = 10
 		y = 0
 
@@ -253,7 +253,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_self_efficency
 		icon = GFX_HIP_gautarky
-		cost = 6
+		cost = 3
 		x = -3
 		y = 1
 		relative_position_id = HIP_plecate_the_isolationists
@@ -296,7 +296,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_anti_harmonic_activities_committee
 		icon = GFX_focus_generic_authoritarian_government
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_self_efficency
@@ -337,7 +337,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_committie_for_national_defence
 		icon = GFX_goal_military_academy
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_anti_harmonic_activities_committee
@@ -391,7 +391,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_expand_the_royal_acadamy
 		icon = GFX_goal_PAN_Create_the_Universidad_de_Panama
-		cost = 8
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_self_efficency
@@ -508,12 +508,56 @@ focus_tree = {
 		}
 	}
 	shared_focus = {
-		id = HIP_the_mountain_awakes
-		icon = GFX_HIP_gawake
-		cost = 10
+		id = HIP_stirring_from_slumber
+		icon = GFX_goal_stirring_from_slumber
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_leand_lease
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		prerequisite = {
+			focus = HIP_leand_lease
+			focus = HIP_national_defence_works
+		}
+
+		available = {
+			date > 1010.01.01
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			# custom_effect_tooltip = HIP_slumber_tt
+			if = {
+				limit = {
+					has_idea = HIP_boombing_ecomony_3
+				}
+				swap_ideas = {
+					remove_idea = HIP_boombing_ecomony_3
+					add_idea = HIP_booming_economy_harmony
+				}
+			}
+			else = {
+				swap_ideas = {
+					remove_idea = HIP_committie_for_national_defence_idea_3
+					add_idea = HIP_committie_for_national_defence_idea_harmony
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = HIP_the_mountain_awakes
+		icon = GFX_HIP_gawake
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = HIP_stirring_from_slumber
 
 		ai_will_do = {
 			factor = 35
@@ -560,8 +604,7 @@ focus_tree = {
 		}
 
 		prerequisite = {
-			focus = HIP_leand_lease
-			focus = HIP_national_defence_works
+			focus = HIP_stirring_from_slumber
 		}
 
 		available = {
@@ -588,9 +631,14 @@ focus_tree = {
 				}
 				add_ideas = civilian_economy
 			}
-			add_timed_idea = {
-				idea = HIP_the_mountain_awakes
-				days = 70
+			if  = {
+				limit = {
+					has_completed_focus = HIP_trade_ports
+				}
+				add_timed_idea = {
+					idea = HIP_the_mountain_awakes
+					days = 270
+				}
 			}
 			if = {
 				limit = {
@@ -621,7 +669,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_traditional_studdies
 		icon = GFX_goal_generic_lightbulb
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_anti_harmonic_activities_committee
@@ -655,7 +703,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_prepare_for_the_next_war
 		icon = GFX_HIP_gwar
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_committie_for_national_defence
@@ -694,7 +742,7 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = HIP_prepare_war_tt
-			add_war_support = 0.1
+			add_war_support = 0.05
 			swap_ideas = {
 				remove_idea = HIP_committie_for_national_defence_idea
 				add_idea = HIP_committie_for_national_defence_idea_2
@@ -726,7 +774,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_expand_costal_fortifications
 		icon = GFX_goal_nested_fortifications
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_prepare_for_the_next_war
@@ -796,7 +844,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_youth_defence_league
 		icon = GFX_goal_derpy_conscription
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_prepare_for_the_next_war
@@ -821,7 +869,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_never_to_fall_again
 		icon = GFX_HIP_gwarp
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_expand_costal_fortifications
@@ -919,7 +967,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_trade_ports
 		icon = GFX_HIP_gports
-		cost = 6
+		cost = 3
 		x = 3
 		y = 1
 		relative_position_id = HIP_plecate_the_isolationists
@@ -953,7 +1001,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_agricultral_reforms
 		icon = GFX_goal_SZC_improvised_farming_machinery
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_trade_ports
@@ -979,7 +1027,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_encourage_private_enterprise
 		icon = GFX_goal_top_hat
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_agricultral_reforms
@@ -1032,7 +1080,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_national_defence_works
 		icon = GFX_goal_Focus_Military_Mobilisation
-		cost = 6
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = HIP_encourage_private_enterprise
@@ -1090,7 +1138,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_stock_exchange
 		icon = GFX_HIP_gstock
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_trade_ports
@@ -1146,7 +1194,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_develop_our_outer_islands
 		icon = GFX_goal_generic_build_housing
-		cost = 6
+		cost = 3
 		x = -1
 		y = 1
 		relative_position_id = HIP_stock_exchange
@@ -1247,7 +1295,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_encourage_tourism
 		icon = GFX_goal_endless_money
-		cost = 6
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = HIP_develop_our_outer_islands
@@ -1280,7 +1328,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_cut_industral_red_tape
 		icon = GFX_IRE_medium_industry
-		cost = 6
+		cost = 3
 		x = 1
 		y = 1
 		relative_position_id = HIP_stock_exchange
@@ -1321,7 +1369,7 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_encourage_the_automotive_industry
 		icon = GFX_goal_generic_army_motorized
-		cost = 6
+		cost = 3
 		x = 0
 		y = 1
 		relative_position_id = HIP_cut_industral_red_tape
@@ -1362,9 +1410,9 @@ focus_tree = {
 	shared_focus = {
 		id = HIP_the_hippogriff_miracle
 		icon = GFX_HIP_gmiracle
-		cost = 6
+		cost = 3
 		x = 1
-		y = 1
+		y = 2
 		relative_position_id = HIP_encourage_tourism
 
 		ai_will_do = {
@@ -1887,7 +1935,6 @@ focus_tree = {
 		available_if_capitulated = no
 
 		completion_reward = {
-			add_war_support = 0.05
 			#Add a buncha land forts in some vaguely logical line
 			697 = {
 				add_building_construction = {
@@ -2096,53 +2143,6 @@ focus_tree = {
 			}
 			711 = {
 				add_manpower = 1050
-			}
-		}
-	}
-
-
-
-	shared_focus = {
-		id = HIP_stirring_from_slumber
-		icon = GFX_goal_stirring_from_slumber
-		cost = 10
-		x = 1
-		y = 1
-		relative_position_id = HIP_expand_refugee_zone
-
-		ai_will_do = {
-			factor = 10
-		}
-
-		prerequisite = {
-			focus = HIP_expand_refugee_zone
-			focus = HIP_shelter_dissidents
-		}
-
-		available = {
-			date > 1010.01.01
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			custom_effect_tooltip = HIP_slumber_tt
-			if = {
-				limit = {
-					has_idea = HIP_boombing_ecomony_3
-				}
-				swap_ideas = {
-					remove_idea = HIP_boombing_ecomony_3
-					add_idea = HIP_booming_economy_harmony
-				}
-			}
-			else = {
-				swap_ideas = {
-					remove_idea = HIP_committie_for_national_defence_idea_3
-					add_idea = HIP_committie_for_national_defence_idea_harmony
-				}
 			}
 		}
 	}
@@ -3570,7 +3570,7 @@ focus_tree = {
 		cost = 7
 		x = 5
 		y = 2
-		relative_position_id = HIP_stirring_from_slumber
+		relative_position_id = HIP_expand_refugee_zone
 
 		ai_will_do = {
 			factor = 100

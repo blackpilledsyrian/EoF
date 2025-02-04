@@ -23,12 +23,12 @@ EQ_MOD_CAT_tank_optics_type_TITLE:0 "Optics"
 EQ_MOD_CAT_tank_special_module_rangefinder_TITLE:0 "Rangefinder"
 
 super_heavy_tank_equipment_0:0 "Early Super-Heavy Tank"
-super_heavy_tank_chassis_0:0 "Early Super-Heavy Chassis"
+super_heavy_tank_chassis_0:0 "Early Super-Heavy TankChassis"
 super_heavy_tank_artillery_chassis_0:0 "Early Super-Heavy SP Artillery"
 super_heavy_tank_destroyer_chassis_0:0 "Early Super-Heavy Tank Destroyer"
 super_heavy_tank_aa_chassis_0:0 "Early Super-Heavy SP Anti-Air"
 
-early_super_heavy_tank_chassis_short:0 "1005 Super-Heavy"
+super_heavy_tank_chassis_0_short:0 "1005 Super-Heavy"
 early_super_heavy_tank_chassis_desc:0 "The natural step in developing a proper breakthrough tank to defeat any land defence is to hyper-specialise it. Specifically designed to mount plenty of frontal armour, a massive gun, and a giant engine that can power the whole vehicle, such a chassis can easily surpass the 50-tonne threshold once built. Designers do not intend for this super-heavy tank to fight other tanks, but it will easily prove to be a challenging opponent."
 
 advanced_light_tank_turret:0 "Advanced Light Turret"

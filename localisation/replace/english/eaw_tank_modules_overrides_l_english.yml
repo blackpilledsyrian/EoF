@@ -102,7 +102,7 @@
 
  amphibious_drive_desc:0 "The first generation of amphibious tanks proved unsatisfactory when operating on land due to their unwieldy hulls that often resembled more like those of boats. A possible solution is to create a set of modular flotation devices and a purpose-built screw that we can mount on most chassis, thus keeping their overall performance on land. Though not always reliable, amphibious drives are a versatile module."
 
- basic_medium_tank_chassis_short:0 "1009 Medium"
+ basic_medium_tank_chassis_short:0 "1008 Medium"
  medium_tank_chassis_1_desc:0 "As the concept of mechanised warfare matures, some consider neither light nor heavy tanks suitable for achieving decisive strategic victory and have proposed a compromise platform. These mid-sized platforms offer considerably more flexibility in designing a wide variety of different vehicles. These are generally more effective than lighter vehicles and cheaper than heavier platforms."
 
  improved_medium_tank_chassis_short:1 "1011 Medium"

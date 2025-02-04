@@ -2294,7 +2294,8 @@ focus_tree = {
 		icon = GFX_goal_generic_construct_civ_factory
 		cost = 10
 		prerequisite = {
-			focus = technological_revolution
+			focus = expand_the_plan
+			focus = simplify_bureaucracy
 		}
 		available = {
 			225 = { is_owned_and_controlled_by = ROOT }
@@ -4047,6 +4048,9 @@ focus_tree = {
 		prerequisite = {
 			focus = expand_the_plan
 			focus = simplify_bureaucracy
+		}
+		allow_branch = {
+			always = no
 		}
 		x = 21
 		y = 4

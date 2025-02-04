@@ -5541,7 +5541,6 @@ shared_focus = {
 			    id = imperial.114
 			}
 		}
-		add_research_slot = 1
 	}
 }
 

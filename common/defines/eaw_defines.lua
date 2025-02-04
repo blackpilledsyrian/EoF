@@ -33,7 +33,6 @@ NDefines.NResistance.GARRISON_TEMPLATE_SCORE_MANPOWER_FACTOR = 0.4  -- formula i
 NDefines.NProduction.FLOATING_HARBOR_MAX_NAV_FACTORIES_PER_LINE = 5 -- vanilla is 5
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 5 -- vanilla is 5
 NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 5 -- vanilla is 5
-NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 5 -- vanilla is 2.5
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0 -- vanilla is 0.1
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4
 
@@ -109,7 +108,7 @@ NDefines.NSupply.CAPITAL_STARTING_PENALTY_PER_PROVINCE = 0.5 -- starting penalty
 NDefines.NSupply.CAPITAL_ADDED_PENALTY_PER_PROVINCE = 1.2 -- added penalty as we move away from origin (Default is 1.2)
 
 NDefines.NTechnology.BASE_TECH_COST = 80					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties. 100 in vanilla
-NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3	-- Base year ahead penalty. Vanilla is 2
+NDefines.NTechnology.BASE_YEAR_AHEAD_PENALTY_FACTOR = 3.5	-- Base year ahead penalty. Vanilla is 2
 
 NDefines.NAI.DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_LAND = 30
 NDefines.NAI.DEFAULT_MODULE_VARIANT_CREATION_XP_CUTOFF_NAVY = 50
