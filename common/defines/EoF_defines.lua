@@ -215,8 +215,8 @@ NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0	-- XP cost for convert
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0	-- XP cost for removing an equipment module and leaving the slot empty when creating an equipment variant.
 
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
-NDefines.NProduction.BASE_LICENSE_IC_COST = 1			-- Base IC cost for lended license
-NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 1		-- IC cost equipment for every year of equipment after 1936
+NDefines.NProduction.BASE_LICENSE_IC_COST = 1					-- Base IC cost for lended license
+NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5			-- IC cost equipment for every year of equipment after 1936
 NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.25			-- base MIC speed modifier for licensed equipment
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.05		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 4			-- Maximum years for MIC speed modifier
@@ -380,3 +380,5 @@ NDefines.NCountry.GIE_DIVISION_ATTACK_BONUS_AGAINST_OCCUPIER = 0.1 -- Attack bon
 NDefines.NProject.RECRUIT_SCIENTIST_COST = {			-- Amount of pp to hire a scientist based on available scientist
 		20,			-- pp cost if no available scientist
 	}
+NDefines.NProject.BREAKTHROUGH_DAILY_TECHNOLOGY_GAIN = 10	-- Amount in 1/100th percentage. E.g. 25 = 0.25%
+NDefines.NProject.BREAKTHROUGH_DAILY_SCIENTIST_SKILL_GAIN = 50	-- Amount in 1/100th percentage gained per skill when doing basic research. E.g. 5 = 0.05% per skill level.

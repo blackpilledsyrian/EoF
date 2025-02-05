@@ -461,6 +461,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_heat_specialist = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -505,6 +508,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_desert_fox = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -549,6 +555,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_swamp_fox = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -593,6 +602,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_trait_mountaineer = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -637,6 +649,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_hill_fighter = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -681,6 +696,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_jungle_rat = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -725,6 +743,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_ranger = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -769,6 +790,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_urban_assault_specialist = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress
@@ -813,6 +837,9 @@ EoF_academy_category = {
 	}
 	EoF_academy_winter_specialist = {
 		icon = GFX_decision_generic_army_support
+		visible = {
+			has_country_flag = EoF_advanced_academy
+		}
 		available = {
 			NOT = {
 				has_country_flag = EoF_academy_in_progress

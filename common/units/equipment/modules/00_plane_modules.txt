@@ -2600,7 +2600,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			weight = 3
+			weight = 2
 		}
 
 		multiply_stats = {
