@@ -9873,6 +9873,12 @@ country_event = {#Skystar Harmonist coronation
 		}
 		HIP_skystar = {
 			set_character_name = HIP_skystar_queen
+			set_portraits = {
+				civilian = {
+					large="gfx/leaders/HIP/Queen_Skystar.tga"
+					small="gfx/interface/ideas/Advisors/HIP/HIP_queen_skystar.tga"
+				}
+			}
 		}
 	}
 }
@@ -9917,6 +9923,12 @@ country_event = {#Skystar commie coroniation
 		}
 		HIP_skystar = {
 			set_character_name = HIP_skystar_queen
+			set_portraits = {
+				civilian = {
+					large="gfx/leaders/HIP/Queen_Skystar.tga"
+					small="gfx/interface/ideas/Advisors/HIP/HIP_queen_skystar.tga"
+				}
+			}
 		}
 	}
 }

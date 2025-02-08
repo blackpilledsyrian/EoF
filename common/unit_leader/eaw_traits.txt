@@ -1041,10 +1041,6 @@ leader_traits = {
 
 	artillery_expert = {
 		type = corps_commander
-		gain_xp = {
-			always = no # not gainable
-		}
-		cost = 500
 		modifier = {
 			army_artillery_attack_factor = 0.1
 		}
@@ -1082,9 +1078,6 @@ leader_traits = {
         gui_row = 0
         any_parent = { heat_specialist }
         
-        gain_xp = {
-            always = no # not gainable
-        }
         
         modifier = {
             acclimatization_hot_climate_gain_factor = 0.40

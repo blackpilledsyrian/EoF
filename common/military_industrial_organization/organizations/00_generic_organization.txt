@@ -535,7 +535,7 @@ generic_infantry_tank_organization = {
 	}
 }
 
-
+# ASSAULT GUNS DESIGNER / MANUFACTURER
 generic_assault_guns_organization = {
 	icon = GFX_idea_generic_tank_manufacturer_3
 
