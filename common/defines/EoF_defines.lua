@@ -381,4 +381,4 @@ NDefines.NProject.RECRUIT_SCIENTIST_COST = {			-- Amount of pp to hire a scienti
 		20,			-- pp cost if no available scientist
 	}
 NDefines.NProject.BREAKTHROUGH_DAILY_TECHNOLOGY_GAIN = 10	-- Amount in 1/100th percentage. E.g. 25 = 0.25%
-NDefines.NProject.BREAKTHROUGH_DAILY_SCIENTIST_SKILL_GAIN = 50	-- Amount in 1/100th percentage gained per skill when doing basic research. E.g. 5 = 0.05% per skill level.
+NDefines.NProject.BREAKTHROUGH_DAILY_SCIENTIST_SKILL_GAIN = 20	-- Amount in 1/100th percentage gained per skill when doing basic research. E.g. 5 = 0.05% per skill level.
