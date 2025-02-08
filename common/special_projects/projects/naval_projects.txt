@@ -2190,7 +2190,10 @@ sp_naval_super_heavy_battleship = {
 										anti_air_attack = 0.25
 										reliability = 0.05						
 									}
+									SH_battleship_2 = {
 										anti_air_attack = 0.25
+										reliability = 0.05						
+									}
 								}
 							}						
 						}
