@@ -22,6 +22,7 @@ sub_units = {
 			category_all_artillery
 			category_mechanical
 			category_self_propelled_artillery
+			category_front_line_armor
 		}		
 
 		combat_width = 2
@@ -93,6 +94,7 @@ sub_units = {
 			category_all_artillery
 			category_mechanical
 			category_self_propelled_artillery
+			category_front_line_armor
 		}		
 		combat_width = 2
 
@@ -167,6 +169,7 @@ sub_units = {
 			category_all_artillery
 			category_mechanical
 			category_self_propelled_artillery
+			category_front_line_armor
 		}
 
 		combat_width = 2
@@ -240,6 +243,7 @@ sub_units = {
 			category_all_artillery
 			category_mechanical
 			category_self_propelled_artillery
+			category_front_line_armor
 		}
 
 		combat_width = 2

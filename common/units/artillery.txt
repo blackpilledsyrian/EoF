@@ -145,11 +145,6 @@ sub_units = {
 		can_be_parachuted = no
 
 		same_support_type = super_heavy_artillery # TODO_Manu: Need code support to add a new type super_heavy_artillery
-
-		battalion_mult = {
-			category = category_line_artillery
-			soft_attack = 0.05
-		}
 	}
 
 	self_propelled_super_heavy_artillery = {
@@ -198,15 +193,5 @@ sub_units = {
 		can_be_parachuted = no
 
 		same_support_type = super_heavy_artillery # TODO_Manu: Need code support to add a new type super_heavy_artillery
-
-		battalion_mult = {
-			category = category_self_propelled_artillery
-			soft_attack = 0.05
-		}
-
-		battalion_mult = {
-			category = category_line_artillery
-			soft_attack = 0.05
-		}
 	}
 }

@@ -284,3 +284,81 @@ adjacency_rule =
     icon = 5457
     offset = { -28 0 0 }
 }
+# East Polar Strait
+adjacency_rule =
+{
+	name = "EASTPOLAR_STRAIT"
+	
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 2075 }
+	
+	icon = 5792
+	offset = { 0 0 0 }
+}
+# West Polar Strait
+adjacency_rule =
+{
+	name = "WESTPOLAR_STRAIT"
+	
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 13217 }
+	
+	icon = 8517
+	offset = { -27 0 0 }
+}

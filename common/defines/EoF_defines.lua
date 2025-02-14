@@ -127,6 +127,11 @@ NDefines.NAir.COMBAT_DAMAGE_SCALE_CARRIER = 20			-- same as above but used insid
 
 NDefines.NAir.AA_INDUSTRY_AIR_DAMAGE_FACTOR = -0.1		-- 5x levels = 60% defense from bombing
 
+NDefines.NAir.AIR_WING_XP_MAX = 1000.0				--Per plane XP.
+NDefines.NAir.AIR_WING_XP_LEVELS = { 200, 400, 600, 800 } 	--Experience needed to progress to the next level
+NDefines.NAir.AIR_WING_XP_LOSS_WHEN_KILLED = 400		--if a plane dies, the game assumes that a pilot with this amount of xp died and recalcs average.
+NDefines.NAir.AIR_WING_XP_TRAINING_MAX = 400.0 			--Max average XP achieved with training.
+
 NDefines.NMilitary.LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2	-- extra damage dice if our armor outclasses enemy
 NDefines.NMilitary.LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 5	-- extra damage dice if our armor outclasses enemy
 
@@ -241,13 +246,13 @@ NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100			-- Each level of airbase build
 
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2.0			-- Balancing value to convert damage ( naval_strike_attack * hits ) to Strength reduction.
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 3.0			-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
-NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 4.0		-- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
+NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 2.0		-- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
 NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.6		-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
 NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5		-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.1				-- multiplies supply usage
-NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.3		-- factor of planes that can sortie by default from a carrier
+NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.1		-- factor of planes that can sortie by default from a carrier
 
 NDefines.NNavy.CARRIER_STACK_PENALTY = 4			-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 NDefines.NNavy.CARRIER_STACK_PENALTY_EFFECT = 0.20		-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
@@ -306,7 +311,7 @@ NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3			-- Vanilla is 0.25
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1	-- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05	-- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
 
-NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.05		-- Amount of exp each ship gain every 24h while training (before modifiers)
+NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.3			-- Amount of exp each ship gain every 24h while training (before modifiers)
 
 NDefines.NNavy.NAVY_VISIBILITY_BONUS_ON_RETURN_FOR_REPAIR = 0.1	-- Multiplier for the surface/sub visiblity when the heavily damaged fleet is returning to the home base for reparation. 1.0 = no bonus. 0.0 = invisible.
 

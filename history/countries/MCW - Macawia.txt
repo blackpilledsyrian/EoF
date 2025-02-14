@@ -1,4 +1,4 @@
-﻿capital = 721
+﻿ capital = 721
 oob = "MCW_1007"
 set_research_slots = 3
 

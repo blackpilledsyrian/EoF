@@ -12,9 +12,9 @@ focus_tree = {
 shared_focus = {
 	id = EoF_SDL_war_declare
 	icon = GFX_goal_generic_major_war
-	cost = 0
+	cost = 30
 	available = {
-		date > 1008.01.01
+		date > 1007.12.01
 	}
 	ai_will_do = {
 		factor = 200

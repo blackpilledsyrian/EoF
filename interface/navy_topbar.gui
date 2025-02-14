@@ -28,7 +28,7 @@ guiTypes = {
 			name ="active_fleet_count"
 			position = { x= 716 y = 7 }
 			font = "hoi_18mbs"
-			text = "active_fleet_size"
+			text = [active_fleet_size]
 			format = right
 			maxWidth = 44
 			maxHeight = 24

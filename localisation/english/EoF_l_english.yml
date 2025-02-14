@@ -33,6 +33,8 @@ VICTORY_POINTS_6978:0 "Horsetomel"
 DAZZHIP_STRAIT:0 "Dazzhip Strait"
 NORTH_SEAQUESTRIAN_STRAIT:0 "North Seaquestrian Strait"
 SOUTH_SEAQUESTRIAN_STRAIT:0 "Seaquestrian Strait"
+WESTPOLAR_STRAIT:0 "Bearing Strait"
+EASTPOLAR_STRAIT:0 "Beaking Strait"
 
 VICTORY_POINTS_10222:0 "El Alamane"
 VICTORY_POINTS_426:0 "Buckhmut"
@@ -48,7 +50,7 @@ EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §
 EoF_large_front_operations_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 5%."
 EoF_operational_concentration_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 10%."
 EoF_mechanized_wave_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
-EoF_peoples_army_tt:0 "§RIncreases§! §YCombat Width§! of §YAll Armour§! by 1"
+EoF_peoples_army_tt:0 "§RIncreases§! §YCombat Width§! of §YAll Frontline Armour§! by 1"
 
 tactic_masterful_blitz_preferred_weight_factor:0 "Additional §YMasterful Blitz§! Tactic Chance if it is Preferred tactic"
 

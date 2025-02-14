@@ -612,7 +612,7 @@ technologies = {
 		}
 
 		enable_equipment_modules = {
-			oscillating_turret
+			# oscillating_turret
 		}
 
 		path = {

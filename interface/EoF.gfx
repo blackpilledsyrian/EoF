@@ -1147,6 +1147,16 @@ spriteTypes = {
 
 	### Texticons ###
 	spriteType = {
+		name = "GFX_unit_category_front_line_armor"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_front_line_armor_icon_small"
+		textureFile = "gfx/texticons/unit_category_all_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_unit_category_td"
 		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_at_icon.dds"
 		noOfFrames = 2	

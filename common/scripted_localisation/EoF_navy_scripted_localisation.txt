@@ -1,0 +1,17 @@
+
+
+defined_text = {
+	name = active_fleet_size
+	text = {
+		trigger = {
+			check_variable = { active_fleet_var > fleet_limit_var }
+		}
+		localization_key = active_fleet_size_big
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localization_key = active_fleet_size_small
+	}
+}

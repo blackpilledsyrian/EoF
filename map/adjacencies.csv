@@ -804,6 +804,11 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5457;5552;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
 5457;8661;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
 
+5792;5818;;-1;-1;-1;-1;-1;EASTPOLAR_STRAIT;Eastern Polar Strait
+5792;2578;;-1;-1;-1;-1;-1;EASTPOLAR_STRAIT;Eastern Polar Strait
+
+8517;8604;;-1;-1;-1;-1;-1;WESTPOLAR_STRAIT;Western Polar Strait
+
 6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 3345;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front

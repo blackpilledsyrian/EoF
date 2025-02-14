@@ -23,6 +23,7 @@ sub_units = {
 			category_light_aa
 			category_mechanical
 			category_self_propelled_anti_air
+			category_front_line_armor
 		}
 
 		combat_width = 2
@@ -94,6 +95,7 @@ sub_units = {
 			category_light_aa
 			category_mechanical
 			category_self_propelled_anti_air
+			category_front_line_armor
 		}
 
 		combat_width = 2
@@ -169,6 +171,7 @@ sub_units = {
 			category_light_aa
 			category_mechanical
 			category_self_propelled_anti_air
+			category_front_line_armor
 		}
 
 		combat_width = 2
@@ -242,6 +245,7 @@ sub_units = {
 			category_light_aa
 			category_mechanical
 			category_self_propelled_anti_air
+			category_front_line_armor
 		}
 
 		combat_width = 2

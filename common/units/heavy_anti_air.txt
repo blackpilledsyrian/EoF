@@ -36,11 +36,6 @@ sub_units = {
 			heavy_anti_air_equipment = 15
 		}
 
-		battalion_mult = {
-			category = category_light_aa
-			air_attack = 0.25
-		}
-
 		can_be_parachuted = no
 
 		#Size Definitions
@@ -60,5 +55,9 @@ sub_units = {
 		air_attack = -0.2
 		ap_attack = -0.15
 
+		battalion_mult = {
+			category = category_light_aa
+			air_attack = 0.25
+		}
 	}
 }
