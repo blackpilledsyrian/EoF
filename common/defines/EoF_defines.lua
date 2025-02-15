@@ -39,6 +39,7 @@ NDefines.NCountry.MIN_WAR_SUPPORT = 0.0
 NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
 
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.75		-- Base xp gain for traits per hour for armies
 NDefines.NMilitary.MAX_NUM_TRAITS = 8				-- cant have more, -1 to disable
 
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.15			-- fort penalty
@@ -190,8 +191,8 @@ NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 168		-- default capacity if not
 NDefines.NMilitary.DAMAGE_SPLIT_ON_FIRST_TARGET = 0.35		--% of damage dealt to the first target in a combat. The rest will be split amongst subsequent targets. Modifiers can affect this up to a maximum of 0.9. That value must not be exposed as a define.
 
 NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 		-- trait slot for 0 level leader
-	2.0, -- field marshal
-	1.0, -- corps commander
+	1.0, -- field marshal
+	0.0, -- corps commander
 	1.0, -- navy general
 	0.0, -- operative
 }

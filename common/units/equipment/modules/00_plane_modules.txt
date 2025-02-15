@@ -182,7 +182,7 @@ equipment_modules = {
 		parent = engine_2_1x
 
 		add_stats = {
-			thrust = 25
+			thrust = 26
 			build_cost_ic = 16
 			fuel_consumption = 0.16
 		}
@@ -402,7 +402,7 @@ equipment_modules = {
 		parent = engine_4_1x
 
 		add_stats = {
-			thrust = 25
+			thrust = 26
 			build_cost_ic = 14
 			fuel_consumption = 0.3
 		}
@@ -1101,9 +1101,9 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 9
+			air_attack = 7.5
 			build_cost_ic = 1.5
-			weight = 2.5
+			weight = 2
 		}
 		xp_cost = 0
 		allow_mission_type = {
@@ -1119,9 +1119,9 @@ equipment_modules = {
 		add_equipment_type = { fighter heavy_fighter }
 
 		add_stats = {
-			air_attack = 18
+			air_attack = 15
 			build_cost_ic = 3
-			weight = 5
+			weight = 4
 		}
 		xp_cost = 0
 		allow_mission_type = {

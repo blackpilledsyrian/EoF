@@ -20,6 +20,14 @@ leader_traits = {
 		industrial_capacity_factory = 0.2
 		land_night_attack = -0.05	
 	}
+	EoF_imperial_governer = {
+		random = no
+		political_advisor_cost_factor = -0.33
+		high_command_cost_factor = -0.33
+		air_chief_cost_factor = -0.33
+		army_chief_cost_factor = -0.33
+		navy_chief_cost_factor = -0.33
+	}
 	EoF_war_industrialists = {
 		random = no
 		production_speed_arms_factory_factor = 0.15
