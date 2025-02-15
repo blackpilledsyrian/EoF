@@ -1,5 +1,4 @@
 EoF_naval_penalty = {
-	icon = GFX_idea_generic_build_infrastructure
 	naval_damage_factor = fleet_limit_penalty_var
 	naval_defense_factor = fleet_limit_penalty_var
 	sortie_efficiency = fleet_limit_penalty_var

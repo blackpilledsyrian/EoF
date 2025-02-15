@@ -5,6 +5,9 @@ on_actions = {
 				set_variable = {
 					fleet_limit_var = 50
 				}
+				add_dynamic_modifier = {
+					modifier = EoF_naval_penalty
+				}
 			}
 			every_country = {
 				limit = {
@@ -44,15 +47,7 @@ on_actions = {
 			set_variable = { fleet_limit_penalty_var = total_ship_var }
 			if = {
 				limit = {
-					check_variable = { fleet_limit_penalty_var < 0 }
-				}
-				add_dynamic_modifier = {
-					modifier = EoF_naval_penalty
-				}
-			}
-			else = {
-				remove_dynamic_modifier = {
-					modifier = EoF_naval_penalty
+					check_variable = { fleet_limit_penalty_var > 0 }
 				}
 				set_variable = { fleet_limit_penalty_var = 0 }
 			}
