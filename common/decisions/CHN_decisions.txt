@@ -2916,6 +2916,7 @@ CHN_protectorates = {
 							ideology = ultranationalism
 						}
     				}
+					add_ideas = EoF_OLE_deal
     	        }
     	    }
         }

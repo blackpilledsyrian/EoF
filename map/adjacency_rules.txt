@@ -362,3 +362,42 @@ adjacency_rule =
 	icon = 8517
 	offset = { -27 0 0 }
 }
+# Suez Canal Ripoff
+adjacency_rule =
+{
+	name = "HOOFUEZ_STRAIT"
+	
+	contested =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	enemy =
+	{
+		army = no
+		navy = no
+		submarine = no
+		trade = no
+	}
+	friend =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	neutral =
+	{
+		army = yes
+		navy = yes
+		submarine = yes
+		trade = yes
+	}
+	
+	required_provinces = { 18477 4819 }
+	
+	icon = 7133
+	offset = { -40 0 -7 }
+}

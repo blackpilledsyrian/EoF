@@ -4738,52 +4738,14 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
+				ahead_reduction = 1
 				category = cat_light_armor
 			}
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
-				category = cat_medium_armor
-			}
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				custom_effect_tooltip = CHN_PzIVH_tooltip
-			}
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_medium_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = artillery1
-							has_tech = antitank1
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Panzer IV  Ausf. H"
-					type = medium_tank_chassis_2
-					design_team = mio:CHN_chntank3_organization
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_1
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = armor_skirts
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_panzerIV.dds"
-				}		
+				category = armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4806,87 +4768,18 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
+				uses = 1
+				ahead_reduction = 0.5
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
 				uses = 2
-				category = cat_light_armor
-				ahead_reduction = 2
-			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-		custom_effect_tooltip = CHN_Panther_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = advanced_medium_tank_chassis
-						has_dlc = "No Step Back"
-						has_tech = antitank2
-					}
-				}
-				create_equipment_variant = {
-					name = "Panther Ausf. D"
-					type = medium_tank_chassis_3
-					design_team = mio:CHN_chntank3_organization
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_high_velocity_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_2
-						special_type_slot_2 = sloped_armor
-						special_type_slot_3 = armor_skirts
-						special_type_slot_4 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 11
-						tank_nsb_armor_upgrade = 10
-					}
-					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_panther.dds"
-				}		
-			}
-		custom_effect_tooltip = CHN_TigerI_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_heavy_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = antitank2
-							has_tech = antiair3
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Tiger I"
-					type = heavy_tank_chassis_2
-					design_team = mio:CHN_chntank1_organization
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon_2
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_2
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 7
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_tiger.dds"
-				}		
+				technology = armor_tech_1
+				technology = armor_tech_2
+				technology = armor_tech_3
+				technology = armor_tech_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }

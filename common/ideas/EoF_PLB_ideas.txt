@@ -6,15 +6,15 @@ ideas = {
 			equipment_bonus = {
 				armor = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.1
 				}
 				EoF_cat_eq_all_mechanized = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.1
 				}
 				small_plane_airframe = {
 					instant = yes
-					build_cost_ic = 0.5
+					build_cost_ic = 0.3
 				}
 			}	
 		}

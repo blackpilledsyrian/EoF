@@ -4279,7 +4279,7 @@ focus_tree = {
 		prerequisite = {
 			focus = EoF_threat_evaluation
 		}
-		x = -2
+		x = -1
 		y = 1
 		relative_position_id = EoF_threat_evaluation
 		available = {
@@ -4317,128 +4317,128 @@ focus_tree = {
 			add_ideas = STG_economic_policy
 		}
 	}
-	focus = {
-		id = EoF_activate_old_armour
-		icon = GFX_focus_generic_tankette
-		cost = 5
-		prerequisite = {
-			focus = EoF_STG_war_eco
-		}
-		x = 0
-		y = 1
-		relative_position_id = EoF_STG_war_eco
-		completion_reward = {
-			hidden_effect = {
-				create_equipment_variant = {
-					name = "BT-7 Obr.1007"
-					type = light_tank_chassis_2
-					modules = {
-						main_armament_slot = tank_small_cannon_2
-						turret_type_slot = tank_light_three_man_tank_turret
-						optics_type_slot = tank_optics_1
-						engine_type_slot = tank_gasoline_engine
-						armor_type_slot = tank_welded_armor
-						suspension_type_slot = tank_bogie_suspension
-						special_type_slot_2 = smoke_launchers
-						special_type_slot_3 = cupola_1
-					}
-					upgrades = {
-					}
-					icon = "GFX_stalliongrad_2d_improved_light_tank_medium"
-				}
-				create_equipment_variant = {
-					name = "T-28 Obr.1007"
-					type = medium_tank_chassis_1
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						optics_type_slot = tank_optics_1
-						engine_type_slot = tank_gasoline_engine
-						armor_type_slot = tank_welded_armor
-						suspension_type_slot = tank_bogie_suspension
-						special_type_slot_2 = smoke_launchers
-						special_type_slot_3 = cupola_1
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 5
-						tank_nsb_armor_upgrade = 3
-					}
-					icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
-				}
-				create_equipment_variant = {
-					name = "T-35 Obr.1007"
-					type = heavy_tank_chassis_1
-					modules = {
-						main_armament_slot = tank_heavy_cannon
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						optics_type_slot = tank_optics_1
-						engine_type_slot = tank_diesel_engine
-						armor_type_slot = tank_welded_armor
-						suspension_type_slot = tank_bogie_suspension
-						special_type_slot_2 = smoke_launchers
-						special_type_slot_3 = cupola_1
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 5
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/armour_folder/stalliongrad_2d/STG_T35.dds"
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = light_tank_chassis_2
-				amount = 300
-				variant_name = "BT-7 Obr.1007"
-			}
-			add_equipment_to_stockpile = {
-				type = medium_tank_chassis_1
-				amount = 600
-				variant_name = "T-28 Obr.1007"
-			}
-			add_equipment_to_stockpile = {
-				type = heavy_tank_chassis_1
-				amount = 300
-				variant_name = "T-35 Obr.1007"
-			}
-		}
-	}
-	focus = {
-		id = EoF_full_scale_war_academy
-		icon = GFX_goal_military_academy
-		cost = 5
-		prerequisite = {
-			focus = EoF_internal_safety
-		}
-		x = 2
-		y = 1
-		relative_position_id = EoF_internal_safety
-		completion_reward = {
-			custom_effect_tooltip = EoF_advanced_academy_tt
-			set_country_flag = EoF_advanced_academy
-		}
-	}
-	focus = {
-		id = EoF_share_academy
-		icon = GFX_goal_generic_intelligence_exchange_pony
-		cost = 5
-		prerequisite = {
-			focus = EoF_full_scale_war_academy
-		}
-		prerequisite = {
-			focus = EoF_join_UPA
-		}
-		x = 1
-		y = 1
-		relative_position_id = EoF_full_scale_war_academy
-		completion_reward = {
-			STG_that_bt7  = {
-				set_nationality = {
-					target_country = EQS
-					character = STG_that_bt7
-				}
-			}
-		}
-	}
+	# focus = {
+	# 	id = EoF_activate_old_armour
+	# 	icon = GFX_focus_generic_tankette
+	# 	cost = 5
+	# 	prerequisite = {
+	# 		focus = EoF_STG_war_eco
+	# 	}
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = EoF_STG_war_eco
+	# 	completion_reward = {
+	# 		hidden_effect = {
+	# 			create_equipment_variant = {
+	# 				name = "BT-7 Obr.1007"
+	# 				type = light_tank_chassis_2
+	# 				modules = {
+	# 					main_armament_slot = tank_small_cannon_2
+	# 					turret_type_slot = tank_light_three_man_tank_turret
+	# 					optics_type_slot = tank_optics_1
+	# 					engine_type_slot = tank_gasoline_engine
+	# 					armor_type_slot = tank_welded_armor
+	# 					suspension_type_slot = tank_bogie_suspension
+	# 					special_type_slot_2 = smoke_launchers
+	# 					special_type_slot_3 = cupola_1
+	# 				}
+	# 				upgrades = {
+	# 				}
+	# 				icon = "GFX_stalliongrad_2d_improved_light_tank_medium"
+	# 			}
+	# 			create_equipment_variant = {
+	# 				name = "T-28 Obr.1007"
+	# 				type = medium_tank_chassis_1
+	# 				modules = {
+	# 					main_armament_slot = tank_medium_cannon
+	# 					turret_type_slot = tank_medium_three_man_tank_turret
+	# 					optics_type_slot = tank_optics_1
+	# 					engine_type_slot = tank_gasoline_engine
+	# 					armor_type_slot = tank_welded_armor
+	# 					suspension_type_slot = tank_bogie_suspension
+	# 					special_type_slot_2 = smoke_launchers
+	# 					special_type_slot_3 = cupola_1
+	# 				}
+	# 				upgrades = {
+	# 					tank_nsb_engine_upgrade = 5
+	# 					tank_nsb_armor_upgrade = 3
+	# 				}
+	# 				icon = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+	# 			}
+	# 			create_equipment_variant = {
+	# 				name = "T-35 Obr.1007"
+	# 				type = heavy_tank_chassis_1
+	# 				modules = {
+	# 					main_armament_slot = tank_heavy_cannon
+	# 					turret_type_slot = tank_heavy_three_man_tank_turret
+	# 					optics_type_slot = tank_optics_1
+	# 					engine_type_slot = tank_diesel_engine
+	# 					armor_type_slot = tank_welded_armor
+	# 					suspension_type_slot = tank_bogie_suspension
+	# 					special_type_slot_2 = smoke_launchers
+	# 					special_type_slot_3 = cupola_1
+	# 				}
+	# 				upgrades = {
+	# 					tank_nsb_engine_upgrade = 5
+	# 					tank_nsb_armor_upgrade = 4
+	# 				}
+	# 				icon = "gfx/interface/technologies/armour_folder/stalliongrad_2d/STG_T35.dds"
+	# 			}
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = light_tank_chassis_2
+	# 			amount = 300
+	# 			variant_name = "BT-7 Obr.1007"
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = medium_tank_chassis_1
+	# 			amount = 600
+	# 			variant_name = "T-28 Obr.1007"
+	# 		}
+	# 		add_equipment_to_stockpile = {
+	# 			type = heavy_tank_chassis_1
+	# 			amount = 300
+	# 			variant_name = "T-35 Obr.1007"
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_full_scale_war_academy
+	# 	icon = GFX_goal_military_academy
+	# 	cost = 5
+	# 	prerequisite = {
+	# 		focus = EoF_internal_safety
+	# 	}
+	# 	x = 2
+	# 	y = 1
+	# 	relative_position_id = EoF_internal_safety
+	# 	completion_reward = {
+	# 		custom_effect_tooltip = EoF_advanced_academy_tt
+	# 		set_country_flag = EoF_advanced_academy
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_share_academy
+	# 	icon = GFX_goal_generic_intelligence_exchange_pony
+	# 	cost = 5
+	# 	prerequisite = {
+	# 		focus = EoF_full_scale_war_academy
+	# 	}
+	# 	prerequisite = {
+	# 		focus = EoF_join_UPA
+	# 	}
+	# 	x = 1
+	# 	y = 1
+	# 	relative_position_id = EoF_full_scale_war_academy
+	# 	completion_reward = {
+	# 		STG_that_bt7  = {
+	# 			set_nationality = {
+	# 				target_country = EQS
+	# 				character = STG_that_bt7
+	# 			}
+	# 		}
+	# 	}
+	# }
 	focus = {
 		id = EoF_external_safety
 		icon = GFX_goal_stg_eqs_friendship
@@ -4446,7 +4446,7 @@ focus_tree = {
 		prerequisite = {
 			focus = EoF_threat_evaluation
 		}
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = EoF_threat_evaluation
 		available = {

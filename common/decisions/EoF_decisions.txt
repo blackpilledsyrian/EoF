@@ -503,176 +503,175 @@ EoF_category = {
 		}
 	}
 
-	EoF_AI_NCH_decision = {
-		icon = GFX_decision_generic_break_treaty
-		allowed = {
-			original_tag = CHN
-		}
-		visible = {
-			NCH = {
-				is_ai = yes
-			}
-			OR = {
-				670 = { is_controlled_by = NCH }
-				669 = { is_controlled_by = NCH }
-				668 = { is_controlled_by = NCH }
-				569 = { is_controlled_by = NCH }
-				639 = { is_controlled_by = NCH }
-				572 = { is_controlled_by = NCH }
-				571 = { is_controlled_by = NCH }
-				455 = { is_controlled_by = NCH }
-				603 = { is_controlled_by = NCH }
-			}
-		}
-		complete_effect = {
-			NCH = {
-				every_owned_state = {
-					add_core_of = NCH
-				}
-			}
-			GRI = {
-				annex_country = {
-					target = NCH
-					transfer_troops = yes
-				}
-			}
-		}
-	}
-	EoF_AI_EQC_decision = {
-		icon = GFX_decision_generic_break_treaty
-		allowed = {
-			original_tag = EQS
-		}
-		visible = {
-			EQC = {
-				is_ai = yes
-			}
-			OR = {
-				208 = { is_controlled_by = EQC }
-				390 = { is_controlled_by = EQC }
-				381 = { is_controlled_by = EQC }
-				658 = { is_controlled_by = EQC }
-				659 = { is_controlled_by = EQC }
-				660 = { is_controlled_by = EQC }
-				360 = { is_controlled_by = EQC }
-				361 = { is_controlled_by = EQC }
-				362 = { is_controlled_by = EQC }
-				363 = { is_controlled_by = EQC }
-				364 = { is_controlled_by = EQC }
-				365 = { is_controlled_by = EQC }
-				675 = { is_controlled_by = EQC }
-				676 = { is_controlled_by = EQC }
-				379 = { is_controlled_by = EQC }
-			}
-		}
-		complete_effect = {
-			EQC = {
-				every_owned_state = {
-					limit = {
-						OR = {
-							state = 208
-							state = 390
-							state = 381
-							state = 658
-							state = 659
-							state = 660
-							state = 360
-							state = 361
-							state = 362
-							state = 364
-							state = 365
-							state = 675 
-							state = 676
-							state = 363
-							state = 379
-						}
-					}
-					if = {
-						limit = {
-							is_fully_controlled_by = EQC
-						}
-						transfer_state_to = EQS
-					}
-					EQS = {
-						set_state_owner = PREV
-					}
-					add_core_of = EQS
-					remove_core_of = EQC
-				}
-			}
-			set_autonomy = {
-				target = EQC
-				autonomous_state = autonomy_integrated_puppet
-			}
-		}
-	}
-	EoF_player_EQC_decision = {
-		icon = GFX_decision_eng_trade_unions_support
-		allowed = {
-			original_tag = EQS
-		}
-		visible = {
-			EQC = {
-				is_ai = no
-			}
-			OR = {
-				208 = { is_controlled_by = EQS }
-				390 = { is_controlled_by = EQS }
-				381 = { is_controlled_by = EQS }
-				658 = { is_controlled_by = EQS }
-				659 = { is_controlled_by = EQS }
-				660 = { is_controlled_by = EQS }
-				360 = { is_controlled_by = EQS }
-				361 = { is_controlled_by = EQS }
-				362 = { is_controlled_by = EQS }
-				363 = { is_controlled_by = EQS }
-				364 = { is_controlled_by = EQS }
-				365 = { is_controlled_by = EQS }
-				675 = { is_controlled_by = EQS }
-				676 = { is_controlled_by = EQS }
-				379 = { is_controlled_by = EQS }
-			}
-		}
-		complete_effect = {
-			set_autonomy = {
-				target = EQC
-				autonomous_state = autonomy_dominion
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 208
-						state = 390
-						state = 381
-						state = 658
-						state = 659
-						state = 660
-						state = 360
-						state = 361
-						state = 362
-						state = 364
-						state = 365
-						state = 675
-						state = 676
-						state = 363
-						state = 379
-					}
-				}
-				if = {
-					limit = {
-						is_fully_controlled_by = EQS
-					}
-					transfer_state_to = EQC
-				}
-				EQC = {
-					set_state_owner = PREV
-				}
-				add_core_of = EQC
-				remove_core_of = EQS
-			}
-		}
-	}
-
+	# EoF_AI_NCH_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		NCH = {
+	# 			is_ai = yes
+	# 		}
+	# 		OR = {
+	# 			670 = { is_controlled_by = NCH }
+	# 			669 = { is_controlled_by = NCH }
+	# 			668 = { is_controlled_by = NCH }
+	# 			569 = { is_controlled_by = NCH }
+	# 			639 = { is_controlled_by = NCH }
+	# 			572 = { is_controlled_by = NCH }
+	# 			571 = { is_controlled_by = NCH }
+	# 			455 = { is_controlled_by = NCH }
+	# 			603 = { is_controlled_by = NCH }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		NCH = {
+	# 			every_owned_state = {
+	# 				add_core_of = NCH
+	# 			}
+	# 		}
+	# 		GRI = {
+	# 			annex_country = {
+	# 				target = NCH
+	# 				transfer_troops = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# EoF_AI_EQC_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		EQC = {
+	# 			is_ai = yes
+	# 		}
+	# 		OR = {
+	# 			208 = { is_controlled_by = EQC }
+	# 			390 = { is_controlled_by = EQC }
+	# 			381 = { is_controlled_by = EQC }
+	# 			658 = { is_controlled_by = EQC }
+	# 			659 = { is_controlled_by = EQC }
+	# 			660 = { is_controlled_by = EQC }
+	# 			360 = { is_controlled_by = EQC }
+	# 			361 = { is_controlled_by = EQC }
+	# 			362 = { is_controlled_by = EQC }
+	# 			363 = { is_controlled_by = EQC }
+	# 			364 = { is_controlled_by = EQC }
+	# 			365 = { is_controlled_by = EQC }
+	# 			675 = { is_controlled_by = EQC }
+	# 			676 = { is_controlled_by = EQC }
+	# 			379 = { is_controlled_by = EQC }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		EQC = {
+	# 			every_owned_state = {
+	# 				limit = {
+	# 					OR = {
+	# 						state = 208
+	# 						state = 390
+	# 						state = 381
+	# 						state = 658
+	# 						state = 659
+	# 						state = 660
+	# 						state = 360
+	# 						state = 361
+	# 						state = 362
+	# 						state = 364
+	# 						state = 365
+	# 						state = 675 
+	# 						state = 676
+	# 						state = 363
+	# 						state = 379
+	# 					}
+	# 				}
+	# 				if = {
+	# 					limit = {
+	# 						is_fully_controlled_by = EQC
+	# 					}
+	# 					transfer_state_to = EQS
+	# 				}
+	# 				EQS = {
+	# 					set_state_owner = PREV
+	# 				}
+	# 				add_core_of = EQS
+	# 				remove_core_of = EQC
+	# 			}
+	# 		}
+	# 		set_autonomy = {
+	# 			target = EQC
+	# 			autonomous_state = autonomy_integrated_puppet
+	# 		}
+	# 	}
+	# }
+	# EoF_player_EQC_decision = {
+	# 	icon = GFX_decision_eng_trade_unions_support
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		EQC = {
+	# 			is_ai = no
+	# 		}
+	# 		OR = {
+	# 			208 = { is_controlled_by = EQS }
+	# 			390 = { is_controlled_by = EQS }
+	# 			381 = { is_controlled_by = EQS }
+	# 			658 = { is_controlled_by = EQS }
+	# 			659 = { is_controlled_by = EQS }
+	# 			660 = { is_controlled_by = EQS }
+	# 			360 = { is_controlled_by = EQS }
+	# 			361 = { is_controlled_by = EQS }
+	# 			362 = { is_controlled_by = EQS }
+	# 			363 = { is_controlled_by = EQS }
+	# 			364 = { is_controlled_by = EQS }
+	# 			365 = { is_controlled_by = EQS }
+	# 			675 = { is_controlled_by = EQS }
+	# 			676 = { is_controlled_by = EQS }
+	# 			379 = { is_controlled_by = EQS }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_autonomy = {
+	# 			target = EQC
+	# 			autonomous_state = autonomy_dominion
+	# 		}
+	# 		every_owned_state = {
+	# 			limit = {
+	# 				OR = {
+	# 					state = 208
+	# 					state = 390
+	# 					state = 381
+	# 					state = 658
+	# 					state = 659
+	# 					state = 660
+	# 					state = 360
+	# 					state = 361
+	# 					state = 362
+	# 					state = 364
+	# 					state = 365
+	# 					state = 675
+	# 					state = 676
+	# 					state = 363
+	# 					state = 379
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					is_fully_controlled_by = EQS
+	# 				}
+	# 				transfer_state_to = EQC
+	# 			}
+	# 			EQC = {
+	# 				set_state_owner = PREV
+	# 			}
+	# 			add_core_of = EQC
+	# 			remove_core_of = EQS
+	# 		}
+	# 	}
+	# }
 	EoF_AI_NIM_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
@@ -703,44 +702,43 @@ EoF_category = {
 			}
 		}
 	}
-
-	EoF_AI_OLE_decision = {
-		icon = GFX_decision_generic_break_treaty
-		allowed = {
-			original_tag = CHN
-		}
-		visible = {
-			OLE = {
-				is_ai = yes
-				is_subject_of = CHN
-				has_idea = EoF_OLE_deal
-			}
-		}
-		complete_effect = {
-			OLE = {
-				remove_ideas = EoF_OLE_deal
-				transfer_navy = {
-					target = CHN
-				}
-			}
-		}
-	}
-	EoF_player_OLE_decision = {
-		icon = GFX_decision_eng_trade_unions_support
-		allowed = {
-			original_tag = CHN
-		}
-		visible = {
-			OLE = {
-				is_ai = no
-				is_subject_of = CHN
-				NOT = { has_idea = EoF_OLE_deal }
-			}
-		}
-		complete_effect = {
-			OLE = {
-				add_ideas = EoF_OLE_deal
-			}
-		}
-	}
+	# EoF_AI_OLE_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		OLE = {
+	# 			is_ai = yes
+	# 			is_subject_of = CHN
+	# 			has_idea = EoF_OLE_deal
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		OLE = {
+	# 			remove_ideas = EoF_OLE_deal
+	# 			transfer_navy = {
+	# 				target = CHN
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# EoF_player_OLE_decision = {
+	# 	icon = GFX_decision_eng_trade_unions_support
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		OLE = {
+	# 			is_ai = no
+	# 			is_subject_of = CHN
+	# 			NOT = { has_idea = EoF_OLE_deal }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		OLE = {
+	# 			add_ideas = EoF_OLE_deal
+	# 		}
+	# 	}
+	# }
 }

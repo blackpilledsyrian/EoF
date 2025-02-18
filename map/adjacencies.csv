@@ -809,6 +809,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 
 8517;8604;;-1;-1;-1;-1;-1;WESTPOLAR_STRAIT;Western Polar Strait
 
+20211;7133;;-1;-1;-1;-1;-1;HOOFUEZ_STRAIT; Hoofuez Strait
+
 6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 3345;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front

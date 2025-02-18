@@ -366,7 +366,6 @@ ideas = {
 				weekly_casualties_war_support = 0.001
 				weekly_convoys_war_support= 0.001
 				weekly_bombing_war_support= 0.001
-				conscription_factor = -0.5
 			}
 		}
 	

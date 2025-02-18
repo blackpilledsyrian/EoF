@@ -83,8 +83,8 @@ ideas = {
 			removal_cost = -1
 			picture = can_wartime_prices_and_trade_board
 			modifier = {
-				cic_to_overlord_factor = -0.75
-				mic_to_overlord_factor = -0.75
+				cic_to_overlord_factor = -0.25
+				mic_to_overlord_factor = -0.25
 			}
 		}
 

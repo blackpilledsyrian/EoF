@@ -92,18 +92,6 @@ country_event = {
 					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
 					owner = EQS
 				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
-				}
 			}
 		}
 		CRY = {
@@ -117,18 +105,6 @@ country_event = {
 							}
 						}
 					} 
-				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
-				}
-				create_unit = {
-					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"
-					owner = EQS
 				}
 				create_unit = {
 					division = "name = \"Sunset Infantry Division\" division_template = \"Sunset Infantry Division\" start_experience_factor = 0.5 start_equipment_factor = 1"

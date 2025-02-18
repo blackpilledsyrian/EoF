@@ -31020,6 +31020,28 @@ shared_focus = {
 			tag = JER
 			months > 11
 		}
+		any_core_state = {
+			OR = {
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_3
+				}
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_4
+				}
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_5
+				}
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_6
+				}
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_7
+				}
+				has_dynamic_modifier = {
+					modifier = EoF_HIP_invasion_terrain_8
+				}
+			}
+		}
 	}
 
 	completion_reward = {

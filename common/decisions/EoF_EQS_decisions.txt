@@ -619,7 +619,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_0
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -628,7 +628,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_1
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -637,7 +637,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_2
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -646,7 +646,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_3
-					days = -20
+					days = -30
 				}
 			}
 			random_owned_controlled_state = {
@@ -679,7 +679,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_0
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -688,7 +688,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_1
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -697,7 +697,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_2
-					days = -20
+					days = -30
 				}
 			}
 			else_if = {
@@ -706,7 +706,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_3
-					days = -20
+					days = -30
 				}
 			}
 			random_owned_controlled_state = {

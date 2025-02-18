@@ -1102,7 +1102,7 @@ equipments = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
 			rear_1_custom_slot = empty
-			fixed_ship_engine_slot = sub_ship_engine_nuke
+			fixed_ship_engine_slot = sub_ship_nuclear_engine_1
 		}
 		
 		sub_visibility = 16

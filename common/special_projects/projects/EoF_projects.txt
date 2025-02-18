@@ -25,7 +25,7 @@ sp_EoF_fire_control_computer = {
 	
 	prototype_time = sp_time.prototype.short
 
-	complexity = sp_complexity.small
+	complexity = sp_complexity.large
 	
 	project_output = {
 		enable_equipment_modules = {
@@ -68,7 +68,7 @@ sp_EoF_advanced_land_doctrine = {
 	}
 
 	breakthrough_cost = {
-		specialization_land = 1
+		specialization_land = 2
 	}
 	
 	prototype_time = sp_time.prototype.short

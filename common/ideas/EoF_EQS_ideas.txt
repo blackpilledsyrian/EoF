@@ -622,21 +622,30 @@ ideas = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.1
-				army_attack_factor = -0.1
-				army_defence_factor = -0.1
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 			}	
 		}
 		EoF_EQS_army_incompetence_3 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.08
-				army_attack_factor = -0.08
-				army_defence_factor = -0.08
+				army_org_factor = -0.12
+				army_attack_factor = -0.12
+				army_defence_factor = -0.12
 			}	
 		}
 		EoF_EQS_army_incompetence_2 = {
+			removal_cost = -1
+			picture = pony_army
+			modifier = {
+				army_org_factor = -0.09
+				army_attack_factor = -0.09
+				army_defence_factor = -0.09
+			}		
+		}
+		EoF_EQS_army_incompetence_1 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
@@ -645,22 +654,13 @@ ideas = {
 				army_defence_factor = -0.06
 			}		
 		}
-		EoF_EQS_army_incompetence_1 = {
-			removal_cost = -1
-			picture = pony_army
-			modifier = {
-				army_org_factor = -0.04
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
-			}		
-		}
 		EoF_EQS_army_incompetence_0 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.02
-				army_attack_factor = -0.02
-				army_defence_factor = -0.02
+				army_org_factor = -0.03
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
 			}		
 		}
 		EoF_operation_vegetarian_stockpile = {
