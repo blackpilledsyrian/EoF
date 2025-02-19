@@ -5,8 +5,8 @@ state={
 		13377 20262 20264 
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 0
 			13377 = { 

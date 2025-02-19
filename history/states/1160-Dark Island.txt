@@ -10,8 +10,8 @@ state={
 	}
 	state_category = town
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			arms_factory = 1
 			dockyard = 1

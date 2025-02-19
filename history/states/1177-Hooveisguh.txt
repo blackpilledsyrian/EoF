@@ -6,8 +6,8 @@ state={
 		steel=100.000
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = OLE
+		add_core_of = OLE
 		buildings = {
 
 		}

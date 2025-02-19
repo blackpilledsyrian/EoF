@@ -6,9 +6,8 @@ state={
 		tungsten=80
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
-		#add_core_of = MQM
+		owner = WNG
+		add_core_of = WNG
         buildings = {
 			infrastructure = 1
 			2905 = {
