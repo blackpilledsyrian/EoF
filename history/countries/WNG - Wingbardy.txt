@@ -209,6 +209,7 @@ add_ideas = {
 	semi_professional_army
 	proper_science_base
 	EoF_WNG_treaty
+	EoF_WNG_army_atrophy
 	WNG_garibald_talonuel_iii
 	WNG_political_deadlock
 	WNG_economic_crisis

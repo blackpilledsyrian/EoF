@@ -3757,10 +3757,19 @@ technologies = {
 			soft_attack = 0.1
 		}
 		artillery_brigade = {
-			soft_attack = 0.2
+			soft_attack = 0.1
 		}
 		mot_artillery_brigade = {
-			soft_attack = 0.2
+			soft_attack = 0.1
+		}
+		heavy_artillery = {
+			soft_attack = 0.1
+		}
+		heavy_artillery_brigade = {
+			soft_attack = 0.1
+		}
+		mech_heavy_artillery_brigade = {
+			soft_attack = 0.1
 		}
 		category_self_propelled_artillery = {
 			soft_attack = 0.1

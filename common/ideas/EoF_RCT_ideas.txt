@@ -49,5 +49,16 @@ ideas = {
 				}
 			}
 		}
+		EoF_RCT_ascendent = {
+			removal_cost = -1
+			picture = generic_political_support
+			modifier = {
+				political_power_factor = 0.1
+				party_popularity_stability_factor = 0.2
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				conscription = 0.01
+			}
+		}
 	}
 }

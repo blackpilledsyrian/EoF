@@ -2168,6 +2168,34 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
 	}
 	focus = {
+		id = EoF_zebra_military
+		icon = GFX_zebra_soldier
+		prerequisite = { focus = EoF_zebra_doctrine_advancement }
+		relative_position_id = EoF_zebra_doctrine_advancement
+		x = 0
+		y = 1
+		cost = 15
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			set_technology = {
+				zebra_race = 1
+			}
+			every_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = EoF_CTH_terrain
+					}
+				}
+				remove_dynamic_modifier = { 
+					modifier = EoF_CTH_terrain
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
 		id = EoF_zebra_support
 		icon = GFX_goal_generic_support_equipment
 		prerequisite = { focus = EoF_zebra_expand_army }

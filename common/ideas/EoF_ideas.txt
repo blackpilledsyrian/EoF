@@ -80,7 +80,7 @@ ideas = {
 				trade_cost_for_target_factor = 1
 			}
 			targeted_modifier = {
-				tag = NCH
+				tag = KIR
 				trade_cost_for_target_factor = 1
 			}
 			modifier = {
@@ -155,7 +155,7 @@ ideas = {
 				trade_cost_for_target_factor = 9
 			}
 			targeted_modifier = {
-				tag = NCH
+				tag = KIR
 				trade_cost_for_target_factor = 9
 			}
 			modifier = {
@@ -230,7 +230,7 @@ ideas = {
 				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
-				tag = NCH
+				tag = KIR
 				trade_cost_for_target_factor = -0.5
 			}
 			modifier = {

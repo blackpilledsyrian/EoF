@@ -6184,7 +6184,7 @@ guiTypes = {
 			}
 
 			buttonType = {
-				position = { x = 823 y = 0 }
+				position = { x = 912 y = 0 }
 				name = "zebra_folder_tab"
 				quadTextureSprite = "GFX_zebra_folder_tab"
 				frame = 1

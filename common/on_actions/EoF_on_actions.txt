@@ -424,6 +424,9 @@ on_actions = {
 			706 = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
+			1092 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
 			1093 = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
@@ -431,6 +434,12 @@ on_actions = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
 			1095 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			933 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1089 = {
 				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
 			}
 			282 = {
@@ -1394,17 +1403,11 @@ on_actions = {
 					tag = WNG
 					has_idea = EoF_WNG_treaty
 				}
+				set_variable = { global.EoF_WNG_industrial_evac_var_half = EoF_WNG_industrial_evac_var }
+				multiply_variable = { global.EoF_WNG_industrial_evac_var = 2 }
 				WNG = {
-					swap_ideas = {
-						remove_idea = EoF_WNG_treaty
-						add_idea = EoF_WNG_treaty_2
-					}
-				}
-				GRI = {
-					set_autonomy = {
-						target = WNG
-						autonomous_state = autonomy_EoF_enforced_ally
-					}
+					remove_ideas = EoF_WNG_treaty
+					remove_ideas = EoF_WNG_army_atrophy
 				}
 				HLR = {
 					transfer_state = 570
@@ -1427,6 +1430,22 @@ on_actions = {
 					remove_state_core = 509
 					remove_state_core = 460
 					remove_state_core = 445
+					every_core_state = {
+						limit = {
+							is_on_continent = asia
+						}
+						transfer_state_to = GRI
+						remove_building = {
+							type = arms_factory
+							level = global.EoF_WNG_industrial_evac_var
+						}
+						remove_building = {
+							type = industrial_complex
+							level = global.EoF_WNG_industrial_evac_var_half
+						}
+					}
+					add_offsite_building = { type = arms_factory level = global.EoF_WNG_industrial_evac_var }
+					add_offsite_building = { type = industrial_complex level = global.EoF_WNG_industrial_evac_var_half }
 				}
 			}
 		}

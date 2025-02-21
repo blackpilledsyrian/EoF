@@ -123,6 +123,7 @@ RIV_race_cat = {
 					set_country_flag = EoF_big_event_custom_rivfed
 				}
 			}
+			set_country_flag = EoF_RIV_federation_formed
 		}
 
 	}

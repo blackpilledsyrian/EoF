@@ -672,6 +672,22 @@ EoF_HIP_DOMINATION_democratic:0 "Greater Hippogriffia"
 EoF_HIP_DOMINATION_democratic_ADJ:0 "Hippogriffian"
 EoF_HIP_DOMINATION_democratic_DEF:0 "Greater Hippogriffia"
 
+EoF_RCT_DOMINATION_neutrality:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_neutrality_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_neutrality_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_fascism:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_fascism_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_fascism_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_communism:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_communism_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_communism_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_democratic:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_democratic_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_democratic_DEF:0 "The Ascendent River Federation"
+
 EoF_JER_first_plan:0 "First Aquileian Three Year Plan"
 EoF_JER_second_plan:0 "Second Aquileian Three Year Plan"
 
@@ -708,6 +724,7 @@ mio_policy_JER_quality:0 "Qualitative Overmatch"
 
 EoF_JER_form_domination:0 "Declare the Greater Aquileian Republic"
 EoF_HIP_form_domination:0 "Declare Greater Hippogriffia"
+EoF_RCT_form_domination:0 "Declare the Ascendent River Federation"
 
 EoF_JER_invade_equestria_mission:0 "Invasion of Equestria"
 EoF_JER_invade_wingbardy_mission:0 "Invasion of Wingbardy"
@@ -718,6 +735,7 @@ EoF_WNG_terrain:0 "Resistenza e Risorgimento"
 
 EoF_WNG_treaty:0 "Victors of the Tarrin War"
 EoF_WNG_treaty_desc:0 "The Wingbardian nation has endured countless conflicts. Despite fighting heavily in the First and Second Great Griffonian Wars as well as the devastating Tarrin War, through it all, Wingbardy has remained unconquered and undefeated. However, the decades of peace and memories of past losses have sapped the will of the nation to endure a struggle of that magnitude ever again. The Wingbardian people naively hope that the current era of strife will pass quickly without the need to fight once more."
+EoF_WNG_army_atrophy:0 "Army Atrophy"
 EoF_WNG_militarization:0 "Fury of Karthin"
 EoF_WNG_militarization_desc:0 "The treacherous Aquileians have mistaken our unwillingness to fully commit to this war as a sign of weakness. Let them face the fury of Karthin, reserved for those who have forsaken all honour."
 

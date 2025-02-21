@@ -32,11 +32,6 @@ shared_focus = {
 			}
 		}
 		build_railway = {
-			level = 5
-			start_province = 10457
-			target_province = 15863
-		}
-		build_railway = {
 			level = 3
 			start_province = 15710
 			target_province = 15819

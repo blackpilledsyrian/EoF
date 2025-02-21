@@ -5,8 +5,6 @@ technologies = {
 
 		research_cost = 1
 
-		intel_network_gain_factor = -0.3
-
 		allow = {
 			always = no
 		}

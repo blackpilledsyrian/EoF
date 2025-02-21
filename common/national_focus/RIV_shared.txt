@@ -2337,7 +2337,7 @@ shared_focus = {
 	id = RIV_atomic_energy_community
 	icon = GFX_goal_riv_atom
 	prerequisite = { focus = RIV_the_federation }
-	x = 0
+	x = -1
 	y = 1
 	relative_position_id = RIV_the_federation
 
@@ -2384,6 +2384,37 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
+
+#EoF Changes
+shared_focus = {
+	id = EoF_RIV_federation_ascendent
+	icon = GFX_goal_riv_strike_south
+	prerequisite = { focus = RIV_the_federation }
+	x = 1
+	y = 1
+	relative_position_id = RIV_the_federation
+
+	cost = 10
+
+	available = {
+		has_country_flag = EoF_RIV_federation_formed
+		controls_state = 668
+		controls_state = 669
+		controls_state = 670
+		controls_state = 578
+		controls_state = 579
+		controls_state = 412
+		controls_state = 413
+		controls_state = 558
+		controls_state = 680
+	}
+
+	completion_reward = {
+		unlock_decision_tooltip = EoF_RCT_form_domination
+		add_ideas = EoF_RCT_ascendent
+	}
+}
+#EoF Changes
 
 shared_focus = {
 	id = RIV_pacify_the_south

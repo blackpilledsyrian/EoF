@@ -171,10 +171,6 @@ characters={
 			allowed = {
 				original_tag = EQC
 			}
-
-			available = {
-				has_completed_focus = EoF_imperial_resistance_coalition
-			}
 			traits = { EoF_snake }
 		}
 	}

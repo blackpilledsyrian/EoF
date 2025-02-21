@@ -102,4 +102,46 @@ political_actions = {
 			}
 		}
 	}
+	EoF_RCT_form_domination = {
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			original_tag = RCT
+		}
+		available = {
+			controls_state = 668
+			controls_state = 669
+			controls_state = 670
+			controls_state = 578
+			controls_state = 579
+			controls_state = 412
+			controls_state = 413
+			controls_state = 558
+			controls_state = 680
+		}
+
+		visible = {
+			has_completed_focus = EoF_RIV_federation_ascendent
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = EoF_RCT_DOMINATION
+			add_state_core = 668
+			add_state_core = 669
+			add_state_core = 670
+			add_state_core = 578
+			add_state_core = 579
+			add_state_core = 412
+			add_state_core = 413
+			add_state_core = 558
+			add_state_core = 680
+			transfer_state = 624
+			add_state_core = 624
+			transfer_state = 625
+			add_state_core = 625
+			transfer_state = 626
+			add_state_core = 626
+		}
+	}
 }

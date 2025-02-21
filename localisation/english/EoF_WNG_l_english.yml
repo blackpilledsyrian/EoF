@@ -1,0 +1,4 @@
+﻿l_english:
+  EoF_WNG_war_category:0 "The Invasion of Wingbardy"
+  EoF_WNG_industrial_evac_mission:0 "Industrial Evacuation Mission"
+  EoF_WNG_industrial_evac_mission_tt:0 "Every 30 days, the industrial evacuation level will §Gincrease§! up to a maximum of §Y8§!.\n\nUpon capitulation, two times the evacuation level of §Ymilitary factories§! and one times the evacuation level of §Ycivilian factories§! will be removed per state.\n\nAdditionally, two times the evacuation level of §Ymilitary factories§! and one times the evacuation level of §Ycivilian factories§! will be added offmap.\n\n§YCurrent Evacuation Level:§! [?global.EoF_WNG_industrial_evac_var|.0]"

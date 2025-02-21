@@ -181,3 +181,37 @@ military_training_category = {
 		}
 	}
 }
+EoF_WNG_war_category = {
+	EoF_WNG_industrial_evac_mission = {
+		allowed = {
+			original_tag =  WNG
+		}
+		activation = {
+			date > 1011.03.10
+			has_capitulated = no
+			check_variable = {
+				global.EoF_WNG_industrial_evac_var < 8
+			}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 30
+		timeout_effect = {
+			custom_effect_tooltip = EoF_WNG_industrial_evac_mission_tt
+			hidden_effect = {
+				add_to_variable = { global.EoF_WNG_industrial_evac_var = 1 }
+				activate_mission = EoF_WNG_industrial_evac_mission
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				check_variable = {
+					global.EoF_WNG_industrial_evac_var > 7
+				}
+			}
+		}
+	}
+}

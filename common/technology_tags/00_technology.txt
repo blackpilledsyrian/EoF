@@ -294,6 +294,7 @@ technology_folders = {
 			OR = {
 				NOT = { has_global_flag = game_has_started }
 				has_zebra_race_tech = yes
+				tag = MCW
 			}
 		}
 		ledger = civilian

@@ -632,6 +632,12 @@ ideas = {
 					}
 					NOT = { has_idea = HIP_cannot_mobilise }
 				}
+				if = {
+					limit = {
+						tag = WNG
+					}
+					NOT = { has_idea = EoF_WNG_treaty }
+				}
 				NOT = { has_country_flag = economic_laws_blocked }
 			}
 
