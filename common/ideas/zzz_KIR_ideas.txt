@@ -5182,20 +5182,20 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = KIR_sycee_trading_house_available
-				if = {
-					limit = {
-						original_tag = KIR
-						KIS = {
-							exists = yes
-						}
-					}
-					NOT = {
-						KIS = {
-							has_idea = KIR_sycee_trading_house
-						}
-					}
-				}
+				# has_country_flag = KIR_sycee_trading_house_available
+				# if = {
+				# 	limit = {
+				# 		original_tag = KIR
+				# 		KIS = {
+				# 			exists = yes
+				# 		}
+				# 	}
+				# 	NOT = {
+				# 		KIS = {
+				# 			has_idea = KIR_sycee_trading_house
+				# 		}
+				# 	}
+				# }
 			}
 
 			traits = { KIR_merchant_bank }
@@ -5213,20 +5213,20 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = KIR_artificer_guild_available
-				if = {
-					limit = {
-						original_tag = KIR
-						KIS = {
-							exists = yes
-						}
-					}
-					NOT = {
-						KIS = {
-							has_idea = KIR_artificer_guild
-						}
-					}
-				}
+				# has_country_flag = KIR_artificer_guild_available
+				# if = {
+				# 	limit = {
+				# 		original_tag = KIR
+				# 		KIS = {
+				# 			exists = yes
+				# 		}
+				# 	}
+				# 	NOT = {
+				# 		KIS = {
+				# 			has_idea = KIR_artificer_guild
+				# 		}
+				# 	}
+				# }
 			}
 
 			research_bonus = {
@@ -5249,7 +5249,7 @@ ideas = {
 			}
 
 			available = {
-				1069 = { is_controlled_by = ROOT }
+				# 1069 = { is_controlled_by = ROOT }
 			}
 			
 			research_bonus = {
@@ -5263,7 +5263,7 @@ ideas = {
 			}
 
 			modifier = {
-				country_resource_steel = 6
+				country_resource_steel = 60
 			}
 		}
 		KIR_military_industrial_directorate = {
@@ -5273,13 +5273,13 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = KIR_military_directorate_available
+				# has_country_flag = KIR_military_directorate_available
 			}
 			
 			visible = {
-				NOT = {
-					has_country_flag = KIR_military_industrial_directorate_SFDS_available
-				}
+				# NOT = {
+				# 	has_country_flag = KIR_military_industrial_directorate_SFDS_available
+				# }
 			}
 			
 			research_bonus = {
@@ -5350,7 +5350,7 @@ ideas = {
 			}
 
 			available = {
-				has_country_flag = KIR_kaolin_resource_industries_available
+				# has_country_flag = KIR_kaolin_resource_industries_available
 			}
 			
 			research_bonus = {

@@ -38,9 +38,9 @@ NDefines.NCountry.MAX_STABILITY = 1.5
 NDefines.NCountry.MIN_WAR_SUPPORT = 0.0
 NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
 
-NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.75		-- Base xp gain for traits per hour for armies
-NDefines.NMilitary.MAX_NUM_TRAITS = 8				-- cant have more, -1 to disable
+NDefines.NMilitary.MAX_NUM_TRAITS = -1				-- cant have more, -1 to disable
 
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.15			-- fort penalty
 NDefines.NMilitary.DIG_IN_FACTOR = 0.015			-- bonus factor for each dug-in level

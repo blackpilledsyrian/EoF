@@ -253,25 +253,7 @@ country_event = {
 	hidden = yes
 	immediate = {
 		set_global_flag = EoF_great_war_began
-		CHN = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		OLE = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		PLB = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		GRF = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		EQS = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		CRY = {
-			set_country_flag = EoF_big_event_custom_great_war
-		}
-		STG = {
+		every_country = {
 			set_country_flag = EoF_big_event_custom_great_war
 		}
 		CHN = {

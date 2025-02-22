@@ -2411,7 +2411,10 @@ shared_focus = {
 
 	completion_reward = {
 		unlock_decision_tooltip = EoF_RCT_form_domination
-		add_ideas = EoF_RCT_ascendent
+		swap_ideas = {
+			remove_idea = RIV_river_union_member2
+			add_idea = EoF_RIV_river_federation
+		}
 	}
 }
 #EoF Changes

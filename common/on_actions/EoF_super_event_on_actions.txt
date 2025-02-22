@@ -2,7 +2,7 @@ on_actions = {
 	on_startup = {
 		effect = {
 			HLR = {
-				country_event = { id = EoF.15 days = 1764 }
+				country_event = { id = EoF.15 days = 1519 }
 			}
 		}
 	}

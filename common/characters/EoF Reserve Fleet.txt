@@ -167,8 +167,8 @@ characters={
 			traits = { EoF_reserve_fleet_advisor }
 		}
 	}
-	EoF_NCH_reserve_fleet = {
-		name = EoF_NCH_reserve_fleet
+	EoF_KIR_reserve_fleet = {
+		name = EoF_KIR_reserve_fleet
 		portraits = {
 			army = {
 				large="gfx/leaders/Reserve_Fleet.tga"

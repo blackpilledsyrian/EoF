@@ -83,9 +83,9 @@ on_actions = {
 				setup_WNG_parliament = yes
 			}
 			KIR = {
-				remove_ideas = { KIR_the_silence_dummy }
-				add_offsite_building = { type = industrial_complex level = 2 }
-				country_event = { id = kirin.34 days = 365 }
+				# remove_ideas = { KIR_the_silence_dummy }
+				# add_offsite_building = { type = industrial_complex level = 2 }
+				# country_event = { id = kirin.34 days = 365 }
 			}
 
 			BUF = {

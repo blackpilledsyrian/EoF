@@ -3,7 +3,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = KIR
 		}
 	}
@@ -25,11 +25,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = KIR
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIR_national_focus_title_3_flag
 		}
 	}
@@ -55,11 +55,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = KIR
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIR_national_focus_title_2_flag
 		}
 	}
@@ -82,11 +82,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = KIR
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIR_bipartite_war_started_flag
 		}
 	}
@@ -108,15 +108,15 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 10
+			add = 0
 			tag = KIR
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIR_bipartite_war_started_flag
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIR_unlock_post_war_focus_tree
 		}
 	}
@@ -139,11 +139,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 0
 			tag = KIS
 		}
 		modifier = {
-			add = 10
+			add = 0
 			has_country_flag = KIS_council_breakaway_scenario
 		}
 	}
@@ -164,11 +164,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 0
 			tag = KIS
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIS_unlock_empire_focus_tree
 		}
 	}
@@ -191,11 +191,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 0
 			tag = KIC
 		}
 		modifier = {
-			add = 10
+			add = 0
 			has_country_flag = KIS_republic_breakaway_scenario
 		}
 	}
@@ -220,11 +220,11 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 25
+			add = 0
 			tag = KIC
 		}
 		modifier = {
-			add = 20
+			add = 0
 			has_country_flag = KIC_unlock_postwar_focus_tree
 		}
 	}
@@ -258,7 +258,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 50
+			add = 0
 			has_country_flag = KIC_children_of_concord_flag
 		}
 	}
@@ -281,7 +281,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 50
+			add = 0
 			has_country_flag = KIS_FRV_flag
 		}
 	}
@@ -324,7 +324,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 50
+			add = 0
 			has_country_flag = CHN_FRV_flag
 		}
 	}
@@ -348,7 +348,7 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 50
+			add = 0
 			has_country_flag = KIR_NSA
 		}
 	}

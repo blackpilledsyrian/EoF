@@ -472,6 +472,7 @@ create_faction = changeling_hegemony
 add_to_faction = PLB
 add_to_faction = GRF
 add_to_faction = FAT
+add_to_faction = KIR
 
 set_rule = {
 	can_generate_female_aces = yes

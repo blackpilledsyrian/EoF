@@ -924,7 +924,7 @@ on_actions = {
 						modifier = light_of_kemerkai
 					}
 					add_opinion_modifier = {
-						target = NCH
+						target = KIR
 						modifier = light_of_kemerkai
 					}
 					division_template = {
@@ -1020,7 +1020,7 @@ on_actions = {
 				JER = {
 					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
-				NCH = {
+				KIR = {
 					add_ideas = EoF_SDL_EMR_war_volunteers_1
 				}
 			}

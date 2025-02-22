@@ -622,7 +622,7 @@ ideas = {
 			}
 			
 			available = {
-				has_country_flag = KIR_can_have_banner_system
+				# has_country_flag = KIR_can_have_banner_system
 			}
 			
 			visible = {

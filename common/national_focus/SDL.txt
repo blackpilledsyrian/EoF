@@ -90,7 +90,7 @@ shared_focus = {
 		JER = {
 			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
-		NCH = {
+		KIR = {
 			remove_ideas = EoF_SDL_EMR_war_volunteers_1
 		}
 	}

@@ -1444,15 +1444,13 @@ technologies = {
 	zebra_soulless_steel = {
 
 		light_armor = {
-			build_cost_ic = -0.1
-			reliability = 0.1
-			soft_attack = -0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
 			default_morale = -0.02
 		}
 		medium_armor = {
-			build_cost_ic = -0.1
-			reliability = 0.1
-			soft_attack = -0.05
+			soft_attack = 0.05
+			hard_attack = 0.05
 			default_morale = -0.02
 		}
 

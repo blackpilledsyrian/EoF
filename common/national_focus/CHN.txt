@@ -5602,7 +5602,7 @@ focus_tree = {
 	focus = {
 		id = EoF_polar_relations
 		icon = GFX_goal_chn_plb
-		cost = 5
+		cost = 1
 		prerequisite = {
 			focus = unite_the_people
 		}
@@ -5621,7 +5621,7 @@ focus_tree = {
 	focus = {
 		id = EoF_first_wesslandia_award
 		icon = GFX_goal_chn_strike_grf
-		cost = 5
+		cost = 1
 		prerequisite = {
 			focus = EoF_polar_relations
 		}
