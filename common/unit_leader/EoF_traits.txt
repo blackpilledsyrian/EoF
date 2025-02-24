@@ -123,13 +123,14 @@ leader_traits = {
 		trait_type = personality_trait
 	
 		non_shared_modifier = {
-			reassignment_duration_factor = -1
+			reassignment_duration_factor = -2
 		}
 		modifier = {
-			naval_damage_factor = -1
-			naval_defense_factor = -1
-			navy_org_factor = -1
-			sortie_efficiency = -1
+			naval_damage_factor = -2
+			naval_defense_factor = -2
+			navy_org_factor = -2
+			sortie_efficiency = -2
+			experience_gain_factor = -2
 		}
 		new_commander_weight = { factor = 0 }
 	}

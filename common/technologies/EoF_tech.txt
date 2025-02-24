@@ -10,3 +10,23 @@
 # 		}
 # 	}
 # } Depricated - will leave it here for now
+technologies = {
+	EoF_DD_fleet_limit_penalty_tech = {
+        allow = {
+            always = no
+        }
+        destroyer = {
+			torpedo_attack = -2
+			lg_attack = -2
+			hg_attack = -2
+			sub_attack = -2
+		}
+    }
+	EoF_DD_fleet_limit_no_penalty_tech = {
+        allow = {
+            always = no
+        }
+        destroyer = {
+		}
+    }
+}
