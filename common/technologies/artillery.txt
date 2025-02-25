@@ -254,8 +254,6 @@ technologies = {
 
 		enable_equipment_modules = {
 			tank_medium_howitzer_2
-			lc_medium_cannon_turret #Module for Land Cruiser
-			lc_assault_gun #Module for Land Cruiser
 		}
 
 		path = {
@@ -546,6 +544,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_howitzer
+			lc_assault_gun
 		}	
 
 		on_research_complete = {
@@ -840,6 +839,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_heavy_howitzer_4
+			tank_super_heavy_howitzer
 			auto_loader
 		}
 
@@ -896,7 +896,7 @@ technologies = {
 		}
 		enable_equipment_modules = {
 			tank_rocket_launcher
-			lc_rocket_launcher #Module for Land Cruiser
+			lc_rocket_launcher
 		}
 		
 		path = {
@@ -1117,7 +1117,6 @@ technologies = {
 			tank_anti_air_cannon
 			tank_heavy_anti_air_cannon
 			ship_anti_air_1
-			lc_light_anti_air_battery #Module for Land Cruiser
 		}
 
 		enable_building = {
@@ -1238,7 +1237,7 @@ technologies = {
 			tank_anti_air_cannon_2
 			tank_heavy_anti_air_cannon_2
 			ship_anti_air_2
-			lc_heavy_anti_air_battery #Module for Land Cruiser
+			lc_light_anti_air_battery
 		}
 
 		path = {
@@ -1403,7 +1402,6 @@ technologies = {
 			tank_anti_air_cannon_3
 			tank_heavy_anti_air_cannon_3
 			ship_anti_air_3
-			lc_heavy_anti_air_platform #Module for Land Cruiser
 		}
 
 		path = {
@@ -1515,6 +1513,9 @@ technologies = {
 		enable_equipments = {
 			heavy_anti_air_equipment_1
 		}
+		enable_equipment_modules = {
+			lc_heavy_anti_air_battery
+		}
 
 		static_anti_air_damage_factor = 0.1
 
@@ -1613,6 +1614,9 @@ technologies = {
 
 		enable_equipments = {
 			heavy_anti_air_equipment_2
+		}
+		enable_equipment_modules = {
+			lc_heavy_anti_air_platform
 		}
 
 		static_anti_air_damage_factor = 0.1
@@ -1720,7 +1724,6 @@ technologies = {
 			tank_medium_high_velocity_cannon
 			tank_heavy_cannon
 			tank_heavy_high_velocity_cannon
-			lc_high_velocity_cannon_turret 
 		}
 		path = {
 			leads_to_tech = antitank0
@@ -2034,6 +2037,8 @@ technologies = {
 		enable_equipment_modules = {
 			tank_small_cannon_3
 			tank_small_high_velocity_cannon_3
+			lc_medium_cannon_turret
+			lc_high_velocity_cannon_turret 
 		}		
 		path = {
 			leads_to_tech = antitank3
@@ -2259,7 +2264,6 @@ technologies = {
 			tank_medium_cannon_4
 			tank_medium_high_velocity_cannon_4
 			auto_loader
-			lc_heavy_high_velocity_cannons #Module for Land Cruiser
 		}
 		
 		path = {
@@ -2328,6 +2332,7 @@ technologies = {
 			heavy_anti_tank_equipment_1
 		}
 		enable_equipment_modules = {
+			lc_heavy_high_velocity_cannons
 		}			
 		path = {
 			leads_to_tech = heavyantitank2
@@ -2460,6 +2465,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_heavy_cannon_4
 			tank_heavy_high_velocity_cannon_4
+			tank_super_heavy_cannon
 			auto_loader
 		}	
 

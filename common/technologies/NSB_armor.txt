@@ -1451,7 +1451,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = tank_super_heavy_cannon
+			leads_to_tech = super_heavy_tank_chassis_a
 			research_cost_coeff = 1
 		}
 
@@ -1459,7 +1459,7 @@ technologies = {
 		start_year = 1005
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 8 y = @1005 }
+			position = { x = 9 y = @1005 }
 		}
 
 		ai_will_do = {
@@ -1475,36 +1475,36 @@ technologies = {
 		special_project_specialization = { specialization_land }
 	}
 
-	tank_super_heavy_cannon = {
-		enable_equipment_modules = {
-			tank_super_heavy_cannon
-			tank_super_heavy_howitzer
-		}
+	# tank_super_heavy_cannon = {
+	# 	enable_equipment_modules = {
+	# 		tank_super_heavy_cannon
+	# 		tank_super_heavy_howitzer
+	# 	}
 
-		path = {
-			leads_to_tech = super_heavy_tank_chassis_a
-			research_cost_coeff = 1
-		}
+	# 	path = {
+	# 		leads_to_tech = super_heavy_tank_chassis_a
+	# 		research_cost_coeff = 1
+	# 	}
 
-		research_cost = 2.5
-		start_year = 1013
-		folder = {
-			name = nsb_armour_folder
-			position = { x = 8 y = @1013 }
-		}
+	# 	research_cost = 2.5
+	# 	start_year = 1013
+	# 	folder = {
+	# 		name = nsb_armour_folder
+	# 		position = { x = 8 y = @1013 }
+	# 	}
 
-		ai_will_do = {
-			factor = 0 # Hitler cries on the inside
-		}
+	# 	ai_will_do = {
+	# 		factor = 0 # Hitler cries on the inside
+	# 	}
 
-		categories = {
-			armor
-			mio_cat_tech_all_armor_and_modules
-			cat_heavy_armor
-			mio_cat_tech_heavy_armor_and_modules
-		}
-		special_project_specialization = { specialization_land }
-	}
+	# 	categories = {
+	# 		armor
+	# 		mio_cat_tech_all_armor_and_modules
+	# 		cat_heavy_armor
+	# 		mio_cat_tech_heavy_armor_and_modules
+	# 	}
+	# 	special_project_specialization = { specialization_land }
+	# }
 
 	super_heavy_tank_chassis_a = { #Maus
 
@@ -1521,10 +1521,10 @@ technologies = {
 		}
 
 		research_cost = 3
-		start_year = 1014
+		start_year = 1013
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 8 y = @1014 }
+			position = { x = 9 y = @1013 }
 		}
 		
 
@@ -2341,7 +2341,7 @@ technologies = {
 		start_year = 1005
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1006 }
+			position = { x = 23 y = @1006 }
 		}
 
 		categories = {
@@ -2366,7 +2366,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1009 }
+			position = { x = 23 y = @1009 }
 		}
 
 		categories = {
@@ -2391,7 +2391,7 @@ technologies = {
 		start_year = 1012
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1012 }
+			position = { x = 23 y = @1012 }
 		}
 
 		categories = {
@@ -2412,7 +2412,7 @@ technologies = {
 		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 21 y = @1014 }
+			position = { x = 23 y = @1014 }
 		}
 
 		categories = {
@@ -2442,7 +2442,7 @@ technologies = {
 		start_year = 1005
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 20 y = @1006 }
+			position = { x = 22 y = @1006 }
 		}
 
 		categories = {
@@ -2468,7 +2468,7 @@ technologies = {
 		start_year = 1009
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 20 y = @1009 }
+			position = { x = 22 y = @1009 }
 		}
 
 		categories = {
@@ -2494,7 +2494,7 @@ technologies = {
 		start_year = 1012
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 20 y = @1012 }
+			position = { x = 22 y = @1012 }
 		}
 
 		categories = {
@@ -2516,7 +2516,7 @@ technologies = {
 		start_year = 1014
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 20 y = @1014 }
+			position = { x = 22 y = @1014 }
 		}
 
 		categories = {
@@ -2633,12 +2633,10 @@ technologies = {
 			}
 		}
 
-
-
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = sp_armored_lc_weapon_fire_control_tech
+		# 	research_cost_coeff = 1
+		# }
 
 		is_special_project_tech = yes
 
@@ -2664,11 +2662,11 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1014
+		start_year = 1013
 		
 		# folder = {
 		# 	name = nsb_armour_folder
-		# 	position = { x = 7 y = @1014 }
+		# 	position = { x = 7 y = @1013 }
 		# }
 
 		show_effect_as_desc = yes
@@ -2714,10 +2712,10 @@ technologies = {
 			}
 		}
 
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = sp_armored_lc_weapon_fire_control_tech
+		# 	research_cost_coeff = 1
+		# }
 
 		is_special_project_tech = yes
 
@@ -2863,10 +2861,10 @@ technologies = {
 			}
 		}
 
-		path = {
-			leads_to_tech = sp_armored_lc_weapon_fire_control_tech
-			research_cost_coeff = 1
-		}
+		# path = {
+		# 	leads_to_tech = sp_armored_lc_weapon_fire_control_tech
+		# 	research_cost_coeff = 1
+		# }
 
 		is_special_project_tech = yes
 
@@ -2881,7 +2879,7 @@ technologies = {
 		
 		# folder = {
 		# 	name = nsb_armour_folder
-		# 	position = { x = 11 y = @1014 }
+		# 	position = { x = 8 y = @1014 }
 		# }
 
 		show_effect_as_desc = yes
@@ -2935,11 +2933,11 @@ technologies = {
 		}
 
 		research_cost = 1
-		start_year = 1016
+		start_year = 1014
 		
 		# folder = {
 		# 	name = nsb_armour_folder
-		# 	position = { x = 9 y = @1016 }
+		# 	position = { x = 9 y = @1014 }
 		# }
 
 		show_effect_as_desc = yes
@@ -2988,11 +2986,11 @@ technologies = {
 		is_special_project_tech = yes
 
 		research_cost = 1
-		start_year = 1016
+		start_year = 1014
 		
 		folder = {
 			name = nsb_armour_folder
-			position = { x = 8 y = @1016 }
+			position = { x = 9` y = @1014 }
 		}
 
 		enable_equipment_modules = {

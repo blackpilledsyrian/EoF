@@ -543,7 +543,10 @@ focus_tree = {
 					add_idea = HIP_booming_economy_harmony
 				}
 			}
-			else = {
+			else_if = {
+				limit = {
+					has_idea = HIP_committie_for_national_defence_idea_3
+				}
 				swap_ideas = {
 					remove_idea = HIP_committie_for_national_defence_idea_3
 					add_idea = HIP_committie_for_national_defence_idea_harmony

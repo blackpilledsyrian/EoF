@@ -2223,7 +2223,6 @@ focus_tree = {
 		icon = GFX_goal_generic_magic
 		prerequisite = { focus = EoF_zebra_support }
 		relative_position_id = EoF_zebra_support
-		mutually_exclusive = { focus = EoF_zebra_modern_warfair }
 		x = 0
 		y = 1
 		cost = 5
@@ -2245,7 +2244,6 @@ focus_tree = {
 		id = EoF_zebra_modern_warfair
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = EoF_zebra_expand_army }
-		mutually_exclusive = { focus = EoF_zebra_traditonal_warfair }
 		relative_position_id = EoF_zebra_traditonal_warfair
 		x = 2
 		y = 0

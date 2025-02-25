@@ -10,6 +10,13 @@ EQ_MOD_SLOT_special_type_slot_6_TITLE:0 "Special Features"
 EQ_MOD_SLOT_special_type_slot_7_TITLE:0 "Special Features"
 EQ_MOD_SLOT_special_type_slot_8_TITLE:0 "Special Features"
 
+EQ_MOD_SLOT_lc_special_features_slot_4_TITLE:0 "Special Features"
+EQ_MOD_SLOT_lc_special_features_slot_5_TITLE:0 "Special Features"
+EQ_MOD_SLOT_lc_special_features_slot_6_TITLE:0 "Special Features"
+EQ_MOD_SLOT_lc_special_features_slot_7_TITLE:0 "Special Features"
+
+EQ_MOD_SLOT_lc_additional_armament_slot_5_TITLE:0 "Additional Armament"
+
 EQ_MOD_CAT_tank_advanced_small_main_armament_TITLE:0 "Advanced Small Armaments"
 EQ_MOD_CAT_tank_advanced_medium_main_armament_TITLE:0 "Advanced Medium Armaments"
 EQ_MOD_CAT_tank_advanced_heavy_main_armament_TITLE:0 "Advanced Heavy Armaments"

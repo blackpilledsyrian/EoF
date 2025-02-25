@@ -1403,7 +1403,7 @@ on_actions = {
 					tag = WNG
 					has_idea = EoF_WNG_treaty
 				}
-				set_variable = { global.EoF_WNG_industrial_evac_var_half = EoF_WNG_industrial_evac_var }
+				set_variable = { global.EoF_WNG_industrial_evac_var_half = global.EoF_WNG_industrial_evac_var }
 				multiply_variable = { global.EoF_WNG_industrial_evac_var = 2 }
 				WNG = {
 					remove_ideas = EoF_WNG_treaty
@@ -1434,7 +1434,6 @@ on_actions = {
 						limit = {
 							is_on_continent = asia
 						}
-						transfer_state_to = GRI
 						remove_building = {
 							type = arms_factory
 							level = global.EoF_WNG_industrial_evac_var

@@ -2193,7 +2193,6 @@ focus_tree = {
 		icon = GFX_goal_generic_magic
 		prerequisite = { focus = EoF_kiria_support }
 		relative_position_id = EoF_kiria_support
-		mutually_exclusive = { focus = EoF_kiria_modern_warfair }
 		x = 0
 		y = 1
 		cost = 5
@@ -2215,7 +2214,6 @@ focus_tree = {
 		id = EoF_kiria_modern_warfair
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = EoF_kiria_expand_army }
-		mutually_exclusive = { focus = EoF_kiria_traditonal_warfair }
 		relative_position_id = EoF_kiria_traditonal_warfair
 		x = 2
 		y = 0

@@ -275,6 +275,7 @@ technologies = {
 		
 		enable_equipment_modules = { 
 			tank_radio_4
+			lc_command_center #Module for Land Cruiser
 		}
 
 

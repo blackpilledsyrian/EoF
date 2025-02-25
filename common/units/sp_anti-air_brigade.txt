@@ -29,7 +29,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			light_tank_aa_chassis = 30
+			light_tank_aa_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
@@ -39,7 +39,6 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		breakthrough = -0.5
 		armor_value = -0.5
 
 		suppression = 0.75
@@ -101,7 +100,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			medium_tank_aa_chassis = 30
+			medium_tank_aa_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
@@ -111,7 +110,6 @@ sub_units = {
 		weight = 1.25
 		supply_consumption = 0.2
 
-		breakthrough = -0.5
 		armor_value = -0.5
 
 		suppression = 0.8
@@ -177,7 +175,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_aa_chassis = 30
+			heavy_tank_aa_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
@@ -186,7 +184,6 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.2
 
-		breakthrough = -0.5
 		armor_value = -0.5
 
 		suppression = 0.75
@@ -251,7 +248,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			modern_tank_aa_chassis = 30
+			modern_tank_aa_chassis = 40
 		}
 		manpower = 500
 		max_organisation = 10
@@ -261,7 +258,6 @@ sub_units = {
 		weight = 1.5
 		supply_consumption = 0.2
 
-		breakthrough = -0.5
 		armor_value = -0.5
 
 		suppression = 2
@@ -296,7 +292,4 @@ sub_units = {
 			attack = -0.7
 		}
 	}
-
-
-	
 }
