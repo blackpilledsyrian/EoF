@@ -383,11 +383,7 @@ sp_land_land_cruiser = {
 				}
 			}
 		}
-
-		enable_subunits = {
-			land_cruiser
-		}
-
+		
 		enable_equipments = {
 			limit = {
 				has_dlc = "No Step Back"
