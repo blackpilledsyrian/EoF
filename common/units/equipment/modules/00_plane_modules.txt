@@ -1384,7 +1384,7 @@ equipment_modules = {
 		abbreviation = "bol"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 1
@@ -1426,7 +1426,7 @@ equipment_modules = {
 		abbreviation = "bol"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 1
@@ -1468,7 +1468,7 @@ equipment_modules = {
 		abbreviation = "bol"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 1
@@ -1510,7 +1510,7 @@ equipment_modules = {
 		abbreviation = "rrl"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 1
@@ -1537,7 +1537,7 @@ equipment_modules = {
 		abbreviation = "rpd"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 		parent = rocket_rails
 		add_stats = {
 			build_cost_ic = 3
@@ -1571,7 +1571,7 @@ equipment_modules = {
 		abbreviation = "rpd2"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 		parent = rocket_pods
 		add_stats = {
 			build_cost_ic = 5
@@ -1981,7 +1981,7 @@ equipment_modules = {
 		abbreviation = "tb1"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			air_ground_attack = 8
@@ -2001,7 +2001,7 @@ equipment_modules = {
 		abbreviation = "tb2"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			air_ground_attack = 15
@@ -2020,7 +2020,7 @@ equipment_modules = {
 		abbreviation = "tb3"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			air_ground_attack = 22
@@ -2040,7 +2040,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 4
@@ -2072,7 +2072,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 4
@@ -2104,7 +2104,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 4
@@ -2136,7 +2136,7 @@ equipment_modules = {
 		abbreviation = "tpm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane tactical_bomber }
 
 		add_stats = {
 			build_cost_ic = 4
@@ -2207,7 +2207,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = { naval_bomber maritime_patrol_plane }
+		add_equipment_type = { naval_bomber maritime_patrol_plane tactical_bomber }
 
 		add_stats = {	
 			build_cost_ic = 10
@@ -3848,7 +3848,7 @@ equipment_modules = {
 		abbreviation = "pcp"
 		category = cas_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = cas
+		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
 			reliability_factor = -0.1

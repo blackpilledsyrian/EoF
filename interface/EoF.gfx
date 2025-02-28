@@ -511,6 +511,27 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/rocket.dds"
 		legacy_lazy_load = no
 	}
+	###Plane Modules###
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_0"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/jet_parasite_fighter.dds"
+		legacy_lazy_load = no
+	}
 	###Technologies###
 	spriteType = {
 		name = "GFX_technology_artillery_folder_small_branch_item_bg"
@@ -637,6 +658,14 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/rocket_artillery4.dds"
 	}
 	SpriteType = {
+		name = "GFX_improved_mothership_airframe_medium"
+		texturefile = "gfx/interface/technologies/generic_mothership.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_mothership_airframe_medium"
+		texturefile = "gfx/interface/technologies/generic_mothership.dds"
+	}
+	SpriteType = {
 		name = "GFX_gun_tech_1_medium"
 		textureFile = "gfx/interface/technologies/nsb_gun_tech_1.dds"
 	}
@@ -691,6 +720,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_improved_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_medium_tank_recon_medium"
+		texturefile = "gfx/interface/technologies/tech_medium_tank_recon.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_headquarters_medium"

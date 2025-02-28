@@ -629,12 +629,7 @@ sp_air_mothership_aircraft = {
 				has_dlc = "By Blood Alone"
 			}
 			FROM = {
-				has_tech = improved_large_airframe
-			}
-		}
-		else = {
-			FROM = { 
-				has_tech = strategic_bomber2
+				has_tech = iw_large_airframe
 			}
 		}
 	}
@@ -656,15 +651,11 @@ sp_air_mothership_aircraft = {
 		country_effects = {
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
-				TECH = reinforced_wings_mothership
+				TECH = improved_mothership_airframe
 			}
 			custom_effect_tooltip = {
 				localization_key = SP_UNLOCK_TECH
-				TECH = miniature_fighters
-			}
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_TECH
-				TECH = aerial_hangars
+				TECH = advanced_mothership_airframe
 			}
 		}		
 

@@ -71,6 +71,8 @@
   at_rocket_1:0 "Anti-Tank Rockets"
   at_rocket_1_desc:0 "Easily reloadable rockets that have good performance against both vehicles and softer targets offer unprecedented flexibility, especially as they may be mounted on nearly any aircraft."
 
+  tech_medium_tank_recon:0 "Medium Armored Recon Company"
+  tech_medium_tank_recon_desc:0 ""
   medium_tank_recon:0 "Medium Armored Recon Company"
   medium_tank_recon_desc:0 "Using medium tanks in a recon role, we can conduct reconnaisance by fire and get a better understanding of what we are facing."
   headquarters:0 "Headquarters"
