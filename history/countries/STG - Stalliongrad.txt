@@ -311,7 +311,7 @@ add_equipment_to_stockpile = {
 }
 
 recruit_character = EoF_STG_reserve_fleet
-# recruit_character = EoF_orb_of_chital
+recruit_character = EoF_orb_of_chital
 # recruit_character = EoF_bronislav_zashchitnikov
 recruit_character = STG_vinous_kostylev
 recruit_character = STG_tsar_peter_iv

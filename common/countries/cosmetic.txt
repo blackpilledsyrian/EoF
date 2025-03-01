@@ -2759,8 +2759,8 @@ EoF_HIP_DOMINATION = {
 	color_ui = rgb { 22 139 181 }
 }
 EoF_RCT_DOMINATION = {
-	color = rgb { 206 43 214 }
-	color_ui = rgb { 206 43 214 }
+	color = rgb { 58 190 95 }
+	color_ui = rgb { 58 190 95 }
 }
 Riseia_formable = {
 	color = rgb { 132 10 41 }
