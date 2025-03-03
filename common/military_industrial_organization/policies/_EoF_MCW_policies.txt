@@ -1,0 +1,30 @@
+mio_policy_EoF_MCW_all_in = {
+	icon = GFX_mio_policy_cutting_corners
+	allowed = {
+		OR ={
+			has_mio_equipment_type = infantry
+			has_mio_equipment_type = artillery
+			has_mio_equipment_type = mechanized
+			
+		}
+		owner = {
+			original_tag = MCW
+		}
+	}
+	visible = {
+		owner = {
+			has_completed_focus = EoF_MCW_all_in
+		}
+	}
+	available = {
+		has_mio_size > 1
+	}
+	equipment_bonus = {
+	
+		same_as_mio = {
+			production_resource_need_factor = -0.1
+			build_cost_ic = -0.15
+			breakthrough = -0.15
+		}
+	}
+}

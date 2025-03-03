@@ -1,0 +1,16 @@
+
+
+Panda_country_category = {
+	priority = 99999
+	icon =  category_gamer
+	allowed = {
+		always = yes
+	}
+}
+
+
+
+
+
+
+

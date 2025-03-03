@@ -1,0 +1,117 @@
+EoF_MCW_Fast_Tank_MIO = {
+	name = harpoonus
+	include = generic_mobile_tank_organization
+	icon = GFX_idea_EQS_mustang
+	allowed = {
+		original_tag = MCW
+		has_dlc = "Arms Against Tyranny"
+	}
+	
+	
+	# 
+	
+	add_trait = { 
+		token = EoF_MCW_trait_no_resource_cost_token
+		name = EoF_MCW_trait_no_resource_cost_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+		special_trait_background = yes
+
+		position = { x=-1 y=1 }
+		relative_position_id = generic_mio_streamlined_production
+
+		mutually_exclusive = { EoF_MCW_trait_heaby_token  }
+
+
+
+
+		any_parent = { generic_mio_streamlined_production }
+		equipment_bonus = {
+			reliability = -0.15
+			build_cost_ic = -0.075
+		}
+		
+		
+		
+		
+	}
+	
+	add_trait = { 
+		token = EoF_MCW_trait_no_resource_cost_token2
+		name = EoF_MCW_trait_no_resource_cost_name2
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = EoF_MCW_trait_no_resource_cost_token
+
+
+
+
+
+		any_parent = { EoF_MCW_trait_no_resource_cost_token }
+		production_bonus = {
+			production_resource_need_factor = -0.20
+		}
+		
+		
+		
+		
+	}	
+	
+	
+	
+	
+	add_trait = { 
+		token = EoF_MCW_trait_heaby_token
+		name = EoF_MCW_trait_heaby_name
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+		special_trait_background = yes
+
+		position = { x=1 y=1 }
+		relative_position_id = generic_mio_streamlined_production
+		
+		mutually_exclusive = { EoF_MCW_trait_no_resource_cost_token  }
+		
+		any_parent = { generic_mio_streamlined_production }
+		
+		production_bonus = {
+			production_resource_need_factor = 0.075
+		}
+		equipment_bonus = {
+			armor_value = 0.20
+		}
+		
+		
+	}	
+	
+	add_trait = { 
+		token = EoF_MCW_trait_heaby_token1
+		name = EoF_MCW_trait_heaby_name1
+		icon = GFX_generic_mio_department_icon_tank_medium_tank_engine
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = EoF_MCW_trait_heaby_token
+		
+		any_parent = { EoF_MCW_trait_heaby_token }
+		
+		equipment_bonus = {
+			reliability = 0.15
+			build_cost_ic = -0.075
+		}
+		
+		
+		
+	}	
+	
+	
+	
+	
+	
+	
+	initial_trait = {
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.03
+		}
+	}
+}

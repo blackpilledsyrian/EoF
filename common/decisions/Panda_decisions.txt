@@ -1,0 +1,54 @@
+Panda_country_category = {
+	Panda_big_division_decision = {		
+		icon = rifles
+		complete_effect = {
+			division_template = {
+				name = "Training Division"
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+			
+	    	   		infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+
+	    	   		infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }
+					infantry = { x = 2 y = 2 }
+
+	    	   		infantry = { x = 3 y = 0 }
+					infantry = { x = 3 y = 1 }
+					infantry = { x = 3 y = 2 }
+
+	    	   		infantry = { x = 4 y = 0 }
+					infantry = { x = 4 y = 1 }
+					infantry = { x = 4 y = 2 }
+				}
+			}
+		}
+	}
+	
+	
+	Panda_excess_MCW_pp = {
+		icon = rifles
+		cost = 250
+		days_remove = 90
+		modifier = {
+			industrial_capacity_factory = 0.05
+		}
+		
+		
+		
+		
+		
+	}	
+	
+	
+	
+	
+	
+	
+		
+	
+}

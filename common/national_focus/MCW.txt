@@ -1,7 +1,3 @@
-#orbital watermark
-
-
-
 focus_tree = {
 	id = EoF_MCW_focus
 
@@ -20,37 +16,730 @@ focus_tree = {
 
 
 
+	
+	##################################
+
+	##### Industrial Branch ##### 
+
+
 
 
 	focus = {
-		id = EoF_decentralized_status_quo
-		icon = GFX_focus_indy_generic_political
-		x = 50
-		y = 3
-		cost = 1
+		id = EoF_MCW_end_the_restructuring
+		icon = GFX_goal_continuous_increase_nu
+		
+		x = 22
+		y = 11
+		cost = 8
+		available = {
+			has_country_flag = EoF_MCW_one_path_is_done
+		}
+
 
 		available_if_capitulated = yes
-		
+
+
+
 
 		completion_reward = {
-			add_stability = 0.25
-			add_political_power = 300
-			add_ideas = EoF_MCW_incoherent_military_command_structure
-			add_ideas = EoF_MCW_nonexistent_conscription_system
-			add_ideas = EoF_MCW_governmental_nightmare
+		
+		
+		
+			
 		}
 		
 	}
 
 
 
+
+
+
+
+
+
+
+
+	focus = {
+		id = BRA_coffee_crisis_aftermath
+		icon = GFX_focus_BRA_coffee_crisis
+		relative_position_id = EoF_MCW_end_the_restructuring
+		prerequisite = { focus = EoF_MCW_end_the_restructuring }
+		x = 0
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+
+		offset = {
+			x = -33
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = BRA_prepare_for_second_intentona 
+			}
+		}
+
+		offset = {
+			x = -15
+			y = 0
+			trigger = {
+				has_game_rule = {
+					rule = obsolete_focus_branches_visibility
+					option = HIDE
+				}
+				has_completed_focus = BRA_end_the_state_of_emergency 
+			}
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = BRA_departamento_nacional_do_cafe_idea	
+		}
+	}
+
+	focus = {
+		id = BRA_radio_nacional
+		icon = GFX_focus_SWE_radiotjanst
+		prerequisite = { focus = BRA_coffee_crisis_aftermath  }
+		x = -1
+		y = 1
+		relative_position_id = BRA_coffee_crisis_aftermath
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL}
+
+		completion_reward = {
+			add_ideas = BRA_radio_nacional_idea
+			IF = {
+				limit = { NOT = { has_tech = radio } }
+				set_technology = { radio = 1 }
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_desenvolvimentismo
+		icon = GFX_focus_ETH_adopt_the_lira
+		prerequisite = { focus = BRA_coffee_crisis_aftermath  }
+		x = 1
+		y = 1
+		relative_position_id = BRA_coffee_crisis_aftermath
+		cost = 10
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}	
+			BRA_remove_economy_modifier = yes	
+			add_tech_bonus = {
+				name = BRA_electronics_bonus
+				bonus = 0.5
+				uses = 2
+				category = electronics
+			}			
+		}
+	}
+
+	focus = {
+		id = BRA_promote_resource_extraction
+		icon = GFX_focus_generic_resource_extraction
+		prerequisite = { focus = BRA_radio_nacional focus = BRA_desenvolvimentismo }
+		x = 0
+		y = 1
+		relative_position_id = BRA_radio_nacional
+		cost = 10
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.1
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_resource_extraction_bonus
+				bonus = 0.50
+				uses = 2
+				category = excavation_tech
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_companhia_siderurgica_nacional
+		icon = GFX_goal_expand_state_industry
+		prerequisite = { focus = BRA_desenvolvimentismo focus = BRA_radio_nacional  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_desenvolvimentismo
+		cost = 10
+		ai_will_do = {
+			factor = 20
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			capital_scope = {
+				add_resource = {
+					type = steel
+					amount = 24
+					#state = 662
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_stimulate_the_civilian_economy
+		icon = GFX_goal_generic_construct_civ_factory
+		prerequisite = { focus = BRA_desenvolvimentismo  }
+		x = 4
+		y = 1
+		relative_position_id = BRA_desenvolvimentismo
+		cost = 10
+		ai_will_do = {
+			factor = 18
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			721  = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}			
+		}
+	}
+
+	focus = {
+		id = BRA_domestic_arms_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		prerequisite = { focus = BRA_stimulate_the_civilian_economy  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_stimulate_the_civilian_economy
+		cost = 10
+		ai_will_do = {
+			factor = 16
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			721  = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_war_production
+		icon = GFX_focus_secret_rearmament
+		prerequisite = { focus = BRA_domestic_arms_industry  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_domestic_arms_industry
+		cost = 5
+		ai_will_do = {
+			factor = 15
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_industrial_capacity_factor = 0.025
+				tooltip = industrial_capacity_factory_tt
+			}	
+			BRA_remove_economy_modifier = yes
+			721  = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					is_owned_and_controlled_by = ROOT
+					NOT = {
+						state = 961
+						state = 962
+						state = 963
+						state = 964
+						state = 965
+						state = 966
+						state = 967
+						state = 968
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+	focus = {
+		id = BRA_invest_in_railways
+		icon = GFX_focus_generic_railroad
+		prerequisite = { focus = BRA_promote_resource_extraction focus = BRA_companhia_siderurgica_nacional }
+		x = -2
+		y = 1
+		relative_position_id = BRA_promote_resource_extraction
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_tech_bonus = {
+				name = BRA_invest_in_railways_bonus
+				bonus = 0.50
+				uses = 1
+				category = train_tech
+			}
+			add_timed_idea = {
+				idea = BRA_rail_investment
+				days = 730
+			}
+			IF = {
+				limit = {
+					495 = { is_owned_and_controlled_by = ROOT }
+				}
+				495 = {
+					add_building_construction = {
+						type = supply_node
+						province = 1979
+						level = 1
+						instant_build = yes
+					}
+				}
+				build_railway = {
+					level = 1
+					build_only_on_allied = yes
+					fallback = yes
+					start_province = 8189
+					target_province = 1979
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_national_petroleum_council
+		icon = GFX_focus_generic_stockpile_fuel
+		prerequisite = { focus = BRA_invest_in_railways }
+		x = 0
+		y = 1
+		relative_position_id = BRA_invest_in_railways
+		cost = 10
+		ai_will_do = {
+			factor = 19
+		}
+
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			721 = {
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = oil
+					amount = 16
+				}	
+				add_to_variable = {
+					BRA_state_development_local_building_slots_factor = 0.2
+					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.2
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+				set_state_flag = BRA_resource_boost
+			}
+			add_tech_bonus = {
+				name = BRA_oil_industry_bonus
+				bonus = 0.25
+				uses = 1
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_batalha_do_borracha
+		icon = GFX_focus_BRA_rubber_war
+		prerequisite = { focus = BRA_companhia_siderurgica_nacional focus = BRA_promote_resource_extraction }
+		x = 2
+		y = 1
+		relative_position_id = BRA_companhia_siderurgica_nacional
+		cost = 0
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 497
+						state = 495						
+					}	
+				}
+				add_extra_state_shared_building_slots = 1
+				add_resource = {
+					type = rubber
+					amount = 20
+				}
+				add_to_variable = {
+					BRA_state_development_local_building_slots_factor = 0.2
+					tooltip = MODIFIER_LOCAL_BUILDING_SLOTS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_state_resources_factor = 0.2
+					tooltip = MODIFIER_STATE_RESOURCES_FACTOR_tt
+				}
+				set_state_flag = BRA_resource_boost
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_road_infrastructure
+		icon = GFX_focus_generic_road_investment
+		prerequisite = { 
+			focus = BRA_batalha_do_borracha 
+			focus = BRA_invest_in_railways }
+		x = 3
+		y = 1
+		relative_position_id = BRA_invest_in_railways
+		cost = 5
+		ai_will_do = {
+			factor = 8
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_timed_idea = {
+				idea = BRA_road_investment
+				days = 730
+			}
+		}
+	}
+
+	focus = {
+		id = BRA_invest_in_ports
+		icon = GFX_focus_POL_develop_polish_shipbuilding
+		prerequisite = { focus = BRA_national_petroleum_council  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_national_petroleum_council
+		cost = 5
+		ai_will_do = {
+			factor = 9
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = ROOT
+					OR = {
+						has_dynamic_modifier = { modifier = BRA_neglected_state_dynamic_modifier }	
+						has_dynamic_modifier = { modifier = BRA_growing_state_dynamic_modifier }
+					}
+					is_coastal = yes
+				}
+				add_extra_state_shared_building_slots = 1
+				custom_effect_tooltip = BRA_modify_neglected_state
+				add_to_variable = {
+					BRA_state_development_production_speed = 0.1
+					tooltip = MODIFIER_STATE_PRODUCTION_SPEED_BUILDINGS_FACTOR_tt
+				}
+				add_to_variable = {
+					BRA_state_development_local_factories = 0.1
+					tooltip = local_factories_tt
+				}
+			}
+			add_timed_idea = {
+				idea = BRA_port_investment
+				days = 730
+			}
+		}
+	}
+
+
+
+	focus = {
+		id = BRA_bonus_tech_slot
+		icon = GFX_focus_research
+		prerequisite = { focus = BRA_invest_in_road_infrastructure  }
+		x = 0
+		y = 1
+		relative_position_id = BRA_invest_in_road_infrastructure
+		cost = 10
+		ai_will_do = {
+			factor = 4
+		}
+		available = {
+			#num_of_factories > 50
+		}
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = BRA_banco_do_brasil
+		icon = GFX_goal_riv_bank
+		prerequisite = { focus = BRA_batalha_do_borracha 
+		}
+		x = 0
+		y = 1
+		relative_position_id = BRA_batalha_do_borracha
+		cost = 5
+		ai_will_do = {
+			factor = 7
+		}
+		available = {
+		}
+
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = BRA_modify_economy_intro
+			add_to_variable = {
+				BRA_economy_industrial_capacity_factor = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_efficiency_gain_factor = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				BRA_economy_production_max_efficiency_factor = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = BRA_banco_do_brasil_idea			
+		}
+	}
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = EoF_decentralized_status_quo
+		icon = GFX_focus_rom_abdicate
+		x = 22
+		y = 1
+		cost = 8
+
+		available_if_capitulated = yes
+		
+
+		completion_reward = {
+			add_ideas = EoF_MCW_incoherent_military_command_structure
+			add_ideas = EoF_MCW_nonexistent_conscription_system
+		}
+		
+	}
+
+
+
+
+
+
+
 	focus = {
 		id = EoF_communion_of_souls
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_SOV_committee_in_exile_ccp_2d_sov_compatibility
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_decentralized_status_quo
 		prerequisite = { focus = EoF_decentralized_status_quo }
 
@@ -65,7 +754,15 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_ideas = EoF_MCW_your_leaders_are_spirit_bonding
+			add_political_power = 300		
+			custom_effect_tooltip = EoF_advanced_academy_tt
+			set_country_flag = EoF_advanced_academy
+			
+			
+			# -20% prod eff growth until this spirit is removed
+			# -15% factory output 
+			# -0.05% recruitable pop factor
+			# -10% division atk 
 		}
 		
 	}
@@ -73,11 +770,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_coopt_the_communion
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_generic_forceful_treaty
 		
 		x = -1
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_communion_of_souls }
 		mutually_exclusive = {
@@ -94,7 +791,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			add_stability = 0.10
+			add_stability = 0.50
 			add_ideas = EoF_MCW_coopt_the_communion_idea
 		}
 		
@@ -102,10 +799,10 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_honorable_dialogue
-		icon = GFX_focus_indy_generic_political	
+		icon = GFX_goal_generic_national_unity	
 		x = 1
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_communion_of_souls }
 		mutually_exclusive = {
@@ -134,11 +831,11 @@ focus_tree = {
 	### MCW UTILITY / RESOURCE TREE 
 	focus = {
 		id = EoF_MCW_war_utility
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_industry_3
 		
-		x = -9
+		x = -13
 		y = 2
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_MCW_honorable_dialogue focus = EoF_MCW_coopt_the_communion }
 		available_if_capitulated = yes
@@ -153,11 +850,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_Privatize_Zebrican_Resources
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_aluminum
 		
 		x = -4
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_war_utility
 		prerequisite = { focus = EoF_MCW_war_utility }
 		mutually_exclusive = {
@@ -169,19 +866,32 @@ focus_tree = {
 
 
 		completion_reward = {
+			decrease_poverty = yes
 			#base resources in colthage,focused on air resources, so aluminum and rubber 
 			add_ideas = EoF_MCW_Zebrican_Privatization_1
+			
+			721 = {
+			
+				add_resource = {
+					type = aluminium
+					amount = 37
+				}
+				add_resource = {
+					type = rubber
+					amount = 29
+				}
+			}
 		}
 		
 	}
 
 	focus = {
 		id = EoF_MCW_Spread_Capitalist_Propaganda
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_rubber
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_Privatize_Zebrican_Resources
 		prerequisite = { focus = EoF_MCW_Privatize_Zebrican_Resources }
 		mutually_exclusive = {
@@ -193,11 +903,22 @@ focus_tree = {
 
 
 		completion_reward = {
-			effect_tooltip = {
-				swap_ideas = { remove_idea = EoF_MCW_Zebrican_Privatization_1 add_idea = EoF_MCW_Zebrican_Privatization_2 }
-			}
-			
 			decrease_poverty = yes
+			effect_tooltip = {
+			swap_ideas = { remove_idea = EoF_MCW_Zebrican_Privatization_1 add_idea = EoF_MCW_Zebrican_Privatization_2 }
+		}
+		
+		721 = {
+			
+				add_resource = {
+					type = aluminium
+					amount = 37
+				}
+				add_resource = {
+					type = rubber
+					amount = 29
+				}
+			}
 			#base resources in colthage,focused on air resources, so aluminum and rubber 
 		}
 		
@@ -207,11 +928,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_ALL_THE_WAY
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_usa_reestablish_the_gold_standard
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_Spread_Capitalist_Propaganda
 		prerequisite = { focus = EoF_MCW_Spread_Capitalist_Propaganda }
 		mutually_exclusive = {
@@ -223,7 +944,18 @@ focus_tree = {
 
 
 		completion_reward = {
-
+				decrease_poverty = yes
+				721 = {
+			
+				add_resource = {
+					type = aluminium
+					amount = 90
+				}
+				add_resource = {
+					type = rubber
+					amount = 120
+				}
+			}
 			
 			effect_tooltip = {
 			swap_ideas = { remove_idea = EoF_MCW_Zebrican_Privatization_2 add_idea = EoF_MCW_Zebrican_Privatization_3 }
@@ -240,11 +972,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_Utilize_Minotaur_Expertise
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_war_utility
 		prerequisite = { focus = EoF_MCW_war_utility }
 		mutually_exclusive = {
@@ -266,11 +998,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_Get_Them_On_Board
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_mining_industry
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_Utilize_Minotaur_Expertise
 		prerequisite = { focus = EoF_MCW_Utilize_Minotaur_Expertise }
 		mutually_exclusive = {
@@ -309,11 +1041,11 @@ focus_tree = {
 	
 	focus = {
 		id = EoF_MCW_Nationalize_Ancestral_Tribal_Lands
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_SOV_steel_casting_industry_ccp_2d_sov_compatibility
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_Get_Them_On_Board
 		prerequisite = { focus = EoF_MCW_Get_Them_On_Board }
 		mutually_exclusive = {
@@ -323,6 +1055,7 @@ focus_tree = {
 
 
 		completion_reward = {
+			decrease_poverty = yes
 			656 = {
 			add_dynamic_modifier = {
 				modifier = EoF_MCW_Minotaur_Expertise
@@ -363,16 +1096,38 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_License_Hippogriffian_Synthetic_Technology
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_continuous_research
 		
 		x = 4
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_war_utility
 		prerequisite = { focus = EoF_MCW_war_utility }
 		mutually_exclusive = {
 			focus = EoF_MCW_Privatize_Zebrican_Resources
 			focus = EoF_MCW_Utilize_Minotaur_Expertise
+		}
+		available_if_capitulated = yes
+		
+		
+
+		completion_reward = {
+			add_research_slot = 1
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_Refine_Fuel_Production
+		icon = GFX_focus_generic_stockpile_fuel
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_License_Hippogriffian_Synthetic_Technology
+		prerequisite = { focus = EoF_MCW_License_Hippogriffian_Synthetic_Technology }
+		mutually_exclusive = {
 		}
 		available_if_capitulated = yes
 		
@@ -390,20 +1145,23 @@ focus_tree = {
 				uses = 3
 				category = synth_resources
 			}
+			
+			
+			
 		}
 		
 	}
 
 
 	focus = {
-		id = EoF_MCW_Refine_Fuel_Production
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_Mass_Implementation_Of_Our_Native_Technology
+		icon = GFX_goal_generic_oil_refinery
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_License_Hippogriffian_Synthetic_Technology
-		prerequisite = { focus = EoF_MCW_License_Hippogriffian_Synthetic_Technology }
+		cost = 8
+		relative_position_id = EoF_MCW_Refine_Fuel_Production
+		prerequisite = { focus = EoF_MCW_Refine_Fuel_Production }
 		mutually_exclusive = {
 		}
 		available_if_capitulated = yes
@@ -419,20 +1177,23 @@ focus_tree = {
 				amount = -2
 			}
 			add_ideas = EoF_MCW_Fuel_Increase
+			
+			
+			
+			
 		}
 		
 	}
 
-
 	focus = {
-		id = EoF_MCW_Mass_Implementation_Of_Our_Native_Technology
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_final_push
+		icon = GFX_SOV_synthetic_rubber_ccp_2d_sov_compatibility
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_Refine_Fuel_Production
-		prerequisite = { focus = EoF_MCW_Refine_Fuel_Production }
+		cost = 8
+		relative_position_id = EoF_MCW_Mass_Implementation_Of_Our_Native_Technology
+		prerequisite = { focus = EoF_MCW_Mass_Implementation_Of_Our_Native_Technology }
 		mutually_exclusive = {
 		}
 		available_if_capitulated = yes
@@ -444,10 +1205,12 @@ focus_tree = {
 			# + fuel production from synths 
 			add_ideas = EoF_MCW_Cheap_Refineries
 			
+			set_country_flag = EoF_MCW_one_path_is_done
+			
+			
 		}
 		
 	}
-
 
 
 
@@ -465,11 +1228,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_army_1
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_chi_army_reform
 		
 		x = 0
 		y = 2
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_MCW_honorable_dialogue focus = EoF_MCW_coopt_the_communion }
 
@@ -484,11 +1247,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_expand_bureaucracy
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_self_management
 		
-		x = -1
+		x = -5
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_army_1
 		prerequisite = { focus = EoF_MCW_army_1 }
 
@@ -503,11 +1266,11 @@ focus_tree = {
 	
 	focus = {
 		id = EoF_MCW_spiritual_mobilization
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_jap_spiritual_mobilization
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_expand_bureaucracy
 		prerequisite = { focus = EoF_MCW_expand_bureaucracy }
 
@@ -523,11 +1286,11 @@ focus_tree = {
 	
 	focus = {
 		id = EoF_MCW_all_in
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_viira_infantry
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_spiritual_mobilization
 		prerequisite = { focus = EoF_MCW_spiritual_mobilization }
 
@@ -535,28 +1298,79 @@ focus_tree = {
 
 
 		completion_reward = {
-			swap_ideas = { remove_idea = EoF_MCW_Spiritual_Mobilization_idea_1 add_idea = EoF_MCW_Spiritual_Mobilization_idea_2 }
 			
-			decrease_poverty = yes
+			
+			
+			
+			completion_reward = {
+				unlock_mio_policy_tooltip = mio_policy_EoF_MCW_all_in
+			}
+			
+			
 		}
 		
 	}	
+
+
+	focus = {
+		id = EoF_MCW_ok_now_we_conscript
+		icon = GFX_goal_chn_axis_build_infantry_grey
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_all_in
+		prerequisite = { focus = EoF_MCW_all_in }
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			swap_ideas = { remove_idea = EoF_MCW_Spiritual_Mobilization_idea_1 add_idea = EoF_MCW_Spiritual_Mobilization_idea_2 }
+			
+			
+		}
+		
+	}		
 	
 	
 	
-	
-	
+		focus = {
+		id = EoF_MCW_mechanized_warfare_theory
+		icon = GFX_focus_generic_truck
+		
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_army_1
+		prerequisite = { focus = EoF_MCW_army_1 }
+
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			add_doctrine_cost_reduction = {
+				name = cat_mobile_warfare
+				cost_reduction = 0.275
+				uses = 5
+				category = cat_mobile_warfare
+			}
+			
+		}
+		
+		
+	}
 	
 
 	focus = {
 		id = EoF_MCW_tonk
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_generic_army_tanks
 		
-		x = 2
+		x = -1
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_army_1
-		prerequisite = { focus = EoF_MCW_army_1 }
+		cost = 8
+		relative_position_id = EoF_MCW_mechanized_warfare_theory
+		prerequisite = { focus = EoF_MCW_mechanized_warfare_theory }
 
 
 		available_if_capitulated = yes
@@ -568,12 +1382,13 @@ focus_tree = {
 				uses = 12
 				category = armor
 			}
+			completion_reward = {
 				add_ideas = EoF_MCW_tonk_idea
 				add_timed_idea = {
 					idea = EoF_MCW_tonk_development_timed_idea
 					days = 730
 				}
-			
+			}
 			
 		}
 		
@@ -582,11 +1397,11 @@ focus_tree = {
 	
 	focus = {
 		id = EoF_MCW_optimize_for_domestic_production
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_tank_production
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_tonk
 		prerequisite = { focus = EoF_MCW_tonk }
 
@@ -608,13 +1423,61 @@ focus_tree = {
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	focus = {
+		id = EoF_MCW_mech_tiem
+		icon = GFX_focus_generic_mechanized
+		
+		x =1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_mechanized_warfare_theory
+		prerequisite = { focus = EoF_MCW_mechanized_warfare_theory }
+
+
+		available_if_capitulated = yes
+
+
+		
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 
 	focus = {
-		id = EoF_MCW_all_special_forces
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_all_special_forces_academy
+		icon = GFX_specialforces_gen
 		
-		x = 5
+		x = 4
 		y = 1
 		cost = 20
 		relative_position_id = EoF_MCW_army_1
@@ -628,19 +1491,163 @@ focus_tree = {
 			add_ideas = EoF_MCW_all_special_forces_idea_1
 		}
 		
+		set_country_flag = {
+			flag = EoF_MCW_special_forces_academy_construction
+			value = 1
+			days = 365
+		}
+		
+	}
+	
+	focus = {
+		id = EoF_MCW_all_special_forces_academy_finished
+		icon = GFX_focus_generic_improve_the_administration
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_all_special_forces_academy
+		prerequisite = { focus = EoF_MCW_all_special_forces_academy }
+		available = {
+		NOT = {
+			has_country_flag = EoF_MCW_special_forces_academy_construction
+		}
+	}
+
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = EoF_MCW_all_special_forces_idea_1
+		}
+		
+		
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_marine_academy
+		icon = GFX_goal_academy_of_alchemy
+		
+		x = -2
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_all_special_forces_academy_finished
+		prerequisite = { focus = EoF_MCW_all_special_forces_academy_finished }
+
+		available_if_capitulated = yes
+
+		set_country_flag = {
+			flag = EoF_MCW_adv_special_forces_branch
+			value = 1
+			days = 70
+		}
+		
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_mountaineer_academy
+		icon = GFX_focus_GRE_a_land_of_mountains
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_all_special_forces_academy_finished
+		prerequisite = { focus = EoF_MCW_all_special_forces_academy_finished }
+
+		available_if_capitulated = yes
+		
+		set_country_flag = {
+			flag = EoF_MCW_adv_special_forces_branch
+			value = 1
+			days = 70
+		}
+	}
+
+
+	focus = {
+		id = EoF_MCW_jungle_mountaineer_academy
+		icon = GFX_goal_CTL_A_jungle
+		
+		x = 2
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_all_special_forces_academy_finished
+		prerequisite = { focus = EoF_MCW_all_special_forces_academy_finished }
+
+		available_if_capitulated = yes
+		
+		set_country_flag = {
+			flag = EoF_MCW_adv_special_forces_branch
+			value = 1
+			days = 70
+		}
+	}
+
+
+	
+	focus = {
+		id = EoF_MCW_celebrate_finished_academy
+		icon = GFX_CES_the_commanders_final_decree
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_mountaineer_academy
+		prerequisite = { 
+			focus = EoF_MCW_mountaineer_academy
+			focus = EoF_MCW_marine_academy
+			focus = EoF_MCW_jungle_mountaineer_academy 
+		}
+		available = {
+		NOT = {
+			has_country_flag = EoF_MCW_adv_special_forces_branch
+		}
+	
+		}
+		
+
+		available_if_capitulated = yes
+		
+		
+	
+
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_land_doctrine_paths
+		icon = GFX_goal_generic_army_doctrines
+		
+		x = 10
+		y = 1
+		cost = 2
+		relative_position_id = EoF_MCW_army_1
+		prerequisite = { focus = EoF_MCW_army_1 }
+
+
+		available_if_capitulated = yes
+
+
+		
+		
 	}
 
 
 
 	focus = {
 		id = EoF_MCW_sf_doctrine
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_YUG_zmaj
 		
 		x = -1
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_all_special_forces
-		prerequisite = { focus = EoF_MCW_all_special_forces }
+		cost = 8
+		relative_position_id = EoF_MCW_land_doctrine_paths
+		prerequisite = { focus = EoF_MCW_land_doctrine_paths }
 
 
 		available_if_capitulated = yes
@@ -656,17 +1663,43 @@ focus_tree = {
 		}
 		
 	}
+	
+	focus = {
+		id = EoF_MCW_better_artillery
+		icon = GFX_SOV_soviet_artillery_ccp_2d_sov_compatibility
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_sf_doctrine
+		prerequisite = { focus = EoF_MCW_sf_doctrine }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			#artillery research bonus 
+			#more brkth
+			add_tech_bonus = {
+			bonus = 3.0
+			uses = 1
+			category = artillery
+			}
+		}
+		
+	}
 
 
 	focus = {
 		id = EoF_MCW_gbp_doctrine
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_generic_position_armies
 		
 		x = 1
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_all_special_forces
-		prerequisite = { focus = EoF_MCW_all_special_forces }
+		cost = 8
+		relative_position_id = EoF_MCW_land_doctrine_paths
+		prerequisite = { focus = EoF_MCW_land_doctrine_paths }
 
 
 		available_if_capitulated = yes
@@ -689,11 +1722,11 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_better_inf_weapons
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_van_rifles
 		
 		x = 0
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_gbp_doctrine
 		prerequisite = { focus = EoF_MCW_gbp_doctrine }
 
@@ -717,169 +1750,20 @@ focus_tree = {
 
 
 
-	focus = {
-		id = EoF_MCW_better_artillery
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_sf_doctrine
-		prerequisite = { focus = EoF_MCW_sf_doctrine }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			#artillery research bonus 
-			#more brkth
-			add_tech_bonus = {
-			bonus = 3.0
-			uses = 1
-			category = artillery
-			}
-		}
-		
-	}
 
 
 
 
 
 
-	focus = {
-		id = EoF_MCW_special_forces_academy
-		icon = GFX_focus_indy_generic_political
-		
-		x = 1
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_better_artillery
-		prerequisite = { focus = EoF_MCW_better_inf_weapons focus = EoF_MCW_better_artillery }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-
-
-
-	focus = { 
-		id = EoF_MCW_pour_our_hearts_into_the_project
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_special_forces_academy
-		prerequisite = { focus = EoF_MCW_special_forces_academy }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-
-	focus = { 
-		id = EoF_MCW_our_efforts_bear_fruit
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_pour_our_hearts_into_the_project
-		prerequisite = { focus = EoF_MCW_pour_our_hearts_into_the_project }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-
-	focus = { 
-		id = EoF_MCW_cracked_marines
-		icon = GFX_focus_indy_generic_political
-		
-		x = -2
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_our_efforts_bear_fruit
-		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = { 
-		id = EoF_MCW_cracked_mountaineers
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_our_efforts_bear_fruit
-		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-
-	focus = { 
-		id = EoF_MCW_cracked_paratroopers
-		icon = GFX_focus_indy_generic_political
-		
-		x = 2
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_our_efforts_bear_fruit
-		prerequisite = { focus = EoF_MCW_our_efforts_bear_fruit }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}
-
-
-
-
-
-
-
-
-
-
-
-	#OLENIAN NAVAL TREE 
+	# orbital NAVAL TREE 
 	focus = {
 		id = EoF_MCW_navy_1
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_goal_jer_navy
 		
 		x = 15
 		y = 2
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_MCW_honorable_dialogue focus = EoF_MCW_coopt_the_communion }
 
@@ -887,64 +1771,212 @@ focus_tree = {
 
 
 		completion_reward = {
+			navy_experience = 500
+		
+		
+		
+		
 		}
 		
 	}
-	
-	
+
+
+
 	focus = {
-		id = EoF_MCW_fuck_the_navy_i_hate_navy
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_civilian_dockyards
+		icon = GFX_focus_FIN_acquire_andros_dockyards
 		
-		x = -4
+		x = 0
 		y = 1
-		cost = 1
+		cost = 8
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+	
+		mutually_exclusive = {
+		
+			focus = EoF_MCW_underhanded_naval_tactics
+			focus = EoF_MCW_hunt_down_pirates
+			focus = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		}
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+			add_ideas = EoF_MCW_civilian_dockyards_idea
+			add_research_slot = 1
+			decrease_poverty = yes
+			
+		
+			HIP = {
+				add_offsite_building = { type = dockyard level = 5 }
+			}
+		
+			715 = {
+			    remove_building = {
+				    type = dockyard
+				    level = 5
+			    }
+		    }
+			513 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+		    }
+			386 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+			}
+			671 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+			}
+			725 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+			}
+			723 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+			}
+			726 = {
+				remove_building = {
+					type = dockyard
+					level = 5
+				}
+			}
+		
+			
+		}
+		
+	}
+
+
+	focus = {
+		id = EoF_MCW_underhanded_naval_tactics
+		icon = GFX_goal_generic_wolf_pack
+		
+		x = 2
+		y = 1
+		cost = 8
 		relative_position_id = EoF_MCW_navy_1
 		prerequisite = { focus = EoF_MCW_navy_1 }
 
 
+		mutually_exclusive = {
+			focus = EoF_MCW_civilian_dockyards
+			focus = EoF_MCW_hunt_down_pirates
+			focus = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		}
+		
 		available_if_capitulated = yes
 
 
 		completion_reward = {
-			add_ideas = EoF_MCW_fuck_the_navy_idea
+		
+		
+		
+		
+		
+		
+		
+		}
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_submarine_focus
+		icon = GFX_goal_generic_navy_submarine
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_underhanded_naval_tactics
+		prerequisite = { focus = EoF_MCW_underhanded_naval_tactics }
+		
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_hunt_down_pirates
+		icon = GFX_goal_generic_navy_cruiser
+		
+		x = 6
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_navy_1
+		prerequisite = { focus = EoF_MCW_navy_1 }
+
+
+		mutually_exclusive = {
+			focus = EoF_MCW_civilian_dockyards
+			focus = EoF_MCW_underhanded_naval_tactics
+			focus = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		}
+		available_if_capitulated = yes
+
+
+		completion_reward = {
 		}
 		
 	}
 	
 	
-
-
-
 	focus = {
-		id = EoF_MCW_become_the_pirate
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		icon = GFX_goal_NLR_Naval_Aviation
 		
-		x = -2
+		x = 13
 		y = 1
-		cost = 1
+		cost = 8
 		relative_position_id = EoF_MCW_navy_1
 		prerequisite = { focus = EoF_MCW_navy_1 }
 
 
+		mutually_exclusive = {
+			focus = EoF_MCW_civilian_dockyards
+			focus = EoF_MCW_underhanded_naval_tactics
+			focus = EoF_MCW_hunt_down_pirates
+		}
 		available_if_capitulated = yes
 
 
 		completion_reward = {
 		}
 		
-	}	
+	}
+
 
 	focus = {
-		id = EoF_MCW_unrestricted_submarine_warfare
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_throw_together_dockyards
+		icon = GFX_goal_generic_construct_naval_dockyard
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_become_the_pirate
-		prerequisite = { focus = EoF_MCW_become_the_pirate }
-
+		cost = 8
+		relative_position_id = EoF_MCW_hunt_down_pirates
+		prerequisite = { focus = EoF_MCW_hunt_down_pirates }
+		
 
 		available_if_capitulated = yes
 
@@ -952,19 +1984,19 @@ focus_tree = {
 		completion_reward = {
 		}
 		
-	}	
-
+	}
 
 	focus = {
-		id = EoF_MCW_pirate_menace
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_refine_naval_doctrine
+		icon = GFX_goal_generic_navy_doctrines_tactics
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_navy_1
-		prerequisite = { focus = EoF_MCW_navy_1 }
-
+		cost = 8
+		relative_position_id = EoF_MCW_throw_together_dockyards
+		prerequisite = { focus = EoF_MCW_throw_together_dockyards
+		}
+		
 
 		available_if_capitulated = yes
 
@@ -976,183 +2008,65 @@ focus_tree = {
 
 
 	focus = {
-		id = EoF_MCW_overhwelming_numbers
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_massively_ramp_up_production
+		icon = GFX_focus_generic_refit_civilian_ships
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_pirate_menace
-		prerequisite = { focus = EoF_MCW_pirate_menace }
-
+		cost = 8
+		relative_position_id = EoF_MCW_refine_naval_doctrine
+		prerequisite = { focus = EoF_MCW_refine_naval_doctrine
+		}
+		
 
 		available_if_capitulated = yes
 
 
 		completion_reward = {
-			add_ideas = EoF_MCW_surface_raiders_1
+			add_timed_idea = {
+				idea = EoF_MCW_massively_ramp_up_production_timed_idea
+				days = 180
+			}
+			
+			
 		}
 		
 	}
 
 	focus = {
-		id = EoF_MCW_overhwelming_force
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_fight_them
+		icon = GFX_focus_generic_midget_submarines
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_overhwelming_numbers
-		prerequisite = { focus = EoF_MCW_overhwelming_numbers }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			swap_ideas = { remove_idea = EoF_MCW_surface_raiders_1 add_idea = EoF_MCW_surface_raiders_2 }
+		cost = 8
+		relative_position_id = EoF_MCW_massively_ramp_up_production
+		prerequisite = { focus = EoF_MCW_massively_ramp_up_production
 		}
 		
-	}
-
-	focus = {
-		id = EoF_MCW_triumph_over_the_terrorists
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_overhwelming_force
-		prerequisite = { focus = EoF_MCW_overhwelming_force }
-
 
 		available_if_capitulated = yes
 
 
 		completion_reward = {
-		}
-	}
-
-
-	focus = {
-		id = EoF_MCW_new_naval_doctrine
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_triumph_over_the_terrorists
-		prerequisite = { focus = EoF_MCW_triumph_over_the_terrorists }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			navy_experience = 300
-			swap_ideas = { remove_idea = EoF_MCW_surface_raiders_2 add_idea = EoF_MCW_surface_raiders_3 }
 		}
 		
 	}
 
 
-
-
-
-
-
-
-
-
 	focus = {
-		id = EoF_MCW_the_menace_of_the_seas
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_unrestricted_submarine_warfare
-		prerequisite = { focus = EoF_MCW_unrestricted_submarine_warfare }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}	
-
-
-
-	focus = {
-		id = EoF_MCW_the_macawian_jewel
-		icon = GFX_focus_indy_generic_political
-		
-		x = 3
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_navy_1
-		prerequisite = { focus = EoF_MCW_navy_1 }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}	
-	
-	focus = {
-		id = EoF_MCW_blue_water_navy
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_the_macawian_jewel
-		prerequisite = { focus = EoF_MCW_the_macawian_jewel }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}		
-
-
-	focus = {
-		id = EoF_MCW_expand_dockyards_to_fullfill_demand
-		icon = GFX_focus_indy_generic_political
-		
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_blue_water_navy
-		prerequisite = { focus = EoF_MCW_blue_water_navy }
-
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-		}
-		
-	}		
-
-	focus = {
-		id = EoF_MCW_the_biggest_guns
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_long_reflection_period
+		icon = GFX_focus_generic_offshore_oil_rig
 		
 		x = -1
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_expand_dockyards_to_fullfill_demand
-		prerequisite = { focus = EoF_MCW_expand_dockyards_to_fullfill_demand }
-
+		cost = 8
+		relative_position_id = EoF_MCW_fight_them
+		prerequisite = { focus = EoF_MCW_fight_them
+		}
+		mutually_exclusive = {
+			focus = EoF_MCW_nah_good_enough
+		}
 
 		available_if_capitulated = yes
 
@@ -1164,15 +2078,41 @@ focus_tree = {
 
 
 	focus = {
-		id = EoF_MCW_the_best_floating_islands
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_nah_good_enough
+		icon = GFX_focus_generic_government_in_exile
 		
 		x = 1
 		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_expand_dockyards_to_fullfill_demand
-		prerequisite = { focus = EoF_MCW_expand_dockyards_to_fullfill_demand }
+		cost = 8
+		relative_position_id = EoF_MCW_fight_them
+		prerequisite = { focus = EoF_MCW_fight_them
+		}
+		
+		mutually_exclusive = {
+			focus = EoF_MCW_long_reflection_period
+		}
 
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+	focus = {
+		id = EoF_MCW_it_bore_fruit_yay
+		icon = GFX_focus_generic_naval_invasion 
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_long_reflection_period
+		prerequisite = { focus = EoF_MCW_long_reflection_period
+		}
+		
 
 		available_if_capitulated = yes
 
@@ -1188,21 +2128,172 @@ focus_tree = {
 
 
 
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+	focus = {
+		id = EoF_MCW_battleship_doctrine
+		icon = GFX_goal_NLR_Battleship_Mod
+		
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		prerequisite = { focus = EoF_MCW_dreams_of_a_true_blue_water_fleet }
+		mutually_exclusive = {
+			focus = EoF_MCW_carrier_doctrine
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+	focus = {
+		id = EoF_MCW_carrier_doctrine
+		icon = GFX_goal_NLR_Carrier_Mod
+		
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		prerequisite = { focus = EoF_MCW_dreams_of_a_true_blue_water_fleet }
+		mutually_exclusive = {
+			focus = EoF_MCW_battleship_doctrine
+		}
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_invest_in_dockyards
+		icon = GFX_goal_NLR_High_Inflation
+		
+		x = 0
+		y = 2
+		cost = 8
+		relative_position_id = EoF_MCW_dreams_of_a_true_blue_water_fleet
+		prerequisite = { focus = EoF_MCW_carrier_doctrine
+						 focus = EoF_MCW_battleship_doctrine }
+		
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_train_workers
+		icon = GFX_goal_NLR_Arms_Industry
+		
+		x = 0
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_invest_in_dockyards
+		prerequisite = { focus = EoF_MCW_invest_in_dockyards }
+
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_compromise
+		icon = GFX_goal_NLR_Tear_up_Regulations
+		
+		x = -1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_train_workers
+		prerequisite = { focus = EoF_MCW_train_workers }
+
+		mutually_exclusive = {
+			focus = EoF_MCW_quality_above_all
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+	focus = {
+		id = EoF_MCW_quality_above_all
+		icon = GFX_goal_NLR_navy
+		
+		x = 1
+		y = 1
+		cost = 8
+		relative_position_id = EoF_MCW_train_workers
+		prerequisite = { focus = EoF_MCW_train_workers }
+
+		mutually_exclusive = {
+			focus = EoF_MCW_compromise
+		}
+
+		available_if_capitulated = yes
+
+
+		completion_reward = {
+		}
+		
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 	#MCW AIR TREE
 	
 	focus = {
-		id = MCW_air_1
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_air_1
+		icon = GFX_goal_generic_air_fighter2
 		
-		x = 21
+		x = 33
 		y = 2
-		cost = 1
+		cost = 3
 		relative_position_id = EoF_communion_of_souls
 		prerequisite = { focus = EoF_MCW_honorable_dialogue focus = EoF_MCW_coopt_the_communion }
 
@@ -1219,13 +2310,13 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_license_planes
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_air_partners
 		
 		x = 3
 		y = 1
-		cost = 1
-		relative_position_id = MCW_air_1
-		prerequisite = { focus = MCW_air_1 }
+		cost = 6
+		relative_position_id = EoF_MCW_air_1
+		prerequisite = { focus = EoF_MCW_air_1 }
 		mutually_exclusive = { focus = EoF_MCW_develop_domestic_fighters }
 
 		available_if_capitulated = yes
@@ -1237,8 +2328,6 @@ focus_tree = {
 				add_war_support = 0.05
 			}
 			add_ideas = EoF_MCW_license_planes_idea
-			
-			decrease_poverty = yes
 		}
 		
 	}
@@ -1247,13 +2336,13 @@ focus_tree = {
 
 	focus = {
 		id = EoF_MCW_develop_domestic_fighters
-		icon = GFX_focus_indy_generic_political
+		icon = GFX_focus_generic_air_research_boost
 		
 		x = 0
 		y = 1
-		cost = 1
-		relative_position_id = MCW_air_1
-		prerequisite = { focus = MCW_air_1 }
+		cost = 8
+		relative_position_id = EoF_MCW_air_1
+		prerequisite = { focus = EoF_MCW_air_1 }
 		mutually_exclusive = { focus = EoF_MCW_license_planes }
 		
 		available_if_capitulated = yes
@@ -1275,20 +2364,20 @@ focus_tree = {
 
 
 	focus = {
-		id = EoF_MCW_holy_fyak
-		icon = GFX_focus_indy_generic_political
+		id = EoF_MCW_holy_fyuk
+		icon = GFX_focus_generic_jet_planes
 		
 		x = 0
-		y = 4
+		y = 1
 		cost = 30
 		relative_position_id = EoF_MCW_develop_domestic_fighters
 		prerequisite = { focus = EoF_MCW_develop_domestic_fighters }
-		prerequisite = { focus = EoF_MCW_the_best_floating_islands }
+
 		available_if_capitulated = yes
 
 
 		completion_reward = {
-			add_ideas = EoF_MCW_holy_fyak_idea
+			add_ideas = EoF_MCW_holy_fyuk_idea
 			
 			add_tech_bonus = {
 				name = fighter_bonus
@@ -1313,3568 +2402,8 @@ focus_tree = {
 
 
 
-	# DIVERSITY IS OUR STRENGTH ! CALL IN THE MINORITY ! 
-	
 
-	focus = {
-		id = fuck_you_diversity_is_our_strength
-		icon = GFX_focus_indy_generic_political
-		
-		x = 30
-		y = 2
-		cost = 1
-		relative_position_id = EoF_communion_of_souls
-		prerequisite = { focus = EoF_MCW_honorable_dialogue focus = EoF_MCW_coopt_the_communion }
 
-		available_if_capitulated = yes
 
 
-		completion_reward = {
-			add_stability = -0.1
-		}
-		
-	}	
 
-	#BAT PONY MINORITY NIGHT BASED BUFFS  
-	
-	focus = {
-		id = MCW_batpony_minority_1
-		icon = GFX_focus_indy_generic_political
-		
-		x = -3
-		y = 1
-		cost = 1
-		relative_position_id = fuck_you_diversity_is_our_strength
-		prerequisite = { focus = fuck_you_diversity_is_our_strength }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_stability = -0.02
-		}
-		
-	}		
-	
-	
-	
-	
-	#HIPPOGRIFF MINORITY AIR BUFFS  
-	focus = {
-		id = MCW_hippogriff_minority_1
-		icon = GFX_focus_indy_generic_political
-		
-		x = -1
-		y = 1
-		cost = 1
-		relative_position_id = fuck_you_diversity_is_our_strength
-		prerequisite = { focus = fuck_you_diversity_is_our_strength }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_stability = -0.02
-		}
-		
-	}		
-	
-	
-	
-	
-	#SEAPONY MINORITY NAVAL BUFFS 
-	focus = {
-		id = MCW_seapony_minority_1
-		icon = GFX_focus_indy_generic_political
-		
-		x = 1
-		y = 1
-		cost = 1
-		relative_position_id = fuck_you_diversity_is_our_strength
-		prerequisite = { focus = fuck_you_diversity_is_our_strength }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_stability = -0.02
-		}
-		
-	}		
-	
-	
-	
-	#GRIFFON MINORITY INDUSTRY BUFFS  
-	focus = {
-		id = MCW_griffon_minority_1
-		icon = GFX_focus_indy_generic_political
-		
-		x = 3
-		y = 1
-		cost = 1
-		relative_position_id = fuck_you_diversity_is_our_strength
-		prerequisite = { focus = fuck_you_diversity_is_our_strength }
-
-		available_if_capitulated = yes
-
-
-		completion_reward = {
-			add_stability = -0.02
-		}
-		
-	}	
-
-
-
-
-
-
-
-
-
-
-
-	focus = {
-		id = EoF_MCW_develop_the_capital
-		icon = GFX_focus_indy_generic_political
-		x = 75
-		y = 45
-		cost = 1
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_develop_pombal
-		icon = GFX_focus_indy_generic_political
-		x = -3
-		y = 0
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_the_capital }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_develop_colthage
-		icon = GFX_focus_indy_generic_political
-		x = -6
-		y = 2
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_the_capital }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_rein_in_the_pirate_archipelago
-		icon = GFX_focus_indy_generic_political
-		x = -4
-		y = -1
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_the_capital }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_develop_minos
-		icon = GFX_focus_indy_generic_political
-		x = -4
-		y = -2
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_rein_in_the_pirate_archipelago }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_develop_asters_landing
-		icon = GFX_focus_indy_generic_political
-		x = -5
-		y = -2
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_minos }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_develop_prospero
-		icon = GFX_focus_indy_generic_political
-		x = -6
-		y = -2
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_asters_landing }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_develop_cyanolisia
-		icon = GFX_focus_indy_generic_political
-		x = -7
-		y = -3
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_the_capital }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_feed_the_deer
-		icon = GFX_focus_indy_generic_political
-		x = 5
-		y = -1
-		cost = 1
-		relative_position_id = EoF_MCW_develop_the_capital
-		prerequisite = { focus = EoF_MCW_develop_the_capital }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-		}
-		
-	}
-
-
-
-
-
-
-	focus = {
-		id = EoF_MCW_a_nation_reforged
-		icon = GFX_focus_indy_generic_political
-		x = 50
-		y = 16
-		cost = 1
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#remove_ideas = EoF_MCW_your_leaders_are_spirit_bonding
-		}
-		
-	}
-
-#	ECONOMIC DEVELOPEMNT YOYOYOYOYOYO
-	focus = {
-		id = EoF_MCW_economic_development_commission
-		icon = GFX_focus_indy_generic_political
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_a_nation_reforged
-		prerequisite = { focus = EoF_MCW_a_nation_reforged }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-
-	focus = {
-		id = EoF_MCW_into_the_colthaginian_jungles
-		icon = GFX_focus_indy_generic_political
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_economic_development_commission
-		prerequisite = { focus = EoF_MCW_economic_development_commission }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_into_the_sao_penario_slums
-		icon = GFX_focus_indy_generic_political
-		x = 2
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_economic_development_commission
-		prerequisite = { focus = EoF_MCW_economic_development_commission }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_into_rios_murder_gangs
-		icon = GFX_focus_indy_generic_political
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_into_the_sao_penario_slums
-		prerequisite = { focus = EoF_MCW_into_the_sao_penario_slums }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_root_out_pombali_pirate_influence
-		icon = GFX_focus_indy_generic_political
-		x = 0
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_into_rios_murder_gangs
-		prerequisite = { focus = EoF_MCW_into_rios_murder_gangs }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-
-	focus = {
-		id = EoF_MCW_minotaur_development
-		icon = GFX_focus_indy_generic_political
-		x = -2
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_economic_development_commission
-		prerequisite = { focus = EoF_MCW_economic_development_commission }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-	focus = {
-		id = EoF_MCW_strike_a_deal_in_cyanolisia
-		icon = GFX_focus_indy_generic_political
-		x = -4
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_economic_development_commission
-		prerequisite = { focus = EoF_MCW_economic_development_commission }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_breathe_life_into_brodershamn
-		icon = GFX_focus_indy_generic_political
-		x = -6
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_economic_development_commission
-		prerequisite = { focus = EoF_MCW_economic_development_commission }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			726 = {
-				add_dynamic_modifier = {
-					modifier = EoF_MCW_build_ports_fast
-				}
-
-
-			}
-		}
-		
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	focus = {
-		id = EoF_MCW_political_centralization_effort
-		icon = GFX_focus_indy_generic_political
-		x = 5
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_a_nation_reforged
-		prerequisite = { focus = EoF_MCW_a_nation_reforged }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-	focus = {
-		id = EoF_MCW_
-		icon = GFX_focus_indy_generic_political
-		x = 12
-		y = 1
-		cost = 1
-		relative_position_id = EoF_MCW_a_nation_reforged
-		prerequisite = { focus = EoF_MCW_a_nation_reforged }
-
-		available_if_capitulated = yes
-		
-
-		completion_reward = {
-			#
-		}
-		
-	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	focus = {
-		id = EoF_zebra_political_effort
-		icon = GFX_focus_indy_generic_political
-		x = 3
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-		
-		available = {
-			hidden_trigger = {
-				NOT = {
-					original_tag = ZAI
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_political_effort"
-			add_political_power = 120
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	#Republic
-	focus = {
-		id = EoF_zebra_strengthen_government
-		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		prerequisite = { focus = EoF_zebra_political_effort }
-		available = {
-		
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_look_to_equestria
-			focus = EoF_zebra_legacy_of_storm_king
-		}
-		x = 0
-		y = 1
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_strengthen_government"
-			add_political_power = 20
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 3
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_fundations_of_a_modern_state
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = { focus = EoF_zebra_strengthen_government }
-		x = 0
-		y = 2
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_fundations_of_a_modern_state"
-			add_political_power = 40
-			add_stability = 0.025
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_look_to_equestria
-		icon = GFX_goal_generic_equestria
-		prerequisite = { focus = EoF_zebra_political_effort }
-		available = {
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_strengthen_government
-			focus = EoF_zebra_legacy_of_storm_king
-		}
-		x = -2
-		y = 1
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_look_to_equestria"
-			add_ideas = zebra_republic_support_idea
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_government = fascism
-			}
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_gather_support
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = { focus = EoF_zebra_look_to_equestria }
-		x = -2
-		y = 2
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_gather_support"
-			add_political_power = 80
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-
-	focus = {
-		id = EoF_zebra_legacy_of_storm_king
-		icon = GFX_goal_legacy_of_the_storm
-		prerequisite = { focus = EoF_zebra_political_effort }
-		available = {
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_strengthen_government
-			focus = EoF_zebra_look_to_equestria
-		}
-		x = 2
-		y = 1
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_legacy_of_storm_king"
-			if = {
-				limit = { has_government = democratic }
-				add_ideas = zebra_monarchy_dem_support_idea
-			}
-			else_if = {
-				limit = { has_government = fascism }
-				add_ideas = zebra_monarchy_fas_support_idea
-			}
-			else = {
-				add_ideas = zebra_monarchy_support_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 6
-			modifier = {
-				has_government = communism
-				factor = 0
-			}
-			modifier = {
-				has_government = fascism
-				factor = 0.2
-			}
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_never_again_subjugated
-		icon = GFX_goal_generic_political_pressure
-		prerequisite = { focus = EoF_zebra_legacy_of_storm_king }
-		x = 2
-		y = 2
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_never_again_subjugated"
-			add_stability = 0.05
-			add_war_support = 0.05
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_popular_revolution
-		icon = GFX_goal_ideology_communist
-		available = {
-			OR = {
-				has_government = communism
-				has_idea = communist_influence
-				#has_idea = generic_communist_revolutionary
-			}
-		}
-		prerequisite = {
-			focus = EoF_zebra_gather_support
-			focus = EoF_zebra_fundations_of_a_modern_state
-			focus = EoF_zebra_never_again_subjugated
-		}
-		bypass = {
-			has_civil_war = yes
-			has_government = communism
-		}
-		x = -3
-		y = 3
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_popular_revolution"
-			if = {
-				limit = { has_idea = zebra_republic_support_idea }
-				swap_ideas = { remove_idea = zebra_republic_support_idea add_idea = zebra_communism_support_idea }
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_completed_focus = EoF_zebra_gather_support
-						AND = {
-							has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-							NOT = { has_government = communism }
-						}
-					}
-				}
-				add_ideas = zebra_communism_support_idea_trait
-			}
-			else = {
-				add_ideas = zebra_communism_support_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				#has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-				has_government = communism
-
-				factor = 5
-			}
-		}
-	}
-	focus = {
-		id = EoF_zebra_land_reform
-		icon = GFX_goal_agrarian_reform
-		prerequisite = { focus = EoF_zebra_popular_revolution }
-		available = { has_government = communism }
-		x = -3
-		y = 4
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_land_reform"
-			add_ideas = zebra_land_reform_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_five_year_plan
-		icon = GFX_goal_generic_soviet_construction
-		prerequisite = { focus = EoF_zebra_land_reform }
-		available = { has_government = communism }
-		x = -3
-		y = 5
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_five_year_plan"
-			add_timed_idea = { idea = zebra_five_year_plan_idea days = 1800 }
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_spread_the_revolution
-		icon = GFX_goal_generic_war_with_comintern
-		prerequisite = { focus = EoF_zebra_five_year_plan }
-		available = { has_government = communism }
-		x = -3
-		y = 6
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_spread_the_revolution"
-			add_ideas = zebra_spread_the_revolution_idea
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Fascism
-	focus = {
-		id = EoF_zebra_only_strong_will_survive
-		icon = GFX_goal_ideology_national_populist
-		prerequisite = {
-			focus = EoF_zebra_never_again_subjugated
-			focus = EoF_zebra_fundations_of_a_modern_state
-		}
-		available = {
-			OR = {
-				has_government = fascism
-				has_idea = fascist_influence
-				#has_idea = generic_fascist_demagogue
-			}
-		}
-		bypass = {
-			has_civil_war = yes
-			has_government = fascism
-		}
-		x = 3
-		y = 3
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_only_strong_will_survive"
-			if = {
-			limit = { has_completed_focus = EoF_zebra_never_again_subjugated }
-			hidden_effect = {
-			set_politics = { ruling_party = fascism elections_allowed = no }
-			}
-			}
-			else_if = {
-				limit = { has_idea = zebra_republic_support_idea }
-				swap_ideas = { remove_idea = zebra_republic_support_idea add_idea = zebra_fascism_support_idea }
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_completed_focus = EoF_zebra_gather_support
-						AND = {
-							has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-							NOT = { has_government = fascism }
-						}
-					}
-				}
-				add_ideas = zebra_fascism_support_idea_trait
-			}
-			else = {
-				add_ideas = zebra_fascism_support_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-				has_government = fascism
-				factor = 5
-			}
-			modifier = {
-				has_idea = zebra_monarchy_fas_support_idea
-				factor = 3
-			}
-		}
-	}
-	focus = {
-		id = EoF_zebra_nationalist_thought
-		icon = GFX_goal_generic_military_sphere
-		prerequisite = { focus = EoF_zebra_only_strong_will_survive }
-		available = { has_government = fascism }
-		x = 3
-		y = 4
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_nationalist_thought"
-			add_ideas = zebra_nationalist_thought_idea
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_gear_for_war
-		icon = GFX_goal_generic_more_territorial_claims
-		prerequisite = { focus = EoF_zebra_nationalist_thought }
-		available = { has_government = fascism }
-		x = 3
-		y = 5
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_gear_for_war"
-			add_ideas = zebra_gear_for_war_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_militarization
-		icon = GFX_focus_generic_military_mission
-		prerequisite = { focus = EoF_zebra_gear_for_war }
-		available = { has_government = fascism }
-		x = 3
-		y = 6
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_militarization"
-			add_ideas = zebra_militarization_idea
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Harmony
-	focus = {
-		id = EoF_zebra_harmony_and_liberty
-		icon = GFX_goal_ideology_harmonist
-		prerequisite = {
-			focus = EoF_zebra_never_again_subjugated
-			focus = EoF_zebra_gather_support
-			focus = EoF_zebra_fundations_of_a_modern_state
-		}
-		available = {
-			OR = {
-				has_government = democratic
-				has_idea = democratic_influence
-				#has_idea = generic_democratic_reformer
-			}
-		}
-		bypass = {
-			has_civil_war = yes
-			has_government = democratic
-		}
-		x = -1
-		y = 3
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_harmony_and_liberty"
-			if = {
-				limit = { has_completed_focus = EoF_zebra_never_again_subjugated }
-				hidden_effect = {
-			set_politics = { ruling_party = democratic elections_allowed = no }
-			}
-			}
-			else_if = {
-				limit = { has_idea = zebra_republic_support_idea }
-				swap_ideas = { remove_idea = zebra_republic_support_idea add_idea = zebra_harmony_support_idea }
-			}
-			else_if = {
-				limit = {
-					OR = {
-						has_completed_focus = EoF_zebra_gather_support
-						AND = {
-							has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-							NOT = { has_government = democratic }
-						}
-					}
-				}
-				add_ideas = zebra_harmony_support_idea_trait
-			}
-			else = {
-				add_ideas = zebra_harmony_support_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-				has_government = democratic
-				factor = 5
-			}
-			modifier = {
-				has_idea = zebra_monarchy_dem_support_idea
-				factor = 3
-			}
-		}
-	}
-	focus = {
-		id = EoF_zebra_carry_the_torch
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = EoF_zebra_harmony_and_liberty }
-		available = { has_government = democratic }
-		x = -1
-		y = 4
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_carry_the_torch"
-			add_ideas = zebra_carry_the_torch_idea
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_words_not_swords
-		icon = GFX_goal_generic_positive_trade_relations
-		prerequisite = { focus = EoF_zebra_carry_the_torch }
-		available = { has_government = democratic }
-		x = -1
-		y = 5
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_words_not_swords"
-			add_ideas = zebra_words_not_swords_idea
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_common_good
-		icon = GFX_focus_generic_the_giant_wakes
-		prerequisite = { focus = EoF_zebra_words_not_swords }
-		available = { has_government = democratic }
-		x = -1
-		y = 6
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_common_good"
-			add_ideas = zebra_common_good_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	#Neutrality
-	focus = {
-		id = EoF_zebra_the_old_ways
-		icon = GFX_goal_ideology_social_conservative
-		prerequisite = {
-			focus = EoF_zebra_never_again_subjugated
-			focus = EoF_zebra_fundations_of_a_modern_state
-			focus = EoF_zebra_gather_support
-		}
-		available = {
-			OR = {
-				has_government = neutrality
-				is_ai = no
-			}
-		}
-		bypass = {
-			has_civil_war = yes
-			has_government = neutrality
-		}
-		x = 1
-		y = 3
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_the_old_ways"
-			if = {
-			limit = { has_completed_focus = EoF_zebra_never_again_subjugated }
-			hidden_effect = {
-			set_politics = { ruling_party = neutrality elections_allowed = no }
-			}
-			}
-			else = {
-				add_ideas = zebra_neutrality_support_idea
-			}
-		}
-		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				has_completed_focus = EoF_zebra_fundations_of_a_modern_state
-				has_government = neutrality
-				factor = 5
-			}
-			modifier = {
-				has_idea = zebra_monarchy_support_idea
-				factor = 3
-			}
-		}
-	}
-	focus = {
-		id = EoF_zebra_defend_the_tradition
-		icon = GFX_goal_generic_defence
-		prerequisite = { focus = EoF_zebra_the_old_ways }
-		available = { has_government = neutrality }
-		x = 1
-		y = 4
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_defend_the_tradition"
-			add_ideas = zebra_defend_the_tradition_idea
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_home_guard
-		icon = GFX_focus_generic_little_entente
-		prerequisite = { focus = EoF_zebra_defend_the_tradition }
-		available = { has_government = neutrality }
-		x = 1
-		y = 5
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_home_guard"
-			add_ideas = zebra_home_guard_idea
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_MANPOWER FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-	focus = {
-		id = EoF_zebra_leading_the_way
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = EoF_zebra_home_guard }
-		available = { has_government = neutrality }
-		x = 1
-		y = 6
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_leading_the_way"
-			add_ideas = zebra_leading_the_way_idea
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_fight_to_the_last
-		icon = GFX_goal_generic_demand_territory
-		prerequisite = {
-			focus = EoF_zebra_spread_the_revolution
-			focus = EoF_zebra_militarization
-			focus = EoF_zebra_common_good
-		}
-		x = 2
-		y = 7
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-		mutually_exclusive = {
-		focus = EoF_zebra_stronger_together
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_fight_to_the_last"
-			add_ideas = griffon_fight_to_the_last_idea
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_stronger_together
-		icon = GFX_goal_generic_improve_relations
-		prerequisite = {
-			focus = EoF_zebra_common_good
-			focus = EoF_zebra_leading_the_way
-			focus = EoF_zebra_spread_the_revolution
-		}
-		x = -2
-		y = 7
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-		mutually_exclusive = {
-		focus = EoF_zebra_fight_to_the_last
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_stronger_together"
-			add_ideas = griffon_stronger_together_idea
-		}
-		search_filters = { FOCUS_FILTER_STABILITY }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_ideological_though
-		icon = GFX_goal_generic_propaganda
-		prerequisite = {
-			focus = EoF_zebra_fight_to_the_last
-			focus = EoF_zebra_stronger_together
-		}
-		x = 0
-		y = 8
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_ideological_though"
-			add_war_support = 0.05
-			remove_ideas = feudalism
-			if = {
-				limit = { has_idea = feudalism }
-				remove_ideas = feudalism
-			}
-			if = {
-				limit = { has_idea = FAT_Chaos_idea }
-				remove_ideas = FAT_Chaos_idea
-			}
-			if = {
-				limit = { has_idea = FAT_Chaos_idea1 }
-				remove_ideas = FAT_Chaos_idea1
-			}
-			if = {
-				limit = { has_idea = FAT_Chaos_idea2 }
-				remove_ideas = FAT_Chaos_idea2
-			}
-			if = {
-				limit = { is_ai = no }
-				set_rule = { can_create_factions = yes }
-			}
-		}
-		search_filters = { FOCUS_FILTER_WAR_SUPPORT }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_expansionist_focus
-		icon = GFX_goal_generic_major_war
-		prerequisite = {
-			focus = EoF_zebra_ideological_though
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_neutrality_focus
-			focus = EoF_zebra_our_own_way
-		}
-		x = -2
-		y = 9
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_expansionist_focus"
-			add_political_power = -50
-			add_ideas = zebra_expansionist_focus_idea
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_our_own_way
-		icon = GFX_focus_generic_self_management
-		prerequisite = {
-			focus = EoF_zebra_ideological_though
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_expansionist_focus
-			focus = EoF_zebra_neutrality_focus
-		}
-		x = 0
-		y = 9
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_our_own_way"
-			add_political_power = 200
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL }
-		ai_will_do = {
-			factor = 1
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_neutrality_focus
-		icon = GFX_goal_generic_neutrality_focus
-		prerequisite = {
-			focus = EoF_zebra_ideological_though
-		}
-		mutually_exclusive = {
-			focus = EoF_zebra_expansionist_focus
-			focus = EoF_zebra_our_own_way
-		}
-		x = 2
-		y = 9
-		cost = 5
-		relative_position_id = EoF_zebra_political_effort
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_neutrality_focus"
-			add_ideas = neutrality_idea
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				OR = {
-					has_government = fascism
-					has_government = communism
-				}
-			}
-		}
-	}
-
-	########################
-	####### INDUSTRY #######
-	########################
-	focus = {
-		id = EoF_zebra_industrial_effort
-		icon = GFX_goal_industrial_pony
-		x = 10
-		y = 0
-
-		cost = 5
-		
-		available = {
-			hidden_trigger = {
-				NOT = {
-					original_tag = ZAI
-				}
-			}
-		}
-
-		ai_will_do = {
-			factor = 3
-			modifier = {
-				factor = 0
-				date < 1010.1.1
-				OR = {
-					# really small nations won't use it right away
-					num_of_controlled_states < 2
-				}
-			}
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_industrial_effort"
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_cottage_industry
-		icon = GFX_goal_construction_engineering
-		prerequisite = { focus = EoF_zebra_industrial_effort }
-		relative_position_id = EoF_zebra_industrial_effort
-		x = -1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = industrial_complex
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_cottage_industry"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_roads
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = EoF_zebra_cottage_industry }
-		relative_position_id = EoF_zebra_cottage_industry
-		x = -1
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-			add_building_construction = {
-				type = infrastructure
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_roads"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_phase_out_slavery
-		icon = GFX_goal_slavery
-		prerequisite = { focus = EoF_zebra_cottage_industry focus = EoF_zebra_arms_effort}
-		x = 2
-		y = 0
-		relative_position_id = EoF_zebra_roads
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-			has_idea = slavery_economy
-			does_not_have_tribal_society = yes
-			does_not_have_agrarian_society = yes
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_phase_out_slavery"
-			swap_ideas = {
-			remove_idea = slavery_economy
-			add_idea = civilian_economy
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_boost_economy
-		icon = GFX_goal_gold_reserve
-		prerequisite = { focus = EoF_zebra_roads}
-		x = 1
-		y = 1
-		relative_position_id = EoF_zebra_roads
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_boost_economy"
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-			decrease_poverty = yes
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_industrial_revolution
-		icon = GFX_goal_improve_industry
-		prerequisite = { focus = EoF_zebra_boost_economy}
-		x = 1
-		y = 1
-		relative_position_id = EoF_zebra_boost_economy
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-		 		all_owned_state = {
-		 			free_building_slots = {
-		 				building = industrial_complex
-		 				size < 1
-		 				include_locked = yes
-		 			}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_industrial_revolution"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			if = {
-				limit = {
-					has_idea = primitive_economy
-				}
-				swap_ideas = {
-					remove_idea = primitive_economy
-					add_idea = civilian_economy
-				}
-			}
-			decrease_poverty = yes
-			increase_society_development = yes
-			
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_education_reform
-		icon = GFX_goal_education
-		prerequisite = { focus = EoF_zebra_industrial_revolution}
-		x = -1
-		y = 1
-		relative_position_id = EoF_zebra_industrial_revolution
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			NOT = { has_idea = poor_science_base }
-			NOT = { has_illiteracy = yes }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_education_reform"
-			hidden_effect = { set_country_flag = better_science_base_unlocked }
-			if = {
-				limit = { has_idea = poor_science_base }
-				add_ideas = better_science_base
-			}
-			decrease_illiteracy = yes
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_railway
-		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = EoF_zebra_industrial_revolution }
-		relative_position_id = EoF_zebra_industrial_revolution
-		x = 1
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = infrastructure_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = infrastructure
-						size < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_railway"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 0
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 0
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = infrastructure
-						size > 1
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = infrastructure
-										size > 1
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			decrease_poverty = yes
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_economic_boom
-		icon = GFX_goal_gold_up
-		prerequisite = { focus = EoF_zebra_railway }
-		prerequisite = { focus = EoF_zebra_education_reform }
-		x = -1
-		y = 1
-		relative_position_id = EoF_zebra_railway
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_economic_boom"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			decrease_poverty = yes
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_industrial_effort_ii
-		icon = GFX_goal_generic_lau_factory
-		prerequisite = { focus = EoF_zebra_economic_boom }
-		x = 1
-		y = 1
-		relative_position_id = EoF_zebra_economic_boom
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-		available = {
-			num_of_factories > 14
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_industrial_effort_ii"
-			add_tech_bonus = {
-				name = industrial_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
-			}
-			decrease_poverty = yes
-			increase_society_development = yes
-		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_new_factories
-		icon = GFX_goal_generic_lau_industry
-		prerequisite = { focus = EoF_zebra_industrial_effort_ii }
-		x = 0
-		y = 1
-		relative_position_id = EoF_zebra_industrial_effort_ii
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = construction_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = industrial_complex
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_new_factories"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = industrial_complex
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = industrial_complex
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			decrease_poverty = yes
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_modernise_society
-		icon = GFX_goal_generic_railroad
-		prerequisite = { focus = EoF_zebra_new_factories }
-		x = 0
-		y = 1
-		relative_position_id = EoF_zebra_new_factories
-
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			has_idea = modern_society
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_modernise_society"
-			increase_society_development = yes
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_science_effort
-		icon = GFX_goal_generic_scientific_exchange
-		prerequisite = { focus = EoF_zebra_economic_boom}
-		x = -1
-		y = 1
-		relative_position_id = EoF_zebra_economic_boom
-
-		cost = 5
-
-		available = {
-			num_of_factories > 14
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			NOT = { has_idea = better_science_base }
-			NOT = { has_illiteracy = yes }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_science_effort"
-			hidden_effect = { set_country_flag = big_science_base_unlocked }
-			if = {
-				limit = { has_idea = better_science_base }
-				add_ideas = big_science_base
-			}
-			decrease_illiteracy = yes
-		}
-		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_science_effort_ii
-		icon = GFX_goal_supremacy_of_will
-		prerequisite = { focus = EoF_zebra_science_effort}
-		x = 0
-		y = 1
-		relative_position_id = EoF_zebra_science_effort
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			NOT = { has_idea = big_science_base }
-			has_idea = proper_science_base
-			NOT = { has_illiteracy = yes }
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_science_effort_ii"
-			hidden_effect = { set_country_flag = proper_science_base_unlocked }
-			if = {
-				limit = { has_idea = big_science_base }
-				add_ideas = proper_science_base
-			}
-			decrease_illiteracy = yes
-		}
-	}
-
-	focus = {
-		id = EoF_zebra_universities
-		icon = GFX_goal_eqs_public_schools
-		prerequisite = { focus = EoF_zebra_science_effort_ii }
-		relative_position_id = EoF_zebra_science_effort_ii
-		x = 0
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_universities"
-			if = {
-				limit = {
-					amount_research_slots < 5
-				}
-				add_research_slot = 1
-			}
-			decrease_illiteracy = yes
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_scientific_breakthrough
-		icon = GFX_goal_double_research
-		prerequisite = { focus = EoF_zebra_universities }
-		prerequisite = { focus = EoF_zebra_modernise_society }
-		relative_position_id = EoF_zebra_universities
-		available = {
-			num_of_factories > 50
-		}
-		cancel_if_invalid = no
-		continue_if_invalid = yes
-		x = 1
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_scientific_breakthrough"
-			if = {
-				limit = {
-					amount_research_slots < 5
-				}
-				add_research_slot = 1
-			}
-			decrease_illiteracy = yes
-			increase_society_development = yes
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_arms_effort
-		icon = GFX_goal_factory_complex
-		prerequisite = { focus = EoF_zebra_industrial_effort }
-		relative_position_id = EoF_zebra_industrial_effort
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = no
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_arms_effort"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-	focus = {
-		id = EoF_zebra_recover_from_raiding
-		icon = GFX_goal_generic_national_unity
-		prerequisite = { focus = EoF_zebra_arms_effort }
-		relative_position_id = EoF_zebra_industrial_effort
-		x = 1
-		y = 3
-		cost = 5
-
-		available_if_capitulated = no
-
-		available = {
-			OR = {
-				has_idea = zebrica_legacy_of_storm1
-				has_idea = zebrica_legacy_of_storm2
-				has_idea = zebrica_legacy_of_storm3
-			}
-		}
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_recover_from_raiding"
-			if = {
-				limit = {
-					has_idea = zebrica_legacy_of_storm1
-				}
-				remove_ideas = zebrica_legacy_of_storm1
-			}
-			else_if = {
-				limit = {
-					has_idea = zebrica_legacy_of_storm2
-				}
-				remove_ideas = zebrica_legacy_of_storm2
-			}
-			else_if = {
-				limit = {
-					has_idea = zebrica_legacy_of_storm3
-				}
-				remove_ideas = zebrica_legacy_of_storm3
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-	focus = {
-		id = EoF_zebra_arms_effort_ii
-		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = EoF_zebra_industrial_revolution }
-		relative_position_id = EoF_zebra_industrial_revolution
-		x = 2
-		y = 2
-		cost = 5
-
-		available_if_capitulated = no
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_arms_effort_ii"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-	focus = {
-		id = EoF_zebra_arms_effort_iii
-		icon = GFX_goal_munitions_factories
-		prerequisite = { focus = EoF_zebra_arms_effort_ii }
-		prerequisite = { focus = EoF_zebra_new_factories }
-		relative_position_id = EoF_zebra_new_factories
-		x = 2
-		y = 1
-		cost = 5
-
-		available_if_capitulated = no
-
-
-		ai_will_do = {
-			factor = 2
-		}
-
-		bypass = {
-			custom_trigger_tooltip = {
-				tooltip = production_effort_tt
-				all_owned_state = {
-					free_building_slots = {
-						building = arms_factory
-						size < 1
-						include_locked = yes
-					}
-				}
-			}
-		}
-
-		complete_tooltip = {
-			add_extra_state_shared_building_slots = 1
-			add_building_construction = {
-				type = arms_factory
-				level = 1
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_arms_effort_iii"
-			random_owned_controlled_state = {
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-					OR = {
-						is_in_home_area = yes
-						NOT = {
-							owner = {
-								any_owned_state = {
-									free_building_slots = {
-										building = arms_factory
-										size > 0
-										include_locked = yes
-									}
-									is_in_home_area = yes
-								}
-							}
-						}
-					}
-				}
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-	}
-
-	########################
-	#######   ARMY   #######
-	########################
-	focus = {
-		id = EoF_zebra_expand_army
-		icon = GFX_goal_generic_allies_build_infantry
-		prerequisite = { focus = EoF_zebra_industrial_effort }
-		relative_position_id = EoF_zebra_industrial_effort
-		x = 5
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				OR = { tag = BLT tag = CME }
-			}
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_expand_army"
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_improved_weapons
-		icon = GFX_goal_generic_small_arms
-		prerequisite = { focus = EoF_zebra_expand_army }
-		relative_position_id = EoF_zebra_expand_army
-		x = -1
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				OR = { tag = BLT tag = CME }
-			}
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_improved_weapons"
-			add_tech_bonus = {
-				name = infantry_weapons_bonus
-				bonus = 1.0
-				uses = 1
-				category = infantry_weapons
-				category = artillery
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_artillery_effort
-		icon = GFX_goal_generic_army_artillery
-		prerequisite = { focus = EoF_zebra_improved_weapons }
-		relative_position_id = EoF_zebra_improved_weapons
-		x = 0
-		y = 1
-		cost = 5
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 3
-				OR = { tag = BLT tag = CME }
-			}
-		}
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_artillery_effort"
-			add_tech_bonus = {
-				name = artillery_bonus
-				bonus = 1.0
-				uses = 1
-				category = artillery
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_special_forces
-		icon = GFX_goal_generic_special_forces
-		prerequisite = { focus = EoF_zebra_artillery_effort }
-		prerequisite = { focus = EoF_zebra_traditonal_warfair focus = EoF_zebra_modern_warfair }
-		relative_position_id = EoF_zebra_artillery_effort
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_special_forces"
-			add_ideas = special_forces
-			if = {
-				limit = {
-					has_dlc = "Arms Against Tyranny"
-				}
-				add_doctrine_cost_reduction = {
-					name = special_forces_bonus
-					cost_reduction = 0.75
-					uses = 1
-					category = special_forces_doctrine
-				}
-				add_tech_bonus = {
-					name = special_forces_bonus
-					bonus = 0.75
-					uses = 1
-					category = special_forces_tech
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = special_forces_bonus
-					bonus = 1.0
-					uses = 1
-					category = special_forces_tech
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_doctrine_advancement
-		icon = GFX_goal_generic_army_doctrines
-		prerequisite = { focus = EoF_zebra_special_forces }
-		prerequisite = { focus = EoF_zebra_local_tank_production focus = EoF_zebra_tank_licenses }
-		relative_position_id = EoF_zebra_artillery_effort
-		x = 2
-		y = 2
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_doctrine_advancement"
-			if = {
-				limit = { has_idea = FAT_unruly_army_idea }
-				remove_ideas = FAT_unruly_army_idea
-			}
-			if = {
-				limit = { has_idea = FAT_unruly_army_idea1 }
-				remove_ideas = FAT_unruly_army_idea1
-			}
-			if = {
-				limit = { has_idea = FAT_unruly_army_idea2 }
-				remove_ideas = FAT_unruly_army_idea2
-			}
-			army_experience = 25
-			add_doctrine_cost_reduction = {
-				name = land_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = land_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_support
-		icon = GFX_goal_generic_support_equipment
-		prerequisite = { focus = EoF_zebra_expand_army }
-		relative_position_id = EoF_zebra_expand_army
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_support"
-			add_tech_bonus = {
-				name = zebra_support
-				bonus = 1.0
-				uses = 2
-				category = engineers_tech
-				category = recon_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_traditonal_warfair
-		icon = GFX_goal_generic_magic
-		prerequisite = { focus = EoF_zebra_support }
-		relative_position_id = EoF_zebra_support
-		mutually_exclusive = { focus = EoF_zebra_modern_warfair }
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_traditonal_warfair"
-			add_tech_bonus = {
-				name = magical_bonus
-				bonus = 1
-				uses = 1
-				category = magical_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_modern_warfair
-		icon = GFX_goal_generic_army_motorized
-		prerequisite = { focus = EoF_zebra_expand_army }
-		mutually_exclusive = { focus = EoF_zebra_traditonal_warfair }
-		relative_position_id = EoF_zebra_traditonal_warfair
-		x = 2
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_modern_warfair"
-			add_tech_bonus = {
-				name = motorized_bonus
-				uses = 1
-				bonus = 1.0
-				category = motorized_equipment
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_local_tank_production
-		icon = GFX_goal_generic_army_tanks
-		prerequisite = { focus = EoF_zebra_modern_warfair }
-		mutually_exclusive = { focus = EoF_zebra_tank_licenses }
-		relative_position_id = EoF_zebra_modern_warfair
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_local_tank_production"
-			add_tech_bonus = {
-				name = armor_bonus
-				bonus = 1.0
-				uses = 2
-				category = armor
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_tank_licenses
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = EoF_zebra_modern_warfair }
-		mutually_exclusive = { focus = EoF_zebra_local_tank_production }
-		x = 2
-		y = 1
-		relative_position_id = EoF_zebra_modern_warfair
-
-		cost = 5
-
-		available = {
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_tank_licenses"
-			add_ideas = zebra_tank_licenses
-		}
-	}
-	########################
-	#######   AIR    #######
-	########################
-	focus = {
-		id = EoF_zebra_aviation_effort
-		icon = GFX_goal_generic_build_airforce
-		x = 22
-		y = 0
-		cost = 5
-		
-		available = {
-			hidden_trigger = {
-				NOT = {
-					original_tag = ZAI
-				}
-			}
-		}
-
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_aviation_effort"
-			air_experience = 25
-
-			if = {
-				limit = {
-					capital_scope = {
-						NOT = {
-							free_building_slots = {
-								building = air_base
-								size > 1
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_AB }
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_fighter_focus
-		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = EoF_zebra_aviation_effort }
-		mutually_exclusive = { focus = EoF_zebra_bomber_focus }
-		mutually_exclusive = { focus = EoF_zebra_purchase_foreign }
-		relative_position_id = EoF_zebra_aviation_effort
-		x = -2
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_fighter_focus"
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1.0
-					uses = 1
-					category = light_air
-					category = medium_air
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1.0
-					uses = 1
-					category = light_fighter
-					category = cat_heavy_fighter
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_fighter_focus_2
-		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = EoF_zebra_bomber_focus focus = EoF_zebra_fighter_focus focus = EoF_zebra_purchase_foreign }
-		mutually_exclusive = { focus = EoF_zebra_bomber_focus_2 }
-		relative_position_id = EoF_zebra_fighter_focus
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_fighter_focus_2"
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 0.5
-					uses = 1
-					category = light_air
-					category = medium_air
-				}
-				add_tech_bonus = {
-					name = cat_air_guns
-					bonus = 0.5
-					uses = 1
-					category = cat_air_guns
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = fighter_bonus
-					bonus = 1.0
-					uses = 1
-					category = light_fighter
-					category = cat_heavy_fighter
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_bomber_focus
-		icon = GFX_goal_generic_air_bomber
-		prerequisite = { focus = EoF_zebra_aviation_effort }
-		mutually_exclusive = { focus = EoF_zebra_fighter_focus }
-		mutually_exclusive = { focus = EoF_zebra_purchase_foreign }
-		relative_position_id = EoF_zebra_aviation_effort
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_bomber_focus"
-			if = {
-				limit = {
-				   has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = medium_air
-					bonus = 1.0
-					uses = 1
-					category = medium_air
-					category = heavy_air
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = tactical_bomber
-					bonus = 1.0
-					uses = 1
-					category = tactical_bomber
-					category = cat_strategic_bomber
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_bomber_focus_2
-		icon = GFX_goal_generic_CAS
-		prerequisite = { focus = EoF_zebra_bomber_focus focus = EoF_zebra_fighter_focus focus = EoF_zebra_purchase_foreign }
-		mutually_exclusive = { focus = EoF_zebra_fighter_focus_2 }
-		relative_position_id = EoF_zebra_bomber_focus
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_bomber_focus_2"
-			if = {
-				limit = {
-				   has_dlc = "By Blood Alone"
-				}
-				add_tech_bonus = {
-					name = medium_air
-					bonus = 0.5
-					uses = 1
-					category = medium_air
-					category = heavy_air
-				}
-				add_tech_bonus = {
-					name = plane_modules_tech
-					bonus = 0.5
-					uses = 1
-					category = plane_modules_tech
-				}
-			}
-			else = {
-				add_tech_bonus = {
-					name = tactical_bomber
-					bonus = 1.0
-					uses = 1
-					category = tactical_bomber
-					category = cat_strategic_bomber
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_aviation_effort_2
-		icon = GFX_goal_generic_air_doctrine
-		prerequisite = { focus = EoF_zebra_bomber_focus_2 focus = EoF_zebra_fighter_focus_2 }
-		relative_position_id = EoF_zebra_bomber_focus_2
-		x = -1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		complete_tooltip = {
-			air_experience = 25
-			if = { limit = { has_country_flag = aviation_effort_2_AB }
-				add_building_construction = {
-					type = air_base
-					level = 2
-					instant_build = yes
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_aviation_effort_2"
-			air_experience = 25
-			if = {
-				limit = {
-					capital_scope = {
-						OR = {
-							NOT = { is_controlled_by = ROOT }
-							NOT = {
-								free_building_slots = {
-									building = air_base
-									size > 1
-								}
-							}
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			if = {
-				limit = {
-					capital_scope = {
-						is_controlled_by = ROOT
-						free_building_slots = {
-							building = air_base
-							size > 1
-						}
-					}
-				}
-				capital_scope = {
-					add_building_construction = {
-						type = air_base
-						level = 2
-						instant_build = yes
-					}
-					ROOT = { set_country_flag = aviation_effort_2_AB }
-				}
-			}
-			add_doctrine_cost_reduction = {
-				name = air_doc_bonus
-				cost_reduction = 0.5
-				uses = 1
-				category = air_doctrine
-			}
-		}
-		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH }
-	}
-	focus = {
-		id = EoF_zebra_purchase_foreign
-		icon = GFX_focus_generic_license_production
-		prerequisite = { focus = EoF_zebra_aviation_effort }
-		mutually_exclusive = { focus = EoF_zebra_bomber_focus focus = EoF_zebra_fighter_focus }
-		x = 2
-		y = 1
-		relative_position_id = EoF_zebra_aviation_effort
-
-		cost = 5
-
-		available = {
-		}
-
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		complete_tooltip = {
-
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_purchase_foreign"
-			add_ideas = zebra_air_licenses
-		}
-	}
-
-	########################
-	#######   SEA    #######
-	########################
-	focus = {
-		id = EoF_zebra_naval_effort
-		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 28
-		y = 0
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		available = {
-			any_controlled_state_is_coastal = yes
-			hidden_trigger = {
-				NOT = {
-					original_tag = ZAI
-				}
-			}
-		}
-
-		complete_tooltip = {
-			navy_experience = 25
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = dockyard
-				level = 3
-				instant_build = yes
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_naval_effort"
-			navy_experience = 25
-			if = {
-				limit = {
-					NOT = {
-						any_owned_state = {
-							dockyard > 0
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-					any_owned_state = {
-						is_coastal = yes
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						is_coastal = yes
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					any_owned_state = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-				}
-				random_owned_controlled_state = {
-					limit = {
-						dockyard > 0
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-				set_country_flag = naval_effort_built
-			}
-			if = {
-				limit = {
-					NOT = { has_country_flag = naval_effort_built }
-					NOT = {
-						any_owned_state = {
-							free_building_slots = {
-								building = dockyard
-								size > 2
-								include_locked = yes
-							}
-						}
-					}
-				}
-				random_controlled_state = {
-					limit = {
-						free_building_slots = {
-							building = dockyard
-							size > 2
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 3
-					add_building_construction = {
-						type = dockyard
-						level = 3
-						instant_build = yes
-					}
-				}
-			}
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_INDUSTRY }
-	}
-
-	focus = {
-		id = EoF_zebra_flexible_navy
-		icon = GFX_goal_generic_build_navy
-		prerequisite = { focus = EoF_zebra_naval_effort }
-		mutually_exclusive = { focus = EoF_zebra_large_navy }
-		relative_position_id = EoF_zebra_naval_effort
-		x = -1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_flexible_navy"
-			add_doctrine_cost_reduction = {
-				name = sub_op_bonus
-				cost_reduction = 0.5
-				uses = 2
-				technology = convoy_interdiction_ti
-				technology = unrestricted_submarine_warfare
-				technology = wolfpacks
-				technology = advanced_submarine_warfare
-				technology = combined_operations_raiding
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_large_navy
-		icon = GFX_goal_generic_navy_doctrines_tactics
-		prerequisite = { focus = EoF_zebra_naval_effort }
-		mutually_exclusive = { focus = EoF_zebra_flexible_navy }
-		relative_position_id = EoF_zebra_naval_effort
-		x = 1
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_large_navy"
-			add_doctrine_cost_reduction = {
-				name = fleet_in_being_bonus
-				cost_reduction = 0.25
-				uses = 2
-				category = fleet_in_being_tree
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_submarine_effort
-		icon = GFX_goal_generic_navy_submarine
-		prerequisite = { focus = EoF_zebra_flexible_navy focus = EoF_zebra_large_navy }
-		relative_position_id = EoF_zebra_large_navy
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_submarine_effort"
-			add_tech_bonus = {
-				name = ss_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = ss_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_cruiser_effort
-		icon = GFX_goal_generic_navy_cruiser
-		prerequisite = { focus = EoF_zebra_large_navy focus = EoF_zebra_flexible_navy }
-		relative_position_id = EoF_zebra_flexible_navy
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_cruiser_effort"
-			add_tech_bonus = {
-				name = cr_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = cl_tech
-				category = ca_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_destroyer_effort
-		icon = GFX_goal_generic_wolf_pack
-		prerequisite = { focus = EoF_zebra_submarine_effort }
-		relative_position_id = EoF_zebra_submarine_effort
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_destroyer_effort"
-			add_tech_bonus = {
-				name = dd_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = dd_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_RESEARCH }
-	}
-
-	focus = {
-		id = EoF_zebra_capital_ships_effort
-		icon = GFX_goal_generic_navy_battleship
-		prerequisite = { focus = EoF_zebra_cruiser_effort }
-		relative_position_id = EoF_zebra_cruiser_effort
-		x = 0
-		y = 1
-		cost = 5
-
-		available_if_capitulated = yes
-
-
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				all_owned_state = {
-					OR = {
-						is_coastal = no
-						dockyard < 1
-					}
-				}
-			}
-		}
-
-		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus zebra_capital_ships_effort"
-			navy_experience = 25
-			add_tech_bonus = {
-				name = capital_ships_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = bc_tech
-				category = bb_tech
-				category = cv_tech
-			}
-		}
-		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_RESEARCH }
-	}
-}
