@@ -29,7 +29,7 @@ equipments = {
 		torpedo_attack = 0
 		lg_attack = 0.25
 		naval_speed = 12
-		max_strength = 60
+		max_strength = 120
 		max_organisation = 30
 		anti_air_attack = 0.1
 
@@ -40,7 +40,7 @@ equipments = {
 		# (Describes combat behaviour - hidden stat)
 		offensive_weapons = no
 		
-		build_cost_ic = 50
+		build_cost_ic = 70
 		resources = {
 			#oil = 1
 			steel = 10

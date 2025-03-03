@@ -249,8 +249,8 @@ NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_STR = 2.0			-- Balancing value to convert d
 NDefines.NAir.NAVAL_STRIKE_DAMAGE_TO_ORG = 3.0			-- Balancing value to convert damage ( naval_strike_attack * hits ) to Organisation reduction.
 NDefines.NAir.NAVAL_STRIKE_CARRIER_MULTIPLIER = 2.0		-- damage bonus when planes are in naval combat where their carrier is present (and can thus sortie faster and more effectively)
 
-NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.6		-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
-NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.5		-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_STR_FACTOR = 0.4		-- casting damage value to ship strength multiplier. Use it ot balance the game difficulty.
+NDefines.NNavy.COMBAT_DAMAGE_TO_ORG_FACTOR = 0.6		-- casting damage value to ship organisation multiplier. Use it to balance the game difficulty.
 
 NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.1				-- multiplies supply usage
 NDefines.NNavy.BASE_CARRIER_SORTIE_EFFICIENCY = 0.1		-- factor of planes that can sortie by default from a carrier
@@ -287,7 +287,12 @@ NDefines.NNavy.LOW_ORG_FACTOR_ON_JOIN_COMBAT_DURATION = 2.0	-- low org of the sh
 
 NDefines.NNavy.BASE_POSITIONING = 0.8				-- base value for positioning
 
-NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 1.0				-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
+NDefines.NNavy.HIGHER_SHIP_RATIO_POSITIONING_PENALTY_FACTOR = 1.0					-- if one side has more ships than the other, that side will get this penalty for each +100% ship ratio it has
+NDefines.NNavy.MAX_POSITIONING_PENALTY_FROM_HIGHER_SHIP_RATIO = 0.75				-- maximum penalty to get from larger fleets
+NDefines.NNavy.MIN_SHIPS_FOR_HIGHER_SHIP_RATIO_PENALTY = 51					-- the minimum fleet size in ships that a fleet must be before having the large fleet penalty applied to them
+NDefines.NNavy.DAMAGE_PENALTY_ON_MINIMUM_POSITIONING = 1.0					-- damage penalty at 0% positioning
+
+NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CAPITALS = 2.0				-- this screen ratio to num capital/carriers is needed for full screening beyond screen line
 NDefines.NNavy.SCREEN_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.2				-- this screen ratio to num convoys is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CARRIERS = 1.0				-- this capital ratio to num carriers is needed for full screening beyond screen line
 NDefines.NNavy.CAPITAL_RATIO_FOR_FULL_SCREENING_FOR_CONVOYS = 0.1				-- this capital ratio to num convoys is needed for full screening beyond screen line
@@ -311,6 +316,12 @@ NDefines.NNavy.ALL_SHIPS_ACTIVATE_TIME = 24
 NDefines.NNavy.SHORE_BOMBARDMENT_CAP = 0.3			-- Vanilla is 0.25
 NDefines.NNavy.HEAVY_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.1	-- heavy gun attack value is divided by this value * 100 and added to shore bombardment modifier
 NDefines.NNavy.LIGHT_GUN_ATTACK_TO_SHORE_BOMBARDMENT = 0.05	-- light gun attack value is divided by this value * 100 and added to shore bombardment modifier
+
+NDefines.NNavy.GUN_HIT_PROFILES = { 				-- hit profiles for guns, if target profile is lower the gun will have lower accuracy
+		80.0,	-- big guns
+		120.0,	-- torpedoes
+		45.0,	-- small guns
+	}
 
 NDefines.NNavy.TRAINING_EXPERIENCE_FACTOR = 0.3			-- Amount of exp each ship gain every 24h while training (before modifiers)
 
