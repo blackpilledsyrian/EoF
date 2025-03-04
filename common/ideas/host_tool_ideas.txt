@@ -1,6 +1,6 @@
 ideas = {
 	country = {
-		WW_army_cheat = {
+		EoF_army_cheat = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
 			modifier = {
@@ -8,7 +8,7 @@ ideas = {
 				army_org_factor = 0.1
 			}
 		}
-		WW_industry_cheat = {
+		EoF_industry_cheat = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
 			modifier = {
@@ -16,14 +16,14 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
-		WW_industry_growth_cheat = {
+		EoF_industry_growth_cheat = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
 			modifier = {
 				production_factory_start_efficiency_factor = 0.5
 			}
 		}
-		WW_dockyard_cheat = {
+		EoF_dockyard_cheat = {
 			removal_cost = -1
 			picture = generic_victors_of_ww1
 			modifier = {

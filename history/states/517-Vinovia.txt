@@ -22,25 +22,25 @@ state={
 			arms_factory = 1
 			industrial_complex = 2
 			10733 = {
-				bunker = 10
+				bunker = 5
 			}
 			4828 = {
-				bunker = 10
+				bunker = 5
 			}
 			4768 = {
-				bunker = 10
+				bunker = 5
 			}
 			13147 = {
-				bunker = 10
+				bunker = 5
 			}
 			4224 = {
-				bunker = 10
+				bunker = 5
 			}
 		}
 	}
 
 	resources={
-		steel=7
-		chromium=12
+		steel=70
+		chromium=120
 	}
 }

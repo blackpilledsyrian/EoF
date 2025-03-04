@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WIT
+		add_core_of = WIT
 
 		victory_points = { 1983 5 }
 		buildings = {
@@ -22,6 +22,9 @@ state={
 	}
 
 	resources={
-		crystals=6
+		steel = 70
+		chromium = 30
+		tungsten = 100
+		crystals=60
 	}
 }

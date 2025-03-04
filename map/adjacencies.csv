@@ -42,6 +42,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 11575;9604;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Islands
 11575;753;sea;422;-1;-1;-1;-1;;GiantGriffonLake-Shore
 8101;11213;sea;5812;-1;-1;-1;-1;;New Manehattan-Aquilia
+10882;7107;sea;5890;-1;-1;-1;-1;;New Manehattan-Talononte
 9055;12142;sea;5838;-1;-1;-1;-1;;Southern-Islands-Mainland
 9055;9045;sea;5838;-1;-1;-1;-1;;Southern-Islands-IslandSouth
 12142;9045;sea;5838;-1;-1;-1;-1;;Mainland-IslandSouth
@@ -77,8 +78,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4423;10001;sea;6040;-1;-1;-1;-1;;ZESIslands
 
 7572;10398;sea;8334;-1;-1;-1;-1;;Sydia-SaltIsland
-
-12710;5041;sea;2996;-1;-1;-1;-1;;Deerland-Nimbusia
 
 12373;12388;sea;13220;-1;-1;-1;-1;;Cyanolisia-Minotauria
 12402;10266;sea;411;-1;-1;-1;-1;;Sicameon-Minotauria
@@ -164,39 +163,39 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 16240;2639;sea;20204;-1;-1;-1;-1;;Zelsalampy
 16280;2465;sea;20205;-1;-1;-1;-1;;Zelsalampy
 
-20698;20701;sea;8386;-1;-1;-1;-1;;PuertoCaballo
+2354;2351;sea;8386;-1;-1;-1;-1;;PuertoCaballo
 
-20707;20699;sea;5833;-1;-1;-1;-1;;SummerIslands
+2306;2353;sea;5833;-1;-1;-1;-1;;SummerIslands
 
-20691;20688;sea;6854;-1;-1;-1;-1;;Tropico
-20688;20689;sea;6854;-1;-1;-1;-1;;Tropico
-20689;20687;sea;6854;-1;-1;-1;-1;;Tropico
-20687;20682;sea;6854;-1;-1;-1;-1;;Tropico
-20682;20685;sea;6854;-1;-1;-1;-1;;Tropico
-20681;20683;sea;6854;-1;-1;-1;-1;;Tropico
-20711;20702;sea;5958;-1;-1;-1;-1;;Tropico
+2404;2445;sea;6854;-1;-1;-1;-1;;Tropico
+2445;2429;sea;6854;-1;-1;-1;-1;;Tropico
+2429;2452;sea;6854;-1;-1;-1;-1;;Tropico
+2452;2498;sea;6854;-1;-1;-1;-1;;Tropico
+2498;2470;sea;6854;-1;-1;-1;-1;;Tropico
+2503;2496;sea;6854;-1;-1;-1;-1;;Tropico
+2302;2346;sea;5958;-1;-1;-1;-1;;Tropico
 
-20671;20664;sea;5339;-1;-1;-1;-1;;Celestial Islands
-20676;20670;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20670;20674;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20666;20674;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20675;20674;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20675;20678;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20679;20678;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20679;20677;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20677;20678;sea;8410;-1;-1;-1;-1;;Celestial Islands
-20672;20667;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2553;2581;sea;5339;-1;-1;-1;-1;;Celestial Islands
+2529;2556;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2556;2550;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2576;2550;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2543;2550;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2543;2527;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2526;2527;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2526;2528;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2528;2527;sea;8410;-1;-1;-1;-1;;Celestial Islands
+2552;2575;sea;8410;-1;-1;-1;-1;;Celestial Islands
 
-20665;20668;sea;8487;-1;-1;-1;-1;;Celestial Islands
+2577;2574;sea;8487;-1;-1;-1;-1;;Celestial Islands
 
-20662;20661;sea;8384;-1;-1;-1;-1;;Celestial Islands
-20660;20661;sea;8459;-1;-1;-1;-1;;Celestial Islands
+2600;2601;sea;8384;-1;-1;-1;-1;;Celestial Islands
+2602;2601;sea;8459;-1;-1;-1;-1;;Celestial Islands
 
-20659;20658;sea;8514;-1;-1;-1;-1;;Celestial Islands
+2603;2607;sea;8514;-1;-1;-1;-1;;Celestial Islands
 
-20651;20657;sea;5508;-1;-1;-1;-1;;Celestial Islands
-20651;20653;sea;5508;-1;-1;-1;-1;;Celestial Islands
-20654;20653;sea;5508;-1;-1;-1;-1;;Celestial Islands
+2651;2626;sea;5508;-1;-1;-1;-1;;Celestial Islands
+2651;2649;sea;5508;-1;-1;-1;-1;;Celestial Islands
+2629;2649;sea;5508;-1;-1;-1;-1;;Celestial Islands
 
 18738;18727;sea;7987;-1;-1;-1;-1;;Grand Alaudia
 18738;18746;sea;7987;-1;-1;-1;-1;;Grand Alaudia
@@ -224,6 +223,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 67;9083;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
 67;9038;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
 67;11409;impassable;-1;-1;-1;-1;-1;;EquestrianMountains
+
+6273;11621;impassable;-1;-1;-1;-1;-1;;YakMountains
+6273;11204;impassable;-1;-1;-1;-1;-1;;YakMountains
+
+6696;11394;impassable;-1;-1;-1;-1;-1;;YakMountains
+6696;9344;impassable;-1;-1;-1;-1;-1;;YakMountains
+11277;9344;impassable;-1;-1;-1;-1;-1;;YakMountains
+3285;9344;impassable;-1;-1;-1;-1;-1;;YakMountains
+3285;3371;impassable;-1;-1;-1;-1;-1;;YakMountains
+11309;3371;impassable;-1;-1;-1;-1;-1;;YakMountains
+11309;11324;impassable;-1;-1;-1;-1;-1;;YakMountains
+11656;11324;impassable;-1;-1;-1;-1;-1;;YakMountains
 
 17442;17425;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
 17403;17425;impassable;-1;-1;-1;-1;-1;;WestLlamaMountains
@@ -280,7 +291,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8711;8872;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8750;8872;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8857;8872;impassable;-1;-1;-1;-1;-1;;GazelleMountains
-8857;20647;impassable;-1;-1;-1;-1;-1;;GazelleMountains
+8857;2675;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8857;9091;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8857;8986;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8896;8986;impassable;-1;-1;-1;-1;-1;;GazelleMountains
@@ -289,7 +300,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8820;8966;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8794;8686;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 8794;8699;impassable;-1;-1;-1;-1;-1;;GazelleMountains
-20555;8699;impassable;-1;-1;-1;-1;-1;;GazelleMountains
+3837;8699;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17232;17243;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17168;17164;impassable;-1;-1;-1;-1;-1;;GazelleMountains
 17168;17166;impassable;-1;-1;-1;-1;-1;;GazelleMountains
@@ -344,9 +355,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 17508;18085;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17533;18085;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 17542;18085;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
-17542;20618;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
-17557;20618;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
-17557;20616;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
+17542;2822;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
+17557;2822;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
+17557;2827;impassable;-1;-1;-1;-1;-1;;HindiaSambarMountains
 
 17483;17503;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
 17483;17489;impassable;-1;-1;-1;-1;-1;;StagpalLlambetMountains
@@ -407,19 +418,19 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 5278;18699;impassable;-1;-1;-1;-1;-1;;MountAris
 5278;18724;impassable;-1;-1;-1;-1;-1;;MountAris
 
-20505;20494;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20505;20484;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20505;20490;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20512;20490;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5309;5406;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5309;5476;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5309;5430;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5261;5430;impassable;-1;-1;-1;-1;-1;;KirinMountains
 
-20458;20451;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20433;20451;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20433;20434;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20410;20434;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20410;20408;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20410;20384;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20395;20384;impassable;-1;-1;-1;-1;-1;;KirinMountains
-20395;20372;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5659;5731;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5914;5731;impassable;-1;-1;-1;-1;-1;;KirinMountains
+5914;5911;impassable;-1;-1;-1;-1;-1;;KirinMountains
+6616;5911;impassable;-1;-1;-1;-1;-1;;KirinMountains
+6616;6809;impassable;-1;-1;-1;-1;-1;;KirinMountains
+6616;8485;impassable;-1;-1;-1;-1;-1;;KirinMountains
+8280;8485;impassable;-1;-1;-1;-1;-1;;KirinMountains
+8280;8669;impassable;-1;-1;-1;-1;-1;;KirinMountains
 
 9014;8966;impassable;-1;-1;-1;-1;-1;;KirinMountains
 9014;8990;impassable;-1;-1;-1;-1;-1;;KirinMountains
@@ -787,14 +798,18 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 20202;20201;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia Southeast
 20202;8626;;-1;-1;-1;-1;-1;ZAREDLINIA_STRAIT;Zaredlinia West
 
-7384;448;;-1;-1;-1;-1;-1;NORTH_SEAQUESTRIAN_STRAIT;North Seaquestrian Strait
-7384;7987;;-1;-1;-1;-1;-1;NORTH_SEAQUESTRIAN_STRAIT;North Seaquestrian Strait
-
-7978;20212;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
-7978;20213;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
+20212;7978;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
+20212;20213;;-1;-1;-1;-1;-1;SOUTH_SEAQUESTRIAN_STRAIT;South Seaquestrian Strait
 
 5457;5552;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
 5457;8661;;-1;-1;-1;-1;-1;DAZZHIP_STRAIT;Dazzhip Strait
+
+5792;5818;;-1;-1;-1;-1;-1;EASTPOLAR_STRAIT;Eastern Polar Strait
+5792;2578;;-1;-1;-1;-1;-1;EASTPOLAR_STRAIT;Eastern Polar Strait
+
+8517;8604;;-1;-1;-1;-1;-1;WESTPOLAR_STRAIT;Western Polar Strait
+
+20211;7133;;-1;-1;-1;-1;-1;HOOFUEZ_STRAIT; Hoofuez Strait
 
 6398;6279;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 6398;3346;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
@@ -817,8 +832,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3069;103;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 3069;6079;impassable;-1;-1;-1;-1;-1;;STG-GRF Front
 
-3465;12558;impassable;-1;-1;-1;-1;-1;;Griffbraltar
-3465;4314;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+12558;4298;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;4298;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;9114;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;4087;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+45;11140;impassable;-1;-1;-1;-1;-1;;Griffbraltar
+4314;11140;impassable;-1;-1;-1;-1;-1;;Griffbraltar
 
 531;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
 12615;12882;impassable;-1;-1;-1;-1;-1;;Skyfall
@@ -856,6 +875,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 84;6166;impassable;-1;-1;-1;-1;-1;;EQC-WNG Front
 
 10457;15863;sea;2285;1898;1961;1898;1961;;CHN-ABY Front
+10457;3637;sea;2285;1898;1961;1898;1961;;CHN-KIR Front
 
 6891;3838;sea;5275;-1;-1;-1;-1;;SpaIslands
 3838;11804;sea;5275;-1;-1;-1;-1;;SpaIslands

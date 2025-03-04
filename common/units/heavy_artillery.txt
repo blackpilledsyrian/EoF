@@ -28,7 +28,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			heavy_artillery_equipment = 12
+			heavy_artillery_equipment = 15
 		}
 		manpower = 300
 		training_time = 120
@@ -47,5 +47,6 @@ sub_units = {
 
 
 		can_be_parachuted = no
+		same_support_type = artillery
 	}
 }

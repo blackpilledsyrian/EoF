@@ -1,0 +1,541 @@
+#    ##  #  # ###       ##  ###  #  # ###  ## ### ###  
+#   #  # ## # #  #     #  # #  # #  #  #  #   #   #  # 
+#   #### # ## #  #     #    ###  #  #  #   #  ##  ###  
+#   #  # #  # #  #     #  # #  # #  #  #    # #   #  # 
+### #  # #  # ###       ##  #  #  ##  ### ##  ### #  # 
+
+
+equipment_modules = {
+	limit = {
+		has_dlc = "Gotterdammerung"
+		has_dlc = "No Step Back"
+	}
+
+################################
+######## MAIN ARMAMENT #########
+################################
+	
+	lc_heavy_naval_guns = {
+		abbreviation = "hng"
+		category = lc_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 500
+			hard_attack = 500
+			ap_attack = 200
+			reliability = -0.1
+			build_cost_ic = 100
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 15
+			steel = 30
+			chromium = 15
+		}
+	}
+
+	lc_super_heavy_railway_gun = {
+		abbreviation = "shrwg"
+		category = lc_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 800
+			hard_attack = 350
+			ap_attack = 100
+			reliability = -0.1
+			build_cost_ic = 150
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 15
+			steel = 30
+			chromium = 15
+		}
+	}
+
+	lc_high_impact_obliterator_cannon = {
+		abbreviation = "hioc"
+		category = lc_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 350
+			hard_attack = 800
+			ap_attack = 300
+			reliability = -0.2
+			build_cost_ic = 150
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 20
+			steel = 30
+			chromium = 15
+		}
+	}
+
+	lc_heavy_anti_air_platform = {
+		abbreviation = "haap"
+		category = lc_main_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 250
+			hard_attack = 350
+			ap_attack = 150
+			air_attack = 200
+			reliability = -0.05
+			build_cost_ic = 50
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 5
+			steel = 15
+			chromium = 5
+		}
+	}
+
+
+	################################
+	###### SECONDARY ARMAMENT ######
+	################################
+
+	lc_medium_naval_guns = {
+		abbreviation = "mng"
+		category = lc_secondary_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 150
+			hard_attack = 150
+			ap_attack = 20
+			reliability = -0.05
+			build_cost_ic = 25
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 4
+			steel = 15
+			chromium = 4
+		}
+	}
+
+	lc_hull_mounted_railway_gun = {
+		abbreviation = "hmrwg"
+		category = lc_secondary_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 250
+			hard_attack = 50
+			reliability = -0.1
+			build_cost_ic = 50
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 4
+			steel = 15
+			chromium = 4
+		}
+	}
+
+	lc_super_heavy_howitzer = {
+		abbreviation = "shh"
+		category = lc_secondary_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			breakthrough = 100
+			soft_attack = 150
+			hard_attack = 100
+			reliability = -0.1
+			build_cost_ic = 25
+
+			additional_collateral_damage = 500
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 4
+			steel = 15
+			chromium = 4
+		}
+	}
+
+	lc_heavy_high_velocity_cannons = {
+		abbreviation = "hhvc"
+		category = lc_secondary_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 100
+			hard_attack = 200
+			ap_attack = 50
+			reliability = -0.05
+			build_cost_ic = 50
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 6
+			steel = 15
+			chromium = 4
+		}
+	}
+
+	lc_heavy_anti_air_battery = {
+		abbreviation = "haab"
+		category = lc_secondary_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 75
+			hard_attack = 100
+			ap_attack = 10
+			air_attack = 100
+			reliability = -0.05
+			build_cost_ic = 15
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			steel = 10
+		}
+	}
+
+
+	################################
+	##### ADDITIONAL ARMAMENT ######
+	################################
+
+	lc_medium_cannon_turret = {
+		abbreviation = "mct"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 50
+			hard_attack = 50
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			steel = 10
+		}
+	}
+
+	lc_assault_gun = {
+		abbreviation = "asg"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			breakthrough = 50
+			soft_attack = 65
+			hard_attack = 10
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			steel = 10
+		}
+	}
+
+	lc_high_velocity_cannon_turret = {
+		abbreviation = "hvct"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 75
+			ap_attack = 10
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			tungsten = 2
+			steel = 10
+		} 
+	}
+
+	lc_light_anti_air_battery = {
+		abbreviation = "laab"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 25
+			hard_attack = 35
+			air_attack = 50
+			build_cost_ic = 5
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			steel = 5
+		}
+	}
+
+	lc_flamethrower_turret = {
+		abbreviation = "ftt"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 75
+			build_cost_ic = 2
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+		}
+	}
+
+	lc_rocket_launcher = {
+		abbreviation = "rol"
+		category = lc_additional_armament
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 120
+			build_cost_ic = 10
+		}
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		build_cost_resources = {
+			steel = 10
+		}
+	}
+
+
+	################################
+	###### SPECIAL FEATURES ########
+	################################
+
+	# Radio Modules below are copies of regular tanks (I, II, III)
+	
+	lc_radio_1 = {
+		abbreviation = "lcrad1"
+		category = lc_radio_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 5
+			max_organisation = 0.2
+		}
+		multiply_stats = {
+			breakthrough = 0.05
+		}
+		xp_cost = 0
+	}
+
+	lc_radio_2 = {
+		abbreviation = "lcrad2"
+		category = lc_radio_module
+		parent = lc_radio_1
+		sfx = sfx_ui_sd_module_turret
+		
+		add_stats = {
+			build_cost_ic = 5
+			max_organisation = 0.3
+		}
+		multiply_stats = {
+			breakthrough = 0.1
+		}
+		xp_cost = 0
+	}
+
+	lc_radio_3 = {
+		abbreviation = "lcrad3"
+		category = lc_radio_module
+		parent = lc_radio_2
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 5
+			max_organisation = 0.4
+		}
+		multiply_stats = {
+			breakthrough = 0.15
+		}
+		xp_cost = 0
+	}
+
+	lc_command_center = {
+		abbreviation = "coc"
+		category = lc_radio_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 5
+			max_organisation = 0.5
+		}
+		multiply_stats = {
+			breakthrough = 0.2
+		}
+		xp_cost = 0
+	}	
+
+	lc_aircraft_catapult = {
+		abbreviation = "acc"
+		category = lc_aerial_deployment
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			recon = 5
+			air_attack = 20
+			build_cost_ic = 10
+			fuel_consumption = 2
+		}
+		xp_cost = 0
+	}
+
+	lc_helipad = {
+		abbreviation = "hel"
+		category = lc_aerial_deployment
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			recon = 8
+			air_attack = 10
+			build_cost_ic = 5
+			fuel_consumption = 1
+		}
+		xp_cost = 0
+	}
+
+	lc_armored_skirts = {
+		abbreviation = "ask"
+		category = lc_external_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			armor_value = 25
+			breakthrough = 50
+			build_cost_ic = 20
+		}
+		xp_cost = 0
+	}
+
+	lc_smoke_generators = {
+		abbreviation = "smoker"
+		category = lc_external_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			defense = 30
+			breakthrough = 30
+			build_cost_ic = 5
+		}
+		xp_cost = 0
+	}
+
+	lc_obstacle_clearance_gear = {
+		abbreviation = "ocg"
+		category = lc_external_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			entrenchment = 10
+			build_cost_ic = 10
+		}
+		xp_cost = 0
+	}
+
+	lc_radar = {
+		abbreviation = "rdr"
+		category = lc_external_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 10
+		}
+		xp_cost = 0
+		multiply_stats = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+			air_attack = 0.1
+		}
+	}
+
+	lc_internal_fuel_tanks = {
+		abbreviation = "eft"
+		category = lc_structural_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			fuel_capacity = 1000
+			supply_consumption = -0.1
+			build_cost_ic = 5
+		}
+		xp_cost = 0
+	}
+
+	lc_internal_ammunition_compartments = {
+		abbreviation = "extra"
+		category = lc_structural_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			max_strength = -0.1
+		}
+		multiply_stats = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		xp_cost = 0
+	}
+	
+	lc_wet_ammunition_storage = {
+		abbreviation = "wets"
+		category = lc_structural_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			max_strength = 0.1
+			reliability = 0.075
+			build_cost_ic = 5
+		}
+		xp_cost = 0
+	}
+
+	lc_bunker_emplacement = {
+		abbreviation = "bke"
+		category = lc_structural_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			defense = 100
+			armor_value = 50
+			build_cost_ic = 20
+		}
+		xp_cost = 0
+	}
+
+	lc_stabilizers = {
+		abbreviation = "stabs"
+		category = lc_structural_features
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			build_cost_ic = 10
+			breakthrough = 20
+		}
+		multiply_stats = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		xp_cost = 0
+	}
+}

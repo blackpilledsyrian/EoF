@@ -1,0 +1,84 @@
+ideas = {
+	country = {
+		EoF_RIV_infrastructure_autonomy = {
+			removal_cost = -1
+			picture = generic_build_infrastructure
+			modifier = {
+				master_build_autonomy_factor = 1.0
+			}
+		}
+		EoF_RIV_BAK_support = {
+			removal_cost = -1
+			picture = BAK_bigship
+			modifier = {
+				dockyard_donations = 3
+				industrial_capacity_dockyard = 0.2
+				naval_damage_factor = 0.1
+			}
+			cancel = {
+				BAK = {
+					exists = no
+				}
+			}
+		}
+		EoF_RIV_LCT_support = {
+			removal_cost = -1
+			picture = lake_city
+			modifier = {
+				military_factory_donations = 3
+				industrial_capacity_factory = 0.1
+				army_org_factor = 0.05
+			}
+			cancel = {
+				LCT = {
+					exists = no
+				}
+			}
+		}
+		EoF_RIV_WIT_support = {
+			removal_cost = -1
+			picture = WIT_trade_post_idea
+			modifier = {
+				industrial_factory_donations = 3
+				production_speed_buildings_factor = 0.1
+				research_speed_factor = 0.05
+			}
+			cancel = {
+				WIT = {
+					exists = no
+				}
+			}
+		}
+		EoF_RIV_river_federation = {
+
+			picture = The_Treaty_of_Coltstream
+
+			available = {
+			}
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				is_in_faction = yes
+				var:faction_leader = {
+					is_river_fed_member = yes
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				local_resources_factor = 0.1
+				political_power_factor = 0.15
+				political_power_gain = 0.25
+				production_factory_max_efficiency_factor = 0.15
+				stability_factor = 0.2
+				consumer_goods_factor = -0.1
+				political_advisor_cost_factor = -0.25
+				trade_opinion_factor = 0.25
+			}
+		}
+	}
+}

@@ -2,7 +2,28 @@ equipment_modules = {
 	limit = {
 		has_dlc = "No Step Back" 
 	}
+	advanced_light_tank_turret = {
+		abbreviation = "al3m"
+		category = tank_light_turret_type
+		sfx = sfx_ui_sd_module_turret
 
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_advanced_small_main_armament
+			}
+		}
+		add_stats = {
+			maximum_speed = -0.4
+			build_cost_ic = 3
+			breakthrough = 9
+		}
+		multiply_stats = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		xp_cost = 0
+
+	}
 	advanced_medium_tank_turret = {
 		abbreviation = "am3m"
 		category = tank_medium_turret_type
@@ -11,22 +32,19 @@ equipment_modules = {
 		allowed_module_categories = {
 			main_armament_slot = {
 				tank_medium_main_armament
-			}
-			advanced_main_armament_slot = {
-				tank_medium_main_armament
+				tank_advanced_small_main_armament
 				tank_advanced_medium_main_armament
 			}
 		}
 		add_stats = {
 			maximum_speed = -0.4
-			build_cost_ic = 2.5
-			breakthrough = 16
+			build_cost_ic = 5.5
+			breakthrough = 10
 		}
 		multiply_stats = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
-		dismantle_cost_ic = 1
 		xp_cost = 0
 
 	}
@@ -39,24 +57,20 @@ equipment_modules = {
 			main_armament_slot = {
 				tank_medium_main_armament
 				tank_heavy_main_armament
-			}
-			advanced_main_armament_slot = {
-				tank_medium_main_armament
-				tank_heavy_main_armament
+				tank_advanced_small_main_armament
 				tank_advanced_medium_main_armament
 				tank_advanced_heavy_main_armament
 			}
 		}
 		add_stats = {
 			maximum_speed = -0.6
-			build_cost_ic = 7
-			breakthrough = 18
+			build_cost_ic = 11
+			breakthrough = 12
 		}
 		multiply_stats = {
-			soft_attack = 0.05
-			hard_attack = 0.05
+			soft_attack = 0.1
+			hard_attack = 0.1
 		}
-		dismantle_cost_ic = 1
 		xp_cost = 0
 	}
 	tank_optics_1 = {
@@ -164,7 +178,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			soft_attack = 0.15
-			breakthrough = -0.5
+			breakthrough = -0.25
 		}
 		add_stats = {
 			build_cost_ic = 0.5
@@ -184,7 +198,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			soft_attack = 0.25
-			breakthrough = -0.5
+			breakthrough = -0.25
 		}
 		add_stats = {
 			build_cost_ic = 1
@@ -201,7 +215,7 @@ equipment_modules = {
 			build_cost_ic = -0.05
 		}
 		build_cost_resources = {
-			steel = -1
+			steel = -10
 		}
 		xp_cost = 50
 	}
@@ -216,7 +230,7 @@ equipment_modules = {
 			build_cost_ic = -0.05
 		}
 		build_cost_resources = {
-			tungsten = -1
+			tungsten = -10
 		}
 		xp_cost = 50
 	}
@@ -230,7 +244,7 @@ equipment_modules = {
 			build_cost_ic = -0.05
 		}
 		build_cost_resources = {
-			chromium = -1
+			chromium = -10
 		}
 		xp_cost = 50
 	}
@@ -288,8 +302,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.3
-			breakthrough = 0.3
+			defense = 0.25
+			breakthrough = 0.25
 		}
 	}
 	cupola_3 = {
@@ -302,8 +316,8 @@ equipment_modules = {
 		}
 		xp_cost = 0
 		multiply_stats = {
-			defense = 0.4
-			breakthrough = 0.4
+			defense = 0.3
+			breakthrough = 0.3
 		}
 	}
 	spall_liner = {
@@ -313,12 +327,23 @@ equipment_modules = {
 
 		add_stats = {
 			hardness = 0.1
-			max_strength = 1
+			max_strength = 1.0
 			maximum_speed = -0.2
 		}
 		xp_cost = 0
 		multiply_stats = {
 			build_cost_ic = 0.05
+		}
+	}
+	pike_nose_armor = {
+		abbreviation = "pike"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		dismantle_cost_ic = 0
+		xp_cost = 0
+		multiply_stats = {
+			armor_value = 0.15
 		}
 	}
 	special_ammunition = {
@@ -331,7 +356,7 @@ equipment_modules = {
 			ap_attack = 0.1
 		}
 		build_cost_resources = {
-			tungsten = 1
+			tungsten = 5
 		}	
 	}
 	ventilation_system = {
@@ -342,15 +367,19 @@ equipment_modules = {
 		xp_cost = 0
 		add_stats = {
 			max_organisation = 0.1
-			build_cost_ic = 1
+			build_cost_ic = 0.5
+			supply_consumption = -0.05
 		}
 		multiply_stats = {
 			breakthrough = 0.05
+			soft_attack = 0.025
+			hard_attack = 0.025
 		}
 	}
 	rangefinder = {
 		abbreviation = "rang"
-		category = tank_special_module
+		category = tank_special_module_rangefinder
+		gui_category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
 		xp_cost = 0
@@ -358,30 +387,29 @@ equipment_modules = {
 			build_cost_ic = 1.5
 		}
 		multiply_stats = {
-			soft_attack = 0.05
-			hard_attack = 0.05
-		}
-		allowed_module_categories = {
-			optics_type_slot = {
-				tank_computer_module
-			}
+			soft_attack = 0.075
+			hard_attack = 0.075
 		}
 	}
 	fire_control_computer = {
 		abbreviation = "comp"
-		category = tank_computer_module
+		category = tank_special_module
 		sfx = sfx_ui_sd_module_turret
 
 		xp_cost = 0
 		add_stats = {
-			reliability = -0.25
+			reliability = -0.1
 			build_cost_ic = 3
+			breakthrough = 3
 		}
 		multiply_stats = {
-			soft_attack = 0.2
-			hard_attack = 0.2
-			ap_attack = 0.1
-		}	
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		forbid_module_categories = {
+			tank_special_module_stabilizer
+			tank_special_module_rangefinder
+		}
 	}
 	supercharger = {
 		abbreviation = "sup"
@@ -395,6 +423,27 @@ equipment_modules = {
 		}
 		multiply_stats =  {
 			maximum_speed = 0.2
+		}
+	}
+	open_top_design = {
+		abbreviation = "otd"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+
+		xp_cost = 0
+		add_stats = {
+			hardness = -0.1
+			recon = 0.1
+		}
+		multiply_stats =  {
+			breakthrough = -0.2
+			build_cost_ic = -0.05
+		}
+		build_cost_resources = {
+			steel = -5
+		}
+		forbid_module_categories = {
+			tank_cupola_module
 		}
 	}
 	fire_suppression_system = {
@@ -417,7 +466,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			soft_attack = 3
+			soft_attack = 3.5
 			hard_attack = 0.5
 			build_cost_ic = 0.5
 		}
@@ -431,7 +480,7 @@ equipment_modules = {
 		add_stats = {
 			soft_attack = 4
 			hard_attack = 1
-			build_cost_ic = 1
+			build_cost_ic = 1.5
 		}
 		xp_cost = 0
 	}

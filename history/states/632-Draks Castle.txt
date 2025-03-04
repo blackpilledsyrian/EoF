@@ -17,8 +17,8 @@ state={
 	}
 
 	resources={
-		tungsten=4
-		steel=4
-		crystals=2
+		tungsten=40
+		steel=40
+		crystals=20
 	}
 }

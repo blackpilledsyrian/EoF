@@ -4,11 +4,8 @@ state={
 	name="STATE_854"
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -18,7 +15,10 @@ state={
 				naval_base = 3
 
 			}
-			air_base = 1
+			air_base = 3
+			14953 = {
+				air_facility = 1
+			}
 
 		}
 		victory_points = {

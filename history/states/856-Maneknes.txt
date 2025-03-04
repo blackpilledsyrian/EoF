@@ -3,14 +3,11 @@ state={
 	id=856
 	name="STATE_856"
 	resources={
-		crystals=18.000
+		crystals=180.000
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		victory_points = {
 			14925 1 
 		}

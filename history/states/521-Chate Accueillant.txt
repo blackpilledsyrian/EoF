@@ -13,7 +13,6 @@ state={
 	history = {
 		owner = WNG
 		add_core_of = WNG
-		add_claim_by = WNG
 
 		victory_points = { 2093 1 }
 
@@ -26,6 +25,6 @@ state={
 	}
 
 	resources = {
-		chromium = 19
+		chromium=190
 	}
 }

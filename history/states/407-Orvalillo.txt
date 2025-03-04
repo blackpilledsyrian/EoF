@@ -21,12 +21,15 @@ state={
 			infrastructure = 1
 			industrial_complex = 2
 			fuel_silo = 1
+			10701 = {
+				air_facility = 1
+			}
 		}
 	}
 
 	resources={
-		steel=12
-		aluminium=20
-		tungsten=12
+		steel=120
+		aluminium=200
+		tungsten=120
 	}
 }

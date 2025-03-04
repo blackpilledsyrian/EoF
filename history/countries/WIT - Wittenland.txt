@@ -45,27 +45,14 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 set_cosmetic_tag = RIV_federation_mem
 
 add_ideas = {
-	pre_industrial_society
+	outdated_industry
 	big_science_base
 	lack_of_scientists2
 	poverty3
-	WIT_unicorn_parties
 	RIV_member_state
 }
 
 set_country_flag = big_science_base_unlocked
-country_event = {
-	id = wittenland.1
-	days = 91
-}
-country_event = {
-	id = wittenland.150
-	days = 1095
-}
-country_event = {
-	id = wittenland.144
-	days = 1460
-}
 add_ai_strategy = {
 	id = BAR
 	type = ignore_claim
@@ -93,6 +80,8 @@ set_popularities = {
 set_politics = {
 	ruling_party = democratic
 }
+set_country_flag = has_custom_advisors
+
 
 recruit_character = WIT_white_star
 recruit_character = WIT_wulfric_grey

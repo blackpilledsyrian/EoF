@@ -61,13 +61,18 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+set_country_flag = has_custom_advisors
 
 
 add_ideas = {
+	# no_edict
 	PLB_bears
+	EoF_PLB_industry
 	PLB_outcasts
 	PLB_clan_divides
 	pre_industrial_society
+	nationalized_military_industry
+	martial_society
 	limited_exports
 	lack_of_scientists3
 	low_economic_mobilisation
@@ -93,6 +98,7 @@ add_equipment_to_stockpile = {
 	producer = GRF
 }
 
+recruit_character = EoF_PLB_reserve_fleet
 recruit_character = PLB_paw_wellington
 recruit_character = PLB_torben_of_clan_svartpels
 recruit_character = PLB_eira_of_clan_volsungr

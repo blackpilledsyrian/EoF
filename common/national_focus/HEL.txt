@@ -2412,6 +2412,10 @@ shared_focus = {
 				uses = 2
 				category = cat_anti_tank
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 		}
 		else = {
 			add_tech_bonus = {
@@ -3701,17 +3705,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HEL_jaume_oil_1"
 		add_resource = {
 			type = oil
-			amount = 10
+			amount = 100
 			state = 493
 		}
 		add_resource = {
 			type = oil
-			amount = 6
+			amount = 60
 			state = 494
 		}
 		add_resource = {
 			type = oil
-			amount = 6
+			amount = 60
 			state = 495
 		}
 		decrease_poverty = yes
@@ -4654,7 +4658,7 @@ shared_focus = {
 			set_cosmetic_tag = JER_HEL_CONFED
 		}
 		add_country_leader_role = {
-			character = HEL_even_baseder_council
+			character = HEL_most_basedest_council_commie
 			promote_leader = yes
 
 			country_leader={
@@ -7124,6 +7128,7 @@ shared_focus = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = communism
 			}
 		}
 	}
@@ -7135,6 +7140,7 @@ shared_focus = {
 					OR = {
 						has_government = democratic
 						has_government = neutrality
+						has_government = communism
 					}
 				}
 			}
@@ -7169,6 +7175,7 @@ shared_focus = {
 			OR = {
 				has_government = democratic
 				has_government = neutrality
+				has_government = communism
 			}
 		}
 	}
@@ -7180,6 +7187,7 @@ shared_focus = {
 					OR = {
 						has_government = democratic
 						has_government = neutrality
+						has_government = communism
 					}
 				}
 			}
@@ -8220,7 +8228,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 16
+			amount = 160
 			state = 494
 		}
 	}
@@ -8269,17 +8277,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HEL_fuel_our_future"
 		add_resource = {
 			type = oil
-			amount = 10
+			amount = 100
 			state = 494
 		}
 		add_resource = {
 			type = steel
-			amount = 8
+			amount = 80
 			state = 494
 		}
 		add_resource = {
 			type = tungsten
-			amount = 8
+			amount = 80
 			state = 494
 		}
 	}
@@ -8754,7 +8762,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 10
+			amount = 100
 			state = 494
 		}
 	}
@@ -9183,17 +9191,17 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 8
+			amount = 80
 			state = 436
 		}
 		add_resource = {
 			type = oil
-			amount = 8
+			amount = 80
 			state = 495
 		}
 		add_resource = {
 			type = oil
-			amount = 8
+			amount = 80
 			state = 496
 		}
 	}
@@ -9752,15 +9760,16 @@ shared_focus = {
 		decrease_poverty = yes
 		custom_effect_tooltip = HEL_labor_divisions_tt
 		hidden_effect = {
+			set_technology = { penal_infantry = 1 popup = no }
 			division_template = {
 				name = "Unemployed Squatters"
 				priority = 0
 				#is_locked = yes
 				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					infantry = { x = 0 y = 3 }
+					penal_battalion = { x = 0 y = 0 }
+					penal_battalion = { x = 0 y = 1 }
+					penal_battalion = { x = 0 y = 2 }
+					penal_battalion = { x = 0 y = 3 }
 				}
 			}
 			if = {
@@ -10196,17 +10205,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus HEL_our_resources_for_ourselves"
 		add_resource = {
 			type = oil
-			amount = 14
+			amount = 140
 			state = 494
 		}
 		add_resource = {
 			type = steel
-			amount = 12
+			amount = 120
 			state = 494
 		}
 		add_resource = {
 			type = tungsten
-			amount = 8
+			amount = 80
 			state = 494
 		}
 	}
@@ -10252,7 +10261,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 8
+			amount = 80
 			state = 494
 		}
 		decrease_poverty = yes
@@ -10492,7 +10501,7 @@ shared_focus = {
 		add_ideas = HEL_adelart_reborn_idea
 		add_resource = {
 			type = oil
-			amount = 10
+			amount = 100
 			state = 493
 		}
 	}

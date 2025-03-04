@@ -66,32 +66,32 @@ EoF_hive_plants_category = {
 			}
 		}
 	}
-	EoF_recalculate_hive_plants = {
-		icon = GFX_decision_generic_merge_plant_materiel
-		allowed = {
-			original_tag = CHN
-		}
-		available = {
-			309 = {
-				is_owned_by = CHN
-			}
-			259 = {
-				is_owned_by = CHN
-			}
-			248 = {
-				is_owned_by = CHN
-			}
-		}
-		visible = {
-			has_completed_focus = EoF_hive_plants
-		}
-		complete_effect = {
-			hidden_effect = {
-				remove_all_plant_buffs = yes
-				update_lyctida_effect = yes
-				update_vraks_effect = yes
-				update_sicarus_effect = yes
-			}
-		}
-	}
+	# EoF_recalculate_hive_plants = {
+	# 	icon = GFX_decision_generic_merge_plant_materiel
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	available = {
+	# 		309 = {
+	# 			is_owned_by = CHN
+	# 		}
+	# 		259 = {
+	# 			is_owned_by = CHN
+	# 		}
+	# 		248 = {
+	# 			is_owned_by = CHN
+	# 		}
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = EoF_hive_plants
+	# 	}
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			remove_all_plant_buffs = yes
+	# 			update_lyctida_effect = yes
+	# 			update_vraks_effect = yes
+	# 			update_sicarus_effect = yes
+	# 		}
+	# 	}
+	# }
 }

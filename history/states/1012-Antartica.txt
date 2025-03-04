@@ -19,7 +19,7 @@ state={
 		
 	}
 	resources={
-		crystals=7.000
+		crystals=70.000
 	}
 	manpower=205600
 	buildings_max_level_factor=1.000

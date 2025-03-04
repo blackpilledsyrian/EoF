@@ -4,8 +4,8 @@ state={
 	name="STATE_1184"
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = OLE
+		add_core_of = OLE
 		buildings = {
 			infrastructure = 0
 			
@@ -21,8 +21,8 @@ state={
 		}
 	}
 	resources={
-		aluminium=15.000
-		rubber=12.000
+		aluminium=150.000
+		rubber=120.000
 	}
 
 	provinces={

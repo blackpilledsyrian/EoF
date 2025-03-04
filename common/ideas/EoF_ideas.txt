@@ -17,31 +17,39 @@ ideas = {
 			picture = trade
 			targeted_modifier = {
 				tag = EQS
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = CRY
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = STG
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = HIP
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = WNG
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = EQC
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = MCW
-				trade_cost_for_target_factor = 1
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = -0.5
 			}
 			targeted_modifier = {
 				tag = CHN
@@ -71,6 +79,163 @@ ideas = {
 				tag = GRI
 				trade_cost_for_target_factor = 1
 			}
+			targeted_modifier = {
+				tag = KIR
+				trade_cost_for_target_factor = 1
+			}
+			modifier = {
+				# local_resources_factor = 1
+			}
+		}
+		EoF_south_trade = {
+			removal_cost = -1
+			picture = trade
+			targeted_modifier = {
+				tag = EQS
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CRY
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = STG
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = HIP
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = WNG
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = EQC
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = MCW
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = CHN
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = PLB
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = GRF
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = JER
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = OLE
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = GRI
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = KIR
+				trade_cost_for_target_factor = 9
+			}
+			modifier = {
+				# local_resources_factor = 1
+			}
+		}
+		EoF_north_trade = {
+			removal_cost = -1
+			picture = trade
+			targeted_modifier = {
+				tag = EQS
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = CRY
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = STG
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = HIP
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = WNG
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = EQC
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = MCW
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = RCT
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = NIM
+				trade_cost_for_target_factor = 9
+			}
+			targeted_modifier = {
+				tag = CHN
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = PLB
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = GRF
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = FAT
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = JER
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = OLE
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = GRI
+				trade_cost_for_target_factor = -0.5
+			}
+			targeted_modifier = {
+				tag = KIR
+				trade_cost_for_target_factor = -0.5
+			}
+			modifier = {
+				# local_resources_factor = 1
+			}
 		}
 		EoF_peacetime_training = {
 			removal_cost = -1
@@ -85,34 +250,80 @@ ideas = {
 		}
 		EoF_YAK_JAK_civil_war = {
 			removal_cost = -1
-			picture = YAK_yakistanks
+			picture = generic_war_preparation
 			modifier = {
 				conscription = 0.1
 				supply_consumption_factor = -0.25
 				out_of_supply_factor = -0.5
 				supply_node_range = 1
+				army_intel_factor = -2
 			}
 		}
 		EoF_YAK_JAK_civil_war_volunteers_1 = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			cancel = {
-				date > 1011.11.01
+				date > 1010.06.01
 			}
 			modifier = {
 				send_volunteer_size = 2
+				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
+				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
 			}
 		}
 		EoF_YAK_JAK_civil_war_volunteers_2 = {
 			removal_cost = -1
 			picture = generic_volunteer_expedition_bonus
 			cancel = {
-				date > 1011.11.01
+				date > 1010.06.01
 			}
 			modifier = {
 				send_volunteer_size = 5
+				air_volunteer_cap = 8
 				supply_consumption_factor = -0.8
+				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
+			}
+		}
+		EoF_SDL_EMR_war = {
+			removal_cost = -1
+			picture = generic_war_preparation
+			modifier = {
+				conscription = 0.1
+				supply_consumption_factor = -0.25
+				out_of_supply_factor = -0.5
+				supply_node_range = 1
+				army_intel_factor = -2
+			}
+		}
+		EoF_SDL_EMR_war_volunteers_1 = {
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			cancel = {
+				date > 1010.06.01
+			}
+			modifier = {
+				send_volunteer_size = 4
+				air_volunteer_cap = 8
+				supply_consumption_factor = -0.8
+				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
+			}
+		}
+		EoF_SDL_EMR_war_volunteers_2 = {
+			removal_cost = -1
+			picture = generic_volunteer_expedition_bonus
+			cancel = {
+				date > 1010.06.01
+			}
+			modifier = {
+				send_volunteer_size = 2
+				air_volunteer_cap = 8
+				supply_consumption_factor = -0.8
+				weekly_casualties_war_support = 0.01
+				max_planning = 0.2
 			}
 		}
 		EoF_YAK_thanks = {
@@ -185,13 +396,13 @@ ideas = {
 		}
 		EoF_taifunkrieg = {
 			removal_cost = -1
-			picture = generic_navy_carrier_bonus
+			picture = generic_navy_bonus
 			modifier = {
-				port_strike = 1
-				sortie_efficiency = 0.3
 				naval_hit_chance = 0.1
 				naval_damage_factor = 0.2
 				naval_defense_factor = 0.2
+				naval_speed_factor = 0.1
+				positioning = 0.2
 			}			
 		}
 		EoF_payment = {
@@ -201,6 +412,37 @@ ideas = {
 				industrial_factory_donations = 5
 			}			
 		}
+		EoF_north_integrated_economy = {
+			removal_cost = -1
+			picture = generic_economic_increase
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_start_efficiency_factor = 0.05
+				line_change_production_efficiency_factor = 0.05
+				local_resources_factor = 0.1
+			}			
+		}
+		EoF_failed_integrated_economy = {
+			removal_cost = -1
+			picture = generic_economic_crisis		
+			modifier = {
+				production_factory_efficiency_gain_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+				local_resources_factor = -0.2
+			}	
+		}
+		# EoF_naval_penalty = {
+		# 	removal_cost = -1
+		# 	picture = unavailable_ships
+		# 	modifier = {
+		# 		naval_damage_factor = -1
+		# 		naval_defense_factor = -1
+		# 		sortie_efficiency = -1
+		# 	}
+		# }
 	}
 	hidden_ideas = {
 		EoF_continuous_infantry_production = {

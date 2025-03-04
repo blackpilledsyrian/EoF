@@ -5,6 +5,11 @@ oob = "CRY_1007"
 set_research_slots = 3
 starting_train_buffer = 1
 
+add_breakthrough_progress = {
+	specialization = specialization_magical
+	value = 0.7
+}
+
 set_technology = {
 	pony_race = 1
 	melee_weapons = 1
@@ -26,10 +31,12 @@ if = {
 	set_technology = {
 		aa_lmg = 1
 		early_bombs = 1
+		at_cannon_1 = 1
 		aircraft_construction = 1
 		engines_1 = 1
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
+		bba_early_transport_plane = 1
 	}
 
 	create_equipment_variant = {
@@ -59,6 +66,7 @@ if = {
 		set_technology = {
 			early_fighter = 1
 			early_bomber = 1
+			early_transport_plane = 1
 		}
 		set_air_oob = "CRY_1007_air_legacy"
 	}
@@ -143,7 +151,9 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+set_country_flag = has_custom_advisors
 
+set_country_flag = has_custom_spymaster
 add_to_tech_sharing_group = equestrian_research
 
 add_equipment_to_stockpile = {
@@ -152,6 +162,10 @@ add_equipment_to_stockpile = {
 	producer = EQS
 }
 add_ideas = {
+	# no_edict
+	proper_science_base
+	defence_contracts
+	militia_system
 	crystal_heart
 	royal_family
 	sombra_threat
@@ -162,6 +176,7 @@ add_ideas = {
 set_stability = 0.50
 set_war_support = 0.3
 
+recruit_character = EoF_CRY_reserve_fleet
 recruit_character = CRY_reese
 recruit_character = CRY_disputed
 recruit_character = CRY_radiant_hope
@@ -203,6 +218,7 @@ recruit_character = CRY_squeeky_hooves
 recruit_character = CRY_misty_night
 recruit_character = CRY_nightmare_moon
 recruit_character = CRY_arstotzka_reptov
+recruit_character = CRY_obsidian_limelight
 
 set_rule = {
 	can_generate_female_aces = yes

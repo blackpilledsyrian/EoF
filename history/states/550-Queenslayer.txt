@@ -11,17 +11,21 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+		owner = LCT
+		add_core_of = LCT
 
 		victory_points = { 1209 25 }
 		victory_points = { 10842 4 }
 		victory_points = { 1425 1 }
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			arms_factory = 2
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
 		}
+	}
+
+	resources={
+		tungsten = 80
 	}
 }

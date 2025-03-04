@@ -6,12 +6,8 @@ state={
 		15352 15355 15356 15357 15358 
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 1
 			15356 = { naval_base = 1 }

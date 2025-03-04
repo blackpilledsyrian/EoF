@@ -3,9 +3,8 @@ state={
 	name="STATE_763"
 	state_category = wasteland
 	history={
-		owner = HLR
-		add_claim_by = HLR
-		add_core_of = HLR
+		owner = HIP
+		add_core_of = HIP
 		buildings = {
 			infrastructure = 0
 		}

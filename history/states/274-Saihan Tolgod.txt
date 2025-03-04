@@ -2,8 +2,8 @@ state={
 	id=274
 	name="STATE_274"
 	resources={
-		steel=5.000
-		crystals=7.000
+		steel=50.000
+		crystals=70.000
 	}
 
 	provinces={
@@ -22,9 +22,9 @@ state={
 
 		buildings = {
 			infrastructure = 2
-			industrial_complex = 2
+			industrial_complex = 1
 			arms_factory = 1
-			air_base = 3
+			air_base = 5
 		}
 	}
 }

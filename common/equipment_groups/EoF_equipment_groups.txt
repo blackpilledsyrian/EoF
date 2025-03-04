@@ -1,3 +1,38 @@
+EoF_cat_eq_all_equipment = {
+	equipment_type = {
+		convoy
+		train
+		floating_harbor
+		railway_gun
+		armor
+		motorized
+		mechanized
+		infantry
+		capital_ship
+		submarine
+		screen_ship
+		fighter
+		heavy_fighter
+		interceptor
+		tactical_bomber
+		strategic_bomber
+		cas
+		naval_bomber
+		missile
+		suicide
+		scout_plane
+		maritime_patrol_plane
+		air_transport
+		carrier
+		support
+		amphibious
+		anti_air
+		artillery
+		anti_tank
+		rocket
+		flame
+	}
+}
 EoF_cat_eq_all_tank_artillery = {
 	equipment_type = {
 		light_tank_artillery_chassis 
@@ -26,5 +61,20 @@ EoF_cat_eq_all_anti_tank = {
 	equipment_type = {
 		anti_tank_equipment
 		heavy_anti_tank_equipment
+	}
+}
+EoF_cat_eq_all_anti_air = {
+	equipment_type = {
+		anti_air_equipment
+		heavy_anti_air_equipment
+	}
+}
+EoF_cat_eq_all_mechanized = {
+	equipment_type = {
+		mechanized_equipment
+		at_mechanized_equipment
+		spg_mechanized_equipment
+		aa_mechanized_equipment
+		amphibious_mechanized_equipment
 	}
 }

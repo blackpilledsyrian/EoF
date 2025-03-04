@@ -42,7 +42,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -63,6 +63,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -74,6 +75,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 		}
@@ -81,6 +83,11 @@ equipments = {
 		module_count_limit = {
 			category = ship_radar
 			count < 2
+		}
+		
+		module_count_limit = {
+			category = ship_shields
+			count < 3
 		}
 		
 		default_modules = {
@@ -125,8 +132,8 @@ equipments = {
 		
 		build_cost_ic = 3300
 		resources = {
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 4000
@@ -134,10 +141,131 @@ equipments = {
 		naval_weather_penalty_factor = 1 #this value gets -1 before its used so 1.5 will increase the effects of weather penalties by 0.5. this is base value is required for MIO stat modifiers
 		#MIO stat modifers will factory by the unmodified stat value so here a 0.5 mio stat modifier would make this ships naval_weather_penalty_factor stat 1.5.
 		# change this from 1 at your own risk
+		can_convert_from = { ship_hull_heavy }
 	}
-
-	### No-MTG special snowflake hull
 	
+	modern_battleship = {
+		year = 1025
+		visual_level = 1
+		archetype = ship_hull_heavy
+		model = ship_hull_modern_super_battleship
+		upgrades = {
+			ship_reliability_upgrade
+			ship_engine_upgrade
+			ship_armor_upgrade
+			ship_gun_upgrade
+		}	
+		module_slots = {
+			fixed_ship_battery_slot = {
+				required = yes
+				allowed_module_categories = { ship_heavy_battery }
+			}
+			fixed_ship_anti_air_slot = {
+				required = no
+				allowed_module_categories = { ship_anti_air }
+			}
+			fixed_ship_fire_control_system_slot = {
+				required = no
+				allowed_module_categories = { ship_fire_control_system }
+			}
+			fixed_ship_radar_slot = {
+				required = no
+				allowed_module_categories = { ship_radar }
+			}
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { heavy_ship_engine }
+			}
+			fixed_ship_secondaries_slot = {
+				required = no
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries}
+			}
+			fixed_ship_armor_slot = {
+				required = yes
+				allowed_module_categories = { ship_heavy_armor }	
+			}
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+					ship_shields
+					ship_airplane_launcher
+				}
+			}
+			mid_2_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_airplane_launcher
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+					ship_shields
+				}
+			}
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+				}
+			}
+		}
+		default_modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_4
+			fixed_ship_anti_air_slot = ship_anti_air_4
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = heavy_ship_engine_4
+			fixed_ship_secondaries_slot = dp_ship_secondaries_3
+			fixed_ship_armor_slot = ship_armor_bb_3
+			front_1_custom_slot = ship_anti_air_4
+			mid_1_custom_slot = ship_anti_air_4
+			mid_2_custom_slot = dp_ship_secondaries_3
+			rear_1_custom_slot = ship_heavy_battery_4
+		}		
+		hg_armor_piercing = 0
+		hg_attack = 0
+
+		lg_armor_piercing = 0
+		lg_attack = 1
+
+		torpedo_attack = 0
+
+		anti_air_attack = 0
+		
+		armor_value = 40
+
+		
+		surface_detection = 42
+		sub_detection = 6
+		surface_visibility = 30
+		naval_speed = 31
+		reliability = 0.92
+
+		naval_range = 7500
+		fuel_consumption = 80
+		max_strength = 550
+		
+
+		
+		build_cost_ic = 6200
+		resources = {
+			#oil = 2
+			steel = 50
+			chromium = 30
+		}
+		manpower = 8000
+
+	}
 	pre_dreadnought_nomtg = {
 		year = 976
 		visual_tech_level_addition = 0
@@ -167,6 +295,8 @@ equipments = {
 					ship_torpedo
 					ship_anti_air
 					ship_secondaries
+					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -199,8 +329,8 @@ equipments = {
 		reliability = 0.65
 		build_cost_ic = 2600
 		resources = {
-			steel = 3
-			chromium = 1
+			steel = 30
+			chromium = 10
 		}
 
 		manpower = 3200
@@ -237,6 +367,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -262,11 +393,12 @@ equipments = {
 		reliability = 0.65
 		build_cost_ic = 2600
 		resources = {
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 3200
+		can_convert_from = { ship_hull_pre_dreadnought }
 	}
 	ship_hull_heavy_1 = {
 		year = 993
@@ -297,7 +429,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries}
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries}
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -317,6 +449,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -327,6 +460,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			rear_1_custom_slot = {
@@ -360,6 +494,7 @@ equipments = {
 		fuel_consumption = 67
 		
 		build_cost_ic = 2800
+		can_convert_from = { ship_hull_heavy_1 }
 	}
 
 	ship_hull_heavy_2 = {
@@ -391,6 +526,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -405,6 +541,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -423,11 +560,12 @@ equipments = {
 		build_cost_ic = 3000
 		resources = {
 			#oil = 1
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 5200
+		can_convert_from = { ship_hull_heavy_2 }
 	}
 
 	ship_hull_heavy_3 = {
@@ -459,6 +597,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -492,11 +631,12 @@ equipments = {
 		build_cost_ic = 3500
 		resources = {
 			#oil = 1
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 6000
+		can_convert_from = { ship_hull_heavy_3 }
 	}
 
 	ship_hull_heavy_4 = {
@@ -528,6 +668,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -543,6 +684,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -562,11 +704,88 @@ equipments = {
 		build_cost_ic = 3600
 		resources = {
 			#oil = 1
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 6000
+		can_convert_from = { ship_hull_heavy_4 }
+	}
+	### No-MTG special snowflake hull
+	ship_hull_heavy_modern = {
+		abbreviation = "hcf"
+		year = 1025
+		archetype = ship_hull_heavy
+		model = ship_hull_modern_super_battleship
+		priority = 1500
+		parent = ship_hull_heavy_4
+		visual_level = 1
+		module_slots = {
+			fixed_ship_battery_slot = inherit
+			fixed_ship_anti_air_slot = inherit
+			fixed_ship_fire_control_system_slot = inherit
+			fixed_ship_radar_slot = inherit
+			fixed_ship_engine_slot = {
+				required = yes
+				allowed_module_categories = { 
+					heavy_ship_engine
+					heavy_ship_nuclear_engine
+				}
+			}
+			fixed_ship_secondaries_slot = inherit
+			fixed_ship_armor_slot = inherit
+			front_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+				}
+			}
+			mid_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_secondaries
+					ship_dp_secondaries
+					ship_shields
+					ship_airplane_launcher
+					ship_heavy_battery
+				}
+			}
+			mid_2_custom_slot = mid_1_custom_slot
+			mid_3_custom_slot = mid_1_custom_slot
+			rear_1_custom_slot = {
+				required = no
+				allowed_module_categories = {
+					ship_anti_air
+					ship_heavy_battery
+					ship_secondaries
+					ship_dp_secondaries
+					ship_shields
+					ship_airplane_launcher
+				}
+			}
+		}
+
+		default_modules = {
+			front_1_custom_slot = empty
+			rear_1_custom_slot = empty
+		}
+		naval_range = 5000
+		
+		max_strength = 500
+		naval_speed = 30
+		fuel_consumption = 80
+		reliability = 0.95
+		build_cost_ic = 4000
+		resources = {
+			tungsten = 20
+			steel = 60
+			chromium = 30
+		}
+
+		manpower = 6000
+		can_convert_from = { ship_hull_heavy_modern }
 	}
 
 	ship_hull_heavy_5 = {
@@ -598,6 +817,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_advanced_sensors
 					ship_heavy_battery
@@ -614,6 +834,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_advanced_sensors
 				}
@@ -634,11 +855,12 @@ equipments = {
 		build_cost_ic = 3700
 		resources = {
 			#oil = 1
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 6000
+		can_convert_from = { ship_hull_heavy_5 }
 	}
 	ship_hull_heavy_6 = {
 		year = 1023
@@ -669,6 +891,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -685,6 +908,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_advanced_sensors
 				}
@@ -705,11 +929,12 @@ equipments = {
 		build_cost_ic = 3800
 		resources = {
 			#oil = 1
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 
 		manpower = 6000
+		can_convert_from = { ship_hull_heavy_6 }
 	}
 	ship_hull_super_heavy_1 = {
 		year = 1007 # was 1011
@@ -741,7 +966,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -762,6 +987,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -772,6 +998,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -783,6 +1010,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -804,10 +1032,11 @@ equipments = {
 		reliability = 0.80
 		build_cost_ic = 5500
 		resources = {
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 		manpower = 9000
+		can_convert_from = { ship_hull_super_heavy_1 }
 	}
 
 	
@@ -842,7 +1071,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -863,6 +1092,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -873,6 +1103,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -885,6 +1116,8 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -907,10 +1140,11 @@ equipments = {
 		reliability = 1
 		build_cost_ic = 6500
 		resources = {
-			steel = 1
-			chromium = 1
+			steel = 10
+			chromium = 10
 		}
 		manpower = 9000
+		can_convert_from = { ship_hull_super_heavy_2 }
 	}
 	
 ###Prescripted designs for people without MtG
@@ -944,7 +1178,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -964,6 +1198,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -974,6 +1209,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			rear_1_custom_slot = {
@@ -1027,8 +1263,8 @@ equipments = {
 		build_cost_ic = 2800
 		resources = {
 			#oil = 1
-			steel = 4
-			chromium = 1
+			steel = 40
+			chromium = 10
 		}
 
 		manpower = 4000
@@ -1062,6 +1298,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -1076,6 +1313,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -1120,8 +1358,8 @@ equipments = {
 		build_cost_ic = 3000
 		resources = {
 			#oil = 2
-			steel = 5
-			chromium = 1
+			steel = 50
+			chromium = 10
 		}
 		manpower = 5200
 		
@@ -1176,8 +1414,8 @@ equipments = {
 		build_cost_ic = 3500
 		resources = {
 			#oil = 2
-			steel = 7
-			chromium = 2
+			steel = 70
+			chromium = 20
 		}
 		manpower = 6000
 
@@ -1232,8 +1470,8 @@ equipments = {
 		build_cost_ic = 3600
 		resources = {
 			#oil = 2
-			steel = 7
-			chromium = 7
+			steel = 70
+			chromium = 70
 		}
 		manpower = 6000
 		
@@ -1287,8 +1525,8 @@ equipments = {
 		build_cost_ic = 3700
 		resources = {
 			#oil = 2
-			steel = 7
-			chromium = 7
+			steel = 70
+			chromium = 70
 		}
 		manpower = 6000
 		
@@ -1342,8 +1580,8 @@ equipments = {
 		build_cost_ic = 3800
 		resources = {
 			#oil = 2
-			steel = 7
-			chromium = 7
+			steel = 70
+			chromium = 70
 		}
 		manpower = 6000
 		
@@ -1379,7 +1617,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -1399,6 +1637,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -1409,6 +1648,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_airplane_launcher
 				}
@@ -1419,6 +1659,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_airplane_launcher
 				}
@@ -1468,8 +1709,8 @@ equipments = {
 		build_cost_ic = 5500
 		resources = {
 			#oil = 2
-			steel = 6
-			chromium = 5
+			steel = 60
+			chromium = 50
 		}
 		manpower = 9000
 		
@@ -1505,7 +1746,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -1525,6 +1766,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			mid_2_custom_slot = mid_1_custom_slot
@@ -1535,6 +1777,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_airplane_launcher
 				}
@@ -1593,8 +1836,8 @@ equipments = {
 		build_cost_ic = 5500
 		resources = {
 			#oil = 2
-			steel = 6
-			chromium = 5
+			steel = 60
+			chromium = 50
 		}
 		manpower = 9000
 		
@@ -1630,7 +1873,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -1660,6 +1903,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -1672,6 +1916,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_super_heavy_battery
 					ship_super_heavy_ASM_battery
 					ship_airplane_launcher
@@ -1687,12 +1932,12 @@ equipments = {
 			fixed_ship_engine_slot = heavy_ship_engine_6
 			fixed_ship_secondaries_slot = dp_ship_secondaries_4
 			fixed_ship_armor_slot = ship_armor_shbb_2
-			front_1_custom_slot = ship_heavy_ASM_battery_2
-			front_2_custom_slot = ship_heavy_ASM_battery_2
+			front_1_custom_slot = ship_super_heavy_ASM_battery_2
+			front_2_custom_slot = ship_super_heavy_ASM_battery_2
 			mid_1_custom_slot = ship_anti_air_6
 			mid_2_custom_slot = ship_anti_air_6
 			mid_3_custom_slot = ship_anti_air_6
-			rear_1_custom_slot = ship_heavy_ASM_battery_2
+			rear_1_custom_slot = ship_super_heavy_ASM_battery_2
 			rear_2_custom_slot = ship_airplane_launcher_6
 		}
 		hg_armor_piercing = 0
@@ -1723,8 +1968,8 @@ equipments = {
 		build_cost_ic = 6500
 		resources = {
 			#oil = 2
-			steel = 7
-			chromium = 7
+			steel = 70
+			chromium = 70
 		}
 		manpower = 9000
 		
@@ -1757,7 +2002,7 @@ equipments = {
 			}
 			fixed_ship_secondaries_slot = {
 				required = no
-				allowed_module_categories = { ship_secondaries ship_dp_secondaries }
+				allowed_module_categories = { ship_secondaries ship_shields ship_dp_secondaries }
 			}
 			fixed_ship_armor_slot = {
 				required = yes
@@ -1777,6 +2022,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 				}
 			}
@@ -1787,6 +2033,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 			rear_1_custom_slot = {
@@ -1840,8 +2087,8 @@ equipments = {
 		build_cost_ic = 2800
 		resources = {
 			#oil = 1
-			steel = 3
-			chromium = 1
+			steel = 30
+			chromium = 10
 		}
 		
 		manpower = 4000
@@ -1896,8 +2143,8 @@ equipments = {
 		build_cost_ic = 3500
 		resources = {
 			#oil = 1
-			steel = 6
-			chromium = 2
+			steel = 60
+			chromium = 20
 		}
 		manpower = 6000
 	}
@@ -1950,8 +2197,8 @@ equipments = {
 		build_cost_ic = 3700
 		resources = {
 			#oil = 1
-			steel = 7
-			chromium = 6
+			steel = 70
+			chromium = 60
 		}
 		manpower = 6000
 	}
@@ -2008,6 +2255,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_heavy_battery
 					ship_heavy_ASM_battery
 				}
@@ -2019,6 +2267,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_torpedo
 				}
@@ -2029,6 +2278,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_heavy_battery
 					ship_heavy_ASM_battery
@@ -2064,11 +2314,12 @@ equipments = {
         build_cost_ic = 3100
         resources = {
             #oil = 1
-            steel = 1
-            chromium = 1
+            steel = 10
+            chromium = 10
         }
 
         manpower = 5200
+		can_convert_from = { ship_hull_grand_cruiser2 }
 	}
 	ship_hull_grand_cruiser3 = {
 		year = 1015
@@ -2118,6 +2369,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_heavy_battery
 					ship_heavy_ASM_battery
 				}
@@ -2129,6 +2381,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_light_ASM_battery
 					ship_heavy_battery
@@ -2141,6 +2394,7 @@ equipments = {
 					ship_anti_air
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 					ship_airplane_launcher
 					ship_torpedo
 					ship_heavy_battery
@@ -2158,6 +2412,7 @@ equipments = {
 					ship_heavy_ASM_battery
 					ship_secondaries
 					ship_dp_secondaries
+					ship_shields
 				}
 			}
 		}
@@ -2178,11 +2433,12 @@ equipments = {
         build_cost_ic = 3300
         resources = {
             #oil = 1
-            steel = 1
-            chromium = 1
+            steel = 10
+            chromium = 10
         }
 
         manpower = 6000
+		can_convert_from = { ship_hull_grand_cruiser3 }
 	}
 
 	

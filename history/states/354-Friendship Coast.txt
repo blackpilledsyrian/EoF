@@ -26,6 +26,6 @@ state={
 	}
 
 	resources={
-		aluminium=26
+		aluminium=260
 	}
 }

@@ -11,8 +11,9 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+		owner = LCT
+		add_core_of = LCT
+		add_core_of = DEP
 
 		victory_points = { 11876 1 }
 
@@ -22,6 +23,6 @@ state={
 	}
 
 	resources={
-		oil=12
+		oil=120
 	}
 }

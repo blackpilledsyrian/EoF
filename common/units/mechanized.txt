@@ -1,0 +1,241 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+	at_mechanized = {
+		abbreviation = "ATMEC"
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 610
+		ai_priority = 200
+		active = yes
+
+		type = {
+			mechanized
+		}
+
+		group = mobile
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_mechanical
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
+			category_all_at
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2
+		weight = 1
+
+		supply_consumption = 0.14
+
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = at_mechanized_equipment
+
+		need = {
+			at_mechanized_equipment = 40
+			infantry_equipment = 100
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	spg_mechanized = {
+		abbreviation = "SPGMEC"
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 610
+		ai_priority = 200
+		active = yes
+
+		type = {
+			mechanized
+		}
+
+		group = mobile
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_mechanical
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
+			category_all_artillery
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2
+		weight = 1
+
+		supply_consumption = 0.14
+
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = spg_mechanized_equipment
+
+		need = {
+			spg_mechanized_equipment = 40
+			infantry_equipment = 100
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	aa_mechanized = {
+		abbreviation = "AAMEC"
+		sprite = mechanized
+		map_icon_category = infantry
+
+		priority = 610
+		ai_priority = 200
+		active = yes
+
+		type = {
+			mechanized
+		}
+
+		group = mobile
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_mechanical
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
+			category_light_aa
+			category_anti_air
+		}
+
+		combat_width = 2
+
+		#Size Definitions
+		max_strength = 35
+		max_organisation = 60
+		default_morale = 0.3
+		manpower = 1200
+
+		#Misc Abilities
+		training_time = 120
+		suppression = 2
+		weight = 1
+
+		supply_consumption = 0.14
+
+		# needed since we give so much bonus to infantry even with no mech equipment
+		essential = {
+			infantry_equipment
+			mechanized_equipment
+		}
+
+		# this is what moves us and sets speed
+		transport = aa_mechanized_equipment
+
+		need = {
+			aa_mechanized_equipment = 40
+			infantry_equipment = 100
+		}
+
+		forest = {
+			attack = -0.2
+		}
+		mountain = {
+			attack = -0.05
+		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.1
+		}
+		urban = {
+			attack = -0.2
+			defence = -0.05
+		}
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+}

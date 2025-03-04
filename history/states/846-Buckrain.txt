@@ -3,12 +3,8 @@ state={
 	name="STATE_846"
 	state_category = small_island
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
@@ -18,7 +14,7 @@ state={
 		victory_points = { 14901 5 }
 	}
 	resources = {
-		oil = 16
+		oil=160
 	}
 	provinces={
 		14889 14897 14901 14912 14915 14923 14931 14933 

@@ -14,8 +14,8 @@ state={
 		}
 	}
 	resources = {
-		steel = 8
-		tungsten = 4
+		steel=80
+		tungsten=40
 	}
 	provinces={
 		15860 15866 15870 15872 15875 15877 15879 15881 15882 15883 

@@ -15,7 +15,7 @@ sound = {
 }
 sound = {
 	name = "mountain_bigevent_sound" #name you're using for the sound
-	file = "customsound/Venerable_ancient_battlefield.wav" ## location of the sound file
+	file = "customsound/Mt_everest.wav" ## location of the sound file
 	always_load = no
 }
 sound = {
@@ -26,5 +26,15 @@ sound = {
 sound = {
 	name = "tarrin_bigevent_sound" #name you're using for the sound
 	file = "customsound/Four_seasons_summer.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "wingbardy_bigevent_sound" #name you're using for the sound
+	file = "customsound/Agent.wav" ## location of the sound file
+	always_load = no
+}
+sound = {
+	name = "rivfed_bigevent_sound" #name you're using for the sound
+	file = "customsound/The_heady_feeling_of_freedom.wav" ## location of the sound file
 	always_load = no
 }

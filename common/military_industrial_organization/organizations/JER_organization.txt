@@ -192,6 +192,41 @@ JER_mistral_organization = {
 			surface_visibility = -0.05
 		}
 	}
+	add_trait = {
+		token = EoF_JER_mio_trait_forward_battery
+		name = EoF_JER_mio_trait_forward_battery
+		icon = GFX_generic_mio_trait_icon_hg_attack
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_semi_armor_piercing_shells
+
+		any_parent =  { generic_mio_trait_super_heavy_shells generic_mio_trait_semi_armor_piercing_shells generic_mio_trait_high_velocity_guns }
+
+		equipment_bonus = {
+			surface_visibility = -0.05
+			hg_attack = 0.1
+		}
+	}
+	add_trait = {
+		token = EoF_JER_mio_trait_monolithic_plate
+		name = EoF_JER_mio_trait_monolithic_plate
+		icon = GFX_generic_mio_trait_icon_armor_value
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_internal_armor_belt
+
+		any_parent = { generic_mio_trait_external_armor_belt generic_mio_trait_internal_armor_belt }
+
+		equipment_bonus = {
+			armor_value = 0.05
+			reliability = 0.05
+		}
+		production_bonus = {
+			production_resource_need_factor = 0.05
+		}
+	}
 }
 JER_loup_shipping_organization = {
 	include = generic_raider_ship_organization
@@ -238,6 +273,34 @@ EoF_JER_aeb_organization = {
 	available = {
 		owner = {
 			has_completed_focus = EoF_JER_naval_companies
+		}
+	}
+	initial_trait = {
+		limit_to_equipment_type = { ship_hull_carrier } 
+		equipment_bonus = {
+			armor_value = 0.05
+			anti_air_attack = 0.05
+			surface_visibility = -0.05
+		}
+		organization_modifier = {
+			military_industrial_organization_research_bonus = 0.1
+		}
+	}
+	add_trait = {
+		token = EoF_JER_mio_trait_multi_carrier
+		name = EoF_JER_mio_trait_multi_carrier
+		icon = GFX_generic_mio_department_icon_ship_carrier_utility
+		special_trait_background = yes
+
+		position = { x=0 y=1 }
+		relative_position_id = generic_mio_trait_gyro_stabilized_mounts
+
+		any_parent = { generic_mio_trait_gyro_stabilized_mounts }
+
+		limit_to_equipment_type = { mio_cat_eq_all_carrier }
+		equipment_bonus = {
+			naval_speed = 0.2
+			anti_air_attack = 0.1
 		}
 	}
 }

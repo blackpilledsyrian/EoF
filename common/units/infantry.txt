@@ -27,12 +27,13 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_heavy_infantry
+			category_infantry_and_bicycle
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1000
@@ -69,12 +70,13 @@ sub_units = {
 			category_light_infantry
 			category_all_infantry
 			category_army
+			category_infantry_and_bicycle
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
 		maximum_speed = 0.6
@@ -145,12 +147,13 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_marines
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -161,9 +164,15 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.05
 		breakthrough = 0.3
+
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
 	
 		need = {
-			support_equipment = 5
+			support_equipment = 20
 		}
 
 		marsh = {
@@ -202,12 +211,13 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_marines
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -218,9 +228,15 @@ sub_units = {
 		weight = 0.5
 		supply_consumption = 0.05
 		breakthrough = 0.3
+
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
 	
 		need = {
-			support_equipment = 5
+			support_equipment = 20
 		}
 
 		marsh = {
@@ -258,12 +274,13 @@ sub_units = {
 			category_special_forces
 			category_army
 			category_mountaineers
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -286,8 +303,14 @@ sub_units = {
 			movement = 0.2
 		}
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
 		need = {
-			support_equipment = 5
+			support_equipment = 10
 		}
 	}
 
@@ -314,12 +337,13 @@ sub_units = {
 			category_special_forces
 			category_army
 			category_paratroopers
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 22
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -332,8 +356,14 @@ sub_units = {
 
 		can_be_parachuted = yes
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
 		need = {
-			support_equipment = 5
+			support_equipment = 50
 		}
 	}
 
@@ -357,13 +387,14 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.30
 		manpower = 1200
@@ -429,17 +460,18 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2
 
-		#Offensive Abilities
+		# Offensive Abilities
 		# soft_attack = 0.1
 		# hard_attack = 4.0
 
 		#Size Definitions
-		max_strength = 30
+		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1200
@@ -556,7 +588,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 15 #25 (HP)
+		max_strength = 20 #25 (HP)
 		max_organisation = 70 #60 -> Lower HP but higher Org: They should keep fighting longer
 		default_morale = 0.4 #0.3 (Recovery) -> Easy to get more punishees
 		manpower = 850 #1000 -> Usually no more than 850
@@ -598,7 +630,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 30 # reg inf 25
+		max_strength = 35 # reg inf 25
 		max_organisation = 45 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
 		manpower = 1000
@@ -670,7 +702,7 @@ sub_units = {
 		combat_width = 2
 		
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 50 #reg infantry 60
 		default_morale = 0.3
 		manpower = 1000

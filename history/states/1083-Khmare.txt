@@ -3,8 +3,8 @@ state={
 	name="STATE_1083"
 	state_category = city
 	resources={
-		rubber = 12
-		steel = 8
+		rubber=120
+		steel=80
 	}
 	history={
 		owner = HLR
@@ -16,6 +16,7 @@ state={
 			dockyard = 1
 			16236 = {
 				naval_base = 1
+				land_facility = 1
 			}
 		}
 		victory_points = {

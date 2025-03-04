@@ -1568,12 +1568,6 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_unit_category_spg_icon_small"
-		texturefile = "gfx/texticons/unit_category_spg_icon_small.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
 		name = "GFX_unit_category_mot_r_artillery_icon_small"
 		texturefile = "gfx/texticons/unit_category_mot_r_artillery_icon_small.dds"
 		legacy_lazy_load = no
@@ -1606,12 +1600,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_category_anti_air_icon_small"
 		texturefile = "gfx/texticons/unit_category_anti_air_icon_small.dds"
-		legacy_lazy_load = no
-	}
-	
-	spriteType = {
-		name = "GFX_unit_category_spaa_icon_small"
-		texturefile = "gfx/texticons/unit_category_spaa_icon_small.dds"
 		legacy_lazy_load = no
 	}
 	

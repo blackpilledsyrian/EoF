@@ -1,0 +1,4 @@
+
+EoF_RIV_balance_of_power_decay = {
+	power_balance_daily = -0.001
+}

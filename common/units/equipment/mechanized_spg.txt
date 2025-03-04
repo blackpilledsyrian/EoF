@@ -1,0 +1,122 @@
+#####---------------------------------------------------------------------Mod by Sig "GreatExperiment" Altre
+
+equipments = {
+	spg_mechanized_equipment = {
+		year = 1007
+		is_archetype = yes
+		picture = archetype_motorized_equipment
+		is_buildable = no
+		type = {
+			mechanized
+			artillery
+		}
+
+		upgrades = {
+			tank_reliability_upgrade
+			tank_engine_upgrade
+			tank_armor_upgrade
+			mech_cost_upgrade
+		}
+
+		group_by = archetype
+
+		interface_category = interface_category_land
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		fuel_consumption = 2.4
+		supply_truck = no
+	}
+
+	# ~1941
+	spg_mechanized_equipment_1 = {
+		year = 1011
+		archetype = spg_mechanized_equipment
+		priority = 40
+		visual_level = 0
+		
+
+		#Misc Abilities
+		maximum_speed = 6
+		reliability = 0.8
+
+		#Offensive Abilities
+		soft_attack = 10
+
+		#Defensive Abilities
+		defense = 13
+		breakthrough = 6
+		hardness = 0.4
+		armor_value = 20
+
+		build_cost_ic = 8
+		resources = {
+			steel = 25
+			rubber = 10
+		}
+	}
+
+	# ~1943
+	spg_mechanized_equipment_2 = {
+		year = 1013
+		archetype = spg_mechanized_equipment
+		parent = spg_mechanized_equipment_1
+		priority = 40
+		visual_level = 1
+
+		
+
+		#Misc Abilities
+		maximum_speed = 7
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 15
+		breakthrough = 8
+		hardness = 0.4
+		armor_value = 30
+
+		#Offensive Abilities
+		soft_attack = 15
+
+		build_cost_ic = 9
+		resources = {
+			steel = 30
+			rubber = 10
+		}
+		
+	}
+
+	# ~1945
+	spg_mechanized_equipment_3 = {
+		year = 1015
+
+		archetype = spg_mechanized_equipment
+		parent = spg_mechanized_equipment_2
+		priority = 40
+		visual_level = 2
+
+		
+
+		#Misc Abilities
+		maximum_speed = 8
+		reliability = 0.8
+
+		#Defensive Abilities
+		defense = 17
+		breakthrough = 10
+		hardness = 0.4
+		armor_value = 40
+
+		#Offensive Abilities
+		soft_attack = 20
+
+		build_cost_ic = 10
+		resources = {
+			steel = 35
+			rubber = 10
+		}
+		
+	}
+}

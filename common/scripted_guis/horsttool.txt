@@ -69,11 +69,11 @@ scripted_gui = {
 						if={limit={check_variable= { Root.selected_cheat=5} } add_offsite_building = { type = dockyard level =  1 }}
 						if={limit={check_variable= { Root.selected_cheat=6} } add_offsite_building = { type = dockyard level =  -1 }}
 						if={limit={check_variable= { Root.selected_cheat=7} } add_political_power = 50 }
-						if={limit={check_variable= { Root.selected_cheat=8} } add_stability = 0.1 }
-						if={limit={check_variable= { Root.selected_cheat=9} } add_war_support = 0.1 }
+						if={limit={check_variable= { Root.selected_cheat=8} } add_stability = 0.05 }
+						if={limit={check_variable= { Root.selected_cheat=9} } add_war_support = 0.05 }
 						if={limit={check_variable= { Root.selected_cheat=10} } add_manpower = 100000 }
-						if={limit={check_variable= { Root.selected_cheat=11} } add_ideas = WW_army_cheat }
-						if={limit={check_variable= { Root.selected_cheat=12} } remove_ideas = WW_army_cheat }
+						if={limit={check_variable= { Root.selected_cheat=11} } add_ideas = EoF_army_cheat }
+						if={limit={check_variable= { Root.selected_cheat=12} } remove_ideas = EoF_army_cheat }
 						if={limit={check_variable= { Root.selected_cheat=13} }
 							division_template = {
 								name = "Tank Division"
@@ -81,34 +81,22 @@ scripted_gui = {
 									magical_mechanized = { x = 0 y = 0 }
 									magical_mechanized = { x = 0 y = 1 }
 									magical_mechanized = { x = 0 y = 2 }
-									magical_mechanized = { x = 0 y = 3 }
 								
 									magical_mechanized = { x = 1 y = 0 }
 									magical_mechanized = { x = 1 y = 1 }
 									magical_mechanized = { x = 1 y = 2 }
-									magical_mechanized = { x = 1 y = 3 }
 							
 									medium_armor = { x = 2 y = 0 }
 									medium_armor = { x = 2 y = 1 }
 									medium_armor = { x = 2 y = 2 }
-									medium_armor = { x = 2 y = 3 }
-									medium_armor = { x = 2 y = 4 }
-							
+
 									medium_armor = { x = 3 y = 0 }
-									medium_tank_destroyer_brigade = { x = 3 y = 1 }
-									medium_tank_destroyer_brigade = { x = 3 y = 2 }
-									medium_tank_destroyer_brigade = { x = 3 y = 3 }
-							
-									medium_tank_destroyer_brigade = { x = 4 y = 0 }
-									medium_tank_destroyer_brigade = { x = 4 y = 1 }
-									medium_tank_destroyer_brigade = { x = 4 y = 2 }
-									medium_tank_destroyer_brigade = { x = 4 y = 3 }
-								}
-								support = {
-									anti_tank = { x = 0 y = 0 }
-									medium_flame_tank = { x = 0 y = 1 }
-									engineer = { x = 0 y = 2 }
-									anti_air = { x = 0 y = 3 }
+									medium_armor = { x = 3 y = 1 }
+									medium_armor = { x = 3 y = 2 }
+
+									medium_armor = { x = 4 y = 0 }
+									medium_armor = { x = 4 y = 1 }
+									medium_armor = { x = 4 y = 2 }
 								}
 							}
 						}
@@ -116,17 +104,18 @@ scripted_gui = {
 							random_owned_controlled_state = {
 								create_unit = {
 									division = "name = \"Tank Division\" division_template = \"Tank Division\" start_experience_factor = 1 start_equipment_factor = 1"
-									owner = ROOT
+									owner = PREV
 								}
 							}
 						}
-						if={limit={check_variable= { Root.selected_cheat=15} } add_ideas = WW_industry_growth_cheat }
-						if={limit={check_variable= { Root.selected_cheat=16} } remove_ideas = WW_industry_growth_cheat }
-						if={limit={check_variable= { Root.selected_cheat=17} } add_ideas = WW_dockyard_cheat }
-						if={limit={check_variable= { Root.selected_cheat=18} } remove_ideas = WW_dockyard_cheat }
-						if={limit={check_variable= { Root.selected_cheat=19} } army_experience = 50 }
-						if={limit={check_variable= { Root.selected_cheat=20} } air_experience = 50 }
-						if={limit={check_variable= { Root.selected_cheat=21} } navy_experience = 50 }
+						if={limit={check_variable= { Root.selected_cheat=15} } add_ideas = EoF_industry_growth_cheat }
+						if={limit={check_variable= { Root.selected_cheat=16} } remove_ideas = EoF_industry_growth_cheat }
+						if={limit={check_variable= { Root.selected_cheat=17} } add_ideas = EoF_dockyard_cheat }
+						if={limit={check_variable= { Root.selected_cheat=18} } remove_ideas = EoF_dockyard_cheat }
+						if={limit={check_variable= { Root.selected_cheat=19} } army_experience = 20 }
+						if={limit={check_variable= { Root.selected_cheat=20} } air_experience = 20 }
+						if={limit={check_variable= { Root.selected_cheat=21} } navy_experience = 20 }
+						if={limit={check_variable= { Root.selected_cheat=22} } add_threat = 3 }
 						} }
 				clear_variable = ROOT.taker
 
@@ -240,6 +229,7 @@ scripted_gui = {
 			cheat19_click={set_variable={Root.selected_cheat=19} ROOT= { clr_country_flag = cheating} }
 			cheat20_click={set_variable={Root.selected_cheat=20} ROOT= { clr_country_flag = cheating} }
 			cheat21_click={set_variable={Root.selected_cheat=21} ROOT= { clr_country_flag = cheating} }
+			cheat22_click={set_variable={Root.selected_cheat=22} ROOT= { clr_country_flag = cheating} }
 		}
 		properties = {
 
@@ -284,6 +274,7 @@ scripted_gui = {
 			cheat19_visible={ROOT= { has_country_flag = cheating} }
 			cheat20_visible={ROOT= { has_country_flag = cheating} }
 			cheat21_visible={ROOT= { has_country_flag = cheating} }
+			cheat22_visible={ROOT= { has_country_flag = cheating} }
 			cheat8_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat9_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat10_text_visible={ROOT= { has_country_flag = cheating} }
@@ -298,6 +289,7 @@ scripted_gui = {
 			cheat19_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat20_text_visible={ROOT= { has_country_flag = cheating} }
 			cheat21_text_visible={ROOT= { has_country_flag = cheating} }
+			cheat22_text_visible={ROOT= { has_country_flag = cheating} }
 			clear_all_markings_click_enabled = {
 				check_variable = { ROOT.marked_states^num > 0 }
 			}

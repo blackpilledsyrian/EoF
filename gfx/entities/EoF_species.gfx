@@ -1,0 +1,53 @@
+objectTypes = {
+
+pdxmesh = {
+		name = "EoF_panzerbjorn_mesh"
+		file = "gfx/models/units/EoF/panzerbjorn.mesh"
+		scale = 1
+		
+		animation = { id = "idle"  		type = "panzerbjorn_idle00_anim" }
+		animation = { id = "idle01"  		type = "panzerbjorn_idle01_anim" }
+		animation = { id = "idle02"  		type = "panzerbjorn_idle02_anim" }
+		animation = { id = "idle03"  		type = "panzerbjorn_idle03_anim" }
+		animation = { id = "idle04"  		type = "panzerbjorn_idle04_anim" }
+		animation = { id = "idle05"  		type = "panzerbjorn_idle05_anim" }
+		animation = { id = "attack"  		type = "panzerbjorn_attack_anim" }
+		animation = { id = "move"  			type = "panzerbjorn_move_anim" }
+		animation = { id = "retreat"  		type = "panzerbjorn_retreat_anim" }
+		animation = { id = "training01"  		type = "panzerbjorn_training01_anim" }
+	
+		meshsettings = {
+   		 name = "polarny_niedzwiedz"
+   		 index = 0
+   		 texture_diffuse = "panzerbjorn_diffuse.dds"
+   		 texture_normal = "panzerbjorn_normal.dds"
+   		 texture_specular = "panzerbjorn_specular.dds"
+   		 shader = PdxMeshAdvanced
+		}
+	}
+	
+pdxmesh = {
+		name = "EoF_polarbear_mesh"
+		file = "gfx/models/units/EoF/polar_bear.mesh"
+		scale = 1
+		
+		animation = { id = "idle"  		type = "panzerbjorn_idle00_anim" }
+		animation = { id = "idle01"  		type = "panzerbjorn_idle01_anim" }
+		animation = { id = "idle02"  		type = "panzerbjorn_idle02_anim" }
+		animation = { id = "idle03"  		type = "panzerbjorn_idle03_anim" }
+		animation = { id = "idle04"  		type = "panzerbjorn_idle04_anim" }
+		animation = { id = "idle05"  		type = "panzerbjorn_idle05_anim" }
+		animation = { id = "attack"  		type = "panzerbjorn_attack_anim" }
+		animation = { id = "move"  			type = "panzerbjorn_move_anim" }
+		animation = { id = "retreat"  		type = "panzerbjorn_retreat_anim" }
+		animation = { id = "training01"  		type = "panzerbjorn_training01_anim" }
+	}
+
+#ATTACHMENTS
+
+pdxmesh = {
+		name = "EoF_ushanka_mesh"
+		file = "gfx/models/units/EoF/attachments/ushanka.mesh"
+		scale = 1
+	}
+}

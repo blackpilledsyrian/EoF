@@ -39,8 +39,8 @@ equipments = {
 
 		build_cost_ic = 0.87
 		resources = {
-			steel = 2
-			crystals = 2
+			steel = 20
+			crystals = 20
 		}
 	}
 
@@ -52,7 +52,7 @@ equipments = {
 		visual_level = 2
 		reliability = 0.5
 		build_cost_ic = 0.81
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -63,9 +63,7 @@ equipments = {
 		parent = magical_equipment_1
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_1
-		}
+		
 		#Defensive Abilities
 		defense = 37
 		breakthrough = 5.5
@@ -73,15 +71,15 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 14
 		hard_attack = 3
-		ap_attack = 12
+		ap_attack = 6
 
 		reliability = 0.65
 		build_cost_ic = 0.9
 		resources = {
-			steel = 3
-			crystals = 3
+			steel = 30
+			crystals = 30
 		}
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -92,9 +90,7 @@ equipments = {
 		parent = magical_equipment_2
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_2
-		}
+		
 		#Defensive Abilities
 		defense = 43
 		breakthrough = 6.5
@@ -103,17 +99,17 @@ equipments = {
 		#Offensive Abilities
 		soft_attack = 17
 		hard_attack = 3
-		ap_attack = 14
+		ap_attack = 7
 		air_attack = 0.002
 
 		reliability = 0.75
 		build_cost_ic = 1
 		resources = {
-			steel = 4
-			crystals = 4
-			tungsten = 1
+			steel = 40
+			crystals = 40
+			tungsten = 10
 		}
-		is_convertable = yes
+		
 	}
 
 	# Advanced weapons  ~1942
@@ -124,9 +120,7 @@ equipments = {
 		parent = magical_equipment_3
 		priority = 10
 		visual_level = 3
-		can_convert_from = {
-			magical_equipment_3
-		}
+		
 		#Defensive Abilities
 		defense = 49
 		breakthrough = 7.5
@@ -141,9 +135,9 @@ equipments = {
 		reliability = 0.85
 		build_cost_ic = 1.1
 		resources = {
-			steel = 5
-			crystals = 5
-			tungsten = 1
+			steel = 50
+			crystals = 50
+			tungsten = 10
 		}
 	}
 	
@@ -157,7 +151,7 @@ equipments = {
 		is_archetype = yes
 		picture = archetype_medium_tank_equipment
 		is_buildable = no
-		is_convertable = no
+		
 		type = armor
 		group_by = archetype
 
@@ -171,19 +165,19 @@ equipments = {
 		}
 
 		#Misc Abilities
-		maximum_speed = 8
+		maximum_speed = 6
 		reliability = 0.5
 
 		#Defensive Abilities
-		defense = 9
-		breakthrough = 67
+		defense = 15
+		breakthrough = 40
 		hardness = 0.9
-		armor_value = 120
+		armor_value = 80
 
 		#Offensive Abilities
-		soft_attack = 39
-		hard_attack = 43
-		ap_attack = 145
+		soft_attack = 30
+		hard_attack = 30
+		ap_attack = 70
 		air_attack = 0
 
 		#Space taken in convoy
@@ -191,9 +185,9 @@ equipments = {
 
 		build_cost_ic = 40
 		resources = {
-			crystals = 3
-			tungsten = 1
-			steel = 4
+			crystals = 30
+			tungsten = 10
+			steel = 40
 		}
 		fuel_consumption = 5.0
 	}
@@ -205,7 +199,7 @@ equipments = {
 		archetype = magical_tank_equipment
 		priority = 50
 		visual_level = 0
-		is_convertable = no
+		
 
 	}
 	
@@ -246,9 +240,9 @@ equipments = {
 
 		build_cost_ic = 7.5
 		resources = {
-			crystals = 3
-			tungsten = 1
-			steel = 3
+			crystals = 30
+			tungsten = 10
+			steel = 30
 		}
 	}
 	
@@ -257,6 +251,6 @@ equipments = {
 		archetype = magical_artillery_equipment
 		priority = 45
 		visual_level = 1
-		is_convertable = no
+		
 	}
 }

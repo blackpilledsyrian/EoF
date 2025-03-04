@@ -48,11 +48,11 @@ horst_host_country = {
 	# 	text = "Penguins"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = ROU
-	# 	text = "Romau"
-	# 	desc = ""
-	# }
+	option = {
+		name = BRZ
+	 	text = "Bronzehill"
+		desc = ""
+	}
 	# option = {
 	# 	name = YAL
 	# 	text = "Yale"
@@ -98,11 +98,11 @@ horst_host_country = {
 	# 	text = "Evi"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = RCT
-	# 	text = "River Republic"
-	# 	desc = ""
-	# }
+	option = {
+		name = RCT
+		text = "River Republic"
+		desc = ""
+	}
 	# option = {
 	# 	name = LCT
 	# 	text = "Lake City"
@@ -113,11 +113,11 @@ horst_host_country = {
 	# 	text = "Wittenland"
 	# 	desc = ""
 	# }
-	# option = {
-	# 	name = NIM
-	# 	text = "Nimbusia"
-	# 	desc = ""
-	# }
+	option = {
+	 	name = NIM
+	 	text = "Nimbusia"
+	 	desc = ""
+	}
 	# option = {
 	# 	name = BAK
 	# 	text = "Bakara"

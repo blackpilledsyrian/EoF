@@ -3,11 +3,11 @@ state={
 	id=1080
 	name="STATE_1080"
 	resources={
-		chromium=8.000
+		chromium=80.000
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = KIR
+		add_core_of = KIR
 		buildings = {
 
 		}

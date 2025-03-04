@@ -1,4 +1,92 @@
 political_actions = {
+	EoF_invade_SDL_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = CHN
+		}
+		visible = {
+			EMR = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			CHN = {
+				declare_war_on = {
+					target = SDL
+					type = annex_everything
+				}
+			}
+			EQS = {
+				add_to_faction = SDL
+			}
+		}
+	}
+	EoF_invade_EMR_decision = {
+		icon = GFX_decision_generic_break_treaty
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			SDL = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			EMR = {
+				declare_war_on = {
+					target = EQS
+					type = annex_everything
+				}
+			}
+			CHN = {
+				add_to_faction = EMR
+			}
+		}
+	}
+	EoF_invite_SDL_decision = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			EMR = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			EQS = {
+				add_to_faction = SDL
+			}
+		}
+	}
+	EoF_invite_EMR_decision = {
+		icon = GFX_decision_generic_form_nation
+		allowed = {
+			original_tag = CHN
+		}
+		visible = {
+			SDL = {
+				exists = no
+			}
+		}
+		available = {
+			date > 1011.11.01
+		}
+		complete_effect = {
+			CHN = {
+				add_to_faction = EMR
+			}
+		}
+	}
 	EoF_GRF_border_war_mission = {
 		icon = GFX_decision_border_war
 		allowed = {
@@ -24,6 +112,92 @@ political_actions = {
 			EQS = {
 				country_event = {
 					id = GRF_border_war.1
+				}
+			}
+		}
+	}
+	EoF_GRF_border_war_decision_1 = {
+		allowed = {
+			original_tag = GRF	
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_country_flag = EoF_small_wesslandia_award
+		}
+		targets = { state = 277 }
+		target_trigger = {
+			FROM = {
+				NOT = { is_owned_by = GRF }
+			}
+			ROOT = {
+				has_war = no
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		icon = GFX_decision_border_war
+		cost = 30
+		days_re_enable = 120
+		complete_effect = {
+			leave_faction = yes
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 281
+					num_provinces = 1
+					on_win = GRF_border_war.6
+					on_cancel = GRF_border_war.9
+					on_lose = GRF_border_war.9
+					dig_in_factor = 0
+					terrain_factor = 0
+				}
+				defender = {
+					state = 277
+					num_provinces = 2
+					dig_in_factor = 0
+					terrain_factor = 0
+				}
+			}
+		}
+	}
+	EoF_GRF_border_war_decision_2 = {
+		allowed = {
+			original_tag = GRF	
+		}
+		state_target = yes
+		target_root_trigger = {
+			has_country_flag = EoF_big_wesslandia_award
+		}
+		targets = { state = 281 }
+		target_trigger = {
+			FROM = {
+				NOT = { is_owned_by = GRF }
+			}
+			ROOT = {
+				has_war = no
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		icon = GFX_decision_border_war
+		cost = 30
+		days_re_enable = 120
+		complete_effect = {
+			leave_faction = yes
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = 286
+					num_provinces = 2
+					on_win = GRF_border_war.7
+					on_cancel = GRF_border_war.9
+					on_lose = GRF_border_war.9
+					dig_in_factor = 0
+					terrain_factor = 0
+				}
+				defender = {
+					state = 281
+					num_provinces = 2
+					dig_in_factor = 0
+					terrain_factor = 0
 				}
 			}
 		}
@@ -56,18 +230,15 @@ political_actions = {
 					state = 433
 					num_provinces = 3
 					on_win = GRI_border_war.1
-					on_cancel = GRI_border_war.2
-					on_lose = GRI_border_war.2
+					dig_in_factor = 0
+					terrain_factor = 0
 				}
 				defender = {
 					state = 379
 					num_provinces = 2
-					on_win = GRI_border_war.2
-					on_cancel = GRI_border_war.2
-					on_lose = GRI_border_war.2
+					dig_in_factor = 0
+					terrain_factor = 0
 				}
-				dig_in_factor = 0
-				terrain_factor = 0
 			}
 		}
 	}
@@ -94,10 +265,13 @@ political_actions = {
 			CHN = {
 				add_to_faction = JER
 				add_to_faction = GRI
+				add_to_faction = NCH
 			}
 			EQS = {
 				add_to_faction = WNG
 				add_to_faction = MCW
+				add_to_faction = RCT
+				add_to_faction = NIM
 			}
 			if = {
 				limit = {
@@ -105,8 +279,175 @@ political_actions = {
 				}
 				add_timed_idea = {
 					idea = EoF_taifunkrieg
-					days = 80
+					days = 120
 				}
+				GRI = {
+					add_timed_idea = {
+						idea = EoF_taifunkrieg
+						days = 120
+					}
+				}
+			}
+			hidden_effect = {
+				add_named_threat = {
+					threat = 20
+					name = EoF_JER_war_start_tension
+				}
+			}
+		}
+	}
+}
+economy_decisions = {
+	EoF_failing_integrated_economy_mission = {
+		allowed = {
+			OR = {
+				tag = CHN
+				tag = OLE
+				tag = PLB
+				tag = GRF
+				tag = FAT
+				tag = GRI
+				tag = JER
+				tag = BRZ
+			}
+		}
+		activation = {
+			has_idea = EoF_north_integrated_economy
+			OR = {
+				381 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+				390 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+				658 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+				659 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+				660 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+				1209 = {
+					controller = {
+						OR = { 
+							is_in_faction_with = EQS  
+							tag = EQS
+							is_in_faction_with = HIP  
+							tag = HIP
+						} 
+					}
+				}
+			}
+		}
+		available = {
+			381 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+			390 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+			658 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+			659 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+			660 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+			1209 = {
+				controller = {
+					OR = { 
+						is_in_faction_with = CHN  
+						tag = CHN
+						is_in_faction_with = JER  
+						tag = JER
+					} 
+				}
+			}
+		}
+		icon = GFX_decision_gre_paying_ifc_debt
+		is_good = no
+		days_mission_timeout = 30
+		complete_effect = {
+		}
+		timeout_effect = {
+			remove_ideas = EoF_north_integrated_economy
+			add_timed_idea = {
+				idea = EoF_failed_integrated_economy
+				days = 180
 			}
 		}
 	}
@@ -151,177 +492,253 @@ EoF_category = {
 			}
 		}
 	}
-	EoF_AI_EQC_decision = {
+	EoF_convoy_decision = {		
+		icon = SWE_set_navy_budget
+		days_re_enable = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy_1
+				amount = 1
+			}
+		}
+	}
+
+	# EoF_AI_NCH_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		NCH = {
+	# 			is_ai = yes
+	# 		}
+	# 		OR = {
+	# 			670 = { is_controlled_by = NCH }
+	# 			669 = { is_controlled_by = NCH }
+	# 			668 = { is_controlled_by = NCH }
+	# 			569 = { is_controlled_by = NCH }
+	# 			639 = { is_controlled_by = NCH }
+	# 			572 = { is_controlled_by = NCH }
+	# 			571 = { is_controlled_by = NCH }
+	# 			455 = { is_controlled_by = NCH }
+	# 			603 = { is_controlled_by = NCH }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		NCH = {
+	# 			every_owned_state = {
+	# 				add_core_of = NCH
+	# 			}
+	# 		}
+	# 		GRI = {
+	# 			annex_country = {
+	# 				target = NCH
+	# 				transfer_troops = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# EoF_AI_EQC_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		EQC = {
+	# 			is_ai = yes
+	# 		}
+	# 		OR = {
+	# 			208 = { is_controlled_by = EQC }
+	# 			390 = { is_controlled_by = EQC }
+	# 			381 = { is_controlled_by = EQC }
+	# 			658 = { is_controlled_by = EQC }
+	# 			659 = { is_controlled_by = EQC }
+	# 			660 = { is_controlled_by = EQC }
+	# 			360 = { is_controlled_by = EQC }
+	# 			361 = { is_controlled_by = EQC }
+	# 			362 = { is_controlled_by = EQC }
+	# 			363 = { is_controlled_by = EQC }
+	# 			364 = { is_controlled_by = EQC }
+	# 			365 = { is_controlled_by = EQC }
+	# 			675 = { is_controlled_by = EQC }
+	# 			676 = { is_controlled_by = EQC }
+	# 			379 = { is_controlled_by = EQC }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		EQC = {
+	# 			every_owned_state = {
+	# 				limit = {
+	# 					OR = {
+	# 						state = 208
+	# 						state = 390
+	# 						state = 381
+	# 						state = 658
+	# 						state = 659
+	# 						state = 660
+	# 						state = 360
+	# 						state = 361
+	# 						state = 362
+	# 						state = 364
+	# 						state = 365
+	# 						state = 675 
+	# 						state = 676
+	# 						state = 363
+	# 						state = 379
+	# 					}
+	# 				}
+	# 				if = {
+	# 					limit = {
+	# 						is_fully_controlled_by = EQC
+	# 					}
+	# 					transfer_state_to = EQS
+	# 				}
+	# 				EQS = {
+	# 					set_state_owner = PREV
+	# 				}
+	# 				add_core_of = EQS
+	# 				remove_core_of = EQC
+	# 			}
+	# 		}
+	# 		set_autonomy = {
+	# 			target = EQC
+	# 			autonomous_state = autonomy_integrated_puppet
+	# 		}
+	# 	}
+	# }
+	# EoF_player_EQC_decision = {
+	# 	icon = GFX_decision_eng_trade_unions_support
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		EQC = {
+	# 			is_ai = no
+	# 		}
+	# 		OR = {
+	# 			208 = { is_controlled_by = EQS }
+	# 			390 = { is_controlled_by = EQS }
+	# 			381 = { is_controlled_by = EQS }
+	# 			658 = { is_controlled_by = EQS }
+	# 			659 = { is_controlled_by = EQS }
+	# 			660 = { is_controlled_by = EQS }
+	# 			360 = { is_controlled_by = EQS }
+	# 			361 = { is_controlled_by = EQS }
+	# 			362 = { is_controlled_by = EQS }
+	# 			363 = { is_controlled_by = EQS }
+	# 			364 = { is_controlled_by = EQS }
+	# 			365 = { is_controlled_by = EQS }
+	# 			675 = { is_controlled_by = EQS }
+	# 			676 = { is_controlled_by = EQS }
+	# 			379 = { is_controlled_by = EQS }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_autonomy = {
+	# 			target = EQC
+	# 			autonomous_state = autonomy_dominion
+	# 		}
+	# 		every_owned_state = {
+	# 			limit = {
+	# 				OR = {
+	# 					state = 208
+	# 					state = 390
+	# 					state = 381
+	# 					state = 658
+	# 					state = 659
+	# 					state = 660
+	# 					state = 360
+	# 					state = 361
+	# 					state = 362
+	# 					state = 364
+	# 					state = 365
+	# 					state = 675
+	# 					state = 676
+	# 					state = 363
+	# 					state = 379
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					is_fully_controlled_by = EQS
+	# 				}
+	# 				transfer_state_to = EQC
+	# 			}
+	# 			EQC = {
+	# 				set_state_owner = PREV
+	# 			}
+	# 			add_core_of = EQC
+	# 			remove_core_of = EQS
+	# 		}
+	# 	}
+	# }
+	EoF_AI_NIM_decision = {
 		icon = GFX_decision_generic_break_treaty
 		allowed = {
-			original_tag = EQS
+			original_tag = RCT
 		}
 		visible = {
-			EQC = {
+			NIM = {
 				is_ai = yes
 			}
 			OR = {
-				208 = { is_controlled_by = EQC }
-				390 = { is_controlled_by = EQC }
-				381 = { is_controlled_by = EQC }
-				658 = { is_controlled_by = EQC }
-				659 = { is_controlled_by = EQC }
-				660 = { is_controlled_by = EQC }
-				360 = { is_controlled_by = EQC }
-				361 = { is_controlled_by = EQC }
-				362 = { is_controlled_by = EQC }
-				363 = { is_controlled_by = EQC }
-				364 = { is_controlled_by = EQC }
-				365 = { is_controlled_by = EQC }
-				675 = { is_controlled_by = EQC }
-				676 = { is_controlled_by = EQC }
-				379 = { is_controlled_by = EQC }
+				452 = { is_controlled_by = NIM }
+				587 = { is_controlled_by = NIM }
+				622 = { is_controlled_by = NIM }
+				645 = { is_controlled_by = NIM }
 			}
 		}
 		complete_effect = {
-			EQC = {
+			NIM = {
 				every_owned_state = {
-					limit = {
-						OR = {
-							state = 208
-							state = 390
-							state = 381
-							state = 658
-							state = 659
-							state = 660
-							state = 360
-							state = 361
-							state = 362
-							state = 364
-							state = 365
-							state = 675 
-							state = 676
-							state = 363
-							state = 379
-						}
-					}
-					if = {
-						limit = {
-							is_fully_controlled_by = EQC
-						}
-						transfer_state_to = EQS
-					}
-					EQS = {
-						set_state_owner = PREV
-					}
-					add_core_of = EQS
-					remove_core_of = EQC
+					add_core_of = RCT
 				}
 			}
-			set_autonomy = {
-				target = EQC
-				autonomous_state = autonomy_integrated_puppet
-			}
-		}
-	}
-	EoF_player_EQC_decision = {
-		icon = GFX_decision_eng_trade_unions_support
-		allowed = {
-			original_tag = EQS
-		}
-		visible = {
-			EQC = {
-				is_ai = no
-			}
-			OR = {
-				208 = { is_controlled_by = EQS }
-				390 = { is_controlled_by = EQS }
-				381 = { is_controlled_by = EQS }
-				658 = { is_controlled_by = EQS }
-				659 = { is_controlled_by = EQS }
-				660 = { is_controlled_by = EQS }
-				360 = { is_controlled_by = EQS }
-				361 = { is_controlled_by = EQS }
-				362 = { is_controlled_by = EQS }
-				363 = { is_controlled_by = EQS }
-				364 = { is_controlled_by = EQS }
-				365 = { is_controlled_by = EQS }
-				675 = { is_controlled_by = EQS }
-				676 = { is_controlled_by = EQS }
-				379 = { is_controlled_by = EQS }
-			}
-		}
-		complete_effect = {
-			set_autonomy = {
-				target = EQC
-				autonomous_state = autonomy_dominion
-			}
-			every_owned_state = {
-				limit = {
-					OR = {
-						state = 208
-						state = 390
-						state = 381
-						state = 658
-						state = 659
-						state = 660
-						state = 360
-						state = 361
-						state = 362
-						state = 364
-						state = 365
-						state = 675
-						state = 676
-						state = 363
-						state = 379
-					}
-				}
-				if = {
-					limit = {
-						is_fully_controlled_by = EQS
-					}
-					transfer_state_to = EQC
-				}
-				EQC = {
-					set_state_owner = PREV
-				}
-				add_core_of = EQC
-				remove_core_of = EQS
-			}
-		}
-	}
-	EoF_AI_OLE_decision = {
-		icon = GFX_decision_generic_break_treaty
-		allowed = {
-			original_tag = CHN
-		}
-		visible = {
-			OLE = {
-				is_ai = yes
-				is_subject_of = CHN
-				has_idea = EoF_OLE_deal
-			}
-		}
-		complete_effect = {
-			OLE = {
-				remove_ideas = EoF_OLE_deal
-				transfer_navy = {
-					target = CHN
+			RCT = {
+				annex_country = {
+					target = NIM
+					transfer_troops = yes
 				}
 			}
 		}
 	}
-	EoF_player_OLE_decision = {
-		icon = GFX_decision_eng_trade_unions_support
-		allowed = {
-			original_tag = CHN
-		}
-		visible = {
-			OLE = {
-				is_ai = no
-				is_subject_of = CHN
-				NOT = { has_idea = EoF_OLE_deal }
-			}
-		}
-		complete_effect = {
-			OLE = {
-				add_ideas = EoF_OLE_deal
-			}
-		}
-	}
+	# EoF_AI_OLE_decision = {
+	# 	icon = GFX_decision_generic_break_treaty
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		OLE = {
+	# 			is_ai = yes
+	# 			is_subject_of = CHN
+	# 			has_idea = EoF_OLE_deal
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		OLE = {
+	# 			remove_ideas = EoF_OLE_deal
+	# 			transfer_navy = {
+	# 				target = CHN
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# EoF_player_OLE_decision = {
+	# 	icon = GFX_decision_eng_trade_unions_support
+	# 	allowed = {
+	# 		original_tag = CHN
+	# 	}
+	# 	visible = {
+	# 		OLE = {
+	# 			is_ai = no
+	# 			is_subject_of = CHN
+	# 			NOT = { has_idea = EoF_OLE_deal }
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		OLE = {
+	# 			add_ideas = EoF_OLE_deal
+	# 		}
+	# 	}
+	# }
 }

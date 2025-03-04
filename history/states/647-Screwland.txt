@@ -11,8 +11,9 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = BAK
+		add_core_of = BAK
+		add_core_of = DMT
 
 		victory_points = { 4027 10 }
 
@@ -24,7 +25,7 @@ state={
 	}
 
 	resources={
-		steel = 10
-		crystals = 26
+		steel=100
+		crystals=260
 	}
 }

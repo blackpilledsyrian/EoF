@@ -1,336 +1,341 @@
 EoF_great_war_category_EQS = {
-	EoF_equestrian_army_decision = {
+	# EoF_equestrian_army_decision = {
+	# 	state_target = any_owned_state
+	# 	target_root_trigger = {
+	# 		has_completed_focus = EoF_all_equestrian_army
+	# 	}
+	# 	target_array = core_states
+	# 	target_trigger = {
+	# 		FROM = {
+	# 			impassable = no
+	# 			NOT = { has_state_flag = EoF_locals_conscripted }
+	# 		}
+	# 	}
+	# 	available = {
+	# 		has_equipment = {
+	# 			infantry_equipment > 5049
+	# 		}
+	# 		has_equipment = {
+	# 			support_equipment > 149
+	# 		}
+	# 		has_equipment = {
+	# 			artillery_equipment > 59
+	# 		}
+	# 		has_equipment = {
+	# 			anti_tank_equipment > 119
+	# 		}
+	# 		has_equipment = {
+	# 			anti_air_equipment > 99
+	# 		}
+	# 	}
+	# 	on_map_mode = map_only
+	# 	icon = GFX_decision_rifles
+	# 	cost = 10
+	# 	days_remove = 10
+	# 	complete_effect = {
+	# 		add_equipment_to_stockpile = {
+    # 				type = infantry_equipment
+	# 			amount = -5050
+	# 		}
+	# 		add_equipment_to_stockpile = {
+    # 				type = support_equipment
+	# 			amount = -150
+	# 		}
+	# 		add_equipment_to_stockpile = {
+    # 				type = artillery_equipment
+	# 			amount = -60
+	# 		}
+	# 		add_equipment_to_stockpile = {
+    # 				type = anti_tank_equipment
+	# 			amount = -120
+	# 		}
+	# 		add_equipment_to_stockpile = {
+    # 				type = anti_air_equipment
+	# 			amount = -100
+	# 		}
+	# 	}
+	# 	remove_effect = {
+	# 		FROM = {
+	# 			create_unit = {
+    # 					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
+    # 					owner = EQS
+	# 				allow_spawning_on_enemy_provs = no
+	# 			}
+	# 			create_unit = {
+    # 					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"					owner = EQS
+	# 				allow_spawning_on_enemy_provs = no
+	# 			}
+	# 			create_unit = {
+    # 					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
+    # 					owner = EQS
+	# 				allow_spawning_on_enemy_provs = no
+	# 			}
+	# 			create_unit = {
+    # 					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"					owner = EQS
+	# 				allow_spawning_on_enemy_provs = no
+	# 			}
+	# 			create_unit = {
+    # 					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
+    # 					owner = EQS
+	# 				allow_spawning_on_enemy_provs = no
+	# 			}
+	# 			set_state_flag = EoF_locals_conscripted
+	# 		}
+	# 	}
+	# }
+	# EoF_fallback_decision_1 = {
+	# 	icon = GFX_decision_generic_scorched_earth
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = EoF_losing
+	# 		NOT = {
+	# 			has_completed_focus = EoF_shire
+	# 		}
+	# 	}	
+	# 	complete_effect = {
+	# 		set_country_flag = EoF_fallback_1
+	# 		318 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		137 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		136 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		172 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		175 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		14 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		73 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		72 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		173 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		133 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		45 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		59 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		60 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		61 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		46 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 	}	
+	# }
+	# EoF_fallback_decision_2 = {
+	# 	icon = GFX_decision_generic_scorched_earth
+	# 	allowed = {
+	# 		original_tag = EQS
+	# 	}
+	# 	available = {
+	# 		has_completed_focus = EoF_shire
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = EoF_losing
+	# 		NOT = {
+	# 			has_completed_focus = EoF_hope
+	# 		}
+	# 	}
+	# 	complete_effect = {
+	# 		set_country_flag = EoF_fallback_2
+	# 		318 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		137 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		136 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		172 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		175 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		14 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		73 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		72 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		173 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		133 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		45 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		59 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		60 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		61 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		46 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		139 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		140 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		142 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		343 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		143 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		146 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		138 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		174 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		324 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		131 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		180 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		181 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		54 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		169 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}			
+	# 		170 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		171 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		132 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		126 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}
+	# 		129 = {
+	# 			add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
+	# 		}			
+	# 	}			
+	# }
+	EoF_operation_vegetarian_decision = {
+		icon = GFX_decision_changeling_skull
+		allowed = {
+			original_tag = EQS
+		}
+		visible = {
+			has_country_flag = EoF_operation_vegetarian_flag
+		}	
+		available = {
+			NOT = {
+				has_idea = EoF_operation_vegetarian_stockpile
+			}
+		}
+		fire_only_once = yes
+		complete_effect = {
+			country_event = EoF_great_war.10
+		}	
+	}
+	EoF_polyphony_decision = {
 		state_target = any_owned_state
 		target_root_trigger = {
-			has_completed_focus = EoF_all_equestrian_army
+			has_completed_focus = EoF_polyphony
 		}
 		target_array = core_states
 		target_trigger = {
 			FROM = {
 				impassable = no
-				NOT = { has_state_flag = EoF_locals_conscripted }
 			}
 		}
-		available = {
-			has_equipment = {
-				infantry_equipment > 5049
-			}
-			has_equipment = {
-				support_equipment > 149
-			}
-			has_equipment = {
-				artillery_equipment > 59
-			}
-			has_equipment = {
-				anti_tank_equipment > 119
-			}
-			has_equipment = {
-				anti_air_equipment > 99
+		visible = {
+			NOT = {
+				has_country_flag = EoF_nuke_used_flag
 			}
 		}
 		on_map_mode = map_only
-		icon = GFX_decision_rifles
-		cost = 10
-		days_remove = 10
-		complete_effect = {
-			add_equipment_to_stockpile = {
-    				type = infantry_equipment
-				amount = -5050
-			}
-			add_equipment_to_stockpile = {
-    				type = support_equipment
-				amount = -150
-			}
-			add_equipment_to_stockpile = {
-    				type = artillery_equipment
-				amount = -60
-			}
-			add_equipment_to_stockpile = {
-    				type = anti_tank_equipment
-				amount = -120
-			}
-			add_equipment_to_stockpile = {
-    				type = anti_air_equipment
-				amount = -100
-			}
-		}
-		remove_effect = {
-			FROM = {
-				create_unit = {
-    					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
-    					owner = EQS
-					allow_spawning_on_enemy_provs = no
-				}
-				create_unit = {
-    					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"					owner = EQS
-					allow_spawning_on_enemy_provs = no
-				}
-				create_unit = {
-    					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
-    					owner = EQS
-					allow_spawning_on_enemy_provs = no
-				}
-				create_unit = {
-    					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"					owner = EQS
-					allow_spawning_on_enemy_provs = no
-				}
-				create_unit = {
-    					division = "name = \"Equestrian Conscripts\" division_template = \"Equestrian Conscripts\" start_experience_factor = 0.3"
-    					owner = EQS
-					allow_spawning_on_enemy_provs = no
-				}
-				set_state_flag = EoF_locals_conscripted
-			}
-		}
-	}
-	EoF_fallback_decision_1 = {
-		icon = GFX_decision_generic_scorched_earth
-		allowed = {
-			original_tag = EQS
-		}
-		visible = {
-			has_completed_focus = EoF_losing
-			NOT = {
-				has_completed_focus = EoF_shire
-			}
-		}	
-		complete_effect = {
-			set_country_flag = EoF_fallback_1
-			318 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			137 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			136 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			172 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			175 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			14 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			73 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			72 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			173 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			133 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			45 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			59 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			60 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			61 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			46 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-		}	
-	}
-	EoF_fallback_decision_2 = {
-		icon = GFX_decision_generic_scorched_earth
-		allowed = {
-			original_tag = EQS
-		}
-		available = {
-			has_completed_focus = EoF_shire
-		}
-		visible = {
-			has_completed_focus = EoF_losing
-			NOT = {
-				has_completed_focus = EoF_hope
-			}
-		}
-		complete_effect = {
-			set_country_flag = EoF_fallback_2
-			318 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			137 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			136 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			172 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			175 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			14 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			73 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			72 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			173 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			133 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			45 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			59 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			60 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			61 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			46 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			139 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			140 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			142 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			343 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			143 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			146 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			138 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			174 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			324 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			131 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			180 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			181 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			54 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			169 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}			
-			170 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			171 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			132 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			126 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}
-			129 = {
-				add_dynamic_modifier = { modifier = EoF_EQS_fallback_terrain days = 35 } 
-			}			
-		}			
-	}
-}
-EoF_polyphony_category = {
-	EoF_polyphony_decision = {
-		icon = GFX_decision_category_generic_magic
-		allowed = {
-			original_tag = EQS
-		}
-		available = {
-			NOT = {
-				controls_state = 3
-			}
-		}
-		visible = {
-			has_completed_focus = EoF_polyphony
-		}
-		fire_only_once = yes
+		icon = GFX_decision_generic_magic
 		complete_effect = {
 			hidden_effect = {
-				launch_nuke = {
-					province = 6975
+				create_entity = {
+					entity = hwomd_entity
+					id = 404
+					x = 0
+					y = 0
+					z = 0
+					state = FROM
+					scale = 1.00
+					min_zoom = 1000.0
 				}
-				launch_nuke = {
-					province = 3764
+				create_entity = {
+					entity = elements_entity
+					id = 405
+					x = 4.75
+					y = 0.75
+					z = 1.75
+					state = FROM
+					scale = 0.25
 				}
-				launch_nuke = {
-					province = 1173
+				damage_units = {
+					state = FROM
+					damage = 0.9
+					ratio = yes
+					army = yes
 				}
-				launch_nuke = {
-					province = 3928
-				}
-				launch_nuke = {
-					province = 13058
-				}
-				launch_nuke = {
-					province = 9138
-				}
-				launch_nuke = {
-					province = 9182
-				}
-				launch_nuke = {
-					province = 179
-				}
-				launch_nuke = {
-					province = 911
-				}
-				launch_nuke = {
-					province = 11114
-				}
-				launch_nuke = {
-					province = 9218
-				}
-				launch_nuke = {
-					province = 156
-				}
-				launch_nuke = {
-					province = 9738
-				}
-				launch_nuke = {
-					province = 6788
-				}
-				launch_nuke = {
-					province = 3773
+				set_country_flag = EoF_nuke_used_flag
+				country_event = {
+					id = EoF_great_war.12
+					days = 10
 				}
 			}
 		}
@@ -345,7 +350,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 365
+		days_remove = 270
 		cost = 30
 		complete_effect = {
 			if = {
@@ -394,10 +399,10 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 365
+		days_remove = 270
 		cost = 5
 		modifier = {
-			research_speed_factor = -0.08
+			research_speed_factor = -0.075
 		}
 		complete_effect = {
 			if = {
@@ -446,7 +451,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 365
+		days_remove = 270
 		cost = 5
 		modifier = {
 			production_speed_buildings_factor = -0.1
@@ -498,7 +503,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 365
+		days_remove = 270
 		cost = 5
 		modifier = {
 			production_factory_max_efficiency_factor = -0.05
@@ -554,7 +559,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 365
+		days_remove = 270
 		cost = 30
 		complete_effect = {
 			if = {
@@ -563,7 +568,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_0
-					days = -80
+					days = -60
 				}
 			}
 			else_if = {
@@ -572,7 +577,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_1
-					days = -80
+					days = -60
 				}
 			}
 			else_if = {
@@ -581,7 +586,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_2
-					days = -80
+					days = -60
 				}
 			}
 			else_if = {
@@ -590,7 +595,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_3
-					days = -80
+					days = -60
 				}
 			}
 		}
@@ -606,8 +611,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 30
-		cost = 5
+		days_remove = 60
 		complete_effect = {
 			if = {
 				limit = {
@@ -615,7 +619,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_0
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -624,7 +628,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_1
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -633,7 +637,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_2
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -642,7 +646,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_3
-					days = -10
+					days = -30
 				}
 			}
 			random_owned_controlled_state = {
@@ -667,8 +671,7 @@ EoF_harmonic_war_industry_category = {
 		visible = {
 			has_completed_focus = EoF_prepare_wartime_industry
 		}
-		days_remove = 30
-		cost = 5
+		days_remove = 60
 		complete_effect = {
 			if = {
 				limit = {
@@ -676,7 +679,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_0
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -685,7 +688,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_1
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -694,7 +697,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_2
-					days = -10
+					days = -30
 				}
 			}
 			else_if = {
@@ -703,7 +706,7 @@ EoF_harmonic_war_industry_category = {
 				}
 				modify_timed_idea = {
 					idea = EoF_EQS_industry_plan_3
-					days = -10
+					days = -30
 				}
 			}
 			random_owned_controlled_state = {

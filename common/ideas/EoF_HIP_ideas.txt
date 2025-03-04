@@ -43,6 +43,16 @@ ideas = {
 				production_speed_buildings_factor = 0.5 
 			}		
 		}
+		EoF_HIP_primo_victoria_finaller = {
+			removal_cost = -1
+			picture = generic_victors_of_ww1
+			modifier = {
+				production_factory_max_efficiency_factor = 0.5
+				industrial_capacity_dockyard = 2
+				industrial_capacity_factory = 1
+				production_speed_buildings_factor = 2 
+			}		
+		}
 		EoF_HIP_armed_citizens = {
 			removal_cost = -1
 			picture = chi_war_of_resistance3

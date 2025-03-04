@@ -17,8 +17,8 @@ state={
 
 	}
 	resources = {
-	steel = 8
-	chromium = 14
+	steel=80
+	chromium=140
 	}
 
 	provinces={

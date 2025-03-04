@@ -15,12 +15,12 @@ state = {
 		add_core_of = FAT
 		add_claim_by = FAT
 
-		victory_points = { 13235 1 }
+		victory_points = { 7853 1 }
 	}
 
 	resources = {
-		steel = 7
-		aluminium = 18
-		crystals = 10
+		steel=70
+		aluminium=180
+		crystals=100
 	}
 }

@@ -11,19 +11,22 @@ state={
 	manpower=937709
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = RCT
+		add_core_of = RCT
 
 		victory_points = { 10075 10 }
 		victory_points = { 1383 2 }
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
+			infrastructure = 3
+			industrial_complex = 3
+			12392 = {
+				dam = 1
+			}
 		}
 	}
 
 	resources={
-		chromium=11
+		chromium=110
 	}
 }

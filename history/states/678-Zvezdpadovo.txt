@@ -20,10 +20,13 @@ state={
 		buildings = {
 			infrastructure = 1
 			dockyard = 1
+			3069 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	resources={
-		steel=3.000
+		steel=30.000
 	}
 }

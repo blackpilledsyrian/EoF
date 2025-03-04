@@ -22,7 +22,8 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_mechanical
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2
@@ -32,7 +33,7 @@ sub_units = {
 		# hard_attack = 4.0
 		
 		#Size Definitions
-		max_strength = 30
+		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1200
@@ -47,6 +48,9 @@ sub_units = {
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
 			amphibious_mechanized_equipment
+			infantry_equipment
+			magical_equipment
+			support_equipment
 		}
 
 		# this is what moves us and sets speed

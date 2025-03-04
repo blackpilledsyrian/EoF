@@ -3,11 +3,8 @@ state={
 	name="STATE_839"
 	state_category = town
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 2
 		}

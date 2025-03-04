@@ -22,12 +22,20 @@ state={
 			arms_factory  = 3
 			air_base = 8
 			anti_air_building = 3
+
+			6507 = {
+				land_facility = 1
+			}
+			
+			9433 = {
+				dam = 1
+			}
 		}
 	}
 
 	resources = {
-		steel = 15
-		aluminium = 5
-		tungsten = 3
+		steel=150
+		aluminium=50
+		tungsten=30
 	}
 }

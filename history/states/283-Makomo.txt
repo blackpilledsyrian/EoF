@@ -3,13 +3,12 @@ state={
 	id=283
 	name="STATE_283"
 	resources={
-		crystals=18.000
-		tungsten=4.000
+		crystals=180.000
+		tungsten=40.000
 	}
 
 	history={
 		owner = GRF
-		add_core_of = GRF
 		add_core_of = GRF
 		buildings = {
 			infrastructure = 1

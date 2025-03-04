@@ -23,6 +23,6 @@ state={
 		}
 	}
 	resources={
-		chromium=14.000
+		chromium=140.000
 	}
 }

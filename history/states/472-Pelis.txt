@@ -14,13 +14,14 @@ state={
 		owner = JER
 		add_core_of = JER
 
-		victory_points = { 81 10 }
+		victory_points = { 81 15 }
 		victory_points = { 13129 3 }
 
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
+			dockyard = 2
 
 			81 = {
 				naval_base = 1

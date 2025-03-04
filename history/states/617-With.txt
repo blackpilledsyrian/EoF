@@ -7,20 +7,24 @@ state={
 	}
 
 	manpower=1850469
-	state_category=city
+	state_category=large_city
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WIT
+		add_core_of = WIT
 
 		victory_points = { 7374 25 }
 
 		buildings = {
-			infrastructure = 2
-			industrial_complex = 3
+			infrastructure = 4
+			industrial_complex = 5
 			arms_factory = 2
 			air_base = 1
+			7374 = {
+				landmark_great_library = 1
+				magical_facility = 1
+			}
 		}
 	}
 }

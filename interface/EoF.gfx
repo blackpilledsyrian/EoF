@@ -22,6 +22,14 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"
 	}
 	spriteType = {
+		name = "GFX_trait_EoF_expanded_command_trait"
+		texturefile = "gfx/interface/traits/personal/trait_militias_officer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_EoF_reserve_fleet_trait"
+		texturefile = "gfx/interface/traits/personal/trait_old_guard.dds"
+	}
+	spriteType = {
 		name = "GFX_ability_artillery_bombardment"
 		texturefile = "gfx/interface/abilitylist/ability_artillery_bombardment.dds"
 	}
@@ -53,6 +61,14 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EoF_cat_eq_all_anti_tank"
 		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_tank.dds"
+	}
+	spriteType = {
+		name = "GFX_EoF_cat_eq_all_anti_air"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_anti_air.dds"
+	}
+	spriteType = {
+		name = "GFX_EoF_cat_eq_all_mechanized"
+		texturefile = "gfx/interface/military_industrial_organization/department_icons/generic_mio_department_icon_mechanized.dds"
 	}
 	spriteType = {
 		name = "GFX_goal_pawns"
@@ -89,8 +105,72 @@ spriteTypes = {
 		}
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_goal_generic_naval_fleet_in_being"
+		texturefile = "gfx/interface/goals/goal_generic_naval_fleet_in_being.dds"
+	}
+	spriteType = {
+		name = "GFX_goal_generic_naval_fleet_in_being_shine"
+		texturefile = "gfx/interface/goals/goal_generic_naval_fleet_in_being.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_generic_naval_fleet_in_being.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = -90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+
+		animation = {
+			animationmaskfile = "gfx/interface/goals/goal_generic_naval_fleet_in_being.dds"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds"
+			animationrotation = 90.0
+			animationlooping = no
+			animationtime = 0.75
+			animationdelay = 0
+			animationblendmode = "add"
+			animationtype = "scrolling"
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 }
+		}
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_fleet_limit_topbar"
+		texturefile = "gfx/interface/topbar/fleet_limit_topbar.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_EoF_rivfed_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_EoF_rivco_member_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_autonomy_EoF_enforced_ally_icon"
+		textureFile = "gfx/interface/autonomy/autonomy_supervised_state.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_federation_advisor"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_slot_federation_command"
+		textureFile = "gfx/interface/officer_corp/select_advisor.dds"
+	}
 
 	###Tank Modules###
+	spriteType = {
+		name = "GFX_EMI_advanced_light_tank_turret"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_advanced_light_turret.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_advanced_medium_tank_turret"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_advanced_medium_turret.dds"
@@ -112,13 +192,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_high_velocity_cannon"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_1.dds"
+		name = "GFX_EMI_tank_medium_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_EMI_tank_light_high_velocity_cannon_2"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_high_velocity_cannon_2.dds"
+		name = "GFX_EMI_tank_small_high_velocity_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_high_velocity_cannon_2"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_high_velocity_cannon_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_high_velocity_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -137,6 +232,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_medium_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_high_velocity_cannon_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_heavy_high_velocity_cannon"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_1.dds"
 		legacy_lazy_load = no
@@ -149,6 +249,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_tank_heavy_high_velocity_cannon_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_high_velocity_cannon_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_high_velocity_cannon_4.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -187,11 +292,35 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer_3"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer_3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_small_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_small_howitzer_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_tank_medium_howitzer_3"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_3.dds"
 		legacy_lazy_load = no
 	}
-
+	spriteType = {
+		name = "GFX_EMI_tank_medium_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_howitzer_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_howitzer_4"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_howitzer_4.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_tank_advanced_small_main_armament"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_small_main_armament.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_tank_advanced_medium_main_armament"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/EMI_tank_medium_main_armament.dds"
@@ -303,6 +432,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_EMI_pike_nose_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_pike_armor.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_EMI_special_ammunition"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_apcr.dds"
 		legacy_lazy_load = no
@@ -335,6 +469,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_fire_suppression_system"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/fire_suppression_system.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_open_top_design"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/open_top.dds"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -372,14 +511,43 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/rocket.dds"
 		legacy_lazy_load = no
 	}
+	###Plane Modules###
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_0"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/parasite_fighter3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_parasite_fighter_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/jet_parasite_fighter.dds"
+		legacy_lazy_load = no
+	}
 	###Technologies###
 	spriteType = {
 		name = "GFX_technology_artillery_folder_small_branch_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
 	}
 	SpriteType = {
+		name = "GFX_early_super_heavy_tank_chassis_medium"
+		textureFile = "gfx/interface/technologies/generic_super_heavy_tank_chassis.dds"
+	}
+	SpriteType = {
 		name = "GFX_tank_super_heavy_cannon_medium"
 		textureFile = "gfx/interface/technologies/super_heavy_cannon.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_light_tank_turret_medium"
+		textureFile = "gfx/interface/technologies/advanced_light_turret.dds"
 	}
 	SpriteType = {
 		name = "GFX_advanced_medium_tank_turret_medium"
@@ -422,8 +590,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/artillery4.dds"
 	}
 	SpriteType = {
+		name = "GFX_heavyartillery9_medium"
+		textureFile = "gfx/interface/technologies/heavy_artillery_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_fieldgun0_medium"
+		textureFile = "gfx/interface/technologies/antitank1.dds"
+	}
+	SpriteType = {
 		name = "GFX_fieldgun1_medium"
 		textureFile = "gfx/interface/technologies/antitank1.dds"
+	}
+	SpriteType = {
+		name = "GFX_antitank0_medium"
+		textureFile = "gfx/interface/technologies/antitank2.dds"
 	}
 	SpriteType = {
 		name = "GFX_heavyantitank1_medium"
@@ -440,6 +620,50 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_heavyantitank4_medium"
 		textureFile = "gfx/interface/technologies/heavy_AT_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair1_medium"
+		textureFile = "gfx/interface/technologies/heavy_AA_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair2_medium"
+		textureFile = "gfx/interface/technologies/antiair1.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair3_medium"
+		textureFile = "gfx/interface/technologies/antiair2.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair4_medium"
+		textureFile = "gfx/interface/technologies/heavy_AA_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair5_medium"
+		textureFile = "gfx/interface/technologies/antiair3.dds"
+	}
+	SpriteType = {
+		name = "GFX_heavyantiair6_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	SpriteType = {
+		name = "GFX_antiair6_medium"
+		textureFile = "gfx/interface/technologies/antiair4.dds"
+	}
+	SpriteType = {
+		name = "GFX_artillery0_medium"
+		textureFile = "gfx/interface/technologies/artillery1.dds"
+	}
+	SpriteType = {
+		name = "GFX_rocket_artillery5_medium"
+		textureFile = "gfx/interface/technologies/rocket_artillery4.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_mothership_airframe_medium"
+		texturefile = "gfx/interface/technologies/generic_mothership.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_mothership_airframe_medium"
+		texturefile = "gfx/interface/technologies/generic_mothership.dds"
 	}
 	SpriteType = {
 		name = "GFX_gun_tech_1_medium"
@@ -474,12 +698,32 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/nsb_optics_tech_4.dds"
 	}
 	SpriteType = {
+		name = "GFX_at_cannon_1_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_cannon_2_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_cannon_3_medium"
+		textureFile = "gfx/interface/technologies/at_cannon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_at_rocket_1_medium"
+		textureFile = "gfx/interface/technologies/at_rocket_1.dds"
+	}
+	SpriteType = {
 		name = "GFX_basic_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_1.dds"
 	}
 	SpriteType = {
 		name = "GFX_improved_assault_weapons_medium"
 		texturefile = "gfx/interface/technologies/assault_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_tech_medium_tank_recon_medium"
+		texturefile = "gfx/interface/technologies/tech_medium_tank_recon.dds"
 	}
 	SpriteType = {
 		name = "GFX_tech_headquarters_medium"
@@ -525,6 +769,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EoF_fire"
 		texturefile = "gfx/event_pictures/EoF_fire.dds"
+	}
+	spriteType = {
+		name = "GFX_EoF_kemerkai_event"
+		texturefile = "gfx/event_pictures/EoF_kemerkai_event.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_category_picture_EoF_academy"
@@ -624,6 +872,54 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_unit_mech_heavy_anti_tank_brigade_icon_small"
 		texturefile = "gfx/texticons/unit_mech_heavy_anti_tank_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_heavy_anti_air_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_heavy_anti_air_icon_small"
+		texturefile = "gfx/texticons/support_heavy_anti_air_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_mech_heavy_aa_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mech_heavy_aa_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_mech_heavy_anti_air_brigade_icon_small"
+		texturefile = "gfx/texticons/unit_mech_heavy_anti_air_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
@@ -728,6 +1024,65 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2
 	}
+	spriteType = {
+		name = "GFX_unit_armored_car_support_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/support_unit_armored_car_support_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_armored_car_support_icon_small"
+		texturefile = "gfx/texticons/support_armored_car_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_at_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_at_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_at_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_at_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_at_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_at_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_spg_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_spg_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_spg_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spg_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_spg_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_spg_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aa_mechanized_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_aa_mechanized_icon.dds" 
+		noOfFrames = 2
+	}
+	spriteType = { 
+		name = "GFX_unit_aa_mechanized_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_aa_mechanized_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_unit_aa_mechanized_icon_small"
+		texturefile = "gfx/texticons/unit_aa_mechanized_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
 	###Ideas###
 	spriteType = {
 		name = "GFX_idea_sunset_conscription"
@@ -742,8 +1097,69 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/kemerkai.dds"
 	}
 	spriteType = {
+		name = "GFX_idea_EoF_duchess_groverina"
+		texturefile = "gfx/interface/ideas/advisors/EoF_duchess_groverina.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EoF_bronislav_zashchitnikov"
+		texturefile = "gfx/interface/ideas/advisors/EoF_bronislav_zashchitnikov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EoF_halberd_spear"
+		texturefile = "gfx/interface/ideas/advisors/EoF_halberd_spear.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_EoF_prawn"
+		texturefile = "gfx/interface/ideas/advisors/EoF_prawn.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_1"
+		texturefile = "gfx/interface/ideas/idea_procurement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_2"
+		texturefile = "gfx/interface/ideas/idea_procurement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_3"
+		texturefile = "gfx/interface/ideas/idea_procurement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_4"
+		texturefile = "gfx/interface/ideas/idea_procurement_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_procurement_5"
+		texturefile = "gfx/interface/ideas/idea_procurement_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_1"
+		texturefile = "gfx/interface/ideas/idea_professionalism_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_2"
+		texturefile = "gfx/interface/ideas/idea_professionalism_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_3"
+		texturefile = "gfx/interface/ideas/idea_professionalism_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_4"
+		texturefile = "gfx/interface/ideas/idea_professionalism_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_professionalism_5"
+		texturefile = "gfx/interface/ideas/idea_professionalism_5.dds"
+	}
+	spriteType = {
 		name = "GFX_idea_EQS_ember_spark"
 		texturefile = "gfx/interface/ideas/Advisors/EQS_ember_spark.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_empty_slot"
+		texturefile = "gfx/interface/ideas/idea_slot_political_advisor.dds"
 	}
 	
 	### Advisors ###
@@ -755,5 +1171,73 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_orb_of_chital_event"
 		texturefile = "gfx/event_pictures/GRF_hope_master.dds"
+	}
+	spriteType = {
+		name = "GFX_advisor_principal_cinch"
+		texturefile = "gfx/interface/ideas/advisors/principal_cinch_small.tga"
+	}
+
+
+	### Texticons ###
+	spriteType = {
+		name = "GFX_unit_category_front_line_armor"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_front_line_armor_icon_small"
+		textureFile = "gfx/texticons/unit_category_all_armor_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_td"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_at_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_td_icon_small"
+		texturefile = "gfx/texticons/unit_category_td_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_spg"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_artillery_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_spg_icon_small"
+		texturefile = "gfx/texticons/unit_category_spg_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_spaa"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_antiair_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_spaa_icon_small"
+		texturefile = "gfx/texticons/unit_category_spaa_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_aa_icon_small"
+		texturefile = "gfx/texticons/unit_category_all_aa_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_at_icon_small"
+		texturefile = "gfx/texticons/unit_category_all_at_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_motmech_artillery"
+		textureFile = "gfx/interface/counters/divisions_large/unit_mot_art_icon.dds"
+		noOfFrames = 2	
+	}
+	spriteType = {
+		name = "GFX_unit_category_all_motmech_artillery_icon_small"
+		texturefile = "gfx/texticons/unit_mot_artillery_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
 	}
 }

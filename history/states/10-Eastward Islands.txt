@@ -16,6 +16,6 @@ state={
 	}
 
 	resources = {
-		oil = 10
+		oil=100
 	}
 }

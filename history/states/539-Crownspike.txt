@@ -32,7 +32,7 @@ state={
 	}
 
 	resources={
-		chromium=10
-		crystals=15
+		chromium=100
+		crystals=150
 	}
 }

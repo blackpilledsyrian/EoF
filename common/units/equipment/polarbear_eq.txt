@@ -1,0 +1,63 @@
+equipments = {
+
+	polar_bear_equipment = {
+		year = 1
+
+		is_archetype = yes
+		picture = archetype_motorized_equipment
+		is_buildable = no
+		type = infantry
+		group_by = archetype
+
+		interface_category = interface_category_land
+		
+		active = yes
+
+		reliability = 0.8
+		hardness = 0.4
+		armor_value = 12
+		breakthrough = 2
+		defense = 1
+		ap_attack = 3
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 6
+		resources = {
+			steel = 20
+		}
+	}
+
+	polar_bear_equipment_0 = {
+		year = 800
+
+		archetype = polar_bear_equipment
+		priority = 30
+
+		
+	}
+	polar_bear_equipment_1 = {
+		year = 1007
+		archetype = polar_bear_equipment
+		parent = polar_bear_equipment_0
+		
+		
+		reliability = 0.8
+		hardness = 0.4
+		armor_value = 20
+		breakthrough = 4
+		defense = 2
+		ap_attack = 5
+
+		#Space taken in convoy
+		lend_lease_cost = 5
+
+		build_cost_ic = 9
+		resources = {
+			steel = 20
+			tungsten = 10
+		}
+	}
+
+}

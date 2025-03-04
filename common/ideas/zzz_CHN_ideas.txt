@@ -269,7 +269,7 @@ ideas = {
 			}
 
 			traits = { heavy_aircraft_manufacturer }
-			picture = CHN_carapace
+			picture = generic_air_manufacturer_2
 			ai_will_do = {
 				factor = 1
 			}
@@ -358,6 +358,7 @@ ideas = {
 				war_support_factor = 0.05
 				stability_factor = 0.035
 				political_power_gain = -0.2
+				lend_lease_tension = -0.1
 			}
 		}
 		canterlot_defeat = {
@@ -381,6 +382,7 @@ ideas = {
 				ai_join_ally_desire_factor = -40
 				war_support_factor = 0.1
 				stability_factor = 0.035
+				lend_lease_tension = -0.2
 			}
 		}
 		canterlot_victory = {
@@ -403,6 +405,7 @@ ideas = {
 				stability_factor = 0.1
 				war_support_factor = 0.1
 				political_power_gain = 0.1
+				lend_lease_tension = -0.2
 			}
 		}
 		canterlot_defeat_but_for_friends = {
@@ -425,6 +428,7 @@ ideas = {
 				required_garrison_factor = -0.05
 				war_support_factor = 0.1
 				stability_factor = 0.035
+				lend_lease_tension = -0.2
 			}
 		}
 		political_divisions = {
@@ -492,6 +496,7 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.15
 				production_speed_buildings_factor = 0.05
+				global_building_slots_factor = 0.05
 			}
 		}
 		newhives2 = {
@@ -505,7 +510,8 @@ ideas = {
 			modifier = {
 				MONTHLY_POPULATION = 0.25
 				production_speed_buildings_factor = 0.075
-				industrial_capacity_factory = 0.05
+				industrial_capacity_factory = 0.025
+				global_building_slots_factor = 0.05
 			}
 		}
 		newhives3 = {
@@ -516,11 +522,12 @@ ideas = {
 			removal_cost = -1
 			picture = CHN_new_hives_3
 			modifier = {
-				MONTHLY_POPULATION = 0.25
+				MONTHLY_POPULATION = 0.35
 				production_speed_buildings_factor = 0.075
 				industrial_capacity_factory = 0.05
-				global_building_slots_factor = 0.1
+				global_building_slots_factor = 0.15
 				industry_air_damage_factor = 0.1
+				
 			}
 		}
 		continous_war_plan_CHN = {
@@ -543,7 +550,7 @@ ideas = {
 				communism_drift = 0.01
 				industry_repair_factor = 0.1
 				industry_free_repair_factor = 0.1
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.1
 			}
 		}
@@ -665,6 +672,7 @@ ideas = {
 				experience_gain_army = 0.02
 				experience_gain_navy = 0.02
 				experience_gain_air = 0.02
+				training_time_factor = -0.1
 			}
 		}
 		CHN_army_griffon_type = {
@@ -941,7 +949,7 @@ ideas = {
 			removal_cost = -1
 			picture = gre_schachtplan
 			modifier = {
-				consumer_goods_factor = -0.1
+				consumer_goods_factor = -0.2
 				production_speed_buildings_factor = 0.25
 			}
 		}
@@ -1200,7 +1208,8 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				consumer_goods_factor = -0.02
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.1
 				non_core_manpower = -0.01
 			}
 		}
@@ -1248,6 +1257,21 @@ ideas = {
 				army_attack_factor = 0.05
 			}
 		}
+		CHN_steel_chitin_plan = {
+			allowed = {
+				always = no
+			}
+			picture = CHN_plan_east_prep
+			removal_cost = -1
+			modifier = {
+				dig_in_speed_factor = 0.2
+				max_dig_in = 3.0
+				army_defence_factor = 0.15
+				supply_consumption_factor = -0.05
+				industry_free_repair_factor = 0.25
+				ai_focus_defense_factor = 0.75		#because Chryssy is 50% and offensive advisor is 65%, so its just a 10%
+			}
+		}
 		CHN_AI_stronger_plan_east_prep = {
 			allowed = {
 				always = no
@@ -1257,12 +1281,15 @@ ideas = {
 			modifier = {
 				planning_speed = 0.1
 				max_planning = 0.2
-				supply_consumption_factor = -0.15
-				army_speed_factor = 0.05
-				army_attack_factor = 0.15
+				supply_consumption_factor = -0.25
+				army_speed_factor = 0.1
+				army_attack_factor = 0.2
 				ground_attack_factor = 0.1
-				org_loss_when_moving = -0.3
+				supply_node_range = 0.25
+				org_loss_when_moving = -0.15
 				industry_free_repair_factor = -0.25
+				experience_gain_army_unit = 0.1
+				experience_loss_factor = -0.2
 			}
 		}
 		CHN_AI_steel_chitin_plan = {
@@ -1272,10 +1299,12 @@ ideas = {
 			picture = CHN_plan_east_prep
 			removal_cost = -1
 			modifier = {
-				dig_in_speed_factor = 0.15
-				max_dig_in = 5
-				army_defence_factor = 0.15
+				dig_in_speed_factor = 0.35
+				max_dig_in = 6
+				army_defence_factor = 0.25
+				supply_consumption_factor = -0.2
 				industry_free_repair_factor = 0.25
+				ai_focus_defense_factor = 0.75		#because Chryssy is 50% and offensive advisor is 65%, so its just a 10%
 			}
 		}
 		CHN_queens_tower_idea = {
@@ -1288,7 +1317,7 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.025
 				production_speed_industrial_complex_factor = 0.025
-				army_core_defence_factor = 0.025
+				army_core_defence_factor = 0.05
 			}
 		}
     

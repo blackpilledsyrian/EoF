@@ -3,12 +3,8 @@ state={
 	name="STATE_872"
 	state_category = large_town
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 2
 			arms_factory = 1
@@ -19,8 +15,8 @@ state={
 		victory_points = { 15367 10 }
 	}
 	resources = {
-		steel = 2
-		oil = 10
+		steel=20
+		oil=100
 	}
 	provinces={
 		13343 15359 15360 15361 15362 15363 15364 15365 15366 15367 15368 15369 15370 15371 15372 

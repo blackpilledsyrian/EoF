@@ -3,8 +3,8 @@ state={
 	id=961
 	name="STATE_961"
 	resources={
-		steel=6.000
-		crystals=12.000
+		steel=60.000
+		crystals=120.000
 	}
 
 	history={
@@ -21,7 +21,7 @@ state={
 			15338 3
 		}
 		victory_points = {
-			14653 15
+			14653 10
 		}
 	}
 

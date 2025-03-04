@@ -18,8 +18,8 @@ state={
 	}
 
 	resources={
-		steel=6
-		aluminium=18
-		crystals=12
+		steel=60
+		aluminium=180
+		crystals=120
 	}
 }

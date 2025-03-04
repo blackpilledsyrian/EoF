@@ -35,6 +35,6 @@ state={
 	}
 
 	resources={
-		rubber=23
+		rubber=230
 	}
 }

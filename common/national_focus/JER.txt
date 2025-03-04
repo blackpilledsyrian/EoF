@@ -129,7 +129,7 @@ focus_tree = {
 		id = JER_state_of_aquileia
 		icon = GFX_goal_JER_state_of_aquileia
 		mutually_exclusive = { focus = JER_fight_for_freedom }
-		x = 4
+		x = 3
 		y = 0
 		cost = 4.40
 		ai_will_do = {
@@ -1110,7 +1110,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_integrate_the_loyal
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -1133,7 +1133,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_old_glories
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 11
 		}
@@ -1297,7 +1297,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_old_glories
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 11
 		}
@@ -1430,7 +1430,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_reclaim_northwest
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -1894,7 +1894,7 @@ focus_tree = {
 		id = JER_fight_for_freedom
 		icon = GFX_goal_JER_republicanism2
 		mutually_exclusive = { focus = JER_state_of_aquileia }
-		x = 15
+		x = 14
 		y = 0
 		offset = {
 			x = -10
@@ -1952,6 +1952,11 @@ focus_tree = {
 			}
 			hidden_effect = {
 			    set_country_flag = JER_fight_for_freedom_flag
+				set_country_flag = hide_surpress_fascism
+				set_country_flag = hide_surpress_democratic
+				set_country_flag = hide_surpress_communism
+				set_country_flag = hide_surpress_neutral
+				set_country_flag = hide_censor_press
 				# For AI strategy plans
 				random_list = {
 					1 = {
@@ -1974,6 +1979,10 @@ focus_tree = {
 			add_to_array = { JER_revolution_countries = JEB }
 			add_to_array = { JER_revolution_countries = JRR }
 			set_variable = { JERrev_selected_country = JEB }
+			add_named_threat = {
+				threat = 5
+				name = EoF_JER_civil_war_tension
+			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
@@ -1987,6 +1996,9 @@ focus_tree = {
 		        has_global_flag = JER_revolution_begun
 				has_global_flag = JER_revolution_ended_2
 			}
+		}
+		allow_branch = {
+			always = no
 		}
 		x = -2
 		y = 1
@@ -2132,10 +2144,13 @@ focus_tree = {
 				has_global_flag = JER_revolution_ended_2
 			}
 		}
+		allow_branch = {
+			always = no
+		}
 		x = 0
 		y = 1
 		relative_position_id = JER_fight_for_freedom
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2163,7 +2178,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_infiltrate_aquila
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2215,7 +2230,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_smuggle_the_weapons
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2262,7 +2277,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_infiltrate_aquila
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2309,7 +2324,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_ties_in_MPA
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2358,7 +2373,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_prepare_the_diaspora
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2406,7 +2421,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_infiltrate_the_palace
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2455,7 +2470,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_infiltrate_the_palace
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -2479,6 +2494,9 @@ focus_tree = {
 		        has_global_flag = JER_revolution_begun
 				has_global_flag = JER_revolution_ended_2
 			}
+		}
+		allow_branch = {
+			always = no
 		}
 		x = 2
 		y = 1
@@ -2617,8 +2635,7 @@ focus_tree = {
 	shared_focus = {
 		id = JER_the_triumph
 		icon = GFX_goal_JER_the_triumph
-		prerequisite = { focus = JER_stoke_the_fires }
-		prerequisite = { focus = JER_convince_the_officers }
+		prerequisite = { focus = JER_fight_for_freedom }
 		available = {
 			has_global_flag = JER_revolution_ended_2
 		}
@@ -2770,9 +2787,9 @@ focus_tree = {
 				}
 		    }
 	    }
-		x = 1
+		x = 0
 		y = 1
-		relative_position_id = JER_convince_the_officers
+		relative_position_id = JER_fight_for_freedom
 		cost = 7.20
 		ai_will_do = {
 			factor = 20
@@ -2912,7 +2929,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_PAT_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -2960,7 +2977,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_PAT_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3015,7 +3032,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_attract_FJA_members
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3089,7 +3106,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_FJA_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3159,7 +3176,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_mend_the_divides
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3226,7 +3243,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_mend_the_divides
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3290,7 +3307,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_FJA_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 20
 		}
@@ -3300,7 +3317,7 @@ focus_tree = {
 			hidden_effect = {
 			    country_event = {
 				    id = aquileia.114
-					days = 140
+					days = 70
 				}
 		    }
 		}
@@ -3318,7 +3335,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_MPA_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3350,7 +3367,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_educate_the_populace
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3378,7 +3395,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_republican_national_academy
-		cost = 5.80
+		cost = 1
 		ai_will_do = {
 			factor = 12
 		}
@@ -3438,7 +3455,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_MPA_victory
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 14
 		}
@@ -3481,7 +3498,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_wrangle_the_party
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3539,7 +3556,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_wrangle_the_party
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3599,7 +3616,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_national_party
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3656,7 +3673,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_national_party
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3711,7 +3728,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_poach_support
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 11
 		}
@@ -3777,7 +3794,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_union_representation_act
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 11
 		}
@@ -3852,7 +3869,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_tax_policy_revisions
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3927,7 +3944,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_repatriation_act
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -3999,7 +4016,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_reform_the_national_bank_of_aquileia
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4075,10 +4092,54 @@ focus_tree = {
 				}
 		    }
 	    }
+		bypass = {
+			AET = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			HEL = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			POM = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			FLO = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			AVI = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			ERI = {
+				OR = {
+					exists = no
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
 		x = 0
 		y = 1
 		relative_position_id = JER_social_security_for_all_aquileians
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 100
 		}
@@ -4229,7 +4290,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = JER_unite_all_of_aquileia
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4261,7 +4322,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = JER_unite_all_of_aquileia
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4293,7 +4354,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JER_unite_all_of_aquileia
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4325,7 +4386,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = JER_unite_all_of_aquileia
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4364,7 +4425,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_the_shining_star_of_socialism
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4443,7 +4504,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_bring_the_unions_into_politics
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4509,7 +4570,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_bring_the_unions_into_politics
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4578,7 +4639,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_civil_nationalism
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4649,7 +4710,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_the_shining_star_of_socialism
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4727,7 +4788,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_invest_in_the_people
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4797,7 +4858,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_aquileia_reclaimed
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4876,7 +4937,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_anti_monopoly_laws
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -4931,9 +4992,6 @@ focus_tree = {
 		prerequisite = {
 			focus = JER_anti_monopoly_laws
 		}
-		prerequisite = {
-			focus = JER_integrate_the_borderlands
-		}
 		available = {
 		    custom_trigger_tooltip = {
 			    tooltip = JER_reps_200_tp
@@ -4945,7 +5003,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_anti_monopoly_laws
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5014,7 +5072,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_the_republican_gednermerie
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5076,10 +5134,13 @@ focus_tree = {
 			focus = JER_patriotic_fervour
 			focus = JER_the_dream_aint_dead
 		}
+		allow_branch = {
+			always = no
+		}
 		x = 2
 		y = 1
 		relative_position_id = JER_aquileia_reclaimed
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 15
 		}
@@ -5172,7 +5233,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_patriotic_fervour
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5238,9 +5299,6 @@ focus_tree = {
 		id = JER_aquileiafication_campaign
 		icon = GFX_goal_JER_aquileiafication_campaign
 		prerequisite = {
-			focus = JER_integrate_the_borderlands
-		}
-		prerequisite = {
 			focus = JER_establish_state_unions
 		}
 		available = {
@@ -5254,7 +5312,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_establish_state_unions
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5320,7 +5378,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_establish_state_unions
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5392,7 +5450,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_aquileiafication_campaign
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5469,7 +5527,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JER_patriotic_fervour
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5559,7 +5617,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_the_dream_aint_dead
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5638,7 +5696,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_support_military_industrial_complex
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5704,7 +5762,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_support_military_industrial_complex
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5776,7 +5834,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_griffonian_citizenship_act
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5845,7 +5903,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_army_expansion_act
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -5954,7 +6012,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_the_tarrin_question
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -6051,16 +6109,10 @@ focus_tree = {
 			focus = JER_limit_presidential_executive
 			focus = JER_presidential_powers_expansion_act
 		}
-		bypass = {
-		    is_in_faction_with = FAT
-		}
-		mutually_exclusive = {
-		    focus = JER_work_with_the_republicans
-		}
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = JER_limit_presidential_executive
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -6109,13 +6161,13 @@ focus_tree = {
 				}
 			}
 		}
-		mutually_exclusive = {
-		    focus = JER_on_our_own
+		allow_branch = {
+			always = no
 		}
 		x = -2
 		y = 1
 		relative_position_id = JER_presidential_powers_expansion_act
-		cost = 5.80
+		cost = 4.40
 		ai_will_do = {
 			factor = 10
 		}
@@ -6161,6 +6213,9 @@ focus_tree = {
 				}
                 date > 1013.01.01
 			}
+		}
+		allow_branch = {
+			always = no
 		}
 		bypass = {
 			OR = {
@@ -6383,7 +6438,7 @@ focus_tree = {
 		id = EoF_begin_first_plan
 		icon = GFX_goal_JER_rapid_reconstruction
 		relative_position_id = JER_fight_for_freedom
-		x = 6
+		x = 9
 		y = 0
 		cost = 3
 		completion_reward = {
@@ -6432,7 +6487,10 @@ focus_tree = {
 			}
 			hidden_effect = {
 				news_event = EoF.news.3
-				add_threat = 20
+				add_named_threat = {
+					threat = 10
+					name = EoF_JER_invade_equestria_tension
+				}
 			}
 		}
 	}
@@ -6516,7 +6574,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = JER_liberal_industry
-		cost = 5.80
+		cost = 4.40
 		prerequisite = { focus = JER_liberal_industry }
 		available = {
 		    377 = {
@@ -6723,13 +6781,15 @@ focus_tree = {
 	shared_focus = {
 		id = JER_aquileian_academy_of_science
 		icon = GFX_goal_JER_aquileian_academy_of_science
-		x = 1
+		x = 0
 		y = 3
 		relative_position_id = JER_the_rebirth_of_a_city
 		cost = 7.20
-		prerequisite = { focus = JER_fund_arms_production }
-		prerequisite = { focus = JER_all_aquileian_railway }
-		prerequisite = { focus = JER_support_automobile_industry }
+		prerequisite = { 
+			focus = JER_fund_arms_production
+			focus = JER_all_aquileian_railway
+			focus = JER_support_automobile_industry
+		}
 
 		ai_will_do = {
 			factor = 6
@@ -6863,11 +6923,26 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_nuclear_development"
-			add_tech_bonus = {
-				name = RCT_nuclear_bonus
-				bonus = 1.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+				add_tech_bonus = {
+					name = RCT_nuclear_bonus
+					bonus = 1
+					uses = 1
+					category = nuclear
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6897,7 +6972,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = JER_liberal_industry
-		cost = 7.20
+		cost = 4.40
 		prerequisite = { focus = JER_industrial_projects }
 		available = {
 			377 = {
@@ -7035,8 +7110,6 @@ focus_tree = {
 			army_experience = 25
 			navy_experience = 25
 			air_experience = 25
-			add_ideas = tot_economic_mobilisation
-			add_political_power = -150
 		}
 		search_filters = { FOCUS_FILTER_NAVY_BONUS FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_AIRFORCE_BONUS }
 	}
@@ -7049,7 +7122,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = JER_army_reforms
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_army_reforms
 		}
@@ -7357,10 +7430,19 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = JER_mistral_organization
+			mio:JER_mistral_organization = {
+				add_mio_size = 5
+			}
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = JER_loup_shipping_organization
+			mio:JER_loup_shipping_organization = {
+				add_mio_size = 5
+			}
 			custom_effect_tooltip = available_mio_tt
 			show_mio_tooltip = EoF_JER_aeb_organization
+			mio:EoF_JER_aeb_organization = {
+				add_mio_size = 5
+			}
 		}
 	}
 	shared_focus = {
@@ -7376,7 +7458,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = EoF_funding_naval_mio
-				days = 120
+				days = 365
 			}
 			mio:JER_mistral_organization = {
 				add_mio_funds = 2000
@@ -7391,7 +7473,7 @@ focus_tree = {
 	}
 	shared_focus = {
 		id = EoF_JER_quantity_companies
-		icon = GFX_focus_SMB_blue_water_fleet
+		icon = GFX_goal_generic_naval_fleet_in_being
 		x = -1
 		y = 1
 		relative_position_id = EoF_JER_naval_subsidies
@@ -7523,7 +7605,7 @@ focus_tree = {
 	}
 	shared_focus = {
 		id = EoF_JER_taifunkrieg
-		icon = GFX_goal_generic_navy_carrier
+		icon = GFX_focus_SMB_blue_water_fleet
 		x = 0
 		y = 1
 		relative_position_id = EoF_JER_new_naval_strategy
@@ -7571,9 +7653,9 @@ focus_tree = {
 					1196 = { is_controlled_by = JER } 
 				}
 				1196 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -7614,9 +7696,9 @@ focus_tree = {
 					1197 = { is_controlled_by = JER } 
 				}
 				1197 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -7657,9 +7739,9 @@ focus_tree = {
 					1198 = { is_controlled_by = JER } 
 				}
 				1198 = {
-					set_building_level = {
+					add_building_construction = {
 						type = air_base
-						level = 10
+						level = 5
 						instant_build = yes
 					}
 					add_building_construction = {
@@ -7734,7 +7816,7 @@ focus_tree = {
 		x = 5
 		y = 1
 		relative_position_id = JER_army_reforms
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_army_reforms
 		}
@@ -8093,7 +8175,7 @@ focus_tree = {
 		x = 9
 		y = 1
 		relative_position_id = JER_army_reforms
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_army_reforms
 		}
@@ -8133,12 +8215,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_develop_airplane_industry"
 			add_resource = {
 				type = aluminium
-				amount = 10
+				amount = 100
 				state = 407
 			}
 			add_resource = {
 				type = aluminium
-				amount = 12
+				amount = 120
 				state = 406
 			}
 			if = {
@@ -8243,12 +8325,12 @@ focus_tree = {
 			}
 			add_resource = {
 				type = rubber
-				amount = 10
+				amount = 100
 				state = 516
 			}
 			add_resource = {
 				type = rubber
-				amount = 8
+				amount = 80
 				state = 377
 			}
 		}
@@ -8455,11 +8537,19 @@ focus_tree = {
 						uses = 1
 						category = cat_anti_tank
 					}
+					add_breakthrough_progress = {
+						specialization = specialization_air
+						value = 0.25
+					}
 					generic_basic_cas = yes
 					add_equipment_to_stockpile = {
 						type = small_plane_cas_airframe_1
 						variant_name = "Basic CAS"
 						amount = 50
+					}
+					add_breakthrough_progress = {
+						specialization = specialization_air
+						value = 0.25
 					}
 				}
 				else = {
@@ -8565,6 +8655,29 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_aquileian_ace_priority"
+			custom_effect_tooltip = {
+				localization_key = air_facility_construction_tt
+				temp_facility_state_loc = "[407.GetName]"
+				temp_facility_province_loc = "[407.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						407 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = air_facility
+						}
+					}
+					407 = {
+						add_building_construction = {
+							type = air_facility
+							level = 1
+							instant_build = yes
+							province = 7817
+						}
+					}
+				}
+			}
 			add_ideas = JER_aquileian_ace_priority_idea
 		}
 		search_filters = { FOCUS_FILTER_AIRFORCE_BONUS }
@@ -9873,7 +9986,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_integrate_local_parties
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_integrate_local_parties
 		}
@@ -9948,7 +10061,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_integrate_local_parties
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_integrate_local_parties
 		}
@@ -10023,7 +10136,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_integrate_local_parties
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_double_down
 			focus = JER_limited_multi_linguism
@@ -10099,7 +10212,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_integrate_local_parties
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_expand_the_legion
 		}
@@ -10181,7 +10294,7 @@ focus_tree = {
 		x = 0
 		y = 4
 		relative_position_id = JER_integrate_local_parties
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_embrace_the_free_market
 		}
@@ -10395,7 +10508,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_new_friends
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_new_friends
 		}
@@ -10435,7 +10548,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_new_friends
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_new_friends
 		}
@@ -10475,7 +10588,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_new_friends
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_define_spheres
 		}
@@ -10572,7 +10685,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_focusing_inwards
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_focusing_inwards
 		}
@@ -10621,7 +10734,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_focusing_inwards
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_focusing_inwards
 		}
@@ -10670,7 +10783,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_focusing_inwards
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_help_them_rebuild
 		}
@@ -10720,7 +10833,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = JER_new_friends
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_mutual_military_attache
             focus = JER_help_them_rebuild
@@ -10864,7 +10977,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_the_concordant_succeeds
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_concordant_succeeds
 		}
@@ -10905,7 +11018,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_the_concordant_succeeds
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_military_ties
 		}
@@ -10962,7 +11075,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JER_the_concordant_succeeds
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_concordant_succeeds
 			focus = JER_entente_triumphant
@@ -11014,7 +11127,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = JER_the_concordant_succeeds
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_permenant_transport_ties
 		}
@@ -11097,7 +11210,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_entente_triumphant
 		}
@@ -11146,7 +11259,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rapid_reconstruction
 		}
@@ -11195,7 +11308,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rapid_reconstruction
 		}
@@ -11234,7 +11347,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rapid_buildup
 		}
@@ -11289,7 +11402,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_entente_triumphant
             focus = JER_the_concordant_fails
@@ -11372,7 +11485,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = JER_entente_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_im_sorry_little_one
 		}
@@ -11429,7 +11542,7 @@ focus_tree = {
 		icon = GFX_goal_JER_army_expansion_act
 		y = 1
 		relative_position_id = JER_the_concordant_fails
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_concordant_fails
 		}
@@ -11478,7 +11591,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_the_concordant_fails
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_boost_the_herzlandish_army
 		}
@@ -12969,7 +13082,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = JER_PAT_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rebuild_herzland
 		}
@@ -13025,7 +13138,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_PAT_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_reinforce_internationalism
 		}
@@ -13049,7 +13162,7 @@ focus_tree = {
 		x = 3
 		y = 2
 		relative_position_id = JER_PAT_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rebuild_herzland
 		}
@@ -13134,11 +13247,22 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus JER_joint_nuclear_research"
 			add_ideas = JER_joint_nuclear_research_idea
-			add_tech_bonus = {
-				name = RCT_nuclear_bonus
-				bonus = 3.0
-				uses = 1
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = RCT_nuclear_bonus
+					bonus = 3
+					uses = 1
+					category = nuclear
+				}
 			}
 			every_other_country = {
 			    limit = {
@@ -13148,11 +13272,22 @@ focus_tree = {
 					}
 				}
 				add_ideas = JER_joint_nuclear_research_idea
-				add_tech_bonus = {
-					name = RCT_nuclear_bonus
-					bonus = 3.0
-					uses = 1
-					category = nuclear
+				if = {
+					limit = {
+						has_tech = atomic_research
+					}
+					add_breakthrough_progress = {
+						specialization = specialization_nuclear
+						value = 1.5
+					}
+				}
+				else = {
+					add_tech_bonus = {
+						name = RCT_nuclear_bonus
+						bonus = 3
+						uses = 1
+						category = nuclear
+					}
 				}
 			}
 			hidden_effect = {
@@ -13232,7 +13367,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = JER_lessons_from_the_northern_war
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_joint_nuclear_research
 		}
@@ -13262,7 +13397,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_lessons_from_the_northern_war
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_lessons_from_the_northern_war
 		}
@@ -13283,7 +13418,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_lessons_from_the_northern_war
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_lessons_from_the_northern_war
 		}
@@ -13304,7 +13439,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_lessons_from_the_northern_war
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_lessons_from_the_northern_war
 		}
@@ -13989,7 +14124,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = JER_dealing_with_the_herzland
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_dealing_with_the_herzland
 		}
@@ -14024,7 +14159,7 @@ focus_tree = {
 		x = 0
 		y = 3
 		relative_position_id = JER_dealing_with_the_herzland
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_local_districts
 		}
@@ -14172,7 +14307,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_viviene_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_viviene_triumphant
 		}
@@ -14293,7 +14428,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_imperial_spleandour
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_imperial_spleandour
 		}
@@ -14382,7 +14517,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_imperial_spleandour
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_integrate_oligarchs
 		}
@@ -14414,7 +14549,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_imperial_spleandour
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_imperial_spleandour
 		}
@@ -14449,7 +14584,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = JER_imperial_spleandour
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_herzlandish_provincialism
 		}
@@ -14532,7 +14667,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_bind_the_economies
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_bind_the_economies
 		}
@@ -15200,7 +15335,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_aquileian_centralisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_aquileian_centralisation
 		}
@@ -15228,7 +15363,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_aquileian_centralisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_aquileian_centralisation
 		}
@@ -15255,7 +15390,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = JER_aquileian_centralisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_glorious_army
 		}
@@ -15286,7 +15421,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_adapt_the_code
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_adapt_the_code
 		}
@@ -15311,7 +15446,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_aquileian_centralisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_glorious_army
 		}
@@ -15366,7 +15501,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		relative_position_id = JER_viviene_triumphant
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_viviene_triumphant
 		}
@@ -15888,7 +16023,7 @@ focus_tree = {
 		x = -6
 		y = 1
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_griffonian_dream
 		}
@@ -15915,7 +16050,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_scale_back_the_military_industrial_complex
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_scale_back_the_military_industrial_complex
 		}
@@ -15951,7 +16086,7 @@ focus_tree = {
 		x = 2
 		y = 2
 		relative_position_id = JER_pan_griffonian_railroad
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_start_of_telecommunications
 		}
@@ -16002,7 +16137,7 @@ focus_tree = {
 		x = -4
 		y = 1
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_griffonian_dream
 		}
@@ -16031,7 +16166,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_scale_back_the_military_industrial_complex
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_scale_back_the_military_industrial_complex
 			focus = JER_ban_private_banking
@@ -16056,7 +16191,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_limited_ecomonic_planning
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_pan_griffonian_railroad
 		}
@@ -16080,7 +16215,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		relative_position_id = JER_limited_ecomonic_planning
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_limited_ecomonic_planning
 		}
@@ -16110,7 +16245,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_normalise_the_army_budget
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_normalise_the_army_budget
 		}
@@ -16134,7 +16269,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_limited_ecomonic_planning
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_limited_ecomonic_planning
 		}
@@ -16191,7 +16326,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_the_political_revolution
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_ban_private_banking
 		}
@@ -16243,7 +16378,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_griffonian_dream
 		}
@@ -16317,7 +16452,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_griffonian_dream
 		}
@@ -16370,7 +16505,7 @@ focus_tree = {
 		x = 1
 		y = 2
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_mop_up_the_north
 		}
@@ -16447,7 +16582,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_strike_at_karthin
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_scale_back_the_presidential_executive
 		}
@@ -16504,7 +16639,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_strike_at_karthin
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_strike_at_karthin
 		}
@@ -17020,7 +17155,7 @@ focus_tree = {
 		x = 4
 		y = 1
 		relative_position_id = JER_the_griffonian_dream
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_griffonian_dream
 		}
@@ -17093,7 +17228,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_rural_grants
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_rural_grants
 		}
@@ -17122,7 +17257,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = JER_not_a_soul_left_behind
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_not_a_soul_left_behind
 		}
@@ -17154,7 +17289,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_the_social_revolution
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_the_social_revolution
 		}
@@ -17206,7 +17341,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = JER_unconditional_secularisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_complete_linguistic_equalisation
 		}
@@ -17236,7 +17371,7 @@ focus_tree = {
 		x = -1
 		y = 3
 		relative_position_id = JER_the_social_revolution
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_go_east
 		}
@@ -17266,7 +17401,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JER_unconditional_secularisation
-		cost = 5.80
+		cost = 4.40
 		prerequisite = {
 			focus = JER_unconditional_secularisation
 		}

@@ -6,7 +6,7 @@ state={
 		4205 4570 10945
 	}
 	resources={
-		steel=4.000
+		steel=40.000
 	}
 
 	manpower=456090

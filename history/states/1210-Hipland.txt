@@ -2,7 +2,7 @@ state={
 	id=1210
 	name="STATE_1210"
 	provinces={
-		20729 20730 20731 20732 20733 20734 20735
+		20309 20310 20311 20312 20313 20314 20315
 	}
 	manpower=61330
 	buildings_max_level_factor=1.000
@@ -18,7 +18,7 @@ state={
 			dockyard = 1
 			air_base = 3
 
-			20733 = {
+			20313 = {
 				naval_base = 1
 			}
 		}

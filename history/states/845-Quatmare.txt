@@ -3,12 +3,8 @@ state={
 	name="STATE_845"
 	state_category = rural
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 2
 			14958 = {
@@ -18,7 +14,7 @@ state={
 		victory_points = { 14958 5 }
 	}
 	resources = {
-		oil = 6
+		oil=60
 	}
 	provinces={
 		14918 14924 14926 14927 14944 14945 14949 14958 14959 14963 14971 14978 14981 14996 

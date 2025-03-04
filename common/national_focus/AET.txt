@@ -3772,7 +3772,7 @@ shared_focus = {
 						tank_nsb_engine_upgrade = 1
 						tank_nsb_armor_upgrade = 4
 					}
-					icon = "gfx/interface/technologies/GRI_light_tank.dds"
+					icon = "gfx/interface/technologies/armour_folder/griffonian_empire_2d/GRI_light_tank.dds"
 				}
 			}
 			else = {
@@ -4350,12 +4350,12 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_oil"
 		add_resource = {
 			type = oil
-			amount = 12
+			amount = 120
 			state = 493
 		}
 		add_resource = {
 			type = oil
-			amount = 12
+			amount = 120
 			state = 494
 		}
 	}
@@ -4424,7 +4424,7 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 4
+			amount = 40
 			state = 494
 		}
 	}
@@ -4479,7 +4479,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_oil_p"
 		add_resource = {
 			type = oil
-			amount = 8
+			amount = 80
 			state = 493
 		}
 		add_ideas = AET_oil_production
@@ -4592,12 +4592,12 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_steel_and_tungsten"
 		add_resource = {
 			type = steel
-			amount = 8
+			amount = 80
 			state = 457
 		}
 		add_resource = {
 			type = tungsten
-			amount = 12
+			amount = 120
 			state = 457
 		}
 	}
@@ -4712,7 +4712,7 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_more_steel"
 		add_resource = {
 			type = steel
-			amount = 18
+			amount = 180
 			state = 436
 		}
 	}
@@ -6071,6 +6071,10 @@ shared_focus = {
 			uses = 1
 			category = rocketry
 		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 1.5
+		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
@@ -6280,6 +6284,10 @@ shared_focus = {
 				bonus = 0.75
 				uses = 1
 				category = cat_anti_tank
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
 			}
 		}
 		else = {
@@ -7042,17 +7050,32 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus AET_definetly_legal_science"
-		add_tech_bonus = {
-			name = secret_nuke_bonus
-			bonus = 0.5
-			uses = 1
-			category = nuclear
+		if = {
+			limit = {
+				has_tech = atomic_research
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.25
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = secret_bonus
+				bonus = 0.5
+				uses = 1
+				category = nuclear
+			}
 		}
 		add_tech_bonus = {
 			name = secret_bonus
 			bonus = 1.0
 			uses = 1
 			category = rocketry
+		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 0.5
 		}
 		add_tech_bonus = {
 			name = race_tech_bonus
@@ -7177,4 +7200,3 @@ shared_focus = {
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY }
 }
-

@@ -3,7 +3,7 @@ state={
 	id=875
 	name="STATE_875"
 	resources={
-		steel=20.000
+		steel=200.000
 	}
 
 	history={
@@ -18,7 +18,8 @@ state={
 			air_base = 1
 			18351 = {
 				naval_base = 10
-
+				naval_facility = 1
+				landmark_cothon_colthage = 1
 			}
 
 		}

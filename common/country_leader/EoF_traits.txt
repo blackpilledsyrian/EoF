@@ -15,12 +15,18 @@
 leader_traits = {
 	EoF_dandan = {
 		random = no
-		production_cost_industrial_complex_factor = -0.15
-		production_cost_arms_factory_factor = -0.15
-		global_building_slots_factor = 0.5
-		consumer_goods_factor = -0.5
+		production_cost_industrial_complex_factor = -0.1
+		production_cost_arms_factory_factor = -0.1
 		industrial_capacity_factory = 0.2
 		land_night_attack = -0.05	
+	}
+	EoF_imperial_governer = {
+		random = no
+		political_advisor_cost_factor = -0.33
+		high_command_cost_factor = -0.33
+		air_chief_cost_factor = -0.33
+		army_chief_cost_factor = -0.33
+		navy_chief_cost_factor = -0.33
 	}
 	EoF_war_industrialists = {
 		random = no
@@ -44,7 +50,7 @@ leader_traits = {
 	EoF_Fluttershy = {
 		random = no
 		stability_factor = 0.05
-		political_power_factor = 0.15
+		political_power_factor = 0.1
 	}
 	EoF_apple = {
 		random = no
@@ -54,5 +60,34 @@ leader_traits = {
 	EoF_orbital = {
 		random = no
 		surrender_limit = 0.25
+		army_core_attack_factor = 0.1
+		industrial_capacity_factory = -0.5
+	}
+	EoF_snake = {
+		random = no
+		civilian_intel_factor = 0.15
+		army_intel_factor = 0.15
+		intel_network_gain_factor = 0.25
+		own_operative_detection_chance_factor = -0.25
+	}
+	EoF_armour_advocate = {
+		random = no
+		production_factory_max_efficiency_factor = 0.05
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				build_cost_ic = -0.05
+			}
+		}
+	}
+	EoF_reserve_fleet_advisor = {
+		random = no
+	}
+	EoF_naval_spy = {
+		random = no
+		operative_slot = 2
+		positioning = 0.05
+		navy_intel_factor = 0.1
+		navy_intel_to_others = -10
 	}
 }

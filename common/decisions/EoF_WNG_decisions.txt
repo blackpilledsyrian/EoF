@@ -1,0 +1,217 @@
+military_training_category = {
+	EoF_WNG_inundate_the_water_lines = {
+
+		icon = hol_inundate_water_lines
+
+		allowed = {
+			tag = WNG
+		}
+
+		available = {
+			487 = { is_fully_controlled_by = ROOT }
+			652 = { is_fully_controlled_by = ROOT }
+			521 = { is_fully_controlled_by = ROOT }
+		}
+
+		cost = 25
+
+		modifier = {
+			production_speed_buildings_factor = -0.15
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 487 
+				state = 652 
+				state = 521 
+			}
+		}
+
+		modifier = {
+		}
+
+		visible = {
+			487 = { is_fully_controlled_by = ROOT }
+			652 = { is_fully_controlled_by = ROOT }
+			521 = { is_fully_controlled_by = ROOT }
+			NOT = { has_global_flag = EoF_WNG_inundation_lines_flooded }
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					487 = { is_fully_controlled_by = ROOT }
+					652 = { is_fully_controlled_by = ROOT }
+					521 = { is_fully_controlled_by = ROOT }
+				}
+				487 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 756
+							id = 1632
+							id = 2000
+							id = 4482
+							id = 4958
+							id = 5003
+							id = 7560
+							id = 7639
+							id = 9605
+							id = 10476
+							id = 12239
+							id = 12722
+						}
+					}
+				}
+				652 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 10817
+							id = 4893
+						}
+					}
+				}
+				521 = {
+					add_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 1991
+							id = 105
+						}
+					}
+				}
+			}
+			set_global_flag = EoF_WNG_inundation_lines_flooded
+		}
+	}
+
+	EoF_WNG_drain_the_water_lines = {
+
+		icon = hol_drain_water_lines
+
+		allowed = {
+			tag = WNG
+		}
+
+		available = {
+			487 = { is_fully_controlled_by = ROOT }
+			652 = { is_fully_controlled_by = ROOT }
+			521 = { is_fully_controlled_by = ROOT }
+		}
+
+		cost = 25
+
+		modifier = {
+			production_speed_buildings_factor = -0.15
+		}
+
+		fire_only_once = no
+
+		days_remove = 90
+
+		highlight_states = {
+			highlight_state_targets = { 
+				state = 487 
+				state = 652 
+				state = 521 
+			}
+		}
+
+		modifier = {
+		}
+
+		visible = {
+			487 = { is_fully_controlled_by = ROOT }
+			652 = { is_fully_controlled_by = ROOT }
+			521 = { is_fully_controlled_by = ROOT }
+			has_global_flag = EoF_WNG_inundation_lines_flooded
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					487 = { is_fully_controlled_by = ROOT }
+					652 = { is_fully_controlled_by = ROOT }
+					521 = { is_fully_controlled_by = ROOT }
+				}
+				487 = {
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 756
+							id = 1632
+							id = 2000
+							id = 4482
+							id = 4958
+							id = 5003
+							id = 7560
+							id = 7639
+							id = 9605
+							id = 10476
+							id = 12239
+							id = 12722
+						}
+					}
+				}
+				652 = {
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 10817
+							id = 4893
+						}
+					}
+				}
+				521 = {
+					remove_province_modifier = {
+						static_modifiers = { flooded }
+						province = {
+							id = 1991
+							id = 105
+						}
+					}
+				}
+			}
+			clr_global_flag = EoF_WNG_inundation_lines_flooded
+		}
+	}
+}
+EoF_WNG_war_category = {
+	EoF_WNG_industrial_evac_mission = {
+		allowed = {
+			original_tag =  WNG
+		}
+		activation = {
+			date > 1011.03.10
+			has_capitulated = no
+			check_variable = {
+				global.EoF_WNG_industrial_evac_var < 8
+			}
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_generic_factory
+		days_mission_timeout = 30
+		timeout_effect = {
+			custom_effect_tooltip = EoF_WNG_industrial_evac_mission_tt
+			hidden_effect = {
+				add_to_variable = { global.EoF_WNG_industrial_evac_var = 1 }
+				activate_mission = EoF_WNG_industrial_evac_mission
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				check_variable = {
+					global.EoF_WNG_industrial_evac_var > 7
+				}
+			}
+		}
+	}
+}

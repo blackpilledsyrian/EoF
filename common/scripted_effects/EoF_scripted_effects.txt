@@ -37,3 +37,283 @@ update_sicarus_effect = {
 		MILS = "[?EoF_sicarus_mils]"
 	}
 }
+EoF_RIV_transfer_federation_staff = {
+	BAK = {
+		BAK_spice_barque = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_1
+					traits = {
+						EoF_fed_silent_workhorse
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		BAK_sunshine_carrack = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_2
+					traits = {
+						EoF_fed_compassionate_gentleman
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		BAK_sagging_bag = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_3
+					traits = {
+						EoF_fed_financial_expert
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		BAK_cobalt_wind = {
+			remove_advisor_role = {
+				slot = navy_chief
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_4
+					traits = {
+						EoF_fed_alt_navy_capital_ship_3
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		BAK_stormy_skies = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_5
+					traits = {
+						EoF_fed_alt_navy_chief_old_guard EoF_fed_navy_screen_3
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		BAK_sea_lily = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_6
+					traits = {
+						EoF_fed_navy_fleet_logistics_3
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+	}
+	LCT = {
+		LCT_river_smog = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_7
+					traits = {
+						EoF_fed_captain_of_industry
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		LCT_down_river = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_8
+					traits = {
+						EoF_fed_backroom_backstabber
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		LCT_sweetie_spring = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_9
+					traits = {
+						EoF_fed_smooth_talking_charmer
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		LCT_mist_flower = {
+			remove_advisor_role = {
+				slot = army_chief
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_10
+					traits = {
+						EoF_fed_army_chief_morale_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		LCT_tito_titovich = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_11
+					traits = {
+						EoF_fed_army_concealment_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		LCT_riversword = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_12
+					traits = {
+						EoF_fed_alt_army_chief_maneuver_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+	}
+	WIT = {
+		WIT_wilburg_firemane = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_13
+					traits = {
+						EoF_fed_fortification_engineer
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		WIT_lemon_grass = {
+			remove_advisor_role = {
+				slot = political_advisor
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_advisor
+					cost = 150
+					idea_token = EoF_federation_14
+					traits = {
+						EoF_fed_war_industrialist
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		WIT_cuthberht_emeraldflame = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_15
+					traits = {
+						EoF_fed_army_infantry_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		WIT_moonshadow_amethyst = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_16
+					traits = {
+						EoF_fed_army_logistics_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+		WIT_mildgyd_steelsnow = {
+			remove_advisor_role = {
+				slot = high_command
+			}
+			add_advisor_role = {
+				advisor = {
+					slot = federation_command
+					cost = 150
+					idea_token = EoF_federation_17
+					traits = {
+						EoF_fed_army_entrenchment_2
+					}
+				}
+			}
+			set_nationality = RCT
+		}
+	}
+}

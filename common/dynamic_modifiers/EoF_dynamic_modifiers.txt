@@ -1,3 +1,24 @@
+EoF_naval_penalty = {
+	naval_damage_factor = fleet_limit_penalty_var
+	naval_defense_factor = fleet_limit_penalty_var
+	sortie_efficiency = fleet_limit_penalty_var
+}
+EoF_WNG_terrain = {
+	icon = GFX_idea_generic_build_infrastructure
+
+	local_building_slots_factor = -0.3
+	enemy_army_speed_factor = -0.1
+	enemy_local_supplies = -0.1
+	resistance_target = 0.2
+}
+EoF_CTH_terrain = {
+	icon = GFX_idea_MZN_Loyalty_To_Colthage
+	recruitable_population_factor = -1
+}
+EoF_PNG_terrain = {
+	icon = GFX_idea_penguin_race
+	recruitable_population_factor = -1
+}
 EoF_YAK_JAK_civil_war_terrain = {
 	icon = GFX_unplanned_offensive
 	attacker_modifier = yes
@@ -10,7 +31,7 @@ EoF_EQS_fallback_terrain = {
 
 	army_core_attack_factor = -0.5
 	army_core_defence_factor = -0.5
-	enemy_army_speed_factor = -0.15
+	enemy_army_speed_factor = -0.25
 }
 EoF_southern_equus_invasion_terrain = {
 	icon = GFX_idea_raj_risk_of_famine
@@ -90,6 +111,78 @@ EoF_northern_equus_invasion_terrain_8 = {
 	army_core_attack_factor = 0.8
 	army_core_defence_factor = 0.8
 }
+EoF_TRD_invasion_terrain_0 = {
+	icon = GFX_idea_unhappy_army
+	attacker_modifier = yes
+
+	naval_invasion_penalty = 0
+	army_core_attack_factor = 0
+	army_core_defence_factor = 0
+}
+EoF_TRD_invasion_terrain_1 = {
+	icon = GFX_idea_unhappy_army
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.05
+	army_core_attack_factor = 0.1
+	army_core_defence_factor = 0.1
+}
+EoF_TRD_invasion_terrain_2 = {
+	icon = GFX_idea_unhappy_army
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.1
+	army_core_attack_factor = 0.2
+	army_core_defence_factor = 0.2
+}
+EoF_TRD_invasion_terrain_3 = {
+	icon = GFX_idea_unhappy_army_2
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.15
+	army_core_attack_factor = 0.3
+	army_core_defence_factor = 0.3
+}
+EoF_TRD_invasion_terrain_4 = {
+	icon = GFX_idea_unhappy_army_2
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.2
+	army_core_attack_factor = 0.4
+	army_core_defence_factor = 0.4
+}
+EoF_TRD_invasion_terrain_5 = {
+	icon = GFX_idea_unhappy_army_2
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.25
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
+}
+EoF_TRD_invasion_terrain_6 = {
+	icon = GFX_idea_unhappy_army_3
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.3
+	army_core_attack_factor = 0.6
+	army_core_defence_factor = 0.6
+}
+EoF_TRD_invasion_terrain_7 = {
+	icon = GFX_idea_unhappy_army_3
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.35
+	army_core_attack_factor = 0.7
+	army_core_defence_factor = 0.7
+}
+EoF_TRD_invasion_terrain_8 = {
+	icon = GFX_idea_unhappy_army_3
+	attacker_modifier = yes
+
+	naval_invasion_penalty = -0.4
+	army_core_attack_factor = 0.8
+	army_core_defence_factor = 0.8
+}
 EoF_HIP_invasion_terrain_0 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
@@ -103,64 +196,64 @@ EoF_HIP_invasion_terrain_1 = {
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.05
-	army_core_attack_factor = 0.1
-	army_core_defence_factor = 0.1
+	army_core_attack_factor = 0.25
+	army_core_defence_factor = 0.25
 }
 EoF_HIP_invasion_terrain_2 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.1
-	army_core_attack_factor = 0.2
-	army_core_defence_factor = 0.2
+	army_core_attack_factor = 0.5
+	army_core_defence_factor = 0.5
 }
 EoF_HIP_invasion_terrain_3 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.15
-	army_core_attack_factor = 0.3
-	army_core_defence_factor = 0.3
+	army_core_attack_factor = 0.75
+	army_core_defence_factor = 0.75
 }
 EoF_HIP_invasion_terrain_4 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.2
-	army_core_attack_factor = 0.4
-	army_core_defence_factor = 0.4
+	army_core_attack_factor = 1
+	army_core_defence_factor = 1
 }
 EoF_HIP_invasion_terrain_5 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.25
-	army_core_attack_factor = 0.5
-	army_core_defence_factor = 0.5
+	army_core_attack_factor = 1.25
+	army_core_defence_factor = 1.25
 }
 EoF_HIP_invasion_terrain_6 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.3
-	army_core_attack_factor = 0.6
-	army_core_defence_factor = 0.6
+	army_core_attack_factor = 1.5
+	army_core_defence_factor = 1.5
 }
 EoF_HIP_invasion_terrain_7 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.35
-	army_core_attack_factor = 0.7
-	army_core_defence_factor = 0.7
+	army_core_attack_factor = 1.75
+	army_core_defence_factor = 1.75
 }
 EoF_HIP_invasion_terrain_8 = {
 	icon = GFX_idea_generic_wall_line
 	attacker_modifier = yes
 
 	naval_invasion_penalty = 0.4
-	army_core_attack_factor = 0.8
-	army_core_defence_factor = 0.8
+	army_core_attack_factor = 2
+	army_core_defence_factor = 2
 }
 EoF_superindustrial_zone = {
 	icon = GFX_idea_KIS_continuous_industry_research_idea
@@ -169,8 +262,38 @@ EoF_superindustrial_zone = {
 	local_factories	= 0.5
 	state_production_speed_buildings_factor = -0.3
 }
+EoF_naval_industrial_zone = {
+	icon = GFX_idea_KIS_continuous_industry_research_idea
+
+	local_building_slots = 3
+	local_factories	= 0.5
+	state_production_speed_industrial_complex_factor = -1
+	state_production_speed_arms_factory_factor = -1
+}
 EoF_supply_stockpile = {
 	icon = GFX_idea_generic_supply_depot
 
 	local_supplies_for_controller = 1
+}
+EoF_ant_thrax_CHN = {
+	icon = GFX_idea_HIE_gas
+	
+	army_speed_factor = -0.5
+	army_org_regain = -0.3
+	attrition = 0.1
+}
+EoF_ant_thrax_EQS = {
+	icon = GFX_idea_HIE_gas
+	
+	army_speed_factor = -0.25
+	army_org_regain = -0.15
+	attrition = 0.05
+}
+EoF_NCH_hive_building = {
+	icon = GFX_idea_CHN_new_hives_3
+
+	state_production_speed_buildings_factor = 0.3
+}
+EoF_sunset_line_warning = {
+	icon = GFX_idea_SWE_radiotjanst_corrupted
 }

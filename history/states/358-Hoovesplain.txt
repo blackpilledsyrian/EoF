@@ -27,7 +27,7 @@ state={
 	}
 
 	resources={
-		oil=9
-		aluminium=18
+		oil=90
+		aluminium=180
 	}
 }

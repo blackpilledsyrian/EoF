@@ -830,19 +830,19 @@ focus_tree = {
 			371 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 			370 = {
 				add_resource = {
 					type = steel
-					amount = 7
+					amount = 70
 				}
 			}
 			369 = {
 				add_resource = {
 					type = steel
-					amount = 5
+					amount = 50
 				}
 			}
 		}
@@ -1972,7 +1972,7 @@ focus_tree = {
 				371 = {
 					add_resource = {
 						type = aluminium
-						amount = 14
+						amount = 140
 					}
 				}
 			}
@@ -1985,7 +1985,7 @@ focus_tree = {
 				369 = {
 					add_resource = {
 						type = aluminium
-						amount = 4
+						amount = 40
 					}
 				}
 			}
@@ -1998,7 +1998,7 @@ focus_tree = {
 				370 = {
 					add_resource = {
 						type = aluminium
-						amount = 4
+						amount = 40
 					}
 				}
 			}
@@ -4398,19 +4398,19 @@ focus_tree = {
 			371 = {
 				add_resource = {
 					type = aluminium
-					amount = 14
+					amount = 140
 				}
 			}
 			369 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 40
 				}
 			}
 			370 = {
 				add_resource = {
 					type = aluminium
-					amount = 4
+					amount = 40
 				}
 			}
 		}
@@ -4449,19 +4449,19 @@ focus_tree = {
 			371 = {
 				add_resource = {
 					type = steel
-					amount = 10
+					amount = 100
 				}
 			}
 			370 = {
 				add_resource = {
 					type = steel
-					amount = 7
+					amount = 70
 				}
 			}
 			369 = {
 				add_resource = {
 					type = steel
-					amount = 5
+					amount = 50
 				}
 			}
 		}
@@ -8349,7 +8349,7 @@ offset = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 12
+				amount = 120
 				state = 778
 			}
 			unlock_decision_tooltip = expand_oromeowia_oil_field
@@ -8502,17 +8502,17 @@ offset = {
 		completion_reward = {
 			add_resource = {
 				type = steel
-				amount = 15
+				amount = 150
 				state = 779
 			}
 			add_resource = {
 				type = steel
-				amount = 12
+				amount = 120
 				state = 775
 			}
 			add_resource = {
 				type = steel
-				amount = 10
+				amount = 100
 				state = 777
 			}
 		}
@@ -9451,7 +9451,7 @@ offset = {
 			}
 			add_resource = {
 				type = oil
-				amount = 10
+				amount = 100
 				state = 371
 			}
 			hidden_effect = {
@@ -9541,12 +9541,12 @@ offset = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_librasia_talocana"
 			add_resource = {
 				type = oil
-				amount = 10
+				amount = 100
 				state = 372
 			}
 			add_resource = {
 				type = oil
-				amount = 10
+				amount = 100
 				state = 374
 			}
 			add_tech_bonus = {
@@ -9592,22 +9592,22 @@ offset = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_rubber_production"
 			add_resource = {
 				type = rubber
-				amount = 8
+				amount = 80
 				state = 536
 			}
 			add_resource = {
 				type = rubber
-				amount = 8
+				amount = 80
 				state = 373
 			}
 			add_resource = {
 				type = rubber
-				amount = 8
+				amount = 80
 				state = 371
 			}
 			add_resource = {
 				type = rubber
-				amount = 8
+				amount = 80
 				state = 375
 			}
 		}
@@ -9761,7 +9761,6 @@ offset = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		cost = 4
 		available = {
-			is_faction_leader = yes
 			NOT = {
 				has_idea = WNG_political_deadlock
 			}
@@ -9778,11 +9777,7 @@ offset = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_reaffirm_the_karthin_protical"
-			every_country = {
-				limit = {
-					is_in_faction_with = WNG
-					NOT = { tag = WNG }
-				}
+			MCW = {
 				add_opinion_modifier = {
 					target = WNG
 					modifier = WNG_renewed_the_southern_alliance
@@ -9803,16 +9798,11 @@ offset = {
 		}
 		available = {
 			AND = {
-				is_faction_leader = yes
 				is_subject = no
 			}
 		}
 		bypass = {
-			is_faction_leader = yes
-			OR = {
-				has_completed_focus = WNG_international_communism
-				has_completed_focus = WNG_rebuild_the_pact
-			}
+			is_in_faction_with = MCW
 		}
 		relative_position_id = WNG_reaffirm_the_karthin_proticals
 		x = 0
@@ -9846,8 +9836,6 @@ offset = {
 		}
 
 		available = {
-			is_in_faction = yes
-			is_faction_leader = yes
 		}
 
 		bypass = {
@@ -9862,11 +9850,7 @@ offset = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_southern_security_council"
 			#events for faction members. add 10% planning cap bonus
 			add_ideas = WNG_planning_bonus
-			every_country = {
-				limit = {
-					is_in_faction_with = WNG
-					NOT = { tag = WNG }
-				}
+			MCW = {
 				country_event = { id = wingbardy.101 }
 			}
 		}
@@ -9888,8 +9872,6 @@ offset = {
 		}
 
 		available = {
-			is_in_faction = yes
-			is_faction_leader = yes
 		}
 
 		cancel_if_invalid = yes
@@ -9899,15 +9881,54 @@ offset = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_southern_sociaty_of_science"
 			add_to_tech_sharing_group = southern_sociaty_of_science
-			every_country = {
-				limit = {
-					is_in_faction_with = WNG
-				}
+			MCW = {
 				add_to_tech_sharing_group = southern_sociaty_of_science
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+
+	#EoF Changes
+	focus = {
+		id = EoF_liberate_WNG
+		icon = GFX_focus_wng_flag
+		cost = 0
+		prerequisite = {
+			focus = WNG_southern_security_council
+			focus = WNG_southern_sociaty_of_science
+		}
+		mutually_exclusive = {
+		}
+		relative_position_id = WNG_southern_security_council
+		x = 1
+		y = 1
+
+		available = {
+			has_war = no
+			NOT = {
+				has_idea = EoF_WNG_shame_of_defeat
+			}
+			date > 1011.11.01
+		}
+		available_if_capitulated = yes
+
+		completion_reward = {
+			remove_ideas = EoF_WNG_treaty
+			JER = {
+				declare_war_on = {
+					target = WNG
+					type = annex_everything
+				}
+			}
+			GRI = { add_to_faction = HLQ }
+			hidden_effect = {
+				every_country = {
+					set_country_flag = EoF_big_event_custom_wingbardy
+				}
+			}
+		}
+	}
+	#EoF Changes
 
 	##..................................................
 	##.NNNN...NNNN.....AAAAA..AAAVV....VVVVVVVY....YYY..
@@ -10214,6 +10235,10 @@ offset = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_froggriffs"
+			add_breakthrough_progress = {
+				specialization = specialization_naval
+				value = 0.75
+			}
 			custom_effect_tooltip = WNG_froggriffs_effect
 			hidden_effect = { set_technology = { froggriffs = 1 } }
 		}
@@ -10971,6 +10996,10 @@ offset = {
 				uses = 2
 				category = radar_tech
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_AIRFORCE_BONUS }
 	}
@@ -11084,12 +11113,27 @@ offset = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_project_thunderflash"
-			add_tech_bonus = {
-				name = nuclear_bonus
-				bonus = 1.0
-				ahead_reduction = 2
-				uses = 1
-				category = nuclear
+			custom_effect_tooltip = {
+				localization_key = available_scientist_one_line_tt
+				CHARACTER = WNG_genrico_germi
+			}
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 1
+					ahead_reduction = 2
+					category = nuclear
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -11206,6 +11250,10 @@ offset = {
 				uses = 3
 				category = jet_technology
 				category = rocketry
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1.5
 			}
 			if = {
 				limit = {

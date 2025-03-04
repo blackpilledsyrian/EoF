@@ -1,5 +1,4 @@
 sub_units = {
-
 	heavy_armor = {
 		abbreviation = "HTK"
 		sprite = heavy_armor
@@ -21,6 +20,7 @@ sub_units = {
 			category_all_armor
 			category_army
 			category_mechanical
+			category_front_line_armor
 		}
 
 
@@ -60,7 +60,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			heavy_tank_chassis = 32
+			heavy_tank_chassis = 40
 		}
 
 		manpower = 500
@@ -69,7 +69,7 @@ sub_units = {
 		max_strength = 2
 		weight = 1.5
 
-		supply_consumption = 0.32
+		supply_consumption = 0.35
 
 		# breakthrough = 0.15
 

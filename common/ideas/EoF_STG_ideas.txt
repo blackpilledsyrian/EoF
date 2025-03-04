@@ -1,0 +1,223 @@
+ideas = {
+	country = {
+		EoF_STG_state_defense_committee_0 = {
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+			}		
+		}
+		EoF_STG_state_defense_committee_1 = {
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				war_support_factor = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}		
+		}
+		EoF_STG_state_defense_committee_2 = {
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.2
+				production_speed_arms_factory_factor = 0.05
+			}		
+		}
+		EoF_STG_state_defense_committee_3 = {
+			removal_cost = -1
+			picture = HUN_treaty_of_triannon
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				political_power_gain = 0.2
+				production_speed_arms_factory_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.05
+			}		
+		}
+		EoF_STG_southern_island_campaign_0 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				local_resources_factor = -0.1
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.4
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}		
+		}
+		EoF_STG_southern_island_campaign_1 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+				stability_factor = -0.08
+				consumer_goods_factor = 0.08
+				local_resources_factor = -0.08
+				production_factory_max_efficiency_factor = -0.04
+				industrial_capacity_factory = -0.16
+				industrial_capacity_dockyard = 0.32
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.04
+				defense_bonus_against = -0.04
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = -0.04
+				defense_bonus_against = -0.04
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.04
+				defense_bonus_against = -0.04
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.04
+				defense_bonus_against = -0.04
+			}			
+		}
+		EoF_STG_southern_island_campaign_2 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+				stability_factor = -0.06
+				consumer_goods_factor = 0.06
+				local_resources_factor = -0.06
+				production_factory_max_efficiency_factor = -0.03
+				industrial_capacity_factory = -0.12
+				industrial_capacity_dockyard = 0.24
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.03
+				defense_bonus_against = -0.03
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = -0.03
+				defense_bonus_against = -0.03
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.03
+				defense_bonus_against = -0.03
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.03
+				defense_bonus_against = -0.03
+			}			
+		}
+		EoF_STG_southern_island_campaign_3 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+				stability_factor = -0.04
+				consumer_goods_factor = 0.04
+				local_resources_factor = -0.04
+				production_factory_max_efficiency_factor = -0.02
+				industrial_capacity_factory = -0.08
+				industrial_capacity_dockyard = 0.16
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.02
+				defense_bonus_against = -0.02
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = -0.02
+				defense_bonus_against = -0.02
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.02
+				defense_bonus_against = -0.02
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.02
+				defense_bonus_against = -0.02
+			}	
+		}
+		EoF_STG_southern_island_campaign_4 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+				stability_factor = -0.02
+				consumer_goods_factor = 0.02
+				local_resources_factor = -0.02
+				production_factory_max_efficiency_factor = -0.01
+				industrial_capacity_factory = -0.04
+				industrial_capacity_dockyard = 0.08
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = -0.01
+				defense_bonus_against = -0.01
+			}
+			targeted_modifier = {
+				tag = OLE
+				attack_bonus_against = -0.01
+				defense_bonus_against = -0.01
+			}
+			targeted_modifier = {
+				tag = PLB
+				attack_bonus_against = -0.01
+				defense_bonus_against = -0.01
+			}
+			targeted_modifier = {
+				tag = GRF
+				attack_bonus_against = -0.01
+				defense_bonus_against = -0.01
+			}
+		}
+		EoF_STG_southern_island_campaign_5 = {
+			removal_cost = -1
+			picture = undisturbed_isolation
+			modifier = {
+			}		
+		}
+		EoF_STG_delayed_UPA = {
+			removal_cost = -1
+			picture = hol_aloof_neutrality
+			modifier = {
+				custom_modifier_tooltip = EoF_STG_delayed_UPA_tt
+			}
+			cancel = {
+				date > 1011.10.01
+			}
+            on_remove = {
+                EQS = {
+					add_to_faction = STG
+				}
+            }
+		}
+	}
+}

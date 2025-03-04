@@ -11,8 +11,9 @@ state={
 	buildings_max_level_factor=1.00
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = EQC
+		add_core_of = EQC
+		add_core_of = TRD
 
 		victory_points = { 8053 5 }
 
@@ -23,8 +24,8 @@ state={
 	}
 
 	resources={
-		steel=8
-		tungsten=16
-		chromium=8
+		steel=80
+		tungsten=160
+		chromium=80
 	}
 }

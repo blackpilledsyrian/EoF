@@ -92,7 +92,7 @@ ideas = {
 				original_tag = CHN
 			}
 			modifier = {
-				weekly_manpower = 1000
+				weekly_manpower = 600
 			}
 		}
 		PLB_NP_cutie_pox = {
@@ -148,29 +148,11 @@ ideas = {
 				original_tag = PLB
 			}
 			modifier = {
-				industrial_capacity_dockyard = 0.2
-				industrial_capacity_factory = 0.2
-				production_factory_max_efficiency_factor = 0.2
+				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
 				production_speed_buildings_factor = 0.2
-				consumer_goods_factor = -0.4
-			}
-		}
-		PLB_NP_megacorp_aid_no_dod = {
-			picture = SOV_third_five_year_plan_civilian
-			allowed = {
-				original_tag = PLB
-			}
-			modifier = {
-				industrial_capacity_dockyard = 0.05
-				industrial_capacity_factory = 0.05
-				production_factory_max_efficiency_factor = 0.05
-				production_speed_buildings_factor = 0.05
-				consumer_goods_factor = -0.1
-			}
-			targeted_modifier = {
-				tag = CHN
-				cic_to_target_factor = 0.2
-				mic_to_target_factor = 0.2
+				consumer_goods_factor = -0.2
 			}
 		}
 		PLB_NP_last_bastion_of_polaria = {
@@ -293,6 +275,7 @@ ideas = {
 				rocketry = 0.1
 			}
 			modifier = {
+				sp_tag_rocket_speed_factor = 0.1
 				air_intercept_efficiency = 0.1
 			}
 			equipment_bonus = {
@@ -326,6 +309,7 @@ ideas = {
 				rocketry = 0.2
 			}
 			modifier = {
+				sp_tag_rocket_speed_factor = 0.2
 				air_intercept_efficiency = 0.2
 			}
 			equipment_bonus = {
@@ -468,6 +452,10 @@ ideas = {
 					build_cost_ic = -0.1
 					instant = yes
 				}
+				heavy_artillery_equipment = {
+					build_cost_ic = -0.1
+					instant = yes					
+				}
 				polar_bear_equipment = {
 					build_cost_ic = -0.1
 					instant = yes
@@ -562,6 +550,19 @@ ideas = {
 				army_org_factor = 0.05
 				non_core_manpower = 0.02
 			}			
+		}
+		
+		PLB_cloning_vats_idea = {
+			picture = gre_phaliron_aircraft
+			allowed = {
+				original_tag = PLB
+			}
+
+			modifier = {
+				MONTHLY_POPULATION = 0.25
+				weekly_manpower = 250
+			}
+
 		}
 	}
 }

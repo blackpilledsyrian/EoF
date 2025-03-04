@@ -5,9 +5,9 @@ state={
 	
 	state_category = town
 	resources={
-		steel = 13
-		chromium=6
-		crystals = 10
+		steel=130
+		chromium=60
+		crystals=100
 	}
 	history={
 		owner = HLR

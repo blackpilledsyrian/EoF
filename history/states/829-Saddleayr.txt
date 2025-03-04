@@ -3,17 +3,13 @@ state={
 	id=829
 	name="STATE_829"
 	resources={
-		steel=4.000
-		aluminium=4.000
+		steel=40.000
+		aluminium=40.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		victory_points = {
 			15480 1 
 		}

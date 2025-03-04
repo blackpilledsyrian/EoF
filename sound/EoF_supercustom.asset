@@ -88,3 +88,33 @@ category = { #Tarrin
 		releasetime = 1.2
  	}
 }
+category = { #Wingbardy Liberation
+ 	name = "EoF_super7"
+	soundeffects = {
+		wingbardy_bigevent
+	}
+ 	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 0.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+ 	}
+}
+category = { #River Federation
+ 	name = "EoF_super8"
+	soundeffects = {
+		rivfed_bigevent
+	}
+ 	compressor = {
+		enabled = yes
+		pregain = 3.0
+		postgain = 0.0
+		ratio = 10.0
+		threshold = -15.0
+		attacktime = 0.030
+		releasetime = 1.2
+ 	}
+}

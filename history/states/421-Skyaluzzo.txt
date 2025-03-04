@@ -22,13 +22,13 @@ state={
 
 			4111 = {
 				naval_base = 1
-				bunker = 10
+				bunker = 5
 			}
 		}
 	}
 
 	resources={
-		steel=9
-		chromium=8
+		steel=90
+		chromium=80
 	}
 }

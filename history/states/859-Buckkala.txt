@@ -3,18 +3,15 @@ state={
 	name="STATE_859"
 	state_category = rural
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = { 14812 5 }
 	}
 	resources = {
-		oil = 10
+		oil=100
 	}
 	provinces={
 		14795 14805 14808 14812 14820 14821 

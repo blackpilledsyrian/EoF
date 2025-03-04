@@ -5,7 +5,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 20
+			add = 10
 			tag = PLB
 		}
 	}
@@ -133,7 +133,7 @@ focus_tree = {
 		factor = 0
 
 		modifier = {
-			add = 10
+			add = 20
 			tag = PLB
 		}
 	}
@@ -5222,6 +5222,10 @@ focus_tree = {
 				category = decryption_tech
 				category = radar_tech
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1.5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -5639,6 +5643,29 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = land_facility_construction_tt
+				temp_facility_state_loc = "[290.GetName]"
+				temp_facility_province_loc = "[290.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						290 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = land_facility
+						}
+					}
+					290 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 1831
+						}
+					}
+				}
+			}
 			add_research_slot = 1
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6523,12 +6550,12 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = steel
-				amount = 3
+				amount = 30
 				state = 272
 			}
 			add_resource = {
 				type = oil
-				amount = 5
+				amount = 50
 				state = 272
 			}
 		}
@@ -6588,12 +6615,12 @@ focus_tree = {
 
 			add_resource = {
 				type = steel
-				amount = 5
+				amount = 50
 				state = 272
 			}
 			add_resource = {
 				type = tungsten
-				amount = 4
+				amount = 40
 				state = 272
 			}
 		}
@@ -6744,13 +6771,13 @@ focus_tree = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 120
 				}
 			}
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 12
+					amount = 120
 				}
 			}
 		}
@@ -7112,13 +7139,13 @@ focus_tree = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 8
+					amount = 80
 				}
 			}
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 8
+					amount = 80
 				}
 			}
 		}
@@ -7146,7 +7173,7 @@ focus_tree = {
 		completion_reward = {
 		add_resource = {
 				type = crystals
-				amount = 10
+				amount = 100
 				state = 263
 			}
 		}
@@ -8886,22 +8913,22 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = oil
-				amount = 6
+				amount = 60
 				state = 257
 			}
 			add_resource = {
 				type = crystals
-				amount = 4
+				amount = 40
 				state = 317
 			}
 			add_resource = {
 				type = chromium
-				amount = 4
+				amount = 40
 				state = 256
 			}
 			add_resource = {
 				type = tungsten
-				amount = 8
+				amount = 80
 				state = 255
 			}
 		}
@@ -8974,7 +9001,7 @@ focus_tree = {
 				add_manpower = 73000
 			}
 			256 = {
-				add_manpower = 2000000
+				add_manpower = 200000
 			}
 			restore_previous_manpower = yes
 			PLB = {
@@ -10461,7 +10488,7 @@ focus_tree = {
 			290 = {
 				add_resource = {
 					type = steel
-					amount = 5
+					amount = 50
 				}
 			}
 		}
@@ -10552,7 +10579,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = crystals
-				amount = 5
+				amount = 50
 				state = 263
 			}
 		}
@@ -10816,7 +10843,7 @@ focus_tree = {
 		completion_reward = {
 			add_resource = {
 				type = tungsten
-				amount = 5
+				amount = 50
 				state = 290
 			}
 		}
@@ -10921,6 +10948,29 @@ focus_tree = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = land_facility_construction_tt
+				temp_facility_state_loc = "[290.GetName]"
+				temp_facility_province_loc = "[290.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						290 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = land_facility
+						}
+					}
+					290 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 1831
+						}
+					}
+				}
+			}
 			if = {
 				limit = {
 					amount_research_slots < 5
@@ -11142,7 +11192,7 @@ focus_tree = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 5
+					amount = 50
 				}
 			}
 		}
@@ -11202,7 +11252,7 @@ focus_tree = {
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 50
 				}
 			}
 		}
@@ -14617,7 +14667,7 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 6
+				amount = 60
 				state = 272
 			}
 		}
@@ -15822,7 +15872,7 @@ focus_tree = {
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 10
+					amount = 100
 				}
 				add_building_construction = {
 					type = industrial_complex
@@ -16218,54 +16268,56 @@ focus_tree = {
 
 
 		completion_reward = {
-		save_current_manpower = yes
-			262 = {
-				add_manpower = -1500000
-				reduce_state_category = yes
-				remove_building = { type = arms_factory level = 1 }
-				remove_building = { type = industrial_complex level = 2 }
-				add_core_of = PLB
-				set_state_name = "PLB_state_savage"
-			}
-			set_province_name = {
-				id = 6752
-				name = "PLB_state_reclaimed_soryth"
-			}
-			set_victory_points ={
-					province = 6752
-					value = 10
+				save_current_manpower = yes
+					262 = {
+						add_manpower = -1500000
+						reduce_state_category = yes
+						remove_building = { type = arms_factory level = 1 }
+						remove_building = { type = industrial_complex level = 2 }
+						add_core_of = PLB
+						set_state_name = "PLB_state_savage"
+					}
+				set_province_name = {
+					id = 6752
+					name = "PLB_state_reclaimed_soryth"
 				}
-			323 = {
-				add_manpower = -1200000
-				reduce_state_category = yes
-				add_core_of = ROOT
+				set_victory_points ={
+						province = 6752
+						value = 10
+					}
+			custom_effect_tooltip = PLB_punish_changelings_tt
+			hidden_effect = {
+				323 = {
+					add_manpower = -1200000
+					reduce_state_category = yes
+					add_core_of = ROOT
+				}
+				322 = {
+					add_manpower = -200000
+					add_core_of = ROOT
+				}
+				restore_previous_manpower = yes
+				315 = {
+					add_manpower = 10000
+					improve_state_category = yes
+					add_core_of = ROOT
+				}
+				320 = {
+					add_manpower = 15000
+					improve_state_category = yes
+					add_core_of = ROOT
+				}
+				314 = {
+					add_manpower = 500
+					add_extra_state_shared_building_slots = 1
+					add_core_of = ROOT
+				}
+				264 = {
+					add_manpower = 1500
+					add_extra_state_shared_building_slots = 1
+					add_core_of = ROOT
+				}
 			}
-			322 = {
-				add_manpower = -200000
-				add_core_of = ROOT
-			}
-		restore_previous_manpower = yes
-			315 = {
-				add_manpower = 10000
-				improve_state_category = yes
-				add_core_of = ROOT
-			}
-			320 = {
-				add_manpower = 15000
-				improve_state_category = yes
-				add_core_of = ROOT
-			}
-			314 = {
-		 		add_manpower = 500
-		 		add_extra_state_shared_building_slots = 1
-				add_core_of = ROOT
-			}
-			264 = {
-				add_manpower = 1500
-				add_extra_state_shared_building_slots = 1
-				add_core_of = ROOT
-			}
-
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_ANNEXATION }
 	}
@@ -16929,7 +16981,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 				}
 			}
 		}
@@ -18029,7 +18081,7 @@ focus_tree = {
 			add_political_power = -100
 			add_resource = {
 				type = crystals
-				amount = 10
+				amount = 100
 				state = 263
 			}
 			263 = {
@@ -21876,12 +21928,29 @@ shared_focus = {
 		y = 1
 
 		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 0.75
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.75
+				}
 			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.375
+				}
+
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 0.75
+					uses = 1
+					category = nuclear
+				}
+			}
+
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -22801,7 +22870,7 @@ shared_focus = {
 				}
 			}
 			GRF = {
-				has_completed_focus = GRF_douse_the_flames
+				has_completed_focus = GRF_troubles_begin
 			}
 			NOT = {
 				GRF = {
@@ -26603,25 +26672,25 @@ shared_focus = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 6
+					amount = 60
 				}
 			}
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 				}
 			}
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 10
+					amount = 100
 				}
 			}
 			272	= {
 				add_resource = {
 					type = steel
-					amount = 6
+					amount = 60
 				}
 			}
 		}
@@ -27418,6 +27487,29 @@ shared_focus = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = land_facility_construction_tt
+				temp_facility_state_loc = "[290.GetName]"
+				temp_facility_province_loc = "[290.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						290 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = land_facility
+						}
+					}
+					290 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 1831
+						}
+					}
+				}
+			}
 			if = {
 				limit = {
 					amount_research_slots < 5
@@ -27861,11 +27953,11 @@ shared_focus = {
 			add_resource = {
 				state = 265
 				type = aluminium
-				amount = 6
+				amount = 60
 			}
 			add_resource = {
 				type = steel
-				amount = 6
+				amount = 60
 				state = 272
 			}
 		}
@@ -28690,19 +28782,19 @@ shared_focus = {
 			290 = {
 				add_resource = {
 					type = tungsten
-					amount = 5
+					amount = 50
 				}
 			}
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 					}
 				}
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -29484,11 +29576,26 @@ shared_focus = {
 			has_completed_focus = PLB_unity_of_leader_party_masses
 		}
 		completion_reward = {
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
 			}
 			if = {
 				limit = {
@@ -29589,6 +29696,29 @@ shared_focus = {
 			focus = PLB_a_mausoleum_for_father
 		}
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = nuclear_facility_construction_tt
+				temp_facility_state_loc = "[272.GetName]"
+				temp_facility_province_loc = "[272.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						272 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = nuclear_facility
+						}
+					}
+					272 = {
+						add_building_construction = {
+							type = nuclear_facility
+							level = 1
+							instant_build = yes
+							province = 7776
+						}
+					}
+				}
+			}
 			country_event = icebear.24
 		}
 	}
@@ -30328,7 +30458,7 @@ shared_focus = {
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 20
+					amount = 200
 				}
 			}
 		}
@@ -30570,7 +30700,7 @@ shared_focus = {
 			add_tech_bonus = {
 				name = armor_bonus
 				ahead_reduction = 0.5
-				bonus = 1.5
+				bonus = 1
 				uses = 1
 				technology = super_heavy_tank_chassis_a
 			}
@@ -30879,7 +31009,7 @@ shared_focus = {
 						tank_nsb_engine_upgrade = 6
 						tank_nsb_armor_upgrade = 4
 					}
-					icon = "gfx/interface/technologies/CHN_panzerIV.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_panzerIV.dds"
 				}
 			}
 			else = {
@@ -30974,7 +31104,7 @@ shared_focus = {
 		}
 
 		relative_position_id = PLB_the_polar_connection
-		x = -1
+		x = 0
 		y = 1
 
 		completion_reward = {
@@ -31018,54 +31148,56 @@ shared_focus = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER }
 	}
-	# shared_focus = {
-	# 	id = PLB_northern_front
-	# 	icon = GFX_goal_chn_man_pop_boil
-	# 	cost = 5.00
+	shared_focus = {
+		id = PLB_northern_front
+		icon = GFX_goal_chn_man_pop_boil
+		cost = 5.00
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = PLB_the_polar_connection
+		}
+		available = {
+			CHN = {
+				has_completed_focus = demand_equestria
+			}
+		}
 
-	# 	prerequisite = {
-	# 		focus = PLB_the_polar_connection
-	# 	}
-	# 	available = {
-	# 		CHN = {
-	# 			has_completed_focus = demand_equestria
-	# 		}
-	# 	}
 
+		ai_will_do = {
+			factor = 10
+		}
+		will_lead_to_war_with = YAK
+		will_lead_to_war_with = JAK
 
-	# 	ai_will_do = {
-	# 		factor = 10
-	# 	}
-	# 	will_lead_to_war_with = YAK
-	# 	will_lead_to_war_with = JAK
+		relative_position_id = PLB_the_polar_connection
+		x = 1
+		y = 1
 
-	# 	relative_position_id = PLB_the_polar_connection
-	# 	x = 1
-	# 	y = 1
-
-	# 	completion_reward = {
-	# 		hidden_effect = {
-	# 			create_wargoal = {
-	# 				type = annex_everything
-	# 				target = YAK
-	# 			}
-	# 			create_wargoal = {
-	# 				type = annex_everything
-	# 				target = JAK
-	# 			}
-	# 		}
-	# 		declare_war_on = { type = annex_everything target = YAK }
-	# 		declare_war_on = { type = annex_everything target = JAK }
-	# 		custom_effect_tooltip = PLB_autonomy_score_add_50
-	# 		hidden_effect = {
-	# 			add_autonomy_score = {
-	# 				value = 50
-	# 				localization = PLB_northern_front
-	# 			}
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_ANNEXATION }
-	# }
+		completion_reward = {
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = YAK
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = JAK
+				}
+			}
+			declare_war_on = { type = annex_everything target = YAK }
+			declare_war_on = { type = annex_everything target = JAK }
+			custom_effect_tooltip = PLB_autonomy_score_add_50
+			hidden_effect = {
+				add_autonomy_score = {
+					value = 50
+					localization = PLB_northern_front
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
 	shared_focus = {
 		id = PLB_wave_of_bears
 		icon = GFX_goal_chn_man_tesla
@@ -31085,7 +31217,10 @@ shared_focus = {
 		y = 2
 
 		completion_reward = {
-			add_ideas = PLB_NP_ancient_tribes_rise
+			add_timed_idea = {
+				idea = PLB_NP_ancient_tribes_rise
+				days = 365
+			}
 			custom_effect_tooltip = PLB_autonomy_score_add_50
 			hidden_effect = {
 				add_autonomy_score = {
@@ -31215,17 +31350,55 @@ shared_focus = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = nuclear_facility_construction_tt
+				temp_facility_state_loc = "[272.GetName]"
+				temp_facility_province_loc = "[272.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						272 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = nuclear_facility
+						}
+					}
+					272 = {
+						add_building_construction = {
+							type = nuclear_facility
+							level = 1
+							instant_build = yes
+							province = 7776
+						}
+					}
+				}
+			}
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 2.0
 				uses = 1
 				category = heavy_air
 			}
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 2.0
-				uses = 2
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 2
+				}
+			}
+			else = {
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 1
+				}
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 2.0
+					uses = 1
+					category = nuclear
+				}
 			}
 			custom_effect_tooltip = PLB_autonomy_score_add_50
 			hidden_effect = {
@@ -31913,6 +32086,29 @@ shared_focus = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = magical_facility_construction_tt
+				temp_facility_state_loc = "[289.GetName]"
+				temp_facility_province_loc = "[289.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						289 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = magical_facility
+						}
+					}
+					289 = {
+						add_building_construction = {
+							type = magical_facility
+							level = 1
+							instant_build = yes
+							province = 10477
+						}
+					}
+				}
+			}
 			if = {
 				limit = {
 					has_completed_focus = PLB_bears_of_the_mirror
@@ -31975,6 +32171,10 @@ shared_focus = {
 				uses = 2
 				category = jet_technology
 				category = rocketry
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -32071,6 +32271,10 @@ shared_focus = {
 					uses = 1
 					category = rocketry
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
+				}
 			}
 			else = {
 				set_technology = {
@@ -32111,6 +32315,29 @@ shared_focus = {
 		y = 1
 
 		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = air_facility_construction_tt
+				temp_facility_state_loc = "[289.GetName]"
+				temp_facility_province_loc = "[289.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						289 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = air_facility
+						}
+					}
+					289 = {
+						add_building_construction = {
+							type = air_facility
+							level = 1
+							instant_build = yes
+							province = 10477
+						}
+					}
+				}
+			}
 			country_event = northern_protectorate.35
 		}
 	}
@@ -32153,11 +32380,11 @@ shared_focus = {
 		prerequisite = {
 			focus = PLB_development_outwards
 		}
-		mutually_exclusive = {
-			focus = PLB_NP_own_industry
+		available = {
+			CHN = {
+				has_completed_focus = EoF_polar_aid
+			}
 		}
-
-
 		ai_will_do = {
 			factor = 10
 		}
@@ -32231,7 +32458,7 @@ shared_focus = {
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 12
+					amount = 120
 				}
 			}
 			give_resource_rights = {
@@ -32275,19 +32502,19 @@ shared_focus = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 12
+					amount = 120
 				}
 			}
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 20
+					amount = 200
 				}
 			}
 			272	= {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 120
 				}
 			}
 			give_resource_rights = {
@@ -32391,10 +32618,6 @@ shared_focus = {
 		prerequisite = {
 			focus = PLB_development_outwards
 		}
-		mutually_exclusive = {
-			focus = PLB_welcome_changeling_aid
-		}
-
 
 		ai_will_do = {
 			factor = 10
@@ -32415,25 +32638,25 @@ shared_focus = {
 			265 = {
 				add_resource = {
 					type = aluminium
-					amount = 6
+					amount = 60
 				}
 			}
 			62 = {
 				add_resource = {
 					type = oil
-					amount = 6
+					amount = 60
 				}
 			}
 			263 = {
 				add_resource = {
 					type = crystals
-					amount = 10
+					amount = 100
 				}
 			}
 			272	= {
 				add_resource = {
 					type = steel
-					amount = 6
+					amount = 60
 				}
 			}
 		}
@@ -32588,6 +32811,14 @@ shared_focus = {
 					category = nuclear
 					category = jet_technology
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
 			}
 			increase_science_base = yes
 		}
@@ -32694,7 +32925,7 @@ shared_focus = {
 	shared_focus = {
 		id = PLB_into_the_future
 		icon = GFX_goal_chn_man_panzerfaust
-		cost = 5
+		cost = 15.00
 
 		prerequisite = {
 			focus = PLB_banish_outdated_industry
@@ -33007,7 +33238,7 @@ shared_focus = {
 			focus = PLB_closed_cities
 		}
 		available = {
-			has_tech = nuclear_reactor
+			is_special_project_completed = sp:sp_nuclear_reactor
 		}
 
 		relative_position_id = PLB_hyperbearia_restored_loyal

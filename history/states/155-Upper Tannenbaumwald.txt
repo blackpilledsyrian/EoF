@@ -16,8 +16,8 @@ state={
 		add_core_of = STG
 	}
 	resources={
-		chromium = 14
-		steel = 23
-		tungsten = 17
+		chromium=140
+		steel=230
+		tungsten=170
 	}
 }

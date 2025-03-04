@@ -3,8 +3,8 @@ state={
 	id=987
 	name="STATE_987"
 	resources={
-		chromium=6.000
-		steel=4.000
+		chromium=60.000
+		steel=40.000
 	}
 	history={
 		owner = HLR

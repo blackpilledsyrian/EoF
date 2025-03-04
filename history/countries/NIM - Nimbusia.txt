@@ -203,8 +203,11 @@ actually_fix_weapon_techs = yes #THIS HAS TO BE CALLED IN EVERY HISTORY FILE RIG
 set_cosmetic_tag = RIV_federation_mem
 
 add_ideas = {
+	# no_edict
+	martial_society
+	nationalized_military_industry
 	pre_industrial_society
-	better_science_base
+	big_science_base
 	limited_exports
 	extensive_conscription
 	NIM_boule
@@ -212,10 +215,10 @@ add_ideas = {
 	NIM_trials_of_the_cyclone
 	NIM_nimbusian_general_staff
 	NIM_warrior_society
-	RIV_member_state
 	lack_of_scientists3
 	poverty5
-	slavery_economy
+	tot_economic_mobilisation
+	RIV_member_state
 }
 
 set_country_flag = have_regular_puppets
@@ -237,7 +240,7 @@ set_politics = {
 	last_election = "1006.1.10"
 	elections_allowed = no
 }
-
+set_country_flag = has_custom_advisors
 add_equipment_to_stockpile = {
 	type = melee_equipment_0
 	amount = 600
@@ -259,6 +262,7 @@ add_equipment_to_stockpile = {
 	producer = NIM
 }
 
+recruit_character = EoF_NIM_reserve_fleet
 recruit_character = NIM_pegicles
 recruit_character = NIM_the_boule
 recruit_character = NIM_pegalaios

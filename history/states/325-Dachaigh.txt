@@ -24,12 +24,13 @@ state={
 
 			13115 = {
 				naval_base = 2
+				naval_facility = 1
 			}
 		}
 	}
 
 	resources={
-		oil=8
-		steel=6.000
+		oil=80
+		steel=60.000
 	}
 }

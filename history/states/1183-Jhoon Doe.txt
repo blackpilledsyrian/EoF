@@ -3,11 +3,11 @@ state={
 	id=1183
 	name="STATE_1183"
 	resources={
-		rubber=3.000
+		rubber=30.000
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = OLE
+		add_core_of = OLE
 		victory_points = {
 			17714 10
 		}

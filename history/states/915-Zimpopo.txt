@@ -3,12 +3,12 @@ state={
 	id=915
 	name="STATE_915"
 	resources={
-		chromium=20.000
+		chromium=200.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 1
 

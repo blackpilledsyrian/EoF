@@ -29,10 +29,14 @@ categories =  {
 		movement_cost = 1.5
 		#combat_width = -0.20
 		combat_width = 72
-		combat_support_width = 36
+		combat_support_width = 24
 		ai_terrain_importance_factor = 5.0
 		match_value = 5
 		sound_type = forest
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.15
@@ -51,10 +55,14 @@ categories =  {
 		movement_cost = 1.5
 		#combat_width = -0.33
 		combat_width = 72
-		combat_support_width = 36
+		combat_support_width = 24
 		ai_terrain_importance_factor = 3.0
 		match_value = 2
 		sound_type = desert
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.25
@@ -72,11 +80,15 @@ categories =  {
 		movement_cost = 2.0
 		attrition = 0.3
 		#combat_width = -0.66
-		combat_width = 64
-		combat_support_width = 32
+		combat_width = 72
+		combat_support_width = 24
 		ai_terrain_importance_factor = 10.0
 		match_value = 10
 		sound_type = desert
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.5
@@ -94,20 +106,28 @@ categories =  {
 		color = { 255 129 66 }
 		movement_cost = 1.0
 		ai_terrain_importance_factor = 0.1
-		combat_width = 80
-		combat_support_width = 40
+		combat_width = 90
+		combat_support_width = 30
 		match_value = 0.5
 		sound_type = plains
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 	}
 	
 	urban = {
 		color = { 120 120 120 }
 		movement_cost = 1.2
 		ai_terrain_importance_factor = 4.0
-		combat_width = 120
-		combat_support_width = 40
+		combat_width = 90
+		combat_support_width = 30
 		match_value = 4
 		sound_type = plains
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.3
@@ -125,11 +145,15 @@ categories =  {
 		attrition = 0.2
 		# combat_width = -0.25
 		combat_width = 72
-		combat_support_width = 36
+		combat_support_width = 24
 
 		ai_terrain_importance_factor = 6.0
 		match_value = 6
 		sound_type = forest
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.3
@@ -150,11 +174,15 @@ categories =  {
 		movement_cost = 2.0
 		attrition = 0.35
 		# combat_width = -0.25
-		combat_width = 64
-		combat_support_width = 32
+		combat_width = 72
+		combat_support_width = 24
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = forest
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 
 		units = {
 			attack = -0.4
@@ -172,11 +200,15 @@ categories =  {
 		color = { 255 127 0 }
 		movement_cost = 1.05
 		attrition = 0.15
-		combat_width = 80
-		combat_support_width = 40
+		combat_width = 90
+		combat_support_width = 30
 		ai_terrain_importance_factor = 8.0
 		match_value = 8
 		sound_type = desert
+		buildings_max_level = {
+			bunker = 5
+			coastal_bunker = 5
+		}
 		
 		sickness_chance = 1.0
 		
@@ -224,7 +256,6 @@ categories =  {
 			}
 			navy_fuel_consumption_factor = 0.2
 		}
-
 		navy_visibility = -0.2
 		positioning = -0.15
 	}
@@ -240,7 +271,6 @@ categories =  {
 			navy_visibility = 1.0
 		}
 		positioning = -0.05
-		naval_mine_hit_chance = -0.5
 	}
 	
 	water_deep_ocean = {

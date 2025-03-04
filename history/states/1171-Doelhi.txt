@@ -3,13 +3,13 @@ state={
 	id=1171
 	name="STATE_1171"
 	resources={
-		aluminium=11.000
-		rubber=4.000
+		aluminium=110.000
+		rubber=40.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = OLE
+		add_core_of = OLE
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 2

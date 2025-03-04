@@ -1352,11 +1352,11 @@ foreign_politics = {
 					original_tag = JES
 				}
 			}
-			NOT = {
-				is_in_faction_with = FROM
-				has_non_aggression_pact_with = FROM
-				has_guaranteed = FROM
-			}
+			#NOT = {
+			#	is_in_faction_with = FROM
+			#	has_non_aggression_pact_with = FROM
+			#	has_guaranteed = FROM
+			#}
 		}
 		target_root_trigger = {
 			OR = {
@@ -1858,7 +1858,7 @@ economy_decisions = {
 		days_remove = 60
         fire_only_once = yes
     
-        complete_effect = {
+        remove_effect = {
             log = "[GetDateText]: [Root.GetName]: Decision remove JER_railway_construction"
             FROM = {
 			    add_extra_state_shared_building_slots = 1
@@ -2054,6 +2054,12 @@ economy_decisions = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
+				}
+				add_building_construction = {
+					type = dam
+					level = 1
+					instant_build = yes
+					province = 12385
 				}
 			}
 		}
@@ -2511,7 +2517,7 @@ prospect_for_resources = {
 			406 = {
 				add_resource = {
 					type = aluminium
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -2562,7 +2568,7 @@ prospect_for_resources = {
 			519 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 120
 				}
 			}
 		}
@@ -2613,7 +2619,7 @@ prospect_for_resources = {
 			472 = {
 				add_resource = {
 					type = rubber
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -2664,7 +2670,7 @@ prospect_for_resources = {
 			407 = {
 				add_resource = {
 					type = tungsten
-					amount = 12
+					amount = 120
 				}
 			}
 		}
@@ -2715,7 +2721,7 @@ prospect_for_resources = {
 			421 = {
 				add_resource = {
 					type = chromium
-					amount = 12
+					amount = 120
 				}
 			}
 		}
@@ -2766,7 +2772,7 @@ prospect_for_resources = {
 			435 = {
 				add_resource = {
 					type = steel
-					amount = 12
+					amount = 120
 				}
 			}
 		}
@@ -2817,7 +2823,7 @@ prospect_for_resources = {
 			493 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -2868,7 +2874,7 @@ prospect_for_resources = {
 			494 = {
 				add_resource = {
 					type = oil
-					amount = 12
+					amount = 120
 				}
 			}
 		}

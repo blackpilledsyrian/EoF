@@ -1,49 +1,157 @@
 ﻿l_english:
+laws:0 "Laws"
+procurement:0 "Procurement Law"
+army_professionalism:0 "Army Professionalism Law"
+edicts:0 "Edicts"
+
+nationalized_military_industry:0 "Nationalized Military Industry"
+national_arms_enterprises:0 "National Arms Enterprises"
+corporate_arms_partnerships:0 "Corporate Arms Partnerships"
+subsidized_defence_contracts:0 "Subsidized Defence Contracts"
+defence_contracts:0 "Defence Contracts"
+
+martial_society:0 "Martial Society"
+professional_army:0 "Professional Army"
+semi_professional_army:0 "Semi-Professional Army"
+reservist_system:0 "Reservist Based System"
+militia_system:0 "Militia Based System"
+
+STRATEGICREGION_330:0 "Haukland"
+STRATEGICREGION_331:0 "Eastern Starry Sea"
+STRATEGICREGION_332:0 "Teal Plain"
+STRATEGICREGION_333:0 "Puerto Caballo"
+STRATEGICREGION_334:0 "South Celestial Sea"
+STRATEGICREGION_335:0 "Mareiana Basin"
+STRATEGICREGION_336:0 "Sea of Hippogriffia"
+STRATEGICREGION_337:0 "Trotthenian Sea"
+STRATEGICREGION_338:0 "Coasttail"
+
 STATE_1209:0 "Griffbraltar"
 STATE_1210:0 "Dazzhip Island"
+STATE_1211:0 "Donkeytu Desert"
+VICTORY_POINTS_6978:0 "Horsetomel"
 DAZZHIP_STRAIT:0 "Dazzhip Strait"
 NORTH_SEAQUESTRIAN_STRAIT:0 "North Seaquestrian Strait"
-SOUTH_SEAQUESTRIAN_STRAIT:0 "South Seaquestrian Strait"
+SOUTH_SEAQUESTRIAN_STRAIT:0 "Seaquestrian Strait"
+WESTPOLAR_STRAIT:0 "Bearing Strait"
+EASTPOLAR_STRAIT:0 "Beaking Strait"
+HOOFUEZ_STRAIT:0 "Hoofuez Strait"
 
 VICTORY_POINTS_10222:0 "El Alamane"
+VICTORY_POINTS_426:0 "Buckhmut"
+VICTORY_POINTS_295:0 "Raspberry Grove"
+
+super_air_base:0 "Expanded Air Base"
+super_air_base_plural:0 "Expanded Air Bases"
+super_air_base_desc:0 "This building provides the state with additional air force capacity beyond regular air bases."
+EoF_super_air_base_tech:0 "Expanded Air Base Technology"
+
+EoF_mass_motorization_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
+EoF_volkssturm_tt:0 "§GDecreases§! §YInfantry Equipment§! requirement for §YInfantry§! by 20."
+EoF_large_front_operations_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 5%."
+EoF_operational_concentration_tt:0 "§GDecreases§! §YTank Chassis§! requirement for §YTanks§! by 10%."
+EoF_mechanized_wave_tt:0 "§GDecreases§! §YMotorized Equipment§!, §YMechanized Equipment§! and §YAmphibious Mechanized Equipment§! requirement for §YMotorized/Mechanized Infantry§! by 5."
+EoF_peoples_army_tt:0 "§RIncreases§! §YCombat Width§! of §YAll Frontline Armour§! by 1"
+
+tactic_masterful_blitz_preferred_weight_factor:0 "Additional §YMasterful Blitz§! Tactic Chance if it is Preferred tactic"
 
 ABILITY_ARTILLERY_BOMBARDMENT:0 "Artillery Bombardment"
 ABILITY_ARTILLERY_BOMBARDMENT_DESC:0 "Your units will bombard the enemy, but leave themselves vulnerable to counterattack."
 
-modifier_production_cost_industrial_complex_factor:0 "£construction_speed_civfactory_texticon  §YCivilian Factory§! construction cost"
-modifier_production_cost_industrial_complex_factor_desc:0 "Modifies the cost of Military Factory construction."
+modifier_production_cost_infrastructure_factor:0 "£construction_speed_infrastructure_texticon  §YInfrastructure§! construction cost"
+modifier_production_cost_infrastructure_factor_desc:0 "Modifies the cost of Infrastructure construction."
 modifier_production_cost_arms_factory_factor:0 "£construction_speed_milfactory_texticon  §YMilitary Factory§! construction cost"
-modifier_production_cost_arms_factory_factor_desc:0 "Modifies the cost of Civilian Factory construction."
+modifier_production_cost_arms_factory_factor_desc:0 "Modifies the cost of Military Factory construction."
+modifier_production_cost_industrial_complex_factor:0 "£construction_speed_civfactory_texticon  §YCivilian Factory§! construction cost"
+modifier_production_cost_industrial_complex_factor_desc:0 "Modifies the cost of Civilian Factory."
+modifier_production_cost_air_base_factor:0 "£construction_speed_airbase_texticon  §YAir Base§! construction cost"
+modifier_production_cost_air_base_factor_desc:0 "Modifies the cost of Air base construction."
+modifier_production_cost_naval_base_factor:0 "£construction_speed_navalbase_texticon  §YNaval base§! construction cost"
+modifier_production_cost_naval_base_factor_desc:0 "Modifies the cost of Naval base construction."
+modifier_production_cost_bunker_factor:0 "£construction_speed_landfort_texticon  §YLand Fort§! construction cost"
+modifier_production_cost_bunker_factor_desc:0 "Modifies the cost of Bunker construction."
+modifier_production_cost_coastal_bunker_factor:0 "£construction_speed_coastfort_texticon  §YCoastal Fort§! construction cost"
+modifier_production_cost_coastal_bunker_factor_desc:0 "Modifies the cost of Coastal bunker construction."
 modifier_production_cost_dockyard_factor:0 "£construction_speed_dockyard_texticon  §YDockyard§! construction cost"
 modifier_production_cost_dockyard_factor_desc:0 "Modifies the cost of Dockyard construction."
+modifier_production_cost_anti_air_building_factor:0 "£construction_speed_antiair_texticon  §YAnti Air§! construction cost"
+modifier_production_cost_anti_air_building_factor_desc:0 "Modifies the cost of Anti air construction."
+modifier_production_cost_synthetic_refinery_factor:0 "£construction_speed_refinery_texticon  §YRefinery§! construction cost"
+modifier_production_cost_synthetic_refinery_factor_desc:0 "Modifies the cost of Synthetic construction."
+modifier_production_cost_radar_station_factor:0 "£construction_speed_radar_texticon  §YRadar Station§! construction cost"
+modifier_production_cost_radar_station_factor_desc:0 "Modifies the cost of Radar Station construction."
+modifier_production_cost_rocket_site_factor:0 "£construction_speed_rocket_texticon  §YRocket Site§! construction cost"
+modifier_production_cost_rocket_site_factor_desc:0 "Modifies the cost of Rocket Site construction."
+modifier_production_cost_nuclear_reactor_factor:0 "£construction_speed_reactor_texticon  §YNuclear Reactor§! construction cost"
+modifier_production_cost_nuclear_reactor_factor_desc:0 "Modifies the cost of Nuclear Reactor construction cost"
+modifier_production_cost_fuel_silo_factor:0 "£construction_speed_fuelsilo_texticon  §YFuel Silo§! construction cost"
+modifier_production_cost_fuel_silo_factor_desc:0 "Modifies the cost of Fuel Silo construction."
+modifier_production_cost_rail_way_factor:0 "£construction_speed_railway_texticon  §YRailway§! construction cost"
+modifier_production_cost_rail_way_factor_desc:0 "Modifies the cost of Railway construction."
+modifier_production_cost_supply_node_factor:0 "£construction_speed_supplyhub_texticon  §YSupply Hub§! construction cost"
+modifier_production_cost_supply_node_factor_desc:0 "Modifies the cost of Supply Hub construction."
+
+ADD_UNIT_MEDAL_DIV_EFFECT:0 "Add Unit Medal"
 
 EoF_CHN_mio_trait_breakthrough_tanks:0 "Breakthrough Tanks"
 EoF_CHN_mio_trait_long_range_guns:0 "Long Range Guns"
 EoF_CHN_mio_trait_large_turrets:0 "Large Turrets"
 EoF_CHN_mio_trait_simple_variants:0 "Simplified Variants"
 
+EoF_afrika_korps_medal:0 "Zebrika Korps"
+EoF_afrika_korps_history:0 "Assigned to the Zebrika Korps."
+
+EoF_JER_mio_trait_forward_battery:0 "All Forward Battery Design"
+EoF_JER_mio_trait_monolithic_plate:0 "Monolithic Armour Plate"
+EoF_JER_mio_trait_multi_carrier:0 "Carrier Communications"
+
 EoF_JER_aeb_organization:0 "AEB"
 EoF_JER_acl_organization:0 "ACL"
 EoF_JER_acf_organization:0 "ACF"
 
-STG_economic_policy:0 "War Communism"
+STG_economic_policy:0 "State Economic Mandate"
+EoF_STG_state_defense_committee_0:0 "State Defense Committee"
+EoF_STG_state_defense_committee_1:0 "State Defense Committee"
+EoF_STG_state_defense_committee_2:0 "State Defense Committee"
+EoF_STG_state_defense_committee_3:0 "State Defense Committee"
+
+EoF_STG_delayed_UPA:0 "UPA Membership Negotiations"
+EoF_STG_delayed_UPA_tt:0 "Once this idea §Yexpires§!, or on §YOctober 1st, 1011§!, whichever first, §YSTG§! will join the §YUPA§!."
 
 EoF_category:0 "Game Decisions"
 EoF_big_division_decision:0 "Add a 48w Template"
+EoF_convoy_decision:0 "Add 1 Convoy"
 EoF_AI_EQC_decision:0 "AI New Mareland"
 EoF_player_EQC_decision:0 "Player New Mareland"
 EoF_AI_OLE_decision:0 "AI Olenia"
 EoF_player_OLE_decision:0 "Player Olenia"
+EoF_AI_NCH_decision:0 "AI Greneclyf"
+EoF_AI_NIM_decision:0 "AI Nimbusia"
+
+EoF_invade_SDL_decision:0 "Invade Saddle Arabia"
+EoF_invade_EMR_decision:0 "Invade Four Emirs"
+EoF_invite_SDL_decision:0 "Invite Saddle Arabia"
+EoF_invite_EMR_decision:0 "Invite Four Emirs"
 
 EoF_dandan:0 "Narcoleptic Genius"
+EoF_imperial_governer:0 "Imperial Governer"
 EoF_war_industrialists:0 "War Industrialist"
 EoF_production_conductor:0 "Conductor of Production"
 EoF_board_of_war:0 "Board of War"
 EoF_busy_reforming_trait:0 "Leading Reform"
 EoF_Fluttershy:0 "Element of Kindness"
+EoF_snake:0 "Snake of Skyfall"
+EoF_armour_advocate:0 "Armour Advocate"
+EoF_navy_spy:0 "Naval Intelligence Master"
 
 EoF_neutral_country:0 "Neutral Country"
 EoF_neutral_trade:0 "Neutral Trade"
+EoF_south_trade:0 "South Trade"
+EoF_north_trade:0 "North Trade"
+
+EoF_north_integrated_economy:0 "Integrated Northern Economy"
+EoF_failed_integrated_economy:0 "Integrated Economy Collapse"
+EoF_failing_integrated_economy_mission:0 "Integrated Economy Collapsing"
 
 EoF_peacetime_training:0 "Peacetime Training"
 
@@ -55,9 +163,21 @@ shadow_of_kemerkai:0 "Shadow of Kemerkai"
 
 EoF_ABY_cat_therine_earnshaw:0 "█████ ████████"
 
+decision_cost_army_xp_10_pp_10:0 "£army_experience  §Y10§! £pol_power  §Y10§!"
+decision_cost_army_xp_10_pp_10_blocked:0 "£army_experience  §R10§! £pol_power  §R10§!"
+decision_cost_army_xp_10_pp_10_tooltip:0 "It costs £army_experience  §Y10§! £pol_power  §Y10§! to take the decision"
+
 decision_cost_army_xp_10_pp_30:0 "£army_experience  §Y10§! £pol_power  §Y30§!"
 decision_cost_army_xp_10_pp_30_blocked:0 "£army_experience  §R10§! £pol_power  §R30§!"
 decision_cost_army_xp_10_pp_30_tooltip:0 "It costs £army_experience  §Y10§! £pol_power  §Y30§! to take the decision"
+
+decision_cost_army_xp_30_pp_30:0 "£army_experience  §Y30§! £pol_power  §Y30§!"
+decision_cost_army_xp_30_pp_30_blocked:0 "£army_experience  §R30§! £pol_power  §R30§!"
+decision_cost_army_xp_30_pp_30_tooltip:0 "It costs £army_experience  §Y30§! £pol_power  §Y30§! to take the decision"
+
+decision_cost_army_xp_30_pp_50:0 "£army_experience  §Y30§! £pol_power  §Y50§!"
+decision_cost_army_xp_30_pp_50_blocked:0 "£army_experience  §R30§! £pol_power  §R50§!"
+decision_cost_army_xp_30_pp_50_tooltip:0 "It costs £army_experience  §Y30§! £pol_power  §Y50§! to take the decision"
 
 decision_cost_army_xp_30_pp_100:0 "£army_experience  §Y30§! £pol_power  §Y100§!"
 decision_cost_army_xp_30_pp_100_blocked:0 "£army_experience  §R30§! £pol_power  §R100§!"
@@ -65,6 +185,9 @@ decision_cost_army_xp_30_pp_100_tooltip:0 "It costs £army_experience  §Y30§! 
 
 EoF_academy_category:0 "Doki Doki General Academy"
 EoF_academy_category_desc:0 "Welcome to the General Academy! It's always been a dream of mine to make something special out of the things I love. Now that you're an academy member, you can help me make that dream come true. I'm super excited for you to make friends with everyone and help the General Academy become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?"
+
+EoF_advanced_academy_tt:0 "£army_level_texticon Develop §YAdvanced Academy Training§!"
+EoF_advanced_academy:0 "Developed Advanced Academy Training"
 
 EoF_academy_in_progress:0 "Academy in Progress"
 
@@ -78,9 +201,22 @@ EoF_academy_commando:0 "Commando Training"
 EoF_academy_trickster:0 "Tactical Training"
 EoF_academy_skilled_staffer:0 "Staff Management Training"
 EoF_academy_artillery_specialist:0 "Artillery Command Training"
+EoF_academy_heat_specialist:0 "Heat Specialist Training"
+EoF_academy_desert_fox:0 "Desert Specialist Training"
+EoF_academy_swamp_fox:0 "Swamp Specialist Training"
+EoF_academy_trait_mountaineer:0 "Mountain Specialist Training"
+EoF_academy_hill_fighter:0 "Hill Specialist Training"
+EoF_academy_jungle_rat:0 "Jungle Specialist Training"
+EoF_academy_ranger:0 "Forest Specialist Training"
+EoF_academy_urban_assault_specialist:0 "Urban Specialist Training"
+EoF_academy_winter_specialist:0 "Cold Specialist Training"
+EoF_academy_cancel:0 "Cancel Training"
 
 EoF_academy_trait:0 "Academy Training"
 EoF_academy_trait_desc:0 "Selected for additional training at the General Academy."
+
+EoF_expanded_command_trait:0 "Dedicated Command"
+EoF_expanded_command_trait_desc:0 "Specialization in command of a select number of divisions."
 
 EoF_GRF_border_war_mission:0 "Demand the Village Up North"
 EoF_GRF_border_war_mission_desc:0 "The Village Up North has long been a reminder of Equestria's blatent disregard for our nation. By demanding its annexation we will finally send a message that we are not to be taken lightly."
@@ -100,70 +236,29 @@ GRF_border_war.5.t:0 "Village Up North Lost"
 GRF_border_war.5.desc:0 "Despite heroic resistance, Nova Griffonian forces were able to reach the town and take up positions within buildings. Without adequete forces to counter-attack our forces were forced to withdraw."
 GRF_border_war.5.a:0 "Evacuate the civilians."
 
+GRF_border_war.8.t:0 "An Artillery Officer"
+GRF_border_war.8.desc:0 "In the dimly lit throne room of her hive, Queen Chrysalis of the Changelings reclined on her twisted, thorn-covered throne, her eyes gleaming with malevolent intelligence. The air was thick with the hum of her subjects, all awaiting her command. A messenger drone, smaller and more nervous than the others, approached her cautiously, clutching a rolled parchment.\n\n"Your Majesty," the drone began, bowing low. "We have received an urgent report from our spies in the northern regions."\n\nChrysalis motioned for the drone to continue, her expression unreadable. The drone unfurled the parchment and read aloud, its voice trembling slightly.\n\n"Nova Griffonia has launched a counter-attack against the Polar Bears, seizing back their territory. The border war has intensified rapidly, with the Griffons pushing deeper into Polar Bear lands."\n\nQueen Chrysalis, with a glint of ruthless determination in her eyes, summoned her generals forwards. "The time for subtlety is over," she declared, her voice echoing through the chamber. "Nova Griffonia has gone unchecked for too long. We shall strike while they are entangled in their border conflict. Mobilize the armies; I want every soldier ready for an all-out assault. We will crush Nova Griffonia beneath our...\n\n"No, you will not," a voice from the end of the hallway rang out."Your arrogance and foolishness in supporting Bjornling has nearly undone over thirty years of progress. I personally ensure that the Polar Bear-Nova conflict is contained and you will not interrupt the plan with any more childish outbursts. Is that clear?""
+GRF_border_war.8.a:0 "How dare... fine..."
+
+EoF_GRF_border_war_decision_1:0 "Retake Frosthill"
+EoF_GRF_border_war_decision_2:0 "Retake Tsasbaatar"
 EoF_GRI_border_war_decision:0 "Seize Skyfallian Territory"
+EoF_GRI_imperial_coast_tooltip:0 "All focuses within §YNova Griffonia§!'s Industrial Tree that grant factories shall grant §G1 additional factory§!."
 
-EoF.news.1.t:0 "Snowy Mountain Eruption"
-EoF.news.1.d:0 "[This.GetNewspaperHeader] A giant fucking volcano erupted on the Nova-Stalliongrad Border. Even though this has basically no political implications whatsoever, everyone around the world is tense for some reason. Observers do comment; however, that this is incredibly convenient if a war were to break out between the countries of Northern Equus and Southern Equus to prevent either of the bordering countries from being rolled over instantly."
-EoF.news.1.a:0 "So that's why it's impassable."
-EoF_GRF_volcano_tension:0 "Snowy Mountain Eruption"
-
-EoF.news.2.t:0 "Rising Tensions in North Zebrica"
-EoF.news.2.d:0 "[This.GetNewspaperHeader] Recent Abyssinian war camps have been spotted close to the border around El Alamane. Although no aggressive actions have been taken yet, the movement of additional troops and stockpiling of supplies in the region lends credence to theories of a possible attack in the future. Equally importantly, it is as of yet unknown whether the Abyssianian government is undertaking this operation alone, or is doing so under the orders of the Changelings. Though with their head of government currently missing, it seems likely that the Abyssinian military is recieving orders from elsewhere."
-EoF.news.2.a:0 "Who was in charge again?"
-EoF_ABY_war_tension:0 "Abyssinian Buildup"
-
-EoF.news.3.t:0 "Aquileia Threatens Equestria"
-EoF.news.3.d:0 "[This.GetNewspaperHeader] Aquileian delegates have recently returned from a diplomatic mission to Equestria. Reportedly, the delegates demanded that Equestrian territory in Fezera, New Mareland and Skyfall be handed over to Aquileian control as they presented 'legitimate security concerns'. In response, Equestrian officials have made it clear that despite any grievances the Aquileian government may have, these territories will forevermore remain under the protection of Equestria and her allies."
-EoF.news.3.a:0 "War is Looming."
-
-EoF.news.4.t:0 "Aquileia Threatens Wingbardy"
-EoF.news.4.d:0 "[This.GetNewspaperHeader] Following a stunning series of victories against Equestria, Aquileia has officially called into question the validity of the Treaty of Tarrin. Meanwhile in Karthin, Wingbardian officials responded decisively with a unilaterial denouncement of Aquileian aggression, as well as passing several unprecedented laws that would see the first fulltime remilitarization of Wingbardy since its unification years ago."
-EoF.news.4.a:0 "Wingbardy will be tested."
-
-EoF.news.5.t:0 "Imperial Naval Expansion"
-EoF.news.5.d:0 "[This.GetNewspaperHeader] The Griffonian Empire, renowned for its formidable land-based military prowess, is now setting its sights on the seas. With a small but strategic shoreline, the Empire has launched an ambitious project to expand its dockyard capacity. Officials announced the initiative aims to bolster naval capabilities, supporting both defense and trade. The expansion signifies a pivotal shift in Griffonia's strategic focus, reflecting growing maritime ambitions and a commitment to securing its coastal borders."
-EoF.news.5.a:0 "More coast is needed..."
+EoF_GRF_tank_exchange:0 "Changeling Tank Exchange Program"
 
 EoF_YAK_JAK_civil_war:0 "Yak-Jak Civil War"
 EoF_YAK_JAK_civil_war_volunteers_1:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_volunteers_2:0 "Yak-Jak Civil War Volunteers"
 EoF_YAK_JAK_civil_war_terrain:0 "Yak-Jak Civil War Terrain"
+
+EoF_SDL_EMR_war:0 "Arab-Emir War"
+EoF_SDL_EMR_war_volunteers_1:0 "Arab-Emir War Volunteers"
+EoF_SDL_EMR_war_volunteers_2:0 "Arab-Emir War Volunteers"
+
 EoF_YAK_thanks:0 "Yak Gift"
 EoF_JAK_thanks:0 "Jak Gift"
-EoF.2.t:0 "Thanks From the Yaks"
-EoF.2.desc:0 "As thanks for our contribution to their victory in the civil war, the Yaks have sent over a delegation bearing traditional gifts of their country. After the official celebratory ceremony, the Yak delegation privately confirmed the transfer of 50 tonnes of gold seized from the Jaks."
-EoF.2.a:0 "We can't accept all this..."
-EoF.3.t:0 "Thanks From the Jaks"
-EoF.3.desc:0 "As thanks for our contribution to their victory in the civil war, the Jaks have sent over a delegation bearing traditional gifts of their country. After the official celebratory ceremony, the Jak delegation privately confirmed the transfer of 100 tonnes of gold seized from the Yaks."
-EoF.3.a:0 "Quid pro quo."
 
-EoF.4.t:0 "Stalliongrad Proposes Deal to Join the UPA"
-EoF.4.desc:0 "Stalliongrad has offered us a deal to secure their entry into the UPA. If we return their claimed border territory and give them access to several strategic islands, they would be willing to join our alliance. While the current situation behooves us to accept their proposal, perhaps we should send a counteroffer that does not require us transfer as much territory."
-EoF.4.a:0 "Their requests are reasonable."
-EoF.4.b:0"A compromise is nessecary."
-
-EoF.5.t:0 "Request Nova Griffonian Assistance"
-EoF.5.desc:0 "While our army is more than capable of handing the pathetic Penguins alone, the approach to Amundsen is devoid of infrastructure as well as bordered by both mountains and sea. By asking the Nova Griffonians to join us in this endeavour we will soldify our friendship and speed up our conquest of Pingland."
-EoF.5.a:0 "Send the request."
-
-EoF.6.t:0 "Joint Military Operation With the Polar Bears"
-EoF.6.desc:0 "The Polar Bears have requested we join them in an attack against Pingland. Certainly this would be a good opertunity to test our armed forces as well as a useful political maneuver to prepare our people for war; however, it is nonetheless an undertaking with some risks."
-EoF.6.a:0 "I'm sure our allies can handle themselves."
-EoF.6.b:0 "A good chance to practice at war."
-
-EoF.13.t:0 "Our New Naval Strategy"
-EoF.13.desc:0 "After several months of rapid fire research and testing at the École Navale, our premier theorists and admirals have presented us with several options addressing different actions our fleet may be required to conduct. Which of these should take precedent over the others?"
-EoF.13.a:0 "Support."
-EoF.13.b:0 "Supremacy."
-EoF.13.c:0 "Speed."
-
-EoF.14.t:0 "Grover's Birthday Present"
-EoF.14.desc:0 "Dear Princess Celestia,\nHi! It's me, Grover. My birthday is coming up, and I was wondering if you could give me the city of Skyfall as a present? It would be amazing!\nThank you,\nGrover\n\nDear Princess Celestia,\nHello again! Just a reminder about my birthday. I really, really want Skyfall as my present. It’s my dream to have it!\nBest wishes,\nGrover\n\nDear Princess Celestia,\nIt’s Grover. My birthday is soon, and I’m hoping you’ll give me Skyfall. It’s the best gift I could ever ask for!\nThanks a lot,\nGrover\n\nDear Princess Celestia,\nIt’s almost my birthday, and I just wanted to say how much I want Skyfall as my present. Please, it would make me so happy!\nThank you so much,\nGrover"
-EoF.14.a:0 "I hate kids."
-
-EoF_great_war.1.t:0 "Sunset's Counteroffensive"
-EoF_great_war.1.desc:0 "In our darkest hour, an unexpected ally has appeared to help us. Despite being gone for several years, Sunset Shimmer has recently returned to help Equestria defend against the Changeling attack, and she did not return alone. Over the past week, hundreds of thousands of volunteer soldiers from alternate dimensions have arrived along with heavy equipment and integrated themselves within our armed forces."
-EoF_great_war.1.a:0 "This war now spans more than one world..."
 EoF_sunset_shimmer:0 "Sunset Shimmer"
 EoF_sunset_trait:0 "Otherworldly Experience"
 EoF_sunset_trait_desc:0 "§LThis general was long absent from the land, and has only recently returned. During their time abroad they picked up several quirks that some call unsettling and even alien, but which also make them a more effective commander.§!"
@@ -172,41 +267,20 @@ EoF_sunset_shimmer_stats_tp:0 "§YSunset Shimmer§! becomes a Field Marshal.\n§
 EoF_equestrian_army_decision:0 "Recruit Local Conscripts"
 EoF_locals_conscripted:0 "Locals Conscripted"
 
-EoF_great_war.2.t:0 "The Question of Winter"
-EoF_great_war.2.desc:0 "The premier question facing our high command at this moment is whether to attack immediately or wait until winter is over to launch our offensive. While every day wasted allows Equestria to mobilize more material, the harsh conditions of winter risk blunting our operation before it even begins."
-EoF_great_war.2.a:0 "Our actions in the next few months will decide the war, attack immediately."
-EoF_great_war.2.b:0 "The Equestrian response will be slow, a summer attack will break them."
+EoF_operation_vegetarian_stockpile:0 "Operation Vegetarian Preparation"
+EoF_operation_vegetarian_decision:0 "Enact Operation Vegetarian"
+EoF_operation_vegetarian_flag:0 "Operation Vegetarian Permitted"
 
-EoF_great_war.3.t:0 "Our New War Plan"
-EoF_great_war.3.desc:0 "It is now time to decide how we plan to conduct the future of this war. Whether we prepare for a long attritional conflict or a lightning fast decisive one, we must plan our economy and industry accordingly."
-EoF_great_war.3.a:0 "Maximize our near-future production."
-EoF_great_war.3.b:0 "Maintain steady production."
-EoF_great_war.3.c:0 "Prepare to increase long-term production."
-
-EoF_great_war.4.t:0 "Our New War Plan"
-EoF_great_war.4.desc:0 "So like we gotta come up with a plan to stop the Changelings right? Pick the option you think is the most meta, probably the second or third one. First one's not gonna be good until I rework the island campaign mechanics, though you do get a couple more planes I guess. Man, I need someone to write my events for me."
-EoF_great_war.4.a:0 "The floatie and the flyie things, I like'em."
-EoF_great_war.4.b:0 "Ackchyually, the increased mils and factory output is better."
-EoF_great_war.4.c:0 "My name is Comrade Soviet, or Kettle, or some other bad player who just roaches."
-
-EoF_great_war.5.t:0 "Reform from the Roots"
-EoF_great_war.5.desc:0 "Despite attempts to improve our army command and doctrine pre-war, combat with the Changelings has made it clear that temporary and unplanned solutions will not do. The Equestrian military needs to be reformed from its very roots with clear and specific guiding principles. In order to effect this change, we must decide on a chief architect who will lead us in this task."
-EoF_great_war.5.a:0 "Luna."
-EoF_great_war.5.b:0 "Blueblood."
-EoF_great_war.5.c:0 "Twilight?"
-
-EoF_great_war.6.t:0 "Army Incompetence"
-EoF_great_war.6.desc:0 "In the face of the Changeling offensive, our troops are proving themselves unable to handle sustained combat. Divisonal commanders complain of incompetent officers and poor training, while reports reach high command daily of generals ordering unplanned retreats and failing to communicate. If this does not change quickly, all of our previous effects to modernize and prepare our army will have been for naught."
-EoF_great_war.6.a:0 "We must convene a meeting immediately."
-
-EoF_great_war.8.t:0 "Starlight's Counteroffensive"
-EoF_great_war.8.desc:0 "My dear, soviet comrades. I bring grave news. Equestria is at war, nay, Equus itself is on fire. If we are to succeed here and defeat our sole nemesis, this dark thing, we must try hard. Some might have heard the Changelings deny or reject my ability to turn the tide. To that I say only this, nah I'm a pro."
-EoF_great_war.8.a:0 "Hearts of Iron."
+EoF_ant_thrax_CHN:0 "Dense Ant-Thrax"
+EoF_ant_thrax_EQS:0 "Sparse Ant-Thrax"
 
 EoF_CRY_university:0 "University of Technical Innovation"
 EoF_CRY_university_desc:0 ""
 
+EoF_crystal_commando_training:0 "Crystal Commandos"
+
 EoF_superindustrial_zone:0 "Superindustrial Zone"
+EoF_naval_industrial_zone:0 "Naval Industrial Zone"
 
 EoF_EQS_industry_plan_0:0 "Preparing Industrial Expansion"
 EoF_EQS_industry_plan_0_desc:0 ""
@@ -233,6 +307,10 @@ EoF_EQS_warplan_1:0 "War Plan"
 EoF_EQS_warplan_2:0 "War Plan"
 EoF_EQS_warplan_3:0 "War Plan"
 
+EoF_anti_imperial_coalition_0:0 "Anti-Imperial Coalition"
+EoF_anti_imperial_coalition_1:0 "Anti-Imperial Coalition"
+EoF_liberation_divisions:0 "Liberation Divisions"
+
 EoF_great_war_category_CHN:0 "The Great War"
 EoF_declare_winter_offensive:0 "Launch the Winter Offensive"
 EoF_declare_summer_offensive_1:0 "Launch the Summer Offensive"
@@ -254,6 +332,13 @@ EoF_CHN_core_buff_tt:0 "Losing §YHjortland§! will §Rremove§! this buff."
 EoF_CHN_core_buff_desc:0 "As long as our Olenian flank is secured, our people will be able to fully concentrate their efforts on the defence of the homeland. As long as a steady flow of fuel, food and raw materials is maintained, our interconnected hives are nearly impregnable. However, should Olenia be threatened, our strategic position will rapidly deteriorate."
 
 EoF_OLE_deal:0 "Olenian Economic Agreement"
+
+EoF_CHN_PLB_investment:0 "Polar Investments"
+
+EoF_PLB_industry:0 "Polar Equipment Specifications"
+EoF_PLB_industry_desc:0 "Our industry suffers from two issues, not only must our outdated traditional workshops manufacture state of the art equipment, but, our equipment must also be uniquely designed to support Polar Bear stature. These dual issues severely hamper our ability to produce certain types of equipment."
+
+EoF_CHN_initial_army_expansion:0 "Initial Army Expansion"
 
 EoF_CHN_final_army_expansion:0 "Final Army Expansion"
 EoF_CHN_final_army_expansion_tt:0 "This idea will be removed upon the beginning of the Great War."
@@ -441,6 +526,33 @@ EoF_CHN_winter_fighting:0 "Winter Fighting Experience"
 EoF_winter_offensive_selected:0 "Winter Offensive Selected"
 EoF_summer_offensive_selected:0 "Summer Offensive Selected"
 
+EoF_NCH_trade:0 "Trade Profits"
+EoF_NCH_hive_building:0 "New Hive Construction"
+EoF_NCH_dockyards_0:0 "Hives of the Sea"
+EoF_NCH_dockyards_1:0 "Hives of the Sea"
+EoF_NCH_dockyards_tt:0 "Every §Ymonth§! one state on the island with more than §Yfive§! dockyards will have §Yone§! converted into an §Goffmap§! dockyard."
+EoF_NCH_million_ton_plan_idea_0:0 "Extensive Naval Funding"
+EoF_NCH_million_ton_plan_idea_1:0 "Extensive Naval Funding"
+EoF_NCH_million_ton_plan_idea_2:0 "Extensive Naval Funding"
+EoF_NCH_million_ton_plan_idea_3:0 "Extensive Naval Funding"
+EoF_NCH_million_ton_plan_idea_4:0 "Extensive Naval Funding"
+EoF_NCH_million_ton_plan_idea_5:0 "Extensive Naval Funding"
+EoF_NCH_swarms_in_the_sea:0 "Swarms in the Sea"
+EoF_NCH_fleet_0:0 "Great Eastern Fleet"
+EoF_NCH_fleet_1:0 "Great Eastern Fleet"
+EoF_NCH_fleet_2:0 "Great Eastern Fleet"
+EoF_NCH_fleet_3:0 "Great Eastern Fleet"
+EoF_NCH_fleet_4:0 "Great Eastern Fleet"
+EoF_NCH_fleet_5:0 "Great Eastern Fleet"
+
+EoF_NCH_naval_expansion_category:0 "Naval Actions"
+EoF_NCH_million_ton_mission:0 "Million Ton Naval Expansion Program"
+EoF_infiltrate_EQS:0 "Infiltrate Equestrian Navy"
+EoF_infiltrate_HIP:0 "Infiltrate Hippogriffian Navy"
+EoF_infiltrate_RCT:0 "Infiltrate River Coalition Navy"
+EoF_infiltrate_WNG:0 "Infiltrate Wingbardian Navy"
+EoF_infiltrate_MCW:0 "Infiltrate Macawian Navy"
+
 EoF_fluttershy_desc:0 "Fluttershy is the Element of Kindness and a caretaker of animals. She is known for her shyness, but also her beauty and hidden assertiveness that is revealed whenever her friends are threatened. Now she is interested in heading a research department for developing healing spells."
 
 EoF_great_war_began:0 "Great War Has Begun"
@@ -501,6 +613,15 @@ EoF_blind_obsession:0 "Blind Obsession"
 EoF_tiffany_sortier:0 "Tiffany Sortier"
 EoF_marin_bataille:0 "Marin Bataille"
 
+EoF_formis_obscura:0 "Formis Obscura"
+EoF_spire:0 "Spire"
+EoF_antdama:0 "Antdama"
+EoF_prawn:0 "Prawn"
+
+EoF_duchess_groverina:0 "Duchess Groverina"
+
+EoF_bronislav_zashchitnikov:0 "Bronislav Zashchitnikov"
+
 EoF_polyphony_category:0 "Project Polyphony"
 EoF_polyphony_decision:0 "Activate Resonance"
 
@@ -509,7 +630,7 @@ EoF_HIP_air_mission:0 "Airforce Modernization Directive"
 EoF_HIP_army_mission:0 "Army Mobilization Directive"
 EoF_HIP_directive_navy_tt:0 "Spawns in a powerful fleet comprised of three §YGuardian Class§! battleships, four §YFirework Class§! heavy cruisers and twelve §YWakefish Class§! destroyers."
 EoF_HIP_directive_air_tt:0 "Researching better modules and airframes will improve the quality of the §YP-32 Corvus§! fighter and §YA-60 Thundercloud§! CAS."
-EoF_HIP_directive_army_tt:0 "Spawns in six 40 width §YHeavy Artillery Divisions§! as well as preparing eighteen 20 width §YHome Guard Divisions§! in case of an invasion."
+EoF_HIP_directive_army_tt:0 "Spawns in eight 30 width §YHeavy Artillery Divisions§! as well as preparing eighteen 30 width §YHome Guard Divisions§! in case of an invasion."
 
 EoF_HIP_armed_citizens:0 "Citizen Militias"
 EoF_HIP_situation_stable_army:0 "Defensive Posture"
@@ -517,6 +638,7 @@ EoF_HIP_situation_good_army:0 "Offensive Posture"
 EoF_HIP_naval_focused:0 "Naval Arms Race"
 EoF_HIP_primo_victoria_initial:0 "Might of Hippogriffia"
 EoF_HIP_primo_victoria_final:0 "Primo Victoria"
+EoF_HIP_primo_victoria_finaller:0 "Victoria Finalis"
 
 EoF_JER_DOMINATION_neutrality:0 "Greater Aquileian Republic"
 EoF_JER_DOMINATION_neutrality_ADJ:0 "Aquileian"
@@ -550,6 +672,22 @@ EoF_HIP_DOMINATION_democratic:0 "Greater Hippogriffia"
 EoF_HIP_DOMINATION_democratic_ADJ:0 "Hippogriffian"
 EoF_HIP_DOMINATION_democratic_DEF:0 "Greater Hippogriffia"
 
+EoF_RCT_DOMINATION_neutrality:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_neutrality_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_neutrality_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_fascism:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_fascism_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_fascism_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_communism:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_communism_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_communism_DEF:0 "The Ascendent River Federation"
+
+EoF_RCT_DOMINATION_democratic:0 "Ascendent River Federation"
+EoF_RCT_DOMINATION_democratic_ADJ:0 "Federation"
+EoF_RCT_DOMINATION_democratic_DEF:0 "The Ascendent River Federation"
+
 EoF_JER_first_plan:0 "First Aquileian Three Year Plan"
 EoF_JER_second_plan:0 "Second Aquileian Three Year Plan"
 
@@ -571,21 +709,42 @@ EoF_supply_stockpile:0 "Supply Stockpile"
 EoF_taifunkrieg:0 "Taifunkrieg"
 EoF_payment:0 "Industrial Payments"
 
+EoF_CTH_terrain:0 "Colthaginian Service Exemption"
+EoF_CTH_terrain_desc:0 "Despite being considered full citizens of Macawia, the political and economic turmoil of the North Zebrican War have made the recruitment of Colthaginian citizens into the armed forces nonviable."
+
+EoF_PNG_terrain:0 "Penguin Service Exemption"
+EoF_PNG_terrain_desc:0 "While integration of Penguins into any army is difficult given their stature, the sheer size difference between them and Polar Bears makes any potential integration of them into the armed forces effectively impossible."
+
+EoF_MCW_divided:0 "Macawia Divided"
+EoF_MCW_divided_desc:0 "The recent unification of Asterion and Colthage into Macawia have turned the rich trade nation into an international power overnight. Yet, the strain of integrating these three vastly different cultures and economies hampers the true potential of Macawia."
+
 EoF_funding_naval_mio:0 "Funding Naval Companies"
 mio_policy_JER_quantity:0 "Quantitative Overmatch"
 mio_policy_JER_quality:0 "Qualitative Overmatch"
 
 EoF_JER_form_domination:0 "Declare the Greater Aquileian Republic"
 EoF_HIP_form_domination:0 "Declare Greater Hippogriffia"
+EoF_RCT_form_domination:0 "Declare the Ascendent River Federation"
 
 EoF_JER_invade_equestria_mission:0 "Invasion of Equestria"
 EoF_JER_invade_wingbardy_mission:0 "Invasion of Wingbardy"
 
 EoF_tarrin_war_threat:0 "Tarrin War Threatened"
 
-EoF_WNG_treaty:0 "Treaty of Tarrin"
+EoF_WNG_terrain:0 "Resistenza e Risorgimento"
+
+EoF_WNG_treaty:0 "Victors of the Tarrin War"
+EoF_WNG_treaty_desc:0 "The Wingbardian nation has endured countless conflicts. Despite fighting heavily in the First and Second Great Griffonian Wars as well as the devastating Tarrin War, through it all, Wingbardy has remained unconquered and undefeated. However, the decades of peace and memories of past losses have sapped the will of the nation to endure a struggle of that magnitude ever again. The Wingbardian people naively hope that the current era of strife will pass quickly without the need to fight once more."
+EoF_WNG_army_atrophy:0 "Army Atrophy"
 EoF_WNG_militarization:0 "Fury of Karthin"
 EoF_WNG_militarization_desc:0 "The treacherous Aquileians have mistaken our unwillingness to fully commit to this war as a sign of weakness. Let them face the fury of Karthin, reserved for those who have forsaken all honour."
+
+EoF_WNG_treaty_2:0 "Losers of the Second Tarrin War"
+
+EoF_WNG_shame_of_defeat:0 "Shame of Defeat"
+
+EoF_WNG_inundate_the_water_lines:0 "Inundate the Water Lines"
+EoF_WNG_drain_the_water_lines:0 "Drain the Water Lines"
 
 EoF_southern_equus_invasion_terrain:0 "Unsuitable Landing Terrain"
 EoF_northern_equus_invasion_terrain_0:0 "Eastern Invasion Wall"
@@ -597,6 +756,16 @@ EoF_northern_equus_invasion_terrain_5:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_6:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_7:0 "Eastern Invasion Wall"
 EoF_northern_equus_invasion_terrain_8:0 "Eastern Invasion Wall"
+
+EoF_TRD_invasion_terrain_0:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_1:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_2:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_3:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_4:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_5:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_6:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_7:0 "Anti-Imperial Resistance Support"
+EoF_TRD_invasion_terrain_8:0 "Anti-Imperial Resistance Support"
 
 EoF_HIP_invasion_terrain_0:0 "§RCatastrophic§! Invasion Wall"
 EoF_HIP_invasion_terrain_1:0 "§RVery Dangerous§! Invasion Wall"
@@ -615,6 +784,14 @@ EoF_EQS_southern_island_campaign_3:0 "Celestial Sea Islands: §YHeavily Threaten
 EoF_EQS_southern_island_campaign_4:0 "Celestial Sea Islands: §7Threatened§!"
 EoF_EQS_southern_island_campaign_5:0 "Celestial Sea Islands: §GNormal§!"
 
+EoF_STG_southern_island_campaign_0:0 "Celestial Sea Islands: §RCatastrophic§!"
+EoF_STG_southern_island_campaign_1:0 "Celestial Sea Islands: §tVery Dangerous§!"
+EoF_STG_southern_island_campaign_2:0 "Celestial Sea Islands: §ODangerous§!"
+EoF_STG_southern_island_campaign_3:0 "Celestial Sea Islands: §YHeavily Threatened§!"
+EoF_STG_southern_island_campaign_4:0 "Celestial Sea Islands: §7Threatened§!"
+EoF_STG_southern_island_campaign_5:0 "Celestial Sea Islands: §GNormal§!"
+
+EoF_sunset_line_warning:0 "Multiversal Emergency SOS Beacon"
 
 ### Olenia
 
@@ -656,3 +833,7 @@ EoF_orb_of_chital:0 "Orb of Chital"
 EoF_orbital:0 "Delusional Hoper"
 EoF_orb_of_chital:0 "Orb of Chital"
 EoF_orb_of_chital_desc:0 "Born in Kiria, Orb of Chital is widely known for two things: that he never gives up even against the worst odds, and that his analogies and wild jumps in logic never make sense.\n\nBest exemplified by his favorite phrase 'can win', Orb of Chital's philosophy is centered around the belief that maximum effort should be exerted even in hopeless scenarios, because a bad outcome is still preferable to a disastrous one. While not a religious man, his faith in himself and those around him, particularly in the Long March, is legendary. \n\nAccording to Orb of Chital, his genius will only be revealed to the rest of the world once mindreading magic is discovered. Until then, his thoughts remain trapped inside his mind, unable to be vocalized in a way his peers may comprehend. Perhaps in the future this hypothesis will be put to the test. In the meantime, UPA high command have opted to simply take his words at face value so as to avoid any strange metaphors. \n\nRumors say that he hates ponies so much that he replaces every painting of them with weird hairless bipedal creatures."
+
+EoF_principal_cinch:0 "Principal Cinch"
+EoF_principal_cinch_desc:0 "that bitch from EQg that was the principal of the Crystal school \n\nbut a pony"
+

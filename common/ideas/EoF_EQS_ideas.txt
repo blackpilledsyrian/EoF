@@ -33,11 +33,16 @@ ideas = {
 				consumer_goods_factor = 0.25
 				local_resources_factor = -0.25
 				production_factory_max_efficiency_factor = -0.125
-				industrial_capacity_factory = -0.25
-				industrial_capacity_dockyard = 0.5
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = 1.0
 			}
 			targeted_modifier = {
 				tag = CHN
+				attack_bonus_against = -0.125
+				defense_bonus_against = -0.125
+			}
+			targeted_modifier = {
+				tag = OLE
 				attack_bonus_against = -0.125
 				defense_bonus_against = -0.125
 			}
@@ -60,11 +65,16 @@ ideas = {
 				consumer_goods_factor = 0.2
 				local_resources_factor = -0.2
 				production_factory_max_efficiency_factor = -0.1
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = 0.4
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = 0.8
 			}
 			targeted_modifier = {
 				tag = CHN
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.1
+			}
+			targeted_modifier = {
+				tag = OLE
 				attack_bonus_against = -0.1
 				defense_bonus_against = -0.1
 			}
@@ -87,11 +97,16 @@ ideas = {
 				consumer_goods_factor = 0.15
 				local_resources_factor = -0.15
 				production_factory_max_efficiency_factor = -0.075
-				industrial_capacity_factory = -0.15
-				industrial_capacity_dockyard = 0.3
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = 0.6
 			}
 			targeted_modifier = {
 				tag = CHN
+				attack_bonus_against = -0.075
+				defense_bonus_against = -0.075
+			}
+			targeted_modifier = {
+				tag = OLE
 				attack_bonus_against = -0.075
 				defense_bonus_against = -0.075
 			}
@@ -114,11 +129,16 @@ ideas = {
 				consumer_goods_factor = 0.1
 				local_resources_factor = -0.1
 				production_factory_max_efficiency_factor = -0.05
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = 0.2
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = 0.4
 			}
 			targeted_modifier = {
 				tag = CHN
+				attack_bonus_against = -0.05
+				defense_bonus_against = -0.05
+			}
+			targeted_modifier = {
+				tag = OLE
 				attack_bonus_against = -0.05
 				defense_bonus_against = -0.05
 			}
@@ -141,11 +161,16 @@ ideas = {
 				consumer_goods_factor = 0.05
 				local_resources_factor = -0.05
 				production_factory_max_efficiency_factor = -0.025
-				industrial_capacity_factory = -0.05
-				industrial_capacity_dockyard = 0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = 0.2
 			}
 			targeted_modifier = {
 				tag = CHN
+				attack_bonus_against = -0.025
+				defense_bonus_against = -0.025
+			}
+			targeted_modifier = {
+				tag = OLE
 				attack_bonus_against = -0.025
 				defense_bonus_against = -0.025
 			}
@@ -217,18 +242,19 @@ ideas = {
 				consumer_goods_factor = -0.2
 				production_speed_industrial_complex_factor = 0.25
 				production_speed_arms_factory_factor = 0.25
-				production_cost_industrial_complex_factor = -0.05
-				production_cost_arms_factory_factor = -0.05
-				industrial_capacity_factory = 0.1
-				industrial_capacity_dockyard = 0.1
+				production_cost_industrial_complex_factor = -0.1
+				production_cost_arms_factory_factor = -0.1
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				local_resources_factor = 0.2
 			}
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 				armor = {
-					build_cost_ic = -0.05
+					build_cost_ic = -0.1
 					instant = yes
 				}
 			}
@@ -240,18 +266,19 @@ ideas = {
 				consumer_goods_factor = -0.3
 				production_speed_industrial_complex_factor = 0.4
 				production_speed_arms_factory_factor = 0.4
-				production_cost_industrial_complex_factor = -0.1
-				production_cost_arms_factory_factor = -0.1
-				industrial_capacity_factory = 0.2
-				industrial_capacity_dockyard = 0.2
+				production_cost_industrial_complex_factor = -0.15
+				production_cost_arms_factory_factor = -0.15
+				industrial_capacity_factory = 0.25
+				industrial_capacity_dockyard = 0.25
+				local_resources_factor = 0.4
 			}
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 				armor = {
-					build_cost_ic = -0.15
+					build_cost_ic = -0.2
 					instant = yes
 				}
 			}
@@ -440,7 +467,7 @@ ideas = {
 				army_attack_factor = 0.025
 				army_speed_factor = -0.025
 				army_defence_factor = 0.1
-				max_planning_factor = 0.05
+				max_planning_factor = 0.025
 			}
 		}
 		EoF_blueblood_reform_1 = {
@@ -450,7 +477,7 @@ ideas = {
 				army_attack_factor = 0.025
 				army_speed_factor = -0.025
 				army_defence_factor = 0.1
-				max_planning_factor = 0.075
+				max_planning_factor = 0.05
 				planning_speed = 0.3
 			}
 		}
@@ -461,7 +488,7 @@ ideas = {
 				army_attack_factor = 0.025
 				army_speed_factor = -0.025
 				army_defence_factor = 0.1
-				max_planning_factor = 0.1
+				max_planning_factor = 0.075
 				planning_speed = 0.3
 				land_reinforce_rate = 0.03
 				org_loss_when_moving = -0.3
@@ -474,7 +501,7 @@ ideas = {
 				army_attack_factor = 0.025
 				army_speed_factor = 0.025
 				army_defence_factor = 0.1
-				max_planning_factor = 0.1
+				max_planning_factor = 0.075
 				planning_speed = 0.3
 				land_reinforce_rate = 0.03
 				org_loss_when_moving = -0.3
@@ -487,7 +514,7 @@ ideas = {
 				army_attack_factor = 0.05
 				army_speed_factor = 0.025
 				army_defence_factor = 0.1
-				max_planning_factor = 0.1
+				max_planning_factor = 0.075
 				planning_speed = 0.3
 				land_reinforce_rate = 0.03
 				org_loss_when_moving = -0.3
@@ -595,46 +622,55 @@ ideas = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.2
-				army_attack_factor = -0.2
-				army_defence_factor = -0.2
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 			}	
 		}
 		EoF_EQS_army_incompetence_3 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.16
-				army_attack_factor = -0.16
-				army_defence_factor = -0.16
+				army_org_factor = -0.12
+				army_attack_factor = -0.12
+				army_defence_factor = -0.12
 			}	
 		}
 		EoF_EQS_army_incompetence_2 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.12
-				army_attack_factor = -0.12
-				army_defence_factor = -0.12
+				army_org_factor = -0.09
+				army_attack_factor = -0.09
+				army_defence_factor = -0.09
 			}		
 		}
 		EoF_EQS_army_incompetence_1 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.08
-				army_attack_factor = -0.08
-				army_defence_factor = -0.08
+				army_org_factor = -0.06
+				army_attack_factor = -0.06
+				army_defence_factor = -0.06
 			}		
 		}
 		EoF_EQS_army_incompetence_0 = {
 			removal_cost = -1
 			picture = pony_army
 			modifier = {
-				army_org_factor = -0.04
-				army_attack_factor = -0.04
-				army_defence_factor = -0.04
+				army_org_factor = -0.03
+				army_attack_factor = -0.03
+				army_defence_factor = -0.03
 			}		
+		}
+		EoF_operation_vegetarian_stockpile = {
+			removal_cost = -1
+			picture = HIP_pink_constitution
+			modifier = {
+				political_power_cost = 0.1
+				military_factory_donations = -2
+				war_support_weekly = -0.002 
+			}			
 		}
 	}
 }

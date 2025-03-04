@@ -1168,6 +1168,100 @@ decrease_southern_equus_invasion_idea = {
 		}
 	}
 }
+increase_STG_southern_equus_invasion_idea = {
+	if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_0 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_0
+				add_idea = EoF_STG_southern_island_campaign_1
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_1 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_1
+				add_idea = EoF_STG_southern_island_campaign_2
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_2 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_2
+				add_idea = EoF_STG_southern_island_campaign_3
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_3 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_3
+				add_idea = EoF_STG_southern_island_campaign_4
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_4 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_4
+				add_idea = EoF_STG_southern_island_campaign_5
+			}
+		}
+	}
+}
+decrease_STG_southern_equus_invasion_idea = {
+	if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_1 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_1
+				add_idea = EoF_STG_southern_island_campaign_0
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_2 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_2
+				add_idea = EoF_STG_southern_island_campaign_1
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_3 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_3
+				add_idea = EoF_STG_southern_island_campaign_2
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_4 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_4
+				add_idea = EoF_STG_southern_island_campaign_3
+			}
+		}
+	}
+	else_if = {
+		limit = { STG = { has_idea = EoF_STG_southern_island_campaign_5 } }
+		STG = {
+			swap_ideas = {
+				remove_idea = EoF_STG_southern_island_campaign_5
+				add_idea = EoF_STG_southern_island_campaign_4
+			}
+		}
+	}
+}
 increase_HIP_invasion_terrain = {
 	if = {
 		limit = { 683 = { has_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_0 } } }
@@ -1665,6 +1759,228 @@ decrease_HIP_invasion_terrain = {
 		1204 = {
 			add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_7 }
 			remove_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+		}
+	}
+}
+increase_TRD_invasion_terrain = {
+	if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 } } }
+		TRD = {
+			every_core_state = {
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }	
+			}
+		}
+	}
+}
+decrease_TRD_invasion_terrain = {
+	if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }	
+			}
+		}
+	}
+	else_if = {
+		limit = { 381 = { has_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+				remove_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }	
+			}
+		}
+	}
+}
+apply_TRD_invasion_terrain = {
+	if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_0 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_0 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_1 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_1 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_2 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_2 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_3 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_3 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_4 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_4 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_5 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_5 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_6 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_6 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_7 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_7 }
+			}
+		}
+	}
+	else_if = {
+		limit = { 678 = { has_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_8 } } }
+		TRD = {
+			every_core_state = {
+				add_dynamic_modifier = { modifier = EoF_TRD_invasion_terrain_8 }
+			}
 		}
 	}
 }

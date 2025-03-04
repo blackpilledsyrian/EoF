@@ -1,0 +1,67 @@
+﻿l_english:
+autonomy_EoF_rivco_member:0 "River Coalition Member"
+autonomy_EoF_rivfed_member:0 "River Federation Member"
+autonomy_EoF_enforced_ally:0 "Enforced Ally"
+
+EoF_RIV_balance_of_power:0 "Coalition Centralization Balance"
+EoF_RIV_balance_of_power_decay:0 "Coalition Decentralizing"
+
+EoF_RIV_centralize_side:0 "Centralization"
+EoF_RIV_decentralize_side:0 "Decentralization"
+EoF_RIV_high_decentralize_range:0 "High Decentralization"
+EoF_RIV_low_decentralize_range:0 "Low Decentralization"
+EoF_RIV_mid_range:0 "Balanced"
+EoF_RIV_low_centralize_range:0 "Low Centralization"
+EoF_RIV_high_centralize_range:0 "High Centralization"
+
+EoF_RIV_subject_lend_lease:0 "Military Aid for Subjects"
+EoF_RIV_subject_factories:0 "Economic Aid for Subjects"
+EoF_RIV_subject_infrastructure:0 "Infrastructure Aid for Subjects"
+
+EoF_RIV_favour_BAK:0 "Grant Bakara Special Permissions"
+EoF_RIV_favour_LCT:0 "Grant Lake City Special Permissions"
+EoF_RIV_favour_WIT:0 "Grant Wittenland Special Permissions"
+EoF_RIV_favour:0 "Special Permissions"
+EoF_RIV_BAK_support:0 "Bakaran Naval Exchange"
+EoF_RIV_LCT_support:0 "Lake City Army Exchange"
+EoF_RIV_WIT_support:0 "Wittenland Industry Exchange"
+
+EoF_RIV_invite_BAK:0 "Integrate Bakara"
+EoF_RIV_invite_LCT:0 "Integrate Lake City"
+EoF_RIV_invite_WIT:0 "Integrate Wittenland"
+
+EoF_RIV_infrastructure_autonomy:0 "Coalition Infrastructure Aid"
+
+federation_staff:0 "Federation Staff"
+federation_advisor:0 "Federation Advisors"
+federation_command:0 "Federation Command"
+
+federation_advisor_cost_factor:0 "Federation Advisor Cost"
+federation_command_cost_factor:0 "Federation Command Cost"
+
+EoF_RIV_federation_staff_tt:0 "We will recieve §Gunique§! advisors and commanders from our federation allies."
+
+EoF_fed_silent_workhorse:0 "Federation Bureaucrat"
+EoF_fed_compassionate_gentleman:0 "Federation Advocate"
+EoF_fed_financial_expert:0 "Federation Economist"
+EoF_fed_alt_navy_capital_ship_3:0 "Federation Admiral"
+EoF_fed_alt_navy_chief_old_guard:0 "Old Guard"
+EoF_fed_navy_screen_3:0 "Federation Captain"
+EoF_fed_navy_fleet_logistics_3:0 "Federation Fleet Planner"
+EoF_fed_captain_of_industry:0 "Federation Architect"
+EoF_fed_backroom_backstabber:0 "Federation Enforcer"
+EoF_fed_smooth_talking_charmer:0 "Federation Trade Minister"
+EoF_fed_army_chief_morale_2:0 "Federation Armour Commander"
+EoF_fed_army_concealment_2:0 "Federation Air Warden"
+EoF_fed_alt_army_chief_maneuver_2:0 "Federation Tactician"
+EoF_fed_fortification_engineer:0 "Federation Engineer"
+EoF_fed_war_industrialist:0 "Federation Industrialist"
+EoF_fed_army_infantry_2:0 "Federation Infantry Commander"
+EoF_fed_army_logistics_2:0 "Federation Logistician"
+EoF_fed_army_entrenchment_2:0 "Federation Marshal"
+
+EoF_RIV_federation_ascendent:0 "River Federation Ascendent"
+EoF_RIV_federation_ascendent_desc:0 "The repeated and continious success of the River Federation has invigorated our people, a growing faction within our nation is calling for us to embrace our destiny as a new world superpower."
+
+EoF_RIV_river_federation:0 "The River Federation"
+EoF_RIV_federation_formed:0 "River Federation Formed"

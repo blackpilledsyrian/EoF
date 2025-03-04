@@ -22,6 +22,6 @@ state={
 	}
 
 	resources={
-		crystals=10
+		crystals=100
 	}
 }

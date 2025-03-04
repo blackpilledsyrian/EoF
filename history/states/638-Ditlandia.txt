@@ -11,14 +11,16 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+		owner = BAK
+		add_core_of = BAK
+		add_core_of = DMT
 
 		victory_points = { 4704 5 }
 
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
 			dockyard = 1
+			industrial_complex = 1
 
 			7808 = {
 				naval_base = 1
@@ -27,8 +29,8 @@ state={
 	}
 
 	resources={
-		steel=16
-		tungsten=8
-		crystals=28
+		steel=160
+		tungsten=80
+		crystals=280
 	}
 }

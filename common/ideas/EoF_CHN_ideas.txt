@@ -46,21 +46,21 @@ ideas = {
 			removal_cost = -1
 			picture = CHN_plan_east_prep
 			modifier = {
-				supply_consumption_factor = -0.5
-				no_supply_grace	= 96.0
-				planning_speed = 2.0
+				supply_consumption_factor = -0.2
+				no_supply_grace	= 48.0
+				planning_speed = 1.0
 			}
 			targeted_modifier = {
 				tag = EQS
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 			targeted_modifier = {
 				tag = STG
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 			targeted_modifier = {
 				tag = CRY
-				attack_bonus_against = 0.5
+				attack_bonus_against = 0.25
 			}
 		}
 		EoF_CHN_core_buff = {
@@ -72,18 +72,24 @@ ideas = {
 				custom_modifier_tooltip = EoF_CHN_core_buff_tt
 			}
 		}
+		EoF_CHN_initial_army_expansion = {
+			removal_cost = -1
+			picture = ARG_rapid_militarization
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.15
+				industrial_capacity_factory = 0.05
+				military_factory_donations = 5
+			}
+		}
 		EoF_CHN_final_army_expansion = {
 			removal_cost = -1
 			picture = ARG_rapid_militarization
-			cancel = {
-				has_global_flag = EoF_great_war_began
-			}
 			modifier = {
 				production_factory_max_efficiency_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
-				industrial_capacity_factory = 0.25
-				military_factory_donations = 20
-				custom_modifier_tooltip = EoF_CHN_final_army_expansion_tt
+				industrial_capacity_factory = 0.15
+				military_factory_donations = 10
 			}
 		}
 		EoF_war_measures = {
@@ -133,7 +139,6 @@ ideas = {
 					instant = yes
 				}
 			}
-
 		}
 		EoF_CHN_warplan_short_2 = {
 			removal_cost = -1
@@ -141,7 +146,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				production_speed_arms_factory_factor = -0.2
-				production_factory_start_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = -0.05
 				line_change_production_efficiency_factor = -0.2
 			}
 
@@ -161,7 +166,7 @@ ideas = {
 			removal_cost = -1
 			picture = generic_improved_industries
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				production_factory_max_efficiency_factor = 0.05
 			}
 		}
@@ -180,10 +185,19 @@ ideas = {
 			removal_cost = -1
 			picture = generic_improved_industries
 			modifier = {
-				consumer_goods_factor = -0.05
-				industrial_capacity_factory = 0.1
+				consumer_goods_factor = -0.1
+				industrial_capacity_factory = 0.15
 				production_factory_max_efficiency_factor = 0.15	
 			}
+		}
+		EoF_CHN_PLB_investment = {
+			removal_cost = -1
+			picture = generic_foreign_capital
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.05
+			}	
 		}
 	}
 }

@@ -1,0 +1,186 @@
+
+sp_EoF_fire_control_computer = {
+	specialization = specialization_land
+	icon = GFX_sp_EoF_fire_control_computer
+
+	project_tags = sp_tag_tank
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = advanced_computing_machine
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 1
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.large
+	
+	project_output = {
+		enable_equipment_modules = {
+			fire_control_computer
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+}
+sp_EoF_advanced_land_doctrine = {
+	specialization = specialization_land
+	icon = GFX_sp_EoF_advanced_land_doctrine
+
+	ai_will_do = {
+		base = 1
+	}
+
+	allowed = {
+		has_dlc = "No Step Back"
+	}
+	
+	available = {
+		FROM = {
+			has_tech = finished_land_doctrine
+		}
+	}
+
+	breakthrough_cost = {
+		specialization_land = 2
+	}
+	
+	prototype_time = sp_time.prototype.short
+
+	complexity = sp_complexity.small
+	
+	project_output = {
+		country_effects = {
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = berlin_path
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = brussels_path
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = global_path
+			}
+			custom_effect_tooltip = {
+				localization_key = SP_UNLOCK_TECH
+				TECH = warsaw_path
+			}
+		}
+	}
+
+	generic_prototype_rewards = {
+		sp_land_generic_reward_scientist_xp_1
+		sp_land_generic_reward_scientist_xp_2
+		sp_land_generic_reward_scientist_xp_3
+		sp_land_generic_reward_army_xp_1
+		sp_land_generic_reward_army_xp_2
+		sp_land_generic_reward_army_xp_3
+		sp_land_generic_reward_major_progress_1
+		sp_land_generic_reward_major_progress_2
+		sp_land_generic_reward_major_progress_3
+		sp_land_generic_reward_test_failure_1
+		sp_land_generic_reward_test_failure_2
+		sp_land_generic_reward_test_failure_3
+		sp_land_generic_reward_resource_scarcity
+	}
+
+	unique_prototype_rewards = {
+
+		sp_EoF_reward_advanced_land_doctrine_preference = {
+			fire_only_once = yes
+
+			threshold = { 
+				min = 50
+				max = 100
+			}
+
+			weight = {
+				base = 30
+			}
+
+			option = {
+				token = sp_EoF_reward_advanced_land_doctrine_preference_MW
+				
+				iteration_output = {
+					country_effects = {
+						# add_doctrine_cost_reduction = {
+						# 	cost_reduction = 0.5
+						# 	uses = 1
+						# 	category = cat_mobile_warfare
+						# }
+					}
+				}
+			}
+
+			option = {
+				token = sp_EoF_reward_advanced_land_doctrine_preference_SF
+				
+				iteration_output = {
+					country_effects = {
+						# add_doctrine_cost_reduction = {
+						# 	cost_reduction = 0.5
+						# 	uses = 1
+						# 	category = cat_superior_firepower
+						# }
+					}
+				}
+			}
+
+			option = {
+				token = sp_EoF_reward_advanced_land_doctrine_preference_GBP
+				
+				iteration_output = {
+					country_effects = {
+						# add_doctrine_cost_reduction = {
+						# 	cost_reduction = 0.5
+						# 	uses = 1
+						# 	category = cat_grand_battle_plan
+						# }
+					}
+				}
+			}
+
+			option = {
+				token = sp_EoF_reward_advanced_land_doctrine_preference_MA
+				
+				iteration_output = {
+					country_effects = {
+						# add_doctrine_cost_reduction = {
+						# 	cost_reduction = 0.5
+						# 	uses = 1
+						# 	category = cat_mass_assault
+						# }
+					}
+				}
+			}
+		}
+	}
+}

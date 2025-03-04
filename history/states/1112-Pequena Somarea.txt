@@ -3,17 +3,12 @@ state={
 	name="STATE_1112"
 	state_category = small_island
 	resources={
-		oil = 7 
+		oil=70 
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_claim_by = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 1
 			16752 = { naval_base = 2 }

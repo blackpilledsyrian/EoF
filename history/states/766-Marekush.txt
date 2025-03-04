@@ -2,13 +2,12 @@ state={
 	id=766
 	name="STATE_766"
 	resources={
-		steel=10
+		steel=100
 	}
 	state_category = town
 	history={
-		owner = HLR
-		add_claim_by = HLR
-		add_core_of = HLR
+		owner = HIP
+		add_core_of = HIP
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1

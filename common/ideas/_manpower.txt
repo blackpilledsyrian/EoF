@@ -548,8 +548,6 @@ ideas = {
 
 			modifier = {
 				conscription = 0.05
-				#industrial_capacity_factory = -0.1
-				#production_speed_buildings_factor = -0.1
 				training_time_factor = 0.1
 			}
 
@@ -624,7 +622,7 @@ ideas = {
 			}
 			
 			available = {
-				has_country_flag = KIR_can_have_banner_system
+				# has_country_flag = KIR_can_have_banner_system
 			}
 			
 			visible = {
@@ -991,7 +989,6 @@ ideas = {
 				industrial_capacity_factory = -0.3
 				industrial_capacity_dockyard = -0.3
 				production_speed_buildings_factor = -0.3
-				#XP from reinforcement penalty (small)
 				training_time_factor = 0.3
 			}
 
@@ -1122,9 +1119,9 @@ ideas = {
 
 			modifier = {
 				conscription = 0.25
-				industrial_capacity_factory = -0.4
-				industrial_capacity_dockyard = -0.4
-				production_speed_buildings_factor = -0.4
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
 				training_time_factor = 0.5
 			}
 
@@ -1170,6 +1167,21 @@ ideas = {
 			
 			modifier = {
 				conscription = 1
+			}
+		}
+
+		CES_shadow_manpower_law = {
+			picture = shadow_conscription_law
+			visible = { 
+				has_country_flag = CES_shadow_path
+			}
+			available = { original_tag = CES }
+			allowed_to_remove = {
+				always = no
+			}
+			
+			modifier = {
+				training_time_factor = 2
 			}
 		}
 		

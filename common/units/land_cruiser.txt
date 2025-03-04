@@ -1,0 +1,88 @@
+sub_units = {
+	land_cruiser = {
+		abbreviation = "LCB"
+		sprite = land_cruiser
+		map_icon_category = armored
+		priority = 2520
+		ai_priority = 2520
+		active = no
+
+		type = {
+			armor
+		}
+		
+		group = armor
+
+		categories = {
+			category_tanks
+			category_front_line
+			category_all_armor
+			category_army
+			category_mechanical
+		}
+
+		combat_width = 30
+
+		need = {
+			land_cruiser_chassis = 20
+		}
+
+		#Size Definitions
+		manpower = 10000 #SH: 500 / Infantry: 1000
+		max_organisation = 30 #SH: 10 / Infantry: 60
+		default_morale = 0.3 #SH: 0.3 / Infantry: 0.3
+		max_strength = 250 #SH: 2 / Infantry: 25
+
+		weight = 30 #SH: 1 / Infantry: 0.5
+		
+		supply_consumption = 9 #SH: 0.4 / Infantry: 0.06
+		
+		suppression = 4 #SH: 2.5 / Infantry: 1.5
+	
+		forest = {
+			attack = -0.2
+			defence = -0.1
+			movement = -0.5
+		}
+		jungle = {
+			attack = -0.3
+			defence = -0.15
+			movement = -0.7
+		}
+		hills = {
+			attack = -0.1
+			defence = 0.1
+			movement = -0.3
+		}
+		mountain = {
+			attack = -0.2
+			defence = 0.05
+			movement = -0.5
+		}
+		urban = {
+			attack = -0.3
+			defence = -0.15
+			movement = -0.7
+		}
+		fort = {
+			attack = 0.2
+			defence = 0.1
+			movement = 0
+		}
+		marsh = {
+			attack = -0.3
+			defence = -0.3
+			movement = -0.9
+		}
+		river = {
+			attack = -0.1
+			defence = 0
+			movement = -0.9
+		}
+		amphibious = {
+			attack = -1.0
+			defence = -1.0
+			movement = -1.0
+		}
+	}
+}

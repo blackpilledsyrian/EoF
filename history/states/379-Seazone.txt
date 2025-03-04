@@ -12,7 +12,9 @@ state={
 
 	history={
 		owner = EQC
+		add_core_of = EQC
 		add_core_of = GRI
+		add_core_of = TRD
 
 		victory_points = { 10536 10 }
 
@@ -20,10 +22,14 @@ state={
 			infrastructure = 3
 			industrial_complex = 1
 			dockyard = 2
+
+			10536 = {
+				naval_base = 1
+			}
 		}
 	}
 
 	resources={
-		steel=8
+		steel=80
 	}
 }

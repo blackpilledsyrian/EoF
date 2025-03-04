@@ -1,0 +1,78 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = {
+					fleet_limit_var = 100
+				}
+				add_dynamic_modifier = {
+					modifier = EoF_naval_penalty
+				}
+			}
+		}
+	}
+	on_daily = {
+		effect = {
+			calculate_total_ship_var = yes
+			every_navy_leader = {
+				limit = {
+					has_trait = EoF_reserve_fleet_trait
+				}
+				calculate_reserve_ship_var = yes
+			}
+			#Calculating the display number for the topbar element of fleet limit
+			subtract_from_variable = { total_ship_var = reserve_ship_var }
+			set_variable = { active_fleet_var = total_ship_var }
+
+			#Calculating the penalty for exceeding the fleet limit dynamic modifier
+			divide_variable = { total_ship_var = fleet_limit_var }
+			subtract_from_variable = { total_ship_var = 1 }
+			multiply_variable = { total_ship_var = -2 }
+			set_variable = { fleet_limit_penalty_var = total_ship_var }
+			if = {
+				limit = {
+					check_variable = {
+						var = fleet_limit_penalty_var
+						value = 0
+						compare = greater_than_or_equals
+					}
+				}
+				set_variable = { fleet_limit_penalty_var = 0 }
+				set_technology = {
+					EoF_DD_fleet_limit_penalty_tech = 0
+					popup = no
+				}
+				set_technology = {
+					EoF_DD_fleet_limit_no_penalty_tech = 1
+					popup = no
+				}
+			}
+			else = {
+				set_technology = {
+					EoF_DD_fleet_limit_penalty_tech = 1
+					popup = no
+				}
+				set_technology = {
+					EoF_DD_fleet_limit_no_penalty_tech = 0
+					popup = no
+				}
+			}
+
+
+
+			#Old method of applying exceeding fleet limit penalty
+			
+			# subtract_from_variable = { total_ship_var = reserve_ship_var }
+			# set_variable = { active_fleet_var = total_ship_var }
+			# if = {
+			# 	limit = {
+			# 		check_variable = { active_fleet_var > fleet_limit_var }
+			# 	}
+			# 	add_ideas = EoF_naval_penalty
+			# }
+			# else = {
+			# 	remove_ideas = EoF_naval_penalty
+			# }
+		}
+	}
+}

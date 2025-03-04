@@ -15,7 +15,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.004
+					build_cost_ic = -0.003
 					instant = yes
 				}
 			}
@@ -25,7 +25,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.008
+					build_cost_ic = -0.006
 					instant = yes
 				}
 			}
@@ -35,7 +35,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.012
+					build_cost_ic = -0.009
 					instant = yes
 				}
 			}
@@ -45,7 +45,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.016
+					build_cost_ic = -0.012
 					instant = yes
 				}
 			}
@@ -55,7 +55,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.020
+					build_cost_ic = -0.015
 					instant = yes
 				}
 			}
@@ -65,7 +65,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.024
+					build_cost_ic = -0.018
 					instant = yes
 				}
 			}
@@ -75,7 +75,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.028
+					build_cost_ic = -0.021
 					instant = yes
 				}
 			}
@@ -85,7 +85,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.032
+					build_cost_ic = -0.024
 					instant = yes
 				}
 			}
@@ -95,7 +95,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.036
+					build_cost_ic = -0.027
 					instant = yes
 				}
 			}
@@ -105,7 +105,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.04
+					build_cost_ic = -0.03
 					instant = yes
 				}
 			}
@@ -115,7 +115,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.044
+					build_cost_ic = -0.033
 					instant = yes
 				}
 			}
@@ -125,7 +125,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.048
+					build_cost_ic = -0.036
 					instant = yes
 				}
 			}
@@ -135,7 +135,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.052
+					build_cost_ic = -0.039
 					instant = yes
 				}
 			}
@@ -145,7 +145,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.056
+					build_cost_ic = -0.042
 					instant = yes
 				}
 			}
@@ -155,7 +155,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.060
+					build_cost_ic = -0.045
 					instant = yes
 				}
 			}
@@ -165,7 +165,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.064
+					build_cost_ic = -0.048
 					instant = yes
 				}
 			}
@@ -175,7 +175,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.068
+					build_cost_ic = -0.051
 					instant = yes
 				}
 			}
@@ -185,7 +185,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.072
+					build_cost_ic = -0.054
 					instant = yes
 				}
 			}
@@ -195,7 +195,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.076
+					build_cost_ic = -0.057
 					instant = yes
 				}
 			}
@@ -205,7 +205,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.080
+					build_cost_ic = -0.06
 					instant = yes
 				}
 			}
@@ -215,7 +215,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.084
+					build_cost_ic = -0.063
 					instant = yes
 				}
 			}
@@ -225,7 +225,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.088
+					build_cost_ic = -0.066
 					instant = yes
 				}
 			}
@@ -235,7 +235,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.092
+					build_cost_ic = -0.069
 					instant = yes
 				}
 			}
@@ -245,7 +245,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.096
+					build_cost_ic = -0.072
 					instant = yes
 				}
 			}
@@ -255,7 +255,7 @@ ideas = {
 			picture = man_five_year_plan_air
 			equipment_bonus = {
 				small_plane_airframe = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
 					instant = yes
 				}
 			}
@@ -275,7 +275,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.004
+					build_cost_ic = -0.003
 					instant = yes
 				}
 			}
@@ -285,7 +285,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.008
+					build_cost_ic = -0.006
 					instant = yes
 				}
 			}
@@ -295,7 +295,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.012
+					build_cost_ic = -0.009
 					instant = yes
 				}
 			}
@@ -305,7 +305,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.016
+					build_cost_ic = -0.012
 					instant = yes
 				}
 			}
@@ -315,7 +315,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.020
+					build_cost_ic = -0.015
 					instant = yes
 				}
 			}
@@ -325,7 +325,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.024
+					build_cost_ic = -0.018
 					instant = yes
 				}
 			}
@@ -335,7 +335,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.028
+					build_cost_ic = -0.021
 					instant = yes
 				}
 			}
@@ -345,7 +345,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.032
+					build_cost_ic = -0.024
 					instant = yes
 				}
 			}
@@ -355,7 +355,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.036
+					build_cost_ic = -0.027
 					instant = yes
 				}
 			}
@@ -365,7 +365,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.04
+					build_cost_ic = -0.03
 					instant = yes
 				}
 			}
@@ -375,7 +375,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.044
+					build_cost_ic = -0.033
 					instant = yes
 				}
 			}
@@ -385,7 +385,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.048
+					build_cost_ic = -0.036
 					instant = yes
 				}
 			}
@@ -395,7 +395,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.052
+					build_cost_ic = -0.039
 					instant = yes
 				}
 			}
@@ -405,7 +405,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.056
+					build_cost_ic = -0.042
 					instant = yes
 				}
 			}
@@ -415,7 +415,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.060
+					build_cost_ic = -0.045
 					instant = yes
 				}
 			}
@@ -425,7 +425,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.064
+					build_cost_ic = -0.048
 					instant = yes
 				}
 			}
@@ -435,7 +435,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.068
+					build_cost_ic = -0.051
 					instant = yes
 				}
 			}
@@ -445,7 +445,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.072
+					build_cost_ic = -0.054
 					instant = yes
 				}
 			}
@@ -455,7 +455,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.076
+					build_cost_ic = -0.057
 					instant = yes
 				}
 			}
@@ -465,7 +465,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.080
+					build_cost_ic = -0.06
 					instant = yes
 				}
 			}
@@ -475,7 +475,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.084
+					build_cost_ic = -0.063
 					instant = yes
 				}
 			}
@@ -485,7 +485,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.088
+					build_cost_ic = -0.066
 					instant = yes
 				}
 			}
@@ -495,7 +495,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.092
+					build_cost_ic = -0.069
 					instant = yes
 				}
 			}
@@ -505,7 +505,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.096
+					build_cost_ic = -0.072
 					instant = yes
 				}
 			}
@@ -515,7 +515,7 @@ ideas = {
 			picture = man_five_year_plan_tank
 			equipment_bonus = {
 				armor = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
 					instant = yes
 				}
 			}
@@ -535,7 +535,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.004
+					build_cost_ic = -0.003
 					instant = yes
 				}
 			}
@@ -545,7 +545,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.008
+					build_cost_ic = -0.006
 					instant = yes
 				}
 			}
@@ -555,7 +555,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.012
+					build_cost_ic = -0.009
 					instant = yes
 				}
 			}
@@ -565,7 +565,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.016
+					build_cost_ic = -0.012
 					instant = yes
 				}
 			}
@@ -575,7 +575,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.020
+					build_cost_ic = -0.015
 					instant = yes
 				}
 			}
@@ -585,7 +585,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.024
+					build_cost_ic = -0.018
 					instant = yes
 				}
 			}
@@ -595,7 +595,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.028
+					build_cost_ic = -0.021
 					instant = yes
 				}
 			}
@@ -605,7 +605,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.032
+					build_cost_ic = -0.024
 					instant = yes
 				}
 			}
@@ -615,7 +615,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.036
+					build_cost_ic = -0.027
 					instant = yes
 				}
 			}
@@ -625,7 +625,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.04
+					build_cost_ic = -0.03
 					instant = yes
 				}
 			}
@@ -635,7 +635,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.044
+					build_cost_ic = -0.033
 					instant = yes
 				}
 			}
@@ -645,7 +645,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.048
+					build_cost_ic = -0.036
 					instant = yes
 				}
 			}
@@ -655,7 +655,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.052
+					build_cost_ic = -0.039
 					instant = yes
 				}
 			}
@@ -665,7 +665,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.056
+					build_cost_ic = -0.042
 					instant = yes
 				}
 			}
@@ -675,7 +675,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.060
+					build_cost_ic = -0.045
 					instant = yes
 				}
 			}
@@ -685,7 +685,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.064
+					build_cost_ic = -0.048
 					instant = yes
 				}
 			}
@@ -695,7 +695,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.068
+					build_cost_ic = -0.051
 					instant = yes
 				}
 			}
@@ -705,7 +705,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.072
+					build_cost_ic = -0.054
 					instant = yes
 				}
 			}
@@ -715,7 +715,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.076
+					build_cost_ic = -0.057
 					instant = yes
 				}
 			}
@@ -725,7 +725,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.080
+					build_cost_ic = -0.06
 					instant = yes
 				}
 			}
@@ -735,7 +735,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.084
+					build_cost_ic = -0.063
 					instant = yes
 				}
 			}
@@ -745,7 +745,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.088
+					build_cost_ic = -0.066
 					instant = yes
 				}
 			}
@@ -755,7 +755,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.092
+					build_cost_ic = -0.069
 					instant = yes
 				}
 			}
@@ -765,7 +765,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.096
+					build_cost_ic = -0.072
 					instant = yes
 				}
 			}
@@ -775,7 +775,7 @@ ideas = {
 			picture = man_five_year_plan_industry
 			equipment_bonus = {
 				infantry_equipment = {
-					build_cost_ic = -0.1
+					build_cost_ic = -0.075
 					instant = yes
 				}
 			}

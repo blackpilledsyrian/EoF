@@ -5,12 +5,12 @@ state={
 		13373 20256 20257 20258 20259 20260 20261 
 	}
 	resources={
-		oil = 4
-		rubber = 5
+		oil=40
+		rubber=50
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 0
 			20257 = { naval_base = 1 }			

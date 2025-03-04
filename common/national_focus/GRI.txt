@@ -126,7 +126,7 @@ shared_focus = {
 		add_political_power = 50
 		custom_effect_tooltip = GRI_education_tooltip
 		hidden_effect = {
-			country_event = { id = imperial.40 days = 75 random = 3600 }#days to hours applied
+			country_event = { id = imperial.40 days = 150 }#days to hours applied
 		}
 	}
 	search_filters = { FOCUS_FILTER_POLITICAL }
@@ -677,118 +677,10 @@ shared_focus = {
 	}
 	prerequisite = { focus = GRI_noble_industrial }
 	prerequisite = { focus = GRI_the_secret_service }
-	bypass = {
-		STW = {
-			OR = {
-				tag = ROOT
-				NOT = { 
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				} 
-			}
-		}
-	    NOT = {
-	        FEA = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        PYT = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        BRZ = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	}
-	will_lead_to_war_with = STW
-	will_lead_to_war_with = FEA
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRI_unite_nobles"
-		if = {
-			limit = { 
-				STW = { 
-					NOT = { tag = ROOT }
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			STW = { 
-			    country_event = { 
-			        id = imperial.31 
-					days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-				FEA = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			FEA = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-				PYT = { 
-					OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}
-				} 
-			}
-			PYT = { 
-			    country_event = { 
-			        id = imperial.32 
-					days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    BRZ = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}					
-				}
-			} 
-			unlock_decision_tooltip = GRI_intergrate_bronzehill
-		}
-		hidden_effect = {
-			country_event = { id = imperial.65 days = 1 random = 720 }#days to hours applied
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = BRZ
-						is_core_of = STW
-						is_core_of = FEA
-						is_core_of = PYT
-					}
-				}
-				add_core_of = ROOT
-			}
+		add_named_threat = {
+			threat = 5
+			name = EoF_unite_empire_tension
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -939,22 +831,22 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_technocrats"
 		add_resource = {
 			type = steel
-			amount = 12
+			amount = 120
 			state = 546
 		}
 		add_resource = {
 			type = chromium
-			amount = 19
+			amount = 190
 			state = 546
 		}
 		add_resource = {
 			type = steel
-			amount = 14
+			amount = 140
 			state = 545
 		}
 		add_resource = {
 			type = chromium
-			amount = 9
+			amount = 90
 			state = 545
 		}
 		486 = {
@@ -1339,129 +1231,10 @@ shared_focus = {
 	}
 	prerequisite = { focus = GRI_holy_order }
 	prerequisite = { focus = GRI_kill_the_traitors }
-	bypass = {
-	    NOT = {
-	        ROU = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	    NOT = {
-	        YAL = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        ANG = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-		NOT = {
-	        KAT = { 
-				OR = {
-					is_subject_of = ROOT 
-					is_in_faction_with = ROOT
-				}
-			} 
-		}
-	}
-	will_lead_to_war_with = ROU
-	will_lead_to_war_with = YAL
-	will_lead_to_war_with = ANG
 	completion_reward = {
-		log = "[GetDateText]: [Root.GetName]: Focus GRI_reward_loyalty"
-		if = {
-			limit = { 
-			    ROU = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			ROU = { 
-			    country_event = { 
-				    id = imperial.14 days = 2
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    YAL = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			YAL = { 
-			    country_event = { 
-				    id = imperial.15 days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    ANG = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			ANG = { 
-			    country_event = { 
-				    id = imperial.15 days = 2
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    KAT = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					} 
-				} 
-			}
-			KAT = { 
-			    country_event = { 
-				    id = imperial.15 days = 1 
-				} 
-			}
-		}
-		if = {
-			limit = { 
-			    BRZ = { 
-				    OR = {
-						is_subject_of = ROOT 
-						is_in_faction_with = ROOT
-					}					
-				}
-			} 
-			unlock_decision_tooltip = GRI_intergrate_bronzehill
-		}
-		hidden_effect = {
-			country_event = { id = imperial.65 days = 15 random = 720 }#days to hours applied
-			every_state = {
-				limit = { 
-					OR = {
-						is_core_of = ANG
-						is_core_of = KAT
-						is_core_of = ROU
-						is_core_of = YAL
-					}
-				}
-				add_core_of = ROOT
-			}
+		add_named_threat = {
+			threat = 5
+			name = EoF_unite_empire_tension
 		}
 	}
 	search_filters = { FOCUS_FILTER_ANNEXATION }
@@ -2352,6 +2125,9 @@ shared_focus = {
 			}
 		}
 	}
+	allow_branch = {
+		always = no
+	}
 
 	ai_will_do = {
 		factor = 14
@@ -3225,12 +3001,12 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_oil_fields_imperial"
 		add_resource = {
 			type = oil
-			amount = 9
+			amount = 90
 			state = 494
 		}
 		add_resource = {
 			type = oil
-			amount = 9
+			amount = 90
 			state = 493
 		}
 	}
@@ -3405,17 +3181,17 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_wingbardian_rubber"
 		add_resource = {
 			type = rubber
-			amount = 14
+			amount = 140
 			state = 371
 		}
 		add_resource = {
 			type = rubber
-			amount = 12
+			amount = 120
 			state = 373
 		}
 		add_resource = {
 			type = rubber
-			amount = 16
+			amount = 160
 			state = 536
 		}
 	}
@@ -4023,12 +3799,12 @@ shared_focus = {
 		show_ideas_tooltip = crow
 		add_resource = {
 			type = steel
-			amount = 14
+			amount = 140
 			state = 382
 		}
 		add_resource = {
 			type = steel
-			amount = 8
+			amount = 80
 			state = 437
 		}
 	}
@@ -4226,35 +4002,53 @@ shared_focus = {
 	ai_will_do = { factor = 8 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_northern_roads"
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						any_owned_state = {
-							is_core_of = FEA
-						}
-						any_owned_state = {
-							is_core_of = STW
-						}
-						any_owned_state = {
-							is_core_of = PYT
-						}
-						any_owned_state = {
-							is_core_of = BRZ
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = GRI_northern_roads_tp
-		}
-		else = {
+		# if = {
+			# limit = {
+				# NOT = {
+					# OR = {
+						# any_owned_state = {
+							# is_core_of = FEA
+						# }
+						# any_owned_state = {
+							# is_core_of = STW
+						# }
+						# any_owned_state = {
+							# is_core_of = PYT
+						# }
+						# any_owned_state = {
+							# is_core_of = BRZ
+						# }
+					# }
+				# }
+			# }
+			# custom_effect_tooltip = GRI_northern_roads_tp
+		# }
+		# else = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						is_core_of = FEA
-						is_core_of = STW
-						is_core_of = PYT
-						is_core_of = BRZ
+						state = 433
+						state = 538
+						state = 498
+						state = 497
+						state = 520
+						state = 434
+						state = 441
+						state = 440
+						state = 666
+						state = 378
+						state = 399
+						state = 447
+						state = 486
+						state = 546
+						state = 458
+						state = 545
+						state = 443
+						state = 539
+						state = 492
+						state = 568
+						state = 479
+						state = 424
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -4264,7 +4058,7 @@ shared_focus = {
 					instant_build = yes
 				}
 			}
-		}
+		# }
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 }
@@ -4365,17 +4159,17 @@ shared_focus = {
 		}
 		add_resource = {
 			type = oil
-			amount = 6
+			amount = 60
 			state = 447
 		}
 		add_resource = {
 			type = oil
-			amount = 6
+			amount = 60
 			state = 443
 		}
 		add_resource = {
 			type = oil
-			amount = 7
+			amount = 70
 			state = 497
 		}
 	}
@@ -4423,35 +4217,42 @@ shared_focus = {
 	ai_will_do = { factor = 8 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_southern_roads"
-		if = {
-			limit = {
-				NOT = {
-					OR = {
-						any_owned_state = {
-							is_core_of = ANG
-						}
-						any_owned_state = {
-							is_core_of = KAT
-						}
-						any_owned_state = {
-							is_core_of = ROU
-						}
-						any_owned_state = {
-							is_core_of = YAL
-						}
-					}
-				}
-			}
-			custom_effect_tooltip = GRI_southern_roads_tp
-		}
-		else = {
+		# if = {
+			# limit = {
+				# NOT = {
+					# OR = {
+						# any_owned_state = {
+							# is_core_of = ANG
+						# }
+						# any_owned_state = {
+							# is_core_of = KAT
+						# }
+						# any_owned_state = {
+							# is_core_of = ROU
+						# }
+						# any_owned_state = {
+							# is_core_of = YAL
+						# }
+					# }
+				# }
+			# }
+			# custom_effect_tooltip = GRI_southern_roads_tp
+		# }
+		# else = {
 			every_owned_state = {
 				limit = {
 					OR = {
-						is_core_of = ANG
-						is_core_of = KAT
-						is_core_of = ROU
-						is_core_of = YAL
+						state = 674
+						state = 665
+						state = 439
+						state = 402
+						state = 398
+						state = 423
+						state = 554
+						state = 506
+						state = 411
+						state = 547
+						state = 422
 					}
 				}
 				add_extra_state_shared_building_slots = 1
@@ -4461,7 +4262,7 @@ shared_focus = {
 					instant_build = yes
 				}
 			}
-		}
+		# }
 	}
 	search_filters = { FOCUS_FILTER_INDUSTRY }
 }
@@ -4626,7 +4427,10 @@ shared_focus = {
 	ai_will_do = { factor = 8 }
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_economic_miracle"
-		add_timed_idea = { idea = GRI_industrial_miracle days = 365 }
+		add_timed_idea = {
+			idea = GRI_industrial_miracle
+			days = 365
+		}
 	}
 }
 
@@ -4639,6 +4443,9 @@ shared_focus = {
 		any_controlled_state_is_coastal = yes
 		433 = { 
 		    is_owned_and_controlled_by = ROOT 
+			has_dynamic_modifier = {
+				modifier = EoF_naval_industrial_zone
+			}
 		}
 	}
 	x = 27
@@ -5118,17 +4925,23 @@ shared_focus = {
 #EoF Changes
 shared_focus = {
 	id = EoF_expand_our_shores
-	icon = GFX_goal_Attack_Skyfall
+	icon = GFX_goal_feathasia_navy
 	x = 1
 	y = 2
 	relative_position_id = GRI_submarines_and_long_lance
 	cost = 3
+	bypass = {
+		date > 1007.03.01
+	}
 	completion_reward = {
-		add_threat = 5
+		add_named_threat = {
+			threat = 3
+			name = EoF_expand_shores_tension
+		}
 		news_event = EoF.news.5
 		433 = {
 			add_dynamic_modifier = {
-				modifier = EoF_superindustrial_zone
+				modifier = EoF_naval_industrial_zone
 			}
 		}
 	}
@@ -5137,7 +4950,7 @@ shared_focus = {
 	id = EoF_princess_kaiser
 	icon = GFX_goal_grover_vi
 	prerequisite = { focus = EoF_expand_our_shores }
-	x = -1
+	x = -2
 	y = 1
 	relative_position_id = EoF_expand_our_shores
 	cost = 3
@@ -5152,9 +4965,9 @@ shared_focus = {
 }
 shared_focus = {
 	id = EoF_show_our_strength
-	icon = GFX_goal_national_artillery
+	icon = GFX_goal_Attack_Skyfall
 	prerequisite = { focus = EoF_expand_our_shores }
-	x = 1
+	x = 0
 	y = 1
 	relative_position_id = EoF_expand_our_shores
 	cost = 3
@@ -5162,8 +4975,141 @@ shared_focus = {
 		focus = EoF_princess_kaiser
 	}
 	completion_reward = {
-		add_threat = 3
+		add_named_threat = {
+			threat = 5
+			name = EoF_GRI_border_war_tension
+		}
 		unlock_decision_tooltip = EoF_GRI_border_war_decision
+	}
+}
+shared_focus = {
+	id = EoF_imperial_coast
+	icon = GFX_goal_trade_with_nova_griffonia
+	prerequisite = { focus = EoF_expand_our_shores }
+	x = 2
+	y = 1
+	relative_position_id = EoF_expand_our_shores
+	cost = 10
+	completion_reward = {
+		custom_effect_tooltip = EoF_GRI_imperial_coast_tooltip
+		GRF = {
+			222 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			288 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+shared_focus = {
+	id = EoF_north_eco
+	icon = GFX_goal_economic_control
+	prerequisite = { focus = EoF_imperial_coast }
+	x = 0
+	y = 1
+	relative_position_id = EoF_imperial_coast
+	cost = 8
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available = {
+		381 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+		390 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+		658 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+		659 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+		660 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+		1209 = {
+			controller = {
+				OR = { 
+					is_in_faction_with = CHN  
+					tag = CHN
+					is_in_faction_with = JER  
+					tag = JER
+				} 
+			}
+		}
+	}
+	completion_reward = {
+		custom_effect_tooltip = EoF_north_eco_tt
+		CHN = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		OLE = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		PLB = {
+			add_ideas = EoF_north_integrated_economy
+		}	
+		GRF = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		FAT = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		GRI = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		JER = {
+			add_ideas = EoF_north_integrated_economy
+		}
+		BRZ = {
+			add_ideas = EoF_north_integrated_economy
+		}		
 	}
 }
 shared_focus = {
@@ -5174,6 +5120,16 @@ shared_focus = {
 	y = 1
 	relative_position_id = EoF_princess_kaiser
 	cost = 3
+	available = {
+		OLE = {
+			is_subject_of = CHN
+			controls_state = 558
+			controls_state = 578
+			controls_state = 413
+			controls_state = 680
+		}
+
+	}
 	completion_reward = {
 		if = {
 			limit = {
@@ -5506,7 +5462,7 @@ shared_focus = {
 	id = GRI_rocket_artillery_development
 	icon = GFX_goal_rocket
 	prerequisite = { focus = GRI_joint_wargames }
-	prerequisite = { focus = GRI_artillery_modernisation }
+	# prerequisite = { focus = GRI_artillery_modernisation }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5541,7 +5497,7 @@ shared_focus = {
 	id = GRI_joint_industrial_development
 	icon = GFX_goal_generic_production
 	prerequisite = { focus = GRI_joint_wargames }
-	prerequisite = { focus = GRI_auxiliary_engineer_corps }
+	# prerequisite = { focus = GRI_auxiliary_engineer_corps }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5566,8 +5522,7 @@ shared_focus = {
 shared_focus = {
 	id = GRI_joint_military_RD_department
 	icon = GFX_goal_tfv_generic_tech_sharing
-	prerequisite = { focus = GRI_rocket_artillery_development }
-	prerequisite = { focus = GRI_joint_industrial_development }
+	prerequisite = { focus = GRI_rocket_artillery_development focus = GRI_joint_industrial_development }
 	available = {
 	    has_idea = CHN_GRI_Attache_For_GRI
 	}
@@ -5758,7 +5713,7 @@ shared_focus = {
 			name = armor_bonus
 			bonus = 1.0
 			uses = 1
-			category = cat_light_armor
+			category = armor
 		}
 	}
 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_RESEARCH }
@@ -5781,8 +5736,11 @@ shared_focus = {
 		add_tech_bonus = {
 			name = armor_bonus
 			bonus = 1.0
-			uses = 1
-			category = cat_medium_armor
+			uses = 2
+			technology = armor_tech_1
+			technology = armor_tech_2
+			technology = armor_tech_3
+			technology = armor_tech_4
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -5875,8 +5833,10 @@ shared_focus = {
 shared_focus = {
 	id = GRI_combined_arms_warfare
 	icon = GFX_goal_Black_State_Rising_2
-	prerequisite = { focus = GRI_officer_training }
-	prerequisite = { focus = GRI_imperial_heavy_tanks }
+	prerequisite = { 
+		focus = GRI_officer_training
+		focus = GRI_imperial_heavy_tanks
+	}
 	x = 37
 	y = 6
 	cost = 5
@@ -6072,6 +6032,10 @@ shared_focus = {
 				uses = 2
 				category = cat_anti_tank
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.25
+			}
 		}
 		else = {
 			if = {
@@ -6172,6 +6136,29 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_reopen_flight_academy"
+		custom_effect_tooltip = {
+			localization_key = air_facility_construction_tt
+			temp_facility_state_loc = "[437.GetName]"
+			temp_facility_province_loc = "[437.GetCapitalVictoryPointName]"
+		}
+		hidden_effect = {
+			if = {
+				limit = { 
+					437 = {
+						is_fully_controlled_by = ROOT
+						can_construct_building = air_facility
+					}
+				}
+				437 = {
+					add_building_construction = {
+						type = air_facility
+						level = 1
+						instant_build = yes
+						province = 10555
+					}
+				}
+			}
+		}
 		air_experience = 25
 		add_ideas = GRI_reopen_flight_academy_idea
 	}
@@ -6425,6 +6412,10 @@ shared_focus = {
 			uses = 1
 			category = rocketry
 		}
+		add_breakthrough_progress = {
+			specialization = specialization_air
+			value = 1.5
+		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
 }
@@ -6445,11 +6436,22 @@ shared_focus = {
 
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_project_arcturius"
-		add_tech_bonus = {
-			name = RCT_nuclear_bonus
-			bonus = 3.0
-			uses = 1
-			category = nuclear
+		if = {
+			limit = {
+				has_tech = atomic_research
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 1.5
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = RCT_nuclear_bonus
+				bonus = 3.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -7376,12 +7378,12 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_greenback_aluminum"
 		add_resource = {
 			type = steel
-			amount = 16
+			amount = 160
 			state = 398
 		}
 		add_resource = {
 			type = aluminium
-			amount = 20
+			amount = 200
 			state = 398
 		}
 		save_current_manpower = yes
@@ -7581,11 +7583,22 @@ shared_focus = {
 	}
 	completion_reward = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_secret_projects"
-		add_tech_bonus = {
-			name = RCT_nuclear_bonus
-			bonus = 1.0
-			uses = 1
-			category = nuclear
+		if = {
+			limit = {
+				has_tech = atomic_research
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_nuclear
+				value = 0.5
+			}
+		}
+		else = {
+			add_tech_bonus = {
+				name = RCT_nuclear_bonus
+				bonus = 1.0
+				uses = 1
+				category = nuclear
+			}
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }
@@ -7668,12 +7681,12 @@ shared_focus = {
 		add_stability = -0.05
 		add_resource = {
 			type = oil
-			amount = 14
+			amount = 140
 			state = 497
 		}
 		add_resource = {
 			type = oil
-			amount = 16
+			amount = 160
 			state = 434
 		}
 		save_current_manpower = yes
@@ -7752,17 +7765,17 @@ shared_focus = {
 		add_stability = -0.05
 		add_resource = {
 			type = tungsten
-			amount = 14
+			amount = 140
 			state = 568
 		}
 		add_resource = {
 			type = chromium
-			amount = 19
+			amount = 190
 			state = 539
 		}
 		add_resource = {
 			type = steel
-			amount = 12
+			amount = 120
 			state = 492
 		}
 		save_current_manpower = yes
@@ -8541,12 +8554,12 @@ shared_focus = {
 		log = "[GetDateText]: [Root.GetName]: Focus GRI_the_oil_fields"
 		add_resource = {
 			type = oil
-			amount = 14
+			amount = 140
 			state = 494
 		}
 		add_resource = {
 			type = oil
-			amount = 14
+			amount = 140
 			state = 493
 		}
 	}

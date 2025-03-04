@@ -3,12 +3,13 @@ state={
 	id=390
 	name="STATE_390"
 	resources={
-		steel=8.000
+		steel=80.000
 	}
 
 	history={
 		owner = EQC
 		add_core_of = EQC
+		add_core_of = TRD
 		victory_points = {
 			4868 20 
 		}

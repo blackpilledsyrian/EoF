@@ -3,7 +3,7 @@ state={
 	id=748
 	name="STATE_748"
 	resources={
-		tungsten=6.000
+		tungsten=60.000
 	}
 	history={
 		owner = HLR

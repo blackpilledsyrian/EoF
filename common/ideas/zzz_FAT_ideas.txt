@@ -28,6 +28,22 @@ ideas = {
 				defense_bonus_against = 0.1
 			}
 		}
+		FAT_temporary_supply_bonus = {
+			picture = SOV_third_five_year_plan_military
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				supply_node_range = 0.45
+				out_of_supply_factor = -0.25
+				consumer_goods_factor = 0.025
+			}
+		}
 	}
 	country = {
 		FAT_republican_pact = {
@@ -712,7 +728,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.15
 				war_support_factor = -0.2
-				army_org_factor = -0.3
+				army_org_factor = -0.15
 				supply_consumption_factor = 0.2
 				conscription_factor = -0.15
 			}
@@ -757,7 +773,7 @@ ideas = {
 			modifier = {
 				political_power_factor = -0.1
 				war_support_factor = -0.15
-				army_org_factor = -0.15
+				army_org_factor = -0.10
 				supply_consumption_factor = 0.1
 				conscription_factor = -0.07
 				custom_modifier_tooltip = SPR_military_disloyalty_tt
@@ -1146,7 +1162,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				max_planning = 0.1
+				max_planning = 0.075
 				experience_gain_army_factor = 0.075
 				conscription_factor = -0.05
 			}
@@ -2795,9 +2811,9 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.2
-				production_speed_buildings_factor = 0.5
-				industrial_capacity_factory = 0.5
-				industrial_capacity_dockyard = 0.5
+				production_speed_buildings_factor = 0.3
+				industrial_capacity_factory = 0.2
+				industrial_capacity_dockyard = 0.2
 			}
 		}
 	}
@@ -2848,7 +2864,7 @@ ideas = {
 			modifier = {
 				army_defence_factor = 0.05
 				army_org_factor = 0.05
-				max_planning = 0.1
+				max_planning = 0.075
 			}
 		}
 	}

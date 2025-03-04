@@ -5,17 +5,17 @@ ideas = {
 			picture = man_five_year_plan_industry
 			modifier = {
 				consumer_goods_factor = -0.1
-				production_speed_industrial_complex_factor = 0.3
+				production_speed_industrial_complex_factor = 0.1
 				production_speed_dockyard_factor = 0.3
-				production_speed_arms_factory_factor = -0.2
+				production_speed_arms_factory_factor = -0.1
 			}
 		}
 		EoF_JER_second_plan = {
 			removal_cost = -1
 			picture = man_five_year_plan_industry
 			modifier = {
-				production_factory_max_efficiency_factor = 0.1
-				industrial_capacity_factory = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.15
 			}
 			equipment_bonus = {
@@ -129,9 +129,10 @@ ideas = {
 			removal_cost = -1
 			picture = generic_goods_red_bonus
 			modifier = {
-				consumer_goods_factor = 0.1
+				consumer_goods_factor = 0.05
 				military_industrial_organization_research_bonus = 0.1
 				military_industrial_organization_funds_gain = 0.3
+				dockyard_donations = 5
 			}	
 		}
 		EoF_gday_marines = {

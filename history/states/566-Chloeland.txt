@@ -16,8 +16,8 @@ state={
 	}
 
 	resources={
-		steel=10
-		aluminium=10
-		tungsten=8
+		steel=100
+		aluminium=100
+		tungsten=80
 	}
 }

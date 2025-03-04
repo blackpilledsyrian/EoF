@@ -8,15 +8,16 @@ ability = {
 		allowed = {
 			is_leading_army_group = no
 			is_border_war = no
+			check_variable = { num_units_defensive_combats = 0 }
 		}
 		
 		one_time_effect = {
 			add_temporary_buff_to_units = {
-				combat_offense = -0.75
-				combat_defense = -0.75
-				org_damage_multiplier = -0.9
-				str_damage_multiplier = -0.9
-				days = 3
+				combat_offense = -0.3
+				combat_defense = -1.0
+				str_damage_multiplier = -1.0
+				org_damage_multiplier = -0.3
+				days = 7
 			}
 		}
 		cost = 0.1

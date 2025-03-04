@@ -2,43 +2,168 @@ on_actions = {
 	on_startup = {
 		effect = {
 			HLR = {
-				country_event = { id = EoF.1 days = 1095 }
+				# country_event = { id = EoF.1 days = 1095 }
 				# country_event = { id = EoF.8 days = 12 }
 				country_event = { id = EoF.10 days = 7 }
 				country_event = { id = EoF.11 days = 30 }
 				country_event = { id = EoF.12 days = 1 }
 				news_event = { id = EoF.news.1 days = 10 }
 			}
-			PLB = {
-				country_event = { id = northern_protectorate.99 }
-			}
 			CHN = {
 				country_event = { id = EoF_great_war.7 days = 1764 }
 				country_event = { id = EoF.7 days = 2190 }
 			}
-			every_country = {
-				limit = {
-					OR = {
-						tag = CHN
-						tag = OLE
-						tag = PLB
-						tag = GRF
-						tag = FAT
-						tag = JER
-						tag = GRI
-						tag = EQS
-						tag = CRY
-						tag = STG
-						tag = EQC
-						tag = HIP
-						tag = WNG
-						tag = MCW
-						#tag = RCT
-						#tag = FEA
+			PLB = {
+				hidden_effect = {
+					set_country_flag = PLB_northern_protectorate
+					add_popularity = {
+						ideology = fascism
+						popularity = -1
+					}
+					remove_ideas = trade_relations_with_stalliongrad_close
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				promote_character = PLB_bjornling
+				set_party_name = {
+					ideology = fascism
+					long_name = PLB_bjornling_party_long
+					name = PLB_bjornling_party
+				}
+				add_ideas = PLB_NP_schizophrenia
+				if = {
+					limit = {
+							has_country_flag = war_economy_only_flag
+						}
+					clr_country_flag = war_economy_only_flag
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PLB_volsungr_destroyed_flag
+						}
+					}
+					280 = { set_demilitarized_zone = yes }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PLB_svartpels_destroyed_flag
+						}
+					}
+					265 = { set_demilitarized_zone = yes }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PLB_destruction_alliance
+						}
+					}
+					272 = { set_demilitarized_zone = yes }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PLB_lords_massacred
+							AND = {
+								has_country_flag = PLB_kane_destroyed_flag
+								has_country_flag = PLB_gotlung_destroyed_flag
+								has_country_flag = PLB_rozenkrantz_destroyed_flag
+							}
+						}
+					}
+					289 = { set_demilitarized_zone = yes }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = PLB_scyfling_destroyed_flag
+						}
+					}
+					290 = { set_demilitarized_zone = yes }
+				}
+				62 = { set_demilitarized_zone = yes }
+				PLB_paw_wellington = {
+					if = {
+						limit = { is_unit_leader = yes }
+						remove_unit_leader_role = yes
+					}
+					if = {
+						limit = {
+							is_advisor = yes
+						}
+						remove_advisor_role = { slot = navy_chief }
 					}
 				}
-				add_ideas = EoF_peacetime_training
+				PLB_chairman_icebear = {
+					if = {
+						limit = {
+							is_advisor = yes
+						}
+					remove_advisor_role = {
+							slot = army_chief
+						}
+						remove_advisor_role = {
+							slot = navy_chief
+						}
+						remove_advisor_role = {
+						  slot = air_chief
+						}
+					}
+				}
+				PLB_chairwoman_snowbear = {
+						if = {
+							limit = { is_unit_leader = yes }
+							remove_unit_leader_role = yes
+							}
+						}
+				PLB_juche_bear_1 = {
+						retire = yes
+						}
+				PLB_juche_bear_2 = {
+						retire = yes
+						}
+				PLB_juche_bear_3 = {
+						retire = yes
+						}
+				PLB_juche_bear_4 = {
+						retire = yes
+						}
+				PLB_juche_bear_5 = {
+						retire = yes
+						}
+				PLB_juche_bear_6 = {
+						retire = yes
+						}
+				PLB_juche_bear_7 = {
+						retire = yes
+				}
 			}
+			# every_country = {
+			# 	limit = {
+			# 		OR = {
+			# 			tag = CHN
+			# 			tag = OLE
+			# 			tag = PLB
+			# 			tag = GRF
+			# 			tag = FAT
+			# 			tag = JER
+			# 			tag = GRI
+			# 			tag = EQS
+			# 			tag = CRY
+			# 			tag = STG
+			# 			tag = EQC
+			# 			tag = HIP
+			# 			tag = WNG
+			# 			tag = MCW
+			# 			#tag = RCT
+			# 			#tag = FEA
+			# 		}
+			# 	}
+			# 	add_ideas = EoF_peacetime_training
+			# }
 		}
 	}
 	#All Starting Dynamic Modifiers Here
@@ -155,81 +280,81 @@ on_actions = {
 			29 = {
 				add_dynamic_modifier = { modifier = EoF_northern_equus_invasion_terrain_8 }
 			}
-			51 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			43 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			92 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			91 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			93 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			80 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			19 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			50 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			15 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			34 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			33 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			34 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			351 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			221 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			52 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			79 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			25 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			24 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			83 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			352 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			88 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			31 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			90 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			13 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
-			28 = {
-				add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
-			}
+			# 51 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 43 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 92 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 91 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 93 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 80 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 19 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 50 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 15 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 34 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 33 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 34 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 351 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 221 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 52 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 79 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 25 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 24 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 83 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 352 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 88 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 31 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 90 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 13 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
+			# 28 = {
+			# 	add_dynamic_modifier = { modifier = EoF_southern_equus_invasion_terrain } 
+			# }
 			683 = {
 				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
 			}
@@ -250,6 +375,129 @@ on_actions = {
 			}
 			1204 = {
 				add_dynamic_modifier = { modifier = EoF_HIP_invasion_terrain_8 }	
+			}
+			# every_state = {
+			# 	limit = {
+			# 		is_core_of = WNG
+			# 	}
+			# 	add_dynamic_modifier = { modifier = EoF_WNG_terrain }
+			# }
+			699 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			877 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			852 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			709 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			700 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			702 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			876 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			701 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			875 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			703 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			704 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			714 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			705 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			706 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1092 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1093 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1094 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1095 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			933 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			1089 = {
+				add_dynamic_modifier = { modifier = EoF_CTH_terrain }
+			}
+			282 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			284 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			285 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			266 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			325 = {
+				add_dynamic_modifier = { modifier = EoF_PNG_terrain }
+			}
+			29 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			106 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			5 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			1 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			2 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			68 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			103 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			179 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			178 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			70 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			148 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			147 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			144 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
+			}
+			141	 = {
+				add_dynamic_modifier = { modifier = EoF_sunset_line_warning }
 			}
 		}
 	}
@@ -283,32 +531,26 @@ on_actions = {
 							mountaineers = { x = 0 y = 0 }
 							mountaineers = { x = 0 y = 1 }
 							mountaineers = { x = 0 y = 2 }
-							mountaineers = { x = 0 y = 3 }
-							mountaineers = { x = 0 y = 4 }
 			
 							mountaineers = { x = 1 y = 0 }
 							mountaineers = { x = 1 y = 1 }
 							mountaineers = { x = 1 y = 2 }
 							mountaineers = { x = 1 y = 3 }
-							mountaineers = { x = 1 y = 4 }
 		
 							mountaineers = { x = 2 y = 0 }
 							mountaineers = { x = 2 y = 1 }
 							mountaineers = { x = 2 y = 2 }
 							mountaineers = { x = 2 y = 3 }
-							mountaineers = { x = 2 y = 4 }
 
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
 							artillery_brigade = { x = 3 y = 2 }
 							artillery_brigade = { x = 3 y = 3 }
-							artillery_brigade = { x = 3 y = 4 }
 
 							artillery_brigade = { x = 4 y = 0 }
 							artillery_brigade = { x = 4 y = 1 }
 							artillery_brigade = { x = 4 y = 2 }
 							artillery_brigade = { x = 4 y = 3 }
-							artillery_brigade = { x = 4 y = 4 }
 						}
 						support = {
 							artillery = { x = 0 y = 0 }
@@ -331,27 +573,23 @@ on_actions = {
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = YAK
-						}
-						create_unit = {
-							division = "name = \"Yak Warband\" division_template = \"Yak Warband\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = YAK
 						}
 					}
@@ -360,6 +598,10 @@ on_actions = {
 					}
 				}
 				JAK = {
+					add_named_threat = {
+						threat = 3
+						name = EoF_YAK_JAK_civil_war_start_tension
+					}
 					add_ideas = EoF_YAK_JAK_civil_war
 					add_offsite_building = { type = industrial_complex level = 20 }
 					add_offsite_building = { type = arms_factory level = 20 }
@@ -381,32 +623,26 @@ on_actions = {
 							mountaineers = { x = 0 y = 0 }
 							mountaineers = { x = 0 y = 1 }
 							mountaineers = { x = 0 y = 2 }
-							mountaineers = { x = 0 y = 3 }
-							mountaineers = { x = 0 y = 4 }
 			
 							mountaineers = { x = 1 y = 0 }
 							mountaineers = { x = 1 y = 1 }
 							mountaineers = { x = 1 y = 2 }
 							mountaineers = { x = 1 y = 3 }
-							mountaineers = { x = 1 y = 4 }
 		
 							mountaineers = { x = 2 y = 0 }
 							mountaineers = { x = 2 y = 1 }
 							mountaineers = { x = 2 y = 2 }
 							mountaineers = { x = 2 y = 3 }
-							mountaineers = { x = 2 y = 4 }
 
 							artillery_brigade = { x = 3 y = 0 }
 							artillery_brigade = { x = 3 y = 1 }
 							artillery_brigade = { x = 3 y = 2 }
 							artillery_brigade = { x = 3 y = 3 }
-							artillery_brigade = { x = 3 y = 4 }
 
 							artillery_brigade = { x = 4 y = 0 }
 							artillery_brigade = { x = 4 y = 1 }
 							artillery_brigade = { x = 4 y = 2 }
 							artillery_brigade = { x = 4 y = 3 }
-							artillery_brigade = { x = 4 y = 4 }
 						}
 						support = {
 							artillery = { x = 0 y = 0 }
@@ -429,35 +665,23 @@ on_actions = {
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Great Clan Hussars\" division_template = \"Great Clan Hussars\" start_experience_factor = 1 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
-							owner = JAK
-						}
-						create_unit = {
-							division = "name = \"Clan Hussars\" division_template = \"Clan Hussars\" start_experience_factor = 0 start_equipment_factor = 1"
+							division = "name = \"Peasant Levy\" division_template = \"Peasant Levy\" start_experience_factor = 0 start_equipment_factor = 1"
 							owner = JAK
 						}
 					}
@@ -497,12 +721,18 @@ on_actions = {
 					tag = JAK
 					FROM = { tag = YAK }
 				}
-				add_threat = 30
 				YAK = {
+					add_named_threat = {
+						threat = 10
+						name = EoF_YAK_JAK_civil_war_end_tension
+					}
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
 					}
+				}
+				JAK = {
+					remove_ideas = EoF_YAK_JAK_civil_war
 				}
 				EQS = {
 					remove_ideas = EoF_YAK_JAK_civil_war_volunteers_2
@@ -535,12 +765,18 @@ on_actions = {
 					tag = YAK
 					FROM = { tag = JAK }
 				}
-				add_threat = 30
 				JAK = {
+					add_named_threat = {
+						threat = 10
+						name = EoF_YAK_JAK_civil_war_end_tension
+					}
 					remove_ideas = EoF_YAK_JAK_civil_war
 					every_controlled_state = {
 						remove_dynamic_modifier = { modifier = EoF_YAK_JAK_civil_war_terrain }
 					}
+				}
+				YAK = {
+					remove_ideas = EoF_YAK_JAK_civil_war
 				}
 				EQS = {
 					remove_ideas = EoF_YAK_JAK_civil_war_volunteers_2
@@ -570,6 +806,226 @@ on_actions = {
 			}
 		}
 	}
+	#SDL-EMR War
+	on_declare_war = { 
+		effect = {
+			if = {
+				limit = {
+					tag = SDL
+					FROM = { tag = EMR }
+				}
+				SDL = {
+					add_ideas = EoF_SDL_EMR_war
+					add_offsite_building = { type = industrial_complex level = 30 }
+					add_offsite_building = { type = arms_factory level = 30 }
+					add_opinion_modifier = {
+						target = EQC
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = WNG
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = HIP
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = MCW
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = RCT
+						modifier = shadow_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = NIM
+						modifier = shadow_of_kemerkai
+					}
+					division_template = {
+						name = "Haras Alsharaf 2"
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+			
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 1 y = 3 }
+		
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							mountaineers = { x = 2 y = 3 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 2 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								controller = {
+									tag = EMR
+								}
+							}
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = SDL
+						}
+					}
+				}
+				EMR = {
+					add_ideas = EoF_SDL_EMR_war
+					add_offsite_building = { type = industrial_complex level = 30 }
+					add_offsite_building = { type = arms_factory level = 30 }
+					add_opinion_modifier = {
+						target = FAT
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = GRI
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = JER
+						modifier = light_of_kemerkai
+					}
+					add_opinion_modifier = {
+						target = KIR
+						modifier = light_of_kemerkai
+					}
+					division_template = {
+						name = "Haras Alsharaf 2"
+						regiments = {
+							mountaineers = { x = 0 y = 0 }
+							mountaineers = { x = 0 y = 1 }
+							mountaineers = { x = 0 y = 2 }
+			
+							mountaineers = { x = 1 y = 0 }
+							mountaineers = { x = 1 y = 1 }
+							mountaineers = { x = 1 y = 2 }
+							mountaineers = { x = 1 y = 3 }
+		
+							mountaineers = { x = 2 y = 0 }
+							mountaineers = { x = 2 y = 1 }
+							mountaineers = { x = 2 y = 2 }
+							mountaineers = { x = 2 y = 3 }
+
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							artillery_brigade = { x = 3 y = 3 }
+
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+							artillery_brigade = { x = 4 y = 2 }
+							artillery_brigade = { x = 4 y = 3 }
+						}
+						support = {
+							artillery = { x = 0 y = 0 }
+						}
+					}
+					every_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								controller = {
+									tag = SDL
+								}
+							}
+							impassable = no
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haras Alsharaf\" division_template = \"Haras Alsharaf 2\" start_experience_factor = 1 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+						create_unit = {
+							division = "name = \"Haris Mahaliyun\" division_template = \"Haris Mahaliyun\" start_experience_factor = 0 start_equipment_factor = 1"
+							owner = EMR
+						}
+					}
+				}
+				EQC = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				WNG = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				HIP = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				MCW = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				RCT = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				NIM = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_2
+				}
+				FAT = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
+				}
+				GRI = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
+				}
+				JER = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
+				}
+				KIR = {
+					add_ideas = EoF_SDL_EMR_war_volunteers_1
+				}
+			}
+		}
+	}
 	#Sunset's Counteroffensive
 	on_state_control_changed = {
 		effect = {
@@ -592,11 +1048,13 @@ on_actions = {
 					}
 					FROM.FROM = {
 						OR = {
-							state = 66
-							state = 119
-							state = 114
-							state = 101
+							state = 29
+							state = 106
+							state = 5
+							state = 1
+							state = 2
 							state = 68
+							state = 103
 							state = 179
 							state = 178
 							state = 70
@@ -608,10 +1066,19 @@ on_actions = {
 					}
 				}
 				EQS = {
-					country_event = {
-						id = EoF_great_war.1
-						days = 1
+					country_event = EoF_great_war.1
+					country_event = EoF_great_war.11
+				}
+			}
+			else_if = {
+				limit = {
+					EQS = {
+						surrender_progress > 0.5
 					}
+				}
+				EQS = {
+					country_event = EoF_great_war.1
+					country_event = EoF_great_war.11
 				}
 			}
 		}
@@ -648,20 +1115,15 @@ on_actions = {
 		effect = {
 			if = {
 				limit = {
-					CHN = {
-						has_completed_focus = EoF_industry_deadline
-					}
 					FROM = { 
 						OR = { 
-							is_in_faction_with = EQS  
 							tag = EQS
 						} 
 					}
 					ROOT = { 
 						OR = { 
 							tag = CHN
-							tag = GRF
-							tag = PLB
+							tag = OLE
 						} 
 					}
 					FROM.FROM = {
@@ -670,14 +1132,68 @@ on_actions = {
 						}
 					}
 				}
+				add_to_variable = { EoF_industry_deadline_var = 20 }
 			 	CHN = { 
-					add_days_mission_timeout = {
-						mission = EoF_industry_deadline_mission
+					modify_timed_idea = {
+						idea = EoF_CHN_warplan_short_3
 						days = 20
 					}
 			 	}
 				FROM.FROM = {
 					set_state_flag = EoF_industry_deadline_flag
+				}
+			}
+		}
+	}
+	#CHN Hive Plants Mechanic
+	on_monthly_CHN = {
+		effect = {
+			if = {
+				limit = {
+					has_completed_focus = EoF_hive_plants
+					309 = { is_owned_by = CHN }
+					259 = { is_owned_by = CHN }
+					248 = { is_owned_by = CHN }
+				}
+				remove_all_plant_buffs = yes
+				update_lyctida_effect = yes
+				update_vraks_effect = yes
+				update_sicarus_effect = yes
+			}
+		}
+	}
+	#NCH Dockyards Mechanic
+	on_monthly_NCH = {
+		effect = {
+			if = {
+				limit = {
+					OR = {
+						has_idea = EoF_NCH_dockyards_0
+						has_idea = EoF_NCH_dockyards_1
+					}
+					668 = { is_owned_by = NCH }
+					669 = { is_owned_by = NCH }
+					670 = { is_owned_by = NCH }
+				}
+				random_core_state = {
+					limit = {
+						is_in_home_area = yes
+					}
+					if = {
+						limit = {
+							dockyard > 5
+						}
+						remove_building = {
+							type = dockyard
+							level = 1
+						}
+						NCH = {
+							add_offsite_building = {
+								type = dockyard
+								level = 1
+							}
+						}
+					}
 				}
 			}
 		}
@@ -731,6 +1247,12 @@ on_actions = {
 							infantry = { x = 1 y = 2 }
 							infantry = { x = 1 y = 3 }
 							infantry = { x = 1 y = 4 }
+
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+							infantry = { x = 2 y = 4 }
 						}
 						support = {
 							engineer = { x = 0 y = 0 }
@@ -840,6 +1362,90 @@ on_actions = {
 
 				}
 
+			}
+##New city fall
+			else_if = {#coltoba
+				limit = {
+					FROM.FROM = { state = 741 }
+						FROM = { original_tag = ABY }
+				}
+				news_event = { id = EoF.cityfall.701 }
+			}
+			else_if = {#aspurra
+				limit = {
+					FROM.FROM = { state = 771 }
+						FROM = { original_tag = ABY }
+				}
+				news_event = { id = EoF.cityfall.702 }
+			}
+		}
+	}
+	#WNG Capitulation Whitepeace
+	on_capitulation_immediate = {
+		effect = {
+			if = {
+				limit = {
+					tag = WNG
+					has_idea = EoF_WNG_treaty
+				}
+				WNG = {
+					delete_unit = {
+						disband = yes
+					}
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					tag = WNG
+					has_idea = EoF_WNG_treaty
+				}
+				set_variable = { global.EoF_WNG_industrial_evac_var_half = global.EoF_WNG_industrial_evac_var }
+				multiply_variable = { global.EoF_WNG_industrial_evac_var = 2 }
+				WNG = {
+					remove_ideas = EoF_WNG_treaty
+					remove_ideas = EoF_WNG_army_atrophy
+				}
+				HLR = {
+					transfer_state = 570
+					add_state_core = 570
+					transfer_state = 527
+					add_state_core = 527
+					transfer_state = 444
+					add_state_core = 444
+					transfer_state = 509
+					add_state_core = 509
+					transfer_state = 460
+					add_state_core = 460
+					transfer_state = 445
+					add_state_core = 445
+				}
+				WNG = {
+					remove_state_core = 570
+					remove_state_core = 527
+					remove_state_core = 444
+					remove_state_core = 509
+					remove_state_core = 460
+					remove_state_core = 445
+					every_core_state = {
+						limit = {
+							is_on_continent = asia
+						}
+						remove_building = {
+							type = arms_factory
+							level = global.EoF_WNG_industrial_evac_var
+						}
+						remove_building = {
+							type = industrial_complex
+							level = global.EoF_WNG_industrial_evac_var_half
+						}
+					}
+					add_offsite_building = { type = arms_factory level = global.EoF_WNG_industrial_evac_var }
+					add_offsite_building = { type = industrial_complex level = global.EoF_WNG_industrial_evac_var_half }
+				}
 			}
 		}
 	}

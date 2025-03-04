@@ -23,6 +23,6 @@ state={
 	}
 
 	resources={
-		aluminium=10
+		aluminium=100
 	}
 }

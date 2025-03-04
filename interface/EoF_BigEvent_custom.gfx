@@ -39,4 +39,12 @@ spriteTypes = { ##### THIS FILE DEFINES THE PICTURE FOR EACH SUPER EVENT
 		name = "GFX_superevent_custom_tarrin"
 		textureFile = "gfx//superevent_pictures//tarrin_custom.tga"
 	}
+	spriteType = {
+		name = "GFX_superevent_custom_wingbardy"
+		textureFile = "gfx//superevent_pictures//wingbardy_custom.tga"
+	}
+	spriteType = {
+		name = "GFX_superevent_custom_rivfed"
+		textureFile = "gfx//superevent_pictures//rivfed_custom.tga"
+	}
 }

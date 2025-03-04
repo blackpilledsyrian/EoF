@@ -5,10 +5,39 @@ ideas = {
 				always = yes
 			}
 			removal_cost = -1
-			picture = HUN_treaty_of_triannon
+			picture = triumphant_will
 			modifier = {
-				consumer_goods_factor = 0.2
-				production_speed_arms_factory_factor = -0.3
+				war_support_factor = -0.1
+				surrender_limit = -0.25
+				conversion_cost_civ_to_mil_factor = 0.2
+				production_speed_arms_factory_factor = -0.2
+			}		
+		}
+		EoF_WNG_army_atrophy = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = ITA_bandits_war
+			modifier = {
+				experience_gain_army_factor = -0.33
+				experience_gain_air_factor = -0.33
+				experience_gain_navy_factor = -0.33
+				land_doctrine_cost_factor = 1
+				air_doctrine_cost_factor = 1
+				naval_doctrine_cost_factor = 1
+			}		
+		}
+		EoF_WNG_treaty_2 = {
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			picture = triumphant_will
+			modifier = {
+				consumer_goods_factor = 0.5
+				local_resources_factor = -0.5
+				surrender_limit = 1
 			}		
 		}
 		EoF_WNG_militarization = {
@@ -20,6 +49,16 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.5
 				production_speed_arms_factory_factor = 0.5
 				production_factory_efficiency_gain_factor = 0.5
+			}				
+		}
+		EoF_WNG_shame_of_defeat = {
+			removal_cost = -1
+			picture = griffon_army_unhappy
+			modifier = {
+				stability_weekly = -0.005
+				political_power_factor = -0.2
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
 			}				
 		}
 	}

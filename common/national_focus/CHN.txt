@@ -109,7 +109,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_support_workers"
-			one_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1
@@ -144,6 +144,15 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			mio:CHN_chntank3_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank2_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank1_organization = {
+				add_mio_funds = 1000
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -173,7 +182,7 @@ focus_tree = {
 	focus = {
 		id = hive_funding
 		icon = GFX_goal_chn_hives
-		cost = 10.00
+		cost = 5
 		prerequisite = {
 			focus = CHN_state_propaganda
 		}
@@ -215,7 +224,7 @@ focus_tree = {
 	focus = {
 		id = unite_the_people
 		icon = GFX_goal_chn_unity
-		cost = 10.00
+		cost = 5
 		x = 8
 		y = 5
 		prerequisite = {
@@ -260,26 +269,38 @@ focus_tree = {
                level = 2
 				path = { 10303 10233 7366 8110 10753 4342 }
             }
-			309 = { add_building_construction = {
+			309 = { 
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					} }
-			311 = { add_building_construction = {
+				} 
+			}
+			311 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					} }
-			260 = { add_building_construction = {
+				} 
+			}
+			260 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					} }
-			310 = { add_building_construction = {
+				} 
+			}
+			310 = { 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
 					type = infrastructure
 					level = 1
 					instant_build = yes
-					} }
+				} 
+			}
 		}
 		x = 8
 		y = 6
@@ -306,10 +327,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_Hive_Factories"
 			309 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 4
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -336,7 +357,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus steel_industry"
 			add_resource = {
 				type = steel
-				amount = 18
+				amount = 180
 				state = 259
 			}
 			259 = {
@@ -345,7 +366,7 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -389,12 +410,12 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus arctic_shelf_mining"
 			add_resource = {
 				type = oil
-				amount = 14
+				amount = 140
 				state = 264
 			}
 			add_resource = {
 				type = oil
-				amount = 10
+				amount = 100
 				state = 312
 			}
 			264 = {
@@ -416,7 +437,7 @@ focus_tree = {
 	focus = {
 		id = CHN_develop_vesalipolis
 		icon = GFX_goal_chn_vesalipolis
-		cost = 10.00
+		cost = 8
 		prerequisite = {
 			focus = industrial_research
 		}
@@ -457,11 +478,14 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 3
+				amount = 30
 				state = 251
 			}
 			add_timed_idea = {
-				days = 50 idea = chn_vesalipolis_construction
+				days = 70 idea = chn_vesalipolis_construction
+			}
+			mio:CHN_chnequip3_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY FOCUS_FILTER_RESEARCH }
@@ -499,16 +523,22 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 2
+				amount = 20
 				state = 252
 			}
 			add_resource = {
 				type = tungsten
-				amount = 1
+				amount = 10
 				state = 259
 			}
 			country_event = {
 				id = changelings.36 days = 1
+			}
+			mio:CHN_chnnavy1_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chnnavy2_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -547,21 +577,30 @@ focus_tree = {
 			}
 			add_resource = {
 				type = steel
-				amount = 2
+				amount = 20
 				state = 259
 			}
 			add_resource = {
 				type = aluminium
-				amount = 1
+				amount = 10
 				state = 259
 			}
 			modify_building_resources = {
 				building = synthetic_refinery
 				resource = rubber
-				amount = 1
+				amount = 10
 			}
 			country_event = {
 				id = changelings.37 days = 1
+			}
+			mio:CHN_chntank1_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank2_organization = {
+				add_mio_funds = 1000
+			}
+			mio:CHN_chntank3_organization = {
+				add_mio_funds = 1000
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -598,9 +637,32 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_soryth"
+			custom_effect_tooltip = {
+				localization_key = magical_facility_construction_tt
+				temp_facility_state_loc = "[262.GetName]"
+				temp_facility_province_loc = "[262.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						262 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = magical_facility
+						}
+					}
+					262 = {
+						add_building_construction = {
+							type = magical_facility
+							level = 1
+							instant_build = yes
+							province = 6752
+						}
+					}
+				}
+			}
 			add_resource = {
 				type = crystals
-				amount = 20
+				amount = 200
 				state = 262
 			}
 			add_tech_bonus = {
@@ -887,10 +949,16 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus pressure_olenia"
+			if = {
+				limit = { 
+					NOT = {
+						has_idea = tot_economic_mobilisation
+					}
+				}
+				add_political_power = -150
+				add_ideas = tot_economic_mobilisation
+			}
 			add_war_support = 0.2
-			add_state_claim = 300
-			add_state_claim = 292
-			add_state_claim = 302
 			country_event = { id = changelings.1 days = 1 }
 			build_railway = {
                 level = 2
@@ -905,7 +973,10 @@ focus_tree = {
 					instant_build = yes
 				} 
 			}
-			add_named_threat = { threat = 5 name = pressure_olenia }
+			add_named_threat = { 
+				threat = 5
+				name = EoF_pressure_olenia_tension
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
 	}
@@ -977,7 +1048,7 @@ focus_tree = {
 	focus = {
 		id = conquest
 		icon = GFX_goal_chn_conquest_of_olenia
-		cost = 3
+		cost = 8
 		will_lead_to_war_with = OLE
 		prerequisite = {
 			focus = pressure_olenia
@@ -1039,20 +1110,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_named_threat = { threat = 5 name = pressure_olenia }
-			if = {
-				limit = { 
-					is_ai = yes 
-					NOT = {
-						has_idea = tot_economic_mobilisation
-						has_idea = war_economy
-					}
-				}
-				add_political_power = -150
-				add_ideas = war_economy
+			add_named_threat = { 
+				threat = 10
+				name = EoF_conquest_olenia_tension
 			}
-			add_ideas = tot_economic_mobilisation
-			add_political_power = -150
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL FOCUS_FILTER_ANNEXATION }
 		x = 13
@@ -1088,17 +1149,17 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus national_resources"
 			add_resource = {
 				type = steel
-				amount = 14
+				amount = 140
 				state = 301
 			}
 			add_resource = {
 				type = steel
-				amount = 13
+				amount = 130
 				state = 300
 			}
 			add_resource = {
 				type = steel
-				amount = 24
+				amount = 240
 				state = 292
 			}
 			add_tech_bonus = {
@@ -1113,7 +1174,7 @@ focus_tree = {
 	focus = {
 		id = CHN_olenian_factories
 		icon = GFX_goal_chn_ole_factories
-		cost = 8
+		cost = 5
 		prerequisite = {
 			# focus = offer_puppet
 			focus = conquest
@@ -1138,21 +1199,17 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_olenian_factories"
-			76 = {
+			194 = {
 			    remove_building = {
-				    type = industrial_complex
-				    level = 2
+				    type = dockyard
+				    level = 1
 			    }
+		    }
+			76 = {
 				remove_building = {
 					type = dockyard
-					level = 2
+					level = 3
 				}
-		    }
-			191 = {
-			    remove_building = {
-				    type = arms_factory
-				    level = 2
-			    }
 		    }
 			69 = {
 				remove_building = {
@@ -1160,37 +1217,8 @@ focus_tree = {
 					level = 2
 				}
 			}
-			309 = {
-			    add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = industrial_complex
-				    level = 2
-				    instant_build = yes
-			    }
-		    }
-			259 = {
-			    add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = arms_factory
-				    level = 2
-				    instant_build = yes
-			    }
-		    }
-			304 = {
-				add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = dockyard
-				    level = 2
-				    instant_build = yes
-			    }
-			}
-			305 = {
-				add_extra_state_shared_building_slots = 2
-			    add_building_construction = {
-				    type = dockyard
-				    level = 2
-				    instant_build = yes
-			    }
+			add_offsite_building = { 
+				type = dockyard level = 6 
 			}
 		}
 	}
@@ -1476,7 +1504,7 @@ focus_tree = {
 			247 = {
 				add_building_construction = {
 					type = air_base
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				add_building_construction = {
@@ -1491,11 +1519,33 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
 			}
 			319 = {
 				add_building_construction = {
 					type = infrastructure
 					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 2
+					instant_build = yes
+				}
+			}
+			316 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = air_base
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -1626,7 +1676,10 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus prepare_for_war"
 			add_war_support = 0.2
-			add_ideas = EoF_CHN_final_army_expansion
+			add_timed_idea = {
+				idea = EoF_CHN_final_army_expansion
+				days = 365
+			}
 			hidden_effect = {
 				if = {
 					limit = { NOT = { has_war_with = EQS } }
@@ -1674,7 +1727,10 @@ focus_tree = {
 					}
 				}
 			}
-			add_named_threat = { threat = 5 name = prepare_for_war }
+			add_named_threat = {
+				threat = 5
+				name = EoF_CHN_war_buildup_tension
+			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -1746,6 +1802,9 @@ focus_tree = {
 		id = steal_tech
 		icon = GFX_goal_chn_hat
 		cost = 10.00
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = send_spies_to_EQS
 		}
@@ -1791,378 +1850,399 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
 	}
-	# focus = {
-	# 	id = demand_stg
-	# 	icon = GFX_goal_chn_strike_stg
-	# 	cost = 10
-	# 	will_lead_to_war_with = STG
-	# 	will_lead_to_war_with = STL
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	bypass = {
-	# 		STG = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				has_war_with = ROOT
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	available = {
-	# 		has_government = fascism
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = 3
-	# 	y = 1
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			factor = 150
-	# 			has_war = no
-	# 			is_neighbor_of = STG
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus demand_stg"
-	# 		add_war_support = 0.1
-	# 		create_wargoal = {
-	# 			type = annex_everything
-	# 			target = STG
-	# 		}
-	# 		create_wargoal = {
-	# 			type = annex_everything
-	# 			target = STL
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-	# }
-	# focus = {
-	# 	id = CHN_demand_yak
-	# 	icon = GFX_goal_chn_strike_stg
-	# 	cost = 10
-	# 	will_lead_to_war_with = YAK
-	# 	will_lead_to_war_with = JAK
-	# 	prerequisite = {
-	# 		focus = demand_stg
-	# 	}
-	# 	bypass = {
-	# 		YAK = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				has_war_with = ROOT
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 		JAK = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				has_war_with = ROOT
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	available = {
-	# 		has_government = fascism
-	# 		EQS = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = 3
-	# 	y = 3
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			factor = 150
-	# 			has_war = no
-	# 			is_neighbor_of = YAK
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_yak"
-	# 		create_wargoal = {
-	# 			type = puppet_wargoal_focus
-	# 			target = YAK
-	# 		}
-	# 		create_wargoal = {
-	# 			type = puppet_wargoal_focus
-	# 			target = JAK
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_ANNEXATION }
-	# }
-	# focus = {
-	# 	id = CHN_demand_png
-	# 	icon = GFX_goal_chn_strike_stg
-	# 	cost = 10
-	# 	will_lead_to_war_with = PNG
-	# 	prerequisite = {
-	# 		focus = demand_GRF
-	# 	}
-	# 	bypass = {
-	# 		PNG = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				has_war_with = ROOT
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	available = {
-	# 		has_government = fascism
-	# 		EQS = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = -3
-	# 	y = 3
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			factor = 150
-	# 			has_war = no
-	# 			is_neighbor_of = PNG
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_png"
-	# 		create_wargoal = {
-	# 			type = puppet_wargoal_focus
-	# 			target = PNG
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_ANNEXATION }
-	# }
-	# focus = {
-	# 	id = demand_GRF
-	# 	icon = GFX_goal_chn_strike_grf
-	# 	cost = 10
-	# 	will_lead_to_war_with = GRF
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	bypass = {
-	# 		GRF = {
-	# 			OR = {
-	# 				exists = no
-	# 				has_capitulated = yes
-	# 				has_war_with = ROOT
-	# 				is_subject_of = ROOT
-	# 			}
-	# 		}
-	# 	}
-	# 	available = {
-	# 		has_government = fascism
-	# 		NOT = {
-	# 			GRF = {
-	# 				has_country_flag = GRF_civil_war_flag
-	# 			}
-	# 		}
-	# 	}
-	# 	continue_if_invalid = no
-	# 	cancel_if_invalid = yes
-	# 	relative_position_id = demand_equestria
-	# 	x = -3
-	# 	y = 1
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			factor = 150
-	# 			has_war = no
-	# 			is_neighbor_of = GRF
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus demand_GRF"
-	# 		add_war_support = 0.1
-	# 		create_wargoal = {
-	# 			type = puppet_wargoal_focus
-	# 			target = GRF
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
-	# }
-	# focus = {
-	# 	id = continuous_war_plan_CHN
-	# 	icon = GFX_goal_chn_rifles
-	# 	cost = 15
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	available = {
-	# 		NOT = {
-	# 			has_completed_focus = CHN_post_war_1_a
-	# 		}
-	# 		has_government = fascism
-	# 		OR = {
-	# 			has_war_with = EQS
-	# 			has_war_with = NLR
-	# 		}
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = 4
-	# 	y = 2
-	# 	ai_will_do = {
-	# 		factor = 1
-	# 		modifier = {
-	# 			has_war_with = EQS
-	# 			has_war_with = CRY
-	# 			has_war_with = STG
-	# 			factor = 90
-	# 		}
-	# 		modifier = {
-	# 			EQS = {
-	# 				OR = {
-	# 					has_idea = eqs_ai_buff
-	# 					has_idea = eqs_ai_buff2
-	# 				}
-	# 			}
-	# 			factor = 100
-	# 		}
-	# 		modifier = {
-	# 			surrender_progress > 0
-	# 			factor = 100
-	# 		}
-	# 		modifier = {
-	# 			factor = 0
-	# 			OR = {
-	# 				has_stability < 0.5
-	# 				has_war_support < 0.5
-	# 			}
-	# 		}
-	# 	}
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus continuous_war_plan_CHN"
-	# 		add_ideas = continous_war_plan_CHN
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
+	focus = {
+		id = demand_stg
+		icon = GFX_goal_chn_strike_stg
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		will_lead_to_war_with = STG
+		will_lead_to_war_with = STL
+		prerequisite = {
+			focus = demand_equestria
+		}
+		bypass = {
+			STG = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		available = {
+			has_government = fascism
+		}
+		relative_position_id = demand_equestria
+		x = 3
+		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 150
+				has_war = no
+				is_neighbor_of = STG
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus demand_stg"
+			add_war_support = 0.1
+			create_wargoal = {
+				type = annex_everything
+				target = STG
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = STL
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = CHN_demand_yak
+		icon = GFX_goal_chn_strike_stg
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		will_lead_to_war_with = YAK
+		will_lead_to_war_with = JAK
+		prerequisite = {
+			focus = demand_stg
+		}
+		bypass = {
+			YAK = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+			JAK = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		available = {
+			has_government = fascism
+			EQS = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					is_subject_of = ROOT
+				}
+			}
+		}
+		relative_position_id = demand_equestria
+		x = 3
+		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 150
+				has_war = no
+				is_neighbor_of = YAK
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_yak"
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = YAK
+			}
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = JAK
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = CHN_demand_png
+		icon = GFX_goal_chn_strike_stg
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		will_lead_to_war_with = PNG
+		prerequisite = {
+			focus = demand_GRF
+		}
+		bypass = {
+			PNG = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		available = {
+			has_government = fascism
+			EQS = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					is_subject_of = ROOT
+				}
+			}
+		}
+		relative_position_id = demand_equestria
+		x = -3
+		y = 3
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 150
+				has_war = no
+				is_neighbor_of = PNG
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_demand_png"
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = PNG
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = demand_GRF
+		icon = GFX_goal_chn_strike_grf
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		will_lead_to_war_with = GRF
+		prerequisite = {
+			focus = demand_equestria
+		}
+		bypass = {
+			GRF = {
+				OR = {
+					exists = no
+					has_capitulated = yes
+					has_war_with = ROOT
+					is_subject_of = ROOT
+				}
+			}
+		}
+		available = {
+			has_government = fascism
+			NOT = {
+				GRF = {
+					has_country_flag = GRF_civil_war_flag
+				}
+			}
+		}
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = demand_equestria
+		x = -3
+		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 150
+				has_war = no
+				is_neighbor_of = GRF
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus demand_GRF"
+			add_war_support = 0.1
+			create_wargoal = {
+				type = puppet_wargoal_focus
+				target = GRF
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_ANNEXATION }
+	}
+	focus = {
+		id = continuous_war_plan_CHN
+		icon = GFX_goal_chn_rifles
+		cost = 15
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = demand_equestria
+		}
+		available = {
+			NOT = {
+				has_completed_focus = CHN_post_war_1_a
+			}
+			has_government = fascism
+			OR = {
+				has_war_with = EQS
+				has_war_with = NLR
+			}
+		}
+		relative_position_id = demand_equestria
+		x = 4
+		y = 2
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				has_war_with = EQS
+				has_war_with = CRY
+				has_war_with = STG
+				factor = 90
+			}
+			modifier = {
+				EQS = {
+					OR = {
+						has_idea = eqs_ai_buff
+						has_idea = eqs_ai_buff2
+					}
+				}
+				factor = 100
+			}
+			modifier = {
+				surrender_progress > 0
+				factor = 100
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_stability < 0.5
+					has_war_support < 0.5
+				}
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus continuous_war_plan_CHN"
+			add_ideas = continous_war_plan_CHN
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_STABILITY FOCUS_FILTER_INDUSTRY FOCUS_FILTER_WAR_SUPPORT }
 
-	# }
-	# focus = {
-	# 	id = CHN_force_ponies_to_repair
-	# 	icon = GFX_goal_chn_enslave_pony_factory
-	# 	cost = 5
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = -2
-	# 	y = 2
-	# 	available = {
-	# 		OR = {
-	# 			EQS = { any_cores_controlled_by_ROOT = yes }
-	# 			CRY = { any_cores_controlled_by_ROOT = yes }
-	# 			STG = { any_cores_controlled_by_ROOT = yes }
-	# 		}
-	# 	}
-	# 	ai_will_do = { factor = 100 }
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus CHN_force_ponies_to_repair"
-	# 		add_ideas = CHN_ponies_repair
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	# }
-	# focus = {
-	# 	id = CHN_force_ponies_to_work
-	# 	icon = GFX_goal_chn_enslave_pony
-	# 	cost = 10.00
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	relative_position_id = demand_equestria
-	# 	x = 2
-	# 	y = 2
-	# 	available = {
-	# 		NOT = {
-	# 			has_completed_focus = CHN_post_war_1_a
-	# 		}
-	# 		OR = {
-	# 			EQS = { any_cores_controlled_by_ROOT = yes }
-	# 			CRY = { any_cores_controlled_by_ROOT = yes }
-	# 			STG = { any_cores_controlled_by_ROOT = yes }
-	# 		}
-	# 	}
-	# 	ai_will_do = { factor = 100 }
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus CHN_force_ponies_to_work"
-	# 		add_political_power = -150
-	# 		save_current_manpower = yes
-	# 		random_controlled_state = {
-	# 			limit = {
-	# 				OR = {
-	# 					is_core_of = EQS
-	# 					is_core_of = CRY
-	# 				}
-	# 				state_population > 100000
-	# 			}
-	# 			add_manpower = -100000
-	# 			set_state_flag = flag_CHN_moved_ponies_from_here
-	# 		}
-	# 		random_controlled_state = {
-	# 			limit = {
-	# 				OR = {
-	# 					is_core_of = EQS
-	# 					is_core_of = CRY
-	# 				}
-	# 				state_population > 100000
-	# 			}
-	# 			add_manpower = -100000
-	# 			set_state_flag = flag_CHN_moved_ponies_from_here
-	# 		}
-	# 		random_controlled_state = {
-	# 			limit = {
-	# 				OR = {
-	# 					is_core_of = EQS
-	# 					is_core_of = CRY
-	# 				}
-	# 				state_population > 100000
-	# 			}
-	# 			add_manpower = -100000
-	# 			set_state_flag = flag_CHN_moved_ponies_from_here
-	# 		}
-	# 		restore_previous_manpower = yes
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = CHN
-	# 				is_owned_and_controlled_by = CHN
-	# 			}
-	# 			add_manpower = 100000
-	# 			set_state_flag = flag_CHN_moved_ponies_here
-	# 		}
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = CHN
-	# 				is_owned_and_controlled_by = CHN
-	# 			}
-	# 			add_manpower = 100000
-	# 			set_state_flag = flag_CHN_moved_ponies_here
-	# 		}
-	# 		random_owned_controlled_state = {
-	# 			limit = {
-	# 				is_core_of = CHN
-	# 				is_owned_and_controlled_by = CHN
-	# 			}
-	# 			add_manpower = 100000
-	# 			set_state_flag = flag_CHN_moved_ponies_here
-	# 		}
-	# 		add_ideas = CHN_ponies_work
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
-	# }
+	}
+	focus = {
+		id = CHN_force_ponies_to_repair
+		icon = GFX_goal_chn_enslave_pony_factory
+		cost = 5
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = demand_equestria
+		}
+		relative_position_id = demand_equestria
+		x = -2
+		y = 2
+		available = {
+			OR = {
+				EQS = { any_cores_controlled_by_ROOT = yes }
+				CRY = { any_cores_controlled_by_ROOT = yes }
+				STG = { any_cores_controlled_by_ROOT = yes }
+			}
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_force_ponies_to_repair"
+			add_ideas = CHN_ponies_repair
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = CHN_force_ponies_to_work
+		icon = GFX_goal_chn_enslave_pony
+		cost = 10.00
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = demand_equestria
+		}
+		relative_position_id = demand_equestria
+		x = 2
+		y = 2
+		available = {
+			NOT = {
+				has_completed_focus = CHN_post_war_1_a
+			}
+			OR = {
+				EQS = { any_cores_controlled_by_ROOT = yes }
+				CRY = { any_cores_controlled_by_ROOT = yes }
+				STG = { any_cores_controlled_by_ROOT = yes }
+			}
+		}
+		ai_will_do = { factor = 100 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_force_ponies_to_work"
+			add_political_power = -150
+			save_current_manpower = yes
+			random_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = EQS
+						is_core_of = CRY
+					}
+					state_population > 100000
+				}
+				add_manpower = -100000
+				set_state_flag = flag_CHN_moved_ponies_from_here
+			}
+			random_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = EQS
+						is_core_of = CRY
+					}
+					state_population > 100000
+				}
+				add_manpower = -100000
+				set_state_flag = flag_CHN_moved_ponies_from_here
+			}
+			random_controlled_state = {
+				limit = {
+					OR = {
+						is_core_of = EQS
+						is_core_of = CRY
+					}
+					state_population > 100000
+				}
+				add_manpower = -100000
+				set_state_flag = flag_CHN_moved_ponies_from_here
+			}
+			restore_previous_manpower = yes
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = CHN
+					is_owned_and_controlled_by = CHN
+				}
+				add_manpower = 100000
+				set_state_flag = flag_CHN_moved_ponies_here
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = CHN
+					is_owned_and_controlled_by = CHN
+				}
+				add_manpower = 100000
+				set_state_flag = flag_CHN_moved_ponies_here
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = CHN
+					is_owned_and_controlled_by = CHN
+				}
+				add_manpower = 100000
+				set_state_flag = flag_CHN_moved_ponies_here
+			}
+			add_ideas = CHN_ponies_work
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = death_or_dishonour
 		icon = GFX_goal_chn_death_or_dishonour
@@ -2225,40 +2305,43 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	# focus = {
-	# 	id = CHN_crystal_city_appropriation
-	# 	icon = GFX_goal_chn_crystal_city
-	# 	cost = 10
-	# 	prerequisite = {
-	# 		focus = demand_equestria
-	# 	}
-	# 	available = {
-	# 		has_government = fascism
-	# 		53 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-	# 		344 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-	# 		345 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
-	# 	}
-	# 	continue_if_invalid = no
-	# 	cancel_if_invalid = yes
-	# 	relative_position_id = demand_equestria
-	# 	x = 1
-	# 	y = 3
-	# 	ai_will_do = { factor = 120 }
-	# 	completion_reward = {
-	# 		log = "[GetDateText]: [Root.GetName]: Focus CHN_crystal_city_appropriation"
-	# 		add_ideas = CHN_crystal_city_research
-	# 		53 = {
-	# 			add_extra_state_shared_building_slots = 1
-	# 		}
-	# 		344 = {
-	# 			add_extra_state_shared_building_slots = 1
-	# 		}
-	# 		345 = {
-	# 			add_extra_state_shared_building_slots = 1
-	# 		}
-	# 	}
-	# 	search_filters = { FOCUS_FILTER_INDUSTRY }
-	# }
+	focus = {
+		id = CHN_crystal_city_appropriation
+		icon = GFX_goal_chn_crystal_city
+		cost = 10
+		allow_branch = {
+			always = no
+		}
+		prerequisite = {
+			focus = demand_equestria
+		}
+		available = {
+			has_government = fascism
+			53 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+			344 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+			345 = { owner = { controls_state = PREV OR = { tag = ROOT is_subject_of = ROOT } } }
+		}
+		continue_if_invalid = no
+		cancel_if_invalid = yes
+		relative_position_id = demand_equestria
+		x = 1
+		y = 3
+		ai_will_do = { factor = 120 }
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus CHN_crystal_city_appropriation"
+			add_ideas = CHN_crystal_city_research
+			53 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			344 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			345 = {
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
 #	focus = {
 #		id = CHN_invasion_of_griffonia
 #		icon = GFX_goal_chn_griffonia
@@ -2483,29 +2566,27 @@ focus_tree = {
 		}
 		available = {
 			date > 1013.04.01
-			OR = {
-				14 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			14 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
-				175 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			}
+			175 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
-				138 = {
-					controller = {
-						OR = {
-							is_in_faction_with = EQS
-							tag = EQS
-						}
+			}
+			138 = {
+				controller = {
+					OR = {
+						is_in_faction_with = EQS
+						tag = EQS
 					}
 				}
 			}
@@ -2519,24 +2600,24 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = EoF_summer_offensive_2
-				days = 90
+				days = 60
 			}
 			OLE = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 			PLB = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 			GRF = {
 				add_timed_idea = {
 					idea = EoF_summer_offensive_2
-					days = 90
+					days = 60
 				}
 			}
 		}
@@ -2603,6 +2684,25 @@ focus_tree = {
 	}
 
 	focus = {
+		id = EoF_pax_chrysalia
+		icon = GFX_goal_chn_equus
+		cost = 10
+		prerequisite = {
+			focus = EoF_fall_dunkelgrun
+			focus = EoF_fall_hellgrun
+			focus = EoF_fall_rosa
+		}
+		available = {
+			always = no
+		}
+		relative_position_id = EoF_fall_hellgrun
+		x = 0
+		y = 2
+		completion_reward = {
+		}
+	}
+
+	focus = {
 		id = EoF_our_war_plan
 		icon = GFX_goal_chn_man_textbooks
 		cost = 5
@@ -2637,7 +2737,7 @@ focus_tree = {
 		completion_reward = {
 			add_timed_idea = {
 				idea = EoF_CHN_warplan_short_1
-				days = 120
+				days = 90
 			}
 		}
 	}
@@ -2664,13 +2764,18 @@ focus_tree = {
 		prerequisite = {
 			focus = EoF_existing_production
 		}
+		available = {
+			date < 1012.06.01
+		}
 		relative_position_id = EoF_existing_production
 		x = 0
 		y = 1
 		completion_reward = {
-			activate_mission_tooltip = EoF_industry_deadline_mission
 			custom_effect_tooltip = EoF_industry_deadline_tt
-			add_ideas = EoF_CHN_warplan_short_3
+			add_timed_idea = {
+				idea = EoF_CHN_warplan_short_3
+				days = EoF_industry_deadline_var
+			}
 		}
 	}
 
@@ -2733,6 +2838,9 @@ focus_tree = {
 		completion_reward = {
 			unlock_decision_category_tooltip = EoF_hive_plants_category
 			custom_effect_tooltip = EoF_hive_plants_tt
+			update_lyctida_effect = yes
+			update_vraks_effect = yes
+			update_sicarus_effect = yes
 		}
 	}
 
@@ -3247,52 +3355,8 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
-			if = {
-				limit = { 
-					AND = {
-						has_tech = basic_medium_tank_chassis
-						has_dlc = "No Step Back"
-					}
-				}
-				create_equipment_variant = {
-					name = "Panzer III Ausf. J"
-					type = medium_tank_chassis_1
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_high_velocity_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 3
-					}
-					icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
-				}
-				create_equipment_variant = {
-					name = "Panzer IV Ausf. E"
-					type = medium_tank_chassis_1
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_small_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_1
-						special_type_slot_2 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/ger_basic_main_tank.dds"
-				}
-			}	
+			custom_effect_tooltip = EoF_advanced_academy_tt
+			set_country_flag = EoF_advanced_academy
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -3359,6 +3423,14 @@ focus_tree = {
 					has_idea = CHN_army_reorganization_high_com
 				}
 				swap_ideas = { remove_idea = CHN_army_reorganization_high_com add_idea = CHN_army_reorganization_2 }
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+				}
+				every_country_division = {
+					add_divisional_commander_xp = 200
+				}
 			}
 		}
 	}
@@ -3433,6 +3505,74 @@ focus_tree = {
 			swap_ideas = { remove_idea = CHN_army_reorganization_3 add_idea = changeling_school_of_war }
 		}
 	}
+	#EoF Changes
+	focus = {
+		id = EoF_afrika_korps
+		icon = GFX_goal_chn_jungle
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = CHN_changeling_school_of_war
+		prerequisite = {
+			focus = CHN_changeling_school_of_war
+			focus = CHN_griffon_school_of_war
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_afrika_korps_tt
+			252 = {
+				random_state_division = {
+					add_history_entry = {
+						key = EoF_afrika_korps_history
+						subject = "Afrika Korps"
+						allow = yes
+					}
+					add_unit_medal_to_latest_entry = {
+						unit_medals = EoF_afrika_korps_medal
+					}
+				}
+			}
+			309 = {
+				random_state_division = {
+					add_history_entry = {
+						key = EoF_afrika_korps_history
+						subject = "Afrika Korps"
+						allow = yes
+					}
+					add_unit_medal_to_latest_entry = {
+						unit_medals = EoF_afrika_korps_medal
+					}
+				}
+			}
+			251 = {
+				random_state_division = {
+					add_history_entry = {
+						key = EoF_afrika_korps_history
+						subject = "Afrika Korps"
+						allow = yes
+					}
+					add_unit_medal_to_latest_entry = {
+						unit_medals = EoF_afrika_korps_medal
+					}
+				}
+			}
+			259 = {
+				random_state_division = {
+					add_history_entry = {
+						key = EoF_afrika_korps_history
+						subject = "Afrika Korps"
+						allow = yes
+					}
+					add_unit_medal_to_latest_entry = {
+						unit_medals = EoF_afrika_korps_medal
+					}
+				}
+			}
+		}
+	}
+	#EoF Changes
 	
 	######AIRFORCE FOCUSES########
 
@@ -3469,11 +3609,23 @@ focus_tree = {
 					uses = 1
 					category = light_air
 				}
-				generic_early_fighter = yes
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
-					variant_name = "Early Fighter"
-					amount = 75
+					variant_name = "Sv.109"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_airframe_1
+						variant_name = "Sv.109"
+						amount = 100
+					}
 				}
 			}
 			else_if = {
@@ -3492,7 +3644,7 @@ focus_tree = {
 				add_equipment_to_stockpile = {
 					type = small_plane_airframe_1
 					variant_name = "Early Fighter"
-					amount = 75
+					amount = 100
 				}
 			}
 			else_if = {
@@ -3506,8 +3658,20 @@ focus_tree = {
 					category = light_fighter
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 75
+					type = fighter_equipment_0
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = fighter_equipment_0
+						amount = 100
+					}
 				}
 			}
 			else = {
@@ -3515,8 +3679,8 @@ focus_tree = {
 					early_fighter = 1
 				}
 				add_equipment_to_stockpile = {
-					type = small_plane_airframe
-					amount = 75
+					type = fighter_equipment_0
+					amount = 100
 				}
 			}
 			if = {
@@ -3534,11 +3698,10 @@ focus_tree = {
 					uses = 1
 					category = medium_air
 				}
-				generic_early_tac_bomber = yes
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe_0
-					variant_name = "Early Tactical Bomber"
-					amount = 30
+					type = medium_plane_airframe_1
+					variant_name = "UWA.111"
+					amount = 50
 				}
 			}
 			else_if = {
@@ -3571,7 +3734,7 @@ focus_tree = {
 					category = tactical_bomber
 				}
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe
+					type = tac_bomber_equipment_0
 					amount = 30
 				}
 			}
@@ -3580,8 +3743,53 @@ focus_tree = {
 					early_bomber = 1
 				}
 				add_equipment_to_stockpile = {
-					type = medium_plane_airframe
+					type = tac_bomber_equipment_0
 					amount = 30
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "By Blood Alone"
+					has_tech = basic_small_airframe
+				}
+				add_equipment_to_stockpile = {
+					type = small_plane_cas_airframe_1
+					variant_name = "Vs.87"
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = small_plane_cas_airframe_1
+						variant_name = "Vs.87"
+						amount = 100
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = CAS1
+				}
+				add_equipment_to_stockpile = {
+					type = CAS_equipment_1
+					amount = 100
+				}
+				if = {
+					limit = {
+						has_game_rule = {
+							rule = great_war_ai_buffs
+							option = CHN_AI_GW_BUFFS
+						}
+					}
+					add_equipment_to_stockpile = {
+						type = CAS_equipment_1
+						amount = 100
+					}
 				}
 			}
 		}
@@ -3824,6 +4032,10 @@ focus_tree = {
 					uses = 2
 					category = cat_anti_tank
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.25
+				}
 			}
 			else = {
 				add_tech_bonus = {
@@ -3987,6 +4199,10 @@ focus_tree = {
 				ahead_reduction = 2
 				category = rocketry
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 1
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -4011,6 +4227,10 @@ focus_tree = {
 				uses = 1
 				category = rocketry
 			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.5
+			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
@@ -4030,6 +4250,29 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_Wunderwaffe"
+			custom_effect_tooltip = {
+				localization_key = nuclear_facility_construction_tt
+				temp_facility_state_loc = "[311.GetName]"
+				temp_facility_province_loc = "[311.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						311 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = nuclear_facility
+						}
+					}
+					311 = {
+						add_building_construction = {
+							type = nuclear_facility
+							level = 1
+							instant_build = yes
+							province = 4342
+						}
+					}
+				}
+			}
 			add_tech_bonus = {
 				name = secret_bonus
 				bonus = 1.0
@@ -4063,8 +4306,12 @@ focus_tree = {
 				name = jet_bonus
 				bonus = 1.0
 				uses = 1
-				technology = jet_engines
+				technology = jet_engines 
 				ahead_reduction = 2
+			}
+			add_breakthrough_progress = {
+				specialization = specialization_air
+				value = 0.75
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4100,6 +4347,10 @@ focus_tree = {
 					uses = 1
 					technology = jet_engines
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.25
+				}
 			}
 			else = {
 				add_tech_bonus = {
@@ -4107,6 +4358,10 @@ focus_tree = {
 					bonus = 1.0
 					uses = 1
 					category = jet_technology
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
 				}
 			}
 		}
@@ -4143,6 +4398,10 @@ focus_tree = {
 					uses = 1
 					technology = jet_engines
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.25
+				}
 			}
 			else = {
 				add_tech_bonus = {
@@ -4150,6 +4409,10 @@ focus_tree = {
 					bonus = 1.0
 					uses = 1
 					category = jet_technology
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
 				}
 			}
 		}
@@ -4186,6 +4449,10 @@ focus_tree = {
 					uses = 1
 					technology = jet_engines
 				}
+				add_breakthrough_progress = {
+					specialization = specialization_air
+					value = 0.5
+				}
 			}
 			else = {
 				add_tech_bonus = {
@@ -4221,14 +4488,37 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_Army"
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				cost_reduction = 0.25
-				uses = 1
+				cost_reduction = 0.5
+				uses = 2
 				category = land_doctrine
 			}
 			army_experience = 25
 		}
 		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_RESEARCH }
 	}
+
+	#EoF Changes
+	focus = {
+		id = EoF_industrialized_army
+		icon = GFX_goal_chn_man_bullets
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = CHN_Army
+		prerequisite = {
+			focus = CHN_Army
+		}
+		available = {
+			has_war = no
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_CHN_initial_army_expansion
+				days = 365
+			}
+		}
+	}
+	#EoF Changes
 
 	focus = {
 		id = CHN_Infantry_1
@@ -4448,51 +4738,14 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
+				ahead_reduction = 1
 				category = cat_light_armor
 			}
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
-				category = cat_medium_armor
-			}
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				custom_effect_tooltip = CHN_PzIVH_tooltip
-			}
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_medium_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = artillery1
-							has_tech = antitank1
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Panzer IV  Ausf. H"
-					type = medium_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_cannon
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_bogie_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_1
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = armor_skirts
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 6
-						tank_nsb_armor_upgrade = 4
-					}
-					icon = "gfx/interface/technologies/CHN_panzerIV.dds"
-				}		
+				category = armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4515,85 +4768,18 @@ focus_tree = {
 			add_tech_bonus = {
 				name = tank_research
 				bonus = 1.0
+				uses = 1
+				ahead_reduction = 0.5
+				category = armor
+			}
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 0.5
 				uses = 2
-				category = cat_light_armor
-				ahead_reduction = 2
-			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
-				category = cat_medium_armor
-			}
-			add_tech_bonus = {
-				name = tank_research
-				bonus = 1.0
-				uses = 1
-				category = cat_heavy_armor
-			}
-		custom_effect_tooltip = CHN_Panther_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = advanced_medium_tank_chassis
-						has_dlc = "No Step Back"
-						has_tech = antitank2
-					}
-				}
-				create_equipment_variant = {
-					name = "Panther Ausf. D"
-					type = medium_tank_chassis_3
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_medium_high_velocity_cannon_2
-						turret_type_slot = tank_medium_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_2
-						special_type_slot_2 = sloped_armor
-						special_type_slot_3 = armor_skirts
-						special_type_slot_4 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 11
-						tank_nsb_armor_upgrade = 10
-					}
-					icon = "gfx/interface/technologies/CHN_panther.dds"
-				}		
-			}
-		custom_effect_tooltip = CHN_TigerI_tooltip
-			if = {
-				limit = { 
-					AND = {
-						has_tech = improved_heavy_tank_chassis
-						has_dlc = "No Step Back"
-						OR = {
-							has_tech = antitank2
-							has_tech = antiair3
-						}
-					}
-				}
-				create_equipment_variant = {
-					name = "Tiger I"
-					type = heavy_tank_chassis_2
-					parent_version = 0
-					modules = {
-						main_armament_slot = tank_heavy_cannon_2
-						turret_type_slot = tank_heavy_three_man_tank_turret
-						suspension_type_slot = tank_interleaved_suspension
-						armor_type_slot = tank_welded_armor
-						engine_type_slot = tank_gasoline_engine
-						tank_radio_module = tank_radio_2
-						special_type_slot_2 = additional_machine_guns
-						special_type_slot_3 = smoke_launchers
-					}
-					upgrades = {
-						tank_nsb_engine_upgrade = 7
-						tank_nsb_armor_upgrade = 7
-					}
-					icon = "gfx/interface/technologies/CHN_tiger.dds"
-				}		
+				technology = armor_tech_1
+				technology = armor_tech_2
+				technology = armor_tech_3
+				technology = armor_tech_4
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4664,6 +4850,7 @@ focus_tree = {
 				create_equipment_variant = {
 					name = "Tiger II"
 					type = heavy_tank_chassis_3
+					design_team = mio:CHN_chntank1_organization
 					parent_version = 0
 					modules = {
 						main_armament_slot = tank_heavy_high_velocity_cannon_2
@@ -4679,7 +4866,7 @@ focus_tree = {
 						tank_nsb_engine_upgrade = 11
 						tank_nsb_armor_upgrade = 18
 					}
-					icon = "gfx/interface/technologies/CHN_King_Tiger.dds"
+					icon = "gfx/interface/technologies/armour_folder/changeling_2d/CHN_King_Tiger.dds"
 				}		
 			}
 		}
@@ -4731,7 +4918,7 @@ focus_tree = {
 	focus = {
 		id = chn_navylysander
 		icon = GFX_goal_chn_lysander
-		cost = 9
+		cost = 5
 		x = 39
 		y = 0
 		# available = {
@@ -4787,7 +4974,7 @@ focus_tree = {
 	focus = {
 		id = chn_navymimic
 		icon = GFX_goal_chn_mimic
-		cost = 9
+		cost = 5
 		x = 37
 		y = 0
 		# available = {
@@ -4851,7 +5038,7 @@ focus_tree = {
 		x = 36
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 0 }
 
 
@@ -4885,7 +5072,7 @@ focus_tree = {
 		x = 38
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -4910,7 +5097,7 @@ focus_tree = {
 		x = 38
 		y = 3
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -4942,7 +5129,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -4987,7 +5174,7 @@ focus_tree = {
 		x = 42
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5012,7 +5199,7 @@ focus_tree = {
 		x = 42
 		y = 3
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5067,7 +5254,7 @@ focus_tree = {
 		x = 38
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 20 }
 
 
@@ -5103,7 +5290,7 @@ focus_tree = {
 		x = 40
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 0 }
 
 
@@ -5138,7 +5325,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5165,7 +5352,7 @@ focus_tree = {
 		x = -2
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5191,7 +5378,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5217,7 +5404,7 @@ focus_tree = {
 		relative_position_id = CHN_battleship_navy
 		x = 0
 		y = 2
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5248,7 +5435,7 @@ focus_tree = {
 		x = 0
 		y = 2
 
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 
 
@@ -5279,7 +5466,7 @@ focus_tree = {
 		relative_position_id = CHN_submarine_navy
 		x = 0
 		y = 3
-		cost = 8
+		cost = 5
 		ai_will_do = { factor = 10 }
 		available = {
 			if = {
@@ -5411,12 +5598,95 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
+	#EoF Changes
+	focus = {
+		id = EoF_polar_relations
+		icon = GFX_goal_chn_plb
+		cost = 1
+		prerequisite = {
+			focus = unite_the_people
+		}
+		x = 3
+		y = 7
+		completion_reward = {
+			puppet = PLB
+			PLB = {
+				set_cosmetic_tag = PLB_CHN
+				country_event = {
+					id = changelings.57 days = 3
+				}
+			}
+		}
+	}
+	focus = {
+		id = EoF_first_wesslandia_award
+		icon = GFX_goal_chn_strike_grf
+		cost = 1
+		prerequisite = {
+			focus = EoF_polar_relations
+		}
+		x = 0
+		y = 1
+		relative_position_id = EoF_polar_relations
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = EoF_first_wesslandia_tension
+			}
+			country_event = EoF.6
+		}
+	}
+	focus = {
+		id = EoF_polar_aid
+		icon = GFX_goal_chn_plb_threat
+		cost = 5
+		prerequisite = {
+			focus = EoF_first_wesslandia_award
+		}
+		relative_position_id = EoF_first_wesslandia_award
+		x = -1
+		y = 1
+		completion_reward = {
+			custom_effect_tooltip = EoF_polar_aid_tt
+			add_timed_idea = {
+				idea = EoF_CHN_PLB_investment
+				days = 365
+			}
+		}
+	}
+	focus = {
+		id = EoF_second_wesslandia_award
+		icon = GFX_goal_chn_strike_grf
+		cost = 5
+		prerequisite = {
+			focus = EoF_first_wesslandia_award
+		}
+		available = {
+			JAK = {
+				exists = no
+			}
+		}
+		x = 1
+		y = 1
+		relative_position_id = EoF_first_wesslandia_award
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = EoF_second_wesslandia_tension
+			}
+			country_event = EoF.16
+		}
+	}
+	#EoF Changes
 
 	############# PUPPET POLAR BEARS #############################
 	focus = {
 		id = CHN_polar_bear_envoy
 		icon = GFX_goal_chn_plb
 		cost = 4
+		allow_branch = {
+			always = no
+		}
 		prerequisite = {
 			focus = unite_the_people
 		}
@@ -5614,19 +5884,19 @@ focus_tree = {
 				random_owned_controlled_state = {
 					add_resource = {
 						type = steel
-						amount = 10
+						amount = 100
 					}
 				}
 				random_owned_controlled_state = {
 					add_resource = {
 						type = oil
-						amount = 5
+						amount = 50
 					}
 				}
 				random_owned_controlled_state = {
 					add_resource = {
 						type = aluminium
-						amount = 5
+						amount = 50
 					}
 				}
 			}
@@ -5660,11 +5930,22 @@ focus_tree = {
 		y = 3
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_thermonuclear_research_in_PLB"
-			add_tech_bonus = {
-				name = secret_bonus
-				bonus = 1.0
-				uses = 1
-				category = nuclear
+			if = {
+				limit = {
+					has_tech = atomic_research
+				}
+				add_breakthrough_progress = {
+					specialization = specialization_nuclear
+					value = 0.5
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = secret_bonus
+					bonus = 1.0
+					uses = 1
+					category = nuclear
+				}
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -6746,7 +7027,10 @@ focus_tree = {
 		icon = GFX_goal_chn_queens_tower
 		cost = 3
 		available = {
-			has_idea = CHN_queens_tower_idea
+			#has_idea = CHN_queens_tower_idea
+			251 = {
+				landmark_queens_tower > 0
+			}
 			has_government = fascism
 			EQS = {
 				OR = {
@@ -7049,34 +7333,17 @@ focus_tree = {
 			country_event = { id = changelings_paxchrysalia.53 hours = 1 }
 			custom_effect_tooltip = CHN_glossus_sicarus_tt
 			hidden_effect = {
-				if = {
-					limit = { has_dlc = "Waking the Tiger" }
-					add_corps_commander_role = {
-						character = CHN_glossus_sicarus
+				add_corps_commander_role = {
+					character = CHN_glossus_sicarus
 
-						desc = CHN_DESC_GLOSSUS
-						traits = { infiltrator supply_raider trait_reckless }
-						skill = 2
-						attack_skill = 4
-						defense_skill = 1
-						planning_skill = 1
-						logistics_skill = 1
-						legacy_id = 3758
-					}
-				}
-				else = {
-					add_corps_commander_role = {
-						character = CHN_glossus_sicarus
-
-						desc = CHN_DESC_GLOSSUS
-						traits = { infiltrator supply_raider_no_wtt trait_reckless }
-						skill = 2
-						attack_skill = 4
-						defense_skill = 1
-						planning_skill = 1
-						logistics_skill = 1
-						legacy_id = 3758
-					}
+					desc = CHN_DESC_GLOSSUS
+					traits = { infiltrator supply_raider trait_reckless }
+					skill = 2
+					attack_skill = 4
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+					legacy_id = 3758
 				}
 				CHN_glossus_sicarus = {
 					add_timed_unit_leader_trait = {
@@ -7125,9 +7392,9 @@ focus_tree = {
 			set_variable = { CHN_mobile_task_force_in_reserve_var = 10 }
 			hidden_effect = {
 				division_template = {
-					name = "Jagdkommando Einsatzgruppe"
+					name = "Sturmjäger Kommando"
 					division_names_group = CHN_LTINF_01
-					template_counter = 81
+					template_counter = 91
 					is_locked = yes
 					regiments = {
 						jager = { x = 0 y = 0 }
@@ -7515,6 +7782,29 @@ focus_tree = {
 		y = 2
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus CHN_post_war_4_a"
+			custom_effect_tooltip = {
+				localization_key = land_facility_construction_tt
+				temp_facility_state_loc = "[259.GetName]"
+				temp_facility_province_loc = "[259.GetCapitalVictoryPointName]"
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						259 = {
+							is_fully_controlled_by = ROOT
+							can_construct_building = land_facility
+						}
+					}
+					259 = {
+						add_building_construction = {
+							type = land_facility
+							level = 1
+							instant_build = yes
+							province = 722
+						}
+					}
+				}
+			}
 			army_experience = 30
 			custom_effect_tooltip = MAN_line_break
 			add_tech_bonus = {
@@ -7689,8 +7979,24 @@ focus_tree = {
 		icon = GFX_goal_chn_man_colony
 		cost = 7.2
 		available = {
-			14 = { is_owned_and_controlled_by = ROOT }
-			136 = { is_owned_and_controlled_by = ROOT }
+			14 = {
+				owner = {
+					has_full_control_of_state = PREV
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
+			136 = {
+				owner = {
+					has_full_control_of_state = PREV
+					OR = {
+						tag = ROOT
+						is_subject_of = ROOT
+					}
+				}
+			}
 			if = {
 				limit = {
 					has_global_flag = ZRS_uprising_has_happened

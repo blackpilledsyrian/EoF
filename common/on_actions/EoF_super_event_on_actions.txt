@@ -1,4 +1,11 @@
 on_actions = {
+	on_startup = {
+		effect = {
+			HLR = {
+				country_event = { id = EoF.15 days = 1519 }
+			}
+		}
+	}
 	on_declare_war = { #Celestial Sea War
 		effect = {
 			if = {
@@ -36,11 +43,13 @@ on_actions = {
 					}
 					FROM.FROM = {
 						OR = {
-							state = 66
-							state = 119
-							state = 114
-							state = 101
+							state = 29
+							state = 106
+							state = 5
+							state = 1
+							state = 2
 							state = 68
+							state = 103
 							state = 179
 							state = 178
 							state = 70
@@ -49,6 +58,20 @@ on_actions = {
 							state = 144
 							state = 141
 						}
+					}
+				}
+				every_country = {
+					set_country_flag = EoF_big_event_custom_sunset
+				}
+				set_global_flag = EoF_sunset_event_fired
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_global_flag = EoF_sunset_event_fired
+					}
+					EQS = {
+						surrender_progress > 0.5
 					}
 				}
 				every_country = {

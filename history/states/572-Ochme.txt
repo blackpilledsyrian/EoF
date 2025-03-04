@@ -11,12 +11,12 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+		owner = FAT
+		add_core_of = FAT
 		victory_points = { 4188 1 }
 	}
 
 	resources={
-		tungsten=8
+		tungsten = 80
 	}
 }

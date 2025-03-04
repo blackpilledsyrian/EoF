@@ -7,9 +7,9 @@ political_actions = {
 			original_tag = JER
 		}
 		available = {
-			controls_state = 208
-			controls_state = 390
-			controls_state = 381
+			# controls_state = 208
+			# controls_state = 390
+			# controls_state = 381
 			controls_state = 658
 			controls_state = 659
 			controls_state = 660
@@ -36,19 +36,19 @@ political_actions = {
 
 		complete_effect = {
 			set_cosmetic_tag = EoF_JER_DOMINATION
-			208 = { add_core_of = JER }
-			390 = { add_core_of = JER }
-			381 = { add_core_of = JER }
+			# 208 = { add_core_of = JER }
+			# 390 = { add_core_of = JER }
+			# 381 = { add_core_of = JER }
 			658 = { add_core_of = JER }
 			659 = { add_core_of = JER }
 			660 = { add_core_of = JER }
 			1209 = { add_core_of = JER }
-			354 = { add_core_of = JER }
-			355 = { add_core_of = JER }
-			356 = { add_core_of = JER }
-			357 = { add_core_of = JER }
-			358 = { add_core_of = JER }
-			359 = { add_core_of = JER }
+			# 354 = { add_core_of = JER }
+			# 355 = { add_core_of = JER }
+			# 356 = { add_core_of = JER }
+			# 357 = { add_core_of = JER }
+			# 358 = { add_core_of = JER }
+			# 359 = { add_core_of = JER }
 			360 = { add_core_of = JER }
 			361 = { add_core_of = JER }
 			362 = { add_core_of = JER }
@@ -100,6 +100,48 @@ political_actions = {
 					add_core_of = HIP
 				}
 			}
+		}
+	}
+	EoF_RCT_form_domination = {
+		icon = generic_form_nation
+		fire_only_once = yes
+		cost = 100
+		allowed = {
+			original_tag = RCT
+		}
+		available = {
+			controls_state = 668
+			controls_state = 669
+			controls_state = 670
+			controls_state = 578
+			controls_state = 579
+			controls_state = 412
+			controls_state = 413
+			controls_state = 558
+			controls_state = 680
+		}
+
+		visible = {
+			has_completed_focus = EoF_RIV_federation_ascendent
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = EoF_RCT_DOMINATION
+			add_state_core = 668
+			add_state_core = 669
+			add_state_core = 670
+			add_state_core = 578
+			add_state_core = 579
+			add_state_core = 412
+			add_state_core = 413
+			add_state_core = 558
+			add_state_core = 680
+			transfer_state = 624
+			add_state_core = 624
+			transfer_state = 625
+			add_state_core = 625
+			transfer_state = 626
+			add_state_core = 626
 		}
 	}
 }

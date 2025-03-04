@@ -3,16 +3,12 @@ state={
 	id=836
 	name="STATE_836"
 	resources={
-		steel=8.000
+		steel=80.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 
 	}
 

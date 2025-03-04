@@ -3,16 +3,12 @@ state={
 	id=834
 	name="STATE_834"
 	resources={
-		steel=8.000
+		steel=80.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 2
@@ -20,9 +16,9 @@ state={
 			dockyard = 1
 			15494 = {
 				naval_base = 3
-
+				naval_facility = 1
 			}
-			air_base = 1
+			air_base = 2
 
 		}
 		victory_points = {

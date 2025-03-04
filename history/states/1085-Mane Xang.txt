@@ -18,8 +18,8 @@ state={
 		}
 	}
 	resources={
-		crystals = 11
-		aluminium = 5
+		crystals=110
+		aluminium=50
 	}
 	provinces={
 		1388 1437 1574 1629 4399 16573 16586 

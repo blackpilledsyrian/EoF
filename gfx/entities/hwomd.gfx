@@ -1,0 +1,10 @@
+objectTypes = {
+	
+	pdxmesh = {
+		name = "elements_mesh"
+		file = "gfx/models/units/EoF/elements.mesh"
+		scale = 1
+		
+		animation = { id = "idle"  			type = "elements_idle_anim" }
+	}
+}

@@ -26,12 +26,13 @@ state={
 
 			7645 = {
 				naval_base = 4
+				naval_facility = 1
 			}
 		}
 	}
 
 	resources={
-		steel=8
-		tungsten=12
+		steel=80
+		tungsten=120
 	}
 }

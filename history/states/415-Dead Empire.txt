@@ -23,12 +23,14 @@ state={
 				naval_base = 1
 				bunker = 4
 				coastal_bunker = 4
+				magical_facility = 1
+				landmark_magehold = 1
 			}
 		}
 	}
 
 	resources={
-		steel=12
-		crystals=5
+		steel=120
+		crystals=50
 	}
 }

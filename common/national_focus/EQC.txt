@@ -38,6 +38,7 @@ focus_tree = {
 	shared_focus = EQC_industral_support_fund
 	shared_focus = EQC_national_census
 	shared_focus = EQC_commonwealth_defence
+	# shared_focus = EoF_receive_refugees
 
 	focus = {
 		id = EQC_strengthen_equestrian_ties
@@ -46,7 +47,7 @@ focus_tree = {
 		x = 30
 		y = 0
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -121,7 +122,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -156,7 +157,7 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -241,6 +242,7 @@ focus_tree = {
 				}
 				set_state_flag = EQC_equestrian_investors_factories
 			}
+			
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -254,7 +256,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -296,7 +298,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -336,7 +338,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -360,7 +362,113 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
 	}
+	focus = {
+		id = EQC_attract_war_eco
+		icon = GFX_goal_bag_of_money_pony
+		available = {
+			EQS = {exists = yes}
+			EQS = { has_government = ROOT }
+		OR = {
+			is_in_faction_with = EQS
+			is_subject_of = EQS
+			}
 
+		}
+		prerequisite = { focus = EQC_attract_immigrants }
+		relative_position_id = EQC_equestrian_investors
+		x = 0
+		y = 2
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_attract_war_eco"
+					360 = {
+						add_extra_state_shared_building_slots = 2
+						add_building_construction = {
+							type = dockyard
+							level = 2
+							instant_build = yes
+						}
+					}
+					354 = {
+						add_extra_state_shared_building_slots = 1
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}		
+			}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
+	}
+	focus = {
+		id = EQC_EQS_EXERCISES
+		icon = GFX_goal_eqs_military_cooperation
+		available = {
+			EQS = {has_war = no}
+			EQS = { has_government = ROOT }
+		OR = {
+			is_in_faction_with = EQS
+			is_subject_of = EQS
+			}
+
+		}
+		prerequisite = { focus = EQC_attract_war_eco 
+		focus = EQC_transoceanic_support}
+		relative_position_id = EQC_equestrian_investors
+		x = -1
+		y = 3
+
+		cost = 3
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_EXERCISES"
+		EQS = {
+				add_timed_idea = {
+   		 idea = EQS_EQC_military_exercise 
+    		days = 90
+					}	
+		}
+		add_timed_idea = {
+   		 idea = EQS_EQC_military_exercise 
+    		days = 90
+					}
+			}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL }
+	}					
 	focus = {
 		id = EQC_national_housing_act
 		icon = GFX_goal_generic_construction
@@ -370,7 +478,7 @@ focus_tree = {
 		x = 3
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -416,7 +524,7 @@ focus_tree = {
 		x = -1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -434,56 +542,17 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 
-		complete_tooltip = {
-			add_stability = -0.05
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state1
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-			random_state = {
-				limit = {
-					has_state_flag = EQC_land_grants_state2
-				}
-				add_extra_state_shared_building_slots = 4
-			}
-		}
-
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_land_grants"
 			add_stability = -0.05
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					is_core_of = ROOT
-				}
+			362 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { has_state_flag = EQC_land_grants_state }
-					is_core_of = ROOT
-				}
+			359 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state1
 			}
-			random_owned_controlled_state = {
-				limit = {
-					ROOT = { has_full_control_of_state = PREV }
-					NOT = { OR = { has_state_flag = EQC_land_grants_state has_state_flag = EQC_land_grants_state1 } }
-					is_core_of = ROOT
-				}
+			358 = {
 				add_extra_state_shared_building_slots = 4
-				set_state_flag = EQC_land_grants_state2
 			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_STABILITY }
@@ -498,7 +567,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -531,7 +600,7 @@ focus_tree = {
 		x = 1
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -579,7 +648,7 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -615,7 +684,7 @@ focus_tree = {
 		x = 4
 		y = 1
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -631,7 +700,8 @@ focus_tree = {
 					is_subject = yes
 				}
 			}
-			NOT = { has_global_flag = daybreaker_spawned}
+			NOT = { AND = { has_global_flag = daybreaker_spawned
+						has_global_flag = equestrian_civil_war}}
 		}
 
 		bypass = {
@@ -645,6 +715,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_government_in_exile"
 			set_country_flag = EQC_govt_in_exile
+			set_cosmetic_tag = EQC_EQS
 			if = {
 				limit = {
 					any_country_with_original_tag = {
@@ -659,11 +730,10 @@ focus_tree = {
 					}
 				}
 				country_event = { id = eqsexile.2 } #Luna in Exile
-			}
+			}		
 			else = {
 				country_event = { id = eqsexile.1 } #Celestia in Exile
 			}
-
 			if = {
 				limit = {
 					NOT = { has_completed_focus = EQC_transoceanic_support }
@@ -699,10 +769,10 @@ focus_tree = {
 		icon = GFX_goal_generic_national_unity_horseshoe
 		prerequisite = { focus = EQC_government_in_exile}
 		relative_position_id = EQC_government_in_exile
-		x = 0
+		x = -1
 		y = 1
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -727,16 +797,15 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 	}
-
 	focus = {
-		id = EQC_fund_the_resistence
-		icon = GFX_focus_generic_provoke_border_clashes
+		id = EQC_boost_industry
+		icon = GFX_goal_pony_labour
 		prerequisite = { focus = EQC_unite_the_nation}
 		relative_position_id = EQC_unite_the_nation
-		x = 0
+		x = -1
 		y = 1
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -747,17 +816,7 @@ focus_tree = {
 		}
 
 		bypass = {
-			OR = {
-				EQS = {
-					exists = yes
-				}
-				ELF = {
-					AND = {
-						exists = yes
-						has_war = no
-					}
-				}
-			}
+
 		}
 
 		cancel_if_invalid = yes
@@ -765,33 +824,164 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus EQC_fund_the_resistence"
-			add_ideas = EQC_funding_the_resistiance
-			EQS = { add_ideas = EQC_resistance }
-			ELF = { add_ideas = EQC_resistance }
-			hidden_effect = {
-				every_other_country = {
-					limit = {
-						any_occupied_country = {
-							original_tag = EQS
-						}
-					}
-					country_event = eqsexile.3
-				}
-			}
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_boost_industry"
+				add_timed_idea = {
+				idea = EQC_EQS_exile_industry
+				days = 200
+						}		
 		}
-		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}	
+	focus = {
+		id = EQC_rally_loyalists
+		icon = GFX_goal_generic_pony_soldier
+		prerequisite = { focus = EQC_government_in_exile}
+		relative_position_id = EQC_government_in_exile
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_rally_loyalists"
+			hidden_effect = {
+						if = {
+					limit = {
+						NOT = { has_tech = magical_weapons }
+					}
+					set_technology = { magical_weapons = 1 }
+				}
+						if = {
+					limit = {
+						NOT = { has_tech = tech_unicorn }
+					}
+					set_technology = { tech_unicorn = 1 }
+				}		
+				load_oob = EQC_EQS_army }
+		custom_effect_tooltip = EQC_EQS_organise_exiles_tt		
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
 	}
+	focus = {
+		id = EQC_fill_stockpile
+		icon = GFX_goal_generic_ordnance
+		prerequisite = { focus = EQC_rally_loyalists}
+		relative_position_id = EQC_rally_loyalists
+		x = 1
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_fill_stockpile"
+		add_equipment_to_stockpile = {
+    		type = melee_equipment_1
+   			amount = 750
+			producer = EQS
+							}
+		add_equipment_to_stockpile = {
+    		type = melee_equipment_1
+   			amount = 250
+			producer = GRI
+							}							
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment_0
+   			amount = 450
+			producer = EQS
+							}
+		add_equipment_to_stockpile = {
+    		type = infantry_equipment_0
+   			amount = 250
+			producer = EQC
+							}														
+		add_equipment_to_stockpile = {
+    		type = artillery_equipment_0
+   			amount = 100
+			producer = EQS
+							}																	
+					}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}	
+	focus = {
+		id = EQC_call_expats
+		icon = GFX_goal_generic_pony_volunteer
+		prerequisite = { focus = EQC_fill_stockpile
+						focus = EQC_build_a_grand_fleet	 }		
+		relative_position_id = EQC_boost_industry
+		x = 3
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_call_expats"
+		hidden_effect = { load_oob = "EQC_harmonylegionaid"}
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_summon_expats_tt
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}		
+
+
 
 	focus = {
 		id = EQC_build_a_grand_fleet
 		icon = GFX_goal_BEL_Battleship_Investements
-		prerequisite = { focus = EQC_government_in_exile}
-		relative_position_id = EQC_government_in_exile
-		x = 2
-		y = 2
+		prerequisite = { focus = EQC_unite_the_nation
+						focus = EQC_rally_loyalists	}
+		relative_position_id = EQC_unite_the_nation
+		x = 1
+		y = 1
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -940,12 +1130,13 @@ focus_tree = {
 	focus = {
 		id = EQC_gather_our_friends
 		icon = GFX_goal_generic_alliance
-		prerequisite = { focus = EQC_government_in_exile }
-		relative_position_id = EQC_government_in_exile
-		x = -2
-		y = 2
+		prerequisite = { focus = EQC_fill_stockpile
+						focus = EQC_boost_industry }
+		relative_position_id = EQC_fill_stockpile
+		x = -3
+		y = 1
 
-		cost = 8
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -956,7 +1147,7 @@ focus_tree = {
 		}
 
 		bypass = {
-
+			has_global_flag = formed_alliance_of_the_free
 		}
 
 		cancel_if_invalid = yes
@@ -978,98 +1169,75 @@ focus_tree = {
 			}
 
 			custom_effect_tooltip = EQC_gather_our_friends_tt
-
 			country_event = mareland.41
-			add_manpower = 50000
-			custom_effect_tooltip = EQC_hippogriff_help_tt
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_tech = paratroopers }
-					}
-					set_technology = { paratroopers = 1 }
-				}
-				if = {
-					limit = {
-						NOT = { has_tech = marines }
-					}
-					set_technology = { marines = 1 }
-				}
-				fix_weapon_techs = yes
-				division_template = {
-					name = "Hippogriff Expeditionary Force"
-					priority = 2
-					division_names_group = EQC_INF_01
-					regiments = {
-						paratrooper = { x = 0 y = 0 }
-						paratrooper = { x = 0 y = 1 }
-						paratrooper = { x = 0 y = 2 }
+			custom_effect_tooltip = EQC_unlock_decisions_exile_friendship_tt
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
+	}
+	focus = {
+		id = EQC_fund_the_resistence
+		icon = GFX_focus_generic_provoke_border_clashes
+		prerequisite = { focus = EQC_call_expats
+						focus = EQC_gather_our_friends	}
+		relative_position_id = EQC_gather_our_friends
+		x = 1
+		y = 1
 
-						paratrooper = { x = 1 y = 0 }
-						paratrooper = { x = 1 y = 1 }
-						paratrooper = { x = 1 y = 2 }
+		cost = 5
 
-						paratrooper = { x = 2 y = 0 }
-						paratrooper = { x = 2 y = 1 }
-						paratrooper = { x = 2 y = 2 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						artillery = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
-					}
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+			OR = {
+				EQS = {
+					exists = yes
 				}
-				division_template = {
-					name = "Seapony Expeditionary Force"
-					priority = 2
-					division_names_group = EQC_INF_01
-					regiments = {
-						marine = { x = 0 y = 0 }
-						marine = { x = 0 y = 1 }
-						marine = { x = 0 y = 2 }
-
-						marine = { x = 1 y = 0 }
-						marine = { x = 1 y = 1 }
-						marine = { x = 1 y = 2 }
-
-						marine = { x = 2 y = 0 }
-						marine = { x = 2 y = 1 }
-						marine = { x = 2 y = 2 }
-					}
-					support = {
-						engineer = { x = 0 y = 0 }
-						artillery = { x = 0 y = 1 }
-						recon = { x = 0 y = 2 }
-					}
-				}
-				random_owned_controlled_state = {
-					limit = { ROOT = { has_full_control_of_state = PREV } }
-					prioritize = { 356 }
-					create_unit = {
-						division = "name = \"1st 'Skyhawks' (Hippogriff) Expeditionary Force\" division_template = \"Hippogriff Expeditionary Force\" start_experience_factor = 1.0"
-						owner = ROOT
-					}
-					create_unit = {
-						division = "name = \"2nd 'Rainbow Depths' (Seapony) Expeditionary Force\" division_template = \"Seapony Expeditionary Force\" start_experience_factor = 1.0"
-						owner = ROOT
+				ELF = {
+					AND = {
+						exists = yes
+						has_war = no
 					}
 				}
 			}
 		}
-		search_filters = { FOCUS_FILTER_MANPOWER FOCUS_FILTER_POLITICAL FOCUS_FILTER_RESEARCH }
-	}
 
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_fund_the_resistence"
+			add_ideas = EQC_funding_the_resistiance
+			EQS = { add_ideas = EQC_resistance }
+			ELF = { add_ideas = EQC_resistance }
+			hidden_effect = {
+				every_other_country = {
+					limit = {
+						any_occupied_country = {
+							original_tag = EQS
+						}
+					}
+					country_event = eqsexile.3
+				}
+			}
+		}
+		search_filters = { FOCUS_FILTER_ARMY_BONUS FOCUS_FILTER_POLITICAL }
+	}
 	focus = {
 		id = EQC_the_homecoming
 		icon = GFX_focus_strike_canterlot
-		prerequisite = { focus = EQC_gather_our_friends }
-		prerequisite = { focus = EQC_build_a_grand_fleet }
 		prerequisite = { focus = EQC_fund_the_resistence }
 		relative_position_id = EQC_fund_the_resistence
 		x = 0
 		y = 1
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -1130,10 +1298,1095 @@ focus_tree = {
 					}
 				}
 			}
+		EQS = { every_core_state = {add_core_of = EQC}}
+	country_event = { id = eqc_eqs_exile.29 }	
+hidden_effect = {
+	division_template = {
+		name = "Volunteers"
+		division_names_group = EQS_INF_01
+		template_counter = 5
+		is_locked = yes
+		regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+		support = {
+			recon = { x = 0 y = 0 }
+			engineer = { x = 0 y = 1 }
+				}
+			}
+	}
 		}
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 	}
 
+	focus = {
+		id = EQC_EQS_manehattan
+		icon = GFX_goal_revolution_pony
+		available = {controls_state = 75}
+		prerequisite = { focus = EQC_the_homecoming	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 0
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+		allow_branch = {
+		has_country_flag = EQC_EQS_invasion
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_manehattan"
+		add_manpower = 15000			
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				75 = {
+					create_unit = {
+						division = "name = \"Manehattanite Ponies' Revolutionary Corps \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+			every_possible_country = {
+				limit = {
+					has_character = ELF_trixie_lulamoon
+					NOT = { original_tag = EQC }
+						}
+			ELF_trixie_lulamoon = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}																										
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+
+	focus = {
+		id = EQC_EQS_peterhoof
+		icon = GFX_goal_stg_socialist_flagwave
+		available = {controls_state = 166}
+		prerequisite = { focus = EQC_the_homecoming	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 2
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+		allow_branch = {
+			has_country_flag = EQC_EQS_invasion
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_peterhoof"
+		hidden_effect = { 	
+				division_template = {
+					name = "Red Army Remnants"
+					priority = 1
+					division_names_group = STG_INF_01
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 1 y = 2 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 0 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+					}
+				}
+
+				division_template = {
+					name = "Stalliongrad Partisans"
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 0 y = 3 }
+						irregular_infantry = { x = 1 y = 3 }
+						irregular_infantry = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+								}
+					priority = 1
+							}
+
+				division_template = {
+					name = "Red Army Remnants - Pegasi Div"
+					division_names_group = STG_PEG_01
+					regiments = {
+						pegasi = { x = 0 y = 0 }
+						pegasi = { x = 0 y = 1 }
+						pegasi = { x = 0 y = 2 }
+						pegasi = { x = 0 y = 3 }
+						pegasi = { x = 1 y = 3 }
+						pegasi = { x = 1 y = 1 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+								}
+					priority = 1
+							}
+
+			set_division_template_lock = {
+    			division_template = "Stalliongrad Partisans"
+    			is_locked = yes
+									}	
+			set_division_template_lock = {
+    			division_template = "Red Army Remnants"
+    			is_locked = yes
+									}
+			set_division_template_lock = {
+    			division_template = "Red Army Remnants - Pegasi Div"
+    			is_locked = yes
+									}	
+				166 = {
+					create_unit = {
+						division = "name = \"54 dya 'Yezhevichnaya' Strelkovaya Diviziya \" division_template = \"Red Army Remnants\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"55 dya 'Nevkurskaya' Strelk. Div. \" division_template = \"Red Army Remnants\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"10 dya 'Yasnaya' Diviziya Pegasov \" division_template = \"Red Army Remnants - Pegasi Div\" start_experience_factor = 1.0"
+						owner = ROOT
+					}
+					create_unit = {
+						division = "name = \"21 dya Diviziya Pegasov \" division_template = \"Red Army Remnants - Pegasi Div\" start_experience_factor = 1.0"
+						owner = ROOT
+					}										
+				}																										
+		}
+		add_manpower = 9000			
+		custom_effect_tooltip = EQC_EQS_STG_tt
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			every_possible_country = {
+				limit = {
+					has_character = STG_nestor_lunin
+					NOT = { original_tag = EQC }
+						}
+			STG_nestor_lunin = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}	
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_baltimare
+		icon = GFX_goal_bat
+		available = {controls_state = 13}
+		prerequisite = { focus = EQC_the_homecoming	 }		
+		relative_position_id = EQC_the_homecoming
+		x = -2
+		y = 1
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+		allow_branch = {
+		has_country_flag = EQC_EQS_invasion
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_baltimare"
+		add_manpower = 10000
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				13 = {
+					create_unit = {
+						division = "name = \"Proletarian Ponies' Guard of Socialism \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+			every_possible_country = {
+				limit = {
+					has_character = BAL_golden_delicious
+					NOT = { original_tag = EQC }
+						}
+			BAL_golden_delicious = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}	
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_rally_east
+		icon = GFX_goal_tripartite_pact_pony
+		available = {controls_state = 12}
+		prerequisite = { focus = EQC_EQS_baltimare
+						focus = EQC_EQS_manehattan	 }		
+		relative_position_id = EQC_the_homecoming
+		x = -1
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_rally_east"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt
+		custom_effect_tooltip = EQC_EQS_part2_tt
+				hidden_effect = {
+				12 = {
+					create_unit = {
+						division = "name = \"Fillydelphia Popular Liberation Army \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_rally_plain
+		icon = GFX_goal_generic_dangerous_deal_pony_pony
+		available = {controls_state = 74}
+		prerequisite = { focus = EQC_EQS_peterhoof
+						focus = EQC_EQS_manehattan	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 1
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_rally_east"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt
+		custom_effect_tooltip = EQC_EQS_part2_tt
+				hidden_effect = {
+				74 = {
+					create_unit = {
+						division = "name = \"Cutie Mark Crusaders East Coast Chapter \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}		
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_rally_stg
+		icon = GFX_goal_stg_eqs_friendship
+		available = {controls_state = 153}
+		prerequisite = { focus = EQC_EQS_peterhoof }		
+		relative_position_id = EQC_the_homecoming
+		x = 3
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_rally_east"
+		hidden_effect = {
+			153 = {
+				create_unit = {
+					division = "name = \"33 dya Diviziya Pegasov \" division_template = \"Red Army Remnants - Pegasi Div\" start_experience_factor = 1.0"
+					owner = ROOT
+						}
+				create_unit = {
+						division = "name = \"39 dya Gvardyeiskaya Strelk. Div. \" division_template = \"Red Army Remnants\" start_experience_factor = 1.0"
+						owner = ROOT
+					}		
+				create_unit = {
+					division = "name = \"31 dya Diviziya Pegasov \" division_template = \"Red Army Remnants - Pegasi Div\" start_experience_factor = 1.0"
+					owner = ROOT
+						}													
+				}
+		}
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_STG_tt
+		custom_effect_tooltip = EQC_EQS_part2_tt
+		every_possible_country = {
+				limit = {
+					has_character = STG_masha_norushkina
+					NOT = { original_tag = EQC }
+						}
+			STG_masha_norushkina = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}		
+	focus = {
+		id = EQC_EQS_rally_south
+		icon = GFX_SIA_jungletraining
+		available = {controls_state = 16}
+		prerequisite = { focus = EQC_EQS_baltimare }		
+		relative_position_id = EQC_the_homecoming
+		x = -3
+		y = 2
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			is_subject = no
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_rally_south"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			every_possible_country = {
+				limit = {
+					has_character = JUN_jungle_trek
+					NOT = { original_tag = EQC }
+						}
+			JUN_jungle_trek = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}
+			every_possible_country = {
+				limit = {
+					has_character = CES_daring_do
+					NOT = { original_tag = EQC }
+						}
+			CES_daring_do = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}			
+		hidden_effect = {
+				division_template = {
+					name = "Southern Partisans"
+					regiments = {
+						irregular_infantry = { x = 0 y = 0 }
+						irregular_infantry = { x = 0 y = 1 }
+						irregular_infantry = { x = 0 y = 2 }
+						irregular_infantry = { x = 0 y = 3 }
+						irregular_infantry = { x = 1 y = 0 }
+						irregular_infantry = { x = 1 y = 1 }
+						irregular_infantry = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+								}
+					priority = 1
+							}
+				division_template = {
+					name = "Bat Partisans"
+					regiments = {
+						pegasi = { x = 0 y = 0 }
+						pegasi = { x = 0 y = 1 }
+						pegasi = { x = 0 y = 2 }
+						pegasi = { x = 1 y = 0 }
+						pegasi = { x = 1 y = 1 }
+						pegasi = { x = 1 y = 2 }
+					}
+					support = {
+						recon = { x = 0 y = 0 }
+								}
+					priority = 1
+							}									
+			}	
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}	
+	focus = {
+		id = EQC_EQS_canterlot
+		icon = GFX_goal_eqs_canterlot
+		available = {controls_state = 3}
+		prerequisite = { focus = EQC_EQS_rally_plain
+						focus = EQC_EQS_rally_east	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 0
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_canterlot"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				3 = {
+					create_unit = {
+						division = "name = \"Canterlot Volunteers \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_dodge
+		icon = GFX_goal_appleloosa
+		available = {controls_state = 22}
+		prerequisite = { focus = EQC_EQS_rally_south
+						focus = EQC_EQS_rally_east	 }		
+		relative_position_id = EQC_the_homecoming
+		x = -2
+		y = 3
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_call_expats"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				22 = {
+					create_unit = {
+						division = "name = \"Dodge City Liberation Front \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+			every_possible_country = {
+				limit = {
+					has_character = EQS_braeburn
+					NOT = { original_tag = EQC }
+						}
+			EQS_braeburn = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}		
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_CRY_Crystal
+		icon = GFX_goal_crystal_heart
+		available = {controls_state = 344}
+		prerequisite = { focus = EQC_EQS_rally_stg 
+		focus = EQC_EQS_rally_plain}		
+		relative_position_id = EQC_the_homecoming
+		x = 2
+		y = 3
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_CRY_Crystal"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				344 = {
+					create_unit = {
+						division = "name = \"The Crystal Militia \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+					every_possible_country = {
+				limit = {
+					has_character = CRY_shining_armour
+					NOT = { original_tag = EQC }
+						}
+			CRY_shining_armour = {
+				set_nationality = ROOT
+				hidden_effect = { 
+					remove_advisor_role = { slot = high_command } 
+					demote_leader = yes	
+							}
+						}
+					}	
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}	
+	focus = {
+		id = EQC_EQS_las_pegasus
+		icon = GFX_goal_gambling
+		available = {controls_state = 66}
+		prerequisite = { focus = EQC_EQS_dodge
+						focus = EQC_EQS_canterlot	 }		
+		relative_position_id = EQC_the_homecoming
+		x = -1
+		y = 4
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_call_expats"
+		add_manpower = 9000	
+	custom_effect_tooltip = EQC_EQS_part_tt	
+	custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				66 = {
+					create_unit = {
+						division = "name = \"The 9th Workers Liberation Front \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_acornage
+		icon = GFX_goal_rct_expand_the_city
+		available = {controls_state = 136}
+		prerequisite = { focus = EQC_EQS_dodge
+						focus = EQC_CRY_Crystal	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 1
+		y = 4
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_call_expats"
+		add_manpower = 9000	
+		custom_effect_tooltip = EQC_EQS_part_tt	
+		custom_effect_tooltip = EQC_EQS_part2_tt
+			hidden_effect = {
+				136 = {
+					create_unit = {
+						division = "name = \"Acornage Liberation Division \" division_template = \"Volunteers\" start_experience_factor = 1.0"
+						owner = ROOT
+					}															
+				}											
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_EQS_victory
+		icon = GFX_goal_eqs_military_cooperation
+		available = {has_war = no}
+		prerequisite = { focus = EQC_EQS_acornage
+						focus = EQC_EQS_las_pegasus	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 0
+		y = 5
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_EQS_ves"
+		add_ideas = EQC_EQS_victory	
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_become_eqs
+		icon = GFX_goal_EQS_TNO_meet_leaders
+		available = {controls_state = 3
+		has_country_leader = {
+		character = EQS_princess_celestia 
+		ruling_only = yes
+				}
+		has_war = no }
+		mutually_exclusive = { focus = EQC_release_eqs}
+		prerequisite = { focus = EQC_EQS_victory	 }		
+		relative_position_id = EQC_the_homecoming
+		x = 1
+		y = 6
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_become_eqs"
+		set_cosmetic_tag = EQS_EQC
+		set_capital = {state = 3}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	focus = {
+		id = EQC_release_eqs
+		icon = GFX_goal_EQS_TNO_equestria_saved
+		available = {controls_state = 3
+			has_country_leader = {
+				character = EQC_jet_set
+				ruling_only = yes
+				}
+		has_war = no }
+		mutually_exclusive = { focus = EQC_become_eqs}
+		prerequisite = { focus = EQC_EQS_victory	 }		
+		relative_position_id = EQC_the_homecoming
+		x = -1
+		y = 6
+
+		cost = 2
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_become_eqs"
+		release = EQS	
+		if = { 
+			limit = {has_idea = celestia_exile}
+		remove_ideas = celestia_exile
+			}
+		}
+		search_filters = { FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_STABILITY }
+	}
+	#EoF Changes
+	# focus = {
+	# 	id = EoF_receive_refugees
+	# 	icon = GFX_goal_expand_refugee_zone
+	# 	available = {
+	# 		TRD = {
+	# 			all_core_state = {
+	# 				NOT = {
+	# 					is_controlled_by = EQC
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	relative_position_id = EQC_strengthen_equestrian_ties
+	# 	x = 10
+	# 	y = 0
+
+	# 	cost = 3
+
+	# 	completion_reward = {
+	# 		379 = {
+	# 			add_manpower = -60000
+	# 		}
+	# 		380 = {
+	# 			add_manpower = -240000
+	# 		}
+	# 		381 = {
+	# 			add_manpower = -400000
+	# 		}
+	# 		396 = {
+	# 			add_manpower = -30000
+	# 		}
+	# 		390 = {
+	# 			add_manpower = -120000
+	# 		}
+	# 		208 = {
+	# 			add_manpower = -20000
+	# 		}
+	# 		362 = {
+	# 			add_manpower = 190000
+	# 		}
+	# 		359 = {
+	# 			add_manpower = 190000
+	# 		}
+	# 		356 = {
+	# 			add_manpower = 190000
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_formal_resistance
+	# 	icon = GFX_goal_government_icon
+	# 	available = {
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_receive_refugees
+	# 	}
+	# 	relative_position_id = EoF_receive_refugees
+	# 	x = -1
+	# 	y = 1
+
+	# 	cost = 7
+
+	# 	completion_reward = {
+	# 		TRD = {
+	# 			become_exiled_in = {
+	# 				target = EQC
+	# 				legitimacy = 100
+	# 			}
+	# 		}
+	# 		hidden_effect = {
+	# 			add_to_war = {
+	# 				targeted_alliance = EQC
+	# 				enemy = GRI
+	# 				hostility_reason = asked_to_join
+	# 			}
+	# 			add_to_war = {
+	# 				targeted_alliance = EQC
+	# 				enemy = CHN
+	# 				hostility_reason = asked_to_join
+	# 			}
+	# 			set_state_owner = 379
+	# 			set_state_owner = 380
+	# 			set_state_owner = 381
+	# 			set_state_owner = 396
+	# 			set_state_owner = 390
+	# 			set_state_owner = 208
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_underground_resistance
+	# 	icon = GFX_focus_generic_support_the_left_right_claw
+	# 	available = {
+	# 		has_equipment = {
+	# 			infantry_equipment > 4999
+	# 		}
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_receive_refugees
+	# 	}
+	# 	relative_position_id = EoF_receive_refugees
+	# 	x = 1
+	# 	y = 1
+
+	# 	cost = 2
+
+	# 	completion_reward = {
+	# 		add_equipment_to_stockpile = {
+	# 			type = infantry_equipment
+	# 			amount = -5000
+	# 		}
+	# 		TRD = {
+	# 			every_core_state = {
+	# 				add_resistance_target = {
+	# 					amount = 20
+	# 					tooltip = EoF_underground_resistance_tt
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_imperial_resistance_coalition
+	# 	icon = GFX_goal_generic_major_alliance_pony_griffon
+	# 	available = {
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_formal_resistance
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_underground_resistance
+	# 	}
+	# 	relative_position_id = EoF_formal_resistance
+	# 	x = 1
+	# 	y = 1
+
+	# 	cost = 3
+
+	# 	completion_reward = {
+	# 		add_ideas = EoF_anti_imperial_coalition_0
+	# 		custom_effect_tooltip = available_political_advisor
+	# 		show_ideas_tooltip = groverina
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_skyfall_liberation_divisions
+	# 	icon = GFX_goal_skyfall
+	# 	available = {
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_imperial_resistance_coalition
+	# 	}	
+	# 	relative_position_id = EoF_imperial_resistance_coalition
+	# 	x = -2
+	# 	y = 1
+
+	# 	cost = 7
+
+	# 	completion_reward = {
+	# 		TRD = {
+	# 			add_ideas = EoF_liberation_divisions
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_united_anti_imperial_command
+	# 	icon = GFX_goal_planning_bonus
+	# 	available = {
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_imperial_resistance_coalition
+	# 	}	
+	# 	relative_position_id = EoF_imperial_resistance_coalition
+	# 	x = 0
+	# 	y = 1
+
+	# 	cost = 10
+
+	# 	completion_reward = {
+	# 		swap_ideas = {
+	# 			add_idea = EoF_anti_imperial_coalition_1
+	# 			remove_idea = EoF_anti_imperial_coalition_0
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_underground_campaign
+	# 	icon = GFX_goal_generic_major_war
+	# 	available = {
+	# 		381 = {
+	# 			resistance > 30
+	# 		}
+	# 	}	
+	# 	prerequisite = {
+	# 		focus = EoF_imperial_resistance_coalition
+	# 	}
+	# 	relative_position_id = EoF_imperial_resistance_coalition
+	# 	x = 2
+	# 	y = 1
+
+	# 	cost = 3
+
+	# 	completion_reward = {
+	# 		379 = {
+	# 			remove_core_of = GRI
+	# 			start_resistance = yes
+	# 		}
+	# 	}
+	# }
+	# focus = {
+	# 	id = EoF_liberate_skyfall
+	# 	icon = GFX_goal_Attack_Skyfall
+	# 	available = {
+	# 		controls_state = 658
+	# 		controls_state = 659
+	# 		controls_state = 660
+	# 	}
+	# 	prerequisite = {
+	# 		focus = EoF_skyfall_liberation_divisions
+	# 	}
+	# 	prerequisite = {
+	# 		focus = EoF_united_anti_imperial_command
+	# 	}
+	# 	prerequisite = {
+	# 		focus = EoF_underground_campaign
+	# 	}
+	# 	relative_position_id = EoF_united_anti_imperial_command
+	# 	x = 0
+	# 	y = 1
+
+	# 	cost = 10
+
+	# 	completion_reward = {
+	# 		apply_TRD_invasion_terrain = yes
+	# 		658 = {
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 10
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		659 = {
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 10
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 		660 = {
+	# 			add_building_construction = {
+	# 				type = air_base
+	# 				level = 10
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
+	#EoF Changes
 	############################
 	#### LEAVE EQUESTRIA    ####
 	############################
@@ -1188,7 +2441,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_strengthen_equestrian_ties
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -1208,17 +2461,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-				}
-			}
 		}
 		
 		available = {
@@ -1310,7 +2552,7 @@ focus_tree = {
 			}
 		}
 		prerequisite = { focus = EQC_patriation }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -1325,18 +2567,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-				}
-			}
 		}
 		
 		available = {
@@ -1374,7 +2604,7 @@ focus_tree = {
 		relative_position_id = EQC_commonwelth_congress
 		prerequisite = { focus = EQC_commonwelth_congress }
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1414,7 +2644,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_commonwelth_congress
 		prerequisite = { focus = EQC_commonwelth_congress }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1456,7 +2686,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_support_the_harmonists
 		prerequisite = { focus = EQC_support_the_harmonists focus = EQC_let_all_have_a_say }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 20
@@ -1549,23 +2779,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_kingfisher_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
 		}
 		
 		available = {
@@ -1623,7 +2836,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_jet_set_wins
 		prerequisite = { focus = EQC_jet_set_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1655,7 +2868,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_education_programms
 		prerequisite = { focus = EQC_education_programms }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1675,7 +2888,9 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus EQC_trade_negotiations"
+			custom_effect_tooltip = EQC_griff_trade_tt	
 			add_ideas = EQC_trade_negotiations
+			
 			every_country = {
 				limit = {
 					is_griffon_continent_country = yes
@@ -1689,9 +2904,149 @@ focus_tree = {
 					modifier = EQC_trade_with_new_mareland
 				}
 			}
+		
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+
+	focus = {
+		id = EQC_trade_negotiations_EQS
+		icon = GFX_goal_trade_with_EQC
+		x = -1
+		y = 2
+		relative_position_id = EQC_education_programms
+		prerequisite = { focus = EQC_trade_negotiations }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+			EQS = {exists = yes}
+			EQS = {has_government = democratic}
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_trade_negotiations"
+					custom_effect_tooltip = EQC_equestrian_investment_tt
+			EQS = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = EQC_trade_with_new_mareland
+				}
+			}
+			EQS = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = faction_traitor
+				}
+			}
+			EQS = {
+				remove_opinion_modifier = {
+					target = ROOT
+					modifier = EQC_patriation
+				}
+			}						
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = EQC_poach_eqs_talent
+		icon = GFX_goal_generic_liberty_statue
+		x = -1
+		y = 3
+		relative_position_id = EQC_education_programms
+		prerequisite = { focus = EQC_trade_negotiations_EQS }
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+				EQS = {
+					has_opinion = {
+    					target = EQC
+    					value > 50
+							}
+						}
+			EQS = {exists = yes}			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_trade_negotiations"
+		add_timed_idea = {
+   		 idea = EQC_attract_immigrants
+    		days = 160
+					}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = EQC_EQS_EXERCISES2
+		icon = GFX_goal_generic_ponykind
+		x = -2
+		y = 4
+		relative_position_id = EQC_education_programms
+		prerequisite = { focus = EQC_poach_eqs_talent}
+		cost = 7
+
+		ai_will_do = {
+			factor = 5
+		}
+
+		available = {
+				EQS = {
+					has_opinion = {
+    					target = EQC
+    					value > 80
+							}
+						}
+			EQS = {has_war = no}
+			EQS = {exists = yes}			
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_trade_negotiations"
+		EQS = {
+				add_timed_idea = {
+   		 idea = EQS_EQC_military_exercise 
+    		days = 90
+					}	
+		}
+		add_timed_idea = {
+   		 idea = EQS_EQC_military_exercise 
+    		days = 90
+					}
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+				
 
 	focus = {
 		id = EQC_nationalise_assets
@@ -1701,7 +3056,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_jet_set_wins
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -1792,7 +3147,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_nationalise_assets
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -1826,7 +3181,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_public_works_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -1870,7 +3225,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_expand_charity_work
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -1902,7 +3257,7 @@ focus_tree = {
 				}
 				add_resource = {
 					type = oil
-					amount = 5
+					amount = 50
 				}
 			}
 			add_tech_bonus = {
@@ -1923,7 +3278,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_expand_oil_industry
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -1959,6 +3314,43 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
+	focus = {
+		id = EQC_ally_equestria
+		icon = GFX_goal_improve_relations_pony_pony
+		prerequisite = { focus = EQC_EQS_EXERCISES2 }
+		mutually_exclusive = { focus = EQC_ally_the_federation focus = EQC_seek_own_path focus = EQC_unite_with_the_republic }
+		x = -5
+		y = 1
+		relative_position_id = EQC_national_recovery_act
+
+		cost = 7
+
+		ai_will_do = {
+			factor = 6
+		}
+
+		available = {
+			is_subject = no
+			is_in_faction = no
+			EQS = {
+				exists = yes
+				has_government = democratic
+				is_faction_leader = yes
+				NOT = { has_war_with = ROOT }
+			}
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_ally_equestria"
+			EQS = {
+				country_event = { id = generic.2 }
+			}
+		}
+	}	
 
 	###Foreign
 	focus = {
@@ -1968,7 +3360,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = EQC_trade_negotiations
 		prerequisite = { focus = EQC_trade_negotiations }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -2025,12 +3417,12 @@ focus_tree = {
 		id = EQC_ally_the_federation
 		icon = GFX_focus_generic_diplomatic_treaty_pony_griffon
 		prerequisite = { focus = EQC_befriend_eastern_ponies }
-		mutually_exclusive = { focus = EQC_seek_own_path focus = EQC_unite_with_the_republic }
+		mutually_exclusive = { focus =EQC_ally_equestria focus = EQC_seek_own_path focus = EQC_unite_with_the_republic }
 		x = -3
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -2063,12 +3455,12 @@ focus_tree = {
 		id = EQC_seek_own_path
 		icon = GFX_goal_anschluss
 		prerequisite = { focus = EQC_national_recovery_act }
-		mutually_exclusive = { focus = EQC_ally_the_federation focus = EQC_unite_with_the_republic }
+		mutually_exclusive = { focus = EQC_ally_equestria focus = EQC_ally_the_federation focus = EQC_unite_with_the_republic }
 		x = -1
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -2097,12 +3489,12 @@ focus_tree = {
 		id = EQC_unite_with_the_republic
 		icon = GFX_goal_generic_major_alliance_pony_griffon
 		prerequisite = { focus = EQC_national_recovery_act }
-		mutually_exclusive = { focus = EQC_ally_the_federation focus = EQC_seek_own_path }
+		mutually_exclusive = { focus = EQC_ally_equestria focus = EQC_ally_the_federation focus = EQC_seek_own_path }
 		x = 1
 		y = 1
 		relative_position_id = EQC_national_recovery_act
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 6
@@ -2165,23 +3557,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_kingfisher_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
 		}
 		
 		available = {
@@ -2237,7 +3612,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_gladmane_wins
 		prerequisite = { focus = EQC_gladmane_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2270,7 +3645,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_gladmane_wins
 		prerequisite = { focus = EQC_gladmane_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -2304,7 +3679,7 @@ focus_tree = {
 		relative_position_id = EQC_gambling_freedom_act
 		prerequisite = { focus = EQC_gambling_freedom_act }
 		prerequisite = { focus = EQC_embrace_neutrality }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2352,7 +3727,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_build_the_wall
 		prerequisite = { focus = EQC_build_the_wall }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -2397,7 +3772,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_national_work_act
 		prerequisite = { focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2500,7 +3875,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_national_work_act
 		prerequisite = { focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -2544,7 +3919,7 @@ focus_tree = {
 		relative_position_id = EQC_cut_red_tape
 		prerequisite = { focus = EQC_cut_red_tape }
 		prerequisite = { focus = EQC_open_banks_to_griffons }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -2595,7 +3970,7 @@ focus_tree = {
 				has_completed_focus = EQC_kingfisher_wins
 			}
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -2663,23 +4038,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_fascist_win
-					}
-				}
-			}
 		}
 		
 		available = {
@@ -2743,7 +4101,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_bust_the_monopolies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -2800,7 +4158,7 @@ focus_tree = {
 			356 = {
 				add_resource = {
 					type = oil
-					amount = 10
+					amount = 100
 				}
 			}
 		}
@@ -2814,7 +4172,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -2915,7 +4273,7 @@ focus_tree = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_share_the_wealth_program }
 		prerequisite = { focus = EQC_bust_the_monopolies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -2977,7 +4335,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_the_election
 		prerequisite = { focus = EQC_affordable_utilities focus = EQC_seize_control }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -3014,7 +4372,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3058,7 +4416,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_kingfisher_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3094,7 +4452,7 @@ focus_tree = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_national_political_machine }
 		prerequisite = { focus = EQC_for_the_poor_pony }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 5
@@ -3138,7 +4496,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_affordable_utilities
 		prerequisite = { focus = EQC_public_works_projects focus = EQC_national_work_act }
-		cost = 8
+		cost = 7
 		
 		offset = {
 			x = -1
@@ -3196,7 +4554,7 @@ focus_tree = {
 		relative_position_id = EQC_kingfisher_wins
 		prerequisite = { focus = EQC_for_the_poor_pony }
 		prerequisite = { focus = EQC_national_political_machine }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3229,7 +4587,7 @@ focus_tree = {
 		relative_position_id = EQC_share_the_wealth_program
 		prerequisite = { focus = EQC_public_works_projects }
 		prerequisite = { focus = EQC_affordable_utilities }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3268,7 +4626,7 @@ focus_tree = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_education_reform_act }
 		mutually_exclusive = { focus = EQC_token_reforms }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -3330,7 +4688,7 @@ focus_tree = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_education_reform_act }
 		mutually_exclusive = { focus = EQC_civil_rights }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 1
@@ -3368,7 +4726,7 @@ focus_tree = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_civil_rights focus = EQC_token_reforms }
 		mutually_exclusive = { focus = EQC_perfect_democracy }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3421,7 +4779,7 @@ focus_tree = {
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_civil_rights focus = EQC_token_reforms }
 		mutually_exclusive = { focus = EQC_imperial_presidency }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3456,7 +4814,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = EQC_education_reform_act
 		prerequisite = { focus = EQC_imperial_presidency focus = EQC_perfect_democracy }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -3518,23 +4876,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-					OR = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_recognise_stalliongrad
-						has_completed_focus = EQC_gladmane_wins
-						has_completed_focus = EQC_jet_set_wins
-						has_completed_focus = EQC_kingfisher_wins
-					}
-				}
-			}
 		}
 		
 		available = {
@@ -3641,7 +4982,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_the_duke_wins
 		prerequisite = { focus = EQC_the_duke_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -3681,7 +5022,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_the_duke_wins
 		prerequisite = { focus = EQC_the_duke_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -3712,7 +5053,7 @@ focus_tree = {
 		relative_position_id = EQC_build_now_play_later
 		prerequisite = { focus = EQC_build_now_play_later }
 		prerequisite = { focus = EQC_autarky }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -3767,7 +5108,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_united_shadowworks }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -3821,7 +5162,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_autarky focus = EQC_regulated_capitalism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -3931,7 +5272,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_seize_control
 		prerequisite = { focus = EQC_seize_control }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -3974,7 +5315,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_three_year_plan
 		prerequisite = { focus = EQC_three_year_plan }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -4006,7 +5347,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_empower_the_army
 		prerequisite = { focus = EQC_empower_the_army }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -4044,7 +5385,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_three_year_plan
 		prerequisite = { focus = EQC_three_year_plan }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 5
 		}
@@ -4079,7 +5420,7 @@ focus_tree = {
 		relative_position_id = EQC_empower_the_army
 		prerequisite = { focus = EQC_empower_the_army }
 		prerequisite = { focus = EQC_expand_the_stormponies }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -4123,7 +5464,7 @@ focus_tree = {
 		relative_position_id = EQC_work_for_the_nation
 		prerequisite = { focus = EQC_work_for_the_nation }
 		mutually_exclusive = { focus = EQC_stand_against_griffons }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 3
 		}
@@ -4163,7 +5504,7 @@ focus_tree = {
 		relative_position_id = EQC_work_for_the_nation
 		prerequisite = { focus = EQC_work_for_the_nation }
 		mutually_exclusive = { focus = EQC_a_deal_with_the_duce }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -4282,7 +5623,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = EQC_stand_against_griffons
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 1
 		}
@@ -4441,7 +5782,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_picket_wins }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 		}
@@ -4471,7 +5812,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_picket_wins }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4516,7 +5857,7 @@ focus_tree = {
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_break_the_bankers }
 		prerequisite = { focus = EQC_regulated_capitalism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4549,7 +5890,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_defend_democracy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4579,7 +5920,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_pony_citizen_councils }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4609,7 +5950,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_defend_democracy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4645,7 +5986,7 @@ focus_tree = {
 		mutually_exclusive = {
 		    focus = EQC_encourage_them_to_leave
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4678,7 +6019,7 @@ focus_tree = {
 		mutually_exclusive = {
 		    focus = EQC_accept_the_bats
 		}
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4708,7 +6049,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = EQC_implement_segregation
 		prerequisite = { focus = EQC_accept_the_bats focus = EQC_encourage_them_to_leave }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4749,7 +6090,7 @@ focus_tree = {
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_united_shadowworks }
 		prerequisite = { focus = EQC_pony_citizen_councils }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4786,7 +6127,7 @@ focus_tree = {
 		y = 5
 		relative_position_id = EQC_picket_wins
 		prerequisite = { focus = EQC_tuitions_for_ponies }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -4832,7 +6173,7 @@ focus_tree = {
 		prerequisite = { focus = EQC_marelandian_recovery }
 		prerequisite = { focus = EQC_the_national_guard }
 		prerequisite = { focus = EQC_model_communities }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -4880,7 +6221,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 			modifier = {
@@ -4952,7 +6293,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_stand_against_griffons focus = EQC_the_silver_crescent_doctrine focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 6
 			modifier = {
@@ -5010,7 +6351,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -5055,7 +6396,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_the_new_mareland_century
 		prerequisite = { focus = EQC_the_new_mareland_century }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 4
 		}
@@ -5105,7 +6446,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_the_new_mareland_century
 		prerequisite = { focus = EQC_join_the_concordant }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 4
 		}
@@ -5150,7 +6491,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -5275,7 +6616,7 @@ focus_tree = {
 		relative_position_id = EQC_stand_against_griffons
 		prerequisite = { focus = EQC_a_deal_with_the_duce focus = EQC_the_silver_crescent_doctrine focus = EQC_stand_against_griffons focus = EQC_the_new_mareland_century focus = EQC_the_vanguard_of_the_griffonian_revolution }
 		prerequisite = { focus = EQC_war_with_wingbardy }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 7
 		}
@@ -5348,7 +6689,7 @@ focus_tree = {
 		}
 		relative_position_id = EQC_patriation
 		prerequisite = { focus = EQC_patriation }
-		cost = 8
+		cost = 7
 
 		mutually_exclusive = { focus = EQC_commonwelth_congress	}
 
@@ -5362,18 +6703,6 @@ focus_tree = {
 		
 		allow_branch = {
 			always = no
-			if = {
-				limit = {
-					has_game_rule = {
-						rule = obsolete_focus_branches_visibility
-						option = HIDE
-					}
-				}
-				NOT = {
-						has_completed_focus = EQC_strengthen_equestrian_ties
-						has_completed_focus = EQC_commonwelth_congress
-				}
-			}
 		}
 		
 		available = {
@@ -5429,7 +6758,7 @@ focus_tree = {
 			}
 		}
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 20
@@ -5478,7 +6807,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_form_communist_unions
 
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 8
@@ -5569,7 +6898,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_burn_celestias_portrait }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -5613,7 +6942,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_liquidate_bourgouise_assets }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 10
@@ -5747,10 +7076,154 @@ focus_tree = {
 				}
 				set_state_flag = EQC_the_great_trot_forward3
 			}
+				custom_effect_tooltip = eqc_unlocks_economic_decisions_tt
+	
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	
+
+	focus = {
+		id = EQC_STG_TRADE
+		icon = GFX_goal_stg_eqs_friendship
+		x = -3
+		y = 3
+		relative_position_id = EQC_burn_celestias_portrait
+		prerequisite = { focus = EQC_the_great_trot_forward }
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			STG = { exists = yes has_government = communism }	
+		}
+
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_STG_TRADE"
+					custom_effect_tooltip = EQC_STG_investment_tt
+			STG = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = EQC_trade_with_new_mareland
+				}
+			}			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}
+	focus = {
+		id = EQC_STG_WAR
+		icon = GFX_goal_stg_socialist_officer
+		x = -1
+		y = 3
+		relative_position_id = EQC_burn_celestias_portrait
+		prerequisite = { focus = EQC_the_great_trot_forward }
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			STG = { exists = yes has_government = communism }	
+		}
+
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_STG_TRADE"
+			STG = {
+				country_event = eqs_stg.1
+			}
+			custom_effect_tooltip = if_they_accept
+			effect_tooltip = {
+				army_experience = 25
+				navy_experience = 25
+				air_experience = 25
+				add_doctrine_cost_reduction = {
+					name = land_doc_bonus
+					cost_reduction = 0.25
+					uses = 1
+					category = land_doctrine
+				}
+				STG = {
+					army_experience = 25
+					navy_experience = 25
+					air_experience = 25
+					add_doctrine_cost_reduction = {
+						name = land_doc_bonus
+						cost_reduction = 0.25
+						uses = 1
+						category = land_doctrine
+					}
+				}
+			}			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}		
+	focus = {
+		id = EQC_COM_TRADE
+		icon = GFX_goal_GRF_commies_win
+		x = -2
+		y = 4
+		relative_position_id = EQC_burn_celestias_portrait
+		prerequisite = { focus = EQC_the_great_trot_forward }
+		cost = 4
+
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+			STG = { exists = yes has_government = communism }	
+		}
+
+		bypass = {
+		
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_COM_TRADE"
+					custom_effect_tooltip = EQC_COM_investment_tt
+			every_country = {
+				limit = {
+					has_government = communism
+					NOT = {
+						original_tag = STG
+						original_tag = PLB
+						original_tag = YAL
+						original_tag = BRZ
+					}
+				}
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = EQC_trade_with_new_mareland
+				}
+			}			
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+	}	
 	focus = {
 		id = EQC_implement_democratic_centralism
 		icon = GFX_goal_van_commie_party
@@ -5758,7 +7231,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_burn_celestias_portrait
 		prerequisite = { focus = EQC_burn_celestias_portrait }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5800,7 +7273,7 @@ focus_tree = {
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_implement_democratic_centralism }
 		prerequisite = { focus = EQC_liquidate_bourgouise_assets }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5830,7 +7303,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_implement_democratic_centralism }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 8
 		}
@@ -5869,7 +7342,7 @@ focus_tree = {
 		relative_position_id = EQC_implement_democratic_centralism
 		prerequisite = { focus = EQC_found_the_RES }
 		prerequisite = { focus = EQC_bat_communes }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 15
 		}
@@ -5904,7 +7377,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_racial_harmony
 		prerequisite = { focus = EQC_racial_harmony }
-		cost = 8
+		cost = 7
 
 		ai_will_do = {
 			factor = 15
@@ -5948,7 +7421,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_griffon_enfranchisment
 		prerequisite = { focus = EQC_griffon_enfranchisment }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 9
 		}
@@ -5985,7 +7458,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_socialise_education
 		prerequisite = { focus = EQC_socialise_education }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -6016,7 +7489,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = EQC_racial_harmony
 		prerequisite = { focus = EQC_racial_harmony }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 15
 		}
@@ -6038,15 +7511,48 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
-	
+		focus = {
+		id = EQC_collectivize_housing
+		icon = GFX_focus_collective_housing
+		x = 0
+		y = 1
+		relative_position_id = EQC_centralize_unions
+		prerequisite = { focus = EQC_centralize_unions }
+		cost = 7
+		ai_will_do = {
+			factor = 10
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: Focus EQC_collectivize_agriculture"
+			add_ideas = EQC_state_housing_idea
+			add_popularity = {
+			    ideology = communism
+			    popularity = 0.02
+		    }
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
+	}
+
 	focus = {
 		id = EQC_collectivize_agriculture
-		icon = GFX_focus_collective_housing
+		icon = GFX_goal_coop_farms
 		x = 0
 		y = 2
 		relative_position_id = EQC_centralize_unions
-		prerequisite = { focus = EQC_centralize_unions }
-		cost = 8
+		prerequisite = { focus = EQC_collectivize_housing}
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}
@@ -6075,6 +7581,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY FOCUS_FILTER_MANPOWER }
 	}
 	
+	
 	focus = {
 		id = EQC_the_vanguard_of_the_griffonian_revolution
 		icon = GFX_goal_red_eagle_two
@@ -6083,7 +7590,7 @@ focus_tree = {
 		relative_position_id = EQC_socialise_education
 		prerequisite = { focus = EQC_purge_the_reactionaries }
 		prerequisite = { focus = EQC_collectivize_agriculture }
-		cost = 8
+		cost = 7
 		ai_will_do = {
 			factor = 10
 		}

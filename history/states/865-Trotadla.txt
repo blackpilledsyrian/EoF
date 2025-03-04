@@ -4,19 +4,16 @@ state={
 	name="STATE_865"
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		victory_points = {
 			14816 1 
 		}
 
 	}
 	resources = {
-		tungsten = 12
-		chromium = 12
+		tungsten=120
+		chromium=120
 	}
 	provinces={
 		14747 14773 14777 14802 14807 14816 14818 14826 14838 14850 

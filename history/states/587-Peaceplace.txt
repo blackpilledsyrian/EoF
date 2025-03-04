@@ -11,8 +11,8 @@ state={
 	buildings_max_level_factor=1.00
 
 	history = {
-		owner = HLR
-		add_core_of = HLR
+		owner = NIM
+		add_core_of = NIM
 
 		victory_points = { 4730 5 }
 		victory_points = { 1726 1 }
@@ -21,6 +21,7 @@ state={
 		buildings = {
 			infrastructure = 1
 			industrial_complex = 1
+			arms_factory = 1
 
 			4730 = {
 				naval_base = 1
@@ -29,6 +30,6 @@ state={
 	}
 
 	resources = {
-		chromium=5
+		chromium=50
 	}
 }

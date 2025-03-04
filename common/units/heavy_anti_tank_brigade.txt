@@ -24,7 +24,7 @@ sub_units = {
 		combat_width = 1
 
 		need = {
-			heavy_anti_tank_equipment = 24
+			heavy_anti_tank_equipment = 30
 		}
 		manpower = 500
 		max_organisation = 0
@@ -91,6 +91,7 @@ sub_units = {
 			category_army
 			category_line_artillery
 			category_all_at
+			category_mobile_and_mobile_combat_sup
 		}		
 		
 		combat_width = 1
@@ -100,8 +101,8 @@ sub_units = {
 			mechanized_equipment
 		}
 		need = {
-			heavy_anti_tank_equipment = 36
-			mechanized_equipment = 50
+			heavy_anti_tank_equipment = 30
+			mechanized_equipment = 35
 		}
 		manpower = 500
 		breakthrough = -0.5

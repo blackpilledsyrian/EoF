@@ -148,4 +148,54 @@ scripted_gui = {
 			}
 		}
 	}
+
+	#wingbardy
+	EoF_big_event_wingbardy_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_wingbardy_custom_window"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_wingbardy ### this global flag triggers the #superevent
+		}
+	}
+
+	EoF_big_event_frame_wingbardy_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_frame_wingbardy_custom"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_wingbardy
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = EoF_big_event_custom_wingbardy ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
+
+	#rivfed
+	EoF_big_event_rivfed_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME NAME AS #IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_rivfed_custom_window"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_rivfed ### this global flag triggers the #superevent
+		}
+	}
+
+	EoF_big_event_frame_rivfed_custom = { ### VERY IMPORTANT MAKE SURE THIS USES THE SAME #NAME AS IN THE WW_BigEvent_custom.gui FILE OR YOU'RE GONNA GET A CRASH
+		context_type = player_context
+		window_name = "EoF_big_event_frame_rivfed_custom"
+
+		visible = {
+			has_country_flag = EoF_big_event_custom_rivfed
+		}
+
+		effects = {
+			Option_click = {
+				clr_country_flag = EoF_big_event_custom_rivfed ### this disables the country flag #that fires the superevent (so the superevent actually goes away)
+			}
+		}
+	}
 }

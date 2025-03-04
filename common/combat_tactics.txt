@@ -49,7 +49,6 @@ tactic_counterattack = { # counters basic attack, assault
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		skill_advantage > 0
 		phase = no
 	}
 
@@ -193,11 +192,6 @@ tactic_encirclement = {
 		phase = no
 		frontage_full = yes
 		has_reserves = yes
-		OR = {
-			skill_advantage > 0
-			has_trait = panzer_leader
-			has_trait = trickster
-		}
 	}
 
 	active = yes
@@ -216,7 +210,7 @@ tactic_encirclement = {
 	picture = encircle
 	countered_by = tactic_tactical_withdrawal
 
-	combat_width = 0.5		#increased combat_width
+	combat_width = 0.33		#increased combat_width
 	attacker = 0.25
 	defender = 0.05
 }
@@ -268,10 +262,6 @@ tactic_tactical_withdrawal = { #counters encirclement
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = {
-			skill_advantage > 0
-			has_trait = trickster
-		}
 	}
 
 	active = no
@@ -281,7 +271,7 @@ tactic_tactical_withdrawal = { #counters encirclement
 
 	phase = tactical_withdrawal
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = -0.25
 	defender = -0.05
 }
@@ -297,7 +287,7 @@ tactic_tw_attack = {
 	picture = tw_attack
 	display_phase = tactical_withdrawal
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = -0.25
 	defender = -0.1
 }
@@ -312,7 +302,7 @@ tactic_tw_defend = {
 	picture = tw_defend
 	display_phase = tactical_withdrawal
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = -0.3
 	defender = -0.05
 }
@@ -328,7 +318,7 @@ tactic_tw_chase = {
 	display_phase = tactical_withdrawal
 
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = -0.15
 	defender = -0.05
 }
@@ -344,7 +334,7 @@ tactic_tw_evade = {
 	display_phase = tactical_withdrawal
 
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = -0.4
 	defender = -0.1
 }
@@ -361,6 +351,7 @@ tactic_tw_intercept = {
 
 	phase = no
 
+	combat_width = -0.165
 	attacker = -0.05
 	defender = -0.1
 }
@@ -372,10 +363,6 @@ tactic_breakthrough = { #counters ambush
 	trigger = {
 		is_attacker = yes
 		phase = no
-		OR = {
-			hardness > 0.5
-			skill_advantage > 1
-		}
 	}
 
 	active = no
@@ -395,11 +382,6 @@ tactic_ambush = { #counters shock
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = {
-			skill_advantage > 1
-			skill > 2
-			has_trait = trickster
-		}
 	}
 
 	active = yes
@@ -431,14 +413,7 @@ tactic_blitz = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		hardness > 0.5
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = panzer_leader
-			skill_advantage > 1
-		}
-		OWNER = { NOT = { has_tech = masterful_blitz } } #Soviet improved version of blitz will replace this
 	}
 
 	active = no
@@ -468,16 +443,13 @@ tactic_elastic_defense = { #counters blitz
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = {
-			has_trait = defensive_doctrine
-			skill > 2
-		}
 	}
 
 	active = no
 
 	base =  { factor = 4 }
 	picture = elastic_defence
+	countered_by = tactic_masterful_blitz
 
 	attacker_movement_speed = -0.25
 	attacker = -0.15
@@ -489,13 +461,6 @@ tactic_backhand_blow = { #counters breakthrough
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = {
-			skill > 4
-			AND = {
-				has_trait = defensive_doctrine
-				skill > 3
-			}
-		}
 	}
 
 	active = no
@@ -514,13 +479,6 @@ tactic_seize_bridge = {
 		is_attacker = yes
 		has_combat_modifier = river_crossing
 		phase = no
-		OR = {
-			skill > 3
-			AND = {
-				has_trait = offensive_doctrine
-				skill > 2
-			}
-		}
 	}
 
 	base =  { factor = 2 }
@@ -529,7 +487,7 @@ tactic_seize_bridge = {
 	phase = seize_bridge
 
 	attacker_movement_speed = 0.1
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 	defender = -0.05
 }
@@ -544,7 +502,7 @@ tactic_attacker_sb_hold = {
 	picture = attacker_sb_hold
 	display_phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 }
 tactic_attacker_sb_skillful_defence = {
@@ -552,14 +510,13 @@ tactic_attacker_sb_skillful_defence = {
 	trigger = {
 		is_attacker = yes
 		phase = seize_bridge
-		skill > 4
 	}
 
 	base =  { factor = 4 }
 	picture = attacker_sb_skillful_defence
 	display_phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 	defender = -0.1
 }
@@ -574,7 +531,7 @@ tactic_defender_sb_assault = {
 	picture = defender_sb_assault
 	display_phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	defender = -0.05
 }
 tactic_defender_sb_reckless_assault = {
@@ -582,14 +539,13 @@ tactic_defender_sb_reckless_assault = {
 	trigger = {
 		is_attacker = no
 		phase = seize_bridge
-		skill < 3
 	}
 
 	base =  { factor = 4 }
 	picture = defender_sb_reckless_assault
 	display_phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.25
 	defender = -0.1
 }
@@ -598,10 +554,6 @@ tactic_defender_sb_retake_bridge = {
 	trigger = {
 		is_attacker = no
 		phase = seize_bridge
-		OR = {
-			skill > 2
-			has_trait = trickster
-		}
 	}
 
 	countered_by = tactic_attacker_sb_skillful_defence
@@ -611,7 +563,7 @@ tactic_defender_sb_retake_bridge = {
 	picture = defender_sb_retake_bridge
 	display_phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.1
 	defender = -0.05
 }
@@ -622,10 +574,6 @@ tactic_hold_bridge = {
 		has_combat_modifier = river_crossing
 		is_attacker = no
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = defensive_doctrine
-		}
 	}
 
 	base =  { factor = 2 }
@@ -634,7 +582,7 @@ tactic_hold_bridge = {
 	phase = hold_bridge
 
 	attacker_movement_speed = 0.1
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 	defender = -0.05
 }
@@ -649,7 +597,7 @@ tactic_attacker_hb_attack = {
 	picture = attacker_hb_attack
 	display_phase = hold_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.1
 }
 tactic_attacker_hb_rush = {
@@ -657,14 +605,13 @@ tactic_attacker_hb_rush = {
 	trigger = {
 		is_attacker = yes
 		phase = hold_bridge
-		skill > 4
 	}
 
 	base =  { factor = 4 }
 	picture = attacker_hb_rush
 	display_phase = hold_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 }
 tactic_attacker_hb_storm = {
@@ -682,7 +629,7 @@ tactic_attacker_hb_storm = {
 
 	phase = seize_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 	defender = 0.05
 }
@@ -691,14 +638,13 @@ tactic_defender_hb_hold = {
 	trigger = {
 		is_attacker = no
 		phase = hold_bridge
-		skill < 3
 	}
 
 	base =  { factor = 2 }
 	picture = defender_hb_hold
 	display_phase = hold_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.2
 	defender = -0.1
 }
@@ -707,17 +653,13 @@ tactic_defender_hb_skillful_defence = {
 	trigger = {
 		is_attacker = no
 		phase = hold_bridge
-		OR = {
-			skill > 2
-			has_trait = trickster
-		}
 	}
 
 	base =  { factor = 2 }
 	picture = defender_hb_skillful_defence
 	display_phase = hold_bridge
 
-	combat_width = -0.25
+	combat_width = -0.165
 	attacker = 0.1
 	defender = 0.05
 }
@@ -728,12 +670,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 		owner = { NOT = { has_tech = tech_deer_army_def } }
 		is_attacker = no
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = trickster
-			has_trait = commando
-			owner = { tag = ZRS }
-		}
+		hardness < 0.1
 	}
 
 	active = no
@@ -741,7 +678,7 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	base =  { factor = 4 }
 	picture = tactic_guerrilla_tactics
 
-	combat_width = -0.5
+	combat_width = -0.33
 	attacker = -0.7
 	defender = -0.6
 }
@@ -758,7 +695,7 @@ tactic_motti_tactics = {
 	base =  { factor = 4 }
 	picture = tactic_guerrilla_tactics
 
-	combat_width = -0.5
+	combat_width = -0.33
 	attacker = -0.8
 	defender = -0.5
 }
@@ -783,7 +720,7 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 	}
 	picture = tactic_human_wave_tactics
 
-	combat_width = 0.5
+	combat_width = 0.33
 	attacker = 0.1
 	defender = 0.1
 }
@@ -791,7 +728,6 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 tactic_banzai_charge = { #Special Japan attacker tactic
 	is_attacker = yes
 	trigger = {
-
 		is_attacker = yes
 		phase = no
 	}
@@ -929,13 +865,7 @@ tactic_slow_tank_attack = { #Unique Aquileian tank attack tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		hardness > 0.5
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = panzer_leader
-			skill_advantage > 1
-		}
 	}
 
 	active = no
@@ -961,10 +891,6 @@ tactic_unyielding_defense = {	#Unique Aquileian infantry defense tactic
 	trigger = {
 		is_attacker = no
 		phase = no
-		OR = {
-			has_trait = defensive_doctrine
-			skill > 2
-		}
 	}
 
 	active = no
@@ -1032,7 +958,7 @@ tactic_poison_ammo_ambush = { #zebra tactics
 
 	picture = ambush
 
-	combat_width = -0.2
+	combat_width = -0.33
 	attacker = -0.3
 }
 tactic_zebra_steppe_charge = { #zebra tactics
@@ -1058,7 +984,7 @@ tactic_zebra_steppe_charge = { #zebra tactics
 	picture = tactic_human_wave_tactics
 
 	attacker_movement_speed = 0.25
-	combat_width = 0.25
+	combat_width = 0.33
 	attacker = 0.2
 	defender = 0.05
 }
@@ -1067,13 +993,7 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		hardness > 0.5
 		phase = no
-		OR = {
-			skill > 2
-			has_trait = panzer_leader
-			skill_advantage > 1
-		}
 	}
 	
 	active = no
@@ -1090,10 +1010,9 @@ tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	}
 	
 	picture = SOV_tank_desant_blitz
-	countered_by = tactic_elastic_defense
 	
 	attacker_movement_speed = 0.5
-	combat_width = 0.1
+	combat_width = 0.33
 	attacker = 0.2
 	defender = -0.2
 }

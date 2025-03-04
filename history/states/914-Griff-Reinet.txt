@@ -4,8 +4,8 @@ state={
 	name="STATE_914"
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 2
@@ -19,8 +19,8 @@ state={
 
 	}
 	resources = {
-		steel = 10
-		chromium = 15
+		steel=100
+		chromium=150
 	}
 
 	provinces={

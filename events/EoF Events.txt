@@ -1,7 +1,7 @@
 add_namespace = EoF
 add_namespace = EoF.news
 add_namespace = Eof.ole
-
+add_namespace = EoF.cityfall
 country_event = {
 	id = EoF.1
 	is_triggered_only = yes
@@ -53,183 +53,124 @@ country_event = {
 	option = {
 		name = EoF.4.a
 		STG = {
-			add_threat = 10
-
+			country_event = EoF.17
 		}
-		add_to_faction = STG
-		326 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		STG = {
+			transfer_state = 326
+			add_state_core = 326
+			transfer_state = 167
+			add_state_core = 167
+			transfer_state = 164
+			add_state_core = 164
+			transfer_state = 162
+			add_state_core = 162
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 157
+			add_state_core = 157
+			transfer_state = 156
+			add_state_core = 156
+			transfer_state = 155
+			add_state_core = 155
+			transfer_state = 154
+			add_state_core = 154
+			transfer_state = 653
+			add_state_core = 653
+			transfer_state = 662
+			add_state_core = 662
+			transfer_state = 661
+			add_state_core = 661
+			transfer_state = 229
+			add_state_core = 229
+			transfer_state = 67
+			add_state_core = 67
+			transfer_state = 1194
+			add_state_core = 1194
+			transfer_state = 1193
+			add_state_core = 1193
 		}
-		167 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		
+		EQS = {
+			remove_state_core = 326
+			remove_state_core = 167
+			remove_state_core = 164
+			remove_state_core = 162
+			remove_state_core = 160
+			remove_state_core = 159
+			remove_state_core = 158
+			remove_state_core = 157
+			remove_state_core = 156
+			remove_state_core = 155
+			remove_state_core = 154
+			remove_state_core = 653
+			remove_state_core = 662
+			remove_state_core = 661
+			remove_state_core = 229
+			remove_state_core = 67
+			remove_state_core = 1194
+			remove_state_core = 1193
 		}
-		164 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		162 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		160 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		159 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		158 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		157 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		156 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		155 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		154 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		653 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		662 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		661 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		229 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		67 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		10 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		9 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		8 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		7 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		6 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		328 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		1194 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
-		1193 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-			set_compliance = 80
-		}
+		
 	}
 	option = {
 		name = EoF.4.b
 		STG = {
-			add_threat = 10
-
+			country_event = EoF.18
 		}
-		add_to_faction = STG
-		326 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
+		STG = {
+			transfer_state = 326
+			add_state_core = 326
+			transfer_state = 167
+			add_state_core = 167
+			transfer_state = 164
+			add_state_core = 164
+			transfer_state = 162
+			add_state_core = 162
+			transfer_state = 160
+			add_state_core = 160
+			transfer_state = 159
+			add_state_core = 159
+			transfer_state = 158
+			add_state_core = 158
+			transfer_state = 157
+			add_state_core = 157
+			transfer_state = 156
+			add_state_core = 156
+			transfer_state = 155
+			add_state_core = 155
+			transfer_state = 154
+			add_state_core = 154
+			transfer_state = 653
+			add_state_core = 653
+			transfer_state = 662
+			add_state_core = 662
+			transfer_state = 661
+			add_state_core = 661
+			transfer_state = 229
+			add_state_core = 229
 		}
-		167 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		164 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		162 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		160 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		159 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		158 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		157 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		156 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		155 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		154 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		653 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		662 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		661 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
-		229 = {
-			transfer_state_to = STG
-			remove_core_of = EQS
-		}
+		
+		EQS = {
+			remove_state_core = 326
+			remove_state_core = 167
+			remove_state_core = 164
+			remove_state_core = 162
+			remove_state_core = 160
+			remove_state_core = 159
+			remove_state_core = 158
+			remove_state_core = 157
+			remove_state_core = 156
+			remove_state_core = 155
+			remove_state_core = 154
+			remove_state_core = 653
+			remove_state_core = 662
+			remove_state_core = 661
+			remove_state_core = 229
+		}		
 	}
 }
 country_event = {
@@ -248,20 +189,49 @@ country_event = {
 	id = EoF.6
 	title = EoF.6.t
 	desc = EoF.6.desc
+	picture = GFX_event_polar_camp_ruins
 	is_triggered_only = yes
 	option = {
 		name = EoF.6.a
-		add_stability = 0.05
-		add_political_power = 50
+		283 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
+		}
+		277 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
+		}
+		GRF = {
+			set_country_flag = EoF_small_wesslandia_award
+		}
 	}
 	option = {
 		name = EoF.6.b
-		add_war_support = 0.05
-		declare_war_on = {
-			target = PNG
-    			type = annex_everything
+		283 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
 		}
-		add_threat = 5
+		277 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
+		}
+		281 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
+		}
+		278 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = GRF
+		}
+		GRF = {
+			set_country_flag = EoF_big_wesslandia_award
+		}
 	}
 }
 country_event = {
@@ -295,32 +265,26 @@ country_event = {
 					marine = { x = 0 y = 0 }
 					marine = { x = 0 y = 1 }
 					marine = { x = 0 y = 2 }
-					marine = { x = 0 y = 3 }
-					marine = { x = 0 y = 4 }
 	
 					marine = { x = 1 y = 0 }
 					marine = { x = 1 y = 1 }
 					marine = { x = 1 y = 2 }
 					marine = { x = 1 y = 3 }
-					marine = { x = 1 y = 4 }
 
 					marine = { x = 2 y = 0 }
 					marine = { x = 2 y = 1 }
 					marine = { x = 2 y = 2 }
 					marine = { x = 2 y = 3 }
-					marine = { x = 2 y = 4 }
 					
 					artillery_brigade = { x = 3 y = 0 }
 					artillery_brigade = { x = 3 y = 1 }
 					artillery_brigade = { x = 3 y = 2 }
 					artillery_brigade = { x = 3 y = 3 }
-					artillery_brigade = { x = 3 y = 4 }
 
 					artillery_brigade = { x = 4 y = 0 }
 					artillery_brigade = { x = 4 y = 1 }
 					artillery_brigade = { x = 4 y = 2 }
 					artillery_brigade = { x = 4 y = 3 }
-					artillery_brigade = { x = 4 y = 4 }
 				}
 				support = {
 					heavy_artillery = { x = 0 y = 0 }
@@ -450,6 +414,81 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = EoF.15
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		every_country = {
+			set_country_flag = EoF_big_event_custom_tarrin
+		}
+	}
+}
+
+country_event = {
+	id = EoF.16
+	title = EoF.16.t
+	desc = EoF.16.desc
+	picture = GFX_event_polar_camp_ruins
+	is_triggered_only = yes
+	option = {
+		name = EoF.16.a
+		276 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = YAK
+		}
+		340 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = YAK
+		}
+		347 = {
+			transfer_state_to = PLB
+			add_core_of = PLB
+			remove_core_of = YAK
+		}
+	}
+}
+
+country_event = {
+	id = EoF.17
+	title = EoF.17.t
+	desc = EoF.17.desc
+	picture = GFX_event_stalliongrad
+	is_triggered_only = yes
+	option = {
+		name = EoF.17.a
+		EQS = {
+			add_to_faction = STG
+		}
+		add_ideas = EoF_STG_southern_island_campaign_5
+		add_named_threat = {
+			threat = 5
+			name = EoF_STG_join_UPA_tension
+		}
+	}
+}
+
+country_event = {
+	id = EoF.18
+	title = EoF.18.t
+	desc = EoF.18.desc
+	picture = GFX_event_stalliongrad
+	is_triggered_only = yes
+	option = {
+		name = EoF.18.a
+		add_timed_idea = {
+			idea = EoF_STG_delayed_UPA
+			days = 900
+		}
+		add_named_threat = {
+			threat = 5
+			name = EoF_STG_join_UPA_tension
+		}
+	}
+}
+
 news_event = {
 	id = EoF.news.1
 	title = EoF.news.1.t
@@ -508,5 +547,99 @@ news_event = {
 
 	option = {
 		name = EoF.news.5.a
+	}
+}
+#city fall
+# The Fall of Coltoba
+news_event = {
+	id = EoF.cityfall.701
+	title = EoF.cityfall.701.t
+	desc = EoF.cityfall.701.d
+	picture = GFX_news_fall_of_river_city
+
+	major = yes
+	is_triggered_only = yes
+
+	option = { #UPA response
+		name = EoF.cityfall.701.a
+		trigger = {
+			OR = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+			}
+		}
+	}
+
+	option = { #Chn repsonse
+		name = EoF.cityfall.701.b
+		trigger = {
+			OR = {
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+
+	option = { #else
+		name = EoF.cityfall.701.c
+		trigger = {
+			NOT = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+}
+
+# The Fall of Coltoba
+news_event = {
+	id = EoF.cityfall.702
+	title = EoF.cityfall.702.t
+	desc = EoF.cityfall.702.d
+	picture = GFX_ABY_encampment
+
+	major = yes
+	is_triggered_only = yes
+
+	option = { #UPA response
+		name = EoF.cityfall.702.a
+		trigger = {
+			OR = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+			}
+		}
+	}
+
+	option = { #Chn repsonse
+		name = EoF.cityfall.702.b
+		trigger = {
+			OR = {
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
+	}
+
+	option = { #else
+		name = EoF.cityfall.702.c
+		trigger = {
+			NOT = {
+				original_tag = EQS
+				original_tag = WNG
+				original_tag = HIP
+				original_tag = CHN
+				original_tag = PLB
+				original_tag = GRF
+			}
+		}
 	}
 }

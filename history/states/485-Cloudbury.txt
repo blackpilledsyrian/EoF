@@ -28,17 +28,19 @@ state={
 			}
 			7146 = {
 				bunker = 2
+				land_facility = 1
 			}
 			1096 = {
 				bunker = 1
 			}
 			7058 = {
 				bunker = 1
+				dam = 1
 			}
 		}
 	}
 
 	resources = {
-		steel = 3
+		steel=30
 	}
 }

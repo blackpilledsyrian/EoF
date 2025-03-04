@@ -54,6 +54,7 @@ set_convoys = 70
 
 set_country_flag = big_science_base_unlocked
 add_ideas = {
+	# no_edict
 	slavery_economy
 	big_science_base
 	pre_industrial_society
@@ -74,6 +75,9 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+set_country_flag = has_custom_advisors
+
+set_country_flag = has_custom_spymaster
 
 recruit_character = EoF_ABY_cat_therine_earnshaw
 recruit_character = ABY_taile_sehissie_clawomonid
@@ -85,6 +89,7 @@ recruit_character = ABY_ras_gordon_sootyilu
 recruit_character = ABY_larry_reteritari
 recruit_character = ABY_catra_meowmeow
 recruit_character = ABY_catto
+recruit_character = ABY_meow_skulls
 recruit_character = ABY_old_deuteronomy
 recruit_character = ABY_munkustrap
 recruit_character = ABY_skimbleshanks

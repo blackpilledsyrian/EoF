@@ -79,7 +79,7 @@ if = {
 			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/GRFTanks/GRFGWTank.dds"
+		icon = "gfx/interface/technologies/armour_folder/nova_griffonia_2d/GRFGWTank.dds"
 	}
 }
 if = {
@@ -131,7 +131,13 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+set_country_flag = has_custom_advisors
+
+set_country_flag = has_custom_spymaster
 add_ideas = {
+	# no_edict
+	nationalized_military_industry
+	reservist_system
 	FAT_republican_struggle
 	outdated_industry
 	FAT_The_Cloudburian_Minority_idea
@@ -148,6 +154,7 @@ set_war_support = 0.2
 add_manpower = 100000
 set_country_flag = have_regular_puppets
 
+recruit_character = EoF_FAT_reserve_fleet
 recruit_character = FAT_alexander_kemerskai
 recruit_character = FAT_reinhard_suntail
 recruit_character = FAT_rikard_astler
@@ -195,6 +202,7 @@ recruit_character = FAT_chaos_rosewing
 recruit_character = FAT_three_eye
 recruit_character = FAT_chaos_mask
 recruit_character = FAT_chaos_maxwell
+recruit_character = FAT_spymaster
 
 set_rule = {
 	can_generate_female_aces = yes

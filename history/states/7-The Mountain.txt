@@ -18,11 +18,14 @@ state={
 
 		buildings = {
 			industrial_complex = 1
+			13071 = {
+				landmark_dragon_throne = 1
+			}
 		}
 	}
 
 	resources={
-		steel=5
-		crystals=12
+		steel=50
+		crystals=120
 	}
 }

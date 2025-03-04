@@ -1,7 +1,6 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			if={limit={NOT={is_historical_focus_on=yes}} every_country={news_event= { id = horsttool.2} } }
 			if = {
 				limit = {has_game_rule = { rule = horst_host_country option = CHN} }
 				set_variable = { host = CHN.id }
@@ -38,6 +37,10 @@ on_actions = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = PNG} }
 			# 	set_variable = { host = PNG.id }
 			# }
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = BRZ} }
+			 	set_variable = { host = BRZ.id }
+			}
 			# else_if = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = ROU} }
 			# 	set_variable = { host = ROU.id }
@@ -78,10 +81,10 @@ on_actions = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = GRY} }
 			# 	set_variable = { host = GRY.id }
 			# }
-			# else_if = {
-			# 	limit = {has_game_rule = { rule = horst_host_country option = RCT} }
-			# 	set_variable = { host = RCT.id }
-			# }
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = RCT} }
+				set_variable = { host = RCT.id }
+			}
 			# else_if = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = LCT} }
 			# 	set_variable = { host = LCT.id }
@@ -90,10 +93,10 @@ on_actions = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = WIT} }
 			# 	set_variable = { host = WIT.id }
 			# }
-			# 			else_if = {
-			# 	limit = {has_game_rule = { rule = horst_host_country option = NIM} }
-			# 	set_variable = { host = NIM.id }
-			# }
+			else_if = {
+				limit = {has_game_rule = { rule = horst_host_country option = NIM} }
+			 	set_variable = { host = NIM.id }
+			}
 			# 			else_if = {
 			# 	limit = {has_game_rule = { rule = horst_host_country option = BAK} }
 			# 	set_variable = { host = BAK.id }

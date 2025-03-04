@@ -3,11 +3,11 @@ state={
 	name="STATE_1136"
 	state_category = town
 	resources={
-		aluminium = 8
+		aluminium=80
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			infrastructure = 2
 			industrial_complex = 1

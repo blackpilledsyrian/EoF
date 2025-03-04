@@ -3,12 +3,12 @@ state={
 	id=810
 	name="STATE_810"
 	resources={
-		steel=8.000
+		steel=80.000
 	}
 
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = EMR
+		add_core_of = EMR
 		buildings = {
 			infrastructure = 3
 			industrial_complex = 1
@@ -35,7 +35,7 @@ state={
 	}
 
 	provinces={
-		15477 15479 15487 15548 15555 15558 15563 15566 15569 15570 15576 15577 15580 15583 15588 15593 15596 15601 
+		15477 15479 15487 15548 15555 15558 15563 15566 15569 15570 15576 15577 15580 15583 15593 15596 
 	}
 	manpower=1198973
 	buildings_max_level_factor=1.000

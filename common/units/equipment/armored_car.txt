@@ -10,7 +10,7 @@ equipments = {
 		# }
 		is_archetype = yes
 		is_buildable = no
-		is_convertable = yes
+		
 		picture = archetype_armored_car_equipment			
 		type = motorized
 		group_by = archetype
@@ -24,18 +24,33 @@ equipments = {
 			tank_gun_upgrade
 		}
 
+		#Misc Abilities
+		maximum_speed 	= 9
 		reliability 	= 0.8
-		breakthrough 	= 2
-		soft_attack 	= 3
-		hard_attack 	= 2
-		build_cost_ic 	= 9
+		#recon 			= 2
 
+		#Defensive Abilities
+		defense 		= 3
+		breakthrough 	= 16
+		hardness 		= 0.5
+		armor_value 	= 10
+
+		#Offensive Abilities
+		soft_attack 	= 13
+		hard_attack 	= 4
+		ap_attack 		= 4
+		air_attack 		= 0
+
+		#Space taken in convoy
 		lend_lease_cost = 10
-
+		
+		build_cost_ic 	= 6
 		resources = {
-			steel = 1
+			#oil 		= 1
+			steel 		= 20
 		}
-		fuel_consumption 	= 0.1
+
+		fuel_consumption 	= 1.8
 	}
 
 	# WW1 Armored Car
@@ -46,11 +61,26 @@ equipments = {
 		priority = 5
 		visual_level = 0
 		
-		reliability 	= 0.6
-		breakthrough 	= 1
-		soft_attack 	= 2
-		hard_attack 	= 1.5
-		build_cost_ic 	= 8
+		
+
+		#Misc Abilities
+		maximum_speed 	= 9
+		reliability 	= 0.8
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 2
+		breakthrough 	= 12
+		armor_value 	= 3
+
+		#Offensive Abilities
+		soft_attack 	= 6
+		hard_attack 	= 2
+		ap_attack 		= 3
+		air_attack 		= 0
+
+		build_cost_ic 		= 4 
+		fuel_consumption 	= 0.8
 	}
 
 	armored_car_equipment_1 = {
@@ -60,11 +90,9 @@ equipments = {
 		parent = gw_armored_car_equipment
 		priority = 10
 		visual_level = 0
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			gw_armored_car_equipment
-		}
+		
 
 		#recon = 2
 	}
@@ -76,17 +104,32 @@ equipments = {
 		parent = armored_car_equipment_1
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
-		reliability 	= 0.8
-		breakthrough 	= 3
-		soft_attack 	= 4
-		hard_attack 	= 2.5
-		build_cost_ic 	= 10
+		#Misc Abilities
+		maximum_speed 	= 9
 
-		can_convert_from = {
-			armored_car_equipment_1
+		#Defensive Abilities
+		defense 		= 5
+		breakthrough 	= 28
+		hardness 		= 0.5
+		armor_value 	= 20
+		#recon 			= 2
+
+		#Offensive Abilities
+		soft_attack 	= 16
+		hard_attack 	= 8
+		ap_attack 		= 15
+		air_attack 		= 0		
+		
+		build_cost_ic = 8
+		resources = {
+			#oil = 1
+			steel = 20
+			tungsten = 10
 		}
+
+		
 	}
 
 	armored_car_at_equipment = {
@@ -97,13 +140,32 @@ equipments = {
 		parent = armored_car_equipment_2
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
+		#Misc Abilities
+		maximum_speed 	= 9
 		reliability 	= 0.8
-		breakthrough 	= 1
-		soft_attack 	= 2
-		hard_attack 	= 4
-		build_cost_ic 	= 10
+		#recon 			= 1
+
+		#Defensive Abilities
+		defense 		= 6
+		breakthrough 	= 28
+		hardness 		= 0.5
+		armor_value 	= 20
+
+		#Offensive Abilities
+		soft_attack 	= 12
+		hard_attack 	= 14
+		ap_attack 		= 30
+		air_attack 		= 0
+		
+		build_cost_ic 	= 9
+		resources = {
+			#oil 		= 1
+			steel 		= 20
+			tungsten 	= 10
+		}
+		fuel_consumption = 1.8
 	}
 	
 	armored_car_equipment_3 = {
@@ -113,12 +175,9 @@ equipments = {
 		parent = armored_car_equipment_2
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			armored_car_equipment_2
-			armored_car_at_equipment
-		}
+		
 
 		#Misc Abilities
 		maximum_speed 	= 21
@@ -126,7 +185,7 @@ equipments = {
 		#Defensive Abilities
 		defense 		= 8
 		breakthrough 	= 40
-		hardness 		= 0.75
+		hardness 		= 0.5
 		armor_value 	= 30
 		#recon 			= 3
 
@@ -151,11 +210,9 @@ equipments = {
 		parent = armored_car_equipment_3
 		priority = 10
 		visual_level = 1
-		is_convertable = yes
+		
 
-		can_convert_from = {
-			armored_car_equipment_3
-		}
+		
 
 		#Misc Abilities
 		maximum_speed 	= 24
@@ -190,11 +247,8 @@ equipments = {
 		parent = armored_car_equipment_4
 		priority = 20
 		visual_level = 1
-		can_convert_from = {
-			armored_car_equipment_4
-			armored_car_at_equipment
-		}
-		is_convertable = yes
+		
+		
 
 		#Misc Abilities
 		maximum_speed 	= 25

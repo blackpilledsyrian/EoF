@@ -2,7 +2,7 @@
 
 oob = "NCH_1007"
 
-set_research_slots = 2
+set_research_slots = 3
 
 set_technology = {
 	changeling_race = 1
@@ -130,12 +130,17 @@ set_politics = {
 	election_frequency = 36
 	elections_allowed = no
 }
+set_country_flag = has_custom_advisors
+
 
 add_ideas = {
+	defence_contracts
+	militia_system
 	isolation
-	agrarian_society
-	NCH_FBK_pact
-	lack_of_scientists
+	pre_industrial_society
+	proper_science_base
+	lack_of_scientists3
+	EoF_NCH_dockyards_0
 	NCH_idyllic_society
 }
 
@@ -155,6 +160,10 @@ add_opinion_modifier = { target = FBK modifier = besties }
 add_opinion_modifier = { target = FBK modifier = trading }
 set_stability = 0.83
 
+recruit_character = EoF_formis_obscura
+recruit_character = EoF_spire
+recruit_character = EoF_antdama
+recruit_character = EoF_prawn
 recruit_character = NCH_queen_gytha
 recruit_character = NCH_oiren_of_oir
 recruit_character = NCH_cader_sclerite

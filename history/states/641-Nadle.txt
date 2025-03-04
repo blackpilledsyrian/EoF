@@ -1,23 +1,26 @@
+
 state={
 	id=641
 	name="STATE_641"
 
-	provinces={
-		390 1365 1380 4372 5172 7416 7431 10286 10980 12216 12626
-	}
-
-	manpower=145607
-	state_category = rural
-	buildings_max_level_factor=1.00
-
-	history = {
-		owner = HLR
-		add_core_of = HLR
-		
-		victory_points = { 12626 2 }
-
+	history={
+		owner = FAT
+		add_core_of = FAT
+		victory_points = {
+			12626 2 
+		}
 		buildings = {
 			infrastructure = 1
+
 		}
+
 	}
+
+	provinces={
+		390 1092 1365 1380 4372 5172 7416 7431 10286 10980 12216 12626 
+	}
+	manpower=145607
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
 }

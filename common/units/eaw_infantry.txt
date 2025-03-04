@@ -10,7 +10,7 @@ sub_units = {
 
 		priority = 601
 		ai_priority = 200
-		active = no
+		active = yes
 
 		type = {
 			infantry
@@ -26,12 +26,13 @@ sub_units = {
 			category_heavy_infantry
 			category_magical
 			category_magical_infantry
+			category_infantry_and_bicycle
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1000
@@ -54,7 +55,7 @@ sub_units = {
 
 		priority = 599
 		ai_priority = 200
-		active = no
+		active = yes
 
 		type = {
 			motorized
@@ -69,13 +70,14 @@ sub_units = {
 			category_mechanical
 			category_magical
 			category_magical_infantry
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 25
+		max_strength = 30
 		max_organisation = 60
 		default_morale = 0.30
 		manpower = 1200
@@ -142,7 +144,8 @@ sub_units = {
 			category_mechanical
 			category_magical
 			category_magical_infantry
-			category_motmech
+			category_vehicle_infantry
+			category_mobile_and_mobile_combat_sup
 		}
 
 		combat_width = 2
@@ -152,14 +155,14 @@ sub_units = {
 		# hard_attack = 4.0
 
 		#Size Definitions
-		max_strength = 30
+		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.3
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 120
-		suppression = 2
+		training_time = 150
+		suppression = 2.2
 		weight = 1
 
 		supply_consumption = 0.14
@@ -227,12 +230,13 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces
 			category_army
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -248,7 +252,7 @@ sub_units = {
 		breakthrough = 0.4
 		defense = -0.15
 
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
 		forest = {
 			attack = -0.05
@@ -269,8 +273,14 @@ sub_units = {
 			movement = 0.25
 		}
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
 		need = {
-			support_equipment = 5
+			support_equipment = 10
 		}
 	}
 
@@ -297,12 +307,13 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces
 			category_army
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -318,9 +329,16 @@ sub_units = {
 		breakthrough = 0.3
 		defense = -0.1
 
-		need = {
-			support_equipment = 5
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
 		}
+
+		need = {
+			support_equipment = 10
+		}
+
         marsh = {
             attack = 0.1
             movement = 0.1
@@ -332,10 +350,6 @@ sub_units = {
         }
         forest = {
             attack = 0.20
-            defence = 0.2
-        }
-        urban = {
-            attack = 0.2
             defence = 0.2
         }
         fort = {
@@ -365,12 +379,13 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces	
 			category_army
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 20
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.4
 		manpower = 1000
@@ -404,8 +419,14 @@ sub_units = {
 			movement = 0.1
 		}
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
 		need = {
-			support_equipment = 5
+			support_equipment = 10
 		}
 	}
 
@@ -431,13 +452,14 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces
 			category_army
+			category_special_forces_leg_infantry
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 27
-		max_organisation = 60
+		max_strength = 25
+		max_organisation = 70
 		default_morale = 0.3
 		manpower = 1000
 
@@ -453,8 +475,14 @@ sub_units = {
 
 		can_be_parachuted = no
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
 		need = {
-			support_equipment = 5
+			support_equipment = 10
 		}
 
 		urban = {
@@ -503,6 +531,7 @@ sub_units = {
 			category_light_infantry
 			category_all_infantry
 			category_army
+			category_infantry_and_bicycle
 		}
 		
 		combat_width = 4
@@ -559,6 +588,7 @@ sub_units = {
 			category_army
 			category_special_forces
 			category_racial_special_forces
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 8
@@ -625,12 +655,13 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces
 			category_army
+			category_infantry_and_bicycle
 		}
 
 		combat_width = 2
 
 		#Size Definitions
-		max_strength = 22
+		max_strength = 25
 		max_organisation = 70
 		default_morale = 0.3
 		maximum_speed = 0.5
@@ -649,11 +680,11 @@ sub_units = {
 		
 		essential = {
 			infantry_equipment
+			magical_equipment
 			support_equipment
 		}
 
 		need = {
-			#infantry_equipment = 120
 			support_equipment = 10
 		}
 		urban = {
@@ -713,6 +744,7 @@ sub_units = {
 			category_special_forces
 			category_racial_special_forces
 			category_army
+			category_special_forces_leg_infantry
 		}
 		
 		combat_width = 2
@@ -785,13 +817,14 @@ sub_units = {
             category_army
             category_special_forces
 			category_racial_special_forces
+			category_special_forces_leg_infantry
         }
 
         combat_width = 8
 
         #Size Definitions
         max_strength = 30
-        max_organisation = 60
+        max_organisation = 70
         default_morale = 0.3
         manpower = 1000
 
@@ -835,12 +868,13 @@ sub_units = {
             category_special_forces
 			category_racial_special_forces
             category_army
+			category_special_forces_leg_infantry
         }
 
         combat_width = 2
 
         #Size Definitions
-        max_strength = 28
+        max_strength = 30
         max_organisation = 70
         default_morale = 0.5
         manpower = 1000
@@ -856,8 +890,14 @@ sub_units = {
         defense = -0.05
         soft_attack = 0.15
 
+		essential = {
+			infantry_equipment
+			magical_equipment
+			support_equipment
+		}
+
         need = {
-			support_equipment = 5
+			support_equipment = 10
         }
 		desert = {
 			attack = 0.15
@@ -871,7 +911,7 @@ sub_units = {
 		}
 	}
 	panzerbar = {
-		sprite = infantry
+		sprite = panzerbjorn
 		map_icon_category = infantry
 		special_forces = no
 
@@ -891,6 +931,7 @@ sub_units = {
 			category_all_infantry
 			category_army
 			category_light_infantry
+			category_infantry_and_bicycle
 		}
 
 		# needed since we give so much bonus to infantry even with no panzerbar equipment
@@ -919,22 +960,92 @@ sub_units = {
 		supply_consumption = 0.1
 
 		can_be_parachuted = no
-		hills = {
-			attack = 0.05
-			movement = 0.05
-		}
 		forest = {
-			attack = 0.05
-			movement = 0.05
+			attack = -0.15
+			defence = -0.15
+			movement = -0.15
+		}
+		hills = {
+			attack = -0.15
+			defence = -0.15
+			movement = -0.15
 		}
 		mountain = {
-			attack = 0.05
-			movement = 0.1
+			attack = -0.15
+			defence = -0.15
+			movement = -0.15
 		}
 
 		need = {
 			polar_bear_equipment = 25
 			infantry_equipment = 100
+		}
+	}
+
+	ponies_of_shadow_troops = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = no
+
+		priority = 601
+    
+		ai_priority = 200
+		active = no
+
+		type = {
+			infantry
+		}
+
+		group = infantry
+
+		categories = {
+			category_front_line
+			category_all_infantry
+			category_army
+			category_light_infantry
+		}
+
+		essential = {
+			ponies_of_shadow_equipment
+		}
+
+		combat_width = 2
+
+		need = {
+			ponies_of_shadow_equipment = 50
+		}
+		max_strength = 30
+		max_organisation = 70
+		default_morale = 0.4
+		manpower = 50
+		soft_attack = 0.2
+		hard_attack = 0.5
+		defense = 0.06
+		breakthrough = 0.05
+
+		supply_consumption = 0.01
+
+		suppression = 2.5
+		
+		breakthrough = 0.15	
+
+		forest = {
+		    attack = 0.3
+			movement = 0.4
+		}
+		hills = 	{
+		    attack = 0.1
+		}
+		mountain = 	{
+		    attack = 0.2
+		}
+		jungle = {
+		    attack = 0.4
+			movement = 0.4
+		}
+		marsh = {
+		    attack = 0.1 
+			movement = 0.1
 		}
 	}
 }

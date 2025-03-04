@@ -1,0 +1,14 @@
+ideas = {
+	country = {
+		EoF_KIR_fire = {
+			removal_cost = -1
+			picture = KIR_way_of_fire
+			modifier = {
+				offensive_war_stability_factor = 0.2
+				war_support_factor = 0.2
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+	}
+}

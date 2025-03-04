@@ -3,18 +3,15 @@ state={
 	name="STATE_842"
 	state_category = pastoral
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 1
 		}
 		victory_points = { 15092 3 }
 	}
 	resources = {
-		crystals=12.000
+		crystals=120.000
 	}
 	provinces={
 		15002 15026 15027 15043 15049 15053 15060 15067 15076 15078 15081 15089 15092 15099 

@@ -2,11 +2,11 @@ state={
 	id=1138
 	name="STATE_1138"
 	resources={
-		rubber=9
+		rubber=90
 	}
 	history={
-		owner = HLR
-		add_core_of = HLR
+		owner = WNG
+		add_core_of = WNG
 		buildings = {
 			arms_factory = 1
 			dockyard = 1

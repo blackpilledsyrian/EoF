@@ -22,11 +22,14 @@ state={
 			infrastructure = 2
 			industrial_complex = 2
 			arms_factory = 1
+			7266 = {
+				landmark_tomb_of_arantigos = 1
+			}
 		}
 	}
 
 	resources = {
-		steel = 12
-		chromium = 11
+		steel=120
+		chromium=110
 	}
 }

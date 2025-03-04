@@ -23,7 +23,7 @@ state={
 	}
 
 	resources={
-		steel=10
-		tungsten=7
+		steel=100
+		tungsten=70
 	}
 }

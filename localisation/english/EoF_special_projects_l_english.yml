@@ -1,0 +1,13 @@
+﻿l_english:
+sp_EoF_fire_control_computer:0 "Fire Control Computer"
+sp_EoF_fire_control_computer_desc:0 "An experimental electromechanical fire control computer which both elevates the gun and tracks the movement of targets to a limited degree automatically."
+
+sp_EoF_advanced_land_doctrine:0 "Advanced Land Doctrine"
+sp_EoF_advanced_land_doctrine_desc:0 "The necessary infrastructural and organizational developments to support the creation and adoption of new land doctrines. These doctrines will integrate lessons learned during the war as well as prepare the army to utilize newly developed technologies." 
+
+sp_EoF_reward_advanced_land_doctrine_preference:0 "Doctrine Preference"
+sp_EoF_reward_advanced_land_doctrine_preference_desc:0 "During the development of new land doctrines, the military has expressed a preference for a certain type of doctrine. This preference will be taken into account when the new doctrine is developed."
+sp_EoF_reward_advanced_land_doctrine_preference_MW:0 "Mobile Warfare"
+sp_EoF_reward_advanced_land_doctrine_preference_SF:0 "Superior Firepower"
+sp_EoF_reward_advanced_land_doctrine_preference_GBP:0 "Grand Battle Plan"
+sp_EoF_reward_advanced_land_doctrine_preference_MA:0 "Mass Assault"

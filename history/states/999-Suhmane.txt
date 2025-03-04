@@ -20,7 +20,7 @@ state={
 		}
 	}
 	resources = {
-		steel=10.000
+		steel=100.000
 	}
 
 	provinces={

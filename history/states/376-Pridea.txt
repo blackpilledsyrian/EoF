@@ -6,7 +6,7 @@ state={
 		789 864 1108 1933 3564 4550 4939 5007 6935 7184 7470 7765 7911 10383 12442
 	}
 	resources={
-		steel=5.000
+		steel=50.000
 	}
 
 	manpower=1845009
@@ -23,10 +23,11 @@ state={
 			infrastructure = 3
 			industrial_complex = 2
 			arms_factory = 2
-			dockyard = 3
+			dockyard = 4
 
 			6935 = {
 				naval_base = 3
+				naval_facility = 1
 			}
 		}
 	}

@@ -11,9 +11,9 @@ state={
 		}
 	}
 	resources = {
-		steel=6.000
-		crystals=8.000
-		chromium=24.000
+		steel=60.000
+		crystals=80.000
+		chromium=240.000
 	}
 
 	provinces={

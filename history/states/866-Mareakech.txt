@@ -3,20 +3,20 @@ state={
 	name="STATE_866"
 	state_category = city
 	resources={
-		steel=7
+		steel=70
 	}
 	history = {
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 4
 			industrial_complex = 1
 			arms_factory = 1
 			dockyard = 2
 			14761 = { naval_base = 5 }
+			14794 = {
+				dam = 1
+			}
 		}
 		victory_points = { 14761 20 }
 	}

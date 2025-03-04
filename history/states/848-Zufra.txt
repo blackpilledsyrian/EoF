@@ -4,14 +4,11 @@ state={
 	name="STATE_848"
 
 	history={
-		owner = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
-		add_core_of = HLR
+		owner = SDL
+		add_core_of = SDL
 		buildings = {
 			infrastructure = 1
-
+			air_base = 1
 		}
 		victory_points = {
 			14977 3
