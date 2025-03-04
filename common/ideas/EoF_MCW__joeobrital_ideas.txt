@@ -54,7 +54,7 @@ ideas = {
 		EoF_MCW_Expand_Bureaucracy_idea = {
 			icon = GFX_idea_generic_supply_depot
 			modifier = {
-			mobilization_speed = 0.35
+			mobilization_speed = 0.55
 				
 			}
 	
@@ -72,26 +72,25 @@ ideas = {
 			
 			icon = GFX_idea_generic_supply_depot
 			modifier = {
-			conscription = 0.15
-			army_org_factor = 0.10
+			conscription = 0.05
+			army_org_factor = 0.15
 			army_infantry_attack_factor = -0.125
-			supply_consumption_factor = -0.05
+			supply_consumption_factor = -0.15
 				
 			}
-			equipment_bonus = {
-				infantry_equipment = {
-					breakthrough = -0.30
-					build_cost_ic = -0.15 
-					instant = yes
-				}
-				artillery = {
-					breakthrough = -0.30
-					build_cost_ic = -0.15
-					instant = yes
-				}
-			}
+			
 		}		
 		
+		EoF_mcw_special_forces_heaven = {
+			removal_cost = -1
+			picture = eng_special_air_service
+			modifier = {
+				special_forces_no_supply_grace = 96
+				special_forces_attack_factor = 0.15
+				special_forces_defence_factor = 0.15
+				special_forces_cap = 0.66
+			}
+		}
 		
 		EoF_MCW_tonk_idea = {
 			icon = GFX_idea_generic_supply_depot

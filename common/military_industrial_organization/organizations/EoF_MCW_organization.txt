@@ -1,7 +1,7 @@
 EoF_MCW_Fast_Tank_MIO = {
-	name = harpoonus
+	name = H&FManufacturing
 	include = generic_mobile_tank_organization
-	icon = GFX_idea_EQS_mustang
+	icon = FEZ_fast_tank_manufacturer_advisor
 	allowed = {
 		original_tag = MCW
 		has_dlc = "Arms Against Tyranny"
