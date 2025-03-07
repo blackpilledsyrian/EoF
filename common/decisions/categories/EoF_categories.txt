@@ -74,3 +74,14 @@ EoF_WNG_war_category = {
 		original_tag = WNG
 	}
 }
+EoF_JER_three_year_plan_category = {
+	icon = GFX_decision_category_generic_industry
+	picture = GFX_decision_cat_generic_mefo_bills
+	priority = 100
+	allowed = {
+		original_tag = JER
+	}
+	visible = {
+		has_completed_focus = EoF_begin_first_plan
+	}
+}

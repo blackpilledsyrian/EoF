@@ -113,6 +113,11 @@ EoF.news.5.t:0 "Imperial Naval Expansion"
 EoF.news.5.d:0 "[This.GetNewspaperHeader] The Griffonian Empire, renowned for its formidable land-based military prowess, is now setting its sights on the seas. With a small but strategic shoreline, the Empire has launched an ambitious project to expand its dockyard capacity. Officials announced the initiative aims to bolster naval capabilities, supporting both defense and trade. The expansion signifies a pivotal shift in Griffonia's strategic focus, reflecting growing maritime ambitions and a commitment to securing its coastal borders."
 EoF.news.5.a:0 "More coast is needed..."
 
+EoF.news.6.t:0 "Aquileia Denounces Equestrian Imperialism"
+EoF.news.6.d:0 "[This.GetNewspaperHeader] Public concerns are mounting as increasinly hostile rhetoric is exchanged between Aquileia and Equestria. The Aquileian government has recently denounced Equestria's imperialistic influence in the region, citing the continued occupation of Skyfall and Haukland as prime examples of Equestrian aggression. In response, Equestrian officials have dismissed the claims as 'baseless' and 'unfounded', stating that the annexations were a necessary measure to ensure the security of the region and to protect civilians against military reprisals following Griffonian civil war."
+EoF.news.6.a:0 "Worrying news."
+EoF.news.6.b:0 "Hardly convincing."
+
 EoF.cityfall.701.t:0 "The Fall of Coltoba"
 EoF.cityfall.701.d:0 "[This.GetNewspaperHeader]Today the changling and their Feline allies suffers a defeat. News from the frontline has been scarce due to its remote nature, however, official sources has confirmed that the frontline city of Coltoba has fallen to the United Ponies Alliance. The Hedgmony's forces is beten back from the edges of the city and is now in full retreat. \n\nThe Queendom must send reinforcements to the frontline immediatly to attempt to stabilise the situation and prevent the UPA from taking over the valuable Abysinnian rubber plantations and oilfields. Without more concentrated efforts the Alliance forces are sure to achive victory."
 EoF.cityfall.701.a:0 "Forward, to victory!"

@@ -297,3 +297,9 @@ EoF_NCH_hive_building = {
 EoF_sunset_line_warning = {
 	icon = GFX_idea_SWE_radiotjanst_corrupted
 }
+EoF_JER_civilian_zone = {
+	icon = GFX_decision_category_generic_industry
+	local_supplies = 0.1
+	state_production_speed_industrial_complex_factor = 0.4
+	state_production_speed_buildings_factor = -0.2
+}

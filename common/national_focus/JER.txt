@@ -16,7 +16,7 @@ focus_tree = {
 	shared_focus = JER_fight_for_freedom
 	shared_focus = JER_liberal_industry
 	shared_focus = JER_army_reforms
-	shared_focus = EoF_begin_first_plan
+	shared_focus = EoF_denounce_EQS_imperialism
 }
 
 focus_tree = {
@@ -1894,7 +1894,7 @@ focus_tree = {
 		id = JER_fight_for_freedom
 		icon = GFX_goal_JER_republicanism2
 		mutually_exclusive = { focus = JER_state_of_aquileia }
-		x = 14
+		x = 8
 		y = 0
 		offset = {
 			x = -10
@@ -6435,70 +6435,123 @@ focus_tree = {
 
 	#EoF Changes
 	shared_focus = {
-		id = EoF_begin_first_plan
-		icon = GFX_goal_JER_rapid_reconstruction
+		id = EoF_denounce_EQS_imperialism
+		icon = GFX_goal_JER_FJA_victory
 		relative_position_id = JER_fight_for_freedom
-		x = 9
-		y = 0
+		x = 13
+		y = 7
 		cost = 3
 		completion_reward = {
-			add_timed_idea = {
-				idea = EoF_JER_first_plan
-				days = 1095
+			add_war_support = 0.05
+			add_named_threat = {
+				threat = 3
+				name = EoF_JER_denounce_EQS_tension
+			}
+			news_event = EoF.news.6
+		}
+	}
+	shared_focus = {
+		id = EoF_demand_FEZ
+		icon = GFX_goal_JER_unite_all_of_aquileia
+		prerequisite = { focus = EoF_denounce_EQS_imperialism }
+		relative_position_id = EoF_denounce_EQS_imperialism
+		x = -2
+		y = 1
+		cost = 3
+		completion_reward = {
+			add_named_threat = {
+				threat = 5
+				name = EoF_JER_demand_FEZ_tension
+			}
+			EQS = {
+				country_event = EoF_JER.1
 			}
 		}
 	}
 	shared_focus = {
-		id = EoF_begin_second_plan
-		icon = GFX_goal_JER_armoury_of_the_revolution
-		prerequisite = { focus = EoF_begin_first_plan }
-		relative_position_id = EoF_begin_first_plan
-		x = -1
+		id = EoF_final_demands
+		icon = GFX_goal_JER_herzland_revolution
+		prerequisite = { focus = EoF_demand_FEZ }
+		relative_position_id = EoF_demand_FEZ
+		x = 0
 		y = 1
-		cost = 3
-		available = {
-			NOT = {
-				has_idea = EoF_JER_first_plan
-			}
-		}
-		completion_reward = {
-			add_timed_idea = {
-				idea = EoF_JER_second_plan
-				days = 1095
-			}
-		}
-	}
-	shared_focus = {
-		id = EoF_invade_equestria
-		icon = GFX_goal_JER_liberation_ships
-		prerequisite = { focus = EoF_begin_first_plan }
-		relative_position_id = EoF_begin_first_plan
-		x = 1
-		y = 1
-		cost = 4.3
+		cost = 5
 		available = {
 			date > 1009.05.01
 		}
 		completion_reward = {
-			activate_mission_tooltip = EoF_JER_invade_equestria_mission
-			add_timed_idea = {
-				idea = EoF_invasion_preparation
-				days = 365
+			add_named_threat = {
+				threat = 10
+				name = EoF_JER_final_demands_tension
 			}
+			EQS = {
+				country_event = EoF_JER.4
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_temper_nation
+		icon = GFX_goal_JER_prepare_the_diaspora
+		prerequisite = { focus = EoF_final_demands }
+		relative_position_id = EoF_final_demands
+		x = -1
+		y = 1
+		cost = 5
+		available = {
+			has_war = no
+		}
+		select_effect = {
+			country_event = EoF_JER.6
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_temper_nation_tt
 			hidden_effect = {
-				news_event = EoF.news.3
-				add_named_threat = {
-					threat = 10
-					name = EoF_JER_invade_equestria_tension
+				meta_effect = {
+					text = {
+						add_timed_idea = {
+							idea = [EOF_TEMPER_IDEA]_[OP1]_[OP2]_[OP3]
+							days = 365
+						}	
+					}
+					EOF_TEMPER_IDEA = "EoF_JER_temper"
+					OP1 = "[?EoF_JER_temper_var1]"
+					OP2 = "[?EoF_JER_temper_var2]"
+					OP3 = "[?EoF_JER_temper_var3]"
 				}
 			}
 		}
 	}
 	shared_focus = {
+		id = EoF_cloudbury_conference
+		icon = GFX_goal_JER_griffonian_citizenship_act
+		prerequisite = { focus = EoF_final_demands }
+		relative_position_id = EoF_final_demands
+		x = 1
+		y = 1
+		cost = 3
+		select_effect = {
+			FAT = {
+				country_event = EoF_JER.9
+			}
+			GRI = {
+				country_event = EoF_JER.9
+			}
+			JER = {
+				country_event = EoF_JER.9
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_cloudbury_conference_tt
+			CHN = {
+				set_faction_name = EoF_north_faction_name
+			}
+		}
+	}
+	shared_focus = {
 		id = EoF_eastern_domination
-		icon = GFX_goal_JER_securing_greater_aquileia
-		prerequisite = { focus = EoF_invade_equestria }
-		relative_position_id = EoF_invade_equestria
+		icon = GFX_goal_JER_patriotic_fervour
+		prerequisite = { focus = EoF_cloudbury_conference }
+		relative_position_id = EoF_cloudbury_conference
 		x = -1
 		y = 1
 		cost = 5
@@ -6515,6 +6568,172 @@ focus_tree = {
 			unlock_decision_tooltip = EoF_JER_form_domination
 		}
 	}
+	shared_focus = {
+		id = EoF_tarrin_stockpiles
+		icon = GFX_goal_JER_help_them_rebuild
+		prerequisite = { focus = EoF_denounce_EQS_imperialism }
+		relative_position_id = EoF_denounce_EQS_imperialism
+		x = 0
+		y = 1
+		cost = 3
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 30000
+				producer = JER
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 2000
+				producer = JER
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_begin_first_plan
+		icon = GFX_goal_JER_rapid_reconstruction
+		prerequisite = { focus = EoF_denounce_EQS_imperialism }
+		relative_position_id = EoF_denounce_EQS_imperialism
+		x = 3
+		y = 1
+		cost = 3
+		completion_reward = {
+			unlock_decision_category_tooltip = EoF_JER_three_year_plan_category
+			add_ideas = EoF_JER_first_plan
+		}
+	}
+	shared_focus = {
+		id = EoF_begin_second_plan
+		icon = GFX_goal_JER_armoury_of_the_revolution
+		prerequisite = { focus = EoF_begin_first_plan }
+		relative_position_id = EoF_begin_first_plan
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = EoF_JER_second_plan
+				days = 1095
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_industrial_levy
+		icon = GFX_goal_JER_smuggle_the_weapons
+		prerequisite = { focus = EoF_begin_second_plan }
+		mutually_exclusive = {
+			focus = EoF_vanguardigo_arms
+			focus = EoF_military_knowledge
+		}
+		relative_position_id = EoF_begin_second_plan
+		x = -2
+		y = 1
+		cost = 3
+		available = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+		completion_reward = {
+			add_ideas = EoF_industrial_levy_idea
+		}
+	}
+	shared_focus = {
+		id = EoF_vanguardigo_arms
+		icon = GFX_goal_JER_support_military_industrial_complex
+		prerequisite = { focus = EoF_begin_second_plan }
+		mutually_exclusive = {
+			focus = EoF_industrial_levy
+			focus = EoF_military_knowledge
+		}
+		relative_position_id = EoF_begin_second_plan
+		x = 0
+		y = 1
+		cost = 3
+		available = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+		completion_reward = {
+			add_ideas = EoF_vanguardigo_arms_idea
+			407 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 3
+					instant_build = yes
+				}
+			}
+		}
+	}
+	shared_focus = {
+		id = EoF_military_knowledge
+		icon = GFX_goal_JER_the_mutual_military_attache
+		prerequisite = { focus = EoF_begin_second_plan }
+		mutually_exclusive = {
+			focus = EoF_industrial_levy
+			focus = EoF_vanguardigo_arms
+		}
+		relative_position_id = EoF_begin_second_plan
+		x = 2
+		y = 1
+		cost = 3
+		available = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+		completion_reward = {
+			add_ideas = EoF_military_knowledge_idea
+			add_tech_bonus = {
+				ahead_reduction = 0.5
+				uses = 2
+				category = artillery
+			}
+			add_tech_bonus = {
+				ahead_reduction = 0.5
+				uses = 2
+				category = armor
+			}
+			add_tech_bonus = {
+				ahead_reduction = 0.5
+				uses = 2
+				category = air_equipment
+			}
+		}
+	}
+	# shared_focus = {
+	# 	id = EoF_invade_equestria
+	# 	icon = GFX_goal_JER_liberation_ships
+	# 	prerequisite = { focus = EoF_begin_first_plan }
+	# 	relative_position_id = EoF_begin_first_plan
+	# 	x = 1
+	# 	y = 1
+	# 	cost = 4.3
+	# 	available = {
+	# 		date > 1009.05.01
+	# 	}
+	# 	completion_reward = {
+	# 		activate_mission_tooltip = EoF_JER_invade_equestria_mission
+	# 		add_timed_idea = {
+	# 			idea = EoF_invasion_preparation
+	# 			days = 365
+	# 		}
+	# 		hidden_effect = {
+	# 			news_event = EoF.news.3
+	# 			add_named_threat = {
+	# 				threat = 10
+	# 				name = EoF_JER_invade_equestria_tension
+	# 			}
+	# 		}
+	# 	}
+	# }
 	#EoF Changes
 
 	### At long last I am free of politics and may do the industrial tree ###
@@ -6532,7 +6751,7 @@ focus_tree = {
 				}
 		    }
 	    }
-		x = 29
+		x = 21
 		y = 0
 		offset = {
 			x = -14
@@ -7076,7 +7295,7 @@ focus_tree = {
 				}
 		    }
 	    }
-		x = 42
+		x = 34
 		y = 0
 		offset = {
 			x = -14

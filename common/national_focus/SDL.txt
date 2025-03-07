@@ -15,6 +15,7 @@ shared_focus = {
 	cost = 7.2
 	available = {
 		date > 1007.12.01
+		always = no
 	}
 	ai_will_do = {
 		factor = 200
@@ -40,6 +41,7 @@ shared_focus = {
 		EMR = {
 			exists = no
 		}
+		always = no
 	}
 	prerequisite = {
 		focus = EoF_SDL_war_declare

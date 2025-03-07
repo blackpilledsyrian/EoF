@@ -90,4 +90,10 @@ leader_traits = {
 		navy_intel_factor = 0.1
 		navy_intel_to_others = -10
 	}
+
+	EoF_civilian_economy_concern = {
+		random = no
+		production_cost_industrial_complex_factor = -0.05
+		production_speed_buildings_factor = 0.05
+	}
 }

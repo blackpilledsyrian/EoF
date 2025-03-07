@@ -1,0 +1,146 @@
+EoF_JER_three_year_plan_category = {
+	EoF_JER_first_three_year_plan_mission = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			original_tag =  JER
+		}
+		activation = {
+			has_completed_focus = EoF_begin_first_plan
+		}
+		available = {
+			infrastructure > 59
+			industrial_complex > 74
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 1095
+		complete_effect = {
+			remove_ideas = EoF_JER_first_plan
+			set_country_flag = EoF_JER_first_three_year_plan_complete_flag
+		}
+		timeout_effect = {
+			remove_ideas = EoF_JER_first_plan
+			set_country_flag = EoF_JER_first_three_year_plan_complete_flag
+		}
+	}
+	EoF_JER_first_three_year_plan_decision_0 = {
+		icon = GFX_decision_generic_construction
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 30
+        modifier = {
+            consumer_goods_factor = 0.05
+        }
+        remove_effect = {
+			custom_effect_tooltip = EoF_JER_first_three_year_plan_decision_0_tt
+			every_core_state = {
+				limit = {
+					infrastructure > 4
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+    }
+	EoF_JER_first_three_year_plan_decision_1 = {
+		icon = GFX_decision_oil
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 30
+        modifier = {
+            production_speed_synthetic_refinery_factor = 0.5
+			production_speed_industrial_complex_factor = -0.5
+        }
+        remove_effect = {
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+    }
+	EoF_JER_first_three_year_plan_decision_2 = {
+		icon = GFX_decision_generic_decision
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan			
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 30
+        modifier = {
+            political_power_cost = 0.2
+        }
+        remove_effect = {
+			add_ideas = EoF_JER_civ_corporation
+			set_country_flag = EoF_JER_three_year_industry_concern_flag
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+    }
+	EoF_JER_first_three_year_plan_decision_3 = {
+		icon = GFX_decision_generic_factory
+		state_target = any_owned_state
+		target_root_trigger = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan			
+		}
+		target_array = core_states
+		target_trigger = {
+			FROM = {
+				impassable = no
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = EoF_JER_civilian_zone
+					}
+				}
+			}
+		}
+		available = {
+			FROM = {
+				industrial_complex > 4
+			}
+		}
+		on_map_mode = map_only
+		cost = 10
+		days_remove = 90
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = EoF_JER_civilian_zone
+				}
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+	}
+}

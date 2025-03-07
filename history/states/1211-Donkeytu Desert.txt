@@ -11,7 +11,7 @@ state={
 	impassable=yes
 	state_category = wasteland
 	history={
-		owner = EMR
-		add_core_of = EMR
+		owner = SDL
+		add_core_of = SDL
 	}
 }

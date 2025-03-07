@@ -93,6 +93,8 @@ modifier_production_cost_supply_node_factor_desc:0 "Modifies the cost of Supply 
 
 ADD_UNIT_MEDAL_DIV_EFFECT:0 "Add Unit Medal"
 
+EoF_north_faction_name:0 "Northern Collective Security Pact"
+
 EoF_CHN_mio_trait_breakthrough_tanks:0 "Breakthrough Tanks"
 EoF_CHN_mio_trait_long_range_guns:0 "Long Range Guns"
 EoF_CHN_mio_trait_large_turrets:0 "Large Turrets"

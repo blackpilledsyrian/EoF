@@ -8,8 +8,8 @@ state={
 	}
 
 	history={
-		owner = EMR
-		add_core_of = EMR
+		owner = SDL
+		add_core_of = SDL
 		victory_points = {
 			15480 1 
 		}

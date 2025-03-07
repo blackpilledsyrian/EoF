@@ -549,6 +549,33 @@ news_event = {
 		name = EoF.news.5.a
 	}
 }
+news_event = {
+	id = EoF.news.6
+	title = EoF.news.6.t
+	desc = EoF.news.6.d
+	picture = GFX_news_griffon_diplomacy
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = EoF.news.6.a
+		trigger = {
+			original_tag = EQS
+			original_tag = CRY
+			original_tag = EQC
+		}
+	}
+	option = {
+		name = EoF.news.6.b
+		trigger = {
+			NOT = {
+				original_tag = EQS
+				original_tag = CRY
+				original_tag = EQC
+			}
+		}
+	}
+}
 #city fall
 # The Fall of Coltoba
 news_event = {

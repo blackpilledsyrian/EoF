@@ -4745,7 +4745,8 @@ focus_tree = {
 				name = tank_research
 				bonus = 1.0
 				uses = 1
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 		}
 		search_filters = { FOCUS_FILTER_RESEARCH }
@@ -4770,7 +4771,8 @@ focus_tree = {
 				bonus = 1.0
 				uses = 1
 				ahead_reduction = 0.5
-				category = armor
+				category = cat_medium_armor
+				category = cat_heavy_armor
 			}
 			add_tech_bonus = {
 				name = armor_bonus

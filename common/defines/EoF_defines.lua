@@ -36,7 +36,7 @@ NDefines.NCountry.SURRENDER_LIMIT_REDUCTION_PER_COLLABORATION = 0 	--each percen
 NDefines.NCountry.MIN_STABILITY = 0.0
 NDefines.NCountry.MAX_STABILITY = 1.5
 NDefines.NCountry.MIN_WAR_SUPPORT = 0.0
-NDefines.NCountry.MAX_WAR_SUPPORT = 1.0
+NDefines.NCountry.MAX_WAR_SUPPORT = 1.5
 
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
 NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.75		-- Base xp gain for traits per hour for armies

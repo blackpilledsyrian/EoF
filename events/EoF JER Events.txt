@@ -1,0 +1,173 @@
+add_namespace = EoF_JER
+country_event = {
+	id = EoF_JER.1
+	title = EoF_JER.1.t
+	desc = EoF_JER.1.desc
+	picture = GFX_event_griffon_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.1.a
+		208 = {
+			transfer_state_to = JER
+			add_core_of = JER
+			remove_core_of = EQC
+		}
+		390 = {
+			transfer_state_to = JER
+			add_core_of = JER
+			remove_core_of = EQC
+		}
+		JER = {
+			country_event = EoF_JER.2
+		}
+	}
+	option = {
+		name = EoF_JER.1.b
+		add_political_power = -50
+		JER = {
+			country_event = EoF_JER.3
+		}
+	}
+}
+country_event = {
+	id = EoF_JER.2
+	title = EoF_JER.2.t
+	desc = EoF_JER.2.desc
+	picture = GFX_event_griffon_soldier
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.2.a
+	}
+}
+country_event = {
+	id = EoF_JER.3
+	title = EoF_JER.3.t
+	desc = EoF_JER.3.desc
+	picture = GFX_event_generic_pony_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.3.a
+		add_war_support = 0.05
+	}
+}
+country_event = {
+	id = EoF_JER.4
+	title = EoF_JER.4.t
+	desc = EoF_JER.4.desc
+	picture = GFX_event_griffon_with_gun
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.4.a
+		JER = {
+			country_event = EoF_JER.5
+		}
+	}
+}
+country_event = {
+	id = EoF_JER.5
+	title = EoF_JER.5.t
+	desc = EoF_JER.5.desc
+	picture = GFX_event_griffon_with_gun
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.5.a
+		activate_mission = EoF_JER_invade_equestria_mission
+	}
+}
+country_event = {
+	id = EoF_JER.6
+	title = EoF_JER.6.t
+	desc = EoF_JER.6.desc
+	picture = GFX_event_griffons_machine_gun
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = EoF_JER.6.a
+		hidden_effect = {
+			country_event = EoF_JER.7
+			set_variable = { EoF_JER_temper_var1 = 1 }
+		}
+	}
+	option = {
+		name = EoF_JER.6.b
+		hidden_effect = {
+			country_event = EoF_JER.7
+			set_variable = { EoF_JER_temper_var1 = 2 }
+		}
+	}
+	option = {
+		name = EoF_JER.6.c
+		hidden_effect = {
+			country_event = EoF_JER.7
+			set_variable = { EoF_JER_temper_var1 = 3 }
+		}
+	}
+}
+country_event = {
+	id = EoF_JER.7
+	title = EoF_JER.7.t
+	desc = EoF_JER.7.desc
+	picture = GFX_event_griffons_machine_gun
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = EoF_JER.7.a
+		hidden_effect = {
+			country_event = EoF_JER.8
+			set_variable = { EoF_JER_temper_var2 = 1 }
+		}
+	}
+	option = {
+		name = EoF_JER.7.b
+		hidden_effect = {
+			country_event = EoF_JER.8
+			set_variable = { EoF_JER_temper_var2 = 2 }
+		}
+	}
+	option = {
+		name = EoF_JER.7.c
+		hidden_effect = {
+			country_event = EoF_JER.8
+			set_variable = { EoF_JER_temper_var2 = 3 }
+		}
+	}
+}
+country_event = {
+	id = EoF_JER.8
+	title = EoF_JER.8.t
+	desc = EoF_JER.8.desc
+	picture = GFX_event_griffons_machine_gun
+	is_triggered_only = yes
+	timeout_days = 7
+	option = {
+		name = EoF_JER.8.a
+		hidden_effect = {
+			set_variable = { EoF_JER_temper_var3 = 1 }
+		}
+	}
+	option = {
+		name = EoF_JER.8.b
+		hidden_effect = {
+			set_variable = { EoF_JER_temper_var3 = 2 }
+		}
+	}
+	option = {
+		name = EoF_JER.8.c
+		hidden_effect = {
+			set_variable = { EoF_JER_temper_var3 = 3 }
+		}
+	}
+}
+country_event = {
+	id = EoF_JER.9
+	title = EoF_JER.9.t
+	desc = EoF_JER.9.desc
+	picture = GFX_event_griffon_diplomacy
+	is_triggered_only = yes
+	option = {
+		name = EoF_JER.9.a
+		CHN = {
+			add_to_faction = ROOT
+		}
+	}
+}
