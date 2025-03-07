@@ -56,14 +56,26 @@
   EoF_JER_northern_strategy:0 "Northern Strategy"
   EoF_JER_northern_strategy_desc:0 ""
 
-  EoF_JER_three_year_plan_category:0 "The First Three Year Plan"
-  EoF_JER_three_year_plan_category_desc:0 "The Three Year Plan is a series of economic and industrial reforms that will help Aquileia to modernize and industrialize its economy."
+  EoF_JER_first_three_year_plan_category:0 "The First Three Year Plan"
+  EoF_JER_first_three_year_plan_category_desc:0 "The Three Year Plan is a series of economic and industrial reforms that will help Aquileia to modernize and industrialize its economy."
 
   EoF_JER_first_three_year_plan_mission:0 "Complete the Three Year Plan"
   EoF_JER_first_three_year_plan_decision_0:0 "Expand Factory Floorplans"
   EoF_JER_first_three_year_plan_decision_1:0 "Prioritize Synthetic Refineries"
   EoF_JER_first_three_year_plan_decision_2:0 "Appoint National Industrial Corporations"
   EoF_JER_first_three_year_plan_decision_3:0 "Designate Civilian Industrial Sector"
+  EoF_JER_first_three_year_plan_decision_4:0 "Government Work Projects"
+
+  EoF_JER_second_three_year_plan_category:0 "The Second Three Year Plan"
+  EoF_JER_second_three_year_plan_category_desc:0 "The Three Year Plan is a series of economic and industrial reforms that will help Aquileia to modernize and industrialize its economy."
+
+  EoF_JER_second_three_year_plan_mission:0 "Complete the Three Year Plan"
+  EoF_JER_second_three_year_plan_decision_0:0 "Increase Production Throughput"
+  EoF_JER_second_three_year_plan_decision_1:0 "Industrial Innovations"
+  EoF_JER_second_three_year_plan_decision_2:0 "Focused Factory Construction"
+  EoF_JER_second_three_year_plan_decision_3:0 "Designate Military Industrial Sector"
+  EoF_JER_second_three_year_plan_decision_4:0 "Government Military Projects"
+  EoF_JER_second_three_year_plan_decision_5:0 "Support Military Infrastructure"
 
   EoF_JER_first_three_year_plan_decision_0_tt:0 "Every state with 5 Infrastructure will gain §G2§! Building Slots."
   EoF_JER_three_year_industry_concern_flag:0 "National Industrial Corporations Appointed" 
@@ -71,6 +83,7 @@
   EoF_JER_civ_corporation:0 "L Corporation"
   EoF_civilian_economy_concern:0 "Civilian Industry Concern"
   EoF_JER_civilian_zone:0 "Civilian Industrial Sector"
+  EoF_JER_military_zone:0 "Military Industrial Sector"
 
   EoF_industrial_levy_idea:0 "Industrial Levy"
   EoF_vanguardigo_arms_idea:0 "Vanguardio Arms"

@@ -6598,7 +6598,7 @@ focus_tree = {
 		y = 1
 		cost = 3
 		completion_reward = {
-			unlock_decision_category_tooltip = EoF_JER_three_year_plan_category
+			unlock_decision_category_tooltip = EoF_JER_first_three_year_plan_category
 			add_ideas = EoF_JER_first_plan
 		}
 	}
@@ -6616,10 +6616,8 @@ focus_tree = {
 			}
 		}
 		completion_reward = {
-			add_timed_idea = {
-				idea = EoF_JER_second_plan
-				days = 1095
-			}
+			unlock_decision_category_tooltip = EoF_JER_second_three_year_plan_category
+			add_ideas = EoF_JER_second_plan
 		}
 	}
 	shared_focus = {

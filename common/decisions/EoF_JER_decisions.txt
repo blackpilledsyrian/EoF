@@ -1,4 +1,4 @@
-EoF_JER_three_year_plan_category = {
+EoF_JER_first_three_year_plan_category = {
 	EoF_JER_first_three_year_plan_mission = {
 		icon = GFX_decision_generic_factory
 		allowed = {
@@ -8,14 +8,15 @@ EoF_JER_three_year_plan_category = {
 			has_completed_focus = EoF_begin_first_plan
 		}
 		available = {
-			infrastructure > 59
-			industrial_complex > 74
+			industrial_complex > 79
 		}
 		fire_only_once = yes
 		is_good = no
 		days_mission_timeout = 1095
 		complete_effect = {
 			remove_ideas = EoF_JER_first_plan
+			two_random_industrial_complex = yes
+			two_random_industrial_complex = yes
 			set_country_flag = EoF_JER_first_three_year_plan_complete_flag
 		}
 		timeout_effect = {
@@ -143,4 +144,231 @@ EoF_JER_three_year_plan_category = {
 			}
 		}
 	}
+	EoF_JER_first_three_year_plan_decision_4 = {
+		icon = GFX_decision_generic_factory
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan			
+		}
+        fire_only_once = yes
+        days_remove = 180
+		cost = 20
+        modifier = {
+            civilian_factory_use = 3
+			conscription_factor = -0.1
+        }
+        remove_effect = {
+			two_random_industrial_complex = yes
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_first_plan
+			}
+		}
+    }
+}
+EoF_JER_second_three_year_plan_category = {
+	EoF_JER_second_three_year_plan_mission = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			original_tag =  JER
+		}
+		activation = {
+			has_completed_focus = EoF_begin_second_plan
+		}
+		available = {
+			OR = {
+				dockyard > 39
+				arms_factory > 139
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 1095
+		complete_effect = {
+			remove_ideas = EoF_JER_second_plan
+			two_random_arms_factory = yes
+			two_random_arms_factory = yes
+			two_random_dockyard = yes
+			set_country_flag = EoF_JER_second_three_year_plan_complete_flag
+		}
+		timeout_effect = {
+			remove_ideas = EoF_JER_second_plan
+			set_country_flag = EoF_JER_second_three_year_plan_complete_flag
+		}
+	}
+	EoF_JER_second_three_year_plan_decision_0 = {
+		icon = GFX_decision_generic_industry
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 5
+        modifier = {
+            production_factory_efficiency_gain_factor = 0.1
+			production_factory_max_efficiency_factor = 0.1
+			industrial_capacity_factory = -0.2
+        }
+        remove_effect = {
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+    }
+	EoF_JER_second_three_year_plan_decision_1 = {
+		icon = GFX_decision_generic_research
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 30
+        modifier = {
+            research_speed_factor = -0.05
+			consumer_goods_factor = 0.1
+        }
+        remove_effect = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = industry
+			}
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+    }
+	EoF_JER_second_three_year_plan_decision_2 = {
+		icon = GFX_decision_generic_construction
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_first_plan
+			has_idea = EoF_JER_first_plan
+		}
+        fire_only_once = yes
+        days_remove = 90
+		cost = 30
+        modifier = {
+            production_cost_arms_factory_factor = -0.075
+			production_factory_max_efficiency_factor = -0.05
+        }
+        remove_effect = {
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+    }
+	EoF_JER_second_three_year_plan_decision_3 = {
+		icon = GFX_decision_ger_military_buildup
+		state_target = any_owned_state
+		target_root_trigger = {
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan			
+		}
+		target_array = core_states
+		target_trigger = {
+			FROM = {
+				impassable = no
+				NOT = {
+					has_dynamic_modifier = {
+						modifier = EoF_JER_military_zone
+					}
+				}
+			}
+		}
+		available = {
+			FROM = {
+				arms_factory > 4
+			}
+		}
+		on_map_mode = map_only
+		cost = 10
+		days_remove = 90
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = EoF_JER_military_zone
+				}
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+	}
+	EoF_JER_second_three_year_plan_decision_4 = {
+		icon = GFX_decision_ger_military_buildup
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan			
+		}
+        fire_only_once = yes
+        days_remove = 180
+		cost = 30
+        modifier = {
+            civilian_factory_use = 3
+			conscription_factor = -0.1
+        }
+        remove_effect = {
+			two_random_arms_factory = yes
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+    }
+	EoF_JER_second_three_year_plan_decision_5 = {
+		icon = GFX_decision_generic_factory
+        allowed = {
+            tag = JER
+        }
+		visible = {
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan			
+		}
+        fire_only_once = yes
+        days_remove = 180
+		cost = 30
+        modifier = {
+            production_speed_air_base_factor = 0.5
+			production_speed_anti_air_building_factor = 0.5
+			production_speed_bunker_factor = 0.5
+			production_speed_coastal_bunker_factor = 0.5
+			production_speed_arms_factory_factor = -0.5
+        }
+        remove_effect = {
+        }
+		cancel_trigger = {
+			NOT = {
+				has_idea = EoF_JER_second_plan
+			}
+		}
+    }
 }

@@ -303,3 +303,10 @@ EoF_JER_civilian_zone = {
 	state_production_speed_industrial_complex_factor = 0.4
 	state_production_speed_buildings_factor = -0.2
 }
+EoF_JER_military_zone = {
+	icon = GFX_decision_category_ger_military_buildup
+	max_dig_in = 1
+	state_production_speed_arms_factory_factor = 0.4
+	state_production_speed_dockyard = 0.4
+	state_production_speed_buildings_factor = -0.2
+}
