@@ -560,9 +560,11 @@ news_event = {
 	option = {
 		name = EoF.news.6.a
 		trigger = {
-			original_tag = EQS
-			original_tag = CRY
-			original_tag = EQC
+			OR = {
+				original_tag = EQS
+				original_tag = CRY
+				original_tag = EQC
+			}
 		}
 	}
 	option = {

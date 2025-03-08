@@ -723,7 +723,7 @@ on_actions = {
 				}
 				YAK = {
 					add_named_threat = {
-						threat = 10
+						threat = 15
 						name = EoF_YAK_JAK_civil_war_end_tension
 					}
 					remove_ideas = EoF_YAK_JAK_civil_war
@@ -1408,6 +1408,7 @@ on_actions = {
 				WNG = {
 					remove_ideas = EoF_WNG_treaty
 					remove_ideas = EoF_WNG_army_atrophy
+					set_equipment_fraction = 0.5
 				}
 				HLR = {
 					transfer_state = 570

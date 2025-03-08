@@ -1,0 +1,302 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_CHN_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/ger_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ger_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHN_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/GER_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_STG_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/sov_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/USA_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/USA_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_HIP_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/usa_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_EQS_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/eng_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FRA_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_JER_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/FRA_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/ITA_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_WNG_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/ITA_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_super_heavy_tank_chassis_a_medium"
+		texturefile = "gfx/interface/technologies/JAP_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_RCT_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/jap_amphibious_tank_1.dds"
+	}
+}

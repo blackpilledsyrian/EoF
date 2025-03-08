@@ -192,7 +192,6 @@ EoF_JER_second_three_year_plan_category = {
 			remove_ideas = EoF_JER_second_plan
 			two_random_arms_factory = yes
 			two_random_arms_factory = yes
-			two_random_dockyard = yes
 			set_country_flag = EoF_JER_second_three_year_plan_complete_flag
 		}
 		timeout_effect = {

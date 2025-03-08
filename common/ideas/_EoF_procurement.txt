@@ -6,7 +6,7 @@ ideas = {
 		nationalized_military_industry = {
 			picture = procurement_5
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			level = 1
 
@@ -26,7 +26,7 @@ ideas = {
 		national_arms_enterprises = {
 			picture = procurement_4
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			level = 2
 
@@ -46,14 +46,14 @@ ideas = {
 		corporate_arms_partnerships = {
 			picture = procurement_3
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			level = 3
 
 			modifier = {
 				consumer_goods_factor = 0.15
-				production_cost_arms_factory_factor = -0.05
-				production_cost_dockyard_factor = -0.05
+				production_cost_arms_factory_factor = -0.075
+				production_cost_dockyard_factor = -0.075
 				research_speed_factor = 0.025
 			}
 			equipment_bonus = {
@@ -66,7 +66,7 @@ ideas = {
 		subsidized_defence_contracts = {
 			picture = procurement_2
 			
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			level = 4
 
@@ -79,14 +79,14 @@ ideas = {
 			equipment_bonus = {
 				EoF_cat_eq_all_equipment = {
 					instant = yes
-					build_cost_ic = 0.03
+					build_cost_ic = 0.01
 				}
 			}
 		}
 		defence_contracts = {
 			picture = procurement_1
 
-			cost = 150
+			cost = 100
 			removal_cost = -1
 			level = 5
 
@@ -97,7 +97,6 @@ ideas = {
 			}
 
 			modifier = {
-				consumer_goods_factor = 0.05
 				production_cost_arms_factory_factor = -0.025
 				production_cost_dockyard_factor = -0.025
 				research_speed_factor = 0.05

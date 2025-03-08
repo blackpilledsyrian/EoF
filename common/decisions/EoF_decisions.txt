@@ -269,9 +269,9 @@ political_actions = {
 							NOT = {
 								is_in_faction_with = CHN
 							}
-							add_political_power = -300
 						}
 					}
+					add_political_power = -300
 				}
 				CHN = {
 					add_to_faction = JER
