@@ -15,6 +15,7 @@ sub_units = {
 		group = combat_support
 
 		categories = {
+			category_front_line
 			category_army
 			category_line_artillery
 			category_artillery
@@ -87,6 +88,7 @@ sub_units = {
 		group = mobile_combat_support
 		
 		categories = {
+			category_front_line
 			category_army
 			category_line_artillery
 			category_artillery

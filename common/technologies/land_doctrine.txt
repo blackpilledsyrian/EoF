@@ -988,7 +988,7 @@ technologies = {
 		dependencies = {
 			infantry_weapons = 1
 		}
-		category_front_line = {
+		category_army = {
 			 soft_attack = 0.1
 		}
 		

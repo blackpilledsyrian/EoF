@@ -17,7 +17,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 		}
@@ -130,7 +130,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_marines
@@ -205,7 +205,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_marines
@@ -370,7 +370,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_tanks
 			category_all_armor
@@ -489,7 +489,7 @@ sub_units = {
 		group = support
 		
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_tanks
 			category_all_armor

@@ -17,7 +17,7 @@ sub_units = {
 		}
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_all_at

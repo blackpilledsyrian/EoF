@@ -19,7 +19,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_magical
@@ -393,7 +393,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_all_armor
@@ -496,7 +496,7 @@ sub_units = {
         group = support
 
         categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_all_at
@@ -606,7 +606,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_magical
@@ -670,7 +670,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_magical
@@ -736,7 +736,7 @@ sub_units = {
 		group = support
 
 		categories = {
-			category_front_line
+			# category_front_line
 			category_support_battalions
 			category_army
 			category_magical

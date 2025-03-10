@@ -17,6 +17,7 @@ sub_units = {
 
 		categories = {
 			#category_sp_battalion_tanks
+			category_front_line
 			category_all_armor
 			category_army
 			category_all_artillery
@@ -89,6 +90,7 @@ sub_units = {
 
 		categories = {
 			#category_sp_battalion_tanks
+			category_front_line
 			category_all_armor
 			category_army
 			category_all_artillery
@@ -164,6 +166,7 @@ sub_units = {
 		
 		categories = {
 			#category_sp_battalion_tanks
+			category_front_line
 			category_all_armor
 			category_army
 			category_all_artillery
@@ -238,6 +241,7 @@ sub_units = {
 		
 		categories = {
 			#category_sp_battalion_tanks
+			category_front_line
 			category_all_armor
 			category_army
 			category_all_artillery

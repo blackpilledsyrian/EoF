@@ -1138,7 +1138,7 @@ technologies = {
 			kirin_race = 1
 		}
 		
-		category_army = {
+		category_front_line = {
 			river = {
 				attack = 0.1
 				movement = 0.1
