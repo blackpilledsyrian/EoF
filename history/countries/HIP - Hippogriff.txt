@@ -915,6 +915,7 @@ add_ideas = {
 	isolation
 	modern_society
 	proper_science_base
+	EoF_balance_motivation
 }
 
 set_stability = 0.3
