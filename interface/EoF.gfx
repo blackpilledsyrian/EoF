@@ -30,6 +30,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/traits/personal/trait_old_guard.dds"
 	}
 	spriteType = {
+		name = "GFX_trait_EoF_academy_scholar_trait"
+		texturefile = "gfx/interface/traits/personal/trait_SOV_foreign_military_advisor.dds"
+	}
+	spriteType = {
 		name = "GFX_ability_artillery_bombardment"
 		texturefile = "gfx/interface/abilitylist/ability_artillery_bombardment.dds"
 	}

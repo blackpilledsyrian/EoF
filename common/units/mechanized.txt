@@ -46,7 +46,7 @@ sub_units = {
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
 			infantry_equipment
-			mechanized_equipment
+			at_mechanized_equipment
 		}
 
 		# this is what moves us and sets speed
@@ -124,7 +124,7 @@ sub_units = {
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
 			infantry_equipment
-			mechanized_equipment
+			spg_mechanized_equipment
 		}
 
 		# this is what moves us and sets speed
@@ -203,7 +203,7 @@ sub_units = {
 		# needed since we give so much bonus to infantry even with no mech equipment
 		essential = {
 			infantry_equipment
-			mechanized_equipment
+			aa_mechanized_equipment
 		}
 
 		# this is what moves us and sets speed

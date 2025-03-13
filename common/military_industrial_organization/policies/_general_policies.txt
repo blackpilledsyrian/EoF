@@ -26,6 +26,7 @@ mio_policy_general_assembly_line_optimisers = {
 			has_mio_equipment_type = mio_cat_eq_all_main_battle_tank
 			has_mio_equipment_type = mio_cat_eq_all_heavy_tank
 			has_mio_equipment_type = mio_cat_eq_all_super_heavy_tank
+			has_mio_equipment_type = armor
 			has_mio_equipment_type = motorized_equipment
 			has_mio_equipment_type = mechanized_equipment
 			has_mio_equipment_type = EoF_cat_eq_all_anti_tank

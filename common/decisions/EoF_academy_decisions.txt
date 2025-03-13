@@ -34,6 +34,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = organizer
@@ -79,6 +82,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -126,6 +132,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = cavalry_leader
@@ -171,6 +180,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -218,6 +230,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = infantry_leader
@@ -263,6 +278,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -310,6 +328,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = commando
@@ -355,6 +376,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -402,6 +426,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = skilled_staffer
@@ -447,6 +474,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -495,6 +525,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = heat_specialist
@@ -541,6 +574,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -589,6 +625,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = swamp_fox
@@ -635,6 +674,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -683,6 +725,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = hill_fighter
@@ -729,6 +774,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS
@@ -777,6 +825,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = ranger
@@ -824,6 +875,9 @@ EoF_academy_category = {
 				limit = {
 					has_trait = EoF_academy_trait
 				}
+				unit_leader_event = {
+					id = EoF_unit.1
+				}
 				add_trait = {
 					character = THIS
 					trait = urban_assault_specialist
@@ -870,6 +924,9 @@ EoF_academy_category = {
 			random_unit_leader = {
 				limit = {
 					has_trait = EoF_academy_trait
+				}
+				unit_leader_event = {
+					id = EoF_unit.1
 				}
 				add_trait = {
 					character = THIS

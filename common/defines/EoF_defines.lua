@@ -38,8 +38,14 @@ NDefines.NCountry.MAX_STABILITY = 1.5
 NDefines.NCountry.MIN_WAR_SUPPORT = 0.0
 NDefines.NCountry.MAX_WAR_SUPPORT = 1.5
 
+NDefines.NMilitary.VPS_FOR_HISTORY_ENTRY = 1			-- Minimum VPs required to receive an entry in divisional history
+NDefines.NMilitary.VPS_FOR_HIGH_HISTORY_ENTRY = 5		-- VPs required for high-level history entry
+NDefines.NMilitary.COST_INCREASE_PER_ACTIVE_MEDAL = 1		-- Additional cost factor per active medal
+NDefines.NMilitary.HISTORY_OPERATION_RANDOM_MAX = 10		-- max random int to roll when determining whether to grant an awardable entry for operations. 1/N chances.
+NDefines.NMilitary.CASUALTY_COUNT_FOR_HISTORY_ENTRY = 25000	-- number of received casualties to receive a history entry (one only)
+
 NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = true	-- Whether unit leader XP gain is scaled by 1/<nr_of_traits>
-NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.75		-- Base xp gain for traits per hour for armies
+NDefines.NMilitary.BASE_LEADER_TRAIT_GAIN_XP = 0.60		-- Base xp gain for traits per hour for armies
 NDefines.NMilitary.MAX_NUM_TRAITS = -1				-- cant have more, -1 to disable
 
 NDefines.NMilitary.BASE_FORT_PENALTY = -0.15			-- fort penalty

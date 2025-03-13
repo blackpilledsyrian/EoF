@@ -1,7 +1,17 @@
 add_namespace = EoF
+add_namespace = EoF_unit
 add_namespace = EoF.news
 add_namespace = Eof.ole
 add_namespace = EoF.cityfall
+unit_leader_event = {
+	id = EoF_unit.1
+	title = EoF_unit.1.t
+	desc = EoF_unit.1.desc
+	is_triggered_only = yes
+	option = {
+		name = EoF_unit.1.a
+	}
+}
 country_event = {
 	id = EoF.1
 	is_triggered_only = yes

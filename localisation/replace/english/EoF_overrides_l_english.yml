@@ -5,3 +5,35 @@
  mothership_equipment_0:  "Basic Mothership Airframe"
  mothership_equipment_0_short: "Basic Mothership Aircraft"
  mothership_equipment_0_desc: "A very large plane that carries several fighter planes into combat, allowing for further reach than would normally be possible. The carrier of the sky."
+
+ bold_attack_spirit_tt:0 ""
+ tenacious_defense_spirit_tt:0 ""
+ meticulous_preparation_spirit_tt:0 ""
+
+ best_of_the_best_spirit_tt:0 "New Officers: Begin with §G+1§! max trait."
+ best_of_the_best_spirit_desc:0 "Few people have what it takes to lead soldiers into battle. Fewer still have what it takes to win that battle.\n\n§GThis spirit is available due to our ideology.§!"
+ academy_scholarships_spirit_tt:0 "New Officers: Begin with §Y"Academy Scholar"§! trait."
+ political_loyalty_spirit_tt:0 ""
+
+ inventive_leadership_spirit_tt:0 ""
+
+ mobile_warfare_academy_spirit_tt:0 ""
+ mobile_warfare_academy_spirit_desc:1 "Wherever future battles are fought, armored troops will play the decisive role."
+ superior_firepower_academy_spirit_tt:0 ""
+ superior_firepower_academy_spirit_desc:2 "There is a lot of science involved in digging a proper ditch."
+ theatre_training_academy_spirit_tt:0 ""
+ theatre_training_spirit_desc:1 "Some officers may 'go native', but natives are very good at fighting on their chosen terrain."
+ mass_assault_academy_spirit_tt:0 ""
+ mass_assault_academy_spirit_desc:1 "Infantry is the Queen of Battle, and the Queen goes wherever she pleases."
+
+ mobile_warfare_army_spirit:0 "Motorization Drive"
+ mobile_warfare_army_spirit_desc:1 "Strike faster, go further, win harder!"
+ superior_firepower_army_spirit:0 "Overwhelming Firepower"
+ superior_firepower_army_spirit_desc:1 "If artillery doesn't win you battles, you're not using enough of it."
+ grand_battleplan_army_spirit:0 "Tip of the Spear"
+ grand_battleplan_army_spirit_desc:1 "The dagger in the night is often more effective than the longsword in the day."
+ mass_assault_army_spirit:1 "Bayonet Strength"
+ mass_assault_army_spirit_desc:1 "When all is said and done, a tank or airplane can't hold a patch of ground."
+
+ modifier_trait_cavalry_leader_xp_gain_factor:0 "£experience_neutral_texticon  Motorized Leader Trait XP Gain"
+ modifier_trait_artillery_specialist_xp_gain_factor:0 "£experience_neutral_texticon  Artillery Leader Trait XP Gain"

@@ -1,4 +1,8 @@
 ﻿l_english:
+EoF_unit.1.t:0 "[THIS.GetName] Completes Academy Training"
+EoF_unit.1.desc:0 "[THIS.GetName] has returned from academy training. Their expertise has been refined, and they are now better prepared to lead troops in the challenges ahead."
+EoF_unit.1.a:0 "Congratulations"
+
 EoF.2.t:0 "Thanks From the Yaks"
 EoF.2.desc:0 "As thanks for our contribution to their victory in the civil war, the Yaks have sent over a delegation bearing traditional gifts of their country. After the official celebratory ceremony, the Yak delegation privately confirmed the transfer of 50 tonnes of gold seized from the Jaks."
 EoF.2.a:0 "We can't accept all this..."

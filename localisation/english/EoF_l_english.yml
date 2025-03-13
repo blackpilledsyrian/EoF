@@ -217,8 +217,14 @@ EoF_academy_cancel:0 "Cancel Training"
 EoF_academy_trait:0 "Academy Training"
 EoF_academy_trait_desc:0 "Selected for additional training at the General Academy."
 
-EoF_expanded_command_trait:0 "Dedicated Command"
-EoF_expanded_command_trait_desc:0 "Specialization in command of a select number of divisions."
+EoF_academy_scholar_trait:0 "Academy Scholar"
+EoF_academy_scholar_trait_desc:0 "§LFor those who consider themselves learned, education is a lifelong matter.§!"
+EoF_academy_scholar_trait_tt:0 "Daily XP Gain: §G+2§!"
+
+mobile_warfare_army_spirit_tt:0 "§YTruck§!:\n    £production_cost Production Cost: §G-10.00%§!"
+
+flexible_organization_spirit_tt:0 "Additional §YNon-Country Specific§! Tactic Chance if it is Preferred tactic: §G+100.00%§!"
+tactic_blitz_preferred_weight_factor:0 "Additional §YBlitz§! Tactic Chance if it is Preferred tactic: §G+100.00%§!"
 
 EoF_GRF_border_war_mission:0 "Demand the Village Up North"
 EoF_GRF_border_war_mission_desc:0 "The Village Up North has long been a reminder of Equestria's blatent disregard for our nation. By demanding its annexation we will finally send a message that we are not to be taken lightly."
