@@ -71,20 +71,5 @@ ideas = {
 				production_speed_dockyard_factor = 0.5
 			}		
 		}
-		EoF_balance_motivation = {
-			removal_cost = -1
-			picture = chi_war_of_resistance3
-			modifier = {
-				conscription = 0.1
-				army_attack_factor = 0.5
-				naval_damage_factor = 0.5
-				consumer_goods_factor = -1.0
-				industrial_capacity_factory = 1.0
-				industrial_capacity_dockyard = 1.0
-				production_speed_buildings_factor = 1.0
-				research_speed_factor = 0.5
-				surrender_limit = 1.0
-			}	
-		}
 	}
 }

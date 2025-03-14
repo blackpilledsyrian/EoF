@@ -109,6 +109,7 @@ EoF_losing_desc:0 "All of our plans have failed. Our armies are either battered 
 
 EoF_operation_vegetarian:0 "Operation Vegetarian"
 EoF_operation_vegetarian_desc:0 ""
+EoF_operation_vegetarian_tt:0 "After §Y180 days§! unlocks §YOperation Vegetarian Raid§! which may be launched up to 5 times."
 EoF_experimental_magic:0 "Experimental Magic Division"
 EoF_experimental_magic_desc:0 ""
 EoF_polyphony:0 "Project Polyphony"
