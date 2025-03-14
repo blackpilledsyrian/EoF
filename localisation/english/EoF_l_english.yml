@@ -224,7 +224,7 @@ EoF_academy_scholar_trait_tt:0 "Daily XP Gain: §G+2§!"
 mobile_warfare_army_spirit_tt:0 "§YTruck§!:\n    £production_cost Production Cost: §G-10.00%§!"
 
 flexible_organization_spirit_tt:0 "Additional §YNon-Country Specific§! Tactic Chance if it is Preferred tactic: §G+100.00%§!"
-tactic_blitz_preferred_weight_factor:0 "Additional §YBlitz§! Tactic Chance if it is Preferred tactic: §G+100.00%§!"
+tactic_blitz_preferred_weight_factor:0 "Additional §YBlitz§! Tactic Chance if it is Preferred tactic"
 
 EoF_GRF_border_war_mission:0 "Demand the Village Up North"
 EoF_GRF_border_war_mission_desc:0 "The Village Up North has long been a reminder of Equestria's blatent disregard for our nation. By demanding its annexation we will finally send a message that we are not to be taken lightly."
@@ -276,8 +276,10 @@ EoF_equestrian_army_decision:0 "Recruit Local Conscripts"
 EoF_locals_conscripted:0 "Locals Conscripted"
 
 EoF_operation_vegetarian_stockpile:0 "Operation Vegetarian Preparation"
-EoF_operation_vegetarian_decision:0 "Enact Operation Vegetarian"
-EoF_operation_vegetarian_flag:0 "Operation Vegetarian Permitted"
+raid_type_EoF_vegetarian_raid:0 "Operation Vegetarian Raid"
+raid_type_EoF_vegetarian_raid_desc:0 "An air deployment of a powerful insecticide turned chemical weapon 'Ant-Thrax'. Spreading of the chemical over the area will result in significant difficulties for all troops attempting to operate there."
+EoF_operation_vegetarian_flag:0 "Ant-Thrax Stockpiled"
+EoF_operation_vegetarian_depleted_flag:0 "Ant-Thrax Stockpile Depleted"
 
 EoF_ant_thrax_CHN:0 "Dense Ant-Thrax"
 EoF_ant_thrax_EQS:0 "Sparse Ant-Thrax"

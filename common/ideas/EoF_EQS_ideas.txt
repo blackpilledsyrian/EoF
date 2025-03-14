@@ -670,7 +670,12 @@ ideas = {
 				political_power_cost = 0.1
 				military_factory_donations = -2
 				war_support_weekly = -0.002 
-			}			
+			}	
+			on_remove = {
+				hidden_effect = {
+					set_country_flag = EoF_operation_vegetarian_flag
+				}
+			}		
 		}
 	}
 }

@@ -283,52 +283,9 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = EoF_great_war.9.a
-		unlock_decision_tooltip = EoF_operation_vegetarian_decision
 		add_timed_idea = {
 			idea = EoF_operation_vegetarian_stockpile
 			days = 180
-		}
-		set_country_flag = EoF_operation_vegetarian_flag
-	}
-}
-country_event = {
-	id = EoF_great_war.10
-	title = EoF_great_war.10.t
-	desc = EoF_great_war.10.desc
-	picture = GFX_event_forest_depression
-	is_triggered_only = yes
-	option = {
-		name = EoF_great_war.10.a
-		CHN = {
-			every_controlled_state = {
-				limit = {
-					any_neighbor_state = {
-						OR = {
-							is_controlled_by = EQS
-						}
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = EoF_ant_thrax_CHN
-					days = 180
-				}
-			}
-		}
-		EQS = {
-			every_controlled_state = {
-				limit = {
-					any_neighbor_state = {
-						OR = {
-							is_controlled_by = CHN
-							is_controlled_by = OLE
-						}
-					}
-				}
-				add_dynamic_modifier = {
-					modifier = EoF_ant_thrax_EQS
-					days = 180
-				}
-			}
 		}
 	}
 }
