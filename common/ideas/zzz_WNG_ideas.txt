@@ -2601,19 +2601,6 @@ ideas = {
 			}
 		}
 
-		WNG_greda = {
-			picture = WNG_greda
-	
-			allowed = {
-				original_tag = WNG
-			}
-
-			research_bonus = {
-				artillery = 0.15
-			}
-			traits = { artillery_manufacturer }
-		}
-
 		WNG_taloncia = {
 			picture = WNG_taloncia
 
@@ -2794,19 +2781,10 @@ ideas = {
 
 		WNG_alcedinidae = {
 			allowed = {
-				OR = {
-					original_tag = WNG
-					original_tag = FRN
-				}
+				original_tag = WNG
 			}
 			visible = {
-				OR = {
-					original_tag = WNG
-					owns_state = 371
-				}
-			}
-            available = {
-				owns_state = 371
+				original_tag = WNG
 			}
 
 			research_bonus = {
@@ -2833,19 +2811,10 @@ ideas = {
 
 		WNG_high_seas_fleet_designer = {
 			allowed = {
-				OR = {
-					original_tag = WNG
-					original_tag = FRN
-				}
+				original_tag = WNG
 			}
 			visible = {
-				OR = {
-					original_tag = WNG
-					owns_state = 371
-				}
-			}
-            available = {
-				owns_state = 371
+				original_tag = WNG
 			}
 
 			research_bonus = {
@@ -2859,19 +2828,10 @@ ideas = {
 			picture = WNG_gansaldo
 
 			allowed = {
-				OR = {
-					original_tag = WNG
-					original_tag = FRN
-				}
+				original_tag = WNG
 			}
 			visible = {
-				OR = {
-					original_tag = WNG
-					owns_state = 371
-				}
-			}
-            available = {
-				owns_state = 371
+				original_tag = WNG
 			}
 
 			research_bonus = {
@@ -2885,19 +2845,10 @@ ideas = {
 			picture = WNG_crdk
 
 			allowed = {
-				OR = {
-					original_tag = WNG
-					original_tag = FRN
-				}
+				original_tag = WNG
 			}
 			visible = {
-				OR = {
-					original_tag = WNG
-					owns_state = 371
-				}
-			}
-            available = {
-				owns_state = 371
+				original_tag = WNG
 			}
 
 			research_bonus = {
@@ -2911,19 +2862,10 @@ ideas = {
 			picture = WNG_otg
 
 			allowed = {
-				OR = {
-					original_tag = WNG
-					original_tag = FRN
-				}
+				original_tag = WNG
 			}
 			visible = {
-				OR = {
-					original_tag = WNG
-					owns_state = 371
-				}
-			}
-            available = {
-				owns_state = 371
+				original_tag = WNG
 			}
 
 			research_bonus = {

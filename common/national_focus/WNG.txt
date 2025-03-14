@@ -4311,7 +4311,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 10
@@ -4353,7 +4353,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 10
@@ -4438,7 +4438,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 10
@@ -4482,7 +4482,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 10
@@ -4512,7 +4512,7 @@ focus_tree = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		ai_will_do = {
 			factor = 10
@@ -4783,6 +4783,7 @@ focus_tree = {
 			}
 		}
 		search_filters = { FOCUS_FILTER_STABILITY }
+		available_if_capitulated = yes
 	}
 	focus = {
 		id = WNG_absolute_rule
@@ -4820,6 +4821,7 @@ focus_tree = {
 			WNG_take_10_popular_support = yes
 			add_country_leader_trait = absolute_monarch
 		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY }
 	}
 	focus = {
@@ -4844,6 +4846,7 @@ focus_tree = {
 			add_stability = 0.05
 			add_political_power = 150
 		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 	}
 	focus = {
@@ -4872,6 +4875,7 @@ focus_tree = {
 		completion_reward = {
 			add_country_leader_trait = commoners_king
 		}
+		available_if_capitulated = yes
 	}
 
 	focus = {
@@ -4892,6 +4896,7 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = WNG_invest_in_the_future
 		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 	}
 
@@ -4916,6 +4921,7 @@ focus_tree = {
 				add_idea = WNG_royal_youth_awards
 			}
 		}
+		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_ARMY_BONUS }
 	}
 	focus = {
@@ -4932,6 +4938,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+		available_if_capitulated = yes
 
 		completion_reward = {
 			add_ideas = WNG_expand_the_regia_marina
@@ -4967,6 +4974,7 @@ focus_tree = {
 				}
 			}
 		}
+		available_if_capitulated = yes
 
 		completion_reward = {
 			country_event = wingbardy.34
@@ -5001,6 +5009,7 @@ focus_tree = {
 				}
 			}
 		}
+		available_if_capitulated = yes
 		mutually_exclusive = {
 			focus = WNG_the_chiazbeacle_pact
 			focus = WNG_wingbardy_rises
@@ -5030,6 +5039,7 @@ focus_tree = {
 		ai_will_do = {
 			factor = 5
 		}
+		available_if_capitulated = yes
 
 		completion_reward = {
 			two_random_arms_factory = yes
@@ -9303,7 +9313,7 @@ offset = {
 		y = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_build_a_military_economy"
@@ -9359,7 +9369,7 @@ offset = {
 		y = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_university_of_feathara"
@@ -9387,7 +9397,7 @@ offset = {
 		y = 1
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		available = {
 			NOT = {
@@ -9633,7 +9643,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_wingbardian_motor_industry"
@@ -9689,7 +9699,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_owlivetti_electronics"
@@ -11394,7 +11404,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_refund_officers_school"
@@ -11429,7 +11439,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_refund_officers_school"
@@ -11475,7 +11485,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_new_ideas"
@@ -11526,7 +11536,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_old_ideas"
@@ -11566,7 +11576,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_armoured_trucks"
@@ -11603,7 +11613,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_tanks"
@@ -11641,7 +11651,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_blackclaw_rangers"
@@ -11675,7 +11685,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_alati"
@@ -11734,7 +11744,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_alpini"
@@ -11791,7 +11801,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_paracadutisti"
@@ -11848,7 +11858,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_artilery"
@@ -11886,7 +11896,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_reserve_divisions"
@@ -11919,7 +11929,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_logistical_corpes"
@@ -11958,7 +11968,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_royal_support_corpes"
@@ -12008,7 +12018,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_beak_and_claw"
@@ -12047,7 +12057,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_artillery_supremacy"
@@ -12086,7 +12096,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_work_with_the_industralists"
@@ -12118,7 +12128,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_modern_warfare"
@@ -12152,7 +12162,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_infantry_supremacy"
@@ -12191,7 +12201,7 @@ offset = {
 
 		cancel_if_invalid = yes
 		continue_if_invalid = no
-		available_if_capitulated = no
+		available_if_capitulated = yes
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus WNG_infantry_supremacy"

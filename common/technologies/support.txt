@@ -3122,7 +3122,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = armored_train
+			leads_to_tech = railway_gun
 			research_cost_coeff = 1
 		}
 		
@@ -3167,11 +3167,11 @@ technologies = {
 			}
 		}
 
-		research_cost = 1.5
+		research_cost = 3
 		start_year = 1007
 		folder = {
 			name = support_folder
-			position = { x = 4 y = 3 }
+			position = { x = 2 y = 3 }
 		}
 		path = {
 			leads_to_tech = tactical_missile_system
@@ -3289,7 +3289,7 @@ technologies = {
 	}
 
 	armored_train = {
-		enable_equipments = {
+			enable_equipments = {
 			train_equipment_3
 		}
 
@@ -3309,10 +3309,10 @@ technologies = {
 
 		research_cost = 1.5
 		start_year = 1007
-		folder = {
-			name = support_folder
-			position = { x = 2 y = 3 }
-		}
+		# folder = {
+		# 	name = support_folder
+		# 	position = { x = 2 y = 3 }
+		# }
 		
 		categories = {
 			train_tech

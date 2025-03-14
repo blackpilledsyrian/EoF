@@ -1,4 +1,13 @@
 EoF_academy_category = {
+	EoF_off_cooldown_notifier = {
+	icon = GFX_decision_eng_propaganda_campaigns
+		available = {
+			NOT = {
+				has_country_flag = EoF_academy_in_progress
+			}
+		}
+	}
+	
 	EoF_academy_organizer = {
 		icon = GFX_decision_generic_army_support
 		available = {

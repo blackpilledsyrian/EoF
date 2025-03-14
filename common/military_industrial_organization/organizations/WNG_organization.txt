@@ -33,23 +33,7 @@ WNG_fwan_organization = {
 	icon = GFX_idea_WNG_alcedinidae
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
-		OR = {
-			original_tag = WNG
-			original_tag = FRN
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				original_tag = WNG
-				owns_state = 371
-			}
-		}
-	}
-	available = {
-		owner = {
-			owns_state = 371
-		}
+		original_tag = WNG
 	}
 }
 
@@ -59,23 +43,7 @@ WNG_high_seas_fleet_designer_organization = {
 	icon = GFX_idea_WNG_high_seas_fleet_designer
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
-		OR = {
-			original_tag = WNG
-			original_tag = FRN
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				original_tag = WNG
-				owns_state = 371
-			}
-		}
-	}
-	available = {
-		owner = {
-			owns_state = 371
-		}
+		original_tag = WNG
 	}
 }
 
@@ -85,23 +53,7 @@ WNG_gansaldo_organization = {
 	icon = GFX_idea_WNG_gansaldo
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
-		OR = {
-			original_tag = WNG
-			original_tag = FRN
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				original_tag = WNG
-				owns_state = 371
-			}
-		}
-	}
-	available = {
-		owner = {
-			owns_state = 371
-		}
+		original_tag = WNG
 	}
 }
 WNG_crdk_organization = {
@@ -110,23 +62,7 @@ WNG_crdk_organization = {
 	icon = GFX_idea_WNG_crdk
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
-		OR = {
-			original_tag = WNG
-			original_tag = FRN
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				original_tag = WNG
-				owns_state = 371
-			}
-		}
-	}
-	available = {
-		owner = {
-			owns_state = 371
-		}
+		original_tag = WNG
 	}
 }
 WNG_otg_organization = {
@@ -135,23 +71,7 @@ WNG_otg_organization = {
 	icon = GFX_idea_WNG_otg
 	allowed = {
 		has_dlc = "Arms Against Tyranny"
-		OR = {
-			original_tag = WNG
-			original_tag = FRN
-		}
-	}
-	visible = {
-		owner = {
-			OR = {
-				original_tag = WNG
-				owns_state = 371
-			}
-		}
-	}
-	available = {
-		owner = {
-			owns_state = 371
-		}
+		original_tag = WNG
 	}
 }
 
@@ -274,18 +194,6 @@ WNG_beaketta_organization = {
 	include = generic_infantry_equipment_organization
 	name = WNG_beaketta
 	icon = GFX_idea_WNG_beaketta
-
-	allowed = {
-		original_tag = WNG
-		has_dlc = "Arms Against Tyranny"
-	}
-}
-
-
-WNG_greda_organization = {
-	include = generic_artillery_organization
-	name = WNG_greda
-	icon = GFX_idea_WNG_greda
 
 	allowed = {
 		original_tag = WNG
