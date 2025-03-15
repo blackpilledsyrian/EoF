@@ -678,6 +678,8 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	base =  { factor = 4 }
 	picture = tactic_guerrilla_tactics
 
+	countered_by = tactic_planned_attack
+
 	combat_width = -0.33
 	attacker = -0.7
 	defender = -0.6
@@ -694,6 +696,8 @@ tactic_motti_tactics = {
 
 	base =  { factor = 4 }
 	picture = tactic_guerrilla_tactics
+
+	countered_by = tactic_planned_attack
 
 	combat_width = -0.33
 	attacker = -0.8

@@ -2601,6 +2601,19 @@ ideas = {
 			}
 		}
 
+		WNG_greda = {
+			picture = WNG_greda
+	
+			allowed = {
+				original_tag = WNG
+			}
+
+			research_bonus = {
+				artillery = 0.15
+			}
+			traits = { artillery_manufacturer }
+		}
+
 		WNG_taloncia = {
 			picture = WNG_taloncia
 
@@ -2781,10 +2794,19 @@ ideas = {
 
 		WNG_alcedinidae = {
 			allowed = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					original_tag = FRN
+				}
 			}
 			visible = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					owns_state = 371
+				}
+			}
+            available = {
+				owns_state = 371
 			}
 
 			research_bonus = {
@@ -2811,10 +2833,19 @@ ideas = {
 
 		WNG_high_seas_fleet_designer = {
 			allowed = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					original_tag = FRN
+				}
 			}
 			visible = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					owns_state = 371
+				}
+			}
+            available = {
+				owns_state = 371
 			}
 
 			research_bonus = {
@@ -2828,10 +2859,19 @@ ideas = {
 			picture = WNG_gansaldo
 
 			allowed = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					original_tag = FRN
+				}
 			}
 			visible = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					owns_state = 371
+				}
+			}
+            available = {
+				owns_state = 371
 			}
 
 			research_bonus = {
@@ -2845,10 +2885,19 @@ ideas = {
 			picture = WNG_crdk
 
 			allowed = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					original_tag = FRN
+				}
 			}
 			visible = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					owns_state = 371
+				}
+			}
+            available = {
+				owns_state = 371
 			}
 
 			research_bonus = {
@@ -2862,10 +2911,19 @@ ideas = {
 			picture = WNG_otg
 
 			allowed = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					original_tag = FRN
+				}
 			}
 			visible = {
-				original_tag = WNG
+				OR = {
+					original_tag = WNG
+					owns_state = 371
+				}
+			}
+            available = {
+				owns_state = 371
 			}
 
 			research_bonus = {

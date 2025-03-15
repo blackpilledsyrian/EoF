@@ -193,8 +193,6 @@ EoF_advanced_academy:0 "Developed Advanced Academy Training"
 
 EoF_academy_in_progress:0 "Academy in Progress"
 
-EoF_off_cooldown_notifier:0 "'Academy Is Off Cooldown' Notification"
-EoF_off_cooldown_notifier_desc:0 "This button does nothing, it exists to trigger the 'decisions available' notification when academy is off cooldown"
 EoF_academy_organizer:0 "Organization Training"
 EoF_academy_panzer_leader:0 "Armour Command Training"
 EoF_academy_cavalry_leader:0 "Motorized Command Training"

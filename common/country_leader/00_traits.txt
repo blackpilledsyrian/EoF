@@ -5662,10 +5662,10 @@ leader_traits = {
 
 	fortification_engineer = {
 		random = yes
-		production_speed_bunker_factor = 0.2
-		production_speed_coastal_bunker_factor = 0.2
-		land_bunker_effectiveness_factor = 0.2
-		coastal_bunker_effectiveness_factor = 0.2
+		production_cost_bunker_factor = -0.25
+		production_cost_coastal_bunker_factor = -0.25
+		land_bunker_effectiveness_factor = 0.1
+		coastal_bunker_effectiveness_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
