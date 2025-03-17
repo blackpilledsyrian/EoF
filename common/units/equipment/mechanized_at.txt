@@ -43,15 +43,16 @@ equipments = {
 
 		#Offensive Abilities
 		hard_attack = 8
+		soft_attack = 3
 		ap_attack = 30
 
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 6
+		defense = 18
+		breakthrough = 9
 		hardness = 0.4
 		armor_value = 20
 
-		build_cost_ic = 8
+		build_cost_ic = 12
 		resources = {
 			steel = 20
 			tungsten = 5
@@ -75,15 +76,16 @@ equipments = {
 
 		#Offensive Abilities
 		hard_attack = 12
+		soft_attack = 4
 		ap_attack = 45
 
 		#Defensive Abilities
-		defense = 15
-		breakthrough = 8
+		defense = 24
+		breakthrough = 12
 		hardness = 0.4
 		armor_value = 30
 
-		build_cost_ic = 9
+		build_cost_ic = 14
 		resources = {
 			steel = 25
 			tungsten = 5
@@ -109,18 +111,19 @@ equipments = {
 
 		#Offensive Abilities
 		hard_attack = 16
+		soft_attack = 5
 		ap_attack = 60
 
 		#Defensive Abilities
-		defense = 17
-		breakthrough = 10
+		defense = 30
+		breakthrough = 15
 		hardness = 0.4
 		armor_value = 40
 
 		#Offensive Abilities
 		ap_attack = 0
 
-		build_cost_ic = 10
+		build_cost_ic = 16
 		resources = {
 			steel = 30
 			tungsten = 5

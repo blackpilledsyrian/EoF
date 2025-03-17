@@ -32,14 +32,13 @@ equipments = {
 		reliability = 0.8
 
 		#Defensive Abilities
-		defense = 13
-		breakthrough = 6
+		defense = 18
+		breakthrough = 9
 		hardness = 0.4
 		armor_value = 20
 
 		#Offensive Abilities
-		ap_attack = 0
-		air_attack = 0
+		soft_attack = 3
 
 		#Space taken in convoy
 		lend_lease_cost = 5
@@ -75,13 +74,13 @@ equipments = {
 		maximum_speed = 7
 
 		#Defensive Abilities
-		defense = 15
-		breakthrough = 8
+		defense = 24
+		breakthrough = 12
 		hardness = 0.4
 		armor_value = 30
 
 		#Offensive Abilities
-		ap_attack = 0
+		soft_attack = 4
 
 		build_cost_ic = 6.75
 		resources = {
@@ -105,13 +104,13 @@ equipments = {
 		maximum_speed = 8
 
 		#Defensive Abilities
-		defense = 17
-		breakthrough = 10
+		defense = 30
+		breakthrough = 15
 		hardness = 0.4
 		armor_value = 40
 
 		#Offensive Abilities
-		ap_attack = 0
+		soft_attack = 5
 
 		build_cost_ic = 7.5
 		resources = {

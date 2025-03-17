@@ -1,5 +1,7 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.3, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 25			-- Days of client lag for decrease of gamespeed
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 25				-- Days of client lag for pause of gamespeed.
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.25, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20			-- This much progress can be saved while not having a focus selected
 
@@ -354,6 +356,57 @@ NDefines.NNavy.NAVAL_COMBAT_AIR_MAX_SPEED_TO_SUB_DETECTION = 0.0				-- Same, but
 NDefines.NNavy.NAVAL_COMBAT_AIR_PLANE_COUNT_TO_SUB_DETECTION = 1.0				-- Factor applied to the number of active plane in a naval combat to deduce their contribution to sub detection
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_DECAY_RATE = 1.0					-- Factor to decay the value of sub detection contributed by planes on the last hour. Note: the maximum value between the decayed value and the newly computed one is taken into account. A decay rate of 1 means that nothing is carried over, the previous value is zerod out. A decay rate of 0 means that the previous value is carried over as is.
 NDefines.NNavy.NAVAL_COMBAT_AIR_SUB_DETECTION_FACTOR = 0.0					-- A global factor that applies after all others, right before the sub detection contributed by plane is added to the global sub detection of a combatant
+
+NDefines.NNavy.NAVY_PIERCING_THRESHOLDS = {			-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+		2.00,
+		1.50,
+		1.00,
+		0.90,
+		0.80,
+		0.70,
+		0.60,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00 --there isn't much point setting this higher than 0
+	}
+
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_CRITICAL_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		3.00,
+		2.00,
+		1.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00,
+		0.00 -- For criticals, you could reduce crit chance unlike damage in army combat, but we do not for now.
+	}
+
+NDefines.NNavy.NAVY_PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+		1.00,
+		1.00,
+		1.00,
+		0.90,
+		0.80,
+		0.70,
+		0.60,
+		0.50,
+		0.40,
+		0.30,
+		0.20,
+		0.10,
+		0.00 --there isn't much point setting this higher than 0	
+	}
+
+-- all of these NEED to be the same size!!!!
+
 
 -- defines that are used for supply reach for built nodes
 NDefines.NSupply.NODE_INITIAL_SUPPLY_FLOW = 3.0
