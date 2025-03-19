@@ -1606,7 +1606,7 @@ technologies = {
 	tech_pony_magical_infantry5 = {
 
 		category_magical = {
-			max_strength = 5
+			max_strength = 3
 
 			defense = 0.03
 		}
@@ -1846,7 +1846,7 @@ technologies = {
 	tech_pony_unicorns5 = {
 
 		category_all_infantry = {
-			max_strength = 3
+			max_strength = 1
 			defense = 0.03
 		}
 

@@ -41,6 +41,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		armor_value = -0.5
+		soft_attack = 0.1
 
 		suppression = 0.75
 
@@ -113,6 +114,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		armor_value = -0.5
+		soft_attack = 0.1
 
 		suppression = 0.8
 
@@ -188,6 +190,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		armor_value = -0.5
+		soft_attack = 0.1
 
 		suppression = 0.75
 
@@ -263,6 +266,7 @@ sub_units = {
 		supply_consumption = 0.2
 
 		armor_value = -0.5
+		soft_attack = 0.1
 
 		suppression = 2
 
