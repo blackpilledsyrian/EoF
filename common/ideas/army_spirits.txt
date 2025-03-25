@@ -471,6 +471,15 @@ ideas = {
 				}
 			}
 		}
+		#EoF Changes#
+		EoF_CHN_mechanism = {
+			ledger = army
+			visible = { has_completed_focus = EoF_lessons_of_war }
+			modifier = {
+				combat_width_factor = -0.05
+				coordination_bonus = 0.1
+			}
+		}
 	}
 
 	division_command_spirit = {

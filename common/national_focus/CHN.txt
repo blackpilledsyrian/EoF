@@ -2506,6 +2506,7 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_ideas = EoF_CHN_mechanism
 		}
 	}
 

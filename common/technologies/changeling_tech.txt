@@ -430,16 +430,14 @@ technologies = {
 
 	tech_changeling_a3 = {
 
-		production_speed_bunker_factor = 0.1
-		production_speed_coastal_bunker_factor = 0.1
-		dig_in_speed_factor = 0.07
-		on_research_complete = {
-			custom_effect_tooltip = {
-				localization_key = SP_UNLOCK_PROJECT
-				PROJECT = sp_temporary_chitin_structures	
-			}
-		}
-		research_cost = 1.6
+		production_speed_rail_way_factor = 0.25
+		production_speed_supply_node_factor = 0.25
+		production_speed_air_base_factor = 0.25
+		production_speed_radar_station_factor = 0.25
+		production_speed_bunker_factor = 0.25
+		production_speed_coastal_bunker_factor = 0.25
+
+		research_cost = 1.5
 		start_year = 1007
 		folder = {
 			name = changeling_folder
@@ -589,10 +587,10 @@ technologies = {
 			changeling_race = 1
 		}
 
-		category_magical = {
-			breakthrough = 0.1
-			soft_attack = 0.06
-			hard_attack = 0.04
+		category_army = {
+			breakthrough = 0.03
+			soft_attack = 0.03
+			hard_attack = 0.03
 		}
 
 		path = {
@@ -635,6 +633,7 @@ technologies = {
 
 		category_all_planes = {
 			air_agility = 0.05
+			maximum_speed = 0.05
 		}
 
 		path = {
@@ -671,10 +670,14 @@ technologies = {
 
 	tech_changeling_c3 = {
 
-		category_all_artillery = {
-			soft_attack = 0.075
+		supply_consumption_factor = 0.05
+		category_army = {
+			soft_attack = 0.03
 		}
-		air_cas_present_factor = 0.075
+		category_all_artillery = {
+			soft_attack = 0.05
+		}
+		air_cas_present_factor = 0.1
 
 		research_cost = 1.4
 		start_year = 1007
