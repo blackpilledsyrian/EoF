@@ -353,6 +353,9 @@ EoF_CHN_initial_army_expansion:0 "Initial Army Expansion"
 EoF_CHN_final_army_expansion:0 "Final Army Expansion"
 EoF_CHN_final_army_expansion_tt:0 "This idea will be removed upon the beginning of the Great War."
 
+EoF_CHN_mechanism:0 "Mechanism of War"
+EoF_CHN_mechanism_desc:0 "The Changeling mindset is uniquely suited to the art of waging warfare. Every drone acts out their role with perfect precision."
+
 EoF_hive_plants_category:0 "Hive Plant Integration"
 EoF_recalculate_hive_plants:0 "Recalculate Hive Plants"
 EoF_lyctida_plant:0 "Expand the Lyctida Hive"

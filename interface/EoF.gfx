@@ -1164,12 +1164,14 @@ spriteTypes = {
 		name = "GFX_idea_EQS_ember_spark"
 		texturefile = "gfx/interface/ideas/Advisors/EQS_ember_spark.dds"
 	}
-	
 	spriteType = {
 		name = "GFX_idea_empty_slot"
 		texturefile = "gfx/interface/ideas/idea_slot_political_advisor.dds"
 	}
-	
+	spriteType = {
+		name = "GFX_idea_EoF_CHN_mechanism"
+		texturefile = "gfx/interface/officer_corp/spirits/sdz.png"
+	}
 	### Advisors ###
 	
 	spriteType = {
