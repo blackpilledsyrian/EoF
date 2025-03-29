@@ -897,9 +897,6 @@ ideas = {
 				    has_idea = CHN_GRI_Attache_For_CHN
 				}
 			}
-			research_bonus = { 
-				armor = 0.06 
-			}
 
 			removal_cost = -1
 			picture = CHN_GRI_Attache_For_CHN
@@ -927,9 +924,6 @@ ideas = {
 					character = CHN_queen_chrysalis
 					ruling_only = yes
 				}
-			}
-			research_bonus = { 
-				armor = 0.06
 			}
 
 			removal_cost = -1

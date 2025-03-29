@@ -185,6 +185,12 @@ decision_cost_army_xp_30_pp_100:0 "£army_experience  §Y30§! £pol_power  §Y1
 decision_cost_army_xp_30_pp_100_blocked:0 "£army_experience  §R30§! £pol_power  §R100§!"
 decision_cost_army_xp_30_pp_100_tooltip:0 "It costs £army_experience  §Y30§! £pol_power  §Y100§! to take the decision"
 
+decision_cost_love:0 "£lovetax_text  §Y10§!"
+decision_cost_love_blocked:0 "£lovetax_text  §R10§!"
+decision_cost_love_tooltip:0 "It costs £lovetax_text §Y10§! to take the decision"
+
+EoF_love_increase_tt:0 "§G+2§! £lovetax_text  Monthly"
+
 EoF_academy_category:0 "Doki Doki General Academy"
 EoF_academy_category_desc:0 "Welcome to the General Academy! It's always been a dream of mine to make something special out of the things I love. Now that you're an academy member, you can help me make that dream come true. I'm super excited for you to make friends with everyone and help the General Academy become a more intimate place for all my members. But I can tell already that you're a sweetheart—will you promise to spend the most time with me?"
 

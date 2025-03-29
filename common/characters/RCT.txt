@@ -251,21 +251,6 @@ characters={
 			logistics_skill=4
 			legacy_id=651
 		}
-		advisor={
-			slot = high_command
-			idea_token = RCT_syndra
-			ledger = army
-			cost = 50
-			allowed = {
-				can_form_river_fed = yes
-			}
-			traits = {
-				army_armored_1
-			}
-			ai_will_do = {
-				factor = 1
-			}
-		}
 	}
 	RCT_auriga={
 		name=RCT_auriga

@@ -5824,7 +5824,7 @@ shared_focus = {
 			name = armor_bonus
 			bonus = 3.0
 			uses = 1
-			category = cat_heavy_armor
+			category = armor
 		}
 	}
 	search_filters = { FOCUS_FILTER_RESEARCH }

@@ -1162,6 +1162,38 @@ on_actions = {
 			}
 		}
 	}
+	#CHN Love Mechanic
+	on_monthly_CHN = {
+		effect = {
+			if = {
+				limit = {
+					has_tech = tech_changeling_b3
+					has_completed_focus = CHN_support_workers
+				}
+				add_to_variable = { EoF_love_var = 10 }
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_changeling_b2
+					has_completed_focus = CHN_support_workers
+				}
+				add_to_variable = { EoF_love_var = 8 }
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_changeling_b
+					has_completed_focus = CHN_support_workers
+				}
+				add_to_variable = { EoF_love_var = 6 }
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = CHN_support_workers
+				}
+				add_to_variable = { EoF_love_var = 4 }
+			}
+		}
+	}
 	#NCH Dockyards Mechanic
 	on_monthly_NCH = {
 		effect = {

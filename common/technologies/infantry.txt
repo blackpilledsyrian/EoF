@@ -248,7 +248,7 @@ technologies = {
 		}
 
 		sub_technologies = {
-			basic_assault_weapons
+			# basic_assault_weapons
 		}
 
 		categories = {
@@ -780,7 +780,7 @@ technologies = {
 		}
 
 		sub_technologies = {
-			improved_assault_weapons
+			# improved_assault_weapons
 		}
 
 		on_research_complete = {

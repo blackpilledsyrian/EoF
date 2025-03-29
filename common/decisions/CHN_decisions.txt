@@ -282,54 +282,70 @@ CHN_queens_tower = {
 CHN_domestic_affairs = {
 	CHN_extra_pay = {
 		icon = eng_trade_unions_support
-		cost = 50
-		days_remove = 70
-		#is_good = yes
-		ai_will_do = {
-			factor = 0
+		days_remove = 30
+
+		custom_cost_trigger = {
+			check_variable = {
+				EoF_love_var > 9
+			}
 		}
+		custom_cost_text = decision_cost_love
 
 		visible = {
 			has_completed_focus = CHN_support_workers
 			NOT = { has_completed_focus = CHN_post_war_1_a }
 		}
-		modifier = {
-			industrial_capacity_factory = 0.05
+
+		complete_effect = {
+			hidden_effect = {
+				subtract_from_variable = { EoF_love_var = 10 }
+			}
+		}
+		remove_effect = {
+			add_offsite_building = { type = arms_factory level = 1 }
 		}
 	}
 	CHN_extra_pay_construction = {
 		icon = generic_construction
-		cost = 50
-		days_remove = 70
-		#is_good = yes
-		ai_will_do = {
-			factor = 0
+		days_remove = 30
+
+		custom_cost_trigger = {
+			check_variable = {
+				EoF_love_var > 9
+			}
 		}
+		custom_cost_text = decision_cost_love
 
 		visible = {
 			has_completed_focus = CHN_support_workers
 			NOT = { has_completed_focus = CHN_post_war_1_a }
 		}
-		modifier = {
-			production_speed_buildings_factor = 0.05
+
+		complete_effect = {
+			hidden_effect = {
+				subtract_from_variable = { EoF_love_var = 10 }
+			}
+		}
+		remove_effect = {
+			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 	}
-	CHN_maternal_program = {
-		icon = ger_mefo_bills
-		cost = 50
-		days_remove = 300
-		#is_good = yes
-		ai_will_do = {
-			factor = 0
-		}
-		visible = {
-			has_completed_focus = CHN_support_workers
-			NOT = { has_completed_focus = CHN_post_war_1_a }
-		}
-		modifier = {
-			monthly_population = 0.15
-		}
-	}
+	# CHN_maternal_program = {
+	# 	icon = ger_mefo_bills
+	# 	cost = 50
+	# 	days_remove = 300
+	# 	#is_good = yes
+	# 	ai_will_do = {
+	# 		factor = 0
+	# 	}
+	# 	visible = {
+	# 		has_completed_focus = CHN_support_workers
+	# 		NOT = { has_completed_focus = CHN_post_war_1_a }
+	# 	}
+	# 	modifier = {
+	# 		monthly_population = 0.15
+	# 	}
+	# }
 }
 
 CHN_Attache = {

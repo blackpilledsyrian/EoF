@@ -1,7 +1,7 @@
 NDefines.NGame.COMBAT_LOG_MAX_MONTHS = 36
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 25			-- Days of client lag for decrease of gamespeed
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 25				-- Days of client lag for pause of gamespeed.
-NDefines.NGame.GAME_SPEED_SECONDS = { 0.3, 0.25, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
+NDefines.NGame.GAME_SPEED_SECONDS = { 0.35, 0.25, 0.2, 0.1, 0.0 }	-- game speeds for each level. Must be 5 entries with last one 0 for unbound
 
 NDefines.NFocus.MAX_SAVED_FOCUS_PROGRESS = 20			-- This much progress can be saved while not having a focus selected
 
@@ -117,7 +117,7 @@ NDefines.NMilitary.TACTIC_SWAP_FREQUENCEY = 24                  -- hours between
 NDefines.NMilitary.RECON_SKILL_IMPACT = 10				-- how many skillpoints is a recon advantage worth when picking a tactic.
 NDefines.NMilitary.INITIATIVE_PICK_COUNTER_ADVANTAGE_FACTOR  = 1	-- advantage per leader level for picking a counter
 
-NDefines.NMilitary.SLOWEST_SPEED = 1
+NDefines.NMilitary.SLOWEST_SPEED = 2
 
 NDefines.NMilitary.AIR_SUPPORT_BASE = 0.15			-- CAS bonus factor for air support moddifier for land unit in combat
 

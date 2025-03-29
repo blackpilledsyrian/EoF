@@ -3171,7 +3171,7 @@ technologies = {
 		start_year = 1007
 		folder = {
 			name = support_folder
-			position = { x = 2 y = 3 }
+			position = { x = 2 y = 5 }
 		}
 		path = {
 			leads_to_tech = tactical_missile_system
