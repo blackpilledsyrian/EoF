@@ -205,8 +205,8 @@ EoF_JER_second_three_year_plan_category = {
             tag = JER
         }
 		visible = {
-			has_completed_focus = EoF_begin_first_plan
-			has_idea = EoF_JER_first_plan
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan
 		}
         fire_only_once = yes
         days_remove = 90
@@ -230,8 +230,8 @@ EoF_JER_second_three_year_plan_category = {
             tag = JER
         }
 		visible = {
-			has_completed_focus = EoF_begin_first_plan
-			has_idea = EoF_JER_first_plan
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan
 		}
         fire_only_once = yes
         days_remove = 90
@@ -259,8 +259,8 @@ EoF_JER_second_three_year_plan_category = {
             tag = JER
         }
 		visible = {
-			has_completed_focus = EoF_begin_first_plan
-			has_idea = EoF_JER_first_plan
+			has_completed_focus = EoF_begin_second_plan
+			has_idea = EoF_JER_second_plan
 		}
         fire_only_once = yes
         days_remove = 90

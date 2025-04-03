@@ -558,6 +558,13 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.15
 		global_building_slots_factor = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				add_ideas = EoF_railway_gun_fix_idea_0
+			}	
+		}
+
 		dependencies = {
 			infantry_weapons = 1
 		}
@@ -614,6 +621,16 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = EoF_railway_gun_fix_idea_1
+					remove_idea = EoF_railway_gun_fix_idea_0
+				}
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry3
 			research_cost_coeff = 1
@@ -654,6 +671,16 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = EoF_railway_gun_fix_idea_2
+					remove_idea = EoF_railway_gun_fix_idea_1
+				}
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry4
 			research_cost_coeff = 1
@@ -694,6 +721,16 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = EoF_railway_gun_fix_idea_3
+					remove_idea = EoF_railway_gun_fix_idea_2
+				}
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry5
 			research_cost_coeff = 1
@@ -736,6 +773,16 @@ technologies = {
 		production_factory_start_efficiency_factor = 0.05
 		industry_air_damage_factor = -0.1
 		global_building_slots_factor = 0.3
+
+		on_research_complete = {
+			hidden_effect = {
+				swap_ideas = {
+					add_idea = EoF_railway_gun_fix_idea_4
+					remove_idea = EoF_railway_gun_fix_idea_3
+				}
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry_a
 			research_cost_coeff = 1

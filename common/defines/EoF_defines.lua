@@ -205,7 +205,9 @@ NDefines.NMilitary.UNIT_LEADER_INITIAL_TRAIT_SLOT = { 		-- trait slot for 0 leve
 	0.0, -- operative
 }
 
-NDefines.NRailwayGun.ATTACK_TO_FORTS_MODIFIER_FACTOR = 1	-- Forts modifier is calculated by multiplying railway gun attack value with this and dividing by 100
+NDefines.NRailwayGun.ATTACK_TO_FORTS_MODIFIER_FACTOR = 1		-- Forts modifier is calculated by multiplying railway gun attack value with this and dividing by 100
+NDefines.NRailwayGun.ATTACK_TO_ENTRENCHMENT_MODIFIER_FACTOR = 1		-- Entrenchment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
+NDefines.NRailwayGun.ATTACK_TO_BOMBARDMENT_MODIFIER_FACTOR = 0.2	-- Bombardment modifier is calculated by multiplying railway gun attack value with this and dividing by 100
 
 NDefines.NCharacter.OFFICER_CORP_HIGH_COMMAND_SLOTS_IN_MENU = 3 --For Alert manager to count the number of High Command Slots in the UI
 NDefines.NCharacter.POLITICAL_ADVISOR_SLOTS_IN_MENU = 6		--For Alert manager to count the number of Political Advisor Slots in the UI

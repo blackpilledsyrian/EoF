@@ -263,7 +263,7 @@ equipment_modules = {
 
 		add_stats = {
 			build_cost_ic = 1
-			breakthrough = 3
+			breakthrough = 5
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -282,7 +282,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.2
 			build_cost_ic = 1.5
-			breakthrough = 5
+			breakthrough = 7
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 0
@@ -296,7 +296,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 2
-			breakthrough = 7
+			breakthrough = 9
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -330,7 +330,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 2
-			defense = 3
+			defense = 5
 		}
 
 		multiply_stats = {
@@ -358,7 +358,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.2
 			build_cost_ic = 2
-			breakthrough = 4
+			breakthrough = 7
 		}
 		xp_cost = 0
 		dismantle_cost_ic = 0
@@ -383,7 +383,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 3
-			breakthrough = 6
+			breakthrough = 9
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -407,7 +407,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 4
-			breakthrough = 8
+			breakthrough = 11
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -443,7 +443,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 4
-			defense = 3
+			defense = 5
 		}
 
 		multiply_stats = {
@@ -471,7 +471,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.4
 			build_cost_ic = 7.5
-			breakthrough = 6
+			breakthrough = 10
 		}
 		multiply_stats = {
 			soft_attack = -0.1
@@ -496,7 +496,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.6
 			build_cost_ic = 9
-			breakthrough = 10
+			breakthrough = 14
 		}
 	}
 
@@ -529,7 +529,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.6
 			build_cost_ic = 9
-			defense = 3
+			defense = 5
 		}
 
 		multiply_stats = {
@@ -559,7 +559,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.6
 			build_cost_ic = 12
-			breakthrough = 15
+			breakthrough = 18
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
@@ -583,7 +583,7 @@ equipment_modules = {
 		add_stats = {
 			maximum_speed = -0.8
 			build_cost_ic = 16
-			breakthrough = 17
+			breakthrough = 21
 		}
 		dismantle_cost_ic = 0
 		xp_cost = 0
