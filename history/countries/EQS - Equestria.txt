@@ -320,6 +320,7 @@ if = {
 	create_equipment_variant = {
 		name = "Stallion 6-Ton B"
 		type = light_tank_chassis_1
+		design_team = mio:EQS_mustang_organization
 		parent_version = 1
 		modules = {
 			main_armament_slot = tank_small_cannon
@@ -356,6 +357,7 @@ if = {
 	create_equipment_variant = {
 		name = "Stallion Medium Mk. II Great Yak"
 		type = medium_tank_chassis_0
+		design_team = mio:EQS_shoof_organization
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_small_cannon
@@ -632,6 +634,7 @@ recruit_character = EQS_sunrise_sparkle
 #Scientists
 recruit_character = EQS_miss_harshwhinny
 recruit_character = EQS_naval_scientist
+recruit_character = EQS_bill_neigh
 ###TNO Crossover Characters###
 recruit_character = EUS_country_leader
 recruit_character = UESR_berry_punch

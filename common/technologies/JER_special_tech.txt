@@ -159,7 +159,7 @@ technologies = {
 			breakthrough = 0.2
 			ap_attack = 0.2
 		}
-		super_heavy_sp_artillery = {
+		super_heavy_sp_artillery_brigade = {
 		    hard_attack = 0.2
 			breakthrough = 0.2
 			ap_attack = 0.2

@@ -29,8 +29,8 @@ country_event = { #A Train Trip
 	}
 	option = {
 		name = imperial.1.a
-		add_stability = 0.10
 		add_political_power = 100
+		add_stability = 0.10
 		hidden_effect = {
 			country_event = { days = 40 id = imperial.2 }
 			BRZ = {
@@ -271,7 +271,7 @@ country_event = {
 		add_political_power = -100
 		hidden_effect = {
 			STW = { country_event = { id = strawberry.2 days = 1 } fire_GRD_cosmetic_handling = yes }
-			BRZ = { country_event = { id = bronzehill.10 days = 1 } }
+			BRZ = { country_event = { id = bronzehill.10 days = 1 } fire_GRD_cosmetic_handling = yes }
 			FEA = { country_event = { id = feat.22 days = 1 } fire_GRD_cosmetic_handling = yes }
 			PYT = { country_event = { id = marschen.15 days = 1 } fire_GRD_cosmetic_handling = yes }
 			ROU = { country_event = { id = romau.1 days = 1 } fire_GRD_cosmetic_handling = yes }
@@ -698,7 +698,7 @@ country_event = {
 		add_political_power = -100
 		hidden_effect = {
 			STW = { country_event = { id = strawberry.3 days = 1 } fire_GRD_cosmetic_handling = yes }
-			BRZ = { country_event = { id = bronzehill.10 days = 1 } }
+			BRZ = { country_event = { id = bronzehill.10 days = 1 } fire_GRD_cosmetic_handling = yes }
 			FEA = { country_event = { id = feat.22 days = 1 } fire_GRD_cosmetic_handling = yes }
 			PYT = { country_event = { id = marschen.16 days = 1 } fire_GRD_cosmetic_handling = yes }
 			ROU = { country_event = { id = romau.2 days = 1 } fire_GRD_cosmetic_handling = yes }
