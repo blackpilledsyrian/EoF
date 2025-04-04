@@ -1824,7 +1824,7 @@ political_actions = {
 				STG_blossomforth = { 
 					add_timed_unit_leader_trait = {
 						trait = recently_promoted
-						days = 180
+						days = 150
 					}
 				}
 			}

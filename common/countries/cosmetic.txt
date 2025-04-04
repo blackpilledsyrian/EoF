@@ -936,16 +936,16 @@ EQC_NLR_thestralia = {
 	color_ui = rgb { 44 105 104 }
 }
 WNG_other_side = {
-	color = rgb { 108 58 183 }
-	color_ui = rgb { 108 58 183 }
+	color = rgb { 0 102 0 }
+	color_ui = rgb { 0 102 0 }
 }
 KLG_FTZ = {
 	color = rgb { 150 90 74 }
 	color_ui = rgb { 150 90 74 }
 }
 ABY_WNG_protectorate = {
-	color = rgb { 151 110 255 }
-	color_ui = rgb { 151 110 255 }
+	color = rgb { 71 209 71 }
+	color_ui = rgb { 71 209 71 }
 }
 RIV_federation_mem = {
 	color = rgb { 58 190 95 }
@@ -1415,34 +1415,6 @@ DED_APN_scourge = {
 	color = rgb { 80 5 5 }
 	color_ui = rgb { 80 5 5 }
 }
-EQC_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-MIT_kingdom = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-NCH_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-FBK_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-NTR_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-HLR_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
-ZES_mandate = {
-	color = rgb { 229 138 47 }
-	color_ui = rgb { 229 138 47 }
-}
 PYT_heartland = {
     color = rgb { 0 51 102 }
     color_ui = rgb { 0 51 102 }
@@ -1736,12 +1708,12 @@ VAN_Oblast = {
 	color_ui = rgb { 249 26 93 }
 }
 WNG_EMPIRE = {
-	color = rgb { 108 58 183 }
-	color_ui = rgb { 108 58 183 }
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
 }
 WNG_EMPIRE_REPUBLIC = {
-	color = rgb { 108 58 183 }
-	color_ui = rgb { 108 58 183 }
+	color = rgb { 153 0 0 }
+	color_ui = rgb { 153 0 0 }
 }
 RIV_federation_mem_LSC_vartai = {
 	color = rgb { 58 190 95 }
@@ -2330,12 +2302,12 @@ TAL_flt_syndi_empire = {
 	color_ui = rgb { 128 0 0 }
 }
 WNG_formed = {
-	color = rgb { 151 110 255 }
-	color_ui = rgb { 151 110 255 }
+	color = rgb { 67 127 63 }
+	color_ui = rgb { 67 127 63 }
 }
 WNG_rebellion = {
-	color = rgb { 241 169 246 }
-	color_ui = rgb { 241 169 246 }
+	color = rgb { 10 150 90 }
+	color_ui = rgb { 10 150 90 }
 }
 JER_GRIFFONIAN_REPUBLIC = {
 	color = rgb { 255 214 117 }
@@ -2444,6 +2416,10 @@ TBK_ulnz = {
 TBK_neo_hazrumenia = {
 	color = rgb { 244 223 208 }
 	color_ui = rgb { 244 223 208 }
+}
+TBK_AF = {
+	color = rgb { 193 89 13 }
+	color_ui = rgb { 193 89 13 }
 }
 MGY_neo_hazrumenia_puppet = {
 	color = rgb { 244 223 208 }
@@ -2849,4 +2825,12 @@ KAT_knights_SIC = {
 KAT_knights_CYA = {
 	color = rgb { 163 118 99 }
 	color_ui = rgb { 163 118 99 }
+}
+DEL_AF_Castanor = {
+	color = rgb { 255 255 255 }
+	color_ui = rgb { 255 255 255 }
+}
+DEL_AF_wasteland = {
+	color = rgb { 20 10 30 }
+	color_ui = rgb { 25 15 35 }
 }
