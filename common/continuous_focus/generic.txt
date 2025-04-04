@@ -415,6 +415,7 @@ continuous_focus_palette = {
 		ai_will_do = {
 			factor = 0
 		}
+	}
 	
 	#EoF Changes
 
@@ -451,7 +452,6 @@ continuous_focus_palette = {
 		
 		available_if_capitulated = yes
 	}
-		supports_ai_strategy = ai_focus_military_advancements
 
 	focus = {
 		id = EoF_continuous_infantry_production

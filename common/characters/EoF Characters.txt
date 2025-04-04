@@ -190,26 +190,6 @@ characters={
 			traits = { EoF_armour_advocate }
 		}
 	}
-	EoF_formis_obscura= {
-		name = EoF_formis_obscura
-		portraits = {
-			civilian = {
-				small = "GFX_idea_unknown_advisor_bug"
-
-			}
-		}
-		advisor = {
-			slot = political_advisor
-			idea_token = obscura
-			allowed = {
-				original_tag = NCH
-			}
-			available = {
-				has_completed_focus = EoF_assess_rivals
-			}
-			traits = { EoF_naval_spy }
-		}
-	}
 	EoF_spire = {
 		name = EoF_spire
 		portraits = {

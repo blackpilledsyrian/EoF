@@ -1325,7 +1325,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_helvia
-			cost = 50
 			allowed = {
 			    OR = {
 					original_tag = CHN
@@ -1359,7 +1358,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_aurantia
-			cost = 50
 			allowed = {
 			    OR = {
 					original_tag = CHN
@@ -1388,22 +1386,14 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_yaria
-			cost = 50
 			allowed = {
 				original_tag = CHN
 			}
 			available = {
 				has_government = fascism
 			}
-			on_add = {
-				owner = {
-					add_research_slot = 1
-				}
-			}
-			on_remove = {
-				owner = {
-					add_research_slot = -1
-				}
+			research_bonus = {
+				magical_tech = 0.05
 			}
 			traits = {
 				queen_yaria
@@ -1431,7 +1421,6 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = chn_queen_argynnis
-			cost = 50
 			allowed = {
 			    OR = {
 					original_tag = CHN
