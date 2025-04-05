@@ -105,7 +105,7 @@ EoF_JER_first_three_year_plan_category = {
     }
 	EoF_JER_first_three_year_plan_decision_3 = {
 		icon = GFX_decision_generic_factory
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_begin_first_plan
 			has_idea = EoF_JER_first_plan			
@@ -113,6 +113,7 @@ EoF_JER_first_three_year_plan_category = {
 		target_array = core_states
 		target_trigger = {
 			FROM = {
+				is_owned_by = ROOT
 				impassable = no
 				NOT = {
 					has_dynamic_modifier = {
@@ -279,7 +280,7 @@ EoF_JER_second_three_year_plan_category = {
     }
 	EoF_JER_second_three_year_plan_decision_3 = {
 		icon = GFX_decision_ger_military_buildup
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_begin_second_plan
 			has_idea = EoF_JER_second_plan			
@@ -287,6 +288,7 @@ EoF_JER_second_three_year_plan_category = {
 		target_array = core_states
 		target_trigger = {
 			FROM = {
+				is_owned_by = ROOT
 				impassable = no
 				NOT = {
 					has_dynamic_modifier = {
@@ -295,6 +297,7 @@ EoF_JER_second_three_year_plan_category = {
 				}
 			}
 		}
+		
 		available = {
 			FROM = {
 				arms_factory > 4

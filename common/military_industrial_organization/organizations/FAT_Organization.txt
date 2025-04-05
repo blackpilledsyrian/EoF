@@ -521,8 +521,8 @@ FAT_broby_armaments_organization = {
 		}
 
 		limit_to_equipment_type = { 
-			anti_tank_equipment
-			anti_air_equipment
+			EoF_cat_eq_all_anti_tank
+			EoF_cat_eq_all_anti_air
 		}
 
 		equipment_bonus = {
@@ -557,7 +557,7 @@ FAT_broby_armaments_organization = {
 		}
 
 		limit_to_equipment_type = { 
-			artillery_equipment
+			EoF_cat_eq_all_artillery
 			rocket_artillery_equipment
 		}
 
@@ -587,7 +587,7 @@ FAT_broby_armaments_organization = {
 		}
 
 		limit_to_equipment_type = { 
-			artillery_equipment
+			EoF_cat_eq_all_artillery
 			rocket_artillery_equipment
 		}
 
@@ -716,7 +716,7 @@ FAT_ignis_car_factory_organization = {
 		all_parents = { FAT_mio_trait_truck_mass_production }
 
 		limit_to_equipment_type = {
-			mechanized_equipment
+			EoF_cat_eq_all_mechanized
 		}
 
 		production_bonus = {
@@ -739,7 +739,7 @@ FAT_ignis_car_factory_organization = {
 		
 		limit_to_equipment_type = {
 			motorized_equipment
-			mechanized_equipment
+			EoF_cat_eq_all_mechanized
 		}
 
 		equipment_bonus = {

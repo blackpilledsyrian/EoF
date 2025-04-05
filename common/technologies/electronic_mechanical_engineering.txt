@@ -463,7 +463,7 @@ technologies = {
 			ROOT = {
 			   is_special_project_completed = sp:sp_air_radar
 		   }
-	   }
+	  	}
 		# radar boost in air/sea combat depends on radar level
 		enable_building = {
 			building = radar_station
@@ -493,13 +493,6 @@ technologies = {
 
 		ai_will_do = {
 			factor = 1
-#			modifier = {
-#				factor = 4
-#				OR = {
-#					tag = ENG
-#					tag = USA
-#				}
-#			}
 			modifier = {
 				factor = 0.5
 				date < "1011.1.1"
@@ -1790,10 +1783,10 @@ technologies = {
 		research_cost = 1
 		start_year = 1020
 		
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @rockets_1020 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = 0 y = @rockets_1020 }
+		# }
 		
 		ai_will_do = {
 			factor = 1
@@ -2415,14 +2408,15 @@ technologies = {
 				}	
 				custom_effect_tooltip = {
 					localization_key = SP_UNLOCK_PROJECT
-					PROJECT = sp_nuclear_engines	
+					PROJECT = sp_nuclear_engines
+				}
 			}
 		}
 
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @electronics_1010 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = 0 y = @electronics_1010 }
+		# }
 
 		# path = {
 		# 	leads_to_tech = nukes_2
@@ -2485,10 +2479,10 @@ technologies = {
 				}
 			}
 		}
-		folder = {
-			name = electronics_folder
-			position = { x = 0 y = @electronics_1012 }
-		}
+		# folder = {
+		# 	name = electronics_folder
+		# 	position = { x = 0 y = @electronics_1012 }
+		# }
 		
 		enable_building = {
 			building = modern_nuclear_reactor

@@ -270,7 +270,7 @@ EoF_great_war_category_EQS = {
 	# 	}			
 	# }
 	EoF_polyphony_decision = {
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_polyphony
 		}

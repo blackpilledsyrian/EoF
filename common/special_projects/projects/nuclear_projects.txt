@@ -413,10 +413,10 @@ sp_modern_commercial_nuclear_reactor = {
 		sp_commercial_nuclear_reactor
 	}
 	resource_cost = {
-		resources = { steel=9 tungsten=6 chromium=10 crystals = 9 }
+		resources = { steel=90 tungsten=60 chromium=100 crystals = 90 }
 	}
 	allowed = {
-		has_dlc = "Gotterdammerung"
+		always = no
 	}
 	available = { 
 		FROM = {

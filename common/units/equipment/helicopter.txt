@@ -124,8 +124,8 @@ equipments = {
 
 		build_cost_ic = 18
 		resources = {
-			aluminium = 2
-			tungsten = 1
+			aluminium = 20
+			tungsten = 10
 		}
 
 		fuel_consumption = 3.6

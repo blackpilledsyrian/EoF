@@ -1,7 +1,7 @@
 
 EoF_hive_plants_category = {
 	EoF_lyctida_plant = {
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_hive_plants
 		}
@@ -9,7 +9,6 @@ EoF_hive_plants_category = {
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
-
 			}
 		}
 		on_map_mode = map_and_decisions_view
@@ -23,15 +22,14 @@ EoF_hive_plants_category = {
 		}
 	}
 	EoF_vraks_plant = {
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_hive_plants
 		}
 		targets = { state = 259 }
 		target_trigger = {
 			FROM = {
-				is_owned_by = ROOT
-				
+				is_owned_by = ROOT	
 			}
 		}
 		on_map_mode = map_and_decisions_view
@@ -45,7 +43,7 @@ EoF_hive_plants_category = {
 		}
 	}
 	EoF_sicarus_plant = {
-		state_target = any_owned_state
+		state_target = yes
 		target_root_trigger = {
 			has_completed_focus = EoF_hive_plants
 		}
@@ -53,7 +51,6 @@ EoF_hive_plants_category = {
 		target_trigger = {
 			FROM = {
 				is_owned_by = ROOT
-				
 			}
 		}
 		on_map_mode = map_and_decisions_view

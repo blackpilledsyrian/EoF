@@ -2005,7 +2005,7 @@ sp_air_advanced_helicopter = {
 	}
 
 	allowed = {
-		has_dlc = "Gotterdammerung"		
+		always = no	
 	}
 	available = {
 		FROM = {
@@ -2023,8 +2023,8 @@ sp_air_advanced_helicopter = {
 
 	resource_cost = {
 		resources = {
-			aluminium = 12
-			tungsten = 8
+			aluminium = 120
+			tungsten = 80
 		}
 	}
 
