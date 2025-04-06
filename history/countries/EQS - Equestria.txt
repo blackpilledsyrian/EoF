@@ -49,6 +49,7 @@ if = {
 		iw_small_airframe = 1
 		iw_medium_airframe = 1
 		iw_large_airframe = 1
+		basic_small_airframe = 1
 		air_torpedoe_1 = 1
 		bba_early_transport_plane = 1
 	}
@@ -449,18 +450,6 @@ add_equipment_to_stockpile = {
 	type = melee_equipment_1
 	amount = 1600
 	producer = EQS
-}
-add_tech_bonus = {
-	name = fighter_bonus
-	bonus = 3
-	uses = 1
-	category = light_fighter
-}
-add_tech_bonus = {
-	name = bomber_bonus
-	bonus = 0.1
-	uses = 1
-	category = tactical_bomber
 }
 set_convoys = 520
 set_popularities = {

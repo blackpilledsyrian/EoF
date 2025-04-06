@@ -1,6 +1,12 @@
 on_actions = {
 	on_startup = {
 		effect = {
+			every_country = {
+				add_timed_idea = {
+					idea = EoF_starting_efficiency
+					days = 1
+				}
+			}
 			HLR = {
 				# country_event = { id = EoF.1 days = 1095 }
 				# country_event = { id = EoF.8 days = 12 }
@@ -1170,27 +1176,27 @@ on_actions = {
 					has_tech = tech_changeling_b3
 					has_completed_focus = CHN_support_workers
 				}
-				add_to_variable = { EoF_love_var = 10 }
+				add_to_variable = { EoF_love_var = 6 }
 			}
 			else_if = {
 				limit = {
 					has_tech = tech_changeling_b2
 					has_completed_focus = CHN_support_workers
 				}
-				add_to_variable = { EoF_love_var = 8 }
+				add_to_variable = { EoF_love_var = 5 }
 			}
 			else_if = {
 				limit = {
 					has_tech = tech_changeling_b
 					has_completed_focus = CHN_support_workers
 				}
-				add_to_variable = { EoF_love_var = 6 }
+				add_to_variable = { EoF_love_var = 4 }
 			}
 			else_if = {
 				limit = {
 					has_completed_focus = CHN_support_workers
 				}
-				add_to_variable = { EoF_love_var = 4 }
+				add_to_variable = { EoF_love_var = 3 }
 			}
 		}
 	}

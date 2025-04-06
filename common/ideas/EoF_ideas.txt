@@ -454,6 +454,12 @@ ideas = {
 				}
 			}
 		}
+		EoF_starting_efficiency = {
+			removal_cost = -1
+			modifier = {
+				production_factory_start_efficiency_factor = 0.5
+			}	
+		}
 		EoF_railway_gun_fix_idea_0 = {
 			removal_cost = -1
 			equipment_bonus = {

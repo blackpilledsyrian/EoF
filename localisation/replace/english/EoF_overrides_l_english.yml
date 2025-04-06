@@ -39,7 +39,7 @@
  modifier_trait_artillery_specialist_xp_gain_factor:0 "£experience_neutral_texticon  Artillery Leader Trait XP Gain"
 
  CHN_domestic_affairs:0 "Populus Support Program"
- CHN_domestic_affairs_desc:0 "In order to ensure the prosperity of our nation, government funding will be transferred to subsidize military production, improvements of working and living conditions and family institutions.\n\nWe gain four £lovetax_text  by default every month, this number can be increased with techs.\n\nCurrent £lovetax_text : [?EoF_love_var|.0Y]"
+ CHN_domestic_affairs_desc:0 "In order to ensure the prosperity of our nation, government funding will be transferred to subsidize military production, improvements of working and living conditions and family institutions.\n\nWe gain three £lovetax_text  by default every month, this number can be increased with techs.\n\nCurrent £lovetax_text : [?EoF_love_var|.0Y]"
  CHN_extra_pay:0 "Extra Pay for Factory Workers"
  CHN_extra_pay_construction:0 "Extra Pay for Construction Workers"
  CHN_maternal_program:0 "MHSP: Maternal and Hive Support Program"
