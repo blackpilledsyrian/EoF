@@ -260,7 +260,7 @@ EoF_superindustrial_zone = {
 
 	local_building_slots = 3
 	local_factories	= 0.5
-	state_production_speed_buildings_factor = -0.3
+	state_production_speed_buildings_factor = -0.5
 }
 EoF_naval_industrial_zone = {
 	icon = GFX_idea_KIS_continuous_industry_research_idea

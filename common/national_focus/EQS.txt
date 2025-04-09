@@ -706,7 +706,7 @@ shared_focus = {
 shared_focus = {
 	id = unicorn_academy_f
 	icon = GFX_goal_unicorn_academy
-	cost = 7
+	cost = 2
 	ai_will_do = { factor = 85 }
 	prerequisite = {
 		focus = examine_the_situation
@@ -729,7 +729,7 @@ shared_focus = {
 	id = luna_nova_academy
 	icon = GFX_goal_luna_nova
 	dynamic = yes
-	cost = 7
+	cost = 2
 	ai_will_do = { factor = 80 }
 	prerequisite = {
 		focus = unicorn_academy_f
@@ -752,7 +752,7 @@ shared_focus = {
 shared_focus = {
 	id = Fund_public_schools
 	icon = GFX_goal_eqs_public_schools
-	cost = 7
+	cost = 2
 	ai_will_do = { factor = 75 }
 	prerequisite = {
 		focus = luna_nova_academy
