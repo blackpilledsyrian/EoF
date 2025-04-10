@@ -387,7 +387,11 @@ EoF_sensible_anti_corruption_reform:0 "Sensible Anti-Corruption Reform"
 EoF_sensible_anti_corruption_reform_desc:0 "Corruption is an incredibly complex problem that requires consistent multifaceted approach. Local buisness connections, powerful families of hereditary bueracrats, oligarchic cliques... Luckily, as a foreign rich country with large occupying force, we have more options to deal with it."
 
 EoF_send_deer_to_the_mines:0 "Send Deer to the Mines"
-EoF_send_deer_to_the_mines_desc:0 "We all know why we ahe here. We all know what we want. We all know what is happening. Lets just get to the point."
+EoF_send_deer_to_the_mines_desc:0 "We all know why we are here. We all know what we want. We all know what is happening. Lets just get to the point."
+
+EoF_evacuate_chital:0 "Evacuate Chitali Resources"
+EoF_evacuate_chital_desc:0 ""
+EoF_evacuate_chital_tt:0 "Every month, for up to five months, §Y30§! resources of each type will be §Gevacuated§! from every §YChital§! state we control and §Y20§! will be moved to §YKiria§!."
 
 EoF_zebra_military:0 "Integrate Colthaginian Military"
 EoF_zebra_military_desc:0 ""

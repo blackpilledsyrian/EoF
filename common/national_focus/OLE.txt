@@ -294,6 +294,28 @@ focus_tree = {
 		}
 	}
 
+	focus = {
+		id = EoF_evacuate_chital
+		icon = GFX_goal_generic_construction2
+		prerequisite = { focus = EoF_send_deer_to_the_mines }
+		x = 0
+		y = 1
+		cost = 3
+		relative_position_id = EoF_send_deer_to_the_mines
+
+		available = {
+			any_owned_state = {
+				is_on_continent = africa
+				NOT = {
+					is_controlled_by = OLE
+				}
+			}
+		}
+		completion_reward = {
+			custom_effect_tooltip = EoF_evacuate_chital_tt
+		}
+	}
+
 	#EoF Changes
 
 	##########OLENIA HARMONY/COMMUNISM BY PSODY DO NOT TOUCH OR I STAB YOU####################

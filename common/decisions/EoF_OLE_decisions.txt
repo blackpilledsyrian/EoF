@@ -45,3 +45,165 @@ EoF_OLE_deal_with_oligarchs_category = {
 		}
 	}
 }
+economy_decisions = {
+	EoF_OLE_resource_evac_mission = {
+		allowed = {
+			original_tag = OLE
+		}
+		activation = {
+			has_completed_focus = EoF_evacuate_chital
+		}
+		available = {
+			always = no
+		}
+		icon = GFX_decision_rubber
+		days_mission_timeout = 30
+		timeout_effect = {
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					oil > 30
+				}
+				add_resource = {
+					type = oil
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = oil
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					aluminium > 30
+				}
+				add_resource = {
+					type = aluminium
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = aluminium
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					rubber > 30
+				}
+				add_resource = {
+					type = rubber
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = rubber
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					tungsten > 30
+				}
+				add_resource = {
+					type = tungsten
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = tungsten
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					steel > 30
+				}
+				add_resource = {
+					type = steel
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = steel
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					chromium > 30
+				}
+				add_resource = {
+					type = chromium
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = chromium
+							amount = 20
+						}
+					}
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_controlled_by = OLE
+					is_on_continent = africa
+					crystals > 30
+				}
+				add_resource = {
+					type = crystals
+					amount = -30
+				}
+				KIR = {
+					random_owned_controlled_state = {
+						add_resource = {
+							type = crystals
+							amount = 20
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				add_to_variable = { global.EoF_OLE_resource_evac_var = 1 }
+				activate_mission = EoF_OLE_resource_evac_mission
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_capitulated = yes
+				check_variable = {
+					global.EoF_OLE_resource_evac_var > 4
+				}
+			}
+		}
+	}
+}
