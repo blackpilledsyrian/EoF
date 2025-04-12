@@ -4945,6 +4945,12 @@ shared_focus = {
 			}
 		}
 	}
+	bypass_effect = {
+		add_named_threat = {
+			threat = 3
+			name = EoF_expand_shores_tension
+		}
+	}
 }
 shared_focus = {
 	id = EoF_princess_kaiser

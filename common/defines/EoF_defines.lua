@@ -110,6 +110,9 @@ NDefines.NMilitary.UNIT_EXP_LEVELS = {0.04,	0.08,	0.12,	0.16,	0.20,	0.24,	0.28,	
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.02
 NDefines.NMilitary.ARMY_EXP_BASE_LEVEL = 10
 
+NDefines.NMilitary.NAVAL_TRANSFER_DISBAND_MANPOWER_FACTOR = 0	-- percentage of manpower returned when a naval transfering unit is disbanded
+NDefines.NMilitary.ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0	-- percentage of manpower returned when an encircled unit is disbanded
+
 NDefines.NMilitary.TRAINING_ATTRITION = 0		  	-- amount of extra attrition from being in training
 NDefines.NMilitary.TRAINING_EXPERIENCE_SCALE = 0
 
@@ -233,8 +236,8 @@ NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0	-- XP cost for removing
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_VALUE = 0		-- The minimum number of factories we have to put on consumer goods, by value.
 NDefines.NProduction.BASE_LICENSE_IC_COST = 1					-- Base IC cost for lended license
 NDefines.NProduction.LICENSE_IC_COST_YEAR_INCREASE = 0.5			-- IC cost equipment for every year of equipment after 1936
-NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.25			-- base MIC speed modifier for licensed equipment
-NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.05		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
+NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.40			-- base MIC speed modifier for licensed equipment
+NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = -0.10		-- MIC speed modifier for licensed equipment for each year of difference between actual and latest equipment
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_MAX_YEARS = 4			-- Maximum years for MIC speed modifier
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.10		-- MIC speed modifier for licensed equipment for not being in faction
 NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1.0			-- XP cost for upgrading licensed equipment

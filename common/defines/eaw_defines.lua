@@ -36,6 +36,7 @@ NDefines.NProduction.RAILWAY_GUN_MAX_MIL_FACTORIES_PER_LINE = 5 -- vanilla is 5
 NDefines.NProduction.MINIMUM_NUMBER_OF_FACTORIES_TAKEN_BY_CONSUMER_GOODS_PERCENT = 0 -- vanilla is 0.1
 NDefines.NProduction.MAX_EQUIPMENT_RESOURCES_NEED = 4
 
+NDefines.NBuildings.RADAR_RANGE_MAX = 416 --each level is 36, we've gone from 6 levels (40 to 220, 5 increases) to 12 levels (40 to 436, 11 increases)
 
 NDefines.NMilitary.PLAN_EXECUTE_CAREFUL_MAX_FORT = 4
 NDefines.NMilitary.BASE_CAPTURE_EQUIPMENT_RATIO = 0.02
