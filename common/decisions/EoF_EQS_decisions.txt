@@ -384,7 +384,7 @@ EoF_harmonic_war_industry_category = {
 		days_remove = 270
 		cost = 5
 		modifier = {
-			research_speed_factor = -0.075
+			research_speed_factor = -0.05
 		}
 		complete_effect = {
 			if = {

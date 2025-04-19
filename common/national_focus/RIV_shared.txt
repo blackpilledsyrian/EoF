@@ -2417,6 +2417,208 @@ shared_focus = {
 		}
 	}
 }
+shared_focus = {
+	id = EoF_RIV_special_military_operation
+	icon = GFX_goal_riv_golden_curtain
+	prerequisite = { focus = EoF_RIV_federation_ascendent }
+	x = 0
+	y = 1
+	relative_position_id = EoF_RIV_federation_ascendent
+
+	cost = 20
+
+	available = {
+		has_cosmetic_tag = EoF_RCT_DOMINATION
+		date > 1012.01.01
+	}
+	# will_lead_to_war_with = GRY
+	# select_effect = {
+	# 	hidden_effect = {
+	# 		GRY = {
+	# 			transfer_state = 592
+	# 			transfer_state = 613
+	# 			transfer_state = 610
+	# 			transfer_state = 631
+	# 			transfer_state = 612
+	# 			transfer_state = 597
+	# 			transfer_state = 598
+	# 			transfer_state = 611
+	# 			transfer_state = 596
+	# 			transfer_state = 609
+	# 			add_state_core = 592
+	# 			add_state_core = 613
+	# 			add_state_core = 610
+	# 			add_state_core = 631
+	# 			add_state_core = 612
+	# 			add_state_core = 597
+	# 			add_state_core = 598
+	# 			add_state_core = 611
+	# 			add_state_core = 596
+	# 			add_state_core = 609
+	# 			add_ideas = EoF_slava
+	# 			add_ideas = EoF_NCSP_aid
+	# 			add_offsite_building = { type = arms_factory level = 50 }
+	# 			add_offsite_building = { type = industrial_complex level = 10 }
+	# 			division_template = {
+	# 				name = "Pryzovnyk"
+	# 				is_locked = yes
+	# 				regiments = {
+	# 					infantry = { x = 0 y = 0 }
+	# 					infantry = { x = 0 y = 1 }
+	# 					infantry = { x = 0 y = 2 }
+	# 					infantry = { x = 0 y = 3 }
+
+	# 					infantry = { x = 1 y = 0 }
+	# 					infantry = { x = 1 y = 1 }
+	# 					infantry = { x = 1 y = 2 }
+	# 					infantry = { x = 1 y = 3 }
+
+	# 					infantry = { x = 2 y = 0 }
+	# 					infantry = { x = 2 y = 1 }
+	# 					infantry = { x = 2 y = 2 }
+	# 					infantry = { x = 2 y = 3 }
+	# 				}
+	# 				support = {
+	# 					heavy_anti_air = { x = 0 y = 0 }
+	# 					artillery = { x = 0 y = 1 }
+	# 					engineer = { x = 0 y = 2 }
+	# 					military_police = { x = 0 y = 3 }
+	# 				}
+	# 			}
+	# 			division_template = {
+	# 				name = "Veterany"
+	# 				is_locked = yes
+	# 				regiments = {
+	# 					infantry = { x = 0 y = 0 }
+	# 					infantry = { x = 0 y = 1 }
+	# 					infantry = { x = 0 y = 2 }
+	# 					infantry = { x = 0 y = 3 }
+
+	# 					infantry = { x = 1 y = 0 }
+	# 					infantry = { x = 1 y = 1 }
+	# 					infantry = { x = 1 y = 2 }
+	# 					infantry = { x = 1 y = 3 }
+
+	# 					infantry = { x = 2 y = 0 }
+	# 					infantry = { x = 2 y = 1 }
+	# 					infantry = { x = 2 y = 2 }
+	# 					infantry = { x = 2 y = 3 }
+
+	# 					heavy_artillery_brigade = { x = 3 y = 0 }
+	# 					heavy_artillery_brigade = { x = 3 y = 1 }
+	# 					heavy_artillery_brigade = { x = 3 y = 2 }
+
+	# 					heavy_anti_tank_brigade = { x = 4 y = 0 }
+	# 					heavy_anti_tank_brigade = { x = 4 y = 1 }
+	# 					heavy_anti_tank_brigade = { x = 4 y = 2 }
+	# 				}
+	# 				support = {
+	# 					heavy_anti_air = { x = 0 y = 0 }
+	# 					anti_air = { x = 0 y = 1 }
+	# 					heavy_anti_tank = { x = 0 y = 2 }
+	# 					heavy_artillery = { x = 0 y = 3 }
+	# 					engineer = { x = 0 y = 4 }
+	# 				}
+	# 			}
+	# 			every_owned_state = {
+	# 				create_unit = {
+	# 					division = "name = \"Pryzovnyk\" division_template = \"Pryzovnyk\" start_experience_factor = 0.5"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Pryzovnyk\" division_template = \"Pryzovnyk\" start_experience_factor = 0.5"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Pryzovnyk\" division_template = \"Pryzovnyk\" start_experience_factor = 0.5"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Pryzovnyk\" division_template = \"Pryzovnyk\" start_experience_factor = 0.5"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Pryzovnyk\" division_template = \"Pryzovnyk\" start_experience_factor = 0.5"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Veterany\" division_template = \"Veterany\" start_experience_factor = 1.0"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Veterany\" division_template = \"Veterany\" start_experience_factor = 1.0"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Veterany\" division_template = \"Veterany\" start_experience_factor = 1.0"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Veterany\" division_template = \"Veterany\" start_experience_factor = 1.0"
+	# 					owner = GRY
+	# 				}
+	# 				create_unit = {
+	# 					division = "name = \"Veterany\" division_template = \"Veterany\" start_experience_factor = 1.0"
+	# 					owner = GRY
+	# 				}
+	# 			}
+	# 		}
+	# 		HLR = {
+	# 			remove_state_core = 592
+	# 			remove_state_core = 613
+	# 			remove_state_core = 610
+	# 			remove_state_core = 631
+	# 			remove_state_core = 612
+	# 			remove_state_core = 597
+	# 			remove_state_core = 598
+	# 			remove_state_core = 611
+	# 			remove_state_core = 596
+	# 			remove_state_core = 609
+	# 		}
+	# 	}
+	# }
+
+	completion_reward = {
+		transfer_state = 592
+		transfer_state = 613
+		transfer_state = 610
+		transfer_state = 631
+		transfer_state = 612
+		transfer_state = 597
+		transfer_state = 598
+		transfer_state = 611
+		transfer_state = 596
+		transfer_state = 609
+		transfer_state = 559
+		transfer_state = 600
+		transfer_state = 630
+		transfer_state = 599
+		transfer_state = 623
+		transfer_state = 514
+		transfer_state = 512
+		transfer_state = 594
+		transfer_state = 595
+		add_state_core = 592
+		add_state_core = 613
+		add_state_core = 610
+		add_state_core = 631
+		add_state_core = 612
+		add_state_core = 597
+		add_state_core = 598
+		add_state_core = 611
+		add_state_core = 596
+		add_state_core = 609
+		add_state_core = 559
+		add_state_core = 600
+		add_state_core = 630
+		add_state_core = 599
+		add_state_core = 623
+		add_state_core = 514
+		add_state_core = 512
+		add_state_core = 594
+		add_state_core = 595
+	}
+}
 #EoF Changes
 
 shared_focus = {

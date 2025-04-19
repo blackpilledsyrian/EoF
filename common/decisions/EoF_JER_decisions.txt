@@ -183,7 +183,7 @@ EoF_JER_second_three_year_plan_category = {
 		available = {
 			OR = {
 				dockyard > 39
-				arms_factory > 139
+				arms_factory > 119
 			}
 		}
 		fire_only_once = yes

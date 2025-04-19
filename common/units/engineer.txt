@@ -87,7 +87,7 @@ sub_units = {
 		}
 		urban = {
 			attack = 0
-			defence = 0.15
+			defence = 0.25
 			movement = 0
 		}
 		fort = {
@@ -440,7 +440,7 @@ sub_units = {
 		}
 		mountain = {
 			attack = 0.05
-			defence = 0
+			defence = 0.10
 			movement = 0
 		}
 		urban = {
@@ -562,7 +562,7 @@ sub_units = {
 		}
 		urban = {
 			attack = 0
-			defence = 0.1
+			defence = 0.2
 			movement = 0
 		}
 		fort = {

@@ -316,7 +316,6 @@ equipments = {
 
 		#Misc Abilities
 		reliability = 0.8
-		maximum_speed = 9
 
 		#Offensive Abilities
 		ap_attack = 0
