@@ -993,6 +993,31 @@ tactic_zebra_steppe_charge = { #zebra tactics
 	attacker = 0.2
 	defender = 0.05
 }
+tactic_cunning_ambush = { #cat tactics
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+	}
+	
+	active = no
+
+	base =  { 
+		factor = 4 
+		modifier = {
+			factor = 0
+			OR = {
+				is_fighting_in_terrain = plains
+				is_fighting_in_terrain = desert
+			}
+		}
+	}
+
+	picture = ambush
+
+	combat_width = -0.33
+	attacker = -0.3
+}
 tactic_masterful_blitz = { #Improved version of Blitz for Soviets
 	
 	is_attacker = yes
