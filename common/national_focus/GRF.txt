@@ -1040,8 +1040,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				has_country_flag = GRF_teafeather_dead
-				#is_subject = yes
-				#NOT = { has_government = neutrality }
+				is_subject = yes
+				NOT = { has_government = neutrality }
 			}
 		}
 
